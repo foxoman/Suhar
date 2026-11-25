@@ -1,0 +1,374 @@
+{
+ "source": "inspected from the files in dist/ by tools/inspect_build.py",
+ "static": [
+  {
+   "name": "Suhar-Black",
+   "glyphs": 2889,
+   "hinted": true,
+   "otf_hinted": true
+  },
+  {
+   "name": "Suhar-BlackItalic",
+   "glyphs": 2889,
+   "hinted": true,
+   "otf_hinted": true
+  },
+  {
+   "name": "Suhar-Bold",
+   "glyphs": 2889,
+   "hinted": true,
+   "otf_hinted": true
+  },
+  {
+   "name": "Suhar-BoldItalic",
+   "glyphs": 2889,
+   "hinted": true,
+   "otf_hinted": true
+  },
+  {
+   "name": "Suhar-ExtraBold",
+   "glyphs": 2889,
+   "hinted": true,
+   "otf_hinted": true
+  },
+  {
+   "name": "Suhar-ExtraBoldItalic",
+   "glyphs": 2889,
+   "hinted": true,
+   "otf_hinted": true
+  },
+  {
+   "name": "Suhar-Italic",
+   "glyphs": 2889,
+   "hinted": true,
+   "otf_hinted": true
+  },
+  {
+   "name": "Suhar-Light",
+   "glyphs": 2889,
+   "hinted": true,
+   "otf_hinted": true
+  },
+  {
+   "name": "Suhar-LightItalic",
+   "glyphs": 2889,
+   "hinted": true,
+   "otf_hinted": true
+  },
+  {
+   "name": "Suhar-Medium",
+   "glyphs": 2889,
+   "hinted": true,
+   "otf_hinted": true
+  },
+  {
+   "name": "Suhar-MediumItalic",
+   "glyphs": 2889,
+   "hinted": true,
+   "otf_hinted": true
+  },
+  {
+   "name": "Suhar-Regular",
+   "glyphs": 2889,
+   "hinted": true,
+   "otf_hinted": true
+  },
+  {
+   "name": "Suhar-SemiBold",
+   "glyphs": 2889,
+   "hinted": true,
+   "otf_hinted": true
+  },
+  {
+   "name": "Suhar-SemiBoldItalic",
+   "glyphs": 2889,
+   "hinted": true,
+   "otf_hinted": true
+  },
+  {
+   "name": "SuharCondensed-Bold",
+   "glyphs": 2889,
+   "hinted": true,
+   "otf_hinted": true
+  },
+  {
+   "name": "SuharCondensed-BoldItalic",
+   "glyphs": 2889,
+   "hinted": true,
+   "otf_hinted": true
+  },
+  {
+   "name": "SuharCondensed-ExtraBold",
+   "glyphs": 2889,
+   "hinted": true,
+   "otf_hinted": true
+  },
+  {
+   "name": "SuharCondensed-ExtraBoldItalic",
+   "glyphs": 2889,
+   "hinted": true,
+   "otf_hinted": true
+  },
+  {
+   "name": "SuharCondensed-Italic",
+   "glyphs": 2889,
+   "hinted": true,
+   "otf_hinted": true
+  },
+  {
+   "name": "SuharCondensed-Light",
+   "glyphs": 2889,
+   "hinted": true,
+   "otf_hinted": true
+  },
+  {
+   "name": "SuharCondensed-LightItalic",
+   "glyphs": 2889,
+   "hinted": true,
+   "otf_hinted": true
+  },
+  {
+   "name": "SuharCondensed-Medium",
+   "glyphs": 2889,
+   "hinted": true,
+   "otf_hinted": true
+  },
+  {
+   "name": "SuharCondensed-MediumItalic",
+   "glyphs": 2889,
+   "hinted": true,
+   "otf_hinted": true
+  },
+  {
+   "name": "SuharCondensed-Regular",
+   "glyphs": 2889,
+   "hinted": true,
+   "otf_hinted": true
+  },
+  {
+   "name": "SuharCondensed-SemiBold",
+   "glyphs": 2889,
+   "hinted": true,
+   "otf_hinted": true
+  },
+  {
+   "name": "SuharCondensed-SemiBoldItalic",
+   "glyphs": 2889,
+   "hinted": true,
+   "otf_hinted": true
+  },
+  {
+   "name": "SuharMono-Bold",
+   "glyphs": 2905,
+   "hinted": true,
+   "otf_hinted": true
+  },
+  {
+   "name": "SuharMono-BoldItalic",
+   "glyphs": 2905,
+   "hinted": true,
+   "otf_hinted": true
+  },
+  {
+   "name": "SuharMono-ExtraBold",
+   "glyphs": 2905,
+   "hinted": true,
+   "otf_hinted": true
+  },
+  {
+   "name": "SuharMono-ExtraBoldItalic",
+   "glyphs": 2905,
+   "hinted": true,
+   "otf_hinted": true
+  },
+  {
+   "name": "SuharMono-Italic",
+   "glyphs": 2905,
+   "hinted": true,
+   "otf_hinted": true
+  },
+  {
+   "name": "SuharMono-Light",
+   "glyphs": 2905,
+   "hinted": true,
+   "otf_hinted": true
+  },
+  {
+   "name": "SuharMono-LightItalic",
+   "glyphs": 2905,
+   "hinted": true,
+   "otf_hinted": true
+  },
+  {
+   "name": "SuharMono-Medium",
+   "glyphs": 2905,
+   "hinted": true,
+   "otf_hinted": true
+  },
+  {
+   "name": "SuharMono-MediumItalic",
+   "glyphs": 2905,
+   "hinted": true,
+   "otf_hinted": true
+  },
+  {
+   "name": "SuharMono-Regular",
+   "glyphs": 2905,
+   "hinted": true,
+   "otf_hinted": true
+  },
+  {
+   "name": "SuharMono-SemiBold",
+   "glyphs": 2905,
+   "hinted": true,
+   "otf_hinted": true
+  },
+  {
+   "name": "SuharMono-SemiBoldItalic",
+   "glyphs": 2905,
+   "hinted": true,
+   "otf_hinted": true
+  },
+  {
+   "name": "SuharNaskh-Bold",
+   "glyphs": 2889,
+   "hinted": true,
+   "otf_hinted": true
+  },
+  {
+   "name": "SuharNaskh-BoldItalic",
+   "glyphs": 2889,
+   "hinted": true,
+   "otf_hinted": true
+  },
+  {
+   "name": "SuharNaskh-Italic",
+   "glyphs": 2889,
+   "hinted": true,
+   "otf_hinted": true
+  },
+  {
+   "name": "SuharNaskh-Medium",
+   "glyphs": 2889,
+   "hinted": true,
+   "otf_hinted": true
+  },
+  {
+   "name": "SuharNaskh-MediumItalic",
+   "glyphs": 2889,
+   "hinted": true,
+   "otf_hinted": true
+  },
+  {
+   "name": "SuharNaskh-Regular",
+   "glyphs": 2889,
+   "hinted": true,
+   "otf_hinted": true
+  },
+  {
+   "name": "SuharNaskh-SemiBold",
+   "glyphs": 2889,
+   "hinted": true,
+   "otf_hinted": true
+  },
+  {
+   "name": "SuharNaskh-SemiBoldItalic",
+   "glyphs": 2889,
+   "hinted": true,
+   "otf_hinted": true
+  },
+  {
+   "name": "SuharNaskhDisplay-Bold",
+   "glyphs": 2889,
+   "hinted": true,
+   "otf_hinted": true
+  },
+  {
+   "name": "SuharNaskhDisplay-Medium",
+   "glyphs": 2889,
+   "hinted": true,
+   "otf_hinted": true
+  },
+  {
+   "name": "SuharNaskhDisplay-Regular",
+   "glyphs": 2889,
+   "hinted": true,
+   "otf_hinted": true
+  },
+  {
+   "name": "SuharNaskhDisplay-SemiBold",
+   "glyphs": 2889,
+   "hinted": true,
+   "otf_hinted": true
+  }
+ ],
+ "variable": [
+  {
+   "name": "Suhar-Italic[opsz,wght].ttf",
+   "axes": [
+    "wght",
+    "opsz"
+   ],
+   "dropped_glyphs": []
+  },
+  {
+   "name": "SuharCondensed-Italic[opsz,wght].ttf",
+   "axes": [
+    "wght",
+    "opsz"
+   ],
+   "dropped_glyphs": []
+  },
+  {
+   "name": "SuharCondensed[opsz,wght].ttf",
+   "axes": [
+    "wght",
+    "opsz"
+   ],
+   "dropped_glyphs": []
+  },
+  {
+   "name": "SuharMono-Italic[wght].ttf",
+   "axes": [
+    "wght"
+   ],
+   "dropped_glyphs": []
+  },
+  {
+   "name": "SuharMono[wght].ttf",
+   "axes": [
+    "wght"
+   ],
+   "dropped_glyphs": []
+  },
+  {
+   "name": "SuharNaskh-Italic[wght].ttf",
+   "axes": [
+    "wght"
+   ],
+   "dropped_glyphs": []
+  },
+  {
+   "name": "SuharNaskhDisplay[wght].ttf",
+   "axes": [
+    "wght"
+   ],
+   "dropped_glyphs": []
+  },
+  {
+   "name": "SuharNaskh[wght].ttf",
+   "axes": [
+    "wght"
+   ],
+   "dropped_glyphs": []
+  },
+  {
+   "name": "Suhar[opsz,wght].ttf",
+   "axes": [
+    "wght",
+    "opsz"
+   ],
+   "dropped_glyphs": []
+  }
+ ]
+}
