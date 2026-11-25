@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Suhar Device Test</title>
+<style>
+/* layout: one column of numbered checks; each check shows the text and says what to look for */
+:root{--bg:#f6f4ee;--ink:#17191c;--mute:#5d6470;--line:#d6d2c6;--card:#fffdf8;--accent:#0b6e75;
+  --ui:'Suhar',system-ui,sans-serif;--naskh:'Suhar Naskh','Suhar',serif;--disp:'Suhar Naskh Display','Suhar Naskh',serif;--mono:'Suhar Mono',ui-monospace,monospace}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14171a;--ink:#ece9e1;--mute:#a1a7b0;--line:#2f353c;--card:#1b1f23;--accent:#59c4cc;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#14171a;--ink:#ece9e1;--mute:#a1a7b0;--line:#2f353c;--card:#1b1f23;--accent:#59c4cc;color-scheme:dark}
+@font-face{font-family:'Suhar';src:url('fonts/Suhar-Regular.woff2') format('woff2');font-weight:400}
+@font-face{font-family:'Suhar';src:url('fonts/Suhar-Bold.woff2') format('woff2');font-weight:700}
+@font-face{font-family:'Suhar';src:url('fonts/Suhar-Italic.woff2') format('woff2');font-weight:400;font-style:italic}
+@font-face{font-family:'Suhar Naskh';src:url('fonts/SuharNaskh-Regular.woff2') format('woff2');font-weight:400}
+@font-face{font-family:'Suhar Naskh';src:url('fonts/SuharNaskh-Bold.woff2') format('woff2');font-weight:700}
+@font-face{font-family:'Suhar Naskh Display';src:url('fonts/SuharNaskhDisplay-Regular.woff2') format('woff2');font-weight:400}
+@font-face{font-family:'Suhar Naskh Display';src:url('fonts/SuharNaskhDisplay-Bold.woff2') format('woff2');font-weight:700}
+@font-face{font-family:'Suhar Mono';src:url('fonts/SuharMono-Regular.woff2') format('woff2');font-weight:400}
+@font-face{font-family:'Suhar Condensed';src:url('fonts/SuharCondensed-Regular.woff2') format('woff2');font-weight:400}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font-family:var(--ui);font-size:17px;line-height:1.5;padding:20px 16px 60px}
+main{max-width:760px;margin:0 auto;display:flex;flex-direction:column;gap:14px}
+h1{font-size:28px;margin:8px 0 0;text-wrap:balance}
+.lead{color:var(--mute);margin:0}
+#status{font-size:15px;padding:10px 12px;border:1px solid var(--line);border-radius:8px;background:var(--card)}
+#status b{color:var(--accent)}
+section{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px;display:flex;flex-direction:column;gap:8px}
+h2{font-size:15px;margin:0;color:var(--accent);font-weight:700}
+.look{font-size:14px;color:var(--mute);margin:0}
+.ar{direction:rtl;text-align:right}
+.t{margin:0;overflow-wrap:anywhere}
+.big{font-size:44px;line-height:1.5}
+.mid{font-size:26px;line-height:1.7}
+.small{font-size:13px}
+.tiny{font-size:11px}
+.naskh{font-family:var(--naskh)} .disp{font-family:var(--disp)} .mono{font-family:var(--mono)} .cond{font-family:'Suhar Condensed',var(--ui)}
+pre{margin:0;font-family:var(--mono);font-size:14px;line-height:1.45;overflow-x:auto}
+.row{display:flex;flex-wrap:wrap;gap:10px 24px;align-items:baseline}
+</style>
+</head>
+<body>
+<main>
+<h1>Suhar device test</h1>
+<p class="lead">Open this page on each phone, tablet and computer you care about. Every box says what a correct result looks like. Note the number of any box that looks wrong, and on which device.</p>
+<div id="status">Checking whether the fonts loaded…</div>
+
+<section><h2>1 · Fonts load</h2>
+<p class="t mid">Suhar · <span class="naskh">صحار نسخ</span> · <span class="mono">Mono</span></p>
+<p class="look">The status line above must say all nine fonts loaded. If it lists a missing font, everything below is your system font, not Suhar.</p></section>
+
+<section><h2>2 · Arabic joins</h2>
+<p class="t ar mid">صُحار مدينة عُمانية عريقة على ساحل بحر عُمان، ميناء صحار والمنطقة الحرة</p>
+<p class="look">Letters inside each word must touch with no gaps or overlaps. The small vowel marks sit above their letters, not beside them.</p></section>
+
+<section><h2>3 · Mixed paragraph, same size</h2>
+<p class="t ar">تقع صُحار (Sohar) على بعد 240 كم من مسقط، وكانت قديماً من أهم موانئ المنطقة. The city is linked with the Sindbad stories, ومنها أبحر التجار إلى الهند والصين.</p>
+<p class="look">Arabic and English should look the same size and the same darkness. The number 240 and the English words must read left to right inside the Arabic line.</p></section>
+
+<section><h2>4 · Suhar Naskh, text</h2>
+<p class="t ar naskh mid">أصل الكتابة العربية: نقوشٌ مؤرَّخة قادت الباحثين إلى أن الكتابة تطوّرت عن النبطي المتأخر.</p>
+<p class="t ar naskh small">أصل الكتابة العربية: نقوشٌ مؤرَّخة قادت الباحثين إلى أن الكتابة تطوّرت عن النبطي المتأخر.</p>
+<p class="look">Thick baseline, thinner uprights, tails that sweep left. The small line must stay readable, with no broken thin strokes.</p></section>
+
+<section><h2>5 · Suhar Naskh Display, sloping words</h2>
+<p class="t ar disp big" style="font-weight:700">أصل الكتابة العربية</p>
+<p class="look">Each joined word should start higher on the right and step down to the baseline on the left, and the letters must still connect. If every letter sits on its own level with broken joins, this device does not support cursive attachment.</p></section>
+
+<section><h2>6 · Kerning after ر ز و</h2>
+<p class="t ar big">الحرة وردة مرور</p>
+<p class="look">The letter after ر or و sits close, tucked over the tail. There should be no wide gap before ة.</p></section>
+
+<section><h2>6b · Space between words</h2>
+<p class="t ar mid">بحر عُمان وصحار والمنطقة الحرة يوم الجمعة، مرور الزوار في دار السلام مع قوم كرام</p>
+<p class="look">The gaps between words should look about equal. The gap after a word ending in ر or و must not look clearly wider than the others.</p></section>
+
+<section><h2>7 · Optional features</h2>
+<div class="row"><span class="t mid">young Quay</span><span class="t mid" style="font-feature-settings:'ss01'">young Quay</span></div>
+<div class="row"><span class="t mid">1790 2026</span><span class="t mid" style="font-feature-settings:'onum'">1790 2026</span><span class="t mid" style="font-feature-settings:'smcp'">Small Caps</span></div>
+<p class="look">In each pair the second one must differ: hooked tails on y and Q, figures that hang below the line, small capitals.</p></section>
+
+<section><h2>8 · Number inside the ayah sign</h2>
+<p class="t ar big">۝١ ۝٢٥ ۝٢٨٦</p>
+<p class="look">The digits must sit inside the round sign. If they sit beside it, this device does not apply the feature.</p></section>
+
+<section><h2>9 · Small sizes</h2>
+<p class="t small">13 px — The quick brown fox jumps over the lazy dog · ملف تحرير عرض مساعدة</p>
+<p class="t tiny">11 px — The quick brown fox jumps over the lazy dog · ملف تحرير عرض مساعدة</p>
+<p class="look">Both lines readable; stems even in thickness; Arabic dots distinct.</p></section>
+
+<section><h2>10 · Mono grid</h2>
+<pre>proc main() =
+  echo "مرحبا بالعالم"   # تعليق
+0O 1lI {} [] != =&gt; := |&gt;
+┌──────┬──────┐
+│ ████ │ ░▒▓█ │
+└──────┴──────┘</pre>
+<p class="look">The box lines must join into unbroken frames, and both columns must be the same width.</p></section>
+
+<section><h2>11 · Other scripts and signs</h2>
+<p class="t mid">Ελληνικά · Кириллица · <span dir="rtl">שָׁלוֹם</span> · Tiếng Việt · ₪ € ⃁ ⃄</p>
+<p class="t ar mid">پښتو ډېر ښه · سنڌي ٻولي ڪتاب · اردو ہے · فارسی گچپژ</p>
+<p class="look">No empty boxes. The last two signs are the Saudi riyal and Omani rial; on old systems the browser may still show them from Suhar, which is fine.</p></section>
+
+<section><h2>12 · Returning yeh and the rial sign</h2>
+<p class="t ar disp big">في على إلى حتى · نجم تحت</p>
+<p class="t mid">Price ⃄ 19.990 · <span dir="rtl">السعر ⃄ ١٩٫٩٩٠</span></p>
+<p class="look">In the first line the last letter of each of the first four words sweeps back to the right under the word, and in نجم and تحت the first letter stands on the head of the second. In the second line the Omani rial sign is as tall as the figures and sits to their left.</p></section>
+
+<section><h2>13 · Condensed</h2>
+<p class="t cond mid">Sohar Port and Freezone · ميناء صحار والمنطقة الحرة</p>
+<p class="look">Clearly narrower than box 2, with the same stroke thickness.</p></section>
+</main>
+<script>
+(function(){
+  var want=[["Suhar","400"],["Suhar","700"],["Suhar","italic 400"],["Suhar Naskh","400"],["Suhar Naskh","700"],
+            ["Suhar Naskh Display","400"],["Suhar Naskh Display","700"],["Suhar Mono","400"],["Suhar Condensed","400"]];
+  var el=document.getElementById("status");
+  if(!document.fonts||!document.fonts.load){el.textContent="This browser cannot report font loading. Compare box 1 with a screenshot from another device.";return;}
+  Promise.all(want.map(function(w){return document.fonts.load(w[1]+" 20px '"+w[0]+"'","aص").then(function(r){return r.length>0;},function(){return false;});}))
+  .then(function(ok){
+    var miss=want.filter(function(_,i){return !ok[i];}).map(function(w){return w[0]+" "+w[1];});
+    el.innerHTML=miss.length?("<b>"+(want.length-miss.length)+" of "+want.length+" fonts loaded.</b> Missing: "+miss.join(", ")):"<b>All 9 fonts loaded.</b> "+navigator.userAgent.replace(/</g,"&lt;");
+  });
+})();
+</script>
+</body>
+</html>
