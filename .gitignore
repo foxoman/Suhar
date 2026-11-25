@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+build/
+proofs/
+dist/otf/
+dist/sources/
+dist/*/*Nerd*
+nim/tests/tload
+/tmp/
