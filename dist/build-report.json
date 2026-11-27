@@ -300,6 +300,54 @@
    "glyphs": 2889,
    "hinted": true,
    "otf_hinted": true
+  },
+  {
+   "name": "SuharSahafa-Bold",
+   "glyphs": 2889,
+   "hinted": true,
+   "otf_hinted": true
+  },
+  {
+   "name": "SuharSahafa-Medium",
+   "glyphs": 2889,
+   "hinted": true,
+   "otf_hinted": true
+  },
+  {
+   "name": "SuharSahafa-Regular",
+   "glyphs": 2889,
+   "hinted": true,
+   "otf_hinted": true
+  },
+  {
+   "name": "SuharSahafa-SemiBold",
+   "glyphs": 2889,
+   "hinted": true,
+   "otf_hinted": true
+  },
+  {
+   "name": "SuharSahafaHeadline-Bold",
+   "glyphs": 2889,
+   "hinted": true,
+   "otf_hinted": true
+  },
+  {
+   "name": "SuharSahafaHeadline-Medium",
+   "glyphs": 2889,
+   "hinted": true,
+   "otf_hinted": true
+  },
+  {
+   "name": "SuharSahafaHeadline-Regular",
+   "glyphs": 2889,
+   "hinted": true,
+   "otf_hinted": true
+  },
+  {
+   "name": "SuharSahafaHeadline-SemiBold",
+   "glyphs": 2889,
+   "hinted": true,
+   "otf_hinted": true
   }
  ],
  "variable": [
