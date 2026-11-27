@@ -2,7 +2,7 @@
 
 Produced by `tools/validate.py` from the compiled files in `dist/`. Shaping uses HarfBuzz, rasterisation uses FreeType (with the fonts' own TrueType hinting), structure checks use fontTools and the OpenType Sanitizer.
 
-**3113 checks passed, 0 failed.**
+**3140 checks passed, 0 failed.**
 
 ## All checks
 
@@ -7529,6 +7529,39 @@ Produced by `tools/validate.py` from the compiled files in `dist/`. Shaping uses
 - PASS — Sahafa: Light, Regular, Bold, ExtraBold are in order of weight
 - PASS — Sahafa ExtraBold: the loop of sad is still open
 
+### marks
+
+- PASS — Suhar-Bold: kasratan keeps its two strokes apart
+- PASS — SuharNaskh-Bold: kasratan keeps its two strokes apart
+- PASS — SuharSahafa-Bold: kasratan keeps its two strokes apart
+- PASS — in every static font the Arabic vowel marks lie wholly above or wholly below their own origin (Retro Nim UI leaves out a mark that crosses it)
+- PASS — Bold: damma still sits at the same height over sad (its lowest point 440 to 520 above the baseline)
+
+### app fonts
+
+- PASS — SuharApp-Regular: under 300 KB, unhinted, every advance equal to the release font, Arabic presentation forms and UI icons present
+- PASS — SuharApp-Bold: under 300 KB, unhinted, every advance equal to the release font, Arabic presentation forms and UI icons present
+- PASS — SuharApp-Italic: under 300 KB, unhinted, every advance equal to the release font, Arabic presentation forms and UI icons present
+- PASS — SuharApp-BoldItalic: under 300 KB, unhinted, every advance equal to the release font, Arabic presentation forms and UI icons present
+- PASS — SuharAppLite-Regular: under 100 KB, unhinted, every advance equal to the release font, Arabic presentation forms and UI icons present
+- PASS — SuharAppLite-Bold: under 100 KB, unhinted, every advance equal to the release font, Arabic presentation forms and UI icons present
+- PASS — SuharAppLite-Italic: under 100 KB, unhinted, every advance equal to the release font, Arabic presentation forms and UI icons present
+- PASS — SuharAppLite-BoldItalic: under 100 KB, unhinted, every advance equal to the release font, Arabic presentation forms and UI icons present
+- PASS — SuharAppRead-Regular: under 320 KB, unhinted, every advance equal to the release font, Arabic presentation forms and UI icons present
+- PASS — SuharAppRead-Bold: under 320 KB, unhinted, every advance equal to the release font, Arabic presentation forms and UI icons present
+- PASS — SuharAppRead-Italic: under 320 KB, unhinted, every advance equal to the release font, Arabic presentation forms and UI icons present
+- PASS — SuharAppRead-BoldItalic: under 320 KB, unhinted, every advance equal to the release font, Arabic presentation forms and UI icons present
+- PASS — SuharApp: shapes "مرحباً بكم في صُحار" exactly as the release font does
+- PASS — SuharApp: shapes "Total: 2.500 — 0123456789" exactly as the release font does
+- PASS — SuharApp: shapes "الاستعمالات المعلم في كال" exactly as the release font does
+- PASS — SuharAppLite: shapes "مرحباً بكم في صُحار" exactly as the release font does
+- PASS — SuharAppLite: shapes "Total: 2.500 — 0123456789" exactly as the release font does
+- PASS — SuharAppLite: shapes "الاستعمالات المعلم في كال" exactly as the release font does
+- PASS — SuharAppRead: shapes "مرحباً بكم في صُحار" exactly as the release font does
+- PASS — SuharAppRead: shapes "Total: 2.500 — 0123456789" exactly as the release font does
+- PASS — SuharAppRead: shapes "الاستعمالات المعلم في كال" exactly as the release font does
+- PASS — SuharApp keeps every language (Greek, Cyrillic, Persian, Urdu); SuharAppLite does not
+
 ### word space
 
 - PASS — Suhar-Black: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap
@@ -7650,7 +7683,7 @@ Produced by `tools/validate.py` from the compiled files in `dist/`. Shaping uses
 |---|---:|---:|---:|
 | otf/Suhar-Black.otf | 3021 | 2469 | 569 |
 | otf/Suhar-BlackItalic.otf | 3021 | 2469 | 551 |
-| otf/Suhar-Bold.otf | 3021 | 2469 | 569 |
+| otf/Suhar-Bold.otf | 3021 | 2469 | 568 |
 | otf/Suhar-BoldItalic.otf | 3021 | 2469 | 553 |
 | otf/Suhar-ExtraBold.otf | 3021 | 2469 | 571 |
 | otf/Suhar-ExtraBoldItalic.otf | 3021 | 2469 | 553 |
@@ -7658,25 +7691,25 @@ Produced by `tools/validate.py` from the compiled files in `dist/`. Shaping uses
 | otf/Suhar-Light.otf | 3021 | 2469 | 542 |
 | otf/Suhar-LightItalic.otf | 3021 | 2469 | 547 |
 | otf/Suhar-Medium.otf | 3021 | 2469 | 555 |
-| otf/Suhar-MediumItalic.otf | 3021 | 2469 | 537 |
+| otf/Suhar-MediumItalic.otf | 3021 | 2469 | 538 |
 | otf/Suhar-Regular.otf | 3021 | 2469 | 541 |
 | otf/Suhar-SemiBold.otf | 3021 | 2469 | 570 |
 | otf/Suhar-SemiBoldItalic.otf | 3021 | 2469 | 551 |
 | otf/SuharCondensed-Bold.otf | 3021 | 2469 | 547 |
 | otf/SuharCondensed-BoldItalic.otf | 3021 | 2469 | 532 |
 | otf/SuharCondensed-ExtraBold.otf | 3021 | 2469 | 551 |
-| otf/SuharCondensed-ExtraBoldItalic.otf | 3021 | 2469 | 533 |
+| otf/SuharCondensed-ExtraBoldItalic.otf | 3021 | 2469 | 534 |
 | otf/SuharCondensed-Italic.otf | 3021 | 2469 | 517 |
 | otf/SuharCondensed-Light.otf | 3021 | 2469 | 525 |
-| otf/SuharCondensed-LightItalic.otf | 3021 | 2469 | 524 |
+| otf/SuharCondensed-LightItalic.otf | 3021 | 2469 | 525 |
 | otf/SuharCondensed-Medium.otf | 3021 | 2469 | 529 |
 | otf/SuharCondensed-MediumItalic.otf | 3021 | 2469 | 523 |
 | otf/SuharCondensed-Regular.otf | 3021 | 2469 | 524 |
-| otf/SuharCondensed-SemiBold.otf | 3021 | 2469 | 541 |
+| otf/SuharCondensed-SemiBold.otf | 3021 | 2469 | 542 |
 | otf/SuharCondensed-SemiBoldItalic.otf | 3021 | 2469 | 528 |
 | otf/SuharMono-Bold.otf | 3037 | 2469 | 440 |
 | otf/SuharMono-BoldItalic.otf | 3037 | 2469 | 434 |
-| otf/SuharMono-ExtraBold.otf | 3037 | 2469 | 440 |
+| otf/SuharMono-ExtraBold.otf | 3037 | 2469 | 441 |
 | otf/SuharMono-ExtraBoldItalic.otf | 3037 | 2469 | 437 |
 | otf/SuharMono-Italic.otf | 3037 | 2469 | 426 |
 | otf/SuharMono-Light.otf | 3037 | 2469 | 428 |
@@ -7684,27 +7717,27 @@ Produced by `tools/validate.py` from the compiled files in `dist/`. Shaping uses
 | otf/SuharMono-Medium.otf | 3037 | 2469 | 426 |
 | otf/SuharMono-MediumItalic.otf | 3037 | 2469 | 426 |
 | otf/SuharMono-Regular.otf | 3037 | 2469 | 427 |
-| otf/SuharMono-SemiBold.otf | 3037 | 2469 | 435 |
+| otf/SuharMono-SemiBold.otf | 3037 | 2469 | 436 |
 | otf/SuharMono-SemiBoldItalic.otf | 3037 | 2469 | 432 |
 | otf/SuharNaskh-Bold.otf | 3021 | 2469 | 565 |
-| otf/SuharNaskh-BoldItalic.otf | 3021 | 2469 | 551 |
+| otf/SuharNaskh-BoldItalic.otf | 3021 | 2469 | 552 |
 | otf/SuharNaskh-ExtraBold.otf | 3021 | 2469 | 568 |
 | otf/SuharNaskh-ExtraBoldItalic.otf | 3021 | 2469 | 551 |
 | otf/SuharNaskh-Italic.otf | 3021 | 2469 | 540 |
 | otf/SuharNaskh-Light.otf | 3021 | 2469 | 540 |
-| otf/SuharNaskh-LightItalic.otf | 3021 | 2469 | 536 |
+| otf/SuharNaskh-LightItalic.otf | 3021 | 2469 | 537 |
 | otf/SuharNaskh-Medium.otf | 3021 | 2469 | 554 |
 | otf/SuharNaskh-MediumItalic.otf | 3021 | 2469 | 543 |
 | otf/SuharNaskh-Regular.otf | 3021 | 2469 | 543 |
 | otf/SuharNaskh-SemiBold.otf | 3021 | 2469 | 564 |
-| otf/SuharNaskh-SemiBoldItalic.otf | 3021 | 2469 | 550 |
+| otf/SuharNaskh-SemiBoldItalic.otf | 3021 | 2469 | 551 |
 | otf/SuharNaskhCaption-Bold.otf | 3021 | 2469 | 595 |
-| otf/SuharNaskhCaption-BoldItalic.otf | 3021 | 2469 | 582 |
-| otf/SuharNaskhCaption-Italic.otf | 3021 | 2469 | 552 |
+| otf/SuharNaskhCaption-BoldItalic.otf | 3021 | 2469 | 583 |
+| otf/SuharNaskhCaption-Italic.otf | 3021 | 2469 | 553 |
 | otf/SuharNaskhCaption-Medium.otf | 3021 | 2469 | 580 |
-| otf/SuharNaskhCaption-MediumItalic.otf | 3021 | 2469 | 571 |
+| otf/SuharNaskhCaption-MediumItalic.otf | 3021 | 2469 | 572 |
 | otf/SuharNaskhCaption-Regular.otf | 3021 | 2469 | 560 |
-| otf/SuharNaskhCaption-SemiBold.otf | 3021 | 2469 | 591 |
+| otf/SuharNaskhCaption-SemiBold.otf | 3021 | 2469 | 592 |
 | otf/SuharNaskhCaption-SemiBoldItalic.otf | 3021 | 2469 | 574 |
 | otf/SuharNaskhDisplay-Bold.otf | 3021 | 2469 | 572 |
 | otf/SuharNaskhDisplay-Medium.otf | 3021 | 2469 | 560 |
@@ -7714,17 +7747,17 @@ Produced by `tools/validate.py` from the compiled files in `dist/`. Shaping uses
 | otf/SuharNerd-BlackItalic.otf | 13616 | 13064 | 3279 |
 | otf/SuharNerd-Bold.otf | 13616 | 13064 | 3296 |
 | otf/SuharNerd-BoldItalic.otf | 13616 | 13064 | 3281 |
-| otf/SuharNerd-ExtraBold.otf | 13616 | 13064 | 3298 |
+| otf/SuharNerd-ExtraBold.otf | 13616 | 13064 | 3299 |
 | otf/SuharNerd-ExtraBoldItalic.otf | 13616 | 13064 | 3280 |
 | otf/SuharNerd-Italic.otf | 13616 | 13064 | 3270 |
-| otf/SuharNerd-Light.otf | 13616 | 13064 | 3269 |
+| otf/SuharNerd-Light.otf | 13616 | 13064 | 3270 |
 | otf/SuharNerd-LightItalic.otf | 13616 | 13064 | 3274 |
 | otf/SuharNerd-Medium.otf | 13616 | 13064 | 3282 |
 | otf/SuharNerd-MediumItalic.otf | 13616 | 13064 | 3265 |
 | otf/SuharNerd-Regular.otf | 13616 | 13064 | 3269 |
-| otf/SuharNerd-SemiBold.otf | 13616 | 13064 | 3297 |
+| otf/SuharNerd-SemiBold.otf | 13616 | 13064 | 3298 |
 | otf/SuharNerd-SemiBoldItalic.otf | 13616 | 13064 | 3279 |
-| otf/SuharNerdCondensed-Bold.otf | 13616 | 13064 | 3274 |
+| otf/SuharNerdCondensed-Bold.otf | 13616 | 13064 | 3275 |
 | otf/SuharNerdCondensed-BoldItalic.otf | 13616 | 13064 | 3260 |
 | otf/SuharNerdCondensed-ExtraBold.otf | 13616 | 13064 | 3279 |
 | otf/SuharNerdCondensed-ExtraBoldItalic.otf | 13616 | 13064 | 3261 |
@@ -7739,7 +7772,7 @@ Produced by `tools/validate.py` from the compiled files in `dist/`. Shaping uses
 | otf/SuharNerdMono-Bold.otf | 13632 | 13064 | 3193 |
 | otf/SuharNerdMono-BoldItalic.otf | 13632 | 13064 | 3187 |
 | otf/SuharNerdMono-ExtraBold.otf | 13632 | 13064 | 3193 |
-| otf/SuharNerdMono-ExtraBoldItalic.otf | 13632 | 13064 | 3189 |
+| otf/SuharNerdMono-ExtraBoldItalic.otf | 13632 | 13064 | 3190 |
 | otf/SuharNerdMono-Italic.otf | 13632 | 13064 | 3179 |
 | otf/SuharNerdMono-Light.otf | 13632 | 13064 | 3181 |
 | otf/SuharNerdMono-LightItalic.otf | 13632 | 13064 | 3181 |
@@ -7747,28 +7780,28 @@ Produced by `tools/validate.py` from the compiled files in `dist/`. Shaping uses
 | otf/SuharNerdMono-MediumItalic.otf | 13632 | 13064 | 3179 |
 | otf/SuharNerdMono-Regular.otf | 13632 | 13064 | 3180 |
 | otf/SuharNerdMono-SemiBold.otf | 13632 | 13064 | 3188 |
-| otf/SuharNerdMono-SemiBoldItalic.otf | 13632 | 13064 | 3184 |
+| otf/SuharNerdMono-SemiBoldItalic.otf | 13632 | 13064 | 3185 |
 | otf/SuharNerdSahafa-Bold.otf | 13616 | 13064 | 3341 |
-| otf/SuharNerdSahafa-BoldItalic.otf | 13616 | 13064 | 3336 |
+| otf/SuharNerdSahafa-BoldItalic.otf | 13616 | 13064 | 3337 |
 | otf/SuharNerdSahafa-ExtraBold.otf | 13616 | 13064 | 3346 |
 | otf/SuharNerdSahafa-ExtraBoldItalic.otf | 13616 | 13064 | 3341 |
 | otf/SuharNerdSahafa-Italic.otf | 13616 | 13064 | 3330 |
-| otf/SuharNerdSahafa-Light.otf | 13616 | 13064 | 3317 |
+| otf/SuharNerdSahafa-Light.otf | 13616 | 13064 | 3316 |
 | otf/SuharNerdSahafa-LightItalic.otf | 13616 | 13064 | 3330 |
-| otf/SuharNerdSahafa-Medium.otf | 13616 | 13064 | 3326 |
+| otf/SuharNerdSahafa-Medium.otf | 13616 | 13064 | 3327 |
 | otf/SuharNerdSahafa-MediumItalic.otf | 13616 | 13064 | 3336 |
 | otf/SuharNerdSahafa-Regular.otf | 13616 | 13064 | 3320 |
 | otf/SuharNerdSahafa-SemiBold.otf | 13616 | 13064 | 3335 |
-| otf/SuharNerdSahafa-SemiBoldItalic.otf | 13616 | 13064 | 3339 |
+| otf/SuharNerdSahafa-SemiBoldItalic.otf | 13616 | 13064 | 3338 |
 | otf/SuharNerdSahafaHeadline-Black.otf | 13616 | 13064 | 3379 |
-| otf/SuharNerdSahafaHeadline-BlackItalic.otf | 13616 | 13064 | 3373 |
+| otf/SuharNerdSahafaHeadline-BlackItalic.otf | 13616 | 13064 | 3374 |
 | otf/SuharNerdSahafaHeadline-Bold.otf | 13616 | 13064 | 3370 |
 | otf/SuharNerdSahafaHeadline-BoldItalic.otf | 13616 | 13064 | 3369 |
 | otf/SuharNerdSahafaHeadline-ExtraBold.otf | 13616 | 13064 | 3380 |
-| otf/SuharNerdSahafaHeadline-ExtraBoldItalic.otf | 13616 | 13064 | 3379 |
-| otf/SuharNerdSahafaHeadline-Italic.otf | 13616 | 13064 | 3360 |
+| otf/SuharNerdSahafaHeadline-ExtraBoldItalic.otf | 13616 | 13064 | 3378 |
+| otf/SuharNerdSahafaHeadline-Italic.otf | 13616 | 13064 | 3361 |
 | otf/SuharNerdSahafaHeadline-Light.otf | 13616 | 13064 | 3343 |
-| otf/SuharNerdSahafaHeadline-LightItalic.otf | 13616 | 13064 | 3350 |
+| otf/SuharNerdSahafaHeadline-LightItalic.otf | 13616 | 13064 | 3351 |
 | otf/SuharNerdSahafaHeadline-Medium.otf | 13616 | 13064 | 3366 |
 | otf/SuharNerdSahafaHeadline-MediumItalic.otf | 13616 | 13064 | 3373 |
 | otf/SuharNerdSahafaHeadline-Regular.otf | 13616 | 13064 | 3354 |
@@ -7782,175 +7815,175 @@ Produced by `tools/validate.py` from the compiled files in `dist/`. Shaping uses
 | otf/SuharSahafa-Light.otf | 3021 | 2469 | 589 |
 | otf/SuharSahafa-LightItalic.otf | 3021 | 2469 | 603 |
 | otf/SuharSahafa-Medium.otf | 3021 | 2469 | 599 |
-| otf/SuharSahafa-MediumItalic.otf | 3021 | 2469 | 608 |
+| otf/SuharSahafa-MediumItalic.otf | 3021 | 2469 | 609 |
 | otf/SuharSahafa-Regular.otf | 3021 | 2469 | 592 |
-| otf/SuharSahafa-SemiBold.otf | 3021 | 2469 | 607 |
+| otf/SuharSahafa-SemiBold.otf | 3021 | 2469 | 608 |
 | otf/SuharSahafa-SemiBoldItalic.otf | 3021 | 2469 | 611 |
-| otf/SuharSahafaCaption-Bold.otf | 3021 | 2469 | 649 |
-| otf/SuharSahafaCaption-BoldItalic.otf | 3021 | 2469 | 637 |
+| otf/SuharSahafaCaption-Bold.otf | 3021 | 2469 | 650 |
+| otf/SuharSahafaCaption-BoldItalic.otf | 3021 | 2469 | 638 |
 | otf/SuharSahafaCaption-Italic.otf | 3021 | 2469 | 621 |
 | otf/SuharSahafaCaption-Medium.otf | 3021 | 2469 | 621 |
 | otf/SuharSahafaCaption-MediumItalic.otf | 3021 | 2469 | 625 |
-| otf/SuharSahafaCaption-Regular.otf | 3021 | 2469 | 611 |
+| otf/SuharSahafaCaption-Regular.otf | 3021 | 2469 | 610 |
 | otf/SuharSahafaCaption-SemiBold.otf | 3021 | 2469 | 634 |
 | otf/SuharSahafaCaption-SemiBoldItalic.otf | 3021 | 2469 | 634 |
 | otf/SuharSahafaHeadline-Black.otf | 3021 | 2469 | 651 |
 | otf/SuharSahafaHeadline-BlackItalic.otf | 3021 | 2469 | 646 |
 | otf/SuharSahafaHeadline-Bold.otf | 3021 | 2469 | 643 |
-| otf/SuharSahafaHeadline-BoldItalic.otf | 3021 | 2469 | 641 |
-| otf/SuharSahafaHeadline-ExtraBold.otf | 3021 | 2469 | 652 |
+| otf/SuharSahafaHeadline-BoldItalic.otf | 3021 | 2469 | 642 |
+| otf/SuharSahafaHeadline-ExtraBold.otf | 3021 | 2469 | 653 |
 | otf/SuharSahafaHeadline-ExtraBoldItalic.otf | 3021 | 2469 | 651 |
 | otf/SuharSahafaHeadline-Italic.otf | 3021 | 2469 | 633 |
 | otf/SuharSahafaHeadline-Light.otf | 3021 | 2469 | 616 |
 | otf/SuharSahafaHeadline-LightItalic.otf | 3021 | 2469 | 623 |
 | otf/SuharSahafaHeadline-Medium.otf | 3021 | 2469 | 639 |
-| otf/SuharSahafaHeadline-MediumItalic.otf | 3021 | 2469 | 645 |
+| otf/SuharSahafaHeadline-MediumItalic.otf | 3021 | 2469 | 646 |
 | otf/SuharSahafaHeadline-Regular.otf | 3021 | 2469 | 627 |
 | otf/SuharSahafaHeadline-SemiBold.otf | 3021 | 2469 | 650 |
 | otf/SuharSahafaHeadline-SemiBoldItalic.otf | 3021 | 2469 | 644 |
 | otf/SuharTypewriter-Bold.otf | 3021 | 2469 | 666 |
 | otf/SuharTypewriter-BoldItalic.otf | 3021 | 2469 | 661 |
-| otf/SuharTypewriter-Italic.otf | 3021 | 2469 | 640 |
+| otf/SuharTypewriter-Italic.otf | 3021 | 2469 | 639 |
 | otf/SuharTypewriter-Regular.otf | 3021 | 2469 | 629 |
-| ttf/Suhar-Black.ttf | 3021 | 2469 | 536 |
-| ttf/Suhar-BlackItalic.ttf | 3021 | 2469 | 529 |
-| ttf/Suhar-Bold.ttf | 3021 | 2469 | 534 |
-| ttf/Suhar-BoldItalic.ttf | 3021 | 2469 | 538 |
+| ttf/Suhar-Black.ttf | 3021 | 2469 | 537 |
+| ttf/Suhar-BlackItalic.ttf | 3021 | 2469 | 530 |
+| ttf/Suhar-Bold.ttf | 3021 | 2469 | 535 |
+| ttf/Suhar-BoldItalic.ttf | 3021 | 2469 | 539 |
 | ttf/Suhar-ExtraBold.ttf | 3021 | 2469 | 537 |
-| ttf/Suhar-ExtraBoldItalic.ttf | 3021 | 2469 | 525 |
+| ttf/Suhar-ExtraBoldItalic.ttf | 3021 | 2469 | 526 |
 | ttf/Suhar-Italic.ttf | 3021 | 2469 | 516 |
-| ttf/Suhar-Light.ttf | 3021 | 2469 | 512 |
+| ttf/Suhar-Light.ttf | 3021 | 2469 | 513 |
 | ttf/Suhar-LightItalic.ttf | 3021 | 2469 | 520 |
-| ttf/Suhar-Medium.ttf | 3021 | 2469 | 522 |
-| ttf/Suhar-MediumItalic.ttf | 3021 | 2469 | 513 |
+| ttf/Suhar-Medium.ttf | 3021 | 2469 | 523 |
+| ttf/Suhar-MediumItalic.ttf | 3021 | 2469 | 514 |
 | ttf/Suhar-Regular.ttf | 3021 | 2469 | 511 |
 | ttf/Suhar-SemiBold.ttf | 3021 | 2469 | 538 |
-| ttf/Suhar-SemiBoldItalic.ttf | 3021 | 2469 | 520 |
-| ttf/SuharCondensed-Bold.ttf | 3021 | 2469 | 513 |
+| ttf/Suhar-SemiBoldItalic.ttf | 3021 | 2469 | 521 |
+| ttf/SuharCondensed-Bold.ttf | 3021 | 2469 | 514 |
 | ttf/SuharCondensed-BoldItalic.ttf | 3021 | 2469 | 515 |
 | ttf/SuharCondensed-ExtraBold.ttf | 3021 | 2469 | 515 |
 | ttf/SuharCondensed-ExtraBoldItalic.ttf | 3021 | 2469 | 509 |
-| ttf/SuharCondensed-Italic.ttf | 3021 | 2469 | 494 |
-| ttf/SuharCondensed-Light.ttf | 3021 | 2469 | 496 |
+| ttf/SuharCondensed-Italic.ttf | 3021 | 2469 | 495 |
+| ttf/SuharCondensed-Light.ttf | 3021 | 2469 | 497 |
 | ttf/SuharCondensed-LightItalic.ttf | 3021 | 2469 | 501 |
-| ttf/SuharCondensed-Medium.ttf | 3021 | 2469 | 503 |
-| ttf/SuharCondensed-MediumItalic.ttf | 3021 | 2469 | 503 |
+| ttf/SuharCondensed-Medium.ttf | 3021 | 2469 | 504 |
+| ttf/SuharCondensed-MediumItalic.ttf | 3021 | 2469 | 504 |
 | ttf/SuharCondensed-Regular.ttf | 3021 | 2469 | 496 |
 | ttf/SuharCondensed-SemiBold.ttf | 3021 | 2469 | 509 |
-| ttf/SuharCondensed-SemiBoldItalic.ttf | 3021 | 2469 | 505 |
-| ttf/SuharMono-Bold.ttf | 3037 | 2469 | 402 |
-| ttf/SuharMono-BoldItalic.ttf | 3037 | 2469 | 408 |
-| ttf/SuharMono-ExtraBold.ttf | 3037 | 2469 | 403 |
+| ttf/SuharCondensed-SemiBoldItalic.ttf | 3021 | 2469 | 506 |
+| ttf/SuharMono-Bold.ttf | 3037 | 2469 | 403 |
+| ttf/SuharMono-BoldItalic.ttf | 3037 | 2469 | 409 |
+| ttf/SuharMono-ExtraBold.ttf | 3037 | 2469 | 404 |
 | ttf/SuharMono-ExtraBoldItalic.ttf | 3037 | 2469 | 409 |
 | ttf/SuharMono-Italic.ttf | 3037 | 2469 | 395 |
-| ttf/SuharMono-Light.ttf | 3037 | 2469 | 397 |
+| ttf/SuharMono-Light.ttf | 3037 | 2469 | 398 |
 | ttf/SuharMono-LightItalic.ttf | 3037 | 2469 | 402 |
-| ttf/SuharMono-Medium.ttf | 3037 | 2469 | 394 |
-| ttf/SuharMono-MediumItalic.ttf | 3037 | 2469 | 400 |
+| ttf/SuharMono-Medium.ttf | 3037 | 2469 | 395 |
+| ttf/SuharMono-MediumItalic.ttf | 3037 | 2469 | 401 |
 | ttf/SuharMono-Regular.ttf | 3037 | 2469 | 391 |
 | ttf/SuharMono-SemiBold.ttf | 3037 | 2469 | 399 |
 | ttf/SuharMono-SemiBoldItalic.ttf | 3037 | 2469 | 402 |
-| ttf/SuharNaskh-Bold.ttf | 3021 | 2469 | 539 |
-| ttf/SuharNaskh-BoldItalic.ttf | 3021 | 2469 | 529 |
-| ttf/SuharNaskh-ExtraBold.ttf | 3021 | 2469 | 540 |
-| ttf/SuharNaskh-ExtraBoldItalic.ttf | 3021 | 2469 | 527 |
-| ttf/SuharNaskh-Italic.ttf | 3021 | 2469 | 529 |
+| ttf/SuharNaskh-Bold.ttf | 3021 | 2469 | 540 |
+| ttf/SuharNaskh-BoldItalic.ttf | 3021 | 2469 | 530 |
+| ttf/SuharNaskh-ExtraBold.ttf | 3021 | 2469 | 541 |
+| ttf/SuharNaskh-ExtraBoldItalic.ttf | 3021 | 2469 | 528 |
+| ttf/SuharNaskh-Italic.ttf | 3021 | 2469 | 530 |
 | ttf/SuharNaskh-Light.ttf | 3021 | 2469 | 526 |
 | ttf/SuharNaskh-LightItalic.ttf | 3021 | 2469 | 525 |
-| ttf/SuharNaskh-Medium.ttf | 3021 | 2469 | 533 |
-| ttf/SuharNaskh-MediumItalic.ttf | 3021 | 2469 | 525 |
+| ttf/SuharNaskh-Medium.ttf | 3021 | 2469 | 534 |
+| ttf/SuharNaskh-MediumItalic.ttf | 3021 | 2469 | 526 |
 | ttf/SuharNaskh-Regular.ttf | 3021 | 2469 | 529 |
 | ttf/SuharNaskh-SemiBold.ttf | 3021 | 2469 | 543 |
 | ttf/SuharNaskh-SemiBoldItalic.ttf | 3021 | 2469 | 534 |
-| ttf/SuharNaskhCaption-Bold.ttf | 3021 | 2469 | 568 |
+| ttf/SuharNaskhCaption-Bold.ttf | 3021 | 2469 | 569 |
 | ttf/SuharNaskhCaption-BoldItalic.ttf | 3021 | 2469 | 559 |
 | ttf/SuharNaskhCaption-Italic.ttf | 3021 | 2469 | 540 |
 | ttf/SuharNaskhCaption-Medium.ttf | 3021 | 2469 | 560 |
-| ttf/SuharNaskhCaption-MediumItalic.ttf | 3021 | 2469 | 551 |
+| ttf/SuharNaskhCaption-MediumItalic.ttf | 3021 | 2469 | 552 |
 | ttf/SuharNaskhCaption-Regular.ttf | 3021 | 2469 | 543 |
-| ttf/SuharNaskhCaption-SemiBold.ttf | 3021 | 2469 | 563 |
-| ttf/SuharNaskhCaption-SemiBoldItalic.ttf | 3021 | 2469 | 549 |
-| ttf/SuharNaskhDisplay-Bold.ttf | 3021 | 2469 | 596 |
-| ttf/SuharNaskhDisplay-Medium.ttf | 3021 | 2469 | 590 |
+| ttf/SuharNaskhCaption-SemiBold.ttf | 3021 | 2469 | 564 |
+| ttf/SuharNaskhCaption-SemiBoldItalic.ttf | 3021 | 2469 | 550 |
+| ttf/SuharNaskhDisplay-Bold.ttf | 3021 | 2469 | 597 |
+| ttf/SuharNaskhDisplay-Medium.ttf | 3021 | 2469 | 591 |
 | ttf/SuharNaskhDisplay-Regular.ttf | 3021 | 2469 | 588 |
 | ttf/SuharNaskhDisplay-SemiBold.ttf | 3021 | 2469 | 570 |
-| ttf/SuharNerd-Black.ttf | 13616 | 13064 | 2789 |
-| ttf/SuharNerd-BlackItalic.ttf | 13616 | 13064 | 2782 |
-| ttf/SuharNerd-Bold.ttf | 13616 | 13064 | 2787 |
-| ttf/SuharNerd-BoldItalic.ttf | 13616 | 13064 | 2791 |
+| ttf/SuharNerd-Black.ttf | 13616 | 13064 | 2790 |
+| ttf/SuharNerd-BlackItalic.ttf | 13616 | 13064 | 2783 |
+| ttf/SuharNerd-Bold.ttf | 13616 | 13064 | 2788 |
+| ttf/SuharNerd-BoldItalic.ttf | 13616 | 13064 | 2792 |
 | ttf/SuharNerd-ExtraBold.ttf | 13616 | 13064 | 2790 |
 | ttf/SuharNerd-ExtraBoldItalic.ttf | 13616 | 13064 | 2779 |
 | ttf/SuharNerd-Italic.ttf | 13616 | 13064 | 2769 |
-| ttf/SuharNerd-Light.ttf | 13616 | 13064 | 2765 |
+| ttf/SuharNerd-Light.ttf | 13616 | 13064 | 2766 |
 | ttf/SuharNerd-LightItalic.ttf | 13616 | 13064 | 2773 |
-| ttf/SuharNerd-Medium.ttf | 13616 | 13064 | 2775 |
-| ttf/SuharNerd-MediumItalic.ttf | 13616 | 13064 | 2766 |
-| ttf/SuharNerd-Regular.ttf | 13616 | 13064 | 2764 |
+| ttf/SuharNerd-Medium.ttf | 13616 | 13064 | 2776 |
+| ttf/SuharNerd-MediumItalic.ttf | 13616 | 13064 | 2767 |
+| ttf/SuharNerd-Regular.ttf | 13616 | 13064 | 2765 |
 | ttf/SuharNerd-SemiBold.ttf | 13616 | 13064 | 2791 |
-| ttf/SuharNerd-SemiBoldItalic.ttf | 13616 | 13064 | 2773 |
-| ttf/SuharNerdCondensed-Bold.ttf | 13616 | 13064 | 2766 |
+| ttf/SuharNerd-SemiBoldItalic.ttf | 13616 | 13064 | 2774 |
+| ttf/SuharNerdCondensed-Bold.ttf | 13616 | 13064 | 2767 |
 | ttf/SuharNerdCondensed-BoldItalic.ttf | 13616 | 13064 | 2768 |
 | ttf/SuharNerdCondensed-ExtraBold.ttf | 13616 | 13064 | 2768 |
 | ttf/SuharNerdCondensed-ExtraBoldItalic.ttf | 13616 | 13064 | 2762 |
 | ttf/SuharNerdCondensed-Italic.ttf | 13616 | 13064 | 2748 |
-| ttf/SuharNerdCondensed-Light.ttf | 13616 | 13064 | 2749 |
+| ttf/SuharNerdCondensed-Light.ttf | 13616 | 13064 | 2750 |
 | ttf/SuharNerdCondensed-LightItalic.ttf | 13616 | 13064 | 2754 |
-| ttf/SuharNerdCondensed-Medium.ttf | 13616 | 13064 | 2756 |
-| ttf/SuharNerdCondensed-MediumItalic.ttf | 13616 | 13064 | 2756 |
+| ttf/SuharNerdCondensed-Medium.ttf | 13616 | 13064 | 2757 |
+| ttf/SuharNerdCondensed-MediumItalic.ttf | 13616 | 13064 | 2757 |
 | ttf/SuharNerdCondensed-Regular.ttf | 13616 | 13064 | 2749 |
 | ttf/SuharNerdCondensed-SemiBold.ttf | 13616 | 13064 | 2762 |
-| ttf/SuharNerdCondensed-SemiBoldItalic.ttf | 13616 | 13064 | 2758 |
+| ttf/SuharNerdCondensed-SemiBoldItalic.ttf | 13616 | 13064 | 2759 |
 | ttf/SuharNerdMono-Bold.ttf | 13632 | 13064 | 2699 |
-| ttf/SuharNerdMono-BoldItalic.ttf | 13632 | 13064 | 2705 |
-| ttf/SuharNerdMono-ExtraBold.ttf | 13632 | 13064 | 2700 |
+| ttf/SuharNerdMono-BoldItalic.ttf | 13632 | 13064 | 2706 |
+| ttf/SuharNerdMono-ExtraBold.ttf | 13632 | 13064 | 2701 |
 | ttf/SuharNerdMono-ExtraBoldItalic.ttf | 13632 | 13064 | 2706 |
 | ttf/SuharNerdMono-Italic.ttf | 13632 | 13064 | 2692 |
-| ttf/SuharNerdMono-Light.ttf | 13632 | 13064 | 2694 |
+| ttf/SuharNerdMono-Light.ttf | 13632 | 13064 | 2695 |
 | ttf/SuharNerdMono-LightItalic.ttf | 13632 | 13064 | 2699 |
 | ttf/SuharNerdMono-Medium.ttf | 13632 | 13064 | 2691 |
-| ttf/SuharNerdMono-MediumItalic.ttf | 13632 | 13064 | 2697 |
+| ttf/SuharNerdMono-MediumItalic.ttf | 13632 | 13064 | 2698 |
 | ttf/SuharNerdMono-Regular.ttf | 13632 | 13064 | 2688 |
 | ttf/SuharNerdMono-SemiBold.ttf | 13632 | 13064 | 2696 |
 | ttf/SuharNerdMono-SemiBoldItalic.ttf | 13632 | 13064 | 2699 |
 | ttf/SuharNerdSahafa-Bold.ttf | 13616 | 13064 | 2811 |
 | ttf/SuharNerdSahafa-BoldItalic.ttf | 13616 | 13064 | 2804 |
-| ttf/SuharNerdSahafa-ExtraBold.ttf | 13616 | 13064 | 2815 |
-| ttf/SuharNerdSahafa-ExtraBoldItalic.ttf | 13616 | 13064 | 2808 |
+| ttf/SuharNerdSahafa-ExtraBold.ttf | 13616 | 13064 | 2816 |
+| ttf/SuharNerdSahafa-ExtraBoldItalic.ttf | 13616 | 13064 | 2809 |
 | ttf/SuharNerdSahafa-Italic.ttf | 13616 | 13064 | 2802 |
 | ttf/SuharNerdSahafa-Light.ttf | 13616 | 13064 | 2789 |
 | ttf/SuharNerdSahafa-LightItalic.ttf | 13616 | 13064 | 2798 |
 | ttf/SuharNerdSahafa-Medium.ttf | 13616 | 13064 | 2794 |
-| ttf/SuharNerdSahafa-MediumItalic.ttf | 13616 | 13064 | 2800 |
+| ttf/SuharNerdSahafa-MediumItalic.ttf | 13616 | 13064 | 2801 |
 | ttf/SuharNerdSahafa-Regular.ttf | 13616 | 13064 | 2794 |
 | ttf/SuharNerdSahafa-SemiBold.ttf | 13616 | 13064 | 2802 |
 | ttf/SuharNerdSahafa-SemiBoldItalic.ttf | 13616 | 13064 | 2801 |
-| ttf/SuharNerdSahafaHeadline-Black.ttf | 13616 | 13064 | 2836 |
-| ttf/SuharNerdSahafaHeadline-BlackItalic.ttf | 13616 | 13064 | 2848 |
+| ttf/SuharNerdSahafaHeadline-Black.ttf | 13616 | 13064 | 2837 |
+| ttf/SuharNerdSahafaHeadline-BlackItalic.ttf | 13616 | 13064 | 2849 |
 | ttf/SuharNerdSahafaHeadline-Bold.ttf | 13616 | 13064 | 2838 |
-| ttf/SuharNerdSahafaHeadline-BoldItalic.ttf | 13616 | 13064 | 2846 |
+| ttf/SuharNerdSahafaHeadline-BoldItalic.ttf | 13616 | 13064 | 2847 |
 | ttf/SuharNerdSahafaHeadline-ExtraBold.ttf | 13616 | 13064 | 2850 |
-| ttf/SuharNerdSahafaHeadline-ExtraBoldItalic.ttf | 13616 | 13064 | 2863 |
-| ttf/SuharNerdSahafaHeadline-Italic.ttf | 13616 | 13064 | 2834 |
+| ttf/SuharNerdSahafaHeadline-ExtraBoldItalic.ttf | 13616 | 13064 | 2864 |
+| ttf/SuharNerdSahafaHeadline-Italic.ttf | 13616 | 13064 | 2835 |
 | ttf/SuharNerdSahafaHeadline-Light.ttf | 13616 | 13064 | 2823 |
 | ttf/SuharNerdSahafaHeadline-LightItalic.ttf | 13616 | 13064 | 2823 |
-| ttf/SuharNerdSahafaHeadline-Medium.ttf | 13616 | 13064 | 2832 |
+| ttf/SuharNerdSahafaHeadline-Medium.ttf | 13616 | 13064 | 2833 |
 | ttf/SuharNerdSahafaHeadline-MediumItalic.ttf | 13616 | 13064 | 2845 |
 | ttf/SuharNerdSahafaHeadline-Regular.ttf | 13616 | 13064 | 2828 |
 | ttf/SuharNerdSahafaHeadline-SemiBold.ttf | 13616 | 13064 | 2838 |
 | ttf/SuharNerdSahafaHeadline-SemiBoldItalic.ttf | 13616 | 13064 | 2840 |
 | ttf/SuharSahafa-Bold.ttf | 3021 | 2469 | 558 |
 | ttf/SuharSahafa-BoldItalic.ttf | 3021 | 2469 | 551 |
-| ttf/SuharSahafa-ExtraBold.ttf | 3021 | 2469 | 562 |
-| ttf/SuharSahafa-ExtraBoldItalic.ttf | 3021 | 2469 | 555 |
+| ttf/SuharSahafa-ExtraBold.ttf | 3021 | 2469 | 563 |
+| ttf/SuharSahafa-ExtraBoldItalic.ttf | 3021 | 2469 | 556 |
 | ttf/SuharSahafa-Italic.ttf | 3021 | 2469 | 549 |
 | ttf/SuharSahafa-Light.ttf | 3021 | 2469 | 536 |
-| ttf/SuharSahafa-LightItalic.ttf | 3021 | 2469 | 544 |
+| ttf/SuharSahafa-LightItalic.ttf | 3021 | 2469 | 545 |
 | ttf/SuharSahafa-Medium.ttf | 3021 | 2469 | 541 |
 | ttf/SuharSahafa-MediumItalic.ttf | 3021 | 2469 | 547 |
 | ttf/SuharSahafa-Regular.ttf | 3021 | 2469 | 541 |
 | ttf/SuharSahafa-SemiBold.ttf | 3021 | 2469 | 549 |
-| ttf/SuharSahafa-SemiBoldItalic.ttf | 3021 | 2469 | 547 |
-| ttf/SuharSahafaCaption-Bold.ttf | 3021 | 2469 | 584 |
+| ttf/SuharSahafa-SemiBoldItalic.ttf | 3021 | 2469 | 548 |
+| ttf/SuharSahafaCaption-Bold.ttf | 3021 | 2469 | 585 |
 | ttf/SuharSahafaCaption-BoldItalic.ttf | 3021 | 2469 | 572 |
 | ttf/SuharSahafaCaption-Italic.ttf | 3021 | 2469 | 560 |
 | ttf/SuharSahafaCaption-Medium.ttf | 3021 | 2469 | 563 |
@@ -7958,37 +7991,37 @@ Produced by `tools/validate.py` from the compiled files in `dist/`. Shaping uses
 | ttf/SuharSahafaCaption-Regular.ttf | 3021 | 2469 | 553 |
 | ttf/SuharSahafaCaption-SemiBold.ttf | 3021 | 2469 | 571 |
 | ttf/SuharSahafaCaption-SemiBoldItalic.ttf | 3021 | 2469 | 572 |
-| ttf/SuharSahafaHeadline-Black.ttf | 3021 | 2469 | 583 |
-| ttf/SuharSahafaHeadline-BlackItalic.ttf | 3021 | 2469 | 595 |
+| ttf/SuharSahafaHeadline-Black.ttf | 3021 | 2469 | 584 |
+| ttf/SuharSahafaHeadline-BlackItalic.ttf | 3021 | 2469 | 596 |
 | ttf/SuharSahafaHeadline-Bold.ttf | 3021 | 2469 | 585 |
-| ttf/SuharSahafaHeadline-BoldItalic.ttf | 3021 | 2469 | 593 |
+| ttf/SuharSahafaHeadline-BoldItalic.ttf | 3021 | 2469 | 594 |
 | ttf/SuharSahafaHeadline-ExtraBold.ttf | 3021 | 2469 | 597 |
-| ttf/SuharSahafaHeadline-ExtraBoldItalic.ttf | 3021 | 2469 | 610 |
-| ttf/SuharSahafaHeadline-Italic.ttf | 3021 | 2469 | 581 |
+| ttf/SuharSahafaHeadline-ExtraBoldItalic.ttf | 3021 | 2469 | 611 |
+| ttf/SuharSahafaHeadline-Italic.ttf | 3021 | 2469 | 582 |
 | ttf/SuharSahafaHeadline-Light.ttf | 3021 | 2469 | 570 |
 | ttf/SuharSahafaHeadline-LightItalic.ttf | 3021 | 2469 | 570 |
-| ttf/SuharSahafaHeadline-Medium.ttf | 3021 | 2469 | 579 |
-| ttf/SuharSahafaHeadline-MediumItalic.ttf | 3021 | 2469 | 591 |
+| ttf/SuharSahafaHeadline-Medium.ttf | 3021 | 2469 | 580 |
+| ttf/SuharSahafaHeadline-MediumItalic.ttf | 3021 | 2469 | 592 |
 | ttf/SuharSahafaHeadline-Regular.ttf | 3021 | 2469 | 575 |
 | ttf/SuharSahafaHeadline-SemiBold.ttf | 3021 | 2469 | 585 |
 | ttf/SuharSahafaHeadline-SemiBoldItalic.ttf | 3021 | 2469 | 587 |
-| ttf/SuharTypewriter-Bold.ttf | 3021 | 2469 | 615 |
-| ttf/SuharTypewriter-BoldItalic.ttf | 3021 | 2469 | 595 |
+| ttf/SuharTypewriter-Bold.ttf | 3021 | 2469 | 616 |
+| ttf/SuharTypewriter-BoldItalic.ttf | 3021 | 2469 | 596 |
 | ttf/SuharTypewriter-Italic.ttf | 3021 | 2469 | 575 |
 | ttf/SuharTypewriter-Regular.ttf | 3021 | 2469 | 584 |
-| variable/Suhar-Italic[opsz,wght].ttf | 3021 | 2469 | 1264 |
-| variable/SuharCondensed-Italic[opsz,wght].ttf | 3021 | 2469 | 1227 |
-| variable/SuharCondensed[opsz,wght].ttf | 3021 | 2469 | 1203 |
-| variable/SuharMono-Italic[wght].ttf | 3037 | 2469 | 454 |
+| variable/Suhar-Italic[opsz,wght].ttf | 3021 | 2469 | 1265 |
+| variable/SuharCondensed-Italic[opsz,wght].ttf | 3021 | 2469 | 1228 |
+| variable/SuharCondensed[opsz,wght].ttf | 3021 | 2469 | 1204 |
+| variable/SuharMono-Italic[wght].ttf | 3037 | 2469 | 455 |
 | variable/SuharMono[wght].ttf | 3037 | 2469 | 443 |
-| variable/SuharNaskh-Italic[CTRS,GRAD,TATW,opsz,wght].ttf | 3021 | 2469 | 2024 |
+| variable/SuharNaskh-Italic[CTRS,GRAD,TATW,opsz,wght].ttf | 3021 | 2469 | 2025 |
 | variable/SuharNaskhDisplay[wght].ttf | 3021 | 2469 | 689 |
-| variable/SuharNaskh[CTRS,GRAD,TATW,opsz,wght].ttf | 3021 | 2469 | 1993 |
-| variable/SuharSahafa-Italic[CTRS,GRAD,TATW,opsz,wght].ttf | 3021 | 2469 | 2350 |
-| variable/SuharSahafaHeadline-Italic[CTRS,GRAD,TATW,opsz,wght].ttf | 3021 | 2469 | 2348 |
-| variable/SuharSahafaHeadline[CTRS,GRAD,TATW,opsz,wght].ttf | 3021 | 2469 | 2298 |
-| variable/SuharSahafa[CTRS,GRAD,TATW,opsz,wght].ttf | 3021 | 2469 | 2275 |
-| variable/Suhar[opsz,wght].ttf | 3021 | 2469 | 1231 |
+| variable/SuharNaskh[CTRS,GRAD,TATW,opsz,wght].ttf | 3021 | 2469 | 1994 |
+| variable/SuharSahafa-Italic[CTRS,GRAD,TATW,opsz,wght].ttf | 3021 | 2469 | 2351 |
+| variable/SuharSahafaHeadline-Italic[CTRS,GRAD,TATW,opsz,wght].ttf | 3021 | 2469 | 2349 |
+| variable/SuharSahafaHeadline[CTRS,GRAD,TATW,opsz,wght].ttf | 3021 | 2469 | 2300 |
+| variable/SuharSahafa[CTRS,GRAD,TATW,opsz,wght].ttf | 3021 | 2469 | 2276 |
+| variable/Suhar[opsz,wght].ttf | 3021 | 2469 | 1232 |
 
 ## Proof images (reports/img)
 

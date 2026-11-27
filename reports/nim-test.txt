@@ -1,1 +1,1 @@
-ok sans=128 arabic=92 bold=131 mono10=72 (builtin=124)
+ok app=92 sans=128 arabic=92 bold=131 mono10=72 (builtin=124)

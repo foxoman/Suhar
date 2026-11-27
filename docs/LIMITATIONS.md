@@ -118,6 +118,23 @@ I would rather list these here than have you find them in production.
 - The neighbour forms are judged by me from renderings. They are easy to switch off (`font-feature-settings:
   "calt" 0`).
 
+## App fonts and Retro Nim UI
+
+- The app fonts are tested in Retro Nim UI on a Linux virtual display at its default size, and their shaping is
+  compared with the release fonts in HarfBuzz. They have **not been run on a phone**: I have not built or
+  installed an Android or iOS app with them.
+- They have no hinting. On Windows, in programs that use hinting, the release fonts will look crisper in small
+  sizes; the app fonts are for programs that draw their own text.
+- At the toolkit's default size (about 11 pixels) Suhar is readable but small for Arabic; that is a choice of
+  size in the app, not something the font can change.
+- Fully vowelled Arabic is taller than the line box by about a third of an em above and a quarter below, in
+  every Suhar font. An interface row that clips its text will cut such marks unless it is made taller.
+- `SuharAppLite` covers Arabic and Western European languages only. Text in another language falls back to the
+  toolkit's built-in font, which looks different.
+- Retro Nim UI decides whether a font has Arabic by its Arabic presentation forms, so the app fonts keep them.
+- `setRtlInterface` makes mixed lines read right to left; in my test it did not mirror the layout of the
+  example app. I did not look further into the toolkit.
+
 ## Pixel fonts
 
 - Each pixel font is right at its own size and at whole multiples of it, nowhere else. No italics.

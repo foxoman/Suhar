@@ -255,3 +255,15 @@ stretches the zone above it; dots are moved as a whole, so they keep their shape
   grades, one tatweel, two contrasts). 70 to 94 glyphs keep their ink traps across all sixteen.
 - **Stylistic sets** are extra skeletons (`ainr`, `alefc`, `jeemh`) registered for every letter that uses the
   default one, so dotted and hamza forms get them too.
+
+## App fonts (2.8)
+
+`tools/make_app_fonts.py` subsets the release fonts with fontTools: all characters except box drawing, block
+elements, braille, Powerline and the legacy computing symbols; the features `ccmp locl init medi fina rlig liga calt
+kern mark mkmk curs dist tnum pnum`; no hinting and no glyph names. Advances, kerning and mark positions are
+untouched, and the validation compares them with the release fonts glyph by glyph.
+
+**Marks and the baseline.** A combining mark used to be drawn around its own origin, so in the heavier weights its
+outline dipped a few units below it. After pass 1 of `build_glyphs` every mark is now moved, with its anchors, until
+it clears its origin by 8 units. Composites and mark positioning are computed afterwards, so nothing moves on the
+page.

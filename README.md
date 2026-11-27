@@ -9,7 +9,7 @@ stories sail from. I started it as the interface font of [Retro Nim UI](https://
 and of my terminal editor ned, and it grew into a family for screens, bilingual signage and print.
 
 - Designer: Sultan Al Isaiee ([@foxoman](https://github.com/foxoman), <https://www.foxoman.net>)
-- Version 2.7 · SIL Open Font License 1.1
+- Version 2.8 · SIL Open Font License 1.1
 - Scripts: Latin (extended, Vietnamese, transliteration), Arabic (Arabic, Persian, Urdu, Kurdish, Pashto,
   Sindhi, Uyghur, Jawi, Quranic marks), Greek (monotonic and polytonic), Cyrillic, Hebrew with points
 - 2,469 characters in Suhar, 13,064 in the Nerd builds
@@ -114,6 +114,30 @@ text. `docs/images/sahafa-compare.png` shows one paragraph in Sahafa, Noto Naskh
 - **Print proof.** [`docs/Suhar-print-proof.pdf`](docs/Suhar-print-proof.pdf) sets every family from 6 to 48 point,
   newspaper columns, the optical sizes, the grades, reversed text and the ink traps, with a list of what to
   look for. Print it at 100 % on your own printer; that is the test I cannot run.
+
+### In an app (Retro Nim UI)
+
+For a program that embeds its font, and above all for a phone app, use the app fonts in `nim/fonts/app/`. They are
+the release fonts with the same letters, spacing and kerning, without hinting (phone screens and Retro Nim UI do
+not use it), without box drawing and terminal symbols, and with only the layout features an interface needs.
+
+| | contents | size per style |
+|---|---|---:|
+| `SuharApp` | Suhar, every language | about 255 KB (release font: about 510 KB) |
+| `SuharAppLite` | Suhar, Arabic and Western European Latin | about 80 KB |
+| `SuharAppRead` | Suhar Sahafa, every language, for long reading text | about 270 KB |
+
+```nim
+import retroui, suhar
+useSuharApp()            # the app's default font; build with -d:suharLite for the small one
+# useSuharRead()         # on a screen of long reading text
+```
+
+`nim/example_app.nim` is a two-language example. An app that will be translated should use `SuharApp`: the
+Lite fonts have no Greek, Cyrillic, Persian or Urdu letters, and the toolkit would draw those in its own font.
+The digits are of one width, so prices and counters do not move. Plain Arabic and accented Latin fit the line
+box; fully vowelled Arabic needs taller rows (`SuharVowelledAscent`, `SuharVowelledDescent`, and
+`reports/app-fonts.md`).
 
 ### Web, npm and specimens
 
@@ -228,7 +252,7 @@ python tools/make_docs.py                             # coverage tables, specime
 
 ## Checked, and not checked
 
-Each release runs 3,113 automatic checks on the built files: naming, metrics, hinting, shaping in every
+Each release runs 3,140 automatic checks on the built files: naming, metrics, hinting, shaping in every
 script, mark placement, kerning, the space between words in every style (`reports/word-spacing.md`), the Mono grid, the pixel fonts, the variable fonts, and loading in Retro Nim
 UI. The report is `reports/validation.md`.
 

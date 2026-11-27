@@ -1,5 +1,5 @@
 {
- "passed": 3113,
+ "passed": 3140,
  "failed": 0,
  "results": [
   [
@@ -17304,25 +17304,25 @@
    "sahafa",
    "SuharSahafa[CTRS,GRAD,TATW,opsz,wght].ttf: ink traps in the glyphs whose sixteen masters match (more than 40)",
    true,
-   "94"
+   "95"
   ],
   [
    "sahafa",
    "SuharSahafa-Italic[CTRS,GRAD,TATW,opsz,wght].ttf: ink traps in the glyphs whose sixteen masters match (more than 40)",
    true,
-   "73"
+   "74"
   ],
   [
    "sahafa",
    "SuharSahafaHeadline[CTRS,GRAD,TATW,opsz,wght].ttf: ink traps in the glyphs whose sixteen masters match (more than 40)",
    true,
-   "80"
+   "81"
   ],
   [
    "sahafa",
    "SuharSahafaHeadline-Italic[CTRS,GRAD,TATW,opsz,wght].ttf: ink traps in the glyphs whose sixteen masters match (more than 40)",
    true,
-   "70"
+   "71"
   ],
   [
    "sahafa",
@@ -17640,7 +17640,7 @@
    "print",
    "print proof PDF written, with the fonts embedded",
    true,
-   "1238495"
+   "1238332"
   ],
   [
    "families",
@@ -17796,7 +17796,7 @@
    "release",
    "specimen PDF written",
    true,
-   "236999"
+   "236998"
   ],
   [
    "release",
@@ -18007,6 +18007,168 @@
    "Sahafa ExtraBold: the loop of sad is still open",
    true,
    "[31394, 261658]"
+  ],
+  [
+   "marks",
+   "Suhar-Bold: kasratan keeps its two strokes apart",
+   true,
+   "2"
+  ],
+  [
+   "marks",
+   "SuharNaskh-Bold: kasratan keeps its two strokes apart",
+   true,
+   "2"
+  ],
+  [
+   "marks",
+   "SuharSahafa-Bold: kasratan keeps its two strokes apart",
+   true,
+   "2"
+  ],
+  [
+   "marks",
+   "in every static font the Arabic vowel marks lie wholly above or wholly below their own origin (Retro Nim UI leaves out a mark that crosses it)",
+   true,
+   "[]"
+  ],
+  [
+   "marks",
+   "Bold: damma still sits at the same height over sad (its lowest point 440 to 520 above the baseline)",
+   true,
+   "475"
+  ],
+  [
+   "app fonts",
+   "SuharApp-Regular: under 300 KB, unhinted, every advance equal to the release font, Arabic presentation forms and UI icons present",
+   true,
+   "(255, True, 1929)"
+  ],
+  [
+   "app fonts",
+   "SuharApp-Bold: under 300 KB, unhinted, every advance equal to the release font, Arabic presentation forms and UI icons present",
+   true,
+   "(261, True, 1929)"
+  ],
+  [
+   "app fonts",
+   "SuharApp-Italic: under 300 KB, unhinted, every advance equal to the release font, Arabic presentation forms and UI icons present",
+   true,
+   "(262, True, 1929)"
+  ],
+  [
+   "app fonts",
+   "SuharApp-BoldItalic: under 300 KB, unhinted, every advance equal to the release font, Arabic presentation forms and UI icons present",
+   true,
+   "(266, True, 1929)"
+  ],
+  [
+   "app fonts",
+   "SuharAppLite-Regular: under 100 KB, unhinted, every advance equal to the release font, Arabic presentation forms and UI icons present",
+   true,
+   "(80, True, 644)"
+  ],
+  [
+   "app fonts",
+   "SuharAppLite-Bold: under 100 KB, unhinted, every advance equal to the release font, Arabic presentation forms and UI icons present",
+   true,
+   "(80, True, 644)"
+  ],
+  [
+   "app fonts",
+   "SuharAppLite-Italic: under 100 KB, unhinted, every advance equal to the release font, Arabic presentation forms and UI icons present",
+   true,
+   "(82, True, 644)"
+  ],
+  [
+   "app fonts",
+   "SuharAppLite-BoldItalic: under 100 KB, unhinted, every advance equal to the release font, Arabic presentation forms and UI icons present",
+   true,
+   "(83, True, 644)"
+  ],
+  [
+   "app fonts",
+   "SuharAppRead-Regular: under 320 KB, unhinted, every advance equal to the release font, Arabic presentation forms and UI icons present",
+   true,
+   "(270, True, 1929)"
+  ],
+  [
+   "app fonts",
+   "SuharAppRead-Bold: under 320 KB, unhinted, every advance equal to the release font, Arabic presentation forms and UI icons present",
+   true,
+   "(285, True, 1929)"
+  ],
+  [
+   "app fonts",
+   "SuharAppRead-Italic: under 320 KB, unhinted, every advance equal to the release font, Arabic presentation forms and UI icons present",
+   true,
+   "(273, True, 1929)"
+  ],
+  [
+   "app fonts",
+   "SuharAppRead-BoldItalic: under 320 KB, unhinted, every advance equal to the release font, Arabic presentation forms and UI icons present",
+   true,
+   "(280, True, 1929)"
+  ],
+  [
+   "app fonts",
+   "SuharApp: shapes \"مرحباً بكم في صُحار\" exactly as the release font does",
+   true,
+   ""
+  ],
+  [
+   "app fonts",
+   "SuharApp: shapes \"Total: 2.500 — 0123456789\" exactly as the release font does",
+   true,
+   ""
+  ],
+  [
+   "app fonts",
+   "SuharApp: shapes \"الاستعمالات المعلم في كال\" exactly as the release font does",
+   true,
+   ""
+  ],
+  [
+   "app fonts",
+   "SuharAppLite: shapes \"مرحباً بكم في صُحار\" exactly as the release font does",
+   true,
+   ""
+  ],
+  [
+   "app fonts",
+   "SuharAppLite: shapes \"Total: 2.500 — 0123456789\" exactly as the release font does",
+   true,
+   ""
+  ],
+  [
+   "app fonts",
+   "SuharAppLite: shapes \"الاستعمالات المعلم في كال\" exactly as the release font does",
+   true,
+   ""
+  ],
+  [
+   "app fonts",
+   "SuharAppRead: shapes \"مرحباً بكم في صُحار\" exactly as the release font does",
+   true,
+   ""
+  ],
+  [
+   "app fonts",
+   "SuharAppRead: shapes \"Total: 2.500 — 0123456789\" exactly as the release font does",
+   true,
+   ""
+  ],
+  [
+   "app fonts",
+   "SuharAppRead: shapes \"الاستعمالات المعلم في كال\" exactly as the release font does",
+   true,
+   ""
+  ],
+  [
+   "app fonts",
+   "SuharApp keeps every language (Greek, Cyrillic, Persian, Urdu); SuharAppLite does not",
+   true,
+   ""
   ],
   [
    "word space",
@@ -18698,7 +18860,7 @@
    "file": "otf/Suhar-Bold.otf",
    "glyphs": 3021,
    "codepoints": 2469,
-   "size_kb": 569
+   "size_kb": 568
   },
   {
    "file": "otf/Suhar-BoldItalic.otf",
@@ -18746,7 +18908,7 @@
    "file": "otf/Suhar-MediumItalic.otf",
    "glyphs": 3021,
    "codepoints": 2469,
-   "size_kb": 537
+   "size_kb": 538
   },
   {
    "file": "otf/Suhar-Regular.otf",
@@ -18788,7 +18950,7 @@
    "file": "otf/SuharCondensed-ExtraBoldItalic.otf",
    "glyphs": 3021,
    "codepoints": 2469,
-   "size_kb": 533
+   "size_kb": 534
   },
   {
    "file": "otf/SuharCondensed-Italic.otf",
@@ -18806,7 +18968,7 @@
    "file": "otf/SuharCondensed-LightItalic.otf",
    "glyphs": 3021,
    "codepoints": 2469,
-   "size_kb": 524
+   "size_kb": 525
   },
   {
    "file": "otf/SuharCondensed-Medium.otf",
@@ -18830,7 +18992,7 @@
    "file": "otf/SuharCondensed-SemiBold.otf",
    "glyphs": 3021,
    "codepoints": 2469,
-   "size_kb": 541
+   "size_kb": 542
   },
   {
    "file": "otf/SuharCondensed-SemiBoldItalic.otf",
@@ -18854,7 +19016,7 @@
    "file": "otf/SuharMono-ExtraBold.otf",
    "glyphs": 3037,
    "codepoints": 2469,
-   "size_kb": 440
+   "size_kb": 441
   },
   {
    "file": "otf/SuharMono-ExtraBoldItalic.otf",
@@ -18902,7 +19064,7 @@
    "file": "otf/SuharMono-SemiBold.otf",
    "glyphs": 3037,
    "codepoints": 2469,
-   "size_kb": 435
+   "size_kb": 436
   },
   {
    "file": "otf/SuharMono-SemiBoldItalic.otf",
@@ -18920,7 +19082,7 @@
    "file": "otf/SuharNaskh-BoldItalic.otf",
    "glyphs": 3021,
    "codepoints": 2469,
-   "size_kb": 551
+   "size_kb": 552
   },
   {
    "file": "otf/SuharNaskh-ExtraBold.otf",
@@ -18950,7 +19112,7 @@
    "file": "otf/SuharNaskh-LightItalic.otf",
    "glyphs": 3021,
    "codepoints": 2469,
-   "size_kb": 536
+   "size_kb": 537
   },
   {
    "file": "otf/SuharNaskh-Medium.otf",
@@ -18980,7 +19142,7 @@
    "file": "otf/SuharNaskh-SemiBoldItalic.otf",
    "glyphs": 3021,
    "codepoints": 2469,
-   "size_kb": 550
+   "size_kb": 551
   },
   {
    "file": "otf/SuharNaskhCaption-Bold.otf",
@@ -18992,13 +19154,13 @@
    "file": "otf/SuharNaskhCaption-BoldItalic.otf",
    "glyphs": 3021,
    "codepoints": 2469,
-   "size_kb": 582
+   "size_kb": 583
   },
   {
    "file": "otf/SuharNaskhCaption-Italic.otf",
    "glyphs": 3021,
    "codepoints": 2469,
-   "size_kb": 552
+   "size_kb": 553
   },
   {
    "file": "otf/SuharNaskhCaption-Medium.otf",
@@ -19010,7 +19172,7 @@
    "file": "otf/SuharNaskhCaption-MediumItalic.otf",
    "glyphs": 3021,
    "codepoints": 2469,
-   "size_kb": 571
+   "size_kb": 572
   },
   {
    "file": "otf/SuharNaskhCaption-Regular.otf",
@@ -19022,7 +19184,7 @@
    "file": "otf/SuharNaskhCaption-SemiBold.otf",
    "glyphs": 3021,
    "codepoints": 2469,
-   "size_kb": 591
+   "size_kb": 592
   },
   {
    "file": "otf/SuharNaskhCaption-SemiBoldItalic.otf",
@@ -19082,7 +19244,7 @@
    "file": "otf/SuharNerd-ExtraBold.otf",
    "glyphs": 13616,
    "codepoints": 13064,
-   "size_kb": 3298
+   "size_kb": 3299
   },
   {
    "file": "otf/SuharNerd-ExtraBoldItalic.otf",
@@ -19100,7 +19262,7 @@
    "file": "otf/SuharNerd-Light.otf",
    "glyphs": 13616,
    "codepoints": 13064,
-   "size_kb": 3269
+   "size_kb": 3270
   },
   {
    "file": "otf/SuharNerd-LightItalic.otf",
@@ -19130,7 +19292,7 @@
    "file": "otf/SuharNerd-SemiBold.otf",
    "glyphs": 13616,
    "codepoints": 13064,
-   "size_kb": 3297
+   "size_kb": 3298
   },
   {
    "file": "otf/SuharNerd-SemiBoldItalic.otf",
@@ -19142,7 +19304,7 @@
    "file": "otf/SuharNerdCondensed-Bold.otf",
    "glyphs": 13616,
    "codepoints": 13064,
-   "size_kb": 3274
+   "size_kb": 3275
   },
   {
    "file": "otf/SuharNerdCondensed-BoldItalic.otf",
@@ -19232,7 +19394,7 @@
    "file": "otf/SuharNerdMono-ExtraBoldItalic.otf",
    "glyphs": 13632,
    "codepoints": 13064,
-   "size_kb": 3189
+   "size_kb": 3190
   },
   {
    "file": "otf/SuharNerdMono-Italic.otf",
@@ -19280,7 +19442,7 @@
    "file": "otf/SuharNerdMono-SemiBoldItalic.otf",
    "glyphs": 13632,
    "codepoints": 13064,
-   "size_kb": 3184
+   "size_kb": 3185
   },
   {
    "file": "otf/SuharNerdSahafa-Bold.otf",
@@ -19292,7 +19454,7 @@
    "file": "otf/SuharNerdSahafa-BoldItalic.otf",
    "glyphs": 13616,
    "codepoints": 13064,
-   "size_kb": 3336
+   "size_kb": 3337
   },
   {
    "file": "otf/SuharNerdSahafa-ExtraBold.otf",
@@ -19316,7 +19478,7 @@
    "file": "otf/SuharNerdSahafa-Light.otf",
    "glyphs": 13616,
    "codepoints": 13064,
-   "size_kb": 3317
+   "size_kb": 3316
   },
   {
    "file": "otf/SuharNerdSahafa-LightItalic.otf",
@@ -19328,7 +19490,7 @@
    "file": "otf/SuharNerdSahafa-Medium.otf",
    "glyphs": 13616,
    "codepoints": 13064,
-   "size_kb": 3326
+   "size_kb": 3327
   },
   {
    "file": "otf/SuharNerdSahafa-MediumItalic.otf",
@@ -19352,7 +19514,7 @@
    "file": "otf/SuharNerdSahafa-SemiBoldItalic.otf",
    "glyphs": 13616,
    "codepoints": 13064,
-   "size_kb": 3339
+   "size_kb": 3338
   },
   {
    "file": "otf/SuharNerdSahafaHeadline-Black.otf",
@@ -19364,7 +19526,7 @@
    "file": "otf/SuharNerdSahafaHeadline-BlackItalic.otf",
    "glyphs": 13616,
    "codepoints": 13064,
-   "size_kb": 3373
+   "size_kb": 3374
   },
   {
    "file": "otf/SuharNerdSahafaHeadline-Bold.otf",
@@ -19388,13 +19550,13 @@
    "file": "otf/SuharNerdSahafaHeadline-ExtraBoldItalic.otf",
    "glyphs": 13616,
    "codepoints": 13064,
-   "size_kb": 3379
+   "size_kb": 3378
   },
   {
    "file": "otf/SuharNerdSahafaHeadline-Italic.otf",
    "glyphs": 13616,
    "codepoints": 13064,
-   "size_kb": 3360
+   "size_kb": 3361
   },
   {
    "file": "otf/SuharNerdSahafaHeadline-Light.otf",
@@ -19406,7 +19568,7 @@
    "file": "otf/SuharNerdSahafaHeadline-LightItalic.otf",
    "glyphs": 13616,
    "codepoints": 13064,
-   "size_kb": 3350
+   "size_kb": 3351
   },
   {
    "file": "otf/SuharNerdSahafaHeadline-Medium.otf",
@@ -19490,7 +19652,7 @@
    "file": "otf/SuharSahafa-MediumItalic.otf",
    "glyphs": 3021,
    "codepoints": 2469,
-   "size_kb": 608
+   "size_kb": 609
   },
   {
    "file": "otf/SuharSahafa-Regular.otf",
@@ -19502,7 +19664,7 @@
    "file": "otf/SuharSahafa-SemiBold.otf",
    "glyphs": 3021,
    "codepoints": 2469,
-   "size_kb": 607
+   "size_kb": 608
   },
   {
    "file": "otf/SuharSahafa-SemiBoldItalic.otf",
@@ -19514,13 +19676,13 @@
    "file": "otf/SuharSahafaCaption-Bold.otf",
    "glyphs": 3021,
    "codepoints": 2469,
-   "size_kb": 649
+   "size_kb": 650
   },
   {
    "file": "otf/SuharSahafaCaption-BoldItalic.otf",
    "glyphs": 3021,
    "codepoints": 2469,
-   "size_kb": 637
+   "size_kb": 638
   },
   {
    "file": "otf/SuharSahafaCaption-Italic.otf",
@@ -19544,7 +19706,7 @@
    "file": "otf/SuharSahafaCaption-Regular.otf",
    "glyphs": 3021,
    "codepoints": 2469,
-   "size_kb": 611
+   "size_kb": 610
   },
   {
    "file": "otf/SuharSahafaCaption-SemiBold.otf",
@@ -19580,13 +19742,13 @@
    "file": "otf/SuharSahafaHeadline-BoldItalic.otf",
    "glyphs": 3021,
    "codepoints": 2469,
-   "size_kb": 641
+   "size_kb": 642
   },
   {
    "file": "otf/SuharSahafaHeadline-ExtraBold.otf",
    "glyphs": 3021,
    "codepoints": 2469,
-   "size_kb": 652
+   "size_kb": 653
   },
   {
    "file": "otf/SuharSahafaHeadline-ExtraBoldItalic.otf",
@@ -19622,7 +19784,7 @@
    "file": "otf/SuharSahafaHeadline-MediumItalic.otf",
    "glyphs": 3021,
    "codepoints": 2469,
-   "size_kb": 645
+   "size_kb": 646
   },
   {
    "file": "otf/SuharSahafaHeadline-Regular.otf",
@@ -19658,7 +19820,7 @@
    "file": "otf/SuharTypewriter-Italic.otf",
    "glyphs": 3021,
    "codepoints": 2469,
-   "size_kb": 640
+   "size_kb": 639
   },
   {
    "file": "otf/SuharTypewriter-Regular.otf",
@@ -19670,28 +19832,28 @@
    "file": "ttf/Suhar-Black.ttf",
    "glyphs": 3021,
    "codepoints": 2469,
-   "size_kb": 536,
+   "size_kb": 537,
    "hinted": true
   },
   {
    "file": "ttf/Suhar-BlackItalic.ttf",
    "glyphs": 3021,
    "codepoints": 2469,
-   "size_kb": 529,
+   "size_kb": 530,
    "hinted": true
   },
   {
    "file": "ttf/Suhar-Bold.ttf",
    "glyphs": 3021,
    "codepoints": 2469,
-   "size_kb": 534,
+   "size_kb": 535,
    "hinted": true
   },
   {
    "file": "ttf/Suhar-BoldItalic.ttf",
    "glyphs": 3021,
    "codepoints": 2469,
-   "size_kb": 538,
+   "size_kb": 539,
    "hinted": true
   },
   {
@@ -19705,7 +19867,7 @@
    "file": "ttf/Suhar-ExtraBoldItalic.ttf",
    "glyphs": 3021,
    "codepoints": 2469,
-   "size_kb": 525,
+   "size_kb": 526,
    "hinted": true
   },
   {
@@ -19719,7 +19881,7 @@
    "file": "ttf/Suhar-Light.ttf",
    "glyphs": 3021,
    "codepoints": 2469,
-   "size_kb": 512,
+   "size_kb": 513,
    "hinted": true
   },
   {
@@ -19733,14 +19895,14 @@
    "file": "ttf/Suhar-Medium.ttf",
    "glyphs": 3021,
    "codepoints": 2469,
-   "size_kb": 522,
+   "size_kb": 523,
    "hinted": true
   },
   {
    "file": "ttf/Suhar-MediumItalic.ttf",
    "glyphs": 3021,
    "codepoints": 2469,
-   "size_kb": 513,
+   "size_kb": 514,
    "hinted": true
   },
   {
@@ -19761,14 +19923,14 @@
    "file": "ttf/Suhar-SemiBoldItalic.ttf",
    "glyphs": 3021,
    "codepoints": 2469,
-   "size_kb": 520,
+   "size_kb": 521,
    "hinted": true
   },
   {
    "file": "ttf/SuharCondensed-Bold.ttf",
    "glyphs": 3021,
    "codepoints": 2469,
-   "size_kb": 513,
+   "size_kb": 514,
    "hinted": true
   },
   {
@@ -19796,14 +19958,14 @@
    "file": "ttf/SuharCondensed-Italic.ttf",
    "glyphs": 3021,
    "codepoints": 2469,
-   "size_kb": 494,
+   "size_kb": 495,
    "hinted": true
   },
   {
    "file": "ttf/SuharCondensed-Light.ttf",
    "glyphs": 3021,
    "codepoints": 2469,
-   "size_kb": 496,
+   "size_kb": 497,
    "hinted": true
   },
   {
@@ -19817,14 +19979,14 @@
    "file": "ttf/SuharCondensed-Medium.ttf",
    "glyphs": 3021,
    "codepoints": 2469,
-   "size_kb": 503,
+   "size_kb": 504,
    "hinted": true
   },
   {
    "file": "ttf/SuharCondensed-MediumItalic.ttf",
    "glyphs": 3021,
    "codepoints": 2469,
-   "size_kb": 503,
+   "size_kb": 504,
    "hinted": true
   },
   {
@@ -19845,28 +20007,28 @@
    "file": "ttf/SuharCondensed-SemiBoldItalic.ttf",
    "glyphs": 3021,
    "codepoints": 2469,
-   "size_kb": 505,
+   "size_kb": 506,
    "hinted": true
   },
   {
    "file": "ttf/SuharMono-Bold.ttf",
    "glyphs": 3037,
    "codepoints": 2469,
-   "size_kb": 402,
+   "size_kb": 403,
    "hinted": true
   },
   {
    "file": "ttf/SuharMono-BoldItalic.ttf",
    "glyphs": 3037,
    "codepoints": 2469,
-   "size_kb": 408,
+   "size_kb": 409,
    "hinted": true
   },
   {
    "file": "ttf/SuharMono-ExtraBold.ttf",
    "glyphs": 3037,
    "codepoints": 2469,
-   "size_kb": 403,
+   "size_kb": 404,
    "hinted": true
   },
   {
@@ -19887,7 +20049,7 @@
    "file": "ttf/SuharMono-Light.ttf",
    "glyphs": 3037,
    "codepoints": 2469,
-   "size_kb": 397,
+   "size_kb": 398,
    "hinted": true
   },
   {
@@ -19901,14 +20063,14 @@
    "file": "ttf/SuharMono-Medium.ttf",
    "glyphs": 3037,
    "codepoints": 2469,
-   "size_kb": 394,
+   "size_kb": 395,
    "hinted": true
   },
   {
    "file": "ttf/SuharMono-MediumItalic.ttf",
    "glyphs": 3037,
    "codepoints": 2469,
-   "size_kb": 400,
+   "size_kb": 401,
    "hinted": true
   },
   {
@@ -19936,35 +20098,35 @@
    "file": "ttf/SuharNaskh-Bold.ttf",
    "glyphs": 3021,
    "codepoints": 2469,
-   "size_kb": 539,
+   "size_kb": 540,
    "hinted": true
   },
   {
    "file": "ttf/SuharNaskh-BoldItalic.ttf",
    "glyphs": 3021,
    "codepoints": 2469,
-   "size_kb": 529,
+   "size_kb": 530,
    "hinted": true
   },
   {
    "file": "ttf/SuharNaskh-ExtraBold.ttf",
    "glyphs": 3021,
    "codepoints": 2469,
-   "size_kb": 540,
+   "size_kb": 541,
    "hinted": true
   },
   {
    "file": "ttf/SuharNaskh-ExtraBoldItalic.ttf",
    "glyphs": 3021,
    "codepoints": 2469,
-   "size_kb": 527,
+   "size_kb": 528,
    "hinted": true
   },
   {
    "file": "ttf/SuharNaskh-Italic.ttf",
    "glyphs": 3021,
    "codepoints": 2469,
-   "size_kb": 529,
+   "size_kb": 530,
    "hinted": true
   },
   {
@@ -19985,14 +20147,14 @@
    "file": "ttf/SuharNaskh-Medium.ttf",
    "glyphs": 3021,
    "codepoints": 2469,
-   "size_kb": 533,
+   "size_kb": 534,
    "hinted": true
   },
   {
    "file": "ttf/SuharNaskh-MediumItalic.ttf",
    "glyphs": 3021,
    "codepoints": 2469,
-   "size_kb": 525,
+   "size_kb": 526,
    "hinted": true
   },
   {
@@ -20020,7 +20182,7 @@
    "file": "ttf/SuharNaskhCaption-Bold.ttf",
    "glyphs": 3021,
    "codepoints": 2469,
-   "size_kb": 568,
+   "size_kb": 569,
    "hinted": true
   },
   {
@@ -20048,7 +20210,7 @@
    "file": "ttf/SuharNaskhCaption-MediumItalic.ttf",
    "glyphs": 3021,
    "codepoints": 2469,
-   "size_kb": 551,
+   "size_kb": 552,
    "hinted": true
   },
   {
@@ -20062,28 +20224,28 @@
    "file": "ttf/SuharNaskhCaption-SemiBold.ttf",
    "glyphs": 3021,
    "codepoints": 2469,
-   "size_kb": 563,
+   "size_kb": 564,
    "hinted": true
   },
   {
    "file": "ttf/SuharNaskhCaption-SemiBoldItalic.ttf",
    "glyphs": 3021,
    "codepoints": 2469,
-   "size_kb": 549,
+   "size_kb": 550,
    "hinted": true
   },
   {
    "file": "ttf/SuharNaskhDisplay-Bold.ttf",
    "glyphs": 3021,
    "codepoints": 2469,
-   "size_kb": 596,
+   "size_kb": 597,
    "hinted": true
   },
   {
    "file": "ttf/SuharNaskhDisplay-Medium.ttf",
    "glyphs": 3021,
    "codepoints": 2469,
-   "size_kb": 590,
+   "size_kb": 591,
    "hinted": true
   },
   {
@@ -20104,28 +20266,28 @@
    "file": "ttf/SuharNerd-Black.ttf",
    "glyphs": 13616,
    "codepoints": 13064,
-   "size_kb": 2789,
+   "size_kb": 2790,
    "hinted": true
   },
   {
    "file": "ttf/SuharNerd-BlackItalic.ttf",
    "glyphs": 13616,
    "codepoints": 13064,
-   "size_kb": 2782,
+   "size_kb": 2783,
    "hinted": true
   },
   {
    "file": "ttf/SuharNerd-Bold.ttf",
    "glyphs": 13616,
    "codepoints": 13064,
-   "size_kb": 2787,
+   "size_kb": 2788,
    "hinted": true
   },
   {
    "file": "ttf/SuharNerd-BoldItalic.ttf",
    "glyphs": 13616,
    "codepoints": 13064,
-   "size_kb": 2791,
+   "size_kb": 2792,
    "hinted": true
   },
   {
@@ -20153,7 +20315,7 @@
    "file": "ttf/SuharNerd-Light.ttf",
    "glyphs": 13616,
    "codepoints": 13064,
-   "size_kb": 2765,
+   "size_kb": 2766,
    "hinted": true
   },
   {
@@ -20167,21 +20329,21 @@
    "file": "ttf/SuharNerd-Medium.ttf",
    "glyphs": 13616,
    "codepoints": 13064,
-   "size_kb": 2775,
+   "size_kb": 2776,
    "hinted": true
   },
   {
    "file": "ttf/SuharNerd-MediumItalic.ttf",
    "glyphs": 13616,
    "codepoints": 13064,
-   "size_kb": 2766,
+   "size_kb": 2767,
    "hinted": true
   },
   {
    "file": "ttf/SuharNerd-Regular.ttf",
    "glyphs": 13616,
    "codepoints": 13064,
-   "size_kb": 2764,
+   "size_kb": 2765,
    "hinted": true
   },
   {
@@ -20195,14 +20357,14 @@
    "file": "ttf/SuharNerd-SemiBoldItalic.ttf",
    "glyphs": 13616,
    "codepoints": 13064,
-   "size_kb": 2773,
+   "size_kb": 2774,
    "hinted": true
   },
   {
    "file": "ttf/SuharNerdCondensed-Bold.ttf",
    "glyphs": 13616,
    "codepoints": 13064,
-   "size_kb": 2766,
+   "size_kb": 2767,
    "hinted": true
   },
   {
@@ -20237,7 +20399,7 @@
    "file": "ttf/SuharNerdCondensed-Light.ttf",
    "glyphs": 13616,
    "codepoints": 13064,
-   "size_kb": 2749,
+   "size_kb": 2750,
    "hinted": true
   },
   {
@@ -20251,14 +20413,14 @@
    "file": "ttf/SuharNerdCondensed-Medium.ttf",
    "glyphs": 13616,
    "codepoints": 13064,
-   "size_kb": 2756,
+   "size_kb": 2757,
    "hinted": true
   },
   {
    "file": "ttf/SuharNerdCondensed-MediumItalic.ttf",
    "glyphs": 13616,
    "codepoints": 13064,
-   "size_kb": 2756,
+   "size_kb": 2757,
    "hinted": true
   },
   {
@@ -20279,7 +20441,7 @@
    "file": "ttf/SuharNerdCondensed-SemiBoldItalic.ttf",
    "glyphs": 13616,
    "codepoints": 13064,
-   "size_kb": 2758,
+   "size_kb": 2759,
    "hinted": true
   },
   {
@@ -20293,14 +20455,14 @@
    "file": "ttf/SuharNerdMono-BoldItalic.ttf",
    "glyphs": 13632,
    "codepoints": 13064,
-   "size_kb": 2705,
+   "size_kb": 2706,
    "hinted": true
   },
   {
    "file": "ttf/SuharNerdMono-ExtraBold.ttf",
    "glyphs": 13632,
    "codepoints": 13064,
-   "size_kb": 2700,
+   "size_kb": 2701,
    "hinted": true
   },
   {
@@ -20321,7 +20483,7 @@
    "file": "ttf/SuharNerdMono-Light.ttf",
    "glyphs": 13632,
    "codepoints": 13064,
-   "size_kb": 2694,
+   "size_kb": 2695,
    "hinted": true
   },
   {
@@ -20342,7 +20504,7 @@
    "file": "ttf/SuharNerdMono-MediumItalic.ttf",
    "glyphs": 13632,
    "codepoints": 13064,
-   "size_kb": 2697,
+   "size_kb": 2698,
    "hinted": true
   },
   {
@@ -20384,14 +20546,14 @@
    "file": "ttf/SuharNerdSahafa-ExtraBold.ttf",
    "glyphs": 13616,
    "codepoints": 13064,
-   "size_kb": 2815,
+   "size_kb": 2816,
    "hinted": true
   },
   {
    "file": "ttf/SuharNerdSahafa-ExtraBoldItalic.ttf",
    "glyphs": 13616,
    "codepoints": 13064,
-   "size_kb": 2808,
+   "size_kb": 2809,
    "hinted": true
   },
   {
@@ -20426,7 +20588,7 @@
    "file": "ttf/SuharNerdSahafa-MediumItalic.ttf",
    "glyphs": 13616,
    "codepoints": 13064,
-   "size_kb": 2800,
+   "size_kb": 2801,
    "hinted": true
   },
   {
@@ -20454,14 +20616,14 @@
    "file": "ttf/SuharNerdSahafaHeadline-Black.ttf",
    "glyphs": 13616,
    "codepoints": 13064,
-   "size_kb": 2836,
+   "size_kb": 2837,
    "hinted": true
   },
   {
    "file": "ttf/SuharNerdSahafaHeadline-BlackItalic.ttf",
    "glyphs": 13616,
    "codepoints": 13064,
-   "size_kb": 2848,
+   "size_kb": 2849,
    "hinted": true
   },
   {
@@ -20475,7 +20637,7 @@
    "file": "ttf/SuharNerdSahafaHeadline-BoldItalic.ttf",
    "glyphs": 13616,
    "codepoints": 13064,
-   "size_kb": 2846,
+   "size_kb": 2847,
    "hinted": true
   },
   {
@@ -20489,14 +20651,14 @@
    "file": "ttf/SuharNerdSahafaHeadline-ExtraBoldItalic.ttf",
    "glyphs": 13616,
    "codepoints": 13064,
-   "size_kb": 2863,
+   "size_kb": 2864,
    "hinted": true
   },
   {
    "file": "ttf/SuharNerdSahafaHeadline-Italic.ttf",
    "glyphs": 13616,
    "codepoints": 13064,
-   "size_kb": 2834,
+   "size_kb": 2835,
    "hinted": true
   },
   {
@@ -20517,7 +20679,7 @@
    "file": "ttf/SuharNerdSahafaHeadline-Medium.ttf",
    "glyphs": 13616,
    "codepoints": 13064,
-   "size_kb": 2832,
+   "size_kb": 2833,
    "hinted": true
   },
   {
@@ -20566,14 +20728,14 @@
    "file": "ttf/SuharSahafa-ExtraBold.ttf",
    "glyphs": 3021,
    "codepoints": 2469,
-   "size_kb": 562,
+   "size_kb": 563,
    "hinted": true
   },
   {
    "file": "ttf/SuharSahafa-ExtraBoldItalic.ttf",
    "glyphs": 3021,
    "codepoints": 2469,
-   "size_kb": 555,
+   "size_kb": 556,
    "hinted": true
   },
   {
@@ -20594,7 +20756,7 @@
    "file": "ttf/SuharSahafa-LightItalic.ttf",
    "glyphs": 3021,
    "codepoints": 2469,
-   "size_kb": 544,
+   "size_kb": 545,
    "hinted": true
   },
   {
@@ -20629,14 +20791,14 @@
    "file": "ttf/SuharSahafa-SemiBoldItalic.ttf",
    "glyphs": 3021,
    "codepoints": 2469,
-   "size_kb": 547,
+   "size_kb": 548,
    "hinted": true
   },
   {
    "file": "ttf/SuharSahafaCaption-Bold.ttf",
    "glyphs": 3021,
    "codepoints": 2469,
-   "size_kb": 584,
+   "size_kb": 585,
    "hinted": true
   },
   {
@@ -20692,14 +20854,14 @@
    "file": "ttf/SuharSahafaHeadline-Black.ttf",
    "glyphs": 3021,
    "codepoints": 2469,
-   "size_kb": 583,
+   "size_kb": 584,
    "hinted": true
   },
   {
    "file": "ttf/SuharSahafaHeadline-BlackItalic.ttf",
    "glyphs": 3021,
    "codepoints": 2469,
-   "size_kb": 595,
+   "size_kb": 596,
    "hinted": true
   },
   {
@@ -20713,7 +20875,7 @@
    "file": "ttf/SuharSahafaHeadline-BoldItalic.ttf",
    "glyphs": 3021,
    "codepoints": 2469,
-   "size_kb": 593,
+   "size_kb": 594,
    "hinted": true
   },
   {
@@ -20727,14 +20889,14 @@
    "file": "ttf/SuharSahafaHeadline-ExtraBoldItalic.ttf",
    "glyphs": 3021,
    "codepoints": 2469,
-   "size_kb": 610,
+   "size_kb": 611,
    "hinted": true
   },
   {
    "file": "ttf/SuharSahafaHeadline-Italic.ttf",
    "glyphs": 3021,
    "codepoints": 2469,
-   "size_kb": 581,
+   "size_kb": 582,
    "hinted": true
   },
   {
@@ -20755,14 +20917,14 @@
    "file": "ttf/SuharSahafaHeadline-Medium.ttf",
    "glyphs": 3021,
    "codepoints": 2469,
-   "size_kb": 579,
+   "size_kb": 580,
    "hinted": true
   },
   {
    "file": "ttf/SuharSahafaHeadline-MediumItalic.ttf",
    "glyphs": 3021,
    "codepoints": 2469,
-   "size_kb": 591,
+   "size_kb": 592,
    "hinted": true
   },
   {
@@ -20790,14 +20952,14 @@
    "file": "ttf/SuharTypewriter-Bold.ttf",
    "glyphs": 3021,
    "codepoints": 2469,
-   "size_kb": 615,
+   "size_kb": 616,
    "hinted": true
   },
   {
    "file": "ttf/SuharTypewriter-BoldItalic.ttf",
    "glyphs": 3021,
    "codepoints": 2469,
-   "size_kb": 595,
+   "size_kb": 596,
    "hinted": true
   },
   {
@@ -20818,25 +20980,25 @@
    "file": "variable/Suhar-Italic[opsz,wght].ttf",
    "glyphs": 3021,
    "codepoints": 2469,
-   "size_kb": 1264
+   "size_kb": 1265
   },
   {
    "file": "variable/SuharCondensed-Italic[opsz,wght].ttf",
    "glyphs": 3021,
    "codepoints": 2469,
-   "size_kb": 1227
+   "size_kb": 1228
   },
   {
    "file": "variable/SuharCondensed[opsz,wght].ttf",
    "glyphs": 3021,
    "codepoints": 2469,
-   "size_kb": 1203
+   "size_kb": 1204
   },
   {
    "file": "variable/SuharMono-Italic[wght].ttf",
    "glyphs": 3037,
    "codepoints": 2469,
-   "size_kb": 454
+   "size_kb": 455
   },
   {
    "file": "variable/SuharMono[wght].ttf",
@@ -20848,7 +21010,7 @@
    "file": "variable/SuharNaskh-Italic[CTRS,GRAD,TATW,opsz,wght].ttf",
    "glyphs": 3021,
    "codepoints": 2469,
-   "size_kb": 2024
+   "size_kb": 2025
   },
   {
    "file": "variable/SuharNaskhDisplay[wght].ttf",
@@ -20860,37 +21022,37 @@
    "file": "variable/SuharNaskh[CTRS,GRAD,TATW,opsz,wght].ttf",
    "glyphs": 3021,
    "codepoints": 2469,
-   "size_kb": 1993
+   "size_kb": 1994
   },
   {
    "file": "variable/SuharSahafa-Italic[CTRS,GRAD,TATW,opsz,wght].ttf",
    "glyphs": 3021,
    "codepoints": 2469,
-   "size_kb": 2350
+   "size_kb": 2351
   },
   {
    "file": "variable/SuharSahafaHeadline-Italic[CTRS,GRAD,TATW,opsz,wght].ttf",
    "glyphs": 3021,
    "codepoints": 2469,
-   "size_kb": 2348
+   "size_kb": 2349
   },
   {
    "file": "variable/SuharSahafaHeadline[CTRS,GRAD,TATW,opsz,wght].ttf",
    "glyphs": 3021,
    "codepoints": 2469,
-   "size_kb": 2298
+   "size_kb": 2300
   },
   {
    "file": "variable/SuharSahafa[CTRS,GRAD,TATW,opsz,wght].ttf",
    "glyphs": 3021,
    "codepoints": 2469,
-   "size_kb": 2275
+   "size_kb": 2276
   },
   {
    "file": "variable/Suhar[opsz,wght].ttf",
    "glyphs": 3021,
    "codepoints": 2469,
-   "size_kb": 1231
+   "size_kb": 1232
   }
  ],
  "coverage": {

@@ -1,5 +1,18 @@
 # Changelog
 
+## 2.8 (November 2026)
+
+**Fixed**
+- In Medium, SemiBold and Bold the vowel marks damma, fathatan and kasra were left out by Retro Nim UI, because
+  their outlines crossed their own baseline. Every combining mark now lies wholly above or below its origin; its
+  place over the letter is unchanged.
+- Kasratan keeps its two strokes apart in Bold.
+
+**App fonts for Retro Nim UI** (`nim/fonts/app/`, `tools/make_app_fonts.py`)
+- `SuharApp` (about 255 KB per style instead of about 510), `SuharAppLite` (about 80 KB) and `SuharAppRead`
+  (Suhar Sahafa, about 270 KB).
+- `useSuharApp()` and `useSuharRead()` in the Nim package, `-d:suharLite`, and a two-language example app.
+
 ## 2.7 (November 2026)
 
 **Variable fonts of Suhar Naskh and Suhar Sahafa**
