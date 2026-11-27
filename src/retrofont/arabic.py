@@ -319,6 +319,12 @@ def ar_fn(st: Style, d):
             extra.append(E.Shape('stroke', [E.Node(right_join - 3, k), E.Node(CW, k)]))
         dx += sh
         adv = CW
+    _tw = getattr(st, 'tatw', None)           # tatweel axis: every join to the left is drawn longer
+    if _tw is not None and letter and jl and not st.mono:
+        _k = st.ns['k'] * SC
+        extra.append(E.Shape('stroke', [E.Node(-8, _k), E.Node(_tw + 6, _k)]))
+        dx += _tw
+        adv += _tw
     dx = round(dx)
     if ta:                      # italic: same placement as the upright, outline sheared about the baseline
         cs = build(f, True)[1]
@@ -826,6 +832,22 @@ for _cp, (_if, _im, _code) in LETTERS.items():
             if _b and _b in INFO and 'adv' not in INFO[_b]:
                 AR(_b + '.jalt', INFO[_b]['spec'], **{**{k_: v_ for k_, v_ in INFO[_b].items() if k_ != 'spec'}, 'stretch': 1.4})
                 JALT[_b] = _b + '.jalt'
+
+# ---- stylistic sets with other letter forms: ss08 round ain, ss09 curved alef, ss10 hah with a head and a return stroke ----
+R('ainr.medi', "310,k 0,k; z ~15,295 ~295,295 ~155,k-85", **{k_: v_ for k_, v_ in RASM['ain.medi'].items() if k_ != 'spec'})
+R('ainr.fina', RASM['ain.fina']['spec'].replace("z 30,284 ~145,264 260,284 147,k+4", "z ~25,285 ~265,285 ~145,k-75"), **{k_: v_ for k_, v_ in RASM['ain.fina'].items() if k_ != 'spec'})
+R('alefc.isol', "-30,-6 ~14,10 12,120 ~10,470 -22,600", l=62, r=60, top=(-10, 606), bot=(0, 0))
+R('alefc.fina', "150,k 70,k ~4,k 6,k+90 ~8,470 -22,600", aw=150, l=54, top=(-10, 606), bot=(40, 0))
+R('jeemh.medi', "430,k 0,k; 20,245 ~85,335 190,315 375,275!r; 370,275 ~255,k+30 110,k 60,k", **{k_: v_ for k_, v_ in RASM['jeem.medi'].items() if k_ != 'spec'})
+SS08, SS09, SS10 = {}, {}, {}
+for _cp, (_if, _im, _code) in LETTERS.items():
+    for _set, _cond, _ras, _forms in ((SS08, _if == 'ain', 'ainr', ('medi', 'fina')), (SS09, _if == 'alef', 'alefc', ('isol', 'fina')), (SS10, _im == 'jeem', 'jeemh', ('medi',))):
+        if _cond:
+            for _f in _forms:
+                if _f in FORMS.get(_cp, {}):
+                    _nm, _s, _inf = _letter(_cp, _f, _ras, '.alt')
+                    AR(_nm, _s, **_inf)
+                    _set[FORMS[_cp][_f]] = _nm
 
 # ---- khanjar tails (ss01): reh and waw end in an upturned hook ----------------------------------
 SS01 = {}

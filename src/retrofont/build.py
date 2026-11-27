@@ -25,19 +25,27 @@ BLACK = (900, 'Black')                                        # Suhar only
 COND_WIDTH = 0.75
 
 
-def mkstyle(fam, wght, italic, opsz=0.0, compat=False, grade=0.0):
+def mkstyle(fam, wght, italic, opsz=0.0, compat=False, grade=0.0, tatw=None, contrast=0.0):
+    st = _mkstyle(fam, wght, italic, opsz, compat, grade, contrast)
+    st.tatw = tatw                      # variable masters: length added to every join (None in the static fonts)
+    return st
+
+
+def _mkstyle(fam, wght, italic, opsz=0.0, compat=False, grade=0.0, contrast=0.0):
     if fam == 'Cond':
         st = Style('Sans', wght, italic, opsz, compat, width=COND_WIDTH)
         st.spacef = 0.86
         return st
     if fam in ('Sahafa', 'SahafaH', 'SahafaC'):
         from . import sahafa
-        return sahafa.style(wght, 'headline' if fam == 'SahafaH' else 'text', italic, compat, -1.0 if fam == 'SahafaC' else opsz, grade)
+        return sahafa.style(wght, 'headline' if fam == 'SahafaH' else 'text', italic, compat, -1.0 if fam == 'SahafaC' else opsz, grade, contrast)
     if fam == 'Type':
         from . import sahafa
         return sahafa.style(wght, 'typewriter', italic, compat)
     if fam in ('Naskh', 'NaskhD', 'NaskhC'):
-        st = Style('Sans', wght, italic, -1.0 if fam == 'NaskhC' else opsz, compat, grade=grade).set_naskh()
+        st = Style('Sans', wght, italic, -1.0 if fam == 'NaskhC' else opsz, compat, grade=grade)
+        st.contrast = contrast
+        st.set_naskh()
         st.display = fam == 'NaskhD'
         return st
     return Style(fam, wght, italic, opsz, compat)
@@ -45,8 +53,8 @@ def mkstyle(fam, wght, italic, opsz=0.0, compat=False, grade=0.0):
 
 def static_styles():
     for fam in FAMILIES:
-        ws = WEIGHTS if fam in ('Naskh', 'NaskhD', 'Sahafa', 'SahafaH', 'SahafaC', 'NaskhC') else [WEIGHTS[0], WEIGHTS[-1]] if fam == 'Type' else [EXTRA_WEIGHTS[0]] + WEIGHTS + [EXTRA_WEIGHTS[1]]
-        if fam == 'Sans':
+        ws = WEIGHTS if fam in ('NaskhD', 'SahafaC', 'NaskhC') else [WEIGHTS[0], WEIGHTS[-1]] if fam == 'Type' else [EXTRA_WEIGHTS[0]] + WEIGHTS + [EXTRA_WEIGHTS[1]]
+        if fam in ('Sans', 'SahafaH'):
             ws = ws + [BLACK]
         for wght, wn in ws:
             for italic in ((False,) if fam == 'NaskhD' else (False, True)):
@@ -119,7 +127,8 @@ def make(st: Style, family_key: str):
         up = Style(st.family, st.wght, False, st.opsz, st.compat, width=st.width, grade=getattr(st, 'grade', 0.0))
         if getattr(st, 'sahafa', None):
             from . import sahafa
-            up = sahafa.style(st.wght, st.sahafa, False, st.compat, st.opsz, getattr(st, 'grade', 0.0))
+            up = sahafa.style(st.wght, st.sahafa, False, st.compat, st.opsz, getattr(st, 'grade', 0.0), getattr(st, 'contrast', 0.0))
+            up.tatw = getattr(st, 'tatw', None)
         if getattr(st, 'naskh', False):
             up.set_naskh()
             up.display = getattr(st, 'display', False)
@@ -259,17 +268,30 @@ OPSZ_FAMS = ('Sans', 'Cond', 'Naskh', 'Sahafa', 'SahafaH')
 GRAD_FAMS = ('Sahafa', 'SahafaH', 'Naskh')
 
 
+PEN_FAMS = ('Sahafa', 'SahafaH', 'Naskh')            # families with a tatweel axis and a contrast axis
+TATWEEL = 140                                        # units added to every join at TATW 100
+
+
 def vf_masters(fam):
-    """(weight, optical size parameter, optical size in points, grade) of every master"""
+    """(weight, optical size parameter, optical size in points, grade, tatweel 0/1, contrast -1/0/1) of every master"""
     opszs = [(-1, 8), (0, 14), (1, 72)] if fam in OPSZ_FAMS else [(0, 14)]
-    ms = [(w, oz, ozv, 0) for w in (400, 700) for oz, ozv in opszs]
+    ms = [(w, oz, ozv, 0, 0, 0) for w in (400, 700) for oz, ozv in opszs]
     if fam in GRAD_FAMS:
-        ms += [(w, 0, 14, g) for w in (400, 700) for g in (-1, 1)]
+        ms += [(w, 0, 14, g, 0, 0) for w in (400, 700) for g in (-1, 1)]
+    if fam in PEN_FAMS:
+        ms += [(w, 0, 14, 0, 1, 0) for w in (400, 700)]
+        ms += [(w, 0, 14, 0, 0, c) for w in (400, 700) for c in (-1, 1)]
     return ms
 
 
+def vf_style(fam, m, italic, compat=True):
+    w, oz, ozv, g, tw, c = m
+    return mkstyle(fam, w, italic, oz, compat=compat, grade=g, tatw=(TATWEEL * tw if fam in PEN_FAMS else None), contrast=c)
+
+
 def vf_axes(fam):
-    return '[' + ','.join((['GRAD'] if fam in GRAD_FAMS else []) + (['opsz'] if fam in OPSZ_FAMS else []) + ['wght']) + ']'
+    return '[' + ','.join((['CTRS'] if fam in PEN_FAMS else []) + (['GRAD'] if fam in GRAD_FAMS else []) + (['TATW'] if fam in PEN_FAMS else []) +
+                          (['opsz'] if fam in OPSZ_FAMS else []) + ['wght']) + ']'
 
 
 def trap_match(fam, italic):
@@ -284,12 +306,12 @@ def trap_match(fam, italic):
                 out.append(c[i:] + c[:i])
             return sorted(out, key=lambda c: (-len(c), min(p[0] for p in c)))
         ms = vf_masters(fam)
-        for w, oz, ozv, g in ms:
-            trapped[w, oz, g] = build_glyphs(mkstyle(fam, w, italic, oz, compat=False, grade=g))
-            for gg in trapped[w, oz, g].values():
+        for m in ms:
+            trapped[m] = build_glyphs(vf_style(fam, m, italic, compat=False))
+            for gg in trapped[m].values():
                 if gg.script == 'arab' and gg.contours:
                     gg.contours = _norm(gg.contours)
-        ref = trapped[400, 0, 0]
+        ref = trapped[ms[1]]
         for n, g4 in ref.items():
             if g4.script != 'arab' or not g4.contours:
                 continue
@@ -297,7 +319,7 @@ def trap_match(fam, italic):
             for key, gs in trapped.items():
                 g7 = gs.get(n)
                 if g7 is None or len(g4.contours) != len(g7.contours) or not all(
-                        len(c4) == len(c7) and all(p[2] == q[2] and abs(p[0] - q[0]) < 170 and abs(p[1] - q[1]) < 170 for p, q in zip(c4, c7))
+                        len(c4) == len(c7) and all(p[2] == q[2] and abs(p[0] - q[0]) < 330 and abs(p[1] - q[1]) < 170 for p, q in zip(c4, c7))
                         for c4, c7 in zip(g4.contours, g7.contours)):
                     good = False
                     break
@@ -349,36 +371,45 @@ def build_variable(fam, italic, out, save_sources=True):
         a = AxisDescriptor()
         a.name, a.tag, a.minimum, a.default, a.maximum = 'Grade', 'GRAD', -50, 0, 50
         doc.addAxis(a)
+    if fam in PEN_FAMS:
+        a = AxisDescriptor()
+        a.name, a.tag, a.minimum, a.default, a.maximum = 'Tatweel', 'TATW', 0, 0, 100
+        doc.addAxis(a)
+        a = AxisDescriptor()
+        a.name, a.tag, a.minimum, a.default, a.maximum = 'Contrast', 'CTRS', -50, 0, 50
+        doc.addAxis(a)
     src_dir = os.path.join(out, 'sources', 'masters')
     os.makedirs(src_dir, exist_ok=True)
     it = 'Italic' if italic else ''
     trapped, trap_ok = trap_match(fam, italic)
     base = {}
-    for wght, oz, ozv, grade in vf_masters(fam):
+    for _m in vf_masters(fam):
+        wght, oz, ozv, grade, tw, ctr = _m
         if True:
-            st = mkstyle(fam, wght, italic, oz, compat=True, grade=grade)
+            st = vf_style(fam, _m, italic)
             up = None
             if italic and fam in ('Sans', 'Cond', 'Naskh', 'Sahafa', 'SahafaH'):
-                up = build_glyphs(mkstyle(fam, wght, False, oz, compat=True, grade=grade))
+                up = build_glyphs(vf_style(fam, _m, False))
             gl, kerning, groups = glyph_set(st, up)
             for n in trap_ok:
                 if n in gl and not gl[n].components:
-                    gl[n].contours = trapped[wght, oz, grade][n].contours
+                    gl[n].contours = trapped[_m][n].contours
             if grade:
                 keep_advances(gl, base[wght][0])
                 kerning, groups = base[wght][1], base[wght][2]
-            elif oz == 0:
+            elif oz == 0 and not tw and not ctr:
                 base[wght] = (gl, kerning, groups)
             wn = 'Regular' if wght == 400 else 'Bold'
             sname = (wn + (' ' + it if it else '')).replace('Regular Italic', 'Italic')
             ufo = make_ufo(st, gl, family, make_features(gl, display=getattr(st, 'display', False), naskh=getattr(st, 'naskh', False), sahafa=bool(getattr(st, 'sahafa', None))), kerning, groups, style_name=sname)
-            tag = f"{family.replace(' ', '')}-{wn}{it}" + (f"-opsz{ozv}" if fam in OPSZ_FAMS else '') + (f"-grade{grade}" if grade else '')
+            tag = f"{family.replace(' ', '')}-{wn}{it}" + (f"-opsz{ozv}" if fam in OPSZ_FAMS else '') + (f"-grade{grade}" if grade else '') + ('-tatweel' if tw else '') + (f"-contrast{ctr}" if ctr else '')
             s = SourceDescriptor()
             s.font = ufo
             s.name = tag
             s.familyName = family
             s.styleName = sname
-            s.location = {'Weight': wght, **({'Optical Size': ozv} if fam in OPSZ_FAMS else {}), **({'Grade': 50 * grade} if fam in GRAD_FAMS else {})}
+            s.location = {'Weight': wght, **({'Optical Size': ozv} if fam in OPSZ_FAMS else {}), **({'Grade': 50 * grade} if fam in GRAD_FAMS else {}),
+                          **({'Tatweel': 100 * tw, 'Contrast': 50 * ctr} if fam in PEN_FAMS else {})}
             if save_sources:
                 p = os.path.join(src_dir, tag + '.ufoz')
                 if os.path.exists(p):
@@ -390,7 +421,8 @@ def build_variable(fam, italic, out, save_sources=True):
         i = InstanceDescriptor()
         sname = (wn + (' ' + it if it else '')).replace('Regular Italic', 'Italic')
         i.familyName, i.styleName = family, sname
-        i.location = {'Weight': wght, **({'Optical Size': 14} if fam in OPSZ_FAMS else {}), **({'Grade': 0} if fam in GRAD_FAMS else {})}
+        i.location = {'Weight': wght, **({'Optical Size': 14} if fam in OPSZ_FAMS else {}), **({'Grade': 0} if fam in GRAD_FAMS else {}),
+                      **({'Tatweel': 0, 'Contrast': 0} if fam in PEN_FAMS else {})}
         doc.addInstance(i)
     dropped = []
     for attempt in range(4):

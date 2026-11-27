@@ -17,7 +17,7 @@ for fam, ps in FAMS:
         p = os.path.join(D, 'ttf', f'{ps}-{sn}.ttf')
         if os.path.exists(p):
             css.append(f"@font-face{{font-family:'{fam}';src:url('file://{p}');font-weight:{w};font-style:{it}}}")
-for name, f in (('Sahafa VF', 'SuharSahafa[GRAD,opsz,wght].ttf'), ('Naskh VF', 'SuharNaskh[GRAD,opsz,wght].ttf'), ('Suhar VF', 'Suhar[opsz,wght].ttf')):
+for name, f in (('Sahafa VF', 'SuharSahafa[CTRS,GRAD,TATW,opsz,wght].ttf'), ('Naskh VF', 'SuharNaskh[CTRS,GRAD,TATW,opsz,wght].ttf'), ('Suhar VF', 'Suhar[opsz,wght].ttf')):
     css.append(f"@font-face{{font-family:'{name}';src:url('file://{os.path.join(D, 'variable', f)}');font-weight:400 700}}")
 
 AR = ("أعلنت وزارة الاقتصاد أن الناتج المحلي الإجمالي حقق نموا ملحوظا خلال الربع الثالث من العام، مدفوعا بارتفاع الصادرات غير النفطية "
@@ -67,6 +67,12 @@ page('Optical sizes (Suhar Sahafa variable)', ops, 'Expected: at 7 pt the captio
 gr = ''
 for lab, v in (('GRAD −50, for paper that spreads ink (newsprint)', -50), ('GRAD 0', 0), ('GRAD +50, for coated paper and laser toner', 50)):
     gr += f"<h2>{lab}</h2><p dir='rtl' class='j' style=\"font-family:'Sahafa VF';font-size:9pt;font-variation-settings:'GRAD' {v}\">{e(AR)}</p>"
+tw = ''
+for lab, v in (('TATW 0', 0), ('TATW 30', 30), ('TATW 60', 60), ('TATW 100', 100)):
+    tw += f"<h2>{lab}</h2><p dir='rtl' style=\"font-family:'Sahafa VF';font-size:15pt;margin:0;font-variation-settings:'TATW' {v}\">{e(AR[:150])}</p>"
+for lab, v in (('CTRS −50, thicker thin strokes', -50), ('CTRS 0', 0), ('CTRS +50, finer thin strokes', 50)):
+    tw += f"<h2>{lab}, 8 pt</h2><p dir='rtl' class='j' style=\"font-family:'Sahafa VF';font-size:8pt;font-variation-settings:'CTRS' {v}\">{e(AR)}</p>"
+page('Tatweel and contrast (Suhar Sahafa variable)', tw, 'Expected: longer joins stay smooth and joined; at 8 pt the low-contrast setting keeps its thin strokes on poor paper.')
 page('Grades (Suhar Sahafa variable)', gr, 'Expected: the three paragraphs break their lines at the same words; only the darkness changes. Pick the one that looks right on your paper.')
 
 rev = ''.join(f"<div class='rev' style=\"font-family:'{fam}';font-size:{pt}pt\" dir='rtl'>{pt} pt · {fam} · {e(MIX)}</div>"

@@ -102,6 +102,10 @@ def make_features(glyphs: dict, display: bool = False, naskh: bool = False, saha
     if ss:
         out += ["feature ss01 {", '    featureNames { name "Khanjar tails"; name 3 1 0x0401 "\\0630\\064a\\0644 \\0627\\0644\\062e\\0646\\062c\\0631"; };']
         out += [f"    sub {a} by {b};" for a, b in sorted(set(ss))] + ["} ss01;", ""]
+    for _tag, _map, _nm in (('ss08', A.SS08, 'Round ain'), ('ss09', A.SS09, 'Curved alef'), ('ss10', A.SS10, 'Hah with a return stroke')):
+        _p = [(a, b) for a, b in sorted(_map.items()) if have(a) and have(b)]
+        if _p and not have('LIG.h'):
+            out += [f"feature {_tag} {{", f'    featureNames {{ name "{_nm}"; }};'] + [f"    sub {a} by {b};" for a, b in _p] + [f"}} {_tag};", ""]
     if have('zero.dot'):
         out += ["feature ss02 {", '    featureNames { name "Dotted zero"; };', "    sub zero by zero.dot;", "} ss02;", ""]
     if have('zero.plain'):

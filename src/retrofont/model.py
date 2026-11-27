@@ -100,6 +100,11 @@ class Style:
         self.ra = self.apen.extent()[1]
         self.ns['k'] = self.ra
         self.ns['q'] = self.ra * lerp(1.02, 0.86, t)
+        _c = getattr(self, 'contrast', 0.0)
+        if _c:                  # contrast axis: thin strokes thicker (-) or finer (+), the heavy strokes about the same
+            self.apen = E.Pen(ra_ * (lerp(1.36, 1.40, ta_) + 0.04 * _c), ra_ * (lerp(0.50, 0.56, ta_) - 0.11 * _c), 62.0)
+            self.ra = self.apen.extent()[1]
+            self.ns['k'] = self.ra
         if self.opsz:          # caption: less contrast, larger dots, marks further out; display: more contrast
             o = self.opsz
             c = (-0.07, 0.09, 0.14, 24.0) if o < 0 else (0.05, -0.07, -0.04, 0.0)

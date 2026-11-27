@@ -158,6 +158,12 @@ ARABIC = {
     'behtall.medi': dict(spec="130,402 ~130,128 116,88 ~98,k 52,k 0,k; 250,k 100,k", aw=250, dy=-28),
     'kafl.init': dict(spec=f"258,{AH - 4} ~151,{AH - 56} 62,362!r; 62,362 ~251,286 251,146 ~251,k 170,k 0,k", dy=AH - 600),
     'kafl.medi': dict(spec=f"258,{AH - 4} ~151,{AH - 56} 62,362!r; 62,362 ~251,286 251,146 ~251,k 170,k 0,k; 336,k 232,k", aw=336, dy=AH - 600),
+    # other forms, offered as stylistic sets: the round ain, a curved alef, hah with a head and a return stroke
+    'ainr.medi': dict(spec="322,k 0,k; z ~6,322 ~316,322 ~161,k-98", aw=322, dx=6, dy=27),
+    'ainr.fina': dict(spec="346,k 122,k; z ~10,316 ~292,316 ~151,k-90; 156,k+20 ~0,10 0,-70 ~0,-172 200,-172 300,-172 ~372,-172 404,-126", aw=346, dx=6, dy=31, bdy=13),
+    'alefc.isol': dict(spec=f"-30,-6 ~14,10 12,110 ~10,{AH - 130} -22,{AH}", dy=AH - 600),
+    'alefc.fina': dict(spec=f"152,k 82,k ~8,k 8,k+86 ~8,{AH - 130} -22,{AH}", aw=152, dy=AH - 600),
+    'jeemh.medi': dict(spec="455,k 0,k; 30,212 ~72,298 172,290 398,260!r; 393,260@1.22 ~300,140 150,k+12@1.15 60,k", aw=455, dy=-30),
     # a tooth standing on ج ح خ, and the ج ح خ it stands on
     'behj.init': dict(spec="180,462 180,340 ~180,256 90,256 0,256", dy=-30, bdy=-12),
     'jeemj.fina': dict(spec="522,256 425,256; " + _jh + "; " + _jb, aw=522, dy=-28, bdy=28),
@@ -302,7 +308,7 @@ def _ligatures():
 CUTS = ('text', 'headline', 'typewriter')
 
 
-def style(wght=400, cut='text', italic=False, compat=False, opsz=0.0, grade=0.0):
+def style(wght=400, cut='text', italic=False, compat=False, opsz=0.0, grade=0.0, contrast=0.0):
     """Style of Suhar Sahafa.  cut: 'text' (wider, calmer) or 'headline' (tighter, sharper, deeper bowls)."""
     head = cut == 'headline'
     typ = cut == 'typewriter'
@@ -323,6 +329,7 @@ def style(wght=400, cut='text', italic=False, compat=False, opsz=0.0, grade=0.0)
         pa, pb = pa - 0.05 * ok_, pb + 0.08 * ok_
     elif opsz > 0:                                                 # display: finer
         pa, pb = pa + 0.06 * ok_, pb - 0.09 * ok_
+    pa, pb = pa + 0.04 * contrast, pb - 0.11 * contrast           # contrast axis
     st.apen = E.Pen(ra_ * pa, ra_ * pb, 62.0)
     st.ra = st.apen.extent()[1]
     st.ns['k'] = st.ra
@@ -348,7 +355,7 @@ def style(wght=400, cut='text', italic=False, compat=False, opsz=0.0, grade=0.0)
     st.altspec = ARABIC
     st.altsub = _ligatures()
     # Latin: the stem as thick as the Arabic baseline stroke, horizontals thinner
-    a, hb = st.ra, st.ra * (0.56 if head else 0.92 if typ else 0.66)
+    a, hb = st.ra, st.ra * (0.56 if head else 0.92 if typ else 0.66) * (1 - 0.14 * contrast)
     st.pen = E.Pen(a, hb)
     st.a, st.hb = a, hb
     st.dt = a * 1.16
@@ -365,6 +372,7 @@ def style(wght=400, cut='text', italic=False, compat=False, opsz=0.0, grade=0.0)
     st.xh = LATIN_X
     st.sahafa = cut
     st.grade = grade
+    st.contrast = contrast
     return st
 
 

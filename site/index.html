@@ -4,11 +4,11 @@
 <style>
 @font-face{font-family:"Suhar";src:url("../dist/variable/Suhar[opsz,wght].woff2") format("woff2");font-weight:400 700}
 @font-face{font-family:"Suhar";src:url("../dist/variable/Suhar-Italic[opsz,wght].woff2") format("woff2");font-weight:400 700;font-style:italic}
-@font-face{font-family:"Suhar Naskh";src:url("../dist/variable/SuharNaskh[GRAD,opsz,wght].woff2") format("woff2");font-weight:400 700}
+@font-face{font-family:"Suhar Naskh";src:url("../dist/variable/SuharNaskh[CTRS,GRAD,TATW,opsz,wght].woff2") format("woff2");font-weight:400 700}
 @font-face{font-family:"Suhar Naskh Display";src:url("../dist/variable/SuharNaskhDisplay[wght].woff2") format("woff2");font-weight:400 700}
-@font-face{font-family:"Suhar Sahafa";src:url("../dist/variable/SuharSahafa[GRAD,opsz,wght].woff2") format("woff2");font-weight:400 700}
-@font-face{font-family:"Suhar Sahafa";src:url("../dist/variable/SuharSahafa-Italic[GRAD,opsz,wght].woff2") format("woff2");font-weight:400 700;font-style:italic}
-@font-face{font-family:"Suhar Sahafa Headline";src:url("../dist/variable/SuharSahafaHeadline[GRAD,opsz,wght].woff2") format("woff2");font-weight:400 700}
+@font-face{font-family:"Suhar Sahafa";src:url("../dist/variable/SuharSahafa[CTRS,GRAD,TATW,opsz,wght].woff2") format("woff2");font-weight:400 700}
+@font-face{font-family:"Suhar Sahafa";src:url("../dist/variable/SuharSahafa-Italic[CTRS,GRAD,TATW,opsz,wght].woff2") format("woff2");font-weight:400 700;font-style:italic}
+@font-face{font-family:"Suhar Sahafa Headline";src:url("../dist/variable/SuharSahafaHeadline[CTRS,GRAD,TATW,opsz,wght].woff2") format("woff2");font-weight:400 700}
 @font-face{font-family:"Suhar Condensed";src:url("../dist/variable/SuharCondensed[opsz,wght].woff2") format("woff2");font-weight:400 700}
 @font-face{font-family:"Suhar Mono";src:url("../dist/variable/SuharMono[wght].woff2") format("woff2");font-weight:400 700}
 @font-face{font-family:"Suhar Typewriter";src:url("../dist/woff2/SuharTypewriter-Regular.woff2") format("woff2");font-weight:400}
@@ -43,6 +43,8 @@ footer{margin-top:60px;padding-top:18px;border-top:1px solid var(--line);color:v
 <label>Weight <input id="wght" type="range" min="400" max="700" value="400"><output id="owght"></output></label>
 <label>Optical size <input id="opsz" type="range" min="8" max="72" value="14"><output id="oopsz"></output></label>
 <label>Grade <input id="grad" type="range" min="-50" max="50" value="0"><output id="ograd"></output></label>
+<label>Tatweel <input id="tatw" type="range" min="0" max="100" value="0"><output id="otatw"></output></label>
+<label>Contrast <input id="ctrs" type="range" min="-50" max="50" value="0"><output id="octrs"></output></label>
 <label><input id="auto" type="checkbox" checked> optical size follows the size</label></div>
 <div id="sample" contenteditable="true" dir="auto" spellcheck="false">ميناء صحار يسجل رقما قياسيا — Sohar Port sets a new record</div></div>
 
@@ -61,17 +63,19 @@ footer{margin-top:60px;padding-top:18px;border-top:1px solid var(--line);color:v
 <h2>A newspaper column</h2>
 <label class="toggle"><input id="kash" type="checkbox"> justify the Arabic with kashida</label>
 <label class="toggle"><input id="nb" type="checkbox" checked> neighbour forms</label>
+<label class="toggle">longer joins <input id="coltw" type="range" min="0" max="60" value="0"></label>
 <label class="toggle">paper <select id="paper"><option value="-50">newsprint (grade −50)</option><option value="0" selected>plain (grade 0)</option><option value="50">coated (grade +50)</option></select></label>
 <div class="cols"><div class="news ar" lang="ar"><h3>ميناء صحار يسجل رقما قياسيا</h3><p id="arp">أعلنت وزارة الاقتصاد أن الناتج المحلي الإجمالي حقق نموا ملحوظا خلال الربع الثالث من العام، مدفوعا بارتفاع الصادرات غير النفطية وتوسع قطاعي الصناعة والخدمات اللوجستية. وقال مسؤول في الوزارة إن ميناء صحار استقبل 240 سفينة في شهر واحد، وإن الحكومة تمضي في تنفيذ خطتها لتنويع مصادر الدخل وتشجيع الاستثمار في الطاقة المتجددة.</p></div>
 <div class="news"><h3>Sohar Port sets a new record</h3><p>The ministry said output grew strongly in the third quarter, helped by non-oil exports and by industry and logistics. Sohar Port handled 240 ships in a single month, an official said, and the government is pressing on with its plan to diversify income and encourage investment in renewable energy.</p></div></div>
 
 <h2>Use it on a page</h2>
 <pre>@font-face { font-family: "Suhar Sahafa";
-  src: url("SuharSahafa[GRAD,opsz,wght].woff2") format("woff2");
+  src: url("SuharSahafa[CTRS,GRAD,TATW,opsz,wght].woff2") format("woff2");
   font-weight: 400 700; }
 article    { font-family: "Suhar Sahafa", serif; }
 article h1 { font-family: "Suhar Sahafa Headline", serif; font-weight: 700; }
-.newsprint { font-variation-settings: "GRAD" -50; }</pre>
+.newsprint { font-variation-settings: "GRAD" -50; }
+.justified { font-variation-settings: "TATW" 30; }   /* longer joins */</pre>
 
 <footer>Suhar is designed by Sultan Al Isaiee (<a href="https://www.foxoman.net">foxoman.net</a>, <a href="https://github.com/foxoman">@foxoman</a>). Fonts and generator under the SIL Open Font License 1.1.
 Files: <a href="../dist/">dist/</a> · <a href="../docs/Suhar-specimen.pdf">specimen (PDF)</a> · <a href="../docs/Suhar-print-proof.pdf">print proof (PDF)</a> · <a href="../docs/LIMITATIONS.md">known limitations</a>.</footer>
@@ -84,15 +88,15 @@ Files: <a href="../dist/">dist/</a> · <a href="../docs/Suhar-specimen.pdf">spec
     var size=+$('size').value; if($('auto').checked) $('opsz').value=Math.max(8,Math.min(72,Math.round(size*0.75)));
     s.style.fontFamily='"'+$('fam').value+'"';s.style.fontSize=size+'px';s.style.lineHeight=size>60?1.2:1.5;
     s.style.fontWeight=$('wght').value;s.style.fontOpticalSizing='none';
-    s.style.fontVariationSettings='"opsz" '+$('opsz').value+', "GRAD" '+$('grad').value;
-    $('osize').textContent=size+'px';$('owght').textContent=$('wght').value;$('oopsz').textContent=$('opsz').value;$('ograd').textContent=$('grad').value;
+    s.style.fontVariationSettings='"opsz" '+$('opsz').value+', "GRAD" '+$('grad').value+', "TATW" '+$('tatw').value+', "CTRS" '+$('ctrs').value;
+    $('osize').textContent=size+'px';$('owght').textContent=$('wght').value;$('oopsz').textContent=$('opsz').value;$('ograd').textContent=$('grad').value;$('otatw').textContent=$('tatw').value;$('octrs').textContent=$('ctrs').value;
   }
-  ['fam','size','wght','opsz','grad','auto'].forEach(function(i){$(i).addEventListener('input',upd);});upd();
+  ['fam','size','wght','opsz','grad','tatw','ctrs','auto'].forEach(function(i){$(i).addEventListener('input',upd);});upd();
   var arp=$('arp');
   function col(){
-    document.querySelectorAll('.news').forEach(function(n){n.style.fontVariationSettings='"GRAD" '+$('paper').value;n.style.fontFeatureSettings=$('nb').checked?'normal':'"calt" 0';});
+    document.querySelectorAll('.news').forEach(function(n){n.style.fontVariationSettings='"GRAD" '+$('paper').value+', "TATW" '+$('coltw').value;n.style.fontFeatureSettings=$('nb').checked?'normal':'"calt" 0';});
     if($('kash').checked) document.fonts.ready.then(function(){SuharKashida.justifyElement(arp);}); else if(arp.dataset.plain) arp.textContent=arp.dataset.plain;
   }
-  ['kash','nb','paper'].forEach(function(i){$(i).addEventListener('input',col);});window.addEventListener('resize',col);col();
+  ['kash','nb','paper','coltw'].forEach(function(i){$(i).addEventListener('input',col);});window.addEventListener('resize',col);col();
 })();
 </script></body></html>
