@@ -132,7 +132,7 @@ G('>', "0,588 414,350 0,112", 62, 62)
 
 def _space(st, w):
     from .model import GlyphOut, MONO_W
-    adv = MONO_W if st.mono else round(w + st.sba)
+    adv = MONO_W if st.mono else round(w * getattr(st, 'spacef', 1.0) + st.sba)    # condensed cuts have a narrower word space
     return GlyphOut('space', [32], [], adv)
 
 

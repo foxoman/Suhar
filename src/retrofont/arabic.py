@@ -107,10 +107,12 @@ def naskh_spec(spec, inf):
     return spec
 
 
-def nwarp(y, k):
+def nwarp(y, k, low=None, high=None):
     """Suhar Naskh: horizontal displacement of a skeleton point.  Below the baseline strokes sweep to the left
     (tails become diagonal, bowls deepen on the left); above it uprights lean slightly to the right."""
-    return NASKH_LOW * y if y < 0 else NASKH_HIGH * max(0.0, y - k)
+    low = NASKH_LOW if low is None else low
+    high = NASKH_HIGH if high is None else high
+    return low * y if y < 0 else high * max(0.0, y - k)
 
 
 def ar_fn(st: Style, d):
@@ -126,6 +128,23 @@ def ar_fn(st: Style, d):
     jl, jr, aw = inf.get('jl'), inf.get('jr'), inf.get('aw')
     if msp and _rk in MAW:
         aw = MAW[_rk]
+    msp_dy = 0.0
+    _alt = getattr(st, 'altspec', None)       # a family with its own letter bodies: {rasm.form: {spec, aw, dx, dy}}
+    if _alt and _rk in _alt and spec.startswith(RASM[_rk]['spec']) and not st.mono:
+        _a = _alt[_rk]
+        msp = (_a['spec'], spec[len(RASM[_rk]['spec']):].lstrip(';'), _a.get('dx', 0.0))
+        msp_dy = _a.get('dy', 0.0)
+        if 'aw' in _a:
+            aw = _a['aw']
+    npar = getattr(st, 'npar', None) or {}    # pen-treatment parameters; the defaults are those of Suhar Naskh
+    _anch = (_alt[_rk].get('anch') if (msp and _alt and _rk in _alt and not st.mono) else None) or {}
+    _ym = npar.get('ymap') if not (mark or inf.get('tab')) and ('jl' in inf or 'jr' in inf) else None
+    _deep = npar.get('deep', 1.0)
+    ymsp = False                              # proportions of the family applied to a shared skeleton
+    if _ym and not msp and _rk in RASM and spec.startswith(RASM[_rk]['spec']):
+        msp = (naskh_spec(RASM[_rk]['spec'], inf), spec[len(RASM[_rk]['spec']):].lstrip(';'), 0.0)
+        ymsp = True
+    _ymall = bool(_ym) and not msp
     l = inf.get('l', 45) * st.sbs + st.sba
     r = inf.get('r', 45) * st.sbs + st.sba
     f = 1.0 if mark else st.arx
@@ -147,13 +166,29 @@ def ar_fn(st: Style, d):
         nk = getattr(st, 'naskh', False)
         sp_ = naskh_spec(spec, inf) if nk and spec and letter else spec
         if msp:
-            shapes = E.parse(msp[0], st.ns, lambda n: REG[n].spec)
+            _ns = dict(st.ns, K=npar.get('K', 0.57)) if nk else st.ns
+            shapes = E.parse(msp[0], _ns, lambda n: REG[n].spec)
             rest = E.parse(msp[1], st.ns, lambda n: REG[n].spec) if msp[1].strip() else []
             for s in rest:
-                s.transform(lambda x, y: (x + msp[2], y))
+                s.transform(lambda x, y: (x + msp[2], y + msp_dy))
+            _nrest = len(rest)
+            if ymsp:
+                for s in shapes:
+                    s.transform(lambda x, y: (x, _ym(y)))
+                for s in rest:
+                    _ys = [n.y for n in s.nodes]
+                    _cy = (min(_ys) + max(_ys)) / 2
+                    _d = _ym(_cy) - _cy
+                    s.transform(lambda x, y: (x, y + _d))
             shapes += rest
         else:
             shapes = E.parse(sp_, dict(st.ns, K=0.57) if nk else st.ns, lambda n: REG[n].spec) if sp_ else []
+            if _ymall:
+                for s in shapes:
+                    s.transform(lambda x, y: (x, _ym(y)))
+        if _deep != 1.0 and not mark and not inf.get('tab'):
+            for s in shapes:
+                s.transform(lambda x, y: (x, y * _deep if y < 0 else y))
         kk = st.ns['k']
         for s in shapes:
             for nd in s.nodes:
@@ -165,30 +200,40 @@ def ar_fn(st: Style, d):
                         nd.x = aw + 8 / (f * SC)
                         nd.cap = 'v'
         if nk and not mark and not inf.get('tab'):
-            for s in shapes:                      # pointed terminals: the pen is lifted at the free end of a stroke
+            for s in (shapes[:len(shapes) - _nrest] if msp and _nrest else shapes):   # pointed terminals: the pen is lifted at the free end of a stroke
                 if s.kind != 'stroke' or s.closed:
                     continue
                 if len(s.nodes) == 2:             # a plain upright (alef, the stem of tah): thinner towards the foot
                     lo = min(s.nodes, key=lambda n: n.y)
                     hi = max(s.nodes, key=lambda n: n.y)
                     if hi.y - lo.y > 300 and abs(hi.x - lo.x) < 30 and lo.cap != 'v':
-                        lo.w *= 0.62
+                        lo.w *= npar.get('foot', 0.62)
                     continue
                 n0 = s.nodes[0]
                 if n0.cap is None and n0.y > kk + 120 and not n0.cc:      # tops of teeth and stems start fine
-                    n0.w *= 0.6
+                    n0.w *= npar.get('top', 0.6)
                 nd = s.nodes[-1]
                 if nd.cap == 'v' or nd.cap == 'h' and abs(nd.y) < 1:
                     continue
-                nd.w *= 0.42
+                nd.w *= npar.get('taper', 0.42)
                 if len(s.nodes) > 3 and s.nodes[-2].cc is False:
                     s.nodes[-2].w *= 0.8
         if nk and letter:
             for s in shapes:
-                s.transform(lambda x, y: (x + nwarp(y, kk), y))
+                s.transform(lambda x, y: (x + nwarp(y, kk, npar.get('low', NASKH_LOW), npar.get('high', NASKH_HIGH)), y))
             if slope:
                 for s in shapes:
                     s.transform(lambda x, y: (x, y + slope * x))
+            _sw = npar.get('swing', 0.0)          # the line between two joins sags a little, as a hand-drawn join does
+            if _sw and (jl or jr):
+                _xs = [nd.x for s in shapes for nd in s.nodes]
+                _x0, _x1 = (0.0 if jl else min(_xs)), (aw if (jr and aw is not None) else max(_xs))
+                if _x1 - _x0 > 60:
+                    def _swing(x, y):
+                        u = min(1.0, max(0.0, (x - _x0) / (_x1 - _x0)))
+                        return x, y - _sw * 4 * u * (1 - u) * max(0.0, 1 - max(0.0, y - kk) / 110.0) * (1.0 if y > -40 else 0.0)
+                    for s in shapes:
+                        s.transform(_swing)
         fx = f * SC
         fy = SC
         if fx != 1.0 or fy != 1.0:
@@ -265,10 +310,17 @@ def ar_fn(st: Style, d):
     for an, (ax, ay) in (inf.get('anchors') or {}).items():
         sc = SC
         x0_, y0_ = E._ev(_fmt(ax), st.ns), E._ev(_fmt(ay), st.ns)
-        if msp:
+        if an in _anch:
+            x0_, y0_ = E._ev(_fmt(_anch[an][0]), st.ns), E._ev(_fmt(_anch[an][1]), st.ns)
+        elif msp:
             x0_ += msp[2]
+            y0_ += msp_dy
+        if (ymsp or _ymall) and not an.startswith('_'):
+            y0_ = _ym(y0_)
+        if _deep != 1.0 and y0_ < 0 and not mark:
+            y0_ *= _deep
         if getattr(st, 'naskh', False) and letter:
-            x0_ += nwarp(y0_, st.ns['k'])
+            x0_ += nwarp(y0_, st.ns['k'], npar.get('low'), npar.get('high'))
             y0_ += slope * x0_
         x = x0_ * (1 if an.startswith('_') else f) * sc + (0 if mark else dx)
         y = y0_ * sc

@@ -18,7 +18,8 @@ from .features import make_features
 from . import nerd
 
 WEIGHTS = [(400, 'Regular'), (500, 'Medium'), (600, 'SemiBold'), (700, 'Bold')]
-FAMILIES = {'Sans': 'Suhar', 'Mono': 'Suhar Mono', 'Cond': 'Suhar Condensed', 'Naskh': 'Suhar Naskh', 'NaskhD': 'Suhar Naskh Display'}
+FAMILIES = {'Sans': 'Suhar', 'Mono': 'Suhar Mono', 'Cond': 'Suhar Condensed', 'Naskh': 'Suhar Naskh', 'NaskhD': 'Suhar Naskh Display',
+            'Sahafa': 'Suhar Sahafa', 'SahafaH': 'Suhar Sahafa Headline'}
 EXTRA_WEIGHTS = [(300, 'Light'), (800, 'ExtraBold')]          # static only
 BLACK = (900, 'Black')                                        # Suhar only
 COND_WIDTH = 0.75
@@ -26,7 +27,12 @@ COND_WIDTH = 0.75
 
 def mkstyle(fam, wght, italic, opsz=0.0, compat=False):
     if fam == 'Cond':
-        return Style('Sans', wght, italic, opsz, compat, width=COND_WIDTH)
+        st = Style('Sans', wght, italic, opsz, compat, width=COND_WIDTH)
+        st.spacef = 0.86
+        return st
+    if fam in ('Sahafa', 'SahafaH'):
+        from . import sahafa
+        return sahafa.style(wght, 'headline' if fam == 'SahafaH' else 'text')
     if fam in ('Naskh', 'NaskhD'):
         st = Style('Sans', wght, italic, opsz, compat).set_naskh()
         st.display = fam == 'NaskhD'
@@ -36,11 +42,11 @@ def mkstyle(fam, wght, italic, opsz=0.0, compat=False):
 
 def static_styles():
     for fam in FAMILIES:
-        ws = WEIGHTS if fam in ('Naskh', 'NaskhD') else [EXTRA_WEIGHTS[0]] + WEIGHTS + [EXTRA_WEIGHTS[1]]
+        ws = WEIGHTS if fam in ('Naskh', 'NaskhD', 'Sahafa', 'SahafaH') else [EXTRA_WEIGHTS[0]] + WEIGHTS + [EXTRA_WEIGHTS[1]]
         if fam == 'Sans':
             ws = ws + [BLACK]
         for wght, wn in ws:
-            for italic in ((False,) if fam == 'NaskhD' else (False, True)):
+            for italic in ((False,) if fam in ('NaskhD', 'Sahafa', 'SahafaH') else (False, True)):
                 yield fam, wght, wn, italic
 
 
@@ -331,7 +337,7 @@ def main(argv=None):
         tag = f"{fam}-{wn}{'Italic' if italic else ''}"
         if a.only and tag not in a.only.split(','):
             continue
-        jobs.append((fam, wght, italic, a.out, not a.no_nerd and fam not in ('Naskh', 'NaskhD')))
+        jobs.append((fam, wght, italic, a.out, not a.no_nerd and fam not in ('Naskh', 'NaskhD', 'Sahafa', 'SahafaH')))
     report = {'static': [], 'variable': []}
     if not a.no_nerd:
         nerd.prepare()

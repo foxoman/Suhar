@@ -620,6 +620,76 @@ for px_ in (8, 9, 10):
     a1 = bounds(fpr, 'uni0627'); a2 = bounds(fpb, 'uni0627'); kk_ = bounds(fpr, 'uni06A9'); gg_ = bounds(fpr, 'uni06AF')
     check('pixel', f'Suhar Pixel {px_}: hand-drawn Arabic, Bold strokes 2 px, Persian ک گ drawn (گ taller by its second stroke)',
           a1[2] - a1[0] == 100 and a2[2] - a2[0] == 200 and kk_[3] - kk_[1] == 700 and gg_[3] > kk_[3], (a1, a2, kk_, gg_))
+
+# ---- Suhar Sahafa (2.1) ----
+SAH = {}
+for ps, fam in (('SuharSahafa', 'Suhar Sahafa'), ('SuharSahafaHeadline', 'Suhar Sahafa Headline')):
+    for st in ('Regular', 'Medium', 'SemiBold', 'Bold'):
+        p = os.path.join(DIST, 'ttf', f'{ps}-{st}.ttf')
+        ok_ = os.path.exists(p)
+        if ok_:
+            SAH[ps, st] = TTFont(p)
+            n = SAH[ps, st]['name']
+            ok_ = (n.getDebugName(16) or n.getDebugName(1)) == fam and (n.getDebugName(17) or n.getDebugName(2)) == st
+        check('sahafa', f'{fam} {st}: present with consistent names', ok_)
+for (ps, st), ff in SAH.items():
+    lab = f"{ps[5:]} {st}"
+    al, sd, xb, hb_ = bounds(ff, 'uni0627'), bounds(ff, 'uni0635.init'), bounds(ff, 'x'), bounds(ff, 'H')
+    check('sahafa', f'{lab}: alef as tall as the Latin capitals (within 50 units)', abs(al[3] - hb_[3]) <= 50, (al[3], hb_[3]))
+    check('sahafa', f'{lab}: the loop of sad as tall as the Latin x-height (within 40 units), x-height 470', abs(sd[3] - xb[3]) <= 40 and 462 <= xb[3] <= 482 and ff['OS/2'].sxHeight == 470, (sd[3], xb[3]))
+    kb = bounds(ff, 'uni0640'); base = kb[3] - kb[1]; lat = stem_at(ff, 'l', 300)
+    check('sahafa', f'{lab}: Latin stem as thick as the Arabic baseline stroke (within 6 %)', abs(lat - base) <= 0.06 * base, (round(lat), base))
+    thin = stem_at(ff, 'uni0627', 350)
+    check('sahafa', f'{lab}: moderate contrast, the Arabic upright is 0.5 to 0.85 of the baseline stroke', 0.5 * base <= thin <= 0.85 * base, (round(thin), base))
+    for gn_, nm_, lim_ in (('uni0635.init', 'sad', 30000), ('uni0641.init', 'feh', 12000), ('uni0648', 'waw', 12000), ('uni0645.init', 'meem', 7000), ('uni0647', 'heh', 12000),
+                           ('uni0642', 'qaf', 12000), ('uni0629', 'teh marbuta', 12000), ('uni0639.medi', 'medial ain', 2500)):
+        ca = contour_areas(ff, gn_)
+        lim2 = lim_ * (0.5 if st == 'Bold' else 0.62 if st == 'SemiBold' else 0.78 if st == 'Medium' else 1.0)
+        inner = [c for c in ca[:-1] if c > 1500]
+        check('sahafa', f'{lab}: the loop of {nm_} stays open (counter of at least {round(lim2)} square units)', bool(inner) and max(inner) >= lim2, [round(c) for c in ca])
+    check('sahafa', f'{lab}: same character set as Suhar Naskh', set(ff.getBestCmap()) == set(FN.getBestCmap()), len(ff.getBestCmap()))
+    check('sahafa', f'{lab}: serifs on the Latin (n is wider at the foot than at mid-height)', stem_at(ff, 'n', 6) > stem_at(ff, 'n', 200) + 60 and stem_at(ff, 'I', 6) > 1.4 * stem_at(ff, 'I', 300), (round(stem_at(ff, 'I', 6)), round(stem_at(ff, 'I', 300))))
+    idot = contour_areas(ff, 'i')
+    check('sahafa', f'{lab}: i keeps a separate dot', len(idot) == 2, idot)
+    check('sahafa', f'{lab}: hinted (fpgm and prep present)', 'fpgm' in ff and 'prep' in ff)
+if SAH:
+    rs_ = R('SuharSahafa-Regular'); rh_ = R('SuharSahafaHeadline-Regular')
+    w1 = sum(a for _, a, *_ in shape(rs_, 'مجلس الوزراء يعتمد الموازنة')); w2 = sum(a for _, a, *_ in shape(rh_, 'مجلس الوزراء يعتمد الموازنة'))
+    check('sahafa', 'Headline sets tighter than Text (3 to 12 % narrower)', 0.88 * w1 <= w2 <= 0.97 * w1, (w1, w2))
+    n1 = bounds(SAH['SuharSahafa', 'Regular'], 'uni0646'); n2 = bounds(SAH['SuharSahafaHeadline', 'Regular'], 'uni0646')
+    check('sahafa', 'Headline has deeper bowls than Text', n2[1] < n1[1] - 15, (n1[1], n2[1]))
+    t1 = stem_at(SAH['SuharSahafa', 'Regular'], 'uni0627', 350) / (bounds(SAH['SuharSahafa', 'Regular'], 'uni0640')[3] - bounds(SAH['SuharSahafa', 'Regular'], 'uni0640')[1])
+    t2 = stem_at(SAH['SuharSahafaHeadline', 'Regular'], 'uni0627', 350) / (bounds(SAH['SuharSahafaHeadline', 'Regular'], 'uni0640')[3] - bounds(SAH['SuharSahafaHeadline', 'Regular'], 'uni0640')[1])
+    check('sahafa', 'Headline has more contrast than Text', t2 < t1 - 0.05, (round(t1, 2), round(t2, 2)))
+    check('sahafa', 'bowls shallower than Suhar Naskh (short descenders)', n1[1] > bounds(FN, 'uni0646')[1], (n1[1], bounds(FN, 'uni0646')[1]))
+    g_ = names(rs_, 'الاقتصاد'); check('sahafa', 'lam-alef ligature forms', any('06440627' in x for x in g_), g_)
+    check('sahafa', 'Sahafa draws its own sad, jeem, meem, lam-alef (differs from Suhar Naskh)',
+          all(bounds(SAH['SuharSahafa', 'Regular'], n) != bounds(FN, n) for n in ('uni0635', 'uni062D', 'uni0645', 'uni06440627')))
+
+# ---- word spacing in every proportional static font ----
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import wordspace as WS
+ws_rows = []
+for fn_ in sorted(os.listdir(os.path.join(DIST, 'ttf'))):
+    if 'Nerd' in fn_ or 'Mono' in fn_ or not fn_.endswith('.ttf'):
+        continue
+    ar_, ft_ = WS.gaps(os.path.join(DIST, 'ttf', fn_), WS.FINALS, WS.INITS, True, 0, 420)
+    la_, _ = WS.gaps(os.path.join(DIST, 'ttf', fn_), WS.LAT_F, WS.LAT_I, False, 0, 470)
+    ma, sa_, na, xa = WS.stats([g for g, _ in ar_]); ml, sl, nl, xl = WS.stats([g for g, _ in la_])
+    ws_rows.append((fn_[:-4], ft_['hmtx']['space'][0], round(ma), round(sa_), round(na), round(xa), round(ml), round(sl)))
+    check('word space', f'{fn_[:-4]}: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)',
+          sa_ < 18 and xa - na < 120 and abs(ma - ml) < 60, (round(ma), round(sa_), round(na), round(xa), round(ml)))
+for fn_ in sorted(os.listdir(os.path.join(DIST, 'ttf'))):
+    if 'Mono' in fn_ and fn_.endswith('.ttf'):
+        fm_ = TTFont(os.path.join(DIST, 'ttf', fn_))
+        check('word space', f'{fn_[:-4]}: the space is one cell', fm_['hmtx']['space'][0] == fm_['hmtx']['uni0628'][0] == fm_['hmtx']['n'][0], fm_['hmtx']['space'][0])
+with open(os.path.join(REP, 'word-spacing.md'), 'w') as fh:
+    fh.write('# Suhar – word spacing\n\nMeasured by `tools/wordspace.py` on the compiled fonts: every word-final Arabic letter against 14 word-initial '
+             'letters (434 pairs per font), and 240 Latin pairs. The optical gap is the mean of the gap between the letter bodies (baseline to loop '
+             'height) and the gap between the full outlines, so a tail under the line counts for half. Units of 1000 per em.\n\n'
+             '| font | space | Arabic gap | sd | min | max | Latin gap | sd |\n|---|---:|---:|---:|---:|---:|---:|---:|\n' +
+             '\n'.join('| ' + ' | '.join(str(x) for x in r) + ' |' for r in ws_rows) + '\n\nThe Mono families have a fixed cell: the space is one cell in every style.\n')
+
 fail = [r for r in results if not r[2]]
 ok = len(results) - len(fail)
 with open(os.path.join(REP, 'validation.json'), 'w') as fh:

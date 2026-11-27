@@ -46,6 +46,16 @@ def main():
     sheet([(line(ND, "أصل الكتابة العربية", 130, rtl=True), INK, True), (line(N, "في على إلى · نجم بحر تحت · صُحار مدينة عُمانية عريقة", 60, rtl=True), ACC, True),
            (paragraph(N, ar, 32, 1480, rtl=True, leading=1.75), INK, True), (line(NB, "Suhar Naskh — the same Latin beside a pen-written Arabic", 36), MUTE, False)],
           os.path.join(OUT, 'naskh.png'))
+    S, SB, SH, SHB = F('SuharSahafa-Regular'), F('SuharSahafa-Bold'), F('SuharSahafaHeadline-Regular'), F('SuharSahafaHeadline-Bold')
+    news = ("أعلنت وزارة الاقتصاد أن الناتج المحلي الإجمالي حقق نموا ملحوظا خلال الربع الثالث من العام، مدفوعا بارتفاع الصادرات غير النفطية "
+            "وتوسع قطاعي الصناعة والخدمات اللوجستية. وقال مسؤول في الوزارة إن ميناء صحار (Sohar Port) استقبل 240 سفينة في شهر واحد.")
+    newse = ("The ministry said output grew strongly in the third quarter, helped by non-oil exports and by industry and logistics. "
+             "Sohar Port handled 240 ships in a single month, an official said.")
+    sheet([(line(SHB, "ميناء صحار يسجل رقما قياسيا", 118, rtl=True), INK, True), (line(SH, "Sohar Port sets a new record", 70), ACC, False),
+           (paragraph(S, news, 30, 1480, rtl=True, leading=1.6), INK, True), (paragraph(S, newse, 30, 1480, leading=1.45), INK, False),
+           (line(SB, "Suhar Sahafa Text Bold — صحيفة عُمان اليومية", 40), INK, False),
+           (line(S, "8 pt at 150 dpi: " + news[:96], 17, rtl=True), MUTE, True)],
+          os.path.join(OUT, 'sahafa.png'))
     code = ['proc greet(name: string): string =', '  ## تحية بالعربية', '  result = "مرحباً يا " & name & "!"', '',
             'echo greet("صُحار")', '# != => := |> 0O 1lI {} [] ()', '┌─ Suhar Mono ─────────┐  ░▒▓█ ▁▂▃▄▅▆▇']
     rows = [(line(M, c if c else ' ', 34), (226, 232, 240) if i not in (1,) else (120, 200, 170), False) for i, c in enumerate(code)]

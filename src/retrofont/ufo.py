@@ -7,7 +7,7 @@ from fontTools.pens.roundingPen import RoundingPen
 from . import engine as E
 from .model import (UPM, CAP, XH, DESC, ASCENT, DESCENT, ITALIC_DEG, Style)
 
-VERSION = (2, 0)
+VERSION = (2, 1)
 WIN_ASCENT, WIN_DESCENT = 1200, 440
 DESIGNER = 'Sultan Al Isaiee (Foxoman)'
 DESIGNER_URL = 'https://www.foxoman.net'
@@ -28,7 +28,7 @@ def make_ufo(st: Style, glyphs: dict, family: str, features: str = '', kerning=N
     i.ascender = ASCENT
     i.descender = DESCENT
     i.capHeight = CAP
-    i.xHeight = XH
+    i.xHeight = getattr(st, 'xh', XH)
     i.italicAngle = -ITALIC_DEG if st.italic else 0
     i.versionMajor, i.versionMinor = VERSION[0], VERSION[1] * 100
     i.copyright = COPYRIGHT
@@ -63,7 +63,7 @@ def make_ufo(st: Style, glyphs: dict, family: str, features: str = '', kerning=N
     i.postscriptUnderlinePosition = -112
     i.postscriptUnderlineThickness = round(2 * st.hb)
     i.postscriptIsFixedPitch = st.mono
-    i.postscriptBlueValues = [-10, 0, XH, XH + 10, CAP, CAP + 10]
+    i.postscriptBlueValues = [-10, 0, getattr(st, 'xh', XH), getattr(st, 'xh', XH) + 10, CAP, CAP + 10]
     i.postscriptOtherBlues = [DESC - 10, DESC]
     i.postscriptStemSnapH = [round(2 * st.hb)]
     i.postscriptStemSnapV = [round(2 * st.a)]

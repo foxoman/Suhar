@@ -190,11 +190,42 @@ def lookup(name):
 # --------------------------------------------------------------------------
 def _shapes(d: GDef, st: Style, xs: float):
     spec = d.mono if (st.mono and d.mono) else (d.ital if (st.italic and d.ital) else d.spec)
-    shapes = E.parse(spec, st.ns, lookup)
+    _la = getattr(st, 'latalt', None)           # a family with its own Latin drawings: {glyph name: spec}
+    _ls = getattr(st, 'latserif', None)         # ... and with serifs added to the shared skeletons: {glyph name: spec}
+    _lm = getattr(st, 'latmap', None)           # ... and its own lower-case proportions: y -> y
+    own = bool(_la and d.name in _la)
+    _u = spec.strip()[4:].split('|')[0] if (spec and spec.strip().startswith('use:') and ';' not in spec) else None
+    alias = bool(_la and _u and (gname(ord(_u)) if len(_u) == 1 else _u) in _la)     # a copy of a redrawn letter
+    if own:
+        spec = _la[d.name]
+    elif _ls and d.name in _ls:
+        spec = spec + '; ' + _ls[d.name]
+
+    def look(n):
+        if len(n) == 1 and gname(ord(n)) in REG:
+            n = gname(ord(n))
+        if _la and n in _la:
+            return _la[n]
+        if _ls and n in _ls:
+            return REG[n].spec + '; ' + _ls[n]
+        return REG[n].spec
+    shapes = E.parse(spec, st.ns, look if (_la or _ls) else lookup)
+    if _lm and not own and not alias and _is_lower(d):
+        for s in shapes:
+            _ys = [n.y for n in s.nodes]
+            if s.kind == 'fill' and min(_ys) > 300 and max(_ys) - min(_ys) < 260:      # a dot stays where it is
+                continue
+            else:
+                s.transform(lambda x, y: (x, _lm(y)))
     if xs != 1.0:
         for s in shapes:
             s.transform(lambda x, y: (x * xs, y))
     return shapes
+
+
+def _is_lower(d):
+    import unicodedata
+    return bool(d.uni) and unicodedata.category(chr(d.uni[0])) == 'Ll'
 
 
 def _pen(d: GDef, st: Style):
@@ -210,7 +241,10 @@ def make_skeleton_glyph(d: GDef, st: Style) -> GlyphOut:
     cs = E.outline(shapes, pen)
     bb = E.bounds(cs)
     is_mark = d.cat == 'mark'
-    l, r = d.sb
+    l, r = (getattr(st, 'latsb', None) or {}).get(d.name, d.sb)
+    _sf = getattr(st, 'latsbf', None)
+    if _sf:
+        l, r = l * _sf(d.name), r * _sf(d.name)
     l = l * st.sbs + st.sba
     r = r * st.sbs + st.sba
     if bb is None:
@@ -265,7 +299,8 @@ def make_skeleton_glyph(d: GDef, st: Style) -> GlyphOut:
             g.anchors[an] = sk(x, y)
     if d.cat == 'base' and d.script == 'latn' and not (d.anchors and 'top' in d.anchors):
         cx = (g.ink[0] + g.ink[2]) / 2
-        top = CAP if (d.top == 'C' or (d.top is None and bb[3] > XH + 60)) else XH
+        _xh = getattr(st, 'xh', XH)
+        top = CAP if (d.top == 'C' or (d.top is None and bb[3] > _xh + 60)) else _xh
         g.anchors.setdefault('top', sk(cx, top))
         g.anchors.setdefault('bottom', sk(cx, 0))
     return g

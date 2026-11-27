@@ -113,6 +113,8 @@ G(0x203B, "w.85 20,90 520,590; w.85 20,590 520,90; dot 270,590 .8; dot 270,90 .8
 
 def _blank(width):
     def fn(st, d):
+        if d.uni and d.uni[0] == 0xA0 and not st.mono:        # the no-break space is as wide as the space
+            return GlyphOut(d.name, d.uni, [], round(width * getattr(st, 'spacef', 1.0) + st.sba))
         return GlyphOut(d.name, d.uni, [], MONO_W if (st.mono and width) else width)
     return fn
 
