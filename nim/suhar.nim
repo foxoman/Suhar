@@ -13,6 +13,15 @@
 ## terminals).  Build with `-d:suharNerd` to embed the Nerd variants
 ## (about 1.4 MB per style) so the Nerd Fonts icons are there too.
 ##
+## **For an app that ships to phones** use the app fonts instead: the same letters at about half the size
+## (no hinting, no terminal symbols, only the layout features an interface needs):
+##
+## .. code-block:: nim
+##   import retroui, suhar
+##   useSuharApp()                    # every language of Suhar, about 250 KB per style
+##   # nim c -d:suharLite ...         # Arabic and Western European Latin only, about 80 KB per style
+##   useSuharRead()                   # Suhar Sahafa, for screens of long reading text
+##
 ## The interface icons of the family live in the Private Use Area
 ## (U+E100..U+E148); `SuharIcon` names them and `icon()` gives the UTF-8 text.
 
@@ -37,10 +46,24 @@ const
   suharMonoItalic* = staticRead(suharFontDir / monoStem & "-Italic.ttf")
   suharMonoBoldItalic* = staticRead(suharFontDir / monoStem & "-BoldItalic.ttf")
 
+  suharLite* {.booldefine.} = false
+    ## `-d:suharLite`: the app fonts with Arabic and Western European Latin only
+  appStem = when suharLite: "SuharAppLite" else: "SuharApp"
+  suharAppRegular* = staticRead(suharFontDir / "app" / appStem & "-Regular.ttf")
+  suharAppBold* = staticRead(suharFontDir / "app" / appStem & "-Bold.ttf")
+  suharAppItalic* = staticRead(suharFontDir / "app" / appStem & "-Italic.ttf")
+  suharAppBoldItalic* = staticRead(suharFontDir / "app" / appStem & "-BoldItalic.ttf")
+  suharReadRegular* = staticRead(suharFontDir / "app" / "SuharAppRead-Regular.ttf")
+  suharReadBold* = staticRead(suharFontDir / "app" / "SuharAppRead-Bold.ttf")
+  suharReadItalic* = staticRead(suharFontDir / "app" / "SuharAppRead-Italic.ttf")
+  suharReadBoldItalic* = staticRead(suharFontDir / "app" / "SuharAppRead-BoldItalic.ttf")
+
   SuharCredit* = "Suhar typeface by Sultan Al Isaiee (@foxoman), SIL Open Font License 1.1"
   SuharCellWidth* = 600        ## advance of every Suhar Mono glyph, in font units (1000 per em)
   SuharAscent* = 940
   SuharDescent* = -360
+  SuharVowelledAscent* = 1280  ## fully vowelled Arabic (shadda with a vowel on a tall letter) reaches this high ...
+  SuharVowelledDescent* = -710 ## ... and this low: give such text taller rows than the line box
 
 type
   SuharIcon* = enum            ## the family's own interface icons (same code points in all four families)
@@ -80,3 +103,12 @@ proc useSuharNaskh*() =
 proc useSuharMono*() =
   ## Suhar Mono as the UI's font (code editors, terminals).
   setUiFontFile(suharMonoRegular, suharMonoBold, suharMonoItalic, suharMonoBoldItalic)
+
+proc useSuharApp*() =
+  ## Suhar as the UI's font, from the smaller app fonts: the default for an app on a phone or tablet.
+  ## Build with `-d:suharLite` when the app shows only Arabic and Western European languages.
+  setUiFontFile(suharAppRegular, suharAppBold, suharAppItalic, suharAppBoldItalic)
+
+proc useSuharRead*() =
+  ## Suhar Sahafa (the body-text family) as the UI's font, from the app fonts: for screens of long reading text.
+  setUiFontFile(suharReadRegular, suharReadBold, suharReadItalic, suharReadBoldItalic)

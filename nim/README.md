@@ -23,3 +23,15 @@ nim c -r --path:<retroui>/src --path:<retroui>/tests -d:useMalloc tests/tload.ni
 To make Suhar Mono the font of a terminal editor such as ned, install `SuharNerdMono-*.ttf` on the
 system and select "Suhar Nerd Mono" in the terminal emulator (Termux: copy
 `SuharNerdMono-Regular.ttf` to `~/.termux/font.ttf` and run `termux-reload-settings`).
+
+## App fonts
+
+```nim
+import retroui, suhar
+useSuharApp()        # Suhar from fonts/app: about 255 KB per style, every language
+```
+
+- `-d:suharLite`: Arabic and Western European Latin only, about 80 KB per style.
+- `useSuharRead()`: Suhar Sahafa for long reading text, about 270 KB per style.
+- `example_app.nim` is a two-language example; `retroapk example_app.nim --name:"Suhar Demo" --id:net.foxoman.suhardemo`
+  packs it for Android.

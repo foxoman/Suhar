@@ -1,6 +1,6 @@
-version       = "2.7.0"
+version       = "2.8.0"
 author        = "Sultan Al Isaiee (@foxoman)"
-description   = "The Suhar typeface (Latin + Arabic, Sans and Mono) for Retro Nim UI"
+description   = "The Suhar typeface (Arabic and Latin) for Retro Nim UI, with smaller app fonts"
 license       = "OFL-1.1"
 installFiles  = @["suhar.nim"]
 installDirs   = @["fonts"]
