@@ -249,6 +249,32 @@ def build_static(args):
     return res
 
 
+def trap_match(fam, italic):
+    """Ink traps for a variable font: (trapped glyphs of the two masters, names of the glyphs that can use them)."""
+    trapped, trap_ok = {}, set()
+    if fam in ('Sahafa', 'SahafaH'):
+        # ink traps need outlines without overlaps; a glyph gets them when its two masters still match point for point
+        def _norm(cs):
+            out = []
+            for c in cs:
+                i = min((k for k, p in enumerate(c) if p[2]), key=lambda k: (round(c[k][1] / 12), c[k][0]))
+                out.append(c[i:] + c[:i])
+            return sorted(out, key=lambda c: (-len(c), min(p[0] for p in c)))
+        for wght in (400, 700):
+            trapped[wght] = build_glyphs(mkstyle(fam, wght, italic, 0.0, compat=False))
+            for g in trapped[wght].values():
+                if g.script == 'arab' and g.contours:
+                    g.contours = _norm(g.contours)
+        for n, g4 in trapped[400].items():
+            g7 = trapped[700].get(n)
+            if g7 is None or g4.script != 'arab' or not g4.contours or len(g4.contours) != len(g7.contours):
+                continue
+            if all(len(c4) == len(c7) and all(p[2] == q[2] and abs(p[0] - q[0]) < 150 and abs(p[1] - q[1]) < 150 for p, q in zip(c4, c7))
+                   for c4, c7 in zip(g4.contours, g7.contours)):
+                trap_ok.add(n)
+    return trapped, trap_ok
+
+
 # ---------------------------------------------------------------------------
 def build_variable(fam, italic, out, save_sources=True):
     """wght (+ opsz for Sans) variable TTF from overlapping, point-compatible masters"""
@@ -267,6 +293,7 @@ def build_variable(fam, italic, out, save_sources=True):
     os.makedirs(src_dir, exist_ok=True)
     it = 'Italic' if italic else ''
     upright_cache = {}
+    trapped, trap_ok = trap_match(fam, italic)
     for wght in (400, 700):
         for oz, ozv in opszs:
             st = mkstyle(fam, wght, italic, oz, compat=True)
@@ -274,6 +301,9 @@ def build_variable(fam, italic, out, save_sources=True):
             if italic and fam in ('Sans', 'Cond', 'Naskh', 'Sahafa', 'SahafaH'):
                 up = build_glyphs(mkstyle(fam, wght, False, oz, compat=True))
             gl, kerning, groups = glyph_set(st, up)
+            for n in trap_ok:
+                if n in gl and not gl[n].components:
+                    gl[n].contours = trapped[wght][n].contours
             wn = 'Regular' if wght == 400 else 'Bold'
             sname = (wn + (' ' + it if it else '')).replace('Regular Italic', 'Italic')
             ufo = make_ufo(st, gl, family, make_features(gl, display=getattr(st, 'display', False), naskh=getattr(st, 'naskh', False)), kerning, groups, style_name=sname)
@@ -320,11 +350,16 @@ def build_variable(fam, italic, out, save_sources=True):
     path = os.path.join(d, f"{family.replace(' ', '')}{'-Italic' if italic else ''}{axes}.ttf")
     vf.save(path)
     w = woff2(path)
+    if trap_ok:
+        tj = os.path.join(d, 'ink-traps.json')
+        rec = json.load(open(tj)) if os.path.exists(tj) else {}
+        rec[os.path.basename(path)] = len(trap_ok)
+        json.dump(rec, open(tj, 'w'), indent=1, sort_keys=True)
     if save_sources:
         for s in doc.sources:
             s.font = None
         doc.write(os.path.join(out, 'sources', os.path.basename(path).replace('.ttf', '.designspace')))
-    return {'name': os.path.basename(path), 'time': round(time.time() - t0, 1), 'files': [path, w], 'dropped_glyphs': dropped}
+    return {'name': os.path.basename(path), 'time': round(time.time() - t0, 1), 'files': [path, w], 'dropped_glyphs': dropped, 'trapped_glyphs': len(trap_ok)}
 
 
 def main(argv=None):
@@ -340,7 +375,7 @@ def main(argv=None):
         tag = f"{fam}-{wn}{'Italic' if italic else ''}"
         if a.only and tag not in a.only.split(','):
             continue
-        jobs.append((fam, wght, italic, a.out, not a.no_nerd and fam not in ('Naskh', 'NaskhD', 'Sahafa', 'SahafaH')))
+        jobs.append((fam, wght, italic, a.out, not a.no_nerd and fam not in ('Naskh', 'NaskhD')))
     report = {'static': [], 'variable': []}
     if not a.no_nerd:
         nerd.prepare()

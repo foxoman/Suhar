@@ -698,6 +698,31 @@ if SAH:
         g0_, g1_ = names(rs_, tx_), names(rs_, tx_, features={ft_: True})
         check('sahafa', f'{ft_} changes {tx_} in Sahafa', g0_ != g1_, (g0_, g1_))
 
+if SAH:
+    from retrofont import arabic as _A
+    check('sahafa', 'every letter skeleton has a drawing of its own in Sahafa', set(_A.RASM) <= set(_S.ARABIC), sorted(set(_A.RASM) - set(_S.ARABIC)))
+    _st = _S.style(400)
+    nlig = sum(1 for n_, i_ in _A.INFO.items() if any(o_ in (i_.get('spec') or '') for o_, _ in _st.altsub))
+    check('sahafa', 'the 14 ligatures and alternates of Suhar Naskh are redrawn (lam-meem, lam on jeem, feh-yeh, returning yeh)', nlig == 14, nlig)
+    kb = bounds(SAH['SuharSahafa', 'Regular'], 'uni0640')
+    check('sahafa', 'Regular baseline stroke between 98 and 110 units', 98 <= kb[3] - kb[1] <= 110, kb[3] - kb[1])
+    fi_ = TTFont(os.path.join(DIST, 'ttf', 'SuharSahafa-Italic.ttf')); fr_ = SAH['SuharSahafa', 'Regular']
+    check('sahafa', 'italic: no slab at the first foot of n, and a different a', stem_at(fi_, 'n', 6) < stem_at(fr_, 'n', 6) - 40 and len(contour_areas(fi_, 'a')) == 2 and fi_['hmtx']['a'][0] != fr_['hmtx']['a'][0], (round(stem_at(fi_, 'n', 6)), round(stem_at(fr_, 'n', 6))))
+    for g_ in ('three', 'six', 'nine', 'V', 'A'):
+        pass
+    tj_ = os.path.join(DIST, 'variable', 'ink-traps.json')
+    rec_ = json.load(open(tj_)) if os.path.exists(tj_) else {}
+    for v_ in ('SuharSahafa[wght].ttf', 'SuharSahafa-Italic[wght].ttf', 'SuharSahafaHeadline[wght].ttf', 'SuharSahafaHeadline-Italic[wght].ttf'):
+        check('sahafa', f"{v_}: ink traps in the glyphs whose masters match (more than 100)", rec_.get(v_, 0) > 100, rec_.get(v_))
+    for ps_, fam_ in (('SuharNerdSahafa', 'Suhar Nerd Sahafa'), ('SuharNerdSahafaHeadline', 'Suhar Nerd Sahafa Headline')):
+        for st_ in ('Regular', 'Italic', 'Medium', 'Medium Italic', 'SemiBold', 'SemiBold Italic', 'Bold', 'Bold Italic'):
+            p = os.path.join(DIST, 'ttf', f"{ps_}-{st_.replace(' ', '')}.ttf")
+            ok_ = os.path.exists(p)
+            if ok_:
+                fn2 = TTFont(p); n = fn2['name']
+                ok_ = (n.getDebugName(16) or n.getDebugName(1)) == fam_ and n.getDebugName(6) == f"{ps_}-{st_.replace(' ', '')}" and 0xE0B0 in fn2.getBestCmap() and 0xF013 in fn2.getBestCmap()
+            check('sahafa', f'{fam_} {st_}: present, named, with Powerline and icon glyphs', ok_)
+
 # ---- word spacing in every proportional static font ----
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import wordspace as WS

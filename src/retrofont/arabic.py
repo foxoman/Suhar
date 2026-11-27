@@ -124,6 +124,11 @@ def ar_fn(st: Style, d):
     if st.mono and _rk in MSPEC and spec.startswith(RASM[_rk]['spec']) and inf.get('cells', 1) == 1:
         _da = RASM[_rk].get('da', RASM[_rk]['top'])[0]
         msp = (MSPEC[_rk], spec[len(RASM[_rk]['spec']):].lstrip(';'), MANCH[_rk] - _da)
+    _named = False                            # a family may replace parts of a ligature or alternate: [(old, new)]
+    for _o, _n in (getattr(st, 'altsub', None) or ()) if not st.mono else ():
+        if _o in spec:
+            spec = spec.replace(_o, _n)
+            _named = True
     mark = inf.get('mark')
     jl, jr, aw = inf.get('jl'), inf.get('jr'), inf.get('aw')
     if msp and _rk in MAW:
@@ -145,6 +150,8 @@ def ar_fn(st: Style, d):
         msp = (naskh_spec(RASM[_rk]['spec'], inf), spec[len(RASM[_rk]['spec']):].lstrip(';'), 0.0)
         ymsp = True
     _ymall = bool(_ym) and not msp
+    _ymshape = _ymall and not _named
+    _bdy = _alt[_rk].get('bdy', 0.0) if (msp and not ymsp and _alt and _rk in _alt and not st.mono) else None
     l = inf.get('l', 45) * st.sbs + st.sba
     r = inf.get('r', 45) * st.sbs + st.sba
     f = 1.0 if mark else st.arx
@@ -183,7 +190,7 @@ def ar_fn(st: Style, d):
             shapes += rest
         else:
             shapes = E.parse(sp_, dict(st.ns, K=0.57) if nk else st.ns, lambda n: REG[n].spec) if sp_ else []
-            if _ymall:
+            if _ymshape:
                 for s in shapes:
                     s.transform(lambda x, y: (x, _ym(y)))
         if _deep != 1.0 and not mark and not inf.get('tab'):
@@ -318,7 +325,7 @@ def ar_fn(st: Style, d):
             x0_, y0_ = E._ev(_fmt(_anch[an][0]), st.ns), E._ev(_fmt(_anch[an][1]), st.ns)
         elif msp:
             x0_ += msp[2]
-            y0_ += msp_dy
+            y0_ += (_bdy if (_bdy is not None and (an.startswith('bot') or an == 'db')) else msp_dy)
         if (ymsp or _ymall) and not an.startswith('_'):
             y0_ = _ym(y0_)
         if _deep != 1.0 and y0_ < 0 and not mark:

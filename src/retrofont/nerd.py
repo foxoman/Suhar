@@ -65,6 +65,8 @@ def _data():
 def _nm(s, mono):
     if mono:
         return s.replace('Suhar Mono', 'Suhar Nerd Mono').replace('SuharMono', 'SuharNerdMono')
+    if 'SuharSahafa' in s:
+        return s.replace('SuharSahafa', 'SuharNerdSahafa')
     if 'SuharCondensed' in s:
         return s.replace('SuharCondensed', 'SuharNerdCondensed')
     return s.replace('Suhar', 'Suhar Nerd', 1).replace('Suhar Nerd-', 'SuharNerd-') if 'Suhar-' in s else s.replace('Suhar', 'Suhar Nerd', 1)
