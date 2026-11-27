@@ -150,6 +150,7 @@ def ar_fn(st: Style, d):
         msp = (naskh_spec(RASM[_rk]['spec'], inf), spec[len(RASM[_rk]['spec']):].lstrip(';'), 0.0)
         ymsp = True
     _ymall = bool(_ym) and not msp
+    _pm = npar.get('post') if (not mark and not inf.get('tab') and ('jl' in inf or 'jr' in inf) and not st.mono) else None
     _ymshape = _ymall and not _named
     _bdy = _alt[_rk].get('bdy', 0.0) if (msp and not ymsp and _alt and _rk in _alt and not st.mono) else None
     l = inf.get('l', 45) * st.sbs + st.sba
@@ -198,6 +199,16 @@ def ar_fn(st: Style, d):
         if _deep != 1.0 and not mark and not inf.get('tab'):
             for s in shapes:
                 s.transform(lambda x, y: (x, y * _deep if y < 0 else y))
+        if _pm:                                   # the proportions of the family, applied to every letter alike
+            _nb = len(shapes) - (_nrest if msp else 0)
+            for _i, s in enumerate(shapes):
+                _ys = [n.y for n in s.nodes]
+                if _i >= _nb or (s.kind == 'fill' and max(_ys) - min(_ys) < 170):      # dots move as a whole
+                    _cy = (min(_ys) + max(_ys)) / 2
+                    _d = _pm(_cy) - _cy
+                    s.transform(lambda x, y: (x, y + _d))
+                else:
+                    s.transform(lambda x, y: (x, _pm(y)))
         kk = st.ns['k']
         for s in shapes:
             for nd in s.nodes:
@@ -336,6 +347,8 @@ def ar_fn(st: Style, d):
             y0_ = _ym(y0_)
         if _deep != 1.0 and y0_ < 0 and not mark:
             y0_ *= _deep
+        if _pm and not an.startswith('_'):
+            y0_ = _pm(y0_)
         if getattr(st, 'naskh', False) and letter:
             x0_ += nwarp(y0_, st.ns['k'], npar.get('low'), npar.get('high'))
             y0_ += slope * x0_

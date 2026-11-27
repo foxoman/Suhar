@@ -635,7 +635,8 @@ for ps, fam in (('SuharSahafa', 'Suhar Sahafa'), ('SuharSahafaHeadline', 'Suhar 
 for (ps, st), ff in SAH.items():
     lab = f"{ps[5:]} {st}"
     al, sd, xb, hb_ = bounds(ff, 'uni0627'), bounds(ff, 'uni0635.init'), bounds(ff, 'x'), bounds(ff, 'H')
-    check('sahafa', f'{lab}: alef as tall as the Latin capitals (within 50 units)', abs(al[3] - hb_[3]) <= 50, (al[3], hb_[3]))
+    check('sahafa', f'{lab}: alef stands 40 to 110 units above the Latin capitals, like an ascender', 40 <= al[3] - hb_[3] <= 110, (al[3], hb_[3]))
+    check('sahafa', f'{lab}: tall and short letters differ clearly (the loop of sad is under 0.62 of alef)', sd[3] < 0.62 * al[3], (sd[3], al[3]))
     check('sahafa', f'{lab}: the loop of sad as tall as the Latin x-height (within 40 units), x-height 470', abs(sd[3] - xb[3]) <= 40 and 462 <= xb[3] <= 482 and ff['OS/2'].sxHeight == 470, (sd[3], xb[3]))
     kb = bounds(ff, 'uni0640'); base = kb[3] - kb[1]; lat = stem_at(ff, 'l', 300)
     check('sahafa', f'{lab}: Latin stem as thick as the Arabic baseline stroke (within 6 %)', abs(lat - base) <= 0.06 * base, (round(lat), base))
@@ -644,7 +645,7 @@ for (ps, st), ff in SAH.items():
     for gn_, nm_, lim_ in (('uni0635.init', 'sad', 30000), ('uni0641.init', 'feh', 12000), ('uni0648', 'waw', 12000), ('uni0645.init', 'meem', 7000), ('uni0647', 'heh', 12000),
                            ('uni0642', 'qaf', 12000), ('uni0629', 'teh marbuta', 12000), ('uni0639.medi', 'medial ain', 2500)):
         ca = contour_areas(ff, gn_)
-        lim2 = lim_ * (0.5 if st == 'Bold' else 0.62 if st == 'SemiBold' else 0.78 if st == 'Medium' else 1.0)
+        lim2 = 0.82 * lim_ * (0.5 if st == 'Bold' else 0.62 if st == 'SemiBold' else 0.78 if st == 'Medium' else 1.0)
         if nm_ == 'medial ain' and st in ('SemiBold', 'Bold'):
             continue                    # medial ain is a wedge; in the heavy weights it is solid, as in written Naskh
         inner = [c for c in ca[:-1] if c > 1500]
@@ -815,6 +816,18 @@ if SAH:
         pth_ = os.path.join(ROOT, f_)
         check('release', f'{lab_} written', os.path.exists(pth_) and os.path.getsize(pth_) > mn_, os.path.getsize(pth_) if os.path.exists(pth_) else 0)
     check('latin', 'Sahafa: old-style figures stand on the Sahafa x-height', abs(bounds(SAH['SuharSahafa', 'Regular'], 'zero.onum')[3] - bounds(SAH['SuharSahafa', 'Regular'], 'x')[3]) < 30, bounds(SAH['SuharSahafa', 'Regular'], 'zero.onum'))
+
+# ---- 2.6: Sahafa for body text ----
+if SAH:
+    ff_ = SAH['SuharSahafa', 'Regular']
+    tb, ts_ = bounds(ff_, 'uni0628.init')[3], bounds(ff_, 'uni0633.init')[3]
+    tm_ = bounds(ff_, 'uni0628.medi')[3]
+    check('body text', 'Sahafa: the teeth of seen are clearly lower than a tooth of beh (at least 60 units), and a tooth is taller at the start of a word than inside it',
+          tb - ts_ >= 60 and tb - tm_ >= 25, (tb, tm_, ts_))
+    _t = 'أعلنت وزارة الاقتصاد أن الناتج المحلي الإجمالي حقق نموا ملحوظا خلال الربع الثالث من العام'
+    wS = sum(a for _, a, *_ in shape(rs_, _t)); wN = sum(a for _, a, *_ in shape(naskh, _t))
+    check('body text', 'Sahafa sets at least 5 % more text on a line than Suhar Naskh', wS < 0.95 * wN, (wS, wN))
+    check('body text', 'Sahafa: bowls reach at least 240 units under the line', bounds(ff_, 'uni0646')[1] <= -240, bounds(ff_, 'uni0646')[1])
 
 # ---- word spacing in every proportional static font ----
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))

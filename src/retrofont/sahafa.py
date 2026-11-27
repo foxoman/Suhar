@@ -16,6 +16,7 @@ from .model import Style, lerp
 LT = 331          # centre line of a loop top   (final: 331 * 1.28 + k = about 470)
 AH = 547          # alef height                 (final 700)
 TH = 282          # tooth height
+SH = 218          # tooth height of seen and sheen: clearly lower, so that سـ and ببـ are different words
 DB = -140         # centre line of a bowl bottom
 LATIN_X = 470     # x-height of the serif Latin
 
@@ -38,8 +39,8 @@ _jb = "425,262 ~70,222 22,20 ~0,-165 232,-165 ~400,-165 505,-92"   # its bowl, l
 
 def _teeth(x):
     """the first two teeth of seen: leaning strokes that bend into a round cup"""
-    return (f"{446 + x},276 ~{446 + x},150 {428 + x},96 ~{404 + x},k {366 + x},k ~{296 + x},k {296 + x},120 {296 + x},270; "
-            f"{296 + x},270 ~{296 + x},150 {280 + x},96 ~{258 + x},k {218 + x},k ~{146 + x},k {146 + x},120 {146 + x},270")
+    return (f"{446 + x},{SH + 6} ~{446 + x},140 {428 + x},92 ~{404 + x},k {366 + x},k ~{296 + x},k {296 + x},112 {296 + x},{SH}; "
+            f"{296 + x},{SH} ~{296 + x},140 {280 + x},92 ~{258 + x},k {218 + x},k ~{146 + x},k {146 + x},112 {146 + x},{SH}")
 
 
 def _kafi(x, bowl=False):
@@ -64,11 +65,11 @@ ARABIC = {
     'jeem.isol': dict(spec=_jh + "; " + _jb, dy=-28, bdy=28),
     'jeem.fina': dict(spec=_jh + "; " + _jb + "; 522,k 30,k", aw=522, dy=-28, bdy=28),
     # ي (and the other toothed letters): the tooth leans and bends into the join
-    'beh.init': dict(spec=f"168,{TH} ~168,128 152,88 ~132,k 72,k 0,k", dy=-30),
-    'behr.init': dict(spec=f"140,{TH} ~140,128 126,88 ~108,k 60,k 0,k", dy=-30),
-    'behr.medi': dict(spec=f"108,{TH - 12} ~108,128 96,88 ~80,k 42,k 0,k; 215,k 85,k", aw=215, dy=-30),
-    'rehr.fina': dict(spec=f"258,k 236,k ~206,k 198,-20 ~176,{DB + 8} 20,{DB - 4} -44,{DB - 4}", aw=258, dx=6, dy=0),
-    'beh.medi': dict(spec=f"128,{TH} ~128,128 114,88 ~96,k 52,k 0,k; 252,k 100,k", aw=252, dy=-30),
+    'beh.init': dict(spec=f"168,{TH + 34} ~168,128 152,88 ~132,k 72,k 0,k", dy=4),
+    'behr.init': dict(spec=f"140,{TH + 34} ~140,128 126,88 ~108,k 60,k 0,k", dy=4),
+    'behr.medi': dict(spec=f"108,{TH - 18} ~108,128 96,88 ~80,k 42,k 0,k; 215,k 85,k", aw=215, dy=-40),
+    'rehr.fina': dict(spec=f"258,k 238,k ~212,k 204,-18 ~178,{DB - 2} 30,{DB - 14} -58,{DB + 4}", aw=258, dx=6, dy=0),
+    'beh.medi': dict(spec=f"128,{TH - 8} ~128,128 114,88 ~96,k 52,k 0,k; 252,k 100,k", aw=252, dy=-38),
     'yeh.fina': dict(spec="472,k 432,k ~378,k 378,0 ~378,-72 190,-72 ~-22,-72 -22,18 ~-22,98 24,150", aw=472, dy=-17, bdy=-14),
     'yeh.isol': dict(spec="500,212 ~500,298 420,298 ~336,298 336,214 ~336,132 396,82 ~442,46 442,4 ~442,-72 220,-72 ~-22,-72 -22,18 ~-22,98 24,150", dy=-17, bdy=-14),
     # ف: a round, open loop standing on the line
@@ -104,8 +105,8 @@ ARABIC = {
     'waw.isol': dict(spec=_loop(160, 252, 'k+6', LT - 12) + f"; 286,176 286,20 ~286,{DB - 6} 86,{DB - 6} -22,{DB - 6}", dx=10, dy=LT - 12 - 290),
     'waw.fina': dict(spec=_loop(160, 252, 'k+6', LT - 12) + f"; 286,176 286,20 ~286,{DB - 6} 86,{DB - 6} -22,{DB - 6}; 376,k 256,k", aw=376, dx=10, dy=LT - 12 - 290),
     # ر ز: a short tail that sweeps under the line; د ذ: an open angle; ن: a wide, shallow bowl
-    'reh.isol': dict(spec=f"196,262 ~214,120 196,30 ~168,{DB + 8} 20,{DB - 4} -44,{DB - 4}", dx=6, dy=0),
-    'reh.fina': dict(spec=f"296,k 262,k ~206,k 198,-20 ~176,{DB + 8} 20,{DB - 4} -44,{DB - 4}", aw=296, dx=6, dy=0),
+    'reh.isol': dict(spec=f"190,268@1.1 ~236,150 206,36 ~172,{DB - 2} 30,{DB - 14} -58,{DB + 4}", dx=6, dy=0),
+    'reh.fina': dict(spec=f"296,k 262,k ~214,k 204,-18 ~178,{DB - 2} 30,{DB - 14} -58,{DB + 4}", aw=296, dx=6, dy=0),
     'dal.isol': dict(spec="128,338 ~312,214 312,112 ~312,k 205,k 0,k", dx=4, dy=-10),
     'dal.fina': dict(spec="128,338 ~312,214 312,112 ~312,k 205,k 0,k; 392,k 205,k", aw=392, dx=4, dy=-10),
     'noon.isol': dict(spec=f"452,268 452,-24 ~452,{DB} 226,{DB} ~-12,{DB} -12,15 ~-12,105 30,165", dx=10, dy=0),
@@ -125,10 +126,10 @@ ARABIC = {
     'beh.fina': dict(spec=f"560,{TH - 12} 560,128 ~560,k 450,k 110,k ~-12,k -12,105 ~-12,170 26,214; 640,k 450,k", aw=640, dy=0),
     'barree.isol': dict(spec="350,236 ~44,246 44,108 ~44,-18 210,-18 620,-18", dy=-8),
     'barree.fina': dict(spec="300,k 210,k ~40,k 40,-60 ~40,-150 210,-150 640,-150", aw=300, dy=0, bdy=15),
-    'seen.init': dict(spec=_teeth(0) + "; 146,270 ~146,128 132,88 ~114,k 70,k 0,k", dy=-16),
-    'seen.medi': dict(spec=_teeth(0) + "; 146,270 ~146,128 132,88 ~114,k 70,k 0,k; 540,k 420,k", aw=540, dy=-16),
-    'seen.isol': dict(spec=_teeth(300) + "; 446,270 446,25 " + _bowl.format(x=446, m=218), dy=-16, bdy=10),
-    'seen.fina': dict(spec=_teeth(300) + "; 446,270 446,25 " + _bowl.format(x=446, m=218) + "; 840,k 690,k", aw=840, dy=-16, bdy=10),
+    'seen.init': dict(spec=_teeth(0) + f"; 146,{SH} ~146,120 132,84 ~114,k 70,k 0,k", dy=SH - 290 + 6),
+    'seen.medi': dict(spec=_teeth(0) + f"; 146,{SH} ~146,120 132,84 ~114,k 70,k 0,k; 540,k 420,k", aw=540, dy=SH - 290 + 6),
+    'seen.isol': dict(spec=_teeth(300) + f"; 446,{SH} 446,25 " + _bowl.format(x=446, m=218), dy=SH - 290 + 6, bdy=10),
+    'seen.fina': dict(spec=_teeth(300) + f"; 446,{SH} 446,25 " + _bowl.format(x=446, m=218) + "; 840,k 690,k", aw=840, dy=SH - 290 + 6, bdy=10),
     'ain.isol': dict(spec="372,268 ~368,346 250,346 ~120,346 120,226 ~120,108 265,102 408,98!r; 403,98 ~30,68 12,-36 ~0,-176 240,-176 ~408,-176 498,-104", dy=-6, bdy=10),
     'kaf.isol': dict(spec=_kafb, dy=AH - 600),
     'kaf.fina': dict(spec=_kafb + "; 590,k 400,k", aw=590, dy=AH - 600),
@@ -249,6 +250,18 @@ LATIN_IT = {
 }
 
 
+def _post(k, loop=308.0, alef=585.0):
+    """Body-text proportions: the loops a little lower and the stems taller, so that tall and short letters differ more
+    and a word has a clearer outline.  Final heights: loops about 445, alef about 765."""
+    def f(y):
+        if y <= k:
+            return y
+        if y <= LT:
+            return k + (y - k) * (loop - k) / (LT - k)
+        return loop + (y - LT) * (alef - loop) / (AH - LT)
+    return f
+
+
 def _latmap(y):
     """lower case: x-height 470 instead of 520, ascenders still at the cap height"""
     if y <= 0 or y >= 700:
@@ -298,7 +311,7 @@ def style(wght=400, cut='text', italic=False, compat=False, opsz=0.0, grade=0.0)
     t = st.t
     ta_ = t if t <= 1 else 1 + (t - 1) * 0.55
     ra_ = (lerp(44, 74, ta_) + lerp(38, 61, ta_)) / 2 * (st.r / ((lerp(44, 74, t) + lerp(38, 61, t)) / 2)) * lerp(1.12, 1.05, min(max(t, 0.0), 1.0)) * (lerp(1.22, 1.0, min(max(t, 0.0), 1.0)) if typ else 1.0)
-    st.arx *= 0.93                                                 # a newspaper column needs an economical letter
+    st.arx *= 0.885                                                # a newspaper column needs an economical letter
     if head:
         pa, pb = 1.30, 0.62                                        # more contrast for large sizes
     else:
@@ -313,13 +326,13 @@ def style(wght=400, cut='text', italic=False, compat=False, opsz=0.0, grade=0.0)
     st.apen = E.Pen(ra_ * pa, ra_ * pb, 62.0)
     st.ra = st.apen.extent()[1]
     st.ns['k'] = st.ra
-    st.ns['q'] = st.ra * lerp(1.0, 0.86, t) * (1 + (0.14 if opsz < 0 else -0.04) * ok_)
-    st.npar = dict(low=0.16, high=0.03, K=0.56, taper=0.62, top=0.6, foot=0.8, swing=0.0, ymap=_armap(st.ra), traps=0.42)
+    st.ns['q'] = st.ra * lerp(1.06, 0.9, t) * (1 + (0.14 if opsz < 0 else -0.04) * ok_)
+    st.npar = dict(low=0.16, high=0.03, K=0.56, taper=0.62, top=0.6, foot=0.8, swing=0.0, ymap=_armap(st.ra), traps=0.42, deep=1.10, post=_post(st.ra))
     if typ:
         st.npar.update(taper=1.0, top=1.0, foot=1.0, traps=0.0, fillet=0.5)
         st.sbs *= 1.1
     if head:
-        st.npar.update(low=0.20, taper=0.42, top=0.5, foot=0.66, deep=1.14, traps=0.0, fillet=0.34)
+        st.npar.update(low=0.20, taper=0.42, top=0.5, foot=0.66, deep=1.18, traps=0.0, fillet=0.34)
         st.arx *= 0.96
         st.sbs *= 0.88
         st.xs *= 0.95

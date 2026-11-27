@@ -89,7 +89,7 @@ def make_features(glyphs: dict, display: bool = False, naskh: bool = False, saha
                 "@StJ = [" + ' '.join(a for a, _ in stj) + "];", "@StJj = [" + ' '.join(b for _, b in stj) + "];",
                 "lookup stack_tooth {", "    sub @StT by @StTj;", "} stack_tooth;", "lookup stack_jeem {", "    sub @StJ by @StJj;", "} stack_jeem;",
                 f"feature {_t} {{"]
-        if not display:
+        if _t == 'ss07':
             out += ['    featureNames { name "Letters standing on jeem"; };']
         out += ["    script arab;", "    lookup stack_ctx1 {", "        lookupflag IgnoreMarks;", "        sub @StT' lookup stack_tooth @StJ;", "    } stack_ctx1;",
                 "    lookup stack_ctx2 {", "        lookupflag IgnoreMarks;", "        sub @StTj @StJ' lookup stack_jeem;", "    } stack_ctx2;", f"}} {_t};", ""]
