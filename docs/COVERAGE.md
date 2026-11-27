@@ -2,7 +2,7 @@
 
 Generated from `dist/ttf/Suhar-Regular.ttf` by `tools/make_docs.py`. Suhar Mono has the same character set. The Nerd families add the Nerd Fonts icons (see ICONS.md).
 
-**2469 code points, 3002 glyphs** (the difference is contextual Arabic forms, ligatures and components).
+**2469 code points, 3021 glyphs** (the difference is contextual Arabic forms, ligatures and components).
 
 | Block | Range | In font | Assigned in block | Code points |
 |---|---|---:|---:|---|

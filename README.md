@@ -9,7 +9,7 @@ stories sail from. I started it as the interface font of [Retro Nim UI](https://
 and of my terminal editor ned, and it grew into a family for screens, bilingual signage and print.
 
 - Designer: Sultan Al Isaiee ([@foxoman](https://github.com/foxoman), <https://www.foxoman.net>)
-- Version 2.6 · SIL Open Font License 1.1
+- Version 2.7 · SIL Open Font License 1.1
 - Scripts: Latin (extended, Vietnamese, transliteration), Arabic (Arabic, Persian, Urdu, Kurdish, Pashto,
   Sindhi, Uyghur, Jawi, Quranic marks), Greek (monotonic and polytonic), Cyrillic, Hebrew with points
 - 2,469 characters in Suhar, 13,064 in the Nerd builds
@@ -28,20 +28,21 @@ them keeps one colour and one height:
 |---|---|---|
 | **Suhar** | interfaces, text, signage | Light to Black, with italics (14) |
 | **Suhar Condensed** | signs and tight headlines, about 15 % narrower | Light to ExtraBold, with italics (12) |
-| **Suhar Naskh** | books, magazines, long Arabic text | Regular to Bold, with italics (8) |
+| **Suhar Naskh** | books, magazines, long Arabic text | Light to ExtraBold, with italics (12) |
 | **Suhar Naskh Caption** | Naskh at 6 to 8 point | Regular to Bold, with italics (8) |
 | **Suhar Naskh Display** | titles; joined words slope down to the left as in handwriting | Regular to Bold (4) |
-| **Suhar Sahafa** | newspaper text: a low, wide Naskh with large open loops and a serif Latin | Regular to Bold, with italics (8) |
-| **Suhar Sahafa Headline** | newspaper headlines: tighter, more contrast, deeper bowls | Regular to Bold, with italics (8) |
+| **Suhar Sahafa** | newspaper text: a Naskh for small sizes with a serif Latin | Light to ExtraBold, with italics (12) |
+| **Suhar Sahafa Headline** | newspaper headlines: tighter, more contrast, deeper bowls | Light to Black, with italics (14) |
 | **Suhar Sahafa Caption** | 6 to 8 point: thicker thin strokes, looser spacing, larger dots, marks further out | Regular to Bold, with italics (8) |
 | **Suhar Typewriter** | typed letters and forms: one weight of line, slab serifs, filled corners | Regular, Bold, with italics (4) |
 | **Suhar Mono** | code and terminals, 600‑unit cell | Light to ExtraBold, with italics (12) |
 | **Suhar Nerd**, **Suhar Nerd Mono**, **Suhar Nerd Condensed**, **Suhar Nerd Sahafa**, **Suhar Nerd Sahafa Headline** | the same with the Nerd Fonts 3.5.1 icons | as their base family |
 | **Suhar Pixel 8–13**, **Suhar Mono Pixel 12/14** | one exact pixel size each, no blur | Regular, Bold |
 
-Variable fonts: `Suhar[opsz,wght]`, `SuharCondensed[opsz,wght]`, `SuharNaskh[GRAD,opsz,wght]`, `SuharNaskhDisplay[wght]`,
-`SuharSahafa[GRAD,opsz,wght]`, `SuharSahafaHeadline[GRAD,opsz,wght]`, `SuharMono[wght]` and their italics
-(weight 400–700, optical size 8–72, grade −50 to 50).
+Variable fonts: `Suhar[opsz,wght]`, `SuharCondensed[opsz,wght]`, `SuharNaskh[CTRS,GRAD,TATW,opsz,wght]`,
+`SuharNaskhDisplay[wght]`, `SuharSahafa[CTRS,GRAD,TATW,opsz,wght]`, `SuharSahafaHeadline[CTRS,GRAD,TATW,opsz,wght]`,
+`SuharMono[wght]` and their italics (weight 400–700, optical size 8–72, grade −50 to 50, tatweel 0–100,
+contrast −50 to 50).
 
 ![Suhar Naskh and Naskh Display](docs/images/naskh.png)
 
@@ -93,6 +94,14 @@ text. `docs/images/sahafa-compare.png` shows one paragraph in Sahafa, Noto Naskh
 - **Grade.** The Suhar Sahafa and Suhar Naskh variable fonts have a grade axis: −50 for paper that spreads ink, +50 for coated paper
   and toner. A grade changes the stroke and nothing else, so the text does not reflow:
   `font-variation-settings: "GRAD" -50`.
+- **Tatweel.** The Naskh and Sahafa variable fonts have a tatweel axis (`TATW`, 0 to 100): every join between two
+  letters grows by up to 140 units, smoothly, without inserting a character. A little of it (20 to 40) lets a
+  justified column close its lines with the letters instead of the word spaces:
+  `font-variation-settings: "TATW" 30`.
+- **Contrast.** The same fonts have a contrast axis (`CTRS`): −50 thickens the thin strokes for poor paper and very
+  small sizes, +50 makes them finer for large sizes, at any weight.
+- **Other letter forms.** `ss08` gives the round ع of earlier versions, `ss09` a curved alef, `ss10` a ح with a head
+  and a return stroke. They are for readers and designers who prefer those shapes.
 - **Neighbour forms.** In the Naskh and Sahafa families some letters change with their neighbour, on by default
   (`calt`): a tooth before final ر ز is narrower and the ر starts at once (بر، تبرير); a tooth before final ن ي is
   raised (بين، نبي); ك before ا ل is narrower (كال، كل); final ي returns under ف ق (في); and in Sahafa ل stands on a
@@ -219,7 +228,7 @@ python tools/make_docs.py                             # coverage tables, specime
 
 ## Checked, and not checked
 
-Each release runs 2,751 automatic checks on the built files: naming, metrics, hinting, shaping in every
+Each release runs 3,113 automatic checks on the built files: naming, metrics, hinting, shaping in every
 script, mark placement, kerning, the space between words in every style (`reports/word-spacing.md`), the Mono grid, the pixel fonts, the variable fonts, and loading in Retro Nim
 UI. The report is `reports/validation.md`.
 

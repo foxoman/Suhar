@@ -60,8 +60,8 @@ I would rather list these here than have you find them in production.
   for the baseline stroke, which I judged the most a text weight can carry at 8 point.
 - Ink traps are still cut by rule (every sharp inner corner between the baseline and the loop height). I have
   looked at them enlarged on the joins of ب س ص ط ح ف ك ع د ل م ن and removed the stubs I found, but they
-  are untested on a press. In the variable fonts only 73 to 86 glyphs have them; the others keep overlapping
-  outlines, because their ten masters do not match point for point once the overlaps are removed.
+  are untested on a press. In the variable fonts only 70 to 94 glyphs have them; the others keep overlapping
+  outlines, because their sixteen masters do not match point for point once the overlaps are removed.
 - The Arabic italic is the upright drawing slanted to the left; Arabic has no cursive italic to draw. In the
   Latin italic only a, n, l, w and the feet of d h i k m r u are redrawn; the other letters are slanted.
 - Latin serifs have straight wedge brackets, not curved ones. 0 and 8 have no serifs, as in any serif face;
@@ -87,6 +87,19 @@ I would rather list these here than have you find them in production.
 - Two weights only, no variable font, and it has had no use yet.
 
 ## Sizes, paper and justification
+
+- The tatweel axis lengthens every join by the same amount and with a straight stroke. A calligrapher lengthens
+  a few chosen joins in a line and curves them; choosing the places is still the application's job, or that of
+  `tools/kashida.py`.
+- `TATW` and `CTRS` are axes of my own, not registered ones. Browsers reach them with `font-variation-settings`,
+  and applications that list a font's axes show them as sliders; applications without variable font support
+  cannot use them at all, and there are no static fonts for them.
+- The contrast axis is small on purpose (about ±11 % of the pen's thin side); it is a correction, not a change
+  of style.
+- Light, ExtraBold and Black exist only as static fonts; the weight axis still runs from 400 to 700. In
+  Sahafa Headline Black the small counters of م ع and of joined ه close up.
+- The three stylistic sets are alternatives I drew, not forms collected from readers; ss09 changes only the
+  plain alef and its hamza and madda forms.
 
 - Optical sizes and grades exist only in the variable fonts, apart from the two Caption families. Suhar Naskh
   Display and Suhar Mono have neither axis; Suhar and Suhar Condensed have no grade axis.

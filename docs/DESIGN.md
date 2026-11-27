@@ -243,3 +243,15 @@ their proportions with one map (`_post`) applied to every letter of the family:
 
 The map leaves everything up to the baseline stroke alone, compresses the zone up to the loop height and
 stretches the zone above it; dots are moved as a whole, so they keep their shape.
+
+## Tatweel, contrast, alternates (2.7)
+
+- **Tatweel axis**: in the variable masters every letter that joins to its left gets one more baseline stroke
+  from its left edge; the tatweel masters make it 140 units long and move the letter right by as much. The
+  default masters carry the same stroke with almost no length, so all masters have the same contours.
+- **Contrast axis**: the two radii of the pen change in opposite directions (Sahafa 1.20/0.75 → 1.16/0.86 at −50 and
+  1.24/0.64 at +50), and the Latin horizontals follow by ∓14 %.
+- The Naskh and Sahafa variable fonts are built from sixteen masters: two weights × (three optical sizes, two
+  grades, one tatweel, two contrasts). 70 to 94 glyphs keep their ink traps across all sixteen.
+- **Stylistic sets** are extra skeletons (`ainr`, `alefc`, `jeemh`) registered for every letter that uses the
+  default one, so dotted and hamza forms get them too.

@@ -1,5 +1,19 @@
 # Changelog
 
+## 2.7 (November 2026)
+
+**Variable fonts of Suhar Naskh and Suhar Sahafa**
+- Tatweel axis (`TATW` 0–100): the joins grow by up to 140 units.
+- Contrast axis (`CTRS` −50 to 50): thicker or finer thin strokes at any weight.
+- The files are now `SuharNaskh[CTRS,GRAD,TATW,opsz,wght]`, `SuharSahafa[CTRS,GRAD,TATW,opsz,wght]` and
+  `SuharSahafaHeadline[CTRS,GRAD,TATW,opsz,wght]`.
+
+**Stylistic sets** (all families but Mono)
+- `ss08` round ain, `ss09` curved alef, `ss10` hah with a head and a return stroke.
+
+**More weights**
+- Suhar Naskh and Suhar Sahafa: Light and ExtraBold. Suhar Sahafa Headline: Light, ExtraBold and Black.
+
 ## 2.6 (November 2026)
 
 **Suhar Sahafa is reshaped for body text**
