@@ -138,3 +138,36 @@ so it is redrawn, not squeezed. The pixel fonts are made by `src/retrofont/pixel
 glyph of the hinted font at one size in 1 bit, and that bitmap becomes the outline (100 units per pixel).
 At the design size, or a whole multiple, every renderer shows the same pixels with no grey blur. Kerning is
 dropped and advances are whole pixels; Arabic shaping and marks are kept.
+
+## Suhar Sahafa (2.1)
+
+A newspaper face has to stay open in 8 and 9 point on poor paper and still save room. Sahafa gets there by
+proportion and not by weight. In font units (1000 per em):
+
+| | Suhar Naskh | Suhar Sahafa |
+|---|---:|---:|
+| alef | 800 | 715 (cap height 700) |
+| loop of ص | 385 | 470 (the Latin x-height) |
+| tooth | 450 | 375 |
+| bowl of ن | −265 | −250 (Headline −280) |
+| pen ratio | 2.6 : 1 | 1.6 : 1 (Headline 2.1 : 1) |
+
+- `sahafa.py` holds the letters drawn for the family as replacement bodies (`ARABIC`); dots and marks of the
+  shared letter definitions are moved to the new body. Letters without a body are mapped through one
+  piecewise vertical scale (`_armap`), so stems, teeth and bowls land on the same heights.
+- The joining line sags by 7 units between two joins (`swing`), terminals taper to 62 % (Headline 42 %),
+  and strokes below the line sweep left by 16 % of their depth (Headline 20 %).
+- Letters are set 7 % narrower than in Suhar Naskh (Headline a further 4 %).
+- Latin: the Suhar skeletons with the x-height lowered to 470 by a vertical map (ascenders stay at 700),
+  slab serifs added per letter (`SERIF`), and a e g l n s w drawn again (`LATIN`). The stem is the Arabic
+  baseline half-thickness; the horizontals are 66 % of it (Headline 56 %). A serif reaches a fixed distance
+  beyond the stem edge, so it does not disappear in Bold.
+- The word space is 278 units in Text and 256 in Headline.
+
+### Measuring the space between words
+
+`tools/wordspace.py` shapes every word-final Arabic letter against fourteen word-initial letters and
+measures the gap twice: between the letter bodies (baseline to loop height) and between the full outlines.
+The mean of the two is the optical gap, so a tail under the line counts for half. In an italic the outlines
+are set upright first, because the eye measures a gap along the slant. Across all proportional styles the
+standard deviation of the gap is 8 to 14 units on a mean of about 350 to 375.

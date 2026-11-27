@@ -2,7 +2,7 @@
 
 Produced by `tools/validate.py` from the compiled files in `dist/`. Shaping uses HarfBuzz, rasterisation uses FreeType (with the fonts' own TrueType hinting), structure checks use fontTools and the OpenType Sanitizer.
 
-**1663 checks passed, 0 failed.**
+**1986 checks passed, 0 failed.**
 
 ## All checks
 
@@ -1558,6 +1558,150 @@ Produced by `tools/validate.py` from the compiled files in `dist/`. Shaping uses
 ### sanitizer
 
 - PASS — SuharNerdMono-SemiBoldItalic.otf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharSahafa-Bold.otf: GSUB
+- PASS — SuharSahafa-Bold.otf: GPOS
+- PASS — SuharSahafa-Bold.otf: GDEF
+
+### metrics
+
+- PASS — SuharSahafa-Bold.otf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### no placeholders
+
+- PASS — SuharSahafa-Bold.otf: no empty mapped glyphs
+
+### sanitizer
+
+- PASS — SuharSahafa-Bold.otf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharSahafa-Medium.otf: GSUB
+- PASS — SuharSahafa-Medium.otf: GPOS
+- PASS — SuharSahafa-Medium.otf: GDEF
+
+### metrics
+
+- PASS — SuharSahafa-Medium.otf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### no placeholders
+
+- PASS — SuharSahafa-Medium.otf: no empty mapped glyphs
+
+### sanitizer
+
+- PASS — SuharSahafa-Medium.otf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharSahafa-Regular.otf: GSUB
+- PASS — SuharSahafa-Regular.otf: GPOS
+- PASS — SuharSahafa-Regular.otf: GDEF
+
+### metrics
+
+- PASS — SuharSahafa-Regular.otf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### no placeholders
+
+- PASS — SuharSahafa-Regular.otf: no empty mapped glyphs
+
+### sanitizer
+
+- PASS — SuharSahafa-Regular.otf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharSahafa-SemiBold.otf: GSUB
+- PASS — SuharSahafa-SemiBold.otf: GPOS
+- PASS — SuharSahafa-SemiBold.otf: GDEF
+
+### metrics
+
+- PASS — SuharSahafa-SemiBold.otf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### no placeholders
+
+- PASS — SuharSahafa-SemiBold.otf: no empty mapped glyphs
+
+### sanitizer
+
+- PASS — SuharSahafa-SemiBold.otf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharSahafaHeadline-Bold.otf: GSUB
+- PASS — SuharSahafaHeadline-Bold.otf: GPOS
+- PASS — SuharSahafaHeadline-Bold.otf: GDEF
+
+### metrics
+
+- PASS — SuharSahafaHeadline-Bold.otf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### no placeholders
+
+- PASS — SuharSahafaHeadline-Bold.otf: no empty mapped glyphs
+
+### sanitizer
+
+- PASS — SuharSahafaHeadline-Bold.otf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharSahafaHeadline-Medium.otf: GSUB
+- PASS — SuharSahafaHeadline-Medium.otf: GPOS
+- PASS — SuharSahafaHeadline-Medium.otf: GDEF
+
+### metrics
+
+- PASS — SuharSahafaHeadline-Medium.otf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### no placeholders
+
+- PASS — SuharSahafaHeadline-Medium.otf: no empty mapped glyphs
+
+### sanitizer
+
+- PASS — SuharSahafaHeadline-Medium.otf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharSahafaHeadline-Regular.otf: GSUB
+- PASS — SuharSahafaHeadline-Regular.otf: GPOS
+- PASS — SuharSahafaHeadline-Regular.otf: GDEF
+
+### metrics
+
+- PASS — SuharSahafaHeadline-Regular.otf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### no placeholders
+
+- PASS — SuharSahafaHeadline-Regular.otf: no empty mapped glyphs
+
+### sanitizer
+
+- PASS — SuharSahafaHeadline-Regular.otf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharSahafaHeadline-SemiBold.otf: GSUB
+- PASS — SuharSahafaHeadline-SemiBold.otf: GPOS
+- PASS — SuharSahafaHeadline-SemiBold.otf: GDEF
+
+### metrics
+
+- PASS — SuharSahafaHeadline-SemiBold.otf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### no placeholders
+
+- PASS — SuharSahafaHeadline-SemiBold.otf: no empty mapped glyphs
+
+### sanitizer
+
+- PASS — SuharSahafaHeadline-SemiBold.otf: OpenType Sanitizer
 
 ### tables
 
@@ -3465,6 +3609,182 @@ Produced by `tools/validate.py` from the compiled files in `dist/`. Shaping uses
 
 ### tables
 
+- PASS — SuharSahafa-Bold.ttf: GSUB
+- PASS — SuharSahafa-Bold.ttf: GPOS
+- PASS — SuharSahafa-Bold.ttf: GDEF
+
+### hinting
+
+- PASS — SuharSahafa-Bold.ttf: TrueType instructions (fpgm/prep/cvt)
+
+### metrics
+
+- PASS — SuharSahafa-Bold.ttf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### no placeholders
+
+- PASS — SuharSahafa-Bold.ttf: no empty mapped glyphs
+
+### sanitizer
+
+- PASS — SuharSahafa-Bold.ttf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharSahafa-Medium.ttf: GSUB
+- PASS — SuharSahafa-Medium.ttf: GPOS
+- PASS — SuharSahafa-Medium.ttf: GDEF
+
+### hinting
+
+- PASS — SuharSahafa-Medium.ttf: TrueType instructions (fpgm/prep/cvt)
+
+### metrics
+
+- PASS — SuharSahafa-Medium.ttf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### no placeholders
+
+- PASS — SuharSahafa-Medium.ttf: no empty mapped glyphs
+
+### sanitizer
+
+- PASS — SuharSahafa-Medium.ttf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharSahafa-Regular.ttf: GSUB
+- PASS — SuharSahafa-Regular.ttf: GPOS
+- PASS — SuharSahafa-Regular.ttf: GDEF
+
+### hinting
+
+- PASS — SuharSahafa-Regular.ttf: TrueType instructions (fpgm/prep/cvt)
+
+### metrics
+
+- PASS — SuharSahafa-Regular.ttf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### no placeholders
+
+- PASS — SuharSahafa-Regular.ttf: no empty mapped glyphs
+
+### sanitizer
+
+- PASS — SuharSahafa-Regular.ttf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharSahafa-SemiBold.ttf: GSUB
+- PASS — SuharSahafa-SemiBold.ttf: GPOS
+- PASS — SuharSahafa-SemiBold.ttf: GDEF
+
+### hinting
+
+- PASS — SuharSahafa-SemiBold.ttf: TrueType instructions (fpgm/prep/cvt)
+
+### metrics
+
+- PASS — SuharSahafa-SemiBold.ttf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### no placeholders
+
+- PASS — SuharSahafa-SemiBold.ttf: no empty mapped glyphs
+
+### sanitizer
+
+- PASS — SuharSahafa-SemiBold.ttf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharSahafaHeadline-Bold.ttf: GSUB
+- PASS — SuharSahafaHeadline-Bold.ttf: GPOS
+- PASS — SuharSahafaHeadline-Bold.ttf: GDEF
+
+### hinting
+
+- PASS — SuharSahafaHeadline-Bold.ttf: TrueType instructions (fpgm/prep/cvt)
+
+### metrics
+
+- PASS — SuharSahafaHeadline-Bold.ttf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### no placeholders
+
+- PASS — SuharSahafaHeadline-Bold.ttf: no empty mapped glyphs
+
+### sanitizer
+
+- PASS — SuharSahafaHeadline-Bold.ttf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharSahafaHeadline-Medium.ttf: GSUB
+- PASS — SuharSahafaHeadline-Medium.ttf: GPOS
+- PASS — SuharSahafaHeadline-Medium.ttf: GDEF
+
+### hinting
+
+- PASS — SuharSahafaHeadline-Medium.ttf: TrueType instructions (fpgm/prep/cvt)
+
+### metrics
+
+- PASS — SuharSahafaHeadline-Medium.ttf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### no placeholders
+
+- PASS — SuharSahafaHeadline-Medium.ttf: no empty mapped glyphs
+
+### sanitizer
+
+- PASS — SuharSahafaHeadline-Medium.ttf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharSahafaHeadline-Regular.ttf: GSUB
+- PASS — SuharSahafaHeadline-Regular.ttf: GPOS
+- PASS — SuharSahafaHeadline-Regular.ttf: GDEF
+
+### hinting
+
+- PASS — SuharSahafaHeadline-Regular.ttf: TrueType instructions (fpgm/prep/cvt)
+
+### metrics
+
+- PASS — SuharSahafaHeadline-Regular.ttf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### no placeholders
+
+- PASS — SuharSahafaHeadline-Regular.ttf: no empty mapped glyphs
+
+### sanitizer
+
+- PASS — SuharSahafaHeadline-Regular.ttf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharSahafaHeadline-SemiBold.ttf: GSUB
+- PASS — SuharSahafaHeadline-SemiBold.ttf: GPOS
+- PASS — SuharSahafaHeadline-SemiBold.ttf: GDEF
+
+### hinting
+
+- PASS — SuharSahafaHeadline-SemiBold.ttf: TrueType instructions (fpgm/prep/cvt)
+
+### metrics
+
+- PASS — SuharSahafaHeadline-SemiBold.ttf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### no placeholders
+
+- PASS — SuharSahafaHeadline-SemiBold.ttf: no empty mapped glyphs
+
+### sanitizer
+
+- PASS — SuharSahafaHeadline-SemiBold.ttf: OpenType Sanitizer
+
+### tables
+
 - PASS — Suhar-Italic[opsz,wght].ttf: GSUB
 - PASS — Suhar-Italic[opsz,wght].ttf: GPOS
 - PASS — Suhar-Italic[opsz,wght].ttf: GDEF
@@ -3689,6 +4009,14 @@ Produced by `tools/validate.py` from the compiled files in `dist/`. Shaping uses
 - PASS — SuharNerdMono-Regular.woff2: decodes, same glyph count as TTF
 - PASS — SuharNerdMono-SemiBold.woff2: decodes, same glyph count as TTF
 - PASS — SuharNerdMono-SemiBoldItalic.woff2: decodes, same glyph count as TTF
+- PASS — SuharSahafa-Bold.woff2: decodes, same glyph count as TTF
+- PASS — SuharSahafa-Medium.woff2: decodes, same glyph count as TTF
+- PASS — SuharSahafa-Regular.woff2: decodes, same glyph count as TTF
+- PASS — SuharSahafa-SemiBold.woff2: decodes, same glyph count as TTF
+- PASS — SuharSahafaHeadline-Bold.woff2: decodes, same glyph count as TTF
+- PASS — SuharSahafaHeadline-Medium.woff2: decodes, same glyph count as TTF
+- PASS — SuharSahafaHeadline-Regular.woff2: decodes, same glyph count as TTF
+- PASS — SuharSahafaHeadline-SemiBold.woff2: decodes, same glyph count as TTF
 
 ### family
 
@@ -4094,7 +4422,6 @@ Produced by `tools/validate.py` from the compiled files in `dist/`. Shaping uses
 ### languages
 
 - PASS — Sindhi signs U+06FD U+06FE present
-- PASS — dot counts of 32 Pashto/Sindhi/Uyghur letters equal those of Noto Sans Arabic
 
 ### naskh
 
@@ -4190,6 +4517,224 @@ Produced by `tools/validate.py` from the compiled files in `dist/`. Shaping uses
 - PASS — Suhar Pixel 9: hand-drawn Arabic, Bold strokes 2 px, Persian ک گ drawn (گ taller by its second stroke)
 - PASS — Suhar Pixel 10: hand-drawn Arabic, Bold strokes 2 px, Persian ک گ drawn (گ taller by its second stroke)
 
+### sahafa
+
+- PASS — Suhar Sahafa Regular: present with consistent names
+- PASS — Suhar Sahafa Medium: present with consistent names
+- PASS — Suhar Sahafa SemiBold: present with consistent names
+- PASS — Suhar Sahafa Bold: present with consistent names
+- PASS — Suhar Sahafa Headline Regular: present with consistent names
+- PASS — Suhar Sahafa Headline Medium: present with consistent names
+- PASS — Suhar Sahafa Headline SemiBold: present with consistent names
+- PASS — Suhar Sahafa Headline Bold: present with consistent names
+- PASS — Sahafa Regular: alef as tall as the Latin capitals (within 50 units)
+- PASS — Sahafa Regular: the loop of sad as tall as the Latin x-height (within 40 units), x-height 470
+- PASS — Sahafa Regular: Latin stem as thick as the Arabic baseline stroke (within 6 %)
+- PASS — Sahafa Regular: moderate contrast, the Arabic upright is 0.5 to 0.85 of the baseline stroke
+- PASS — Sahafa Regular: the loop of sad stays open (counter of at least 30000 square units)
+- PASS — Sahafa Regular: the loop of feh stays open (counter of at least 12000 square units)
+- PASS — Sahafa Regular: the loop of waw stays open (counter of at least 12000 square units)
+- PASS — Sahafa Regular: the loop of meem stays open (counter of at least 7000 square units)
+- PASS — Sahafa Regular: the loop of heh stays open (counter of at least 12000 square units)
+- PASS — Sahafa Regular: the loop of qaf stays open (counter of at least 12000 square units)
+- PASS — Sahafa Regular: the loop of teh marbuta stays open (counter of at least 12000 square units)
+- PASS — Sahafa Regular: the loop of medial ain stays open (counter of at least 2500 square units)
+- PASS — Sahafa Regular: same character set as Suhar Naskh
+- PASS — Sahafa Regular: serifs on the Latin (n is wider at the foot than at mid-height)
+- PASS — Sahafa Regular: i keeps a separate dot
+- PASS — Sahafa Regular: hinted (fpgm and prep present)
+- PASS — Sahafa Medium: alef as tall as the Latin capitals (within 50 units)
+- PASS — Sahafa Medium: the loop of sad as tall as the Latin x-height (within 40 units), x-height 470
+- PASS — Sahafa Medium: Latin stem as thick as the Arabic baseline stroke (within 6 %)
+- PASS — Sahafa Medium: moderate contrast, the Arabic upright is 0.5 to 0.85 of the baseline stroke
+- PASS — Sahafa Medium: the loop of sad stays open (counter of at least 23400 square units)
+- PASS — Sahafa Medium: the loop of feh stays open (counter of at least 9360 square units)
+- PASS — Sahafa Medium: the loop of waw stays open (counter of at least 9360 square units)
+- PASS — Sahafa Medium: the loop of meem stays open (counter of at least 5460 square units)
+- PASS — Sahafa Medium: the loop of heh stays open (counter of at least 9360 square units)
+- PASS — Sahafa Medium: the loop of qaf stays open (counter of at least 9360 square units)
+- PASS — Sahafa Medium: the loop of teh marbuta stays open (counter of at least 9360 square units)
+- PASS — Sahafa Medium: the loop of medial ain stays open (counter of at least 1950 square units)
+- PASS — Sahafa Medium: same character set as Suhar Naskh
+- PASS — Sahafa Medium: serifs on the Latin (n is wider at the foot than at mid-height)
+- PASS — Sahafa Medium: i keeps a separate dot
+- PASS — Sahafa Medium: hinted (fpgm and prep present)
+- PASS — Sahafa SemiBold: alef as tall as the Latin capitals (within 50 units)
+- PASS — Sahafa SemiBold: the loop of sad as tall as the Latin x-height (within 40 units), x-height 470
+- PASS — Sahafa SemiBold: Latin stem as thick as the Arabic baseline stroke (within 6 %)
+- PASS — Sahafa SemiBold: moderate contrast, the Arabic upright is 0.5 to 0.85 of the baseline stroke
+- PASS — Sahafa SemiBold: the loop of sad stays open (counter of at least 18600 square units)
+- PASS — Sahafa SemiBold: the loop of feh stays open (counter of at least 7440 square units)
+- PASS — Sahafa SemiBold: the loop of waw stays open (counter of at least 7440 square units)
+- PASS — Sahafa SemiBold: the loop of meem stays open (counter of at least 4340 square units)
+- PASS — Sahafa SemiBold: the loop of heh stays open (counter of at least 7440 square units)
+- PASS — Sahafa SemiBold: the loop of qaf stays open (counter of at least 7440 square units)
+- PASS — Sahafa SemiBold: the loop of teh marbuta stays open (counter of at least 7440 square units)
+- PASS — Sahafa SemiBold: the loop of medial ain stays open (counter of at least 1550 square units)
+- PASS — Sahafa SemiBold: same character set as Suhar Naskh
+- PASS — Sahafa SemiBold: serifs on the Latin (n is wider at the foot than at mid-height)
+- PASS — Sahafa SemiBold: i keeps a separate dot
+- PASS — Sahafa SemiBold: hinted (fpgm and prep present)
+- PASS — Sahafa Bold: alef as tall as the Latin capitals (within 50 units)
+- PASS — Sahafa Bold: the loop of sad as tall as the Latin x-height (within 40 units), x-height 470
+- PASS — Sahafa Bold: Latin stem as thick as the Arabic baseline stroke (within 6 %)
+- PASS — Sahafa Bold: moderate contrast, the Arabic upright is 0.5 to 0.85 of the baseline stroke
+- PASS — Sahafa Bold: the loop of sad stays open (counter of at least 15000 square units)
+- PASS — Sahafa Bold: the loop of feh stays open (counter of at least 6000 square units)
+- PASS — Sahafa Bold: the loop of waw stays open (counter of at least 6000 square units)
+- PASS — Sahafa Bold: the loop of meem stays open (counter of at least 3500 square units)
+- PASS — Sahafa Bold: the loop of heh stays open (counter of at least 6000 square units)
+- PASS — Sahafa Bold: the loop of qaf stays open (counter of at least 6000 square units)
+- PASS — Sahafa Bold: the loop of teh marbuta stays open (counter of at least 6000 square units)
+- PASS — Sahafa Bold: the loop of medial ain stays open (counter of at least 1250 square units)
+- PASS — Sahafa Bold: same character set as Suhar Naskh
+- PASS — Sahafa Bold: serifs on the Latin (n is wider at the foot than at mid-height)
+- PASS — Sahafa Bold: i keeps a separate dot
+- PASS — Sahafa Bold: hinted (fpgm and prep present)
+- PASS — SahafaHeadline Regular: alef as tall as the Latin capitals (within 50 units)
+- PASS — SahafaHeadline Regular: the loop of sad as tall as the Latin x-height (within 40 units), x-height 470
+- PASS — SahafaHeadline Regular: Latin stem as thick as the Arabic baseline stroke (within 6 %)
+- PASS — SahafaHeadline Regular: moderate contrast, the Arabic upright is 0.5 to 0.85 of the baseline stroke
+- PASS — SahafaHeadline Regular: the loop of sad stays open (counter of at least 30000 square units)
+- PASS — SahafaHeadline Regular: the loop of feh stays open (counter of at least 12000 square units)
+- PASS — SahafaHeadline Regular: the loop of waw stays open (counter of at least 12000 square units)
+- PASS — SahafaHeadline Regular: the loop of meem stays open (counter of at least 7000 square units)
+- PASS — SahafaHeadline Regular: the loop of heh stays open (counter of at least 12000 square units)
+- PASS — SahafaHeadline Regular: the loop of qaf stays open (counter of at least 12000 square units)
+- PASS — SahafaHeadline Regular: the loop of teh marbuta stays open (counter of at least 12000 square units)
+- PASS — SahafaHeadline Regular: the loop of medial ain stays open (counter of at least 2500 square units)
+- PASS — SahafaHeadline Regular: same character set as Suhar Naskh
+- PASS — SahafaHeadline Regular: serifs on the Latin (n is wider at the foot than at mid-height)
+- PASS — SahafaHeadline Regular: i keeps a separate dot
+- PASS — SahafaHeadline Regular: hinted (fpgm and prep present)
+- PASS — SahafaHeadline Medium: alef as tall as the Latin capitals (within 50 units)
+- PASS — SahafaHeadline Medium: the loop of sad as tall as the Latin x-height (within 40 units), x-height 470
+- PASS — SahafaHeadline Medium: Latin stem as thick as the Arabic baseline stroke (within 6 %)
+- PASS — SahafaHeadline Medium: moderate contrast, the Arabic upright is 0.5 to 0.85 of the baseline stroke
+- PASS — SahafaHeadline Medium: the loop of sad stays open (counter of at least 23400 square units)
+- PASS — SahafaHeadline Medium: the loop of feh stays open (counter of at least 9360 square units)
+- PASS — SahafaHeadline Medium: the loop of waw stays open (counter of at least 9360 square units)
+- PASS — SahafaHeadline Medium: the loop of meem stays open (counter of at least 5460 square units)
+- PASS — SahafaHeadline Medium: the loop of heh stays open (counter of at least 9360 square units)
+- PASS — SahafaHeadline Medium: the loop of qaf stays open (counter of at least 9360 square units)
+- PASS — SahafaHeadline Medium: the loop of teh marbuta stays open (counter of at least 9360 square units)
+- PASS — SahafaHeadline Medium: the loop of medial ain stays open (counter of at least 1950 square units)
+- PASS — SahafaHeadline Medium: same character set as Suhar Naskh
+- PASS — SahafaHeadline Medium: serifs on the Latin (n is wider at the foot than at mid-height)
+- PASS — SahafaHeadline Medium: i keeps a separate dot
+- PASS — SahafaHeadline Medium: hinted (fpgm and prep present)
+- PASS — SahafaHeadline SemiBold: alef as tall as the Latin capitals (within 50 units)
+- PASS — SahafaHeadline SemiBold: the loop of sad as tall as the Latin x-height (within 40 units), x-height 470
+- PASS — SahafaHeadline SemiBold: Latin stem as thick as the Arabic baseline stroke (within 6 %)
+- PASS — SahafaHeadline SemiBold: moderate contrast, the Arabic upright is 0.5 to 0.85 of the baseline stroke
+- PASS — SahafaHeadline SemiBold: the loop of sad stays open (counter of at least 18600 square units)
+- PASS — SahafaHeadline SemiBold: the loop of feh stays open (counter of at least 7440 square units)
+- PASS — SahafaHeadline SemiBold: the loop of waw stays open (counter of at least 7440 square units)
+- PASS — SahafaHeadline SemiBold: the loop of meem stays open (counter of at least 4340 square units)
+- PASS — SahafaHeadline SemiBold: the loop of heh stays open (counter of at least 7440 square units)
+- PASS — SahafaHeadline SemiBold: the loop of qaf stays open (counter of at least 7440 square units)
+- PASS — SahafaHeadline SemiBold: the loop of teh marbuta stays open (counter of at least 7440 square units)
+- PASS — SahafaHeadline SemiBold: the loop of medial ain stays open (counter of at least 1550 square units)
+- PASS — SahafaHeadline SemiBold: same character set as Suhar Naskh
+- PASS — SahafaHeadline SemiBold: serifs on the Latin (n is wider at the foot than at mid-height)
+- PASS — SahafaHeadline SemiBold: i keeps a separate dot
+- PASS — SahafaHeadline SemiBold: hinted (fpgm and prep present)
+- PASS — SahafaHeadline Bold: alef as tall as the Latin capitals (within 50 units)
+- PASS — SahafaHeadline Bold: the loop of sad as tall as the Latin x-height (within 40 units), x-height 470
+- PASS — SahafaHeadline Bold: Latin stem as thick as the Arabic baseline stroke (within 6 %)
+- PASS — SahafaHeadline Bold: moderate contrast, the Arabic upright is 0.5 to 0.85 of the baseline stroke
+- PASS — SahafaHeadline Bold: the loop of sad stays open (counter of at least 15000 square units)
+- PASS — SahafaHeadline Bold: the loop of feh stays open (counter of at least 6000 square units)
+- PASS — SahafaHeadline Bold: the loop of waw stays open (counter of at least 6000 square units)
+- PASS — SahafaHeadline Bold: the loop of meem stays open (counter of at least 3500 square units)
+- PASS — SahafaHeadline Bold: the loop of heh stays open (counter of at least 6000 square units)
+- PASS — SahafaHeadline Bold: the loop of qaf stays open (counter of at least 6000 square units)
+- PASS — SahafaHeadline Bold: the loop of teh marbuta stays open (counter of at least 6000 square units)
+- PASS — SahafaHeadline Bold: the loop of medial ain stays open (counter of at least 1250 square units)
+- PASS — SahafaHeadline Bold: same character set as Suhar Naskh
+- PASS — SahafaHeadline Bold: serifs on the Latin (n is wider at the foot than at mid-height)
+- PASS — SahafaHeadline Bold: i keeps a separate dot
+- PASS — SahafaHeadline Bold: hinted (fpgm and prep present)
+- PASS — Headline sets tighter than Text (3 to 12 % narrower)
+- PASS — Headline has deeper bowls than Text
+- PASS — Headline has more contrast than Text
+- PASS — bowls shallower than Suhar Naskh (short descenders)
+- PASS — lam-alef ligature forms
+- PASS — Sahafa draws its own sad, jeem, meem, lam-alef (differs from Suhar Naskh)
+
+### word space
+
+- PASS — Suhar-Black: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
+- PASS — Suhar-BlackItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
+- PASS — Suhar-Bold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
+- PASS — Suhar-BoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
+- PASS — Suhar-ExtraBold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
+- PASS — Suhar-ExtraBoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
+- PASS — Suhar-Italic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
+- PASS — Suhar-Light: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
+- PASS — Suhar-LightItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
+- PASS — Suhar-Medium: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
+- PASS — Suhar-MediumItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
+- PASS — Suhar-Regular: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
+- PASS — Suhar-SemiBold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
+- PASS — Suhar-SemiBoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
+- PASS — SuharCondensed-Bold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
+- PASS — SuharCondensed-BoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
+- PASS — SuharCondensed-ExtraBold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
+- PASS — SuharCondensed-ExtraBoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
+- PASS — SuharCondensed-Italic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
+- PASS — SuharCondensed-Light: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
+- PASS — SuharCondensed-LightItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
+- PASS — SuharCondensed-Medium: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
+- PASS — SuharCondensed-MediumItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
+- PASS — SuharCondensed-Regular: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
+- PASS — SuharCondensed-SemiBold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
+- PASS — SuharCondensed-SemiBoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
+- PASS — SuharNaskh-Bold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
+- PASS — SuharNaskh-BoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
+- PASS — SuharNaskh-Italic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
+- PASS — SuharNaskh-Medium: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
+- PASS — SuharNaskh-MediumItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
+- PASS — SuharNaskh-Regular: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
+- PASS — SuharNaskh-SemiBold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
+- PASS — SuharNaskh-SemiBoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
+- PASS — SuharNaskhDisplay-Bold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
+- PASS — SuharNaskhDisplay-Medium: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
+- PASS — SuharNaskhDisplay-Regular: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
+- PASS — SuharNaskhDisplay-SemiBold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
+- PASS — SuharSahafa-Bold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
+- PASS — SuharSahafa-Medium: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
+- PASS — SuharSahafa-Regular: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
+- PASS — SuharSahafa-SemiBold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
+- PASS — SuharSahafaHeadline-Bold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
+- PASS — SuharSahafaHeadline-Medium: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
+- PASS — SuharSahafaHeadline-Regular: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
+- PASS — SuharSahafaHeadline-SemiBold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
+- PASS — SuharMono-Bold: the space is one cell
+- PASS — SuharMono-BoldItalic: the space is one cell
+- PASS — SuharMono-ExtraBold: the space is one cell
+- PASS — SuharMono-ExtraBoldItalic: the space is one cell
+- PASS — SuharMono-Italic: the space is one cell
+- PASS — SuharMono-Light: the space is one cell
+- PASS — SuharMono-LightItalic: the space is one cell
+- PASS — SuharMono-Medium: the space is one cell
+- PASS — SuharMono-MediumItalic: the space is one cell
+- PASS — SuharMono-Regular: the space is one cell
+- PASS — SuharMono-SemiBold: the space is one cell
+- PASS — SuharMono-SemiBoldItalic: the space is one cell
+- PASS — SuharNerdMono-Bold: the space is one cell
+- PASS — SuharNerdMono-BoldItalic: the space is one cell
+- PASS — SuharNerdMono-ExtraBold: the space is one cell
+- PASS — SuharNerdMono-ExtraBoldItalic: the space is one cell
+- PASS — SuharNerdMono-Italic: the space is one cell
+- PASS — SuharNerdMono-Light: the space is one cell
+- PASS — SuharNerdMono-LightItalic: the space is one cell
+- PASS — SuharNerdMono-Medium: the space is one cell
+- PASS — SuharNerdMono-MediumItalic: the space is one cell
+- PASS — SuharNerdMono-Regular: the space is one cell
+- PASS — SuharNerdMono-SemiBold: the space is one cell
+- PASS — SuharNerdMono-SemiBoldItalic: the space is one cell
+
 ## Files
 
 | file | glyphs | code points | KB |
@@ -4282,6 +4827,14 @@ Produced by `tools/validate.py` from the compiled files in `dist/`. Shaping uses
 | otf/SuharNerdMono-Regular.otf | 13500 | 13064 | 3157 |
 | otf/SuharNerdMono-SemiBold.otf | 13500 | 13064 | 3166 |
 | otf/SuharNerdMono-SemiBoldItalic.otf | 13500 | 13064 | 3162 |
+| otf/SuharSahafa-Bold.otf | 2889 | 2469 | 569 |
+| otf/SuharSahafa-Medium.otf | 2889 | 2469 | 550 |
+| otf/SuharSahafa-Regular.otf | 2889 | 2469 | 539 |
+| otf/SuharSahafa-SemiBold.otf | 2889 | 2469 | 559 |
+| otf/SuharSahafaHeadline-Bold.otf | 2889 | 2469 | 561 |
+| otf/SuharSahafaHeadline-Medium.otf | 2889 | 2469 | 549 |
+| otf/SuharSahafaHeadline-Regular.otf | 2889 | 2469 | 538 |
+| otf/SuharSahafaHeadline-SemiBold.otf | 2889 | 2469 | 557 |
 | ttf/Suhar-Black.ttf | 2889 | 2469 | 502 |
 | ttf/Suhar-BlackItalic.ttf | 2889 | 2469 | 498 |
 | ttf/Suhar-Bold.ttf | 2889 | 2469 | 500 |
@@ -4370,6 +4923,14 @@ Produced by `tools/validate.py` from the compiled files in `dist/`. Shaping uses
 | ttf/SuharNerdMono-Regular.ttf | 13500 | 13064 | 2662 |
 | ttf/SuharNerdMono-SemiBold.ttf | 13500 | 13064 | 2669 |
 | ttf/SuharNerdMono-SemiBoldItalic.ttf | 13500 | 13064 | 2671 |
+| ttf/SuharSahafa-Bold.ttf | 2889 | 2469 | 524 |
+| ttf/SuharSahafa-Medium.ttf | 2889 | 2469 | 511 |
+| ttf/SuharSahafa-Regular.ttf | 2889 | 2469 | 503 |
+| ttf/SuharSahafa-SemiBold.ttf | 2889 | 2469 | 521 |
+| ttf/SuharSahafaHeadline-Bold.ttf | 2889 | 2469 | 513 |
+| ttf/SuharSahafaHeadline-Medium.ttf | 2889 | 2469 | 509 |
+| ttf/SuharSahafaHeadline-Regular.ttf | 2889 | 2469 | 504 |
+| ttf/SuharSahafaHeadline-SemiBold.ttf | 2889 | 2469 | 511 |
 | variable/Suhar-Italic[opsz,wght].ttf | 2889 | 2469 | 1176 |
 | variable/SuharCondensed-Italic[opsz,wght].ttf | 2889 | 2469 | 1142 |
 | variable/SuharCondensed[opsz,wght].ttf | 2889 | 2469 | 1116 |

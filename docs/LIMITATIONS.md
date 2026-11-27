@@ -1,4 +1,4 @@
-# Known limitations (version 2.0)
+# Known limitations (version 2.1)
 
 I would rather list these here than have you find them in production.
 
@@ -36,6 +36,31 @@ I would rather list these here than have you find them in production.
   signs. U+E100 is a simplified drawing, not the official national emblem.
 - The currency signs keep one outline at every weight. The Omani rial sign is the Central Bank of Oman's
   outline; I have not compared the Saudi riyal and UAE dirham signs with their central banks' files.
+
+## Suhar Sahafa
+
+- Sahafa is new in 2.1 and has had the least use of all the families.
+- I wanted it to read better in newspapers than Yakout, Mohammed and Traditional Arabic. **I cannot show
+  that.** I do not have those fonts, so there is no comparison with them at all. Against Amiri, Noto Naskh
+  Arabic and Scheherazade New I measured larger loops at the same point size and a line that is 4 to 14 %
+  longer (the table is in the README). Nobody has run a reading test, and it has not been printed on
+  newsprint or on a press.
+- It is a constructed Naskh, like the rest of Suhar: one pen angle, no change of shape by neighbour except
+  the features inherited from Suhar Naskh. A calligrapher would call it a Naskh in proportion and not in hand.
+- There are no drawn ink traps. Joins are plain unions of pen strokes; the open counters and the sturdy thin
+  strokes are what protects it in small sizes.
+- Drawn for Sahafa: ص ض ط ظ, ج ح خ, ف ق و, م, ه ة, ي, ا ل, لا, the teeth of ب ت ث ن ي, and medial and final
+  ع غ. Every other letter (the bowls of ب ت ث ن, د ذ ر ز, س ش, ع غ at the start of a word and alone, ك and the
+  Persian, Urdu, Kurdish, Pashto, Sindhi, Uyghur and Jawi letters) is the Suhar Naskh skeleton lowered to
+  the Sahafa proportions. I have proofed the Arabic alphabet and news text, not those other languages.
+- Ligatures: lam-alef is drawn. The optional ligatures (`dlig`), the returning yeh (`ss06`) and letters
+  standing on ج ح خ (`ss07`) come from Suhar Naskh unchanged and are not proofed in Sahafa.
+- Latin: the serifs are plain slabs without brackets, on A–Z, a–z and the figure 1. Accented letters take
+  them from their base letter. The other figures, punctuation, ß æ œ ð þ and similar letters, small capitals,
+  Greek and Cyrillic have the Sahafa pen but no serifs.
+- The x-height is 470, to match the Arabic loops; Suhar's is 520. Next to Suhar at the same size the Sahafa
+  lower case is smaller. Capitals, figures, ascent, descent and line height are the same.
+- No italics, no variable font and no Nerd build. Sahafa is not in the HTML specimen or on the device test page yet.
 
 ## Pixel fonts
 
