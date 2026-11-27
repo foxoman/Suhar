@@ -308,7 +308,25 @@
    "otf_hinted": true
   },
   {
+   "name": "SuharSahafa-BoldItalic",
+   "glyphs": 2889,
+   "hinted": true,
+   "otf_hinted": true
+  },
+  {
+   "name": "SuharSahafa-Italic",
+   "glyphs": 2889,
+   "hinted": true,
+   "otf_hinted": true
+  },
+  {
    "name": "SuharSahafa-Medium",
+   "glyphs": 2889,
+   "hinted": true,
+   "otf_hinted": true
+  },
+  {
+   "name": "SuharSahafa-MediumItalic",
    "glyphs": 2889,
    "hinted": true,
    "otf_hinted": true
@@ -326,13 +344,37 @@
    "otf_hinted": true
   },
   {
+   "name": "SuharSahafa-SemiBoldItalic",
+   "glyphs": 2889,
+   "hinted": true,
+   "otf_hinted": true
+  },
+  {
    "name": "SuharSahafaHeadline-Bold",
    "glyphs": 2889,
    "hinted": true,
    "otf_hinted": true
   },
   {
+   "name": "SuharSahafaHeadline-BoldItalic",
+   "glyphs": 2889,
+   "hinted": true,
+   "otf_hinted": true
+  },
+  {
+   "name": "SuharSahafaHeadline-Italic",
+   "glyphs": 2889,
+   "hinted": true,
+   "otf_hinted": true
+  },
+  {
    "name": "SuharSahafaHeadline-Medium",
+   "glyphs": 2889,
+   "hinted": true,
+   "otf_hinted": true
+  },
+  {
+   "name": "SuharSahafaHeadline-MediumItalic",
    "glyphs": 2889,
    "hinted": true,
    "otf_hinted": true
@@ -345,6 +387,12 @@
   },
   {
    "name": "SuharSahafaHeadline-SemiBold",
+   "glyphs": 2889,
+   "hinted": true,
+   "otf_hinted": true
+  },
+  {
+   "name": "SuharSahafaHeadline-SemiBoldItalic",
    "glyphs": 2889,
    "hinted": true,
    "otf_hinted": true
@@ -405,6 +453,34 @@
   },
   {
    "name": "SuharNaskh[wght].ttf",
+   "axes": [
+    "wght"
+   ],
+   "dropped_glyphs": []
+  },
+  {
+   "name": "SuharSahafa-Italic[wght].ttf",
+   "axes": [
+    "wght"
+   ],
+   "dropped_glyphs": []
+  },
+  {
+   "name": "SuharSahafaHeadline-Italic[wght].ttf",
+   "axes": [
+    "wght"
+   ],
+   "dropped_glyphs": []
+  },
+  {
+   "name": "SuharSahafaHeadline[wght].ttf",
+   "axes": [
+    "wght"
+   ],
+   "dropped_glyphs": []
+  },
+  {
+   "name": "SuharSahafa[wght].ttf",
    "axes": [
     "wght"
    ],
