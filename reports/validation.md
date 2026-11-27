@@ -2,7 +2,7 @@
 
 Produced by `tools/validate.py` from the compiled files in `dist/`. Shaping uses HarfBuzz, rasterisation uses FreeType (with the fonts' own TrueType hinting), structure checks use fontTools and the OpenType Sanitizer.
 
-**2740 checks passed, 0 failed.**
+**2751 checks passed, 0 failed.**
 
 ## All checks
 
@@ -6277,126 +6277,134 @@ Produced by `tools/validate.py` from the compiled files in `dist/`. Shaping uses
 - PASS — Suhar Sahafa Headline Medium: present with consistent names
 - PASS — Suhar Sahafa Headline SemiBold: present with consistent names
 - PASS — Suhar Sahafa Headline Bold: present with consistent names
-- PASS — Sahafa Regular: alef as tall as the Latin capitals (within 50 units)
+- PASS — Sahafa Regular: alef stands 40 to 110 units above the Latin capitals, like an ascender
+- PASS — Sahafa Regular: tall and short letters differ clearly (the loop of sad is under 0.62 of alef)
 - PASS — Sahafa Regular: the loop of sad as tall as the Latin x-height (within 40 units), x-height 470
 - PASS — Sahafa Regular: Latin stem as thick as the Arabic baseline stroke (within 6 %)
 - PASS — Sahafa Regular: moderate contrast, the Arabic upright is 0.5 to 0.85 of the baseline stroke
-- PASS — Sahafa Regular: the loop of sad stays open (counter of at least 30000 square units)
-- PASS — Sahafa Regular: the loop of feh stays open (counter of at least 12000 square units)
-- PASS — Sahafa Regular: the loop of waw stays open (counter of at least 12000 square units)
-- PASS — Sahafa Regular: the loop of meem stays open (counter of at least 7000 square units)
-- PASS — Sahafa Regular: the loop of heh stays open (counter of at least 12000 square units)
-- PASS — Sahafa Regular: the loop of qaf stays open (counter of at least 12000 square units)
-- PASS — Sahafa Regular: the loop of teh marbuta stays open (counter of at least 12000 square units)
-- PASS — Sahafa Regular: the loop of medial ain stays open (counter of at least 2500 square units)
+- PASS — Sahafa Regular: the loop of sad stays open (counter of at least 24600 square units)
+- PASS — Sahafa Regular: the loop of feh stays open (counter of at least 9840 square units)
+- PASS — Sahafa Regular: the loop of waw stays open (counter of at least 9840 square units)
+- PASS — Sahafa Regular: the loop of meem stays open (counter of at least 5740 square units)
+- PASS — Sahafa Regular: the loop of heh stays open (counter of at least 9840 square units)
+- PASS — Sahafa Regular: the loop of qaf stays open (counter of at least 9840 square units)
+- PASS — Sahafa Regular: the loop of teh marbuta stays open (counter of at least 9840 square units)
+- PASS — Sahafa Regular: the loop of medial ain stays open (counter of at least 2050 square units)
 - PASS — Sahafa Regular: same character set as Suhar Naskh
 - PASS — Sahafa Regular: serifs on the Latin (n is wider at the foot than at mid-height)
 - PASS — Sahafa Regular: i keeps a separate dot
 - PASS — Sahafa Regular: hinted (fpgm and prep present)
-- PASS — Sahafa Medium: alef as tall as the Latin capitals (within 50 units)
+- PASS — Sahafa Medium: alef stands 40 to 110 units above the Latin capitals, like an ascender
+- PASS — Sahafa Medium: tall and short letters differ clearly (the loop of sad is under 0.62 of alef)
 - PASS — Sahafa Medium: the loop of sad as tall as the Latin x-height (within 40 units), x-height 470
 - PASS — Sahafa Medium: Latin stem as thick as the Arabic baseline stroke (within 6 %)
 - PASS — Sahafa Medium: moderate contrast, the Arabic upright is 0.5 to 0.85 of the baseline stroke
-- PASS — Sahafa Medium: the loop of sad stays open (counter of at least 23400 square units)
-- PASS — Sahafa Medium: the loop of feh stays open (counter of at least 9360 square units)
-- PASS — Sahafa Medium: the loop of waw stays open (counter of at least 9360 square units)
-- PASS — Sahafa Medium: the loop of meem stays open (counter of at least 5460 square units)
-- PASS — Sahafa Medium: the loop of heh stays open (counter of at least 9360 square units)
-- PASS — Sahafa Medium: the loop of qaf stays open (counter of at least 9360 square units)
-- PASS — Sahafa Medium: the loop of teh marbuta stays open (counter of at least 9360 square units)
-- PASS — Sahafa Medium: the loop of medial ain stays open (counter of at least 1950 square units)
+- PASS — Sahafa Medium: the loop of sad stays open (counter of at least 19188 square units)
+- PASS — Sahafa Medium: the loop of feh stays open (counter of at least 7675 square units)
+- PASS — Sahafa Medium: the loop of waw stays open (counter of at least 7675 square units)
+- PASS — Sahafa Medium: the loop of meem stays open (counter of at least 4477 square units)
+- PASS — Sahafa Medium: the loop of heh stays open (counter of at least 7675 square units)
+- PASS — Sahafa Medium: the loop of qaf stays open (counter of at least 7675 square units)
+- PASS — Sahafa Medium: the loop of teh marbuta stays open (counter of at least 7675 square units)
+- PASS — Sahafa Medium: the loop of medial ain stays open (counter of at least 1599 square units)
 - PASS — Sahafa Medium: same character set as Suhar Naskh
 - PASS — Sahafa Medium: serifs on the Latin (n is wider at the foot than at mid-height)
 - PASS — Sahafa Medium: i keeps a separate dot
 - PASS — Sahafa Medium: hinted (fpgm and prep present)
-- PASS — Sahafa SemiBold: alef as tall as the Latin capitals (within 50 units)
+- PASS — Sahafa SemiBold: alef stands 40 to 110 units above the Latin capitals, like an ascender
+- PASS — Sahafa SemiBold: tall and short letters differ clearly (the loop of sad is under 0.62 of alef)
 - PASS — Sahafa SemiBold: the loop of sad as tall as the Latin x-height (within 40 units), x-height 470
 - PASS — Sahafa SemiBold: Latin stem as thick as the Arabic baseline stroke (within 6 %)
 - PASS — Sahafa SemiBold: moderate contrast, the Arabic upright is 0.5 to 0.85 of the baseline stroke
-- PASS — Sahafa SemiBold: the loop of sad stays open (counter of at least 18600 square units)
-- PASS — Sahafa SemiBold: the loop of feh stays open (counter of at least 7440 square units)
-- PASS — Sahafa SemiBold: the loop of waw stays open (counter of at least 7440 square units)
-- PASS — Sahafa SemiBold: the loop of meem stays open (counter of at least 4340 square units)
-- PASS — Sahafa SemiBold: the loop of heh stays open (counter of at least 7440 square units)
-- PASS — Sahafa SemiBold: the loop of qaf stays open (counter of at least 7440 square units)
-- PASS — Sahafa SemiBold: the loop of teh marbuta stays open (counter of at least 7440 square units)
+- PASS — Sahafa SemiBold: the loop of sad stays open (counter of at least 15252 square units)
+- PASS — Sahafa SemiBold: the loop of feh stays open (counter of at least 6101 square units)
+- PASS — Sahafa SemiBold: the loop of waw stays open (counter of at least 6101 square units)
+- PASS — Sahafa SemiBold: the loop of meem stays open (counter of at least 3559 square units)
+- PASS — Sahafa SemiBold: the loop of heh stays open (counter of at least 6101 square units)
+- PASS — Sahafa SemiBold: the loop of qaf stays open (counter of at least 6101 square units)
+- PASS — Sahafa SemiBold: the loop of teh marbuta stays open (counter of at least 6101 square units)
 - PASS — Sahafa SemiBold: same character set as Suhar Naskh
 - PASS — Sahafa SemiBold: serifs on the Latin (n is wider at the foot than at mid-height)
 - PASS — Sahafa SemiBold: i keeps a separate dot
 - PASS — Sahafa SemiBold: hinted (fpgm and prep present)
-- PASS — Sahafa Bold: alef as tall as the Latin capitals (within 50 units)
+- PASS — Sahafa Bold: alef stands 40 to 110 units above the Latin capitals, like an ascender
+- PASS — Sahafa Bold: tall and short letters differ clearly (the loop of sad is under 0.62 of alef)
 - PASS — Sahafa Bold: the loop of sad as tall as the Latin x-height (within 40 units), x-height 470
 - PASS — Sahafa Bold: Latin stem as thick as the Arabic baseline stroke (within 6 %)
 - PASS — Sahafa Bold: moderate contrast, the Arabic upright is 0.5 to 0.85 of the baseline stroke
-- PASS — Sahafa Bold: the loop of sad stays open (counter of at least 15000 square units)
-- PASS — Sahafa Bold: the loop of feh stays open (counter of at least 6000 square units)
-- PASS — Sahafa Bold: the loop of waw stays open (counter of at least 6000 square units)
-- PASS — Sahafa Bold: the loop of meem stays open (counter of at least 3500 square units)
-- PASS — Sahafa Bold: the loop of heh stays open (counter of at least 6000 square units)
-- PASS — Sahafa Bold: the loop of qaf stays open (counter of at least 6000 square units)
-- PASS — Sahafa Bold: the loop of teh marbuta stays open (counter of at least 6000 square units)
+- PASS — Sahafa Bold: the loop of sad stays open (counter of at least 12300 square units)
+- PASS — Sahafa Bold: the loop of feh stays open (counter of at least 4920 square units)
+- PASS — Sahafa Bold: the loop of waw stays open (counter of at least 4920 square units)
+- PASS — Sahafa Bold: the loop of meem stays open (counter of at least 2870 square units)
+- PASS — Sahafa Bold: the loop of heh stays open (counter of at least 4920 square units)
+- PASS — Sahafa Bold: the loop of qaf stays open (counter of at least 4920 square units)
+- PASS — Sahafa Bold: the loop of teh marbuta stays open (counter of at least 4920 square units)
 - PASS — Sahafa Bold: same character set as Suhar Naskh
 - PASS — Sahafa Bold: serifs on the Latin (n is wider at the foot than at mid-height)
 - PASS — Sahafa Bold: i keeps a separate dot
 - PASS — Sahafa Bold: hinted (fpgm and prep present)
-- PASS — SahafaHeadline Regular: alef as tall as the Latin capitals (within 50 units)
+- PASS — SahafaHeadline Regular: alef stands 40 to 110 units above the Latin capitals, like an ascender
+- PASS — SahafaHeadline Regular: tall and short letters differ clearly (the loop of sad is under 0.62 of alef)
 - PASS — SahafaHeadline Regular: the loop of sad as tall as the Latin x-height (within 40 units), x-height 470
 - PASS — SahafaHeadline Regular: Latin stem as thick as the Arabic baseline stroke (within 6 %)
 - PASS — SahafaHeadline Regular: moderate contrast, the Arabic upright is 0.5 to 0.85 of the baseline stroke
-- PASS — SahafaHeadline Regular: the loop of sad stays open (counter of at least 30000 square units)
-- PASS — SahafaHeadline Regular: the loop of feh stays open (counter of at least 12000 square units)
-- PASS — SahafaHeadline Regular: the loop of waw stays open (counter of at least 12000 square units)
-- PASS — SahafaHeadline Regular: the loop of meem stays open (counter of at least 7000 square units)
-- PASS — SahafaHeadline Regular: the loop of heh stays open (counter of at least 12000 square units)
-- PASS — SahafaHeadline Regular: the loop of qaf stays open (counter of at least 12000 square units)
-- PASS — SahafaHeadline Regular: the loop of teh marbuta stays open (counter of at least 12000 square units)
-- PASS — SahafaHeadline Regular: the loop of medial ain stays open (counter of at least 2500 square units)
+- PASS — SahafaHeadline Regular: the loop of sad stays open (counter of at least 24600 square units)
+- PASS — SahafaHeadline Regular: the loop of feh stays open (counter of at least 9840 square units)
+- PASS — SahafaHeadline Regular: the loop of waw stays open (counter of at least 9840 square units)
+- PASS — SahafaHeadline Regular: the loop of meem stays open (counter of at least 5740 square units)
+- PASS — SahafaHeadline Regular: the loop of heh stays open (counter of at least 9840 square units)
+- PASS — SahafaHeadline Regular: the loop of qaf stays open (counter of at least 9840 square units)
+- PASS — SahafaHeadline Regular: the loop of teh marbuta stays open (counter of at least 9840 square units)
+- PASS — SahafaHeadline Regular: the loop of medial ain stays open (counter of at least 2050 square units)
 - PASS — SahafaHeadline Regular: same character set as Suhar Naskh
 - PASS — SahafaHeadline Regular: serifs on the Latin (n is wider at the foot than at mid-height)
 - PASS — SahafaHeadline Regular: i keeps a separate dot
 - PASS — SahafaHeadline Regular: hinted (fpgm and prep present)
-- PASS — SahafaHeadline Medium: alef as tall as the Latin capitals (within 50 units)
+- PASS — SahafaHeadline Medium: alef stands 40 to 110 units above the Latin capitals, like an ascender
+- PASS — SahafaHeadline Medium: tall and short letters differ clearly (the loop of sad is under 0.62 of alef)
 - PASS — SahafaHeadline Medium: the loop of sad as tall as the Latin x-height (within 40 units), x-height 470
 - PASS — SahafaHeadline Medium: Latin stem as thick as the Arabic baseline stroke (within 6 %)
 - PASS — SahafaHeadline Medium: moderate contrast, the Arabic upright is 0.5 to 0.85 of the baseline stroke
-- PASS — SahafaHeadline Medium: the loop of sad stays open (counter of at least 23400 square units)
-- PASS — SahafaHeadline Medium: the loop of feh stays open (counter of at least 9360 square units)
-- PASS — SahafaHeadline Medium: the loop of waw stays open (counter of at least 9360 square units)
-- PASS — SahafaHeadline Medium: the loop of meem stays open (counter of at least 5460 square units)
-- PASS — SahafaHeadline Medium: the loop of heh stays open (counter of at least 9360 square units)
-- PASS — SahafaHeadline Medium: the loop of qaf stays open (counter of at least 9360 square units)
-- PASS — SahafaHeadline Medium: the loop of teh marbuta stays open (counter of at least 9360 square units)
-- PASS — SahafaHeadline Medium: the loop of medial ain stays open (counter of at least 1950 square units)
+- PASS — SahafaHeadline Medium: the loop of sad stays open (counter of at least 19188 square units)
+- PASS — SahafaHeadline Medium: the loop of feh stays open (counter of at least 7675 square units)
+- PASS — SahafaHeadline Medium: the loop of waw stays open (counter of at least 7675 square units)
+- PASS — SahafaHeadline Medium: the loop of meem stays open (counter of at least 4477 square units)
+- PASS — SahafaHeadline Medium: the loop of heh stays open (counter of at least 7675 square units)
+- PASS — SahafaHeadline Medium: the loop of qaf stays open (counter of at least 7675 square units)
+- PASS — SahafaHeadline Medium: the loop of teh marbuta stays open (counter of at least 7675 square units)
+- PASS — SahafaHeadline Medium: the loop of medial ain stays open (counter of at least 1599 square units)
 - PASS — SahafaHeadline Medium: same character set as Suhar Naskh
 - PASS — SahafaHeadline Medium: serifs on the Latin (n is wider at the foot than at mid-height)
 - PASS — SahafaHeadline Medium: i keeps a separate dot
 - PASS — SahafaHeadline Medium: hinted (fpgm and prep present)
-- PASS — SahafaHeadline SemiBold: alef as tall as the Latin capitals (within 50 units)
+- PASS — SahafaHeadline SemiBold: alef stands 40 to 110 units above the Latin capitals, like an ascender
+- PASS — SahafaHeadline SemiBold: tall and short letters differ clearly (the loop of sad is under 0.62 of alef)
 - PASS — SahafaHeadline SemiBold: the loop of sad as tall as the Latin x-height (within 40 units), x-height 470
 - PASS — SahafaHeadline SemiBold: Latin stem as thick as the Arabic baseline stroke (within 6 %)
 - PASS — SahafaHeadline SemiBold: moderate contrast, the Arabic upright is 0.5 to 0.85 of the baseline stroke
-- PASS — SahafaHeadline SemiBold: the loop of sad stays open (counter of at least 18600 square units)
-- PASS — SahafaHeadline SemiBold: the loop of feh stays open (counter of at least 7440 square units)
-- PASS — SahafaHeadline SemiBold: the loop of waw stays open (counter of at least 7440 square units)
-- PASS — SahafaHeadline SemiBold: the loop of meem stays open (counter of at least 4340 square units)
-- PASS — SahafaHeadline SemiBold: the loop of heh stays open (counter of at least 7440 square units)
-- PASS — SahafaHeadline SemiBold: the loop of qaf stays open (counter of at least 7440 square units)
-- PASS — SahafaHeadline SemiBold: the loop of teh marbuta stays open (counter of at least 7440 square units)
+- PASS — SahafaHeadline SemiBold: the loop of sad stays open (counter of at least 15252 square units)
+- PASS — SahafaHeadline SemiBold: the loop of feh stays open (counter of at least 6101 square units)
+- PASS — SahafaHeadline SemiBold: the loop of waw stays open (counter of at least 6101 square units)
+- PASS — SahafaHeadline SemiBold: the loop of meem stays open (counter of at least 3559 square units)
+- PASS — SahafaHeadline SemiBold: the loop of heh stays open (counter of at least 6101 square units)
+- PASS — SahafaHeadline SemiBold: the loop of qaf stays open (counter of at least 6101 square units)
+- PASS — SahafaHeadline SemiBold: the loop of teh marbuta stays open (counter of at least 6101 square units)
 - PASS — SahafaHeadline SemiBold: same character set as Suhar Naskh
 - PASS — SahafaHeadline SemiBold: serifs on the Latin (n is wider at the foot than at mid-height)
 - PASS — SahafaHeadline SemiBold: i keeps a separate dot
 - PASS — SahafaHeadline SemiBold: hinted (fpgm and prep present)
-- PASS — SahafaHeadline Bold: alef as tall as the Latin capitals (within 50 units)
+- PASS — SahafaHeadline Bold: alef stands 40 to 110 units above the Latin capitals, like an ascender
+- PASS — SahafaHeadline Bold: tall and short letters differ clearly (the loop of sad is under 0.62 of alef)
 - PASS — SahafaHeadline Bold: the loop of sad as tall as the Latin x-height (within 40 units), x-height 470
 - PASS — SahafaHeadline Bold: Latin stem as thick as the Arabic baseline stroke (within 6 %)
 - PASS — SahafaHeadline Bold: moderate contrast, the Arabic upright is 0.5 to 0.85 of the baseline stroke
-- PASS — SahafaHeadline Bold: the loop of sad stays open (counter of at least 15000 square units)
-- PASS — SahafaHeadline Bold: the loop of feh stays open (counter of at least 6000 square units)
-- PASS — SahafaHeadline Bold: the loop of waw stays open (counter of at least 6000 square units)
-- PASS — SahafaHeadline Bold: the loop of meem stays open (counter of at least 3500 square units)
-- PASS — SahafaHeadline Bold: the loop of heh stays open (counter of at least 6000 square units)
-- PASS — SahafaHeadline Bold: the loop of qaf stays open (counter of at least 6000 square units)
-- PASS — SahafaHeadline Bold: the loop of teh marbuta stays open (counter of at least 6000 square units)
+- PASS — SahafaHeadline Bold: the loop of sad stays open (counter of at least 12300 square units)
+- PASS — SahafaHeadline Bold: the loop of feh stays open (counter of at least 4920 square units)
+- PASS — SahafaHeadline Bold: the loop of waw stays open (counter of at least 4920 square units)
+- PASS — SahafaHeadline Bold: the loop of meem stays open (counter of at least 2870 square units)
+- PASS — SahafaHeadline Bold: the loop of heh stays open (counter of at least 4920 square units)
+- PASS — SahafaHeadline Bold: the loop of qaf stays open (counter of at least 4920 square units)
+- PASS — SahafaHeadline Bold: the loop of teh marbuta stays open (counter of at least 4920 square units)
 - PASS — SahafaHeadline Bold: same character set as Suhar Naskh
 - PASS — SahafaHeadline Bold: serifs on the Latin (n is wider at the foot than at mid-height)
 - PASS — SahafaHeadline Bold: i keeps a separate dot
@@ -6554,6 +6562,12 @@ Produced by `tools/validate.py` from the compiled files in `dist/`. Shaping uses
 ### latin
 
 - PASS — Sahafa: old-style figures stand on the Sahafa x-height
+
+### body text
+
+- PASS — Sahafa: the teeth of seen are clearly lower than a tooth of beh (at least 60 units), and a tooth is taller at the start of a word than inside it
+- PASS — Sahafa sets at least 5 % more text on a line than Suhar Naskh
+- PASS — Sahafa: bowls reach at least 240 units under the line
 
 ### word space
 
@@ -6756,50 +6770,50 @@ Produced by `tools/validate.py` from the compiled files in `dist/`. Shaping uses
 | otf/SuharNerdMono-Regular.otf | 13613 | 13064 | 3176 |
 | otf/SuharNerdMono-SemiBold.otf | 13613 | 13064 | 3185 |
 | otf/SuharNerdMono-SemiBoldItalic.otf | 13613 | 13064 | 3181 |
-| otf/SuharNerdSahafa-Bold.otf | 13597 | 13064 | 3341 |
-| otf/SuharNerdSahafa-BoldItalic.otf | 13597 | 13064 | 3333 |
-| otf/SuharNerdSahafa-Italic.otf | 13597 | 13064 | 3317 |
-| otf/SuharNerdSahafa-Medium.otf | 13597 | 13064 | 3323 |
-| otf/SuharNerdSahafa-MediumItalic.otf | 13597 | 13064 | 3322 |
-| otf/SuharNerdSahafa-Regular.otf | 13597 | 13064 | 3312 |
-| otf/SuharNerdSahafa-SemiBold.otf | 13597 | 13064 | 3338 |
-| otf/SuharNerdSahafa-SemiBoldItalic.otf | 13597 | 13064 | 3333 |
-| otf/SuharNerdSahafaHeadline-Bold.otf | 13597 | 13064 | 3364 |
-| otf/SuharNerdSahafaHeadline-BoldItalic.otf | 13597 | 13064 | 3358 |
-| otf/SuharNerdSahafaHeadline-Italic.otf | 13597 | 13064 | 3348 |
-| otf/SuharNerdSahafaHeadline-Medium.otf | 13597 | 13064 | 3352 |
-| otf/SuharNerdSahafaHeadline-MediumItalic.otf | 13597 | 13064 | 3360 |
-| otf/SuharNerdSahafaHeadline-Regular.otf | 13597 | 13064 | 3338 |
-| otf/SuharNerdSahafaHeadline-SemiBold.otf | 13597 | 13064 | 3364 |
-| otf/SuharNerdSahafaHeadline-SemiBoldItalic.otf | 13597 | 13064 | 3360 |
-| otf/SuharSahafa-Bold.otf | 3002 | 2469 | 614 |
-| otf/SuharSahafa-BoldItalic.otf | 3002 | 2469 | 606 |
-| otf/SuharSahafa-Italic.otf | 3002 | 2469 | 590 |
-| otf/SuharSahafa-Medium.otf | 3002 | 2469 | 596 |
-| otf/SuharSahafa-MediumItalic.otf | 3002 | 2469 | 594 |
-| otf/SuharSahafa-Regular.otf | 3002 | 2469 | 585 |
-| otf/SuharSahafa-SemiBold.otf | 3002 | 2469 | 611 |
-| otf/SuharSahafa-SemiBoldItalic.otf | 3002 | 2469 | 605 |
-| otf/SuharSahafaCaption-Bold.otf | 3002 | 2469 | 649 |
+| otf/SuharNerdSahafa-Bold.otf | 13597 | 13064 | 3337 |
+| otf/SuharNerdSahafa-BoldItalic.otf | 13597 | 13064 | 3332 |
+| otf/SuharNerdSahafa-Italic.otf | 13597 | 13064 | 3326 |
+| otf/SuharNerdSahafa-Medium.otf | 13597 | 13064 | 3322 |
+| otf/SuharNerdSahafa-MediumItalic.otf | 13597 | 13064 | 3332 |
+| otf/SuharNerdSahafa-Regular.otf | 13597 | 13064 | 3316 |
+| otf/SuharNerdSahafa-SemiBold.otf | 13597 | 13064 | 3331 |
+| otf/SuharNerdSahafa-SemiBoldItalic.otf | 13597 | 13064 | 3335 |
+| otf/SuharNerdSahafaHeadline-Bold.otf | 13597 | 13064 | 3365 |
+| otf/SuharNerdSahafaHeadline-BoldItalic.otf | 13597 | 13064 | 3364 |
+| otf/SuharNerdSahafaHeadline-Italic.otf | 13597 | 13064 | 3354 |
+| otf/SuharNerdSahafaHeadline-Medium.otf | 13597 | 13064 | 3362 |
+| otf/SuharNerdSahafaHeadline-MediumItalic.otf | 13597 | 13064 | 3368 |
+| otf/SuharNerdSahafaHeadline-Regular.otf | 13597 | 13064 | 3349 |
+| otf/SuharNerdSahafaHeadline-SemiBold.otf | 13597 | 13064 | 3372 |
+| otf/SuharNerdSahafaHeadline-SemiBoldItalic.otf | 13597 | 13064 | 3366 |
+| otf/SuharSahafa-Bold.otf | 3002 | 2469 | 610 |
+| otf/SuharSahafa-BoldItalic.otf | 3002 | 2469 | 605 |
+| otf/SuharSahafa-Italic.otf | 3002 | 2469 | 599 |
+| otf/SuharSahafa-Medium.otf | 3002 | 2469 | 594 |
+| otf/SuharSahafa-MediumItalic.otf | 3002 | 2469 | 605 |
+| otf/SuharSahafa-Regular.otf | 3002 | 2469 | 588 |
+| otf/SuharSahafa-SemiBold.otf | 3002 | 2469 | 604 |
+| otf/SuharSahafa-SemiBoldItalic.otf | 3002 | 2469 | 607 |
+| otf/SuharSahafaCaption-Bold.otf | 3002 | 2469 | 646 |
 | otf/SuharSahafaCaption-BoldItalic.otf | 3002 | 2469 | 633 |
-| otf/SuharSahafaCaption-Italic.otf | 3002 | 2469 | 607 |
-| otf/SuharSahafaCaption-Medium.otf | 3002 | 2469 | 621 |
-| otf/SuharSahafaCaption-MediumItalic.otf | 3002 | 2469 | 615 |
+| otf/SuharSahafaCaption-Italic.otf | 3002 | 2469 | 617 |
+| otf/SuharSahafaCaption-Medium.otf | 3002 | 2469 | 617 |
+| otf/SuharSahafaCaption-MediumItalic.otf | 3002 | 2469 | 621 |
 | otf/SuharSahafaCaption-Regular.otf | 3002 | 2469 | 607 |
-| otf/SuharSahafaCaption-SemiBold.otf | 3002 | 2469 | 640 |
-| otf/SuharSahafaCaption-SemiBoldItalic.otf | 3002 | 2469 | 628 |
-| otf/SuharSahafaHeadline-Bold.otf | 3002 | 2469 | 637 |
-| otf/SuharSahafaHeadline-BoldItalic.otf | 3002 | 2469 | 630 |
-| otf/SuharSahafaHeadline-Italic.otf | 3002 | 2469 | 620 |
-| otf/SuharSahafaHeadline-Medium.otf | 3002 | 2469 | 625 |
-| otf/SuharSahafaHeadline-MediumItalic.otf | 3002 | 2469 | 633 |
-| otf/SuharSahafaHeadline-Regular.otf | 3002 | 2469 | 610 |
-| otf/SuharSahafaHeadline-SemiBold.otf | 3002 | 2469 | 636 |
-| otf/SuharSahafaHeadline-SemiBoldItalic.otf | 3002 | 2469 | 632 |
-| otf/SuharTypewriter-Bold.otf | 3002 | 2469 | 653 |
-| otf/SuharTypewriter-BoldItalic.otf | 3002 | 2469 | 640 |
-| otf/SuharTypewriter-Italic.otf | 3002 | 2469 | 629 |
-| otf/SuharTypewriter-Regular.otf | 3002 | 2469 | 625 |
+| otf/SuharSahafaCaption-SemiBold.otf | 3002 | 2469 | 630 |
+| otf/SuharSahafaCaption-SemiBoldItalic.otf | 3002 | 2469 | 630 |
+| otf/SuharSahafaHeadline-Bold.otf | 3002 | 2469 | 638 |
+| otf/SuharSahafaHeadline-BoldItalic.otf | 3002 | 2469 | 637 |
+| otf/SuharSahafaHeadline-Italic.otf | 3002 | 2469 | 627 |
+| otf/SuharSahafaHeadline-Medium.otf | 3002 | 2469 | 634 |
+| otf/SuharSahafaHeadline-MediumItalic.otf | 3002 | 2469 | 640 |
+| otf/SuharSahafaHeadline-Regular.otf | 3002 | 2469 | 622 |
+| otf/SuharSahafaHeadline-SemiBold.otf | 3002 | 2469 | 644 |
+| otf/SuharSahafaHeadline-SemiBoldItalic.otf | 3002 | 2469 | 638 |
+| otf/SuharTypewriter-Bold.otf | 3002 | 2469 | 660 |
+| otf/SuharTypewriter-BoldItalic.otf | 3002 | 2469 | 656 |
+| otf/SuharTypewriter-Italic.otf | 3002 | 2469 | 634 |
+| otf/SuharTypewriter-Regular.otf | 3002 | 2469 | 623 |
 | ttf/Suhar-Black.ttf | 3002 | 2469 | 532 |
 | ttf/Suhar-BlackItalic.ttf | 3002 | 2469 | 525 |
 | ttf/Suhar-Bold.ttf | 3002 | 2469 | 530 |
@@ -6896,50 +6910,50 @@ Produced by `tools/validate.py` from the compiled files in `dist/`. Shaping uses
 | ttf/SuharNerdMono-Regular.ttf | 13613 | 13064 | 2684 |
 | ttf/SuharNerdMono-SemiBold.ttf | 13613 | 13064 | 2692 |
 | ttf/SuharNerdMono-SemiBoldItalic.ttf | 13613 | 13064 | 2694 |
-| ttf/SuharNerdSahafa-Bold.ttf | 13597 | 13064 | 2811 |
-| ttf/SuharNerdSahafa-BoldItalic.ttf | 13597 | 13064 | 2798 |
-| ttf/SuharNerdSahafa-Italic.ttf | 13597 | 13064 | 2788 |
-| ttf/SuharNerdSahafa-Medium.ttf | 13597 | 13064 | 2791 |
-| ttf/SuharNerdSahafa-MediumItalic.ttf | 13597 | 13064 | 2786 |
-| ttf/SuharNerdSahafa-Regular.ttf | 13597 | 13064 | 2788 |
-| ttf/SuharNerdSahafa-SemiBold.ttf | 13597 | 13064 | 2806 |
+| ttf/SuharNerdSahafa-Bold.ttf | 13597 | 13064 | 2806 |
+| ttf/SuharNerdSahafa-BoldItalic.ttf | 13597 | 13064 | 2799 |
+| ttf/SuharNerdSahafa-Italic.ttf | 13597 | 13064 | 2797 |
+| ttf/SuharNerdSahafa-Medium.ttf | 13597 | 13064 | 2789 |
+| ttf/SuharNerdSahafa-MediumItalic.ttf | 13597 | 13064 | 2796 |
+| ttf/SuharNerdSahafa-Regular.ttf | 13597 | 13064 | 2789 |
+| ttf/SuharNerdSahafa-SemiBold.ttf | 13597 | 13064 | 2797 |
 | ttf/SuharNerdSahafa-SemiBoldItalic.ttf | 13597 | 13064 | 2796 |
-| ttf/SuharNerdSahafaHeadline-Bold.ttf | 13597 | 13064 | 2829 |
-| ttf/SuharNerdSahafaHeadline-BoldItalic.ttf | 13597 | 13064 | 2827 |
-| ttf/SuharNerdSahafaHeadline-Italic.ttf | 13597 | 13064 | 2822 |
-| ttf/SuharNerdSahafaHeadline-Medium.ttf | 13597 | 13064 | 2824 |
-| ttf/SuharNerdSahafaHeadline-MediumItalic.ttf | 13597 | 13064 | 2830 |
-| ttf/SuharNerdSahafaHeadline-Regular.ttf | 13597 | 13064 | 2810 |
-| ttf/SuharNerdSahafaHeadline-SemiBold.ttf | 13597 | 13064 | 2828 |
-| ttf/SuharNerdSahafaHeadline-SemiBoldItalic.ttf | 13597 | 13064 | 2826 |
-| ttf/SuharSahafa-Bold.ttf | 3002 | 2469 | 558 |
-| ttf/SuharSahafa-BoldItalic.ttf | 3002 | 2469 | 545 |
-| ttf/SuharSahafa-Italic.ttf | 3002 | 2469 | 535 |
-| ttf/SuharSahafa-Medium.ttf | 3002 | 2469 | 538 |
-| ttf/SuharSahafa-MediumItalic.ttf | 3002 | 2469 | 533 |
-| ttf/SuharSahafa-Regular.ttf | 3002 | 2469 | 535 |
-| ttf/SuharSahafa-SemiBold.ttf | 3002 | 2469 | 553 |
+| ttf/SuharNerdSahafaHeadline-Bold.ttf | 13597 | 13064 | 2831 |
+| ttf/SuharNerdSahafaHeadline-BoldItalic.ttf | 13597 | 13064 | 2840 |
+| ttf/SuharNerdSahafaHeadline-Italic.ttf | 13597 | 13064 | 2828 |
+| ttf/SuharNerdSahafaHeadline-Medium.ttf | 13597 | 13064 | 2826 |
+| ttf/SuharNerdSahafaHeadline-MediumItalic.ttf | 13597 | 13064 | 2838 |
+| ttf/SuharNerdSahafaHeadline-Regular.ttf | 13597 | 13064 | 2821 |
+| ttf/SuharNerdSahafaHeadline-SemiBold.ttf | 13597 | 13064 | 2831 |
+| ttf/SuharNerdSahafaHeadline-SemiBoldItalic.ttf | 13597 | 13064 | 2834 |
+| ttf/SuharSahafa-Bold.ttf | 3002 | 2469 | 553 |
+| ttf/SuharSahafa-BoldItalic.ttf | 3002 | 2469 | 546 |
+| ttf/SuharSahafa-Italic.ttf | 3002 | 2469 | 544 |
+| ttf/SuharSahafa-Medium.ttf | 3002 | 2469 | 536 |
+| ttf/SuharSahafa-MediumItalic.ttf | 3002 | 2469 | 542 |
+| ttf/SuharSahafa-Regular.ttf | 3002 | 2469 | 536 |
+| ttf/SuharSahafa-SemiBold.ttf | 3002 | 2469 | 544 |
 | ttf/SuharSahafa-SemiBoldItalic.ttf | 3002 | 2469 | 543 |
-| ttf/SuharSahafaCaption-Bold.ttf | 3002 | 2469 | 586 |
-| ttf/SuharSahafaCaption-BoldItalic.ttf | 3002 | 2469 | 575 |
-| ttf/SuharSahafaCaption-Italic.ttf | 3002 | 2469 | 546 |
-| ttf/SuharSahafaCaption-Medium.ttf | 3002 | 2469 | 562 |
-| ttf/SuharSahafaCaption-MediumItalic.ttf | 3002 | 2469 | 551 |
-| ttf/SuharSahafaCaption-Regular.ttf | 3002 | 2469 | 551 |
-| ttf/SuharSahafaCaption-SemiBold.ttf | 3002 | 2469 | 577 |
-| ttf/SuharSahafaCaption-SemiBoldItalic.ttf | 3002 | 2469 | 564 |
-| ttf/SuharSahafaHeadline-Bold.ttf | 3002 | 2469 | 576 |
-| ttf/SuharSahafaHeadline-BoldItalic.ttf | 3002 | 2469 | 574 |
-| ttf/SuharSahafaHeadline-Italic.ttf | 3002 | 2469 | 569 |
-| ttf/SuharSahafaHeadline-Medium.ttf | 3002 | 2469 | 571 |
-| ttf/SuharSahafaHeadline-MediumItalic.ttf | 3002 | 2469 | 576 |
-| ttf/SuharSahafaHeadline-Regular.ttf | 3002 | 2469 | 557 |
-| ttf/SuharSahafaHeadline-SemiBold.ttf | 3002 | 2469 | 575 |
-| ttf/SuharSahafaHeadline-SemiBoldItalic.ttf | 3002 | 2469 | 573 |
-| ttf/SuharTypewriter-Bold.ttf | 3002 | 2469 | 601 |
-| ttf/SuharTypewriter-BoldItalic.ttf | 3002 | 2469 | 576 |
-| ttf/SuharTypewriter-Italic.ttf | 3002 | 2469 | 564 |
-| ttf/SuharTypewriter-Regular.ttf | 3002 | 2469 | 577 |
+| ttf/SuharSahafaCaption-Bold.ttf | 3002 | 2469 | 580 |
+| ttf/SuharSahafaCaption-BoldItalic.ttf | 3002 | 2469 | 567 |
+| ttf/SuharSahafaCaption-Italic.ttf | 3002 | 2469 | 555 |
+| ttf/SuharSahafaCaption-Medium.ttf | 3002 | 2469 | 558 |
+| ttf/SuharSahafaCaption-MediumItalic.ttf | 3002 | 2469 | 557 |
+| ttf/SuharSahafaCaption-Regular.ttf | 3002 | 2469 | 548 |
+| ttf/SuharSahafaCaption-SemiBold.ttf | 3002 | 2469 | 566 |
+| ttf/SuharSahafaCaption-SemiBoldItalic.ttf | 3002 | 2469 | 567 |
+| ttf/SuharSahafaHeadline-Bold.ttf | 3002 | 2469 | 578 |
+| ttf/SuharSahafaHeadline-BoldItalic.ttf | 3002 | 2469 | 587 |
+| ttf/SuharSahafaHeadline-Italic.ttf | 3002 | 2469 | 574 |
+| ttf/SuharSahafaHeadline-Medium.ttf | 3002 | 2469 | 573 |
+| ttf/SuharSahafaHeadline-MediumItalic.ttf | 3002 | 2469 | 585 |
+| ttf/SuharSahafaHeadline-Regular.ttf | 3002 | 2469 | 568 |
+| ttf/SuharSahafaHeadline-SemiBold.ttf | 3002 | 2469 | 578 |
+| ttf/SuharSahafaHeadline-SemiBoldItalic.ttf | 3002 | 2469 | 581 |
+| ttf/SuharTypewriter-Bold.ttf | 3002 | 2469 | 609 |
+| ttf/SuharTypewriter-BoldItalic.ttf | 3002 | 2469 | 589 |
+| ttf/SuharTypewriter-Italic.ttf | 3002 | 2469 | 569 |
+| ttf/SuharTypewriter-Regular.ttf | 3002 | 2469 | 578 |
 | variable/Suhar-Italic[opsz,wght].ttf | 3002 | 2469 | 1252 |
 | variable/SuharCondensed-Italic[opsz,wght].ttf | 3002 | 2469 | 1215 |
 | variable/SuharCondensed[opsz,wght].ttf | 3002 | 2469 | 1191 |
@@ -6948,10 +6962,10 @@ Produced by `tools/validate.py` from the compiled files in `dist/`. Shaping uses
 | variable/SuharNaskh-Italic[GRAD,opsz,wght].ttf | 3002 | 2469 | 1692 |
 | variable/SuharNaskhDisplay[wght].ttf | 3002 | 2469 | 683 |
 | variable/SuharNaskh[GRAD,opsz,wght].ttf | 3002 | 2469 | 1665 |
-| variable/SuharSahafa-Italic[GRAD,opsz,wght].ttf | 3002 | 2469 | 1750 |
-| variable/SuharSahafaHeadline-Italic[GRAD,opsz,wght].ttf | 3002 | 2469 | 1754 |
-| variable/SuharSahafaHeadline[GRAD,opsz,wght].ttf | 3002 | 2469 | 1716 |
-| variable/SuharSahafa[GRAD,opsz,wght].ttf | 3002 | 2469 | 1719 |
+| variable/SuharSahafa-Italic[GRAD,opsz,wght].ttf | 3002 | 2469 | 1756 |
+| variable/SuharSahafaHeadline-Italic[GRAD,opsz,wght].ttf | 3002 | 2469 | 1757 |
+| variable/SuharSahafaHeadline[GRAD,opsz,wght].ttf | 3002 | 2469 | 1727 |
+| variable/SuharSahafa[GRAD,opsz,wght].ttf | 3002 | 2469 | 1711 |
 | variable/Suhar[opsz,wght].ttf | 3002 | 2469 | 1219 |
 
 ## Proof images (reports/img)

@@ -224,3 +224,22 @@ standard deviation of the gap is 8 to 14 units on a mean of about 350 to 375.
 - **Filled corners** use the ink-trap routine with the triangle added instead of removed.
 - **Suhar Typewriter** is `sahafa.style(cut='typewriter')`: pen ratio 1.06 : 1, Latin horizontals at 92 % of the
   stem, no tapering, sidebearings 10 % wider, Regular 22 % heavier than Sahafa Regular.
+
+## Sahafa for body text (2.6)
+
+The first Sahafa made the loops as large as possible. That helps a single letter at 7 point and hurts the word:
+when loops, teeth and stems are close in height, words have similar outlines. 2.6 keeps the drawings and changes
+their proportions with one map (`_post`) applied to every letter of the family:
+
+| | 2.5 | 2.6 |
+|---|---:|---:|
+| alef | 718 | 767 |
+| loop of ص | 475 | 446 |
+| tooth at the start of a word | 372 | 387 |
+| tooth inside a word | 372 | 338 |
+| tooth of س ش | 364 | 279 |
+| bowl of ن | −230 | −248 |
+| letter width | 0.93 | 0.885 |
+
+The map leaves everything up to the baseline stroke alone, compresses the zone up to the loop height and
+stretches the zone above it; dots are moved as a whole, so they keep their shape.

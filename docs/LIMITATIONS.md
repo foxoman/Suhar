@@ -40,11 +40,16 @@ I would rather list these here than have you find them in production.
 ## Suhar Sahafa
 
 - Sahafa is the newest family and has had the least use.
-- I wanted it to read better in newspapers than Yakout, Mohammed and Traditional Arabic. **I cannot show
-  that.** Those are commercial fonts that I do not have, so there is no comparison with them at all. Against
-  Amiri, Noto Naskh Arabic and Scheherazade New I measured larger loops at the same point size and a longer
-  line (the table is in the README). Nobody has run a reading test, and it has not been printed on newsprint
-  or on a press. Both need people and a press, not more work in the generator.
+- Sahafa is meant for body text, and 2.6 reshapes it for that. **Whether it reads as easily as Traditional
+  Arabic or Yakout I cannot show, and I do not expect it to.** Those are written Naskh hands, drawn by
+  calligraphers and familiar to every reader; Sahafa is constructed from skeletons and one pen. I do not have
+  those fonts, so there is no comparison with them. Against Amiri, Noto Naskh Arabic and Scheherazade New I
+  measured loop size, stem height and line length (the table is in the README); those say how large and how
+  economical it is, not how well it reads. Nobody has run a reading test, and it has not been printed on
+  newsprint or on a press.
+- The changes in 2.6 follow what makes written Naskh readable (stems against loops, teeth of different
+  heights, deep bowls, close setting). They were judged by me from renderings beside Noto Naskh and Amiri, not
+  by an Arabic typographer.
 - It is a constructed Naskh, like the rest of Suhar: one pen angle, and seven changes of shape by neighbour
   (tall teeth, the narrow tooth before ر ز, the raised tooth before ن ي, the narrow ك, the returning yeh, ل on م,
   letters standing on ج ح خ). A written Naskh has dozens of such forms. A calligrapher would call it a Naskh in
@@ -62,7 +67,8 @@ I would rather list these here than have you find them in production.
 - Latin serifs have straight wedge brackets, not curved ones. 0 and 8 have no serifs, as in any serif face;
   punctuation and ß æ œ ð þ have the Sahafa pen without serifs; Cyrillic and Greek letters have serifs where
   they share a Latin shape, plus Γ Π Λ Φ Ψ.
-- The x-height is 470, to match the Arabic loops; Suhar's is 520. Next to Suhar at the same size the Sahafa
+- The x-height is 470; the Arabic loops are a little lower (about 445) and alef stands about 65 units above the
+  Latin capitals. Suhar's x-height is 520. Next to Suhar at the same size the Sahafa
   lower case is smaller. Capitals, figures, ascent, descent and line height are the same.
 - The khanjar tails (`ss01`) are the Suhar shapes in the Sahafa proportions, not redrawn.
 - Sahafa Headline and the display end of the optical size axis fill their inner corners; the text cuts keep the

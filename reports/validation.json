@@ -1,5 +1,5 @@
 {
- "passed": 2740,
+ "passed": 2751,
  "failed": 0,
  "results": [
   [
@@ -14428,15 +14428,21 @@
   ],
   [
    "sahafa",
-   "Sahafa Regular: alef as tall as the Latin capitals (within 50 units)",
+   "Sahafa Regular: alef stands 40 to 110 units above the Latin capitals, like an ascender",
    true,
-   "(718, 700)"
+   "(767, 700)"
+  ],
+  [
+   "sahafa",
+   "Sahafa Regular: tall and short letters differ clearly (the loop of sad is under 0.62 of alef)",
+   true,
+   "(446, 767)"
   ],
   [
    "sahafa",
    "Sahafa Regular: the loop of sad as tall as the Latin x-height (within 40 units), x-height 470",
    true,
-   "(475, 473)"
+   "(446, 473)"
   ],
   [
    "sahafa",
@@ -14452,51 +14458,51 @@
   ],
   [
    "sahafa",
-   "Sahafa Regular: the loop of sad stays open (counter of at least 30000 square units)",
+   "Sahafa Regular: the loop of sad stays open (counter of at least 24600 square units)",
    true,
-   "[87471, 249971]"
+   "[72933, 225581]"
   ],
   [
    "sahafa",
-   "Sahafa Regular: the loop of feh stays open (counter of at least 12000 square units)",
+   "Sahafa Regular: the loop of feh stays open (counter of at least 9840 square units)",
    true,
-   "[7991, 51379, 155382]"
+   "[8548, 42458, 139922]"
   ],
   [
    "sahafa",
-   "Sahafa Regular: the loop of waw stays open (counter of at least 12000 square units)",
+   "Sahafa Regular: the loop of waw stays open (counter of at least 9840 square units)",
    true,
-   "[41534, 169872]"
+   "[34339, 157046]"
   ],
   [
    "sahafa",
-   "Sahafa Regular: the loop of meem stays open (counter of at least 7000 square units)",
+   "Sahafa Regular: the loop of meem stays open (counter of at least 5740 square units)",
    true,
-   "[36502, 129010]"
+   "[32118, 120496]"
   ],
   [
    "sahafa",
-   "Sahafa Regular: the loop of heh stays open (counter of at least 12000 square units)",
+   "Sahafa Regular: the loop of heh stays open (counter of at least 9840 square units)",
    true,
-   "[58483, 154818]"
+   "[50183, 141089]"
   ],
   [
    "sahafa",
-   "Sahafa Regular: the loop of qaf stays open (counter of at least 12000 square units)",
+   "Sahafa Regular: the loop of qaf stays open (counter of at least 9840 square units)",
    true,
-   "[7991, 8056, 41882, 219184]"
+   "[8548, 8548, 34606, 204453]"
   ],
   [
    "sahafa",
-   "Sahafa Regular: the loop of teh marbuta stays open (counter of at least 12000 square units)",
+   "Sahafa Regular: the loop of teh marbuta stays open (counter of at least 9840 square units)",
    true,
-   "[7991, 7991, 58483, 154818]"
+   "[8548, 8548, 50183, 141089]"
   ],
   [
    "sahafa",
-   "Sahafa Regular: the loop of medial ain stays open (counter of at least 2500 square units)",
+   "Sahafa Regular: the loop of medial ain stays open (counter of at least 2050 square units)",
    true,
-   "[17078, 147748]"
+   "[13655, 136026]"
   ],
   [
    "sahafa",
@@ -14524,15 +14530,21 @@
   ],
   [
    "sahafa",
-   "Sahafa Medium: alef as tall as the Latin capitals (within 50 units)",
+   "Sahafa Medium: alef stands 40 to 110 units above the Latin capitals, like an ascender",
    true,
-   "(721, 700)"
+   "(770, 700)"
+  ],
+  [
+   "sahafa",
+   "Sahafa Medium: tall and short letters differ clearly (the loop of sad is under 0.62 of alef)",
+   true,
+   "(455, 770)"
   ],
   [
    "sahafa",
    "Sahafa Medium: the loop of sad as tall as the Latin x-height (within 40 units), x-height 470",
    true,
-   "(485, 474)"
+   "(455, 474)"
   ],
   [
    "sahafa",
@@ -14544,55 +14556,55 @@
    "sahafa",
    "Sahafa Medium: moderate contrast, the Arabic upright is 0.5 to 0.85 of the baseline stroke",
    true,
-   "(85, 122)"
+   "(84, 122)"
   ],
   [
    "sahafa",
-   "Sahafa Medium: the loop of sad stays open (counter of at least 23400 square units)",
+   "Sahafa Medium: the loop of sad stays open (counter of at least 19188 square units)",
    true,
-   "[73941, 262981]"
+   "[59859, 237379]"
   ],
   [
    "sahafa",
-   "Sahafa Medium: the loop of feh stays open (counter of at least 9360 square units)",
+   "Sahafa Medium: the loop of feh stays open (counter of at least 7675 square units)",
    true,
-   "[10356, 42454, 162533]"
+   "[10912, 34302, 146544]"
   ],
   [
    "sahafa",
-   "Sahafa Medium: the loop of waw stays open (counter of at least 9360 square units)",
+   "Sahafa Medium: the loop of waw stays open (counter of at least 7675 square units)",
    true,
-   "[33559, 185729]"
+   "[27030, 171235]"
   ],
   [
    "sahafa",
-   "Sahafa Medium: the loop of meem stays open (counter of at least 5460 square units)",
+   "Sahafa Medium: the loop of meem stays open (counter of at least 4477 square units)",
    true,
-   "[31250, 140126]"
+   "[27117, 131046]"
   ],
   [
    "sahafa",
-   "Sahafa Medium: the loop of heh stays open (counter of at least 9360 square units)",
+   "Sahafa Medium: the loop of heh stays open (counter of at least 7675 square units)",
    true,
-   "[49225, 162168]"
+   "[41349, 147826]"
   ],
   [
    "sahafa",
-   "Sahafa Medium: the loop of qaf stays open (counter of at least 9360 square units)",
+   "Sahafa Medium: the loop of qaf stays open (counter of at least 7675 square units)",
    true,
-   "[10281, 10281, 33775, 243024]"
+   "[10981, 11060, 26908, 230224]"
   ],
   [
    "sahafa",
-   "Sahafa Medium: the loop of teh marbuta stays open (counter of at least 9360 square units)",
+   "Sahafa Medium: the loop of teh marbuta stays open (counter of at least 7675 square units)",
    true,
-   "[10356, 10356, 49225, 162168]"
+   "[10912, 10912, 41349, 147826]"
   ],
   [
    "sahafa",
-   "Sahafa Medium: the loop of medial ain stays open (counter of at least 1950 square units)",
+   "Sahafa Medium: the loop of medial ain stays open (counter of at least 1599 square units)",
    true,
-   "[12189, 162732]"
+   "[9271, 149789]"
   ],
   [
    "sahafa",
@@ -14620,15 +14632,21 @@
   ],
   [
    "sahafa",
-   "Sahafa SemiBold: alef as tall as the Latin capitals (within 50 units)",
+   "Sahafa SemiBold: alef stands 40 to 110 units above the Latin capitals, like an ascender",
    true,
-   "(725, 700)"
+   "(773, 700)"
+  ],
+  [
+   "sahafa",
+   "Sahafa SemiBold: tall and short letters differ clearly (the loop of sad is under 0.62 of alef)",
+   true,
+   "(465, 773)"
   ],
   [
    "sahafa",
    "Sahafa SemiBold: the loop of sad as tall as the Latin x-height (within 40 units), x-height 470",
    true,
-   "(494, 474)"
+   "(465, 474)"
   ],
   [
    "sahafa",
@@ -14640,49 +14658,49 @@
    "sahafa",
    "Sahafa SemiBold: moderate contrast, the Arabic upright is 0.5 to 0.85 of the baseline stroke",
    true,
-   "(98, 140)"
+   "(97, 140)"
   ],
   [
    "sahafa",
-   "Sahafa SemiBold: the loop of sad stays open (counter of at least 18600 square units)",
+   "Sahafa SemiBold: the loop of sad stays open (counter of at least 15252 square units)",
    true,
-   "[60973, 273218]"
+   "[48075, 246752]"
   ],
   [
    "sahafa",
-   "Sahafa SemiBold: the loop of feh stays open (counter of at least 7440 square units)",
+   "Sahafa SemiBold: the loop of feh stays open (counter of at least 6101 square units)",
    true,
-   "[12464, 34447, 169074]"
+   "[12996, 27115, 152582]"
   ],
   [
    "sahafa",
-   "Sahafa SemiBold: the loop of waw stays open (counter of at least 7440 square units)",
+   "Sahafa SemiBold: the loop of waw stays open (counter of at least 6101 square units)",
    true,
-   "[26518, 200252]"
+   "[20582, 185340]"
   ],
   [
    "sahafa",
-   "Sahafa SemiBold: the loop of meem stays open (counter of at least 4340 square units)",
+   "Sahafa SemiBold: the loop of meem stays open (counter of at least 3559 square units)",
    true,
-   "[26331, 150494]"
+   "[22254, 141276]"
   ],
   [
    "sahafa",
-   "Sahafa SemiBold: the loop of heh stays open (counter of at least 7440 square units)",
+   "Sahafa SemiBold: the loop of heh stays open (counter of at least 6101 square units)",
    true,
-   "[41070, 168869]"
+   "[33723, 154380]"
   ],
   [
    "sahafa",
-   "Sahafa SemiBold: the loop of qaf stays open (counter of at least 7440 square units)",
+   "Sahafa SemiBold: the loop of qaf stays open (counter of at least 6101 square units)",
    true,
-   "[12306, 12306, 26334, 269792]"
+   "[12910, 12996, 20394, 252802]"
   ],
   [
    "sahafa",
-   "Sahafa SemiBold: the loop of teh marbuta stays open (counter of at least 7440 square units)",
+   "Sahafa SemiBold: the loop of teh marbuta stays open (counter of at least 6101 square units)",
    true,
-   "[12388, 12388, 41070, 168869]"
+   "[12996, 12996, 33723, 154380]"
   ],
   [
    "sahafa",
@@ -14710,15 +14728,21 @@
   ],
   [
    "sahafa",
-   "Sahafa Bold: alef as tall as the Latin capitals (within 50 units)",
+   "Sahafa Bold: alef stands 40 to 110 units above the Latin capitals, like an ascender",
    true,
-   "(728, 700)"
+   "(776, 700)"
+  ],
+  [
+   "sahafa",
+   "Sahafa Bold: tall and short letters differ clearly (the loop of sad is under 0.62 of alef)",
+   true,
+   "(473, 776)"
   ],
   [
    "sahafa",
    "Sahafa Bold: the loop of sad as tall as the Latin x-height (within 40 units), x-height 470",
    true,
-   "(503, 475)"
+   "(473, 475)"
   ],
   [
    "sahafa",
@@ -14734,45 +14758,45 @@
   ],
   [
    "sahafa",
-   "Sahafa Bold: the loop of sad stays open (counter of at least 15000 square units)",
+   "Sahafa Bold: the loop of sad stays open (counter of at least 12300 square units)",
    true,
-   "[49683, 284368]"
+   "[37429, 256717]"
   ],
   [
    "sahafa",
-   "Sahafa Bold: the loop of feh stays open (counter of at least 6000 square units)",
+   "Sahafa Bold: the loop of feh stays open (counter of at least 4920 square units)",
    true,
-   "[14094, 27559, 175572]"
+   "[14742, 20730, 158204]"
   ],
   [
    "sahafa",
-   "Sahafa Bold: the loop of waw stays open (counter of at least 6000 square units)",
+   "Sahafa Bold: the loop of waw stays open (counter of at least 4920 square units)",
    true,
-   "[20490, 213679]"
+   "[15046, 198155]"
   ],
   [
    "sahafa",
-   "Sahafa Bold: the loop of meem stays open (counter of at least 3500 square units)",
+   "Sahafa Bold: the loop of meem stays open (counter of at least 2870 square units)",
    true,
-   "[21588, 160919]"
+   "[18318, 151644]"
   ],
   [
    "sahafa",
-   "Sahafa Bold: the loop of heh stays open (counter of at least 6000 square units)",
+   "Sahafa Bold: the loop of heh stays open (counter of at least 4920 square units)",
    true,
-   "[33600, 175788]"
+   "[27149, 161013]"
   ],
   [
    "sahafa",
-   "Sahafa Bold: the loop of qaf stays open (counter of at least 6000 square units)",
+   "Sahafa Bold: the loop of qaf stays open (counter of at least 4920 square units)",
    true,
-   "[14094, 14094, 20217, 291549]"
+   "[14651, 14681, 14742, 274702]"
   ],
   [
    "sahafa",
-   "Sahafa Bold: the loop of teh marbuta stays open (counter of at least 6000 square units)",
+   "Sahafa Bold: the loop of teh marbuta stays open (counter of at least 4920 square units)",
    true,
-   "[14094, 14094, 33600, 175788]"
+   "[14651, 14742, 27149, 161013]"
   ],
   [
    "sahafa",
@@ -14800,15 +14824,21 @@
   ],
   [
    "sahafa",
-   "SahafaHeadline Regular: alef as tall as the Latin capitals (within 50 units)",
+   "SahafaHeadline Regular: alef stands 40 to 110 units above the Latin capitals, like an ascender",
    true,
-   "(729, 700)"
+   "(778, 700)"
+  ],
+  [
+   "sahafa",
+   "SahafaHeadline Regular: tall and short letters differ clearly (the loop of sad is under 0.62 of alef)",
+   true,
+   "(449, 778)"
   ],
   [
    "sahafa",
    "SahafaHeadline Regular: the loop of sad as tall as the Latin x-height (within 40 units), x-height 470",
    true,
-   "(478, 473)"
+   "(449, 473)"
   ],
   [
    "sahafa",
@@ -14820,55 +14850,55 @@
    "sahafa",
    "SahafaHeadline Regular: moderate contrast, the Arabic upright is 0.5 to 0.85 of the baseline stroke",
    true,
-   "(62, 109)"
+   "(61, 109)"
   ],
   [
    "sahafa",
-   "SahafaHeadline Regular: the loop of sad stays open (counter of at least 30000 square units)",
+   "SahafaHeadline Regular: the loop of sad stays open (counter of at least 24600 square units)",
    true,
-   "[17, 80269, 240162]"
+   "[22, 66461, 216681]"
   ],
   [
    "sahafa",
-   "SahafaHeadline Regular: the loop of feh stays open (counter of at least 12000 square units)",
+   "SahafaHeadline Regular: the loop of feh stays open (counter of at least 9840 square units)",
    true,
-   "[24, 8618, 47512, 148564]"
+   "[24, 9188, 39132, 133757]"
   ],
   [
    "sahafa",
-   "SahafaHeadline Regular: the loop of waw stays open (counter of at least 12000 square units)",
+   "SahafaHeadline Regular: the loop of waw stays open (counter of at least 9840 square units)",
    true,
-   "[15, 38327, 161508]"
+   "[1, 31307, 149697]"
   ],
   [
    "sahafa",
-   "SahafaHeadline Regular: the loop of meem stays open (counter of at least 7000 square units)",
+   "SahafaHeadline Regular: the loop of meem stays open (counter of at least 5740 square units)",
    true,
-   "[32, 34, 34471, 126823]"
+   "[26, 36, 29950, 117843]"
   ],
   [
    "sahafa",
-   "SahafaHeadline Regular: the loop of heh stays open (counter of at least 12000 square units)",
+   "SahafaHeadline Regular: the loop of heh stays open (counter of at least 9840 square units)",
    true,
-   "[47, 53848, 147123]"
+   "[40, 45721, 134152]"
   ],
   [
    "sahafa",
-   "SahafaHeadline Regular: the loop of qaf stays open (counter of at least 12000 square units)",
+   "SahafaHeadline Regular: the loop of qaf stays open (counter of at least 9840 square units)",
    true,
-   "[16, 8618, 8618, 38502, 211340]"
+   "[15, 9250, 9324, 31521, 196198]"
   ],
   [
    "sahafa",
-   "SahafaHeadline Regular: the loop of teh marbuta stays open (counter of at least 12000 square units)",
+   "SahafaHeadline Regular: the loop of teh marbuta stays open (counter of at least 9840 square units)",
    true,
-   "[47, 8618, 8688, 53848, 147123]"
+   "[40, 9250, 9324, 45721, 134152]"
   ],
   [
    "sahafa",
-   "SahafaHeadline Regular: the loop of medial ain stays open (counter of at least 2500 square units)",
+   "SahafaHeadline Regular: the loop of medial ain stays open (counter of at least 2050 square units)",
    true,
-   "[17, 23, 28, 219, 230, 15261, 145021]"
+   "[24, 27, 27, 212, 223, 11957, 133644]"
   ],
   [
    "sahafa",
@@ -14896,15 +14926,21 @@
   ],
   [
    "sahafa",
-   "SahafaHeadline Medium: alef as tall as the Latin capitals (within 50 units)",
+   "SahafaHeadline Medium: alef stands 40 to 110 units above the Latin capitals, like an ascender",
    true,
-   "(735, 700)"
+   "(783, 700)"
+  ],
+  [
+   "sahafa",
+   "SahafaHeadline Medium: tall and short letters differ clearly (the loop of sad is under 0.62 of alef)",
+   true,
+   "(459, 783)"
   ],
   [
    "sahafa",
    "SahafaHeadline Medium: the loop of sad as tall as the Latin x-height (within 40 units), x-height 470",
    true,
-   "(488, 473)"
+   "(459, 473)"
   ],
   [
    "sahafa",
@@ -14920,51 +14956,51 @@
   ],
   [
    "sahafa",
-   "SahafaHeadline Medium: the loop of sad stays open (counter of at least 23400 square units)",
+   "SahafaHeadline Medium: the loop of sad stays open (counter of at least 19188 square units)",
    true,
-   "[48, 55, 66118, 252562]"
+   "[16, 38, 38, 53214, 228929]"
   ],
   [
    "sahafa",
-   "SahafaHeadline Medium: the loop of feh stays open (counter of at least 9360 square units)",
+   "SahafaHeadline Medium: the loop of feh stays open (counter of at least 7675 square units)",
    true,
-   "[33, 11139, 38369, 155589]"
+   "[40, 11703, 30672, 140062]"
   ],
   [
    "sahafa",
-   "SahafaHeadline Medium: the loop of waw stays open (counter of at least 9360 square units)",
+   "SahafaHeadline Medium: the loop of waw stays open (counter of at least 7675 square units)",
    true,
-   "[11, 30403, 177398]"
+   "[7, 23778, 163024]"
   ],
   [
    "sahafa",
-   "SahafaHeadline Medium: the loop of meem stays open (counter of at least 5460 square units)",
+   "SahafaHeadline Medium: the loop of meem stays open (counter of at least 4477 square units)",
    true,
-   "[45, 64, 28808, 138226]"
+   "[43, 62, 24767, 128450]"
   ],
   [
    "sahafa",
-   "SahafaHeadline Medium: the loop of heh stays open (counter of at least 9360 square units)",
+   "SahafaHeadline Medium: the loop of heh stays open (counter of at least 7675 square units)",
    true,
-   "[83, 44049, 153644]"
+   "[78, 36606, 140149]"
   ],
   [
    "sahafa",
-   "SahafaHeadline Medium: the loop of qaf stays open (counter of at least 9360 square units)",
+   "SahafaHeadline Medium: the loop of qaf stays open (counter of at least 7675 square units)",
    true,
-   "[18, 11139, 11139, 30175, 234637]"
+   "[5, 7, 11857, 11857, 23837, 222137]"
   ],
   [
    "sahafa",
-   "SahafaHeadline Medium: the loop of teh marbuta stays open (counter of at least 9360 square units)",
+   "SahafaHeadline Medium: the loop of teh marbuta stays open (counter of at least 7675 square units)",
    true,
-   "[83, 11139, 11139, 44049, 153644]"
+   "[78, 11857, 11857, 36606, 140149]"
   ],
   [
    "sahafa",
-   "SahafaHeadline Medium: the loop of medial ain stays open (counter of at least 1950 square units)",
+   "SahafaHeadline Medium: the loop of medial ain stays open (counter of at least 1599 square units)",
    true,
-   "[30, 32, 32, 290, 305, 10181, 160244]"
+   "[19, 32, 32, 273, 304, 7287, 147870]"
   ],
   [
    "sahafa",
@@ -14992,15 +15028,21 @@
   ],
   [
    "sahafa",
-   "SahafaHeadline SemiBold: alef as tall as the Latin capitals (within 50 units)",
+   "SahafaHeadline SemiBold: alef stands 40 to 110 units above the Latin capitals, like an ascender",
    true,
-   "(740, 700)"
+   "(789, 700)"
+  ],
+  [
+   "sahafa",
+   "SahafaHeadline SemiBold: tall and short letters differ clearly (the loop of sad is under 0.62 of alef)",
+   true,
+   "(469, 789)"
   ],
   [
    "sahafa",
    "SahafaHeadline SemiBold: the loop of sad as tall as the Latin x-height (within 40 units), x-height 470",
    true,
-   "(498, 474)"
+   "(469, 474)"
   ],
   [
    "sahafa",
@@ -15012,49 +15054,49 @@
    "sahafa",
    "SahafaHeadline SemiBold: moderate contrast, the Arabic upright is 0.5 to 0.85 of the baseline stroke",
    true,
-   "(84, 149)"
+   "(83, 149)"
   ],
   [
    "sahafa",
-   "SahafaHeadline SemiBold: the loop of sad stays open (counter of at least 18600 square units)",
+   "SahafaHeadline SemiBold: the loop of sad stays open (counter of at least 15252 square units)",
    true,
-   "[10, 16, 32, 53329, 264185]"
+   "[2, 5, 7, 8, 8, 15, 15, 46, 41076, 238931]"
   ],
   [
    "sahafa",
-   "SahafaHeadline SemiBold: the loop of feh stays open (counter of at least 7440 square units)",
+   "SahafaHeadline SemiBold: the loop of feh stays open (counter of at least 6101 square units)",
    true,
-   "[33, 13408, 30383, 161356]"
+   "[22, 14105, 23379, 145765]"
   ],
   [
    "sahafa",
-   "SahafaHeadline SemiBold: the loop of waw stays open (counter of at least 7440 square units)",
+   "SahafaHeadline SemiBold: the loop of waw stays open (counter of at least 6101 square units)",
    true,
-   "[4, 23077, 191016]"
+   "[8, 17428, 176317]"
   ],
   [
    "sahafa",
-   "SahafaHeadline SemiBold: the loop of meem stays open (counter of at least 4340 square units)",
+   "SahafaHeadline SemiBold: the loop of meem stays open (counter of at least 3559 square units)",
    true,
-   "[55, 112, 23772, 148967]"
+   "[59, 244, 20302, 139238]"
   ],
   [
    "sahafa",
-   "SahafaHeadline SemiBold: the loop of heh stays open (counter of at least 7440 square units)",
+   "SahafaHeadline SemiBold: the loop of heh stays open (counter of at least 6101 square units)",
    true,
-   "[106, 35378, 159869]"
+   "[76, 28746, 146197]"
   ],
   [
    "sahafa",
-   "SahafaHeadline SemiBold: the loop of qaf stays open (counter of at least 7440 square units)",
+   "SahafaHeadline SemiBold: the loop of qaf stays open (counter of at least 6101 square units)",
    true,
-   "[5, 13408, 13408, 22799, 261008]"
+   "[7, 14105, 14105, 17065, 244592]"
   ],
   [
    "sahafa",
-   "SahafaHeadline SemiBold: the loop of teh marbuta stays open (counter of at least 7440 square units)",
+   "SahafaHeadline SemiBold: the loop of teh marbuta stays open (counter of at least 6101 square units)",
    true,
-   "[106, 13321, 13408, 35378, 159869]"
+   "[76, 14014, 14105, 28746, 146197]"
   ],
   [
    "sahafa",
@@ -15082,15 +15124,21 @@
   ],
   [
    "sahafa",
-   "SahafaHeadline Bold: alef as tall as the Latin capitals (within 50 units)",
+   "SahafaHeadline Bold: alef stands 40 to 110 units above the Latin capitals, like an ascender",
    true,
-   "(745, 700)"
+   "(794, 700)"
+  ],
+  [
+   "sahafa",
+   "SahafaHeadline Bold: tall and short letters differ clearly (the loop of sad is under 0.62 of alef)",
+   true,
+   "(478, 794)"
   ],
   [
    "sahafa",
    "SahafaHeadline Bold: the loop of sad as tall as the Latin x-height (within 40 units), x-height 470",
    true,
-   "(508, 475)"
+   "(478, 475)"
   ],
   [
    "sahafa",
@@ -15102,49 +15150,49 @@
    "sahafa",
    "SahafaHeadline Bold: moderate contrast, the Arabic upright is 0.5 to 0.85 of the baseline stroke",
    true,
-   "(95, 168)"
+   "(93, 168)"
   ],
   [
    "sahafa",
-   "SahafaHeadline Bold: the loop of sad stays open (counter of at least 15000 square units)",
+   "SahafaHeadline Bold: the loop of sad stays open (counter of at least 12300 square units)",
    true,
-   "[0, 6, 6, 9, 66, 152, 154, 41805, 274840]"
+   "[0, 4, 4, 15, 250, 264, 30878, 248672]"
   ],
   [
    "sahafa",
-   "SahafaHeadline Bold: the loop of feh stays open (counter of at least 6000 square units)",
+   "SahafaHeadline Bold: the loop of feh stays open (counter of at least 4920 square units)",
    true,
-   "[24, 15262, 23359, 167803]"
+   "[20, 15908, 16925, 151199]"
   ],
   [
    "sahafa",
-   "SahafaHeadline Bold: the loop of waw stays open (counter of at least 6000 square units)",
+   "SahafaHeadline Bold: the loop of waw stays open (counter of at least 4920 square units)",
    true,
-   "[12, 16829, 204058]"
+   "[12, 11764, 188974]"
   ],
   [
    "sahafa",
-   "SahafaHeadline Bold: the loop of meem stays open (counter of at least 3500 square units)",
+   "SahafaHeadline Bold: the loop of meem stays open (counter of at least 2870 square units)",
    true,
-   "[44, 163, 19547, 159652]"
+   "[46, 16699, 149513]"
   ],
   [
    "sahafa",
-   "SahafaHeadline Bold: the loop of heh stays open (counter of at least 6000 square units)",
+   "SahafaHeadline Bold: the loop of heh stays open (counter of at least 4920 square units)",
    true,
-   "[127, 27807, 166269]"
+   "[101, 21722, 152774]"
   ],
   [
    "sahafa",
-   "SahafaHeadline Bold: the loop of qaf stays open (counter of at least 6000 square units)",
+   "SahafaHeadline Bold: the loop of qaf stays open (counter of at least 4920 square units)",
    true,
-   "[14, 15180, 15180, 16351, 283155]"
+   "[12, 11131, 15908, 15908, 265474]"
   ],
   [
    "sahafa",
-   "SahafaHeadline Bold: the loop of teh marbuta stays open (counter of at least 6000 square units)",
+   "SahafaHeadline Bold: the loop of teh marbuta stays open (counter of at least 4920 square units)",
    true,
-   "[127, 15262, 15262, 27807, 166269]"
+   "[101, 15908, 15908, 21722, 152774]"
   ],
   [
    "sahafa",
@@ -15174,25 +15222,25 @@
    "sahafa",
    "Headline sets tighter than Text (3 to 12 % narrower)",
    true,
-   "(9543, 9014)"
+   "(9273, 8761)"
   ],
   [
    "sahafa",
    "Headline has deeper bowls than Text",
    true,
-   "(-230, -259)"
+   "(-248, -266)"
   ],
   [
    "sahafa",
    "Headline has more contrast than Text",
    true,
-   "(0.69, 0.57)"
+   "(0.69, 0.56)"
   ],
   [
    "sahafa",
    "bowls shallower than Suhar Naskh (short descenders)",
    true,
-   "(-230, -265)"
+   "(-248, -265)"
   ],
   [
    "sahafa",
@@ -15282,7 +15330,7 @@
    "sahafa",
    "ink traps: the generator cuts notches at the crotches of seen and sad (ink area 60 to 2500 square units smaller)",
    true,
-   "[502, 1234]"
+   "[454, 1175]"
   ],
   [
    "sahafa",
@@ -15336,25 +15384,25 @@
    "sahafa",
    "SuharSahafa[GRAD,opsz,wght].ttf: ink traps in the glyphs whose ten masters match (more than 60)",
    true,
-   "86"
+   "97"
   ],
   [
    "sahafa",
    "SuharSahafa-Italic[GRAD,opsz,wght].ttf: ink traps in the glyphs whose ten masters match (more than 60)",
    true,
-   "82"
+   "73"
   ],
   [
    "sahafa",
    "SuharSahafaHeadline[GRAD,opsz,wght].ttf: ink traps in the glyphs whose ten masters match (more than 60)",
    true,
-   "78"
+   "80"
   ],
   [
    "sahafa",
    "SuharSahafaHeadline-Italic[GRAD,opsz,wght].ttf: ink traps in the glyphs whose ten masters match (more than 60)",
    true,
-   "73"
+   "70"
   ],
   [
    "sahafa",
@@ -15462,13 +15510,13 @@
    "optical",
    "SuharSahafa[GRAD,opsz,wght].ttf: thin strokes thicker in the caption size and finer in the display size",
    true,
-   "(77, 68, 61)"
+   "(78, 69, 61)"
   ],
   [
    "optical",
    "SuharSahafa[GRAD,opsz,wght].ttf: the caption size is set looser than the display size",
    true,
-   "(914, 826)"
+   "(880, 792)"
   ],
   [
    "optical",
@@ -15480,13 +15528,13 @@
    "optical",
    "SuharSahafaHeadline-Italic[GRAD,opsz,wght].ttf: thin strokes thicker in the caption size and finer in the display size",
    true,
-   "(76, 69, 65)"
+   "(78, 71, 66)"
   ],
   [
    "optical",
    "SuharSahafaHeadline-Italic[GRAD,opsz,wght].ttf: the caption size is set looser than the display size",
    true,
-   "(870, 784)"
+   "(837, 752)"
   ],
   [
    "optical",
@@ -15528,7 +15576,7 @@
    "neighbour",
    "Sahafa: the narrow forms shorten the word",
    true,
-   "(1885, 1762)"
+   "(1814, 1746)"
   ],
   [
    "neighbour",
@@ -15570,7 +15618,7 @@
    "justification",
    "Sahafa: jalt gives a final beh that is 25 to 45 % longer",
    true,
-   "(1595, 1905)"
+   "(1526, 1821)"
   ],
   [
    "justification",
@@ -15660,19 +15708,19 @@
    "optical",
    "Caption: thicker thin strokes, looser spacing and larger dots than Text",
    true,
-   "(77, 68, 914, 852)"
+   "(78, 69, 880, 819)"
   ],
   [
    "optical",
    "Caption: marks stand further from the letter than in Text",
    true,
-   "(405, 381)"
+   "(380, 355)"
   ],
   [
    "print",
    "print proof PDF written, with the fonts embedded",
    true,
-   "775465"
+   "773160"
   ],
   [
    "families",
@@ -15762,7 +15810,7 @@
    "typewriter",
    "Typewriter Regular is heavier than Sahafa Regular (uprights at least 20 units thicker)",
    true,
-   "(107, 68)"
+   "(107, 69)"
   ],
   [
    "arabic",
@@ -15780,7 +15828,7 @@
    "arabic",
    "Sahafa: medial ain is a wedge with a flat top, wider at the top than half way down, and unlike meem",
    true,
-   "(482, 354)"
+   "(467, 350)"
   ],
   [
    "neighbour",
@@ -15822,13 +15870,13 @@
    "justification",
    "kashida justification fills a line without passing its width",
    true,
-   "146.4"
+   "141.7"
   ],
   [
    "release",
    "specimen PDF written",
    true,
-   "236854"
+   "236990"
   ],
   [
    "release",
@@ -15846,13 +15894,31 @@
    "release",
    "Fontbakery report written",
    true,
-   "1129"
+   "1039"
   ],
   [
    "latin",
    "Sahafa: old-style figures stand on the Sahafa x-height",
    true,
    "(40, -18, 493, 488)"
+  ],
+  [
+   "body text",
+   "Sahafa: the teeth of seen are clearly lower than a tooth of beh (at least 60 units), and a tooth is taller at the start of a word than inside it",
+   true,
+   "(387, 338, 279)"
+  ],
+  [
+   "body text",
+   "Sahafa sets at least 5 % more text on a line than Suhar Naskh",
+   true,
+   "(32021, 34596)"
+  ],
+  [
+   "body text",
+   "Sahafa: bowls reach at least 240 units under the line",
+   true,
+   "-248"
   ],
   [
    "word space",
@@ -16134,133 +16200,133 @@
    "word space",
    "SuharSahafa-Bold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(306, 9, 277, 331, 335)"
+   "(307, 7, 281, 332, 335)"
   ],
   [
    "word space",
    "SuharSahafa-BoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(295, 11, 255, 324, 329)"
+   "(296, 9, 263, 325, 329)"
   ],
   [
    "word space",
    "SuharSahafa-Italic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(312, 10, 282, 344, 343)"
+   "(312, 9, 286, 345, 343)"
   ],
   [
    "word space",
    "SuharSahafa-Medium: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(315, 9, 284, 343, 341)"
+   "(315, 8, 289, 344, 341)"
   ],
   [
    "word space",
    "SuharSahafa-MediumItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(306, 11, 269, 337, 338)"
+   "(307, 9, 276, 338, 338)"
   ],
   [
    "word space",
    "SuharSahafa-Regular: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(319, 9, 283, 348, 345)"
+   "(320, 8, 288, 350, 345)"
   ],
   [
    "word space",
    "SuharSahafa-SemiBold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(310, 9, 281, 336, 338)"
+   "(311, 7, 286, 339, 338)"
   ],
   [
    "word space",
    "SuharSahafa-SemiBoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(301, 10, 264, 330, 333)"
+   "(301, 9, 269, 332, 333)"
   ],
   [
    "word space",
    "SuharSahafaCaption-Bold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(351, 9, 314, 374, 383)"
+   "(351, 8, 320, 376, 383)"
   ],
   [
    "word space",
    "SuharSahafaCaption-BoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(341, 11, 303, 369, 376)"
+   "(342, 11, 301, 371, 376)"
   ],
   [
    "word space",
    "SuharSahafaCaption-Italic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(358, 10, 325, 390, 390)"
+   "(358, 9, 330, 390, 390)"
   ],
   [
    "word space",
    "SuharSahafaCaption-Medium: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(359, 9, 326, 386, 389)"
+   "(360, 8, 331, 387, 389)"
   ],
   [
    "word space",
    "SuharSahafaCaption-MediumItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(352, 10, 317, 382, 385)"
+   "(353, 9, 324, 384, 385)"
   ],
   [
    "word space",
    "SuharSahafaCaption-Regular: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(363, 9, 329, 393, 392)"
+   "(364, 9, 332, 394, 392)"
   ],
   [
    "word space",
    "SuharSahafaCaption-SemiBold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(355, 9, 321, 380, 386)"
+   "(356, 8, 325, 382, 386)"
   ],
   [
    "word space",
    "SuharSahafaCaption-SemiBoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(347, 10, 312, 376, 381)"
+   "(347, 10, 313, 377, 381)"
   ],
   [
    "word space",
    "SuharSahafaHeadline-Bold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(278, 11, 232, 306, 306)"
+   "(279, 10, 233, 306, 306)"
   ],
   [
    "word space",
    "SuharSahafaHeadline-BoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(263, 13, 201, 295, 301)"
+   "(264, 13, 210, 295, 301)"
   ],
   [
    "word space",
    "SuharSahafaHeadline-Italic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(281, 10, 247, 318, 313)"
+   "(281, 10, 239, 318, 313)"
   ],
   [
    "word space",
    "SuharSahafaHeadline-Medium: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(286, 10, 246, 319, 312)"
+   "(286, 10, 245, 316, 312)"
   ],
   [
    "word space",
    "SuharSahafaHeadline-MediumItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(274, 12, 219, 311, 309)"
+   "(275, 11, 225, 309, 309)"
   ],
   [
    "word space",
    "SuharSahafaHeadline-Regular: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(290, 7, 264, 305, 315)"
+   "(291, 9, 251, 324, 315)"
   ],
   [
    "word space",
@@ -16272,31 +16338,31 @@
    "word space",
    "SuharSahafaHeadline-SemiBoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(269, 13, 208, 302, 304)"
+   "(269, 12, 214, 302, 304)"
   ],
   [
    "word space",
    "SuharTypewriter-Bold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(309, 14, 244, 335, 341)"
+   "(310, 14, 252, 354, 341)"
   ],
   [
    "word space",
    "SuharTypewriter-BoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(304, 16, 240, 351, 331)"
+   "(305, 16, 246, 353, 331)"
   ],
   [
    "word space",
    "SuharTypewriter-Italic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(320, 15, 266, 368, 345)"
+   "(321, 14, 269, 370, 345)"
   ],
   [
    "word space",
    "SuharTypewriter-Regular: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(323, 14, 262, 350, 352)"
+   "(326, 13, 270, 370, 352)"
   ],
   [
    "word space",
@@ -17024,151 +17090,151 @@
    "file": "otf/SuharNerdSahafa-Bold.otf",
    "glyphs": 13597,
    "codepoints": 13064,
-   "size_kb": 3341
+   "size_kb": 3337
   },
   {
    "file": "otf/SuharNerdSahafa-BoldItalic.otf",
    "glyphs": 13597,
    "codepoints": 13064,
-   "size_kb": 3333
+   "size_kb": 3332
   },
   {
    "file": "otf/SuharNerdSahafa-Italic.otf",
    "glyphs": 13597,
    "codepoints": 13064,
-   "size_kb": 3317
+   "size_kb": 3326
   },
   {
    "file": "otf/SuharNerdSahafa-Medium.otf",
    "glyphs": 13597,
    "codepoints": 13064,
-   "size_kb": 3323
+   "size_kb": 3322
   },
   {
    "file": "otf/SuharNerdSahafa-MediumItalic.otf",
    "glyphs": 13597,
    "codepoints": 13064,
-   "size_kb": 3322
+   "size_kb": 3332
   },
   {
    "file": "otf/SuharNerdSahafa-Regular.otf",
    "glyphs": 13597,
    "codepoints": 13064,
-   "size_kb": 3312
+   "size_kb": 3316
   },
   {
    "file": "otf/SuharNerdSahafa-SemiBold.otf",
    "glyphs": 13597,
    "codepoints": 13064,
-   "size_kb": 3338
+   "size_kb": 3331
   },
   {
    "file": "otf/SuharNerdSahafa-SemiBoldItalic.otf",
    "glyphs": 13597,
    "codepoints": 13064,
-   "size_kb": 3333
+   "size_kb": 3335
   },
   {
    "file": "otf/SuharNerdSahafaHeadline-Bold.otf",
    "glyphs": 13597,
    "codepoints": 13064,
-   "size_kb": 3364
+   "size_kb": 3365
   },
   {
    "file": "otf/SuharNerdSahafaHeadline-BoldItalic.otf",
    "glyphs": 13597,
    "codepoints": 13064,
-   "size_kb": 3358
+   "size_kb": 3364
   },
   {
    "file": "otf/SuharNerdSahafaHeadline-Italic.otf",
    "glyphs": 13597,
    "codepoints": 13064,
-   "size_kb": 3348
+   "size_kb": 3354
   },
   {
    "file": "otf/SuharNerdSahafaHeadline-Medium.otf",
    "glyphs": 13597,
    "codepoints": 13064,
-   "size_kb": 3352
+   "size_kb": 3362
   },
   {
    "file": "otf/SuharNerdSahafaHeadline-MediumItalic.otf",
    "glyphs": 13597,
    "codepoints": 13064,
-   "size_kb": 3360
+   "size_kb": 3368
   },
   {
    "file": "otf/SuharNerdSahafaHeadline-Regular.otf",
    "glyphs": 13597,
    "codepoints": 13064,
-   "size_kb": 3338
+   "size_kb": 3349
   },
   {
    "file": "otf/SuharNerdSahafaHeadline-SemiBold.otf",
    "glyphs": 13597,
    "codepoints": 13064,
-   "size_kb": 3364
+   "size_kb": 3372
   },
   {
    "file": "otf/SuharNerdSahafaHeadline-SemiBoldItalic.otf",
    "glyphs": 13597,
    "codepoints": 13064,
-   "size_kb": 3360
+   "size_kb": 3366
   },
   {
    "file": "otf/SuharSahafa-Bold.otf",
    "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 614
+   "size_kb": 610
   },
   {
    "file": "otf/SuharSahafa-BoldItalic.otf",
    "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 606
+   "size_kb": 605
   },
   {
    "file": "otf/SuharSahafa-Italic.otf",
    "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 590
+   "size_kb": 599
   },
   {
    "file": "otf/SuharSahafa-Medium.otf",
    "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 596
+   "size_kb": 594
   },
   {
    "file": "otf/SuharSahafa-MediumItalic.otf",
    "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 594
+   "size_kb": 605
   },
   {
    "file": "otf/SuharSahafa-Regular.otf",
    "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 585
+   "size_kb": 588
   },
   {
    "file": "otf/SuharSahafa-SemiBold.otf",
    "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 611
+   "size_kb": 604
   },
   {
    "file": "otf/SuharSahafa-SemiBoldItalic.otf",
    "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 605
+   "size_kb": 607
   },
   {
    "file": "otf/SuharSahafaCaption-Bold.otf",
    "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 649
+   "size_kb": 646
   },
   {
    "file": "otf/SuharSahafaCaption-BoldItalic.otf",
@@ -17180,19 +17246,19 @@
    "file": "otf/SuharSahafaCaption-Italic.otf",
    "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 607
+   "size_kb": 617
   },
   {
    "file": "otf/SuharSahafaCaption-Medium.otf",
    "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 621
+   "size_kb": 617
   },
   {
    "file": "otf/SuharSahafaCaption-MediumItalic.otf",
    "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 615
+   "size_kb": 621
   },
   {
    "file": "otf/SuharSahafaCaption-Regular.otf",
@@ -17204,85 +17270,85 @@
    "file": "otf/SuharSahafaCaption-SemiBold.otf",
    "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 640
+   "size_kb": 630
   },
   {
    "file": "otf/SuharSahafaCaption-SemiBoldItalic.otf",
    "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 628
+   "size_kb": 630
   },
   {
    "file": "otf/SuharSahafaHeadline-Bold.otf",
    "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 637
+   "size_kb": 638
   },
   {
    "file": "otf/SuharSahafaHeadline-BoldItalic.otf",
    "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 630
+   "size_kb": 637
   },
   {
    "file": "otf/SuharSahafaHeadline-Italic.otf",
    "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 620
+   "size_kb": 627
   },
   {
    "file": "otf/SuharSahafaHeadline-Medium.otf",
    "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 625
+   "size_kb": 634
   },
   {
    "file": "otf/SuharSahafaHeadline-MediumItalic.otf",
    "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 633
+   "size_kb": 640
   },
   {
    "file": "otf/SuharSahafaHeadline-Regular.otf",
    "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 610
+   "size_kb": 622
   },
   {
    "file": "otf/SuharSahafaHeadline-SemiBold.otf",
    "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 636
+   "size_kb": 644
   },
   {
    "file": "otf/SuharSahafaHeadline-SemiBoldItalic.otf",
    "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 632
+   "size_kb": 638
   },
   {
    "file": "otf/SuharTypewriter-Bold.otf",
    "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 653
+   "size_kb": 660
   },
   {
    "file": "otf/SuharTypewriter-BoldItalic.otf",
    "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 640
+   "size_kb": 656
   },
   {
    "file": "otf/SuharTypewriter-Italic.otf",
    "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 629
+   "size_kb": 634
   },
   {
    "file": "otf/SuharTypewriter-Regular.otf",
    "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 625
+   "size_kb": 623
   },
   {
    "file": "ttf/Suhar-Black.ttf",
@@ -17960,49 +18026,49 @@
    "file": "ttf/SuharNerdSahafa-Bold.ttf",
    "glyphs": 13597,
    "codepoints": 13064,
-   "size_kb": 2811,
+   "size_kb": 2806,
    "hinted": true
   },
   {
    "file": "ttf/SuharNerdSahafa-BoldItalic.ttf",
    "glyphs": 13597,
    "codepoints": 13064,
-   "size_kb": 2798,
+   "size_kb": 2799,
    "hinted": true
   },
   {
    "file": "ttf/SuharNerdSahafa-Italic.ttf",
    "glyphs": 13597,
    "codepoints": 13064,
-   "size_kb": 2788,
+   "size_kb": 2797,
    "hinted": true
   },
   {
    "file": "ttf/SuharNerdSahafa-Medium.ttf",
    "glyphs": 13597,
    "codepoints": 13064,
-   "size_kb": 2791,
+   "size_kb": 2789,
    "hinted": true
   },
   {
    "file": "ttf/SuharNerdSahafa-MediumItalic.ttf",
    "glyphs": 13597,
    "codepoints": 13064,
-   "size_kb": 2786,
+   "size_kb": 2796,
    "hinted": true
   },
   {
    "file": "ttf/SuharNerdSahafa-Regular.ttf",
    "glyphs": 13597,
    "codepoints": 13064,
-   "size_kb": 2788,
+   "size_kb": 2789,
    "hinted": true
   },
   {
    "file": "ttf/SuharNerdSahafa-SemiBold.ttf",
    "glyphs": 13597,
    "codepoints": 13064,
-   "size_kb": 2806,
+   "size_kb": 2797,
    "hinted": true
   },
   {
@@ -18016,105 +18082,105 @@
    "file": "ttf/SuharNerdSahafaHeadline-Bold.ttf",
    "glyphs": 13597,
    "codepoints": 13064,
-   "size_kb": 2829,
+   "size_kb": 2831,
    "hinted": true
   },
   {
    "file": "ttf/SuharNerdSahafaHeadline-BoldItalic.ttf",
    "glyphs": 13597,
    "codepoints": 13064,
-   "size_kb": 2827,
+   "size_kb": 2840,
    "hinted": true
   },
   {
    "file": "ttf/SuharNerdSahafaHeadline-Italic.ttf",
    "glyphs": 13597,
    "codepoints": 13064,
-   "size_kb": 2822,
+   "size_kb": 2828,
    "hinted": true
   },
   {
    "file": "ttf/SuharNerdSahafaHeadline-Medium.ttf",
    "glyphs": 13597,
    "codepoints": 13064,
-   "size_kb": 2824,
+   "size_kb": 2826,
    "hinted": true
   },
   {
    "file": "ttf/SuharNerdSahafaHeadline-MediumItalic.ttf",
    "glyphs": 13597,
    "codepoints": 13064,
-   "size_kb": 2830,
+   "size_kb": 2838,
    "hinted": true
   },
   {
    "file": "ttf/SuharNerdSahafaHeadline-Regular.ttf",
    "glyphs": 13597,
    "codepoints": 13064,
-   "size_kb": 2810,
+   "size_kb": 2821,
    "hinted": true
   },
   {
    "file": "ttf/SuharNerdSahafaHeadline-SemiBold.ttf",
    "glyphs": 13597,
    "codepoints": 13064,
-   "size_kb": 2828,
+   "size_kb": 2831,
    "hinted": true
   },
   {
    "file": "ttf/SuharNerdSahafaHeadline-SemiBoldItalic.ttf",
    "glyphs": 13597,
    "codepoints": 13064,
-   "size_kb": 2826,
+   "size_kb": 2834,
    "hinted": true
   },
   {
    "file": "ttf/SuharSahafa-Bold.ttf",
    "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 558,
+   "size_kb": 553,
    "hinted": true
   },
   {
    "file": "ttf/SuharSahafa-BoldItalic.ttf",
    "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 545,
+   "size_kb": 546,
    "hinted": true
   },
   {
    "file": "ttf/SuharSahafa-Italic.ttf",
    "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 535,
+   "size_kb": 544,
    "hinted": true
   },
   {
    "file": "ttf/SuharSahafa-Medium.ttf",
    "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 538,
+   "size_kb": 536,
    "hinted": true
   },
   {
    "file": "ttf/SuharSahafa-MediumItalic.ttf",
    "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 533,
+   "size_kb": 542,
    "hinted": true
   },
   {
    "file": "ttf/SuharSahafa-Regular.ttf",
    "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 535,
+   "size_kb": 536,
    "hinted": true
   },
   {
    "file": "ttf/SuharSahafa-SemiBold.ttf",
    "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 553,
+   "size_kb": 544,
    "hinted": true
   },
   {
@@ -18128,140 +18194,140 @@
    "file": "ttf/SuharSahafaCaption-Bold.ttf",
    "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 586,
+   "size_kb": 580,
    "hinted": true
   },
   {
    "file": "ttf/SuharSahafaCaption-BoldItalic.ttf",
    "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 575,
+   "size_kb": 567,
    "hinted": true
   },
   {
    "file": "ttf/SuharSahafaCaption-Italic.ttf",
    "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 546,
+   "size_kb": 555,
    "hinted": true
   },
   {
    "file": "ttf/SuharSahafaCaption-Medium.ttf",
    "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 562,
+   "size_kb": 558,
    "hinted": true
   },
   {
    "file": "ttf/SuharSahafaCaption-MediumItalic.ttf",
    "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 551,
+   "size_kb": 557,
    "hinted": true
   },
   {
    "file": "ttf/SuharSahafaCaption-Regular.ttf",
    "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 551,
+   "size_kb": 548,
    "hinted": true
   },
   {
    "file": "ttf/SuharSahafaCaption-SemiBold.ttf",
    "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 577,
+   "size_kb": 566,
    "hinted": true
   },
   {
    "file": "ttf/SuharSahafaCaption-SemiBoldItalic.ttf",
    "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 564,
+   "size_kb": 567,
    "hinted": true
   },
   {
    "file": "ttf/SuharSahafaHeadline-Bold.ttf",
    "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 576,
+   "size_kb": 578,
    "hinted": true
   },
   {
    "file": "ttf/SuharSahafaHeadline-BoldItalic.ttf",
    "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 574,
+   "size_kb": 587,
    "hinted": true
   },
   {
    "file": "ttf/SuharSahafaHeadline-Italic.ttf",
    "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 569,
+   "size_kb": 574,
    "hinted": true
   },
   {
    "file": "ttf/SuharSahafaHeadline-Medium.ttf",
    "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 571,
+   "size_kb": 573,
    "hinted": true
   },
   {
    "file": "ttf/SuharSahafaHeadline-MediumItalic.ttf",
    "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 576,
+   "size_kb": 585,
    "hinted": true
   },
   {
    "file": "ttf/SuharSahafaHeadline-Regular.ttf",
    "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 557,
+   "size_kb": 568,
    "hinted": true
   },
   {
    "file": "ttf/SuharSahafaHeadline-SemiBold.ttf",
    "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 575,
+   "size_kb": 578,
    "hinted": true
   },
   {
    "file": "ttf/SuharSahafaHeadline-SemiBoldItalic.ttf",
    "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 573,
+   "size_kb": 581,
    "hinted": true
   },
   {
    "file": "ttf/SuharTypewriter-Bold.ttf",
    "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 601,
+   "size_kb": 609,
    "hinted": true
   },
   {
    "file": "ttf/SuharTypewriter-BoldItalic.ttf",
    "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 576,
+   "size_kb": 589,
    "hinted": true
   },
   {
    "file": "ttf/SuharTypewriter-Italic.ttf",
    "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 564,
+   "size_kb": 569,
    "hinted": true
   },
   {
    "file": "ttf/SuharTypewriter-Regular.ttf",
    "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 577,
+   "size_kb": 578,
    "hinted": true
   },
   {
@@ -18316,25 +18382,25 @@
    "file": "variable/SuharSahafa-Italic[GRAD,opsz,wght].ttf",
    "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 1750
+   "size_kb": 1756
   },
   {
    "file": "variable/SuharSahafaHeadline-Italic[GRAD,opsz,wght].ttf",
    "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 1754
+   "size_kb": 1757
   },
   {
    "file": "variable/SuharSahafaHeadline[GRAD,opsz,wght].ttf",
    "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 1716
+   "size_kb": 1727
   },
   {
    "file": "variable/SuharSahafa[GRAD,opsz,wght].ttf",
    "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 1719
+   "size_kb": 1711
   },
   {
    "file": "variable/Suhar[opsz,wght].ttf",

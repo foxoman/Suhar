@@ -1,5 +1,15 @@
 # Changelog
 
+## 2.6 (November 2026)
+
+**Suhar Sahafa is reshaped for body text**
+- Stems are taller (alef about 765 units) and loops lower (about 445), so tall and short letters differ more
+  and a word has a clearer outline.
+- Teeth have three heights: tall at the start of a word, lower inside it, lowest in س ش.
+- Bowls are 10 % deeper (ن reaches −248); ر ز are curved strokes with a full top; dots are 6 % larger.
+- Letters are set 5 % closer; a line of Sahafa is now about as long as a line of Noto Naskh.
+- The same proportions apply to Headline, Caption and Suhar Typewriter.
+
 ## 2.5 (November 2026)
 
 **Fixed**
