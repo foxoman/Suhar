@@ -17,6 +17,9 @@
 @font-face{font-family:'Suhar Naskh';src:url('fonts/SuharNaskh-Bold.woff2') format('woff2');font-weight:700}
 @font-face{font-family:'Suhar Naskh Display';src:url('fonts/SuharNaskhDisplay-Regular.woff2') format('woff2');font-weight:400}
 @font-face{font-family:'Suhar Naskh Display';src:url('fonts/SuharNaskhDisplay-Bold.woff2') format('woff2');font-weight:700}
+@font-face{font-family:'Suhar Sahafa';src:url('fonts/SuharSahafa-Regular.woff2') format('woff2');font-weight:400}
+@font-face{font-family:'Suhar Sahafa';src:url('fonts/SuharSahafa-Bold.woff2') format('woff2');font-weight:700}
+@font-face{font-family:'Suhar Sahafa Headline';src:url('fonts/SuharSahafaHeadline-Bold.woff2') format('woff2');font-weight:700}
 @font-face{font-family:'Suhar Mono';src:url('fonts/SuharMono-Regular.woff2') format('woff2');font-weight:400}
 @font-face{font-family:'Suhar Condensed';src:url('fonts/SuharCondensed-Regular.woff2') format('woff2');font-weight:400}
 *{box-sizing:border-box}
@@ -112,11 +115,16 @@ pre{margin:0;font-family:var(--mono);font-size:14px;line-height:1.45;overflow-x:
 <section><h2>13 · Condensed</h2>
 <p class="t cond mid">Sohar Port and Freezone · ميناء صحار والمنطقة الحرة</p>
 <p class="look">Clearly narrower than box 2, with the same stroke thickness.</p></section>
+<section><h2>14 · Suhar Sahafa, newspaper</h2>
+<p class="t ar" style="font-family:'Suhar Sahafa Headline','Suhar';font-weight:700;font-size:34px">ميناء صحار يسجل رقما قياسيا</p>
+<p class="t ar" style="font-family:'Suhar Sahafa','Suhar';font-size:17px">أعلنت وزارة الاقتصاد أن الناتج المحلي الإجمالي حقق نموا ملحوظا خلال الربع الثالث من العام. Sohar Port handled 240 ships in a single month.</p>
+<p class="t ar" style="font-family:'Suhar Sahafa','Suhar';font-size:11px">أعلنت وزارة الاقتصاد أن الناتج المحلي الإجمالي حقق نموا ملحوظا خلال الربع الثالث من العام، مدفوعا بارتفاع الصادرات غير النفطية.</p>
+<p class="look">The English words have serifs and are as dark as the Arabic. The loops of ص ف ق م ه stay open in the small line, and the ح in صحار is open underneath.</p></section>
 </main>
 <script>
 (function(){
   var want=[["Suhar","400"],["Suhar","700"],["Suhar","italic 400"],["Suhar Naskh","400"],["Suhar Naskh","700"],
-            ["Suhar Naskh Display","400"],["Suhar Naskh Display","700"],["Suhar Mono","400"],["Suhar Condensed","400"]];
+            ["Suhar Naskh Display","400"],["Suhar Naskh Display","700"],["Suhar Mono","400"],["Suhar Condensed","400"],["Suhar Sahafa","400"],["Suhar Sahafa","700"],["Suhar Sahafa Headline","700"]];
   var el=document.getElementById("status");
   if(!document.fonts||!document.fonts.load){el.textContent="This browser cannot report font loading. Compare box 1 with a screenshot from another device.";return;}
   Promise.all(want.map(function(w){return document.fonts.load(w[1]+" 20px '"+w[0]+"'","aص").then(function(r){return r.length>0;},function(){return false;});}))

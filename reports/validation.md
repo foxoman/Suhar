@@ -2,7 +2,7 @@
 
 Produced by `tools/validate.py` from the compiled files in `dist/`. Shaping uses HarfBuzz, rasterisation uses FreeType (with the fonts' own TrueType hinting), structure checks use fontTools and the OpenType Sanitizer.
 
-**1986 checks passed, 0 failed.**
+**2155 checks passed, 0 failed.**
 
 ## All checks
 
@@ -1579,6 +1579,42 @@ Produced by `tools/validate.py` from the compiled files in `dist/`. Shaping uses
 
 ### tables
 
+- PASS — SuharSahafa-BoldItalic.otf: GSUB
+- PASS — SuharSahafa-BoldItalic.otf: GPOS
+- PASS — SuharSahafa-BoldItalic.otf: GDEF
+
+### metrics
+
+- PASS — SuharSahafa-BoldItalic.otf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### no placeholders
+
+- PASS — SuharSahafa-BoldItalic.otf: no empty mapped glyphs
+
+### sanitizer
+
+- PASS — SuharSahafa-BoldItalic.otf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharSahafa-Italic.otf: GSUB
+- PASS — SuharSahafa-Italic.otf: GPOS
+- PASS — SuharSahafa-Italic.otf: GDEF
+
+### metrics
+
+- PASS — SuharSahafa-Italic.otf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### no placeholders
+
+- PASS — SuharSahafa-Italic.otf: no empty mapped glyphs
+
+### sanitizer
+
+- PASS — SuharSahafa-Italic.otf: OpenType Sanitizer
+
+### tables
+
 - PASS — SuharSahafa-Medium.otf: GSUB
 - PASS — SuharSahafa-Medium.otf: GPOS
 - PASS — SuharSahafa-Medium.otf: GDEF
@@ -1594,6 +1630,24 @@ Produced by `tools/validate.py` from the compiled files in `dist/`. Shaping uses
 ### sanitizer
 
 - PASS — SuharSahafa-Medium.otf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharSahafa-MediumItalic.otf: GSUB
+- PASS — SuharSahafa-MediumItalic.otf: GPOS
+- PASS — SuharSahafa-MediumItalic.otf: GDEF
+
+### metrics
+
+- PASS — SuharSahafa-MediumItalic.otf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### no placeholders
+
+- PASS — SuharSahafa-MediumItalic.otf: no empty mapped glyphs
+
+### sanitizer
+
+- PASS — SuharSahafa-MediumItalic.otf: OpenType Sanitizer
 
 ### tables
 
@@ -1633,6 +1687,24 @@ Produced by `tools/validate.py` from the compiled files in `dist/`. Shaping uses
 
 ### tables
 
+- PASS — SuharSahafa-SemiBoldItalic.otf: GSUB
+- PASS — SuharSahafa-SemiBoldItalic.otf: GPOS
+- PASS — SuharSahafa-SemiBoldItalic.otf: GDEF
+
+### metrics
+
+- PASS — SuharSahafa-SemiBoldItalic.otf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### no placeholders
+
+- PASS — SuharSahafa-SemiBoldItalic.otf: no empty mapped glyphs
+
+### sanitizer
+
+- PASS — SuharSahafa-SemiBoldItalic.otf: OpenType Sanitizer
+
+### tables
+
 - PASS — SuharSahafaHeadline-Bold.otf: GSUB
 - PASS — SuharSahafaHeadline-Bold.otf: GPOS
 - PASS — SuharSahafaHeadline-Bold.otf: GDEF
@@ -1651,6 +1723,42 @@ Produced by `tools/validate.py` from the compiled files in `dist/`. Shaping uses
 
 ### tables
 
+- PASS — SuharSahafaHeadline-BoldItalic.otf: GSUB
+- PASS — SuharSahafaHeadline-BoldItalic.otf: GPOS
+- PASS — SuharSahafaHeadline-BoldItalic.otf: GDEF
+
+### metrics
+
+- PASS — SuharSahafaHeadline-BoldItalic.otf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### no placeholders
+
+- PASS — SuharSahafaHeadline-BoldItalic.otf: no empty mapped glyphs
+
+### sanitizer
+
+- PASS — SuharSahafaHeadline-BoldItalic.otf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharSahafaHeadline-Italic.otf: GSUB
+- PASS — SuharSahafaHeadline-Italic.otf: GPOS
+- PASS — SuharSahafaHeadline-Italic.otf: GDEF
+
+### metrics
+
+- PASS — SuharSahafaHeadline-Italic.otf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### no placeholders
+
+- PASS — SuharSahafaHeadline-Italic.otf: no empty mapped glyphs
+
+### sanitizer
+
+- PASS — SuharSahafaHeadline-Italic.otf: OpenType Sanitizer
+
+### tables
+
 - PASS — SuharSahafaHeadline-Medium.otf: GSUB
 - PASS — SuharSahafaHeadline-Medium.otf: GPOS
 - PASS — SuharSahafaHeadline-Medium.otf: GDEF
@@ -1666,6 +1774,24 @@ Produced by `tools/validate.py` from the compiled files in `dist/`. Shaping uses
 ### sanitizer
 
 - PASS — SuharSahafaHeadline-Medium.otf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharSahafaHeadline-MediumItalic.otf: GSUB
+- PASS — SuharSahafaHeadline-MediumItalic.otf: GPOS
+- PASS — SuharSahafaHeadline-MediumItalic.otf: GDEF
+
+### metrics
+
+- PASS — SuharSahafaHeadline-MediumItalic.otf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### no placeholders
+
+- PASS — SuharSahafaHeadline-MediumItalic.otf: no empty mapped glyphs
+
+### sanitizer
+
+- PASS — SuharSahafaHeadline-MediumItalic.otf: OpenType Sanitizer
 
 ### tables
 
@@ -1702,6 +1828,24 @@ Produced by `tools/validate.py` from the compiled files in `dist/`. Shaping uses
 ### sanitizer
 
 - PASS — SuharSahafaHeadline-SemiBold.otf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharSahafaHeadline-SemiBoldItalic.otf: GSUB
+- PASS — SuharSahafaHeadline-SemiBoldItalic.otf: GPOS
+- PASS — SuharSahafaHeadline-SemiBoldItalic.otf: GDEF
+
+### metrics
+
+- PASS — SuharSahafaHeadline-SemiBoldItalic.otf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### no placeholders
+
+- PASS — SuharSahafaHeadline-SemiBoldItalic.otf: no empty mapped glyphs
+
+### sanitizer
+
+- PASS — SuharSahafaHeadline-SemiBoldItalic.otf: OpenType Sanitizer
 
 ### tables
 
@@ -3631,6 +3775,50 @@ Produced by `tools/validate.py` from the compiled files in `dist/`. Shaping uses
 
 ### tables
 
+- PASS — SuharSahafa-BoldItalic.ttf: GSUB
+- PASS — SuharSahafa-BoldItalic.ttf: GPOS
+- PASS — SuharSahafa-BoldItalic.ttf: GDEF
+
+### hinting
+
+- PASS — SuharSahafa-BoldItalic.ttf: TrueType instructions (fpgm/prep/cvt)
+
+### metrics
+
+- PASS — SuharSahafa-BoldItalic.ttf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### no placeholders
+
+- PASS — SuharSahafa-BoldItalic.ttf: no empty mapped glyphs
+
+### sanitizer
+
+- PASS — SuharSahafa-BoldItalic.ttf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharSahafa-Italic.ttf: GSUB
+- PASS — SuharSahafa-Italic.ttf: GPOS
+- PASS — SuharSahafa-Italic.ttf: GDEF
+
+### hinting
+
+- PASS — SuharSahafa-Italic.ttf: TrueType instructions (fpgm/prep/cvt)
+
+### metrics
+
+- PASS — SuharSahafa-Italic.ttf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### no placeholders
+
+- PASS — SuharSahafa-Italic.ttf: no empty mapped glyphs
+
+### sanitizer
+
+- PASS — SuharSahafa-Italic.ttf: OpenType Sanitizer
+
+### tables
+
 - PASS — SuharSahafa-Medium.ttf: GSUB
 - PASS — SuharSahafa-Medium.ttf: GPOS
 - PASS — SuharSahafa-Medium.ttf: GDEF
@@ -3650,6 +3838,28 @@ Produced by `tools/validate.py` from the compiled files in `dist/`. Shaping uses
 ### sanitizer
 
 - PASS — SuharSahafa-Medium.ttf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharSahafa-MediumItalic.ttf: GSUB
+- PASS — SuharSahafa-MediumItalic.ttf: GPOS
+- PASS — SuharSahafa-MediumItalic.ttf: GDEF
+
+### hinting
+
+- PASS — SuharSahafa-MediumItalic.ttf: TrueType instructions (fpgm/prep/cvt)
+
+### metrics
+
+- PASS — SuharSahafa-MediumItalic.ttf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### no placeholders
+
+- PASS — SuharSahafa-MediumItalic.ttf: no empty mapped glyphs
+
+### sanitizer
+
+- PASS — SuharSahafa-MediumItalic.ttf: OpenType Sanitizer
 
 ### tables
 
@@ -3697,6 +3907,28 @@ Produced by `tools/validate.py` from the compiled files in `dist/`. Shaping uses
 
 ### tables
 
+- PASS — SuharSahafa-SemiBoldItalic.ttf: GSUB
+- PASS — SuharSahafa-SemiBoldItalic.ttf: GPOS
+- PASS — SuharSahafa-SemiBoldItalic.ttf: GDEF
+
+### hinting
+
+- PASS — SuharSahafa-SemiBoldItalic.ttf: TrueType instructions (fpgm/prep/cvt)
+
+### metrics
+
+- PASS — SuharSahafa-SemiBoldItalic.ttf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### no placeholders
+
+- PASS — SuharSahafa-SemiBoldItalic.ttf: no empty mapped glyphs
+
+### sanitizer
+
+- PASS — SuharSahafa-SemiBoldItalic.ttf: OpenType Sanitizer
+
+### tables
+
 - PASS — SuharSahafaHeadline-Bold.ttf: GSUB
 - PASS — SuharSahafaHeadline-Bold.ttf: GPOS
 - PASS — SuharSahafaHeadline-Bold.ttf: GDEF
@@ -3719,6 +3951,50 @@ Produced by `tools/validate.py` from the compiled files in `dist/`. Shaping uses
 
 ### tables
 
+- PASS — SuharSahafaHeadline-BoldItalic.ttf: GSUB
+- PASS — SuharSahafaHeadline-BoldItalic.ttf: GPOS
+- PASS — SuharSahafaHeadline-BoldItalic.ttf: GDEF
+
+### hinting
+
+- PASS — SuharSahafaHeadline-BoldItalic.ttf: TrueType instructions (fpgm/prep/cvt)
+
+### metrics
+
+- PASS — SuharSahafaHeadline-BoldItalic.ttf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### no placeholders
+
+- PASS — SuharSahafaHeadline-BoldItalic.ttf: no empty mapped glyphs
+
+### sanitizer
+
+- PASS — SuharSahafaHeadline-BoldItalic.ttf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharSahafaHeadline-Italic.ttf: GSUB
+- PASS — SuharSahafaHeadline-Italic.ttf: GPOS
+- PASS — SuharSahafaHeadline-Italic.ttf: GDEF
+
+### hinting
+
+- PASS — SuharSahafaHeadline-Italic.ttf: TrueType instructions (fpgm/prep/cvt)
+
+### metrics
+
+- PASS — SuharSahafaHeadline-Italic.ttf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### no placeholders
+
+- PASS — SuharSahafaHeadline-Italic.ttf: no empty mapped glyphs
+
+### sanitizer
+
+- PASS — SuharSahafaHeadline-Italic.ttf: OpenType Sanitizer
+
+### tables
+
 - PASS — SuharSahafaHeadline-Medium.ttf: GSUB
 - PASS — SuharSahafaHeadline-Medium.ttf: GPOS
 - PASS — SuharSahafaHeadline-Medium.ttf: GDEF
@@ -3738,6 +4014,28 @@ Produced by `tools/validate.py` from the compiled files in `dist/`. Shaping uses
 ### sanitizer
 
 - PASS — SuharSahafaHeadline-Medium.ttf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharSahafaHeadline-MediumItalic.ttf: GSUB
+- PASS — SuharSahafaHeadline-MediumItalic.ttf: GPOS
+- PASS — SuharSahafaHeadline-MediumItalic.ttf: GDEF
+
+### hinting
+
+- PASS — SuharSahafaHeadline-MediumItalic.ttf: TrueType instructions (fpgm/prep/cvt)
+
+### metrics
+
+- PASS — SuharSahafaHeadline-MediumItalic.ttf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### no placeholders
+
+- PASS — SuharSahafaHeadline-MediumItalic.ttf: no empty mapped glyphs
+
+### sanitizer
+
+- PASS — SuharSahafaHeadline-MediumItalic.ttf: OpenType Sanitizer
 
 ### tables
 
@@ -3782,6 +4080,28 @@ Produced by `tools/validate.py` from the compiled files in `dist/`. Shaping uses
 ### sanitizer
 
 - PASS — SuharSahafaHeadline-SemiBold.ttf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharSahafaHeadline-SemiBoldItalic.ttf: GSUB
+- PASS — SuharSahafaHeadline-SemiBoldItalic.ttf: GPOS
+- PASS — SuharSahafaHeadline-SemiBoldItalic.ttf: GDEF
+
+### hinting
+
+- PASS — SuharSahafaHeadline-SemiBoldItalic.ttf: TrueType instructions (fpgm/prep/cvt)
+
+### metrics
+
+- PASS — SuharSahafaHeadline-SemiBoldItalic.ttf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### no placeholders
+
+- PASS — SuharSahafaHeadline-SemiBoldItalic.ttf: no empty mapped glyphs
+
+### sanitizer
+
+- PASS — SuharSahafaHeadline-SemiBoldItalic.ttf: OpenType Sanitizer
 
 ### tables
 
@@ -3907,6 +4227,62 @@ Produced by `tools/validate.py` from the compiled files in `dist/`. Shaping uses
 
 ### tables
 
+- PASS — SuharSahafa-Italic[wght].ttf: GSUB
+- PASS — SuharSahafa-Italic[wght].ttf: GPOS
+- PASS — SuharSahafa-Italic[wght].ttf: GDEF
+
+### metrics
+
+- PASS — SuharSahafa-Italic[wght].ttf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### sanitizer
+
+- PASS — SuharSahafa-Italic[wght].ttf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharSahafaHeadline-Italic[wght].ttf: GSUB
+- PASS — SuharSahafaHeadline-Italic[wght].ttf: GPOS
+- PASS — SuharSahafaHeadline-Italic[wght].ttf: GDEF
+
+### metrics
+
+- PASS — SuharSahafaHeadline-Italic[wght].ttf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### sanitizer
+
+- PASS — SuharSahafaHeadline-Italic[wght].ttf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharSahafaHeadline[wght].ttf: GSUB
+- PASS — SuharSahafaHeadline[wght].ttf: GPOS
+- PASS — SuharSahafaHeadline[wght].ttf: GDEF
+
+### metrics
+
+- PASS — SuharSahafaHeadline[wght].ttf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### sanitizer
+
+- PASS — SuharSahafaHeadline[wght].ttf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharSahafa[wght].ttf: GSUB
+- PASS — SuharSahafa[wght].ttf: GPOS
+- PASS — SuharSahafa[wght].ttf: GDEF
+
+### metrics
+
+- PASS — SuharSahafa[wght].ttf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### sanitizer
+
+- PASS — SuharSahafa[wght].ttf: OpenType Sanitizer
+
+### tables
+
 - PASS — Suhar[opsz,wght].ttf: GSUB
 - PASS — Suhar[opsz,wght].ttf: GPOS
 - PASS — Suhar[opsz,wght].ttf: GDEF
@@ -4010,13 +4386,21 @@ Produced by `tools/validate.py` from the compiled files in `dist/`. Shaping uses
 - PASS — SuharNerdMono-SemiBold.woff2: decodes, same glyph count as TTF
 - PASS — SuharNerdMono-SemiBoldItalic.woff2: decodes, same glyph count as TTF
 - PASS — SuharSahafa-Bold.woff2: decodes, same glyph count as TTF
+- PASS — SuharSahafa-BoldItalic.woff2: decodes, same glyph count as TTF
+- PASS — SuharSahafa-Italic.woff2: decodes, same glyph count as TTF
 - PASS — SuharSahafa-Medium.woff2: decodes, same glyph count as TTF
+- PASS — SuharSahafa-MediumItalic.woff2: decodes, same glyph count as TTF
 - PASS — SuharSahafa-Regular.woff2: decodes, same glyph count as TTF
 - PASS — SuharSahafa-SemiBold.woff2: decodes, same glyph count as TTF
+- PASS — SuharSahafa-SemiBoldItalic.woff2: decodes, same glyph count as TTF
 - PASS — SuharSahafaHeadline-Bold.woff2: decodes, same glyph count as TTF
+- PASS — SuharSahafaHeadline-BoldItalic.woff2: decodes, same glyph count as TTF
+- PASS — SuharSahafaHeadline-Italic.woff2: decodes, same glyph count as TTF
 - PASS — SuharSahafaHeadline-Medium.woff2: decodes, same glyph count as TTF
+- PASS — SuharSahafaHeadline-MediumItalic.woff2: decodes, same glyph count as TTF
 - PASS — SuharSahafaHeadline-Regular.woff2: decodes, same glyph count as TTF
 - PASS — SuharSahafaHeadline-SemiBold.woff2: decodes, same glyph count as TTF
+- PASS — SuharSahafaHeadline-SemiBoldItalic.woff2: decodes, same glyph count as TTF
 
 ### family
 
@@ -4186,6 +4570,10 @@ Produced by `tools/validate.py` from the compiled files in `dist/`. Shaping uses
 - PASS — SuharNaskh-Italic[wght].ttf: has every glyph of the static font
 - PASS — SuharNaskhDisplay[wght].ttf: has every glyph of the static font
 - PASS — SuharNaskh[wght].ttf: has every glyph of the static font
+- PASS — SuharSahafa-Italic[wght].ttf: has every glyph of the static font
+- PASS — SuharSahafaHeadline-Italic[wght].ttf: has every glyph of the static font
+- PASS — SuharSahafaHeadline[wght].ttf: has every glyph of the static font
+- PASS — SuharSahafa[wght].ttf: has every glyph of the static font
 - PASS — Suhar[opsz,wght].ttf: has every glyph of the static font
 
 ### metrics
@@ -4241,6 +4629,14 @@ Produced by `tools/validate.py` from the compiled files in `dist/`. Shaping uses
 - PASS — SuharNaskhDisplay[wght].ttf: wght 700 renders heavier than 400
 - PASS — SuharNaskh[wght].ttf: axes {'wght': (400.0, 400.0, 700.0)}
 - PASS — SuharNaskh[wght].ttf: wght 700 renders heavier than 400
+- PASS — SuharSahafa-Italic[wght].ttf: axes {'wght': (400.0, 400.0, 700.0)}
+- PASS — SuharSahafa-Italic[wght].ttf: wght 700 renders heavier than 400
+- PASS — SuharSahafaHeadline-Italic[wght].ttf: axes {'wght': (400.0, 400.0, 700.0)}
+- PASS — SuharSahafaHeadline-Italic[wght].ttf: wght 700 renders heavier than 400
+- PASS — SuharSahafaHeadline[wght].ttf: axes {'wght': (400.0, 400.0, 700.0)}
+- PASS — SuharSahafaHeadline[wght].ttf: wght 700 renders heavier than 400
+- PASS — SuharSahafa[wght].ttf: axes {'wght': (400.0, 400.0, 700.0)}
+- PASS — SuharSahafa[wght].ttf: wght 700 renders heavier than 400
 - PASS — Suhar[opsz,wght].ttf: axes {'wght': (400.0, 400.0, 700.0), 'opsz': (8.0, 14.0, 72.0)}
 - PASS — Suhar[opsz,wght].ttf: wght 700 renders heavier than 400
 - PASS — Suhar[opsz,wght].ttf: opsz 8 is spaced wider than opsz 72
@@ -4661,6 +5057,23 @@ Produced by `tools/validate.py` from the compiled files in `dist/`. Shaping uses
 - PASS — bowls shallower than Suhar Naskh (short descenders)
 - PASS — lam-alef ligature forms
 - PASS — Sahafa draws its own sad, jeem, meem, lam-alef (differs from Suhar Naskh)
+- PASS — Suhar Sahafa Italic: present, italic angle set, hinted
+- PASS — Suhar Sahafa Medium Italic: present, italic angle set, hinted
+- PASS — Suhar Sahafa SemiBold Italic: present, italic angle set, hinted
+- PASS — Suhar Sahafa Bold Italic: present, italic angle set, hinted
+- PASS — SuharSahafa[wght].ttf: weight axis 400-700, no glyph dropped
+- PASS — SuharSahafa-Italic[wght].ttf: weight axis 400-700, no glyph dropped
+- PASS — Suhar Sahafa Headline Italic: present, italic angle set, hinted
+- PASS — Suhar Sahafa Headline Medium Italic: present, italic angle set, hinted
+- PASS — Suhar Sahafa Headline SemiBold Italic: present, italic angle set, hinted
+- PASS — Suhar Sahafa Headline Bold Italic: present, italic angle set, hinted
+- PASS — SuharSahafaHeadline[wght].ttf: weight axis 400-700, no glyph dropped
+- PASS — SuharSahafaHeadline-Italic[wght].ttf: weight axis 400-700, no glyph dropped
+- PASS — ink traps: the generator cuts notches at the crotches of seen and sad (ink area 60 to 2500 square units smaller)
+- PASS — italic: Arabic and Latin shape, lam-alef forms
+- PASS — dlig changes لم in Sahafa
+- PASS — ss06 changes في in Sahafa
+- PASS — ss07 changes نجم in Sahafa
 
 ### word space
 
@@ -4703,13 +5116,21 @@ Produced by `tools/validate.py` from the compiled files in `dist/`. Shaping uses
 - PASS — SuharNaskhDisplay-Regular: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
 - PASS — SuharNaskhDisplay-SemiBold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
 - PASS — SuharSahafa-Bold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
+- PASS — SuharSahafa-BoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
+- PASS — SuharSahafa-Italic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
 - PASS — SuharSahafa-Medium: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
+- PASS — SuharSahafa-MediumItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
 - PASS — SuharSahafa-Regular: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
 - PASS — SuharSahafa-SemiBold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
+- PASS — SuharSahafa-SemiBoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
 - PASS — SuharSahafaHeadline-Bold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
+- PASS — SuharSahafaHeadline-BoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
+- PASS — SuharSahafaHeadline-Italic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
 - PASS — SuharSahafaHeadline-Medium: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
+- PASS — SuharSahafaHeadline-MediumItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
 - PASS — SuharSahafaHeadline-Regular: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
 - PASS — SuharSahafaHeadline-SemiBold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
+- PASS — SuharSahafaHeadline-SemiBoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
 - PASS — SuharMono-Bold: the space is one cell
 - PASS — SuharMono-BoldItalic: the space is one cell
 - PASS — SuharMono-ExtraBold: the space is one cell
@@ -4827,14 +5248,22 @@ Produced by `tools/validate.py` from the compiled files in `dist/`. Shaping uses
 | otf/SuharNerdMono-Regular.otf | 13500 | 13064 | 3157 |
 | otf/SuharNerdMono-SemiBold.otf | 13500 | 13064 | 3166 |
 | otf/SuharNerdMono-SemiBoldItalic.otf | 13500 | 13064 | 3162 |
-| otf/SuharSahafa-Bold.otf | 2889 | 2469 | 569 |
-| otf/SuharSahafa-Medium.otf | 2889 | 2469 | 550 |
-| otf/SuharSahafa-Regular.otf | 2889 | 2469 | 539 |
-| otf/SuharSahafa-SemiBold.otf | 2889 | 2469 | 559 |
-| otf/SuharSahafaHeadline-Bold.otf | 2889 | 2469 | 561 |
-| otf/SuharSahafaHeadline-Medium.otf | 2889 | 2469 | 549 |
-| otf/SuharSahafaHeadline-Regular.otf | 2889 | 2469 | 538 |
-| otf/SuharSahafaHeadline-SemiBold.otf | 2889 | 2469 | 557 |
+| otf/SuharSahafa-Bold.otf | 2889 | 2469 | 575 |
+| otf/SuharSahafa-BoldItalic.otf | 2889 | 2469 | 574 |
+| otf/SuharSahafa-Italic.otf | 2889 | 2469 | 553 |
+| otf/SuharSahafa-Medium.otf | 2889 | 2469 | 561 |
+| otf/SuharSahafa-MediumItalic.otf | 2889 | 2469 | 559 |
+| otf/SuharSahafa-Regular.otf | 2889 | 2469 | 550 |
+| otf/SuharSahafa-SemiBold.otf | 2889 | 2469 | 566 |
+| otf/SuharSahafa-SemiBoldItalic.otf | 2889 | 2469 | 565 |
+| otf/SuharSahafaHeadline-Bold.otf | 2889 | 2469 | 570 |
+| otf/SuharSahafaHeadline-BoldItalic.otf | 2889 | 2469 | 568 |
+| otf/SuharSahafaHeadline-Italic.otf | 2889 | 2469 | 555 |
+| otf/SuharSahafaHeadline-Medium.otf | 2889 | 2469 | 557 |
+| otf/SuharSahafaHeadline-MediumItalic.otf | 2889 | 2469 | 558 |
+| otf/SuharSahafaHeadline-Regular.otf | 2889 | 2469 | 548 |
+| otf/SuharSahafaHeadline-SemiBold.otf | 2889 | 2469 | 566 |
+| otf/SuharSahafaHeadline-SemiBoldItalic.otf | 2889 | 2469 | 562 |
 | ttf/Suhar-Black.ttf | 2889 | 2469 | 502 |
 | ttf/Suhar-BlackItalic.ttf | 2889 | 2469 | 498 |
 | ttf/Suhar-Bold.ttf | 2889 | 2469 | 500 |
@@ -4924,13 +5353,21 @@ Produced by `tools/validate.py` from the compiled files in `dist/`. Shaping uses
 | ttf/SuharNerdMono-SemiBold.ttf | 13500 | 13064 | 2669 |
 | ttf/SuharNerdMono-SemiBoldItalic.ttf | 13500 | 13064 | 2671 |
 | ttf/SuharSahafa-Bold.ttf | 2889 | 2469 | 524 |
-| ttf/SuharSahafa-Medium.ttf | 2889 | 2469 | 511 |
-| ttf/SuharSahafa-Regular.ttf | 2889 | 2469 | 503 |
-| ttf/SuharSahafa-SemiBold.ttf | 2889 | 2469 | 521 |
-| ttf/SuharSahafaHeadline-Bold.ttf | 2889 | 2469 | 513 |
-| ttf/SuharSahafaHeadline-Medium.ttf | 2889 | 2469 | 509 |
-| ttf/SuharSahafaHeadline-Regular.ttf | 2889 | 2469 | 504 |
-| ttf/SuharSahafaHeadline-SemiBold.ttf | 2889 | 2469 | 511 |
+| ttf/SuharSahafa-BoldItalic.ttf | 2889 | 2469 | 515 |
+| ttf/SuharSahafa-Italic.ttf | 2889 | 2469 | 509 |
+| ttf/SuharSahafa-Medium.ttf | 2889 | 2469 | 512 |
+| ttf/SuharSahafa-MediumItalic.ttf | 2889 | 2469 | 508 |
+| ttf/SuharSahafa-Regular.ttf | 2889 | 2469 | 507 |
+| ttf/SuharSahafa-SemiBold.ttf | 2889 | 2469 | 524 |
+| ttf/SuharSahafa-SemiBoldItalic.ttf | 2889 | 2469 | 512 |
+| ttf/SuharSahafaHeadline-Bold.ttf | 2889 | 2469 | 515 |
+| ttf/SuharSahafaHeadline-BoldItalic.ttf | 2889 | 2469 | 518 |
+| ttf/SuharSahafaHeadline-Italic.ttf | 2889 | 2469 | 516 |
+| ttf/SuharSahafaHeadline-Medium.ttf | 2889 | 2469 | 510 |
+| ttf/SuharSahafaHeadline-MediumItalic.ttf | 2889 | 2469 | 516 |
+| ttf/SuharSahafaHeadline-Regular.ttf | 2889 | 2469 | 505 |
+| ttf/SuharSahafaHeadline-SemiBold.ttf | 2889 | 2469 | 514 |
+| ttf/SuharSahafaHeadline-SemiBoldItalic.ttf | 2889 | 2469 | 515 |
 | variable/Suhar-Italic[opsz,wght].ttf | 2889 | 2469 | 1176 |
 | variable/SuharCondensed-Italic[opsz,wght].ttf | 2889 | 2469 | 1142 |
 | variable/SuharCondensed[opsz,wght].ttf | 2889 | 2469 | 1116 |
@@ -4939,6 +5376,10 @@ Produced by `tools/validate.py` from the compiled files in `dist/`. Shaping uses
 | variable/SuharNaskh-Italic[wght].ttf | 2889 | 2469 | 642 |
 | variable/SuharNaskhDisplay[wght].ttf | 2889 | 2469 | 643 |
 | variable/SuharNaskh[wght].ttf | 2889 | 2469 | 638 |
+| variable/SuharSahafa-Italic[wght].ttf | 2889 | 2469 | 639 |
+| variable/SuharSahafaHeadline-Italic[wght].ttf | 2889 | 2469 | 642 |
+| variable/SuharSahafaHeadline[wght].ttf | 2889 | 2469 | 626 |
+| variable/SuharSahafa[wght].ttf | 2889 | 2469 | 632 |
 | variable/Suhar[opsz,wght].ttf | 2889 | 2469 | 1144 |
 
 ## Proof images (reports/img)

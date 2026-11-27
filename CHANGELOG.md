@@ -1,5 +1,17 @@
 # Changelog
 
+## 2.2 (November 2026)
+
+**Suhar Sahafa, reworked after the first sketch**
+- Medial ح is an arc that starts at the join and sweeps over to the left, open underneath, also in Bold.
+- Teeth are wedges; final ه ة comes to a point at the top; ط ظ carry the stem on the end of the loop, so the
+  small counter beside the stem is gone; the baseline is flat again.
+- More letters drawn for the family: ر ز, د ذ, ن, and ع غ at the start of a word.
+- Small ink traps at the inner corners between the baseline and a tooth or stem (static fonts).
+- Latin: wedge brackets on the serifs; serifs on the figures 1 2 4 5 7 and on Γ Π Λ Φ Ψ.
+- Italics for both cuts, and variable fonts `SuharSahafa[wght]` and `SuharSahafaHeadline[wght]` with italics.
+- Sahafa is in the HTML specimen and on the device test page.
+
 ## 2.1 (November 2026)
 
 **New: Suhar Sahafa and Suhar Sahafa Headline**

@@ -171,3 +171,14 @@ measures the gap twice: between the letter bodies (baseline to loop height) and 
 The mean of the two is the optical gap, so a tail under the line counts for half. In an italic the outlines
 are set upright first, because the eye measures a gap along the slant. Across all proportional styles the
 standard deviation of the gap is 8 to 14 units on a mean of about 350 to 375.
+
+### Sahafa after the sketch (2.2)
+
+- Medial ح: `470,k`-style join on the right, then one arc over to a cut terminal on the left. The space under
+  the arc is open to the left, which is what keeps it clear in Bold.
+- Wedge teeth: the top of a tooth is drawn at 60 % of the pen (Headline 50 %).
+- Ink traps (`engine.ink_traps`): after the overlaps are removed, every on-curve corner where the ink turns
+  inwards by 55 to 150 degrees, between 1.2 × the baseline half-thickness and 440 units, is cut with a small
+  triangle along the bisector of the corner.
+- Wedge brackets are filled triangles between the stem and the serif; their size follows the serif length.
+- Italics use the slants of Suhar (Latin 11 degrees to the right, Arabic 9 degrees to the left).

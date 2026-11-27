@@ -9,7 +9,7 @@ stories sail from. I started it as the interface font of [Retro Nim UI](https://
 and of my terminal editor ned, and it grew into a family for screens, bilingual signage and print.
 
 - Designer: Sultan Al Isaiee ([@foxoman](https://github.com/foxoman), <https://www.foxoman.net>)
-- Version 2.1 · SIL Open Font License 1.1
+- Version 2.2 · SIL Open Font License 1.1
 - Scripts: Latin (extended, Vietnamese, transliteration), Arabic (Arabic, Persian, Urdu, Kurdish, Pashto,
   Sindhi, Uyghur, Jawi, Quranic marks), Greek (monotonic and polytonic), Cyrillic, Hebrew with points
 - 2,469 characters in Suhar, 13,064 in the Nerd builds
@@ -30,14 +30,14 @@ them keeps one colour and one height:
 | **Suhar Condensed** | signs and tight headlines, about 15 % narrower | Light to ExtraBold, with italics (12) |
 | **Suhar Naskh** | books, magazines, long Arabic text | Regular to Bold, with italics (8) |
 | **Suhar Naskh Display** | titles; joined words slope down to the left as in handwriting | Regular to Bold (4) |
-| **Suhar Sahafa** | newspaper text: a low, wide Naskh with large open loops and a serif Latin | Regular to Bold (4) |
-| **Suhar Sahafa Headline** | newspaper headlines: tighter, more contrast, deeper bowls | Regular to Bold (4) |
+| **Suhar Sahafa** | newspaper text: a low, wide Naskh with large open loops and a serif Latin | Regular to Bold, with italics (8) |
+| **Suhar Sahafa Headline** | newspaper headlines: tighter, more contrast, deeper bowls | Regular to Bold, with italics (8) |
 | **Suhar Mono** | code and terminals, 600‑unit cell | Light to ExtraBold, with italics (12) |
 | **Suhar Nerd**, **Suhar Nerd Mono**, **Suhar Nerd Condensed** | the same with the Nerd Fonts 3.5.1 icons | as their base family |
 | **Suhar Pixel 8–13**, **Suhar Mono Pixel 12/14** | one exact pixel size each, no blur | Regular, Bold |
 
 Variable fonts: `Suhar[opsz,wght]`, `SuharCondensed[opsz,wght]`, `SuharNaskh[wght]`, `SuharNaskhDisplay[wght]`,
-`SuharMono[wght]` and their italics (weight 400–700).
+`SuharSahafa[wght]`, `SuharSahafaHeadline[wght]`, `SuharMono[wght]` and their italics (weight 400–700).
 
 ![Suhar Naskh and Naskh Display](docs/images/naskh.png)
 
@@ -56,8 +56,9 @@ the baseline at its last letter, final yeh returns under the word (في، على
 Suhar Sahafa (صحافة, the press) is the newspaper cut. The Arabic is low and wide: alef is as tall as the Latin
 capitals, the loops of ص ض ط ف ق و م ه are as tall as the Latin x-height, and the bowls are short, so lines can
 be set close. The pen has moderate contrast (the upright is about two thirds of the baseline stroke), so the
-thin strokes hold in small sizes. The Latin is a sturdy slab serif drawn with the same stem as the Arabic
-baseline stroke, in Regular and in Bold. **Text** is the wider, calmer cut; **Headline** is about 5 % tighter,
+thin strokes hold in small sizes, the teeth are wedges that narrow towards the top, and the static fonts have
+small ink traps where a tooth or a stem meets the baseline. The Latin is a sturdy serif with wedge brackets,
+drawn with the same stem as the Arabic baseline stroke in every weight. **Text** is the wider, calmer cut; **Headline** is about 5 % tighter,
 with more contrast, sharper terminals and deeper bowls.
 
 What I measured against three well-known open Naskh faces, at the same point size:
@@ -179,7 +180,7 @@ python tools/make_docs.py                             # coverage tables, specime
 
 ## Checked, and not checked
 
-Each release runs 1,986 automatic checks on the built files: naming, metrics, hinting, shaping in every
+Each release runs 2,155 automatic checks on the built files: naming, metrics, hinting, shaping in every
 script, mark placement, kerning, the space between words in every style (`reports/word-spacing.md`), the Mono grid, the pixel fonts, the variable fonts, and loading in Retro Nim
 UI. The report is `reports/validation.md`.
 

@@ -39,28 +39,32 @@ I would rather list these here than have you find them in production.
 
 ## Suhar Sahafa
 
-- Sahafa is new in 2.1 and has had the least use of all the families.
+- Sahafa is the newest family and has had the least use.
 - I wanted it to read better in newspapers than Yakout, Mohammed and Traditional Arabic. **I cannot show
   that.** I do not have those fonts, so there is no comparison with them at all. Against Amiri, Noto Naskh
-  Arabic and Scheherazade New I measured larger loops at the same point size and a line that is 4 to 14 %
-  longer (the table is in the README). Nobody has run a reading test, and it has not been printed on
-  newsprint or on a press.
+  Arabic and Scheherazade New I measured larger loops at the same point size and a longer line (the table is
+  in the README). Nobody has run a reading test, and it has not been printed on newsprint or on a press.
 - It is a constructed Naskh, like the rest of Suhar: one pen angle, no change of shape by neighbour except
   the features inherited from Suhar Naskh. A calligrapher would call it a Naskh in proportion and not in hand.
-- There are no drawn ink traps. Joins are plain unions of pen strokes; the open counters and the sturdy thin
-  strokes are what protects it in small sizes.
-- Drawn for Sahafa: ص ض ط ظ, ج ح خ, ف ق و, م, ه ة, ي, ا ل, لا, the teeth of ب ت ث ن ي, and medial and final
-  ع غ. Every other letter (the bowls of ب ت ث ن, د ذ ر ز, س ش, ع غ at the start of a word and alone, ك and the
-  Persian, Urdu, Kurdish, Pashto, Sindhi, Uyghur and Jawi letters) is the Suhar Naskh skeleton lowered to
-  the Sahafa proportions. I have proofed the Arabic alphabet and news text, not those other languages.
+- The first sketch is heavier than Sahafa Regular: its strokes are close to Sahafa Bold. I kept Regular at a
+  text weight, because a paragraph at the sketch's weight would fill in at 8 point.
+- Ink traps are cut by rule: every sharp inner corner between the baseline and the loop height gets a notch
+  of about 0.4 of the stroke's half thickness (0.3 in Headline). They are not placed by eye, they are untested
+  on a press, and the variable fonts do not have them, because their outlines keep the overlaps.
+- Drawn for Sahafa: ص ض ط ظ, ج ح خ, ف ق و, م, ه ة, ي, ا ل, لا, ر ز, د ذ, ن, the teeth of ب ت ث ن ي, medial and
+  final ع غ and ع غ at the start of a word. Still the Suhar Naskh skeleton in the Sahafa proportions: the bowls
+  of ب ت ث, س ش, isolated ع غ, ك, and the Persian, Urdu, Kurdish, Pashto, Sindhi, Uyghur and Jawi letters. I
+  have proofed the Arabic alphabet and news text, not those other languages.
 - Ligatures: lam-alef is drawn. The optional ligatures (`dlig`), the returning yeh (`ss06`) and letters
-  standing on ج ح خ (`ss07`) come from Suhar Naskh unchanged and are not proofed in Sahafa.
-- Latin: the serifs are plain slabs without brackets, on A–Z, a–z and the figure 1. Accented letters take
-  them from their base letter. The other figures, punctuation, ß æ œ ð þ and similar letters, small capitals,
-  Greek and Cyrillic have the Sahafa pen but no serifs.
+  standing on ج ح خ (`ss07`) work and are checked for shaping, but their shapes come from Suhar Naskh; in
+  Headline Bold the loop of the lam-meem ligature is nearly closed.
+- The italics are slanted forms, not a drawn cursive; the Arabic leans to the left, as in Suhar.
+- Latin: the serifs have straight wedge brackets, not curved ones. Diagonal letters (A K V W X Y k v w x y)
+  have serifs without brackets. The figures 0 3 6 8 9, punctuation and ß æ œ ð þ have the Sahafa pen but no
+  serifs; Cyrillic and Greek letters have serifs only where they share a Latin shape, plus Γ Π Λ Φ Ψ.
 - The x-height is 470, to match the Arabic loops; Suhar's is 520. Next to Suhar at the same size the Sahafa
   lower case is smaller. Capitals, figures, ascent, descent and line height are the same.
-- No italics, no variable font and no Nerd build. Sahafa is not in the HTML specimen or on the device test page yet.
+- There is no Nerd build of Sahafa. A newspaper face has no use for terminal icons, so I left it out.
 
 ## Pixel fonts
 
