@@ -192,3 +192,21 @@ standard deviation of the gap is 8 to 14 units on a mean of about 350 to 375.
 - Italic: `LATIN_IT` and `SERIF_IT` replace the foot serif of the last stem by an exit stroke.
 - Variable fonts: the trapped outline of a glyph is used when both masters have the same contours, the same
   points and no point further than 150 units from its partner; 120 to 148 glyphs qualify.
+
+## Sizes, paper and justification (2.4)
+
+- **Optical size** for the pen-written Arabic: the caption master narrows the pen ratio (Sahafa 1.6 : 1 → 1.4 : 1,
+  Naskh 2.6 : 1 → 2.2 : 1), enlarges the dots by 14 %, moves the mark anchors 24 units away from the letter,
+  deepens the ink traps by half and adds 16 units to every sidebearing; the display master does the opposite.
+- **Grade**: the pen is 7 % lighter or heavier. `keep_advances` then gives every glyph the advance of the
+  ungraded master and moves the outline so that the joins stay where they are: not at all for a letter that
+  joins to the left, by the whole difference for one that joins only to the right, by half for the others.
+  Kerning is the ungraded kerning.
+- **Neighbour forms**: skeletons `behr.init`, `behr.medi` and `rehr.fina`; `calt` replaces the tooth first, then
+  the reh after a replaced tooth. The raised tooth before final ن ي reuses the tall tooth.
+- **jalt**: the same skeleton with its x coordinates multiplied by 1.4; the pen is not stretched, so the
+  stroke weight is unchanged.
+- **Ink traps in the variable fonts**: a glyph uses its trapped outline when all ten masters agree; 78 to 100
+  glyphs do.
+- **Print proof**: `tools/print_proof.py` writes an HTML page that loads the built fonts and lets Chrome print it
+  to PDF, so the PDF embeds the real fonts.

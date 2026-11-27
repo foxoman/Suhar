@@ -1,5 +1,24 @@
 # Changelog
 
+## 2.4 (November 2026)
+
+**Sizes and paper**
+- Optical size axis in the variable fonts of Suhar Naskh and Suhar Sahafa (8–72), as Suhar already had.
+- Suhar Sahafa Caption: the 8-point cut as static fonts, eight styles.
+- Grade axis (GRAD −50 to 50) in the Suhar Sahafa variable fonts; a grade never changes an advance width.
+- The variable font files are renamed: `SuharNaskh[opsz,wght]`, `SuharSahafa[GRAD,opsz,wght]`,
+  `SuharSahafaHeadline[GRAD,opsz,wght]`.
+- `docs/Suhar-print-proof.pdf` and `tools/print_proof.py`.
+
+**Arabic**
+- Neighbour forms in the Naskh and Sahafa families: a narrow tooth and a short ر ز after it; a raised tooth
+  before final ن ي.
+- Justification alternates (`jalt`) for final and isolated ب ت ث ف ك and their Persian and Urdu relatives.
+- Sahafa: the dots over a tooth sit closer to it.
+
+**Latin (Sahafa)**
+- The serif brackets are curved.
+
 ## 2.3 (November 2026)
 
 **Suhar Sahafa, completed**

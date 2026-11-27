@@ -45,8 +45,9 @@ I would rather list these here than have you find them in production.
   Amiri, Noto Naskh Arabic and Scheherazade New I measured larger loops at the same point size and a longer
   line (the table is in the README). Nobody has run a reading test, and it has not been printed on newsprint
   or on a press. Both need people and a press, not more work in the generator.
-- It is a constructed Naskh, like the rest of Suhar: one pen angle, and no change of shape by neighbour except
-  the tall teeth, the returning yeh and the letters standing on ج ح خ. A calligrapher would call it a Naskh in
+- It is a constructed Naskh, like the rest of Suhar: one pen angle, and only a few changes of shape by
+  neighbour: the tall teeth, the narrow tooth before ر ز, the returning yeh and the letters standing on ج ح خ.
+  A written Naskh has dozens of such forms. A calligrapher would call it a Naskh in
   proportion and not in hand.
 - Every letter has a Sahafa drawing now, but I can only judge the Arabic ones. The Persian, Urdu, Kurdish,
   Pashto, Sindhi, Uyghur and Jawi forms are drawn and compile; no reader of those languages has seen them.
@@ -54,8 +55,8 @@ I would rather list these here than have you find them in production.
   for the baseline stroke, which I judged the most a text weight can carry at 8 point.
 - Ink traps are still cut by rule (every sharp inner corner between the baseline and the loop height). I have
   looked at them enlarged on the joins of ب س ص ط ح ف ك ع د ل م ن and removed the stubs I found, but they
-  are untested on a press. In the variable fonts only 120 to 148 glyphs have them; the others keep overlapping
-  outlines, because their two masters do not match point for point once the overlaps are removed.
+  are untested on a press. In the variable fonts only 78 to 100 glyphs have them; the others keep overlapping
+  outlines, because their ten masters do not match point for point once the overlaps are removed.
 - The Arabic italic is the upright drawing slanted to the left; Arabic has no cursive italic to draw. In the
   Latin italic only a, n, l, w and the feet of d h i k m r u are redrawn; the other letters are slanted.
 - Latin serifs have straight wedge brackets, not curved ones. 0 and 8 have no serifs, as in any serif face;
@@ -64,6 +65,24 @@ I would rather list these here than have you find them in production.
 - The x-height is 470, to match the Arabic loops; Suhar's is 520. Next to Suhar at the same size the Sahafa
   lower case is smaller. Capitals, figures, ascent, descent and line height are the same.
 - The khanjar tails (`ss01`) are the Suhar shapes in the Sahafa proportions, not redrawn.
+- The serif brackets are curved now; the Arabic joins are as before.
+- There is no Nerd build of Suhar Sahafa Caption.
+
+## Sizes, paper and justification
+
+- Optical sizes and grades exist only in the variable fonts, apart from Suhar Sahafa Caption. Suhar Naskh has no
+  static caption cut and no grade axis; Suhar Naskh Display and Suhar Mono have neither axis.
+- A grade is ±7 % of stroke weight. Which grade suits which paper is a guess until someone prints the proof.
+- **Nobody has printed the print proof yet.** It is made and checked as a file (fonts embedded, 15 pages); the
+  answers on its last page are what the next release should be built on.
+- Small-screen hinting is still ttfautohint's, not tuned from screenshots, because I have no device-test
+  results from Windows, Android or macOS. The larger dots and the wider mark distance apply at small optical
+  sizes, that is in the variable fonts and in Sahafa Caption, not in the other static fonts.
+- `jalt` and tatweel are what a font can offer for justification. Whether a justified column uses them depends
+  on the application: Adobe InDesign (Middle East) does, most browsers and word processors only widen the
+  word spaces. There is no rule in the font for where a kashida may go.
+- The neighbour forms are judged by me from renderings. They are easy to switch off (`font-feature-settings:
+  "calt" 0`).
 
 ## Pixel fonts
 

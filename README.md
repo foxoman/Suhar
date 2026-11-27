@@ -9,7 +9,7 @@ stories sail from. I started it as the interface font of [Retro Nim UI](https://
 and of my terminal editor ned, and it grew into a family for screens, bilingual signage and print.
 
 - Designer: Sultan Al Isaiee ([@foxoman](https://github.com/foxoman), <https://www.foxoman.net>)
-- Version 2.3 · SIL Open Font License 1.1
+- Version 2.4 · SIL Open Font License 1.1
 - Scripts: Latin (extended, Vietnamese, transliteration), Arabic (Arabic, Persian, Urdu, Kurdish, Pashto,
   Sindhi, Uyghur, Jawi, Quranic marks), Greek (monotonic and polytonic), Cyrillic, Hebrew with points
 - 2,469 characters in Suhar, 13,064 in the Nerd builds
@@ -32,12 +32,14 @@ them keeps one colour and one height:
 | **Suhar Naskh Display** | titles; joined words slope down to the left as in handwriting | Regular to Bold (4) |
 | **Suhar Sahafa** | newspaper text: a low, wide Naskh with large open loops and a serif Latin | Regular to Bold, with italics (8) |
 | **Suhar Sahafa Headline** | newspaper headlines: tighter, more contrast, deeper bowls | Regular to Bold, with italics (8) |
+| **Suhar Sahafa Caption** | 6 to 8 point: thicker thin strokes, looser spacing, larger dots, marks further out | Regular to Bold, with italics (8) |
 | **Suhar Mono** | code and terminals, 600‑unit cell | Light to ExtraBold, with italics (12) |
 | **Suhar Nerd**, **Suhar Nerd Mono**, **Suhar Nerd Condensed**, **Suhar Nerd Sahafa**, **Suhar Nerd Sahafa Headline** | the same with the Nerd Fonts 3.5.1 icons | as their base family |
 | **Suhar Pixel 8–13**, **Suhar Mono Pixel 12/14** | one exact pixel size each, no blur | Regular, Bold |
 
-Variable fonts: `Suhar[opsz,wght]`, `SuharCondensed[opsz,wght]`, `SuharNaskh[wght]`, `SuharNaskhDisplay[wght]`,
-`SuharSahafa[wght]`, `SuharSahafaHeadline[wght]`, `SuharMono[wght]` and their italics (weight 400–700).
+Variable fonts: `Suhar[opsz,wght]`, `SuharCondensed[opsz,wght]`, `SuharNaskh[opsz,wght]`, `SuharNaskhDisplay[wght]`,
+`SuharSahafa[GRAD,opsz,wght]`, `SuharSahafaHeadline[GRAD,opsz,wght]`, `SuharMono[wght]` and their italics
+(weight 400–700, optical size 8–72, grade −50 to 50).
 
 ![Suhar Naskh and Naskh Display](docs/images/naskh.png)
 
@@ -76,6 +78,24 @@ So the loops are about a third larger than in Noto Naskh and two thirds larger t
 compare it with Yakout, Mohammed or Traditional Arabic, because I do not have those fonts, and it has not been
 printed on newsprint; see the limitations. `docs/images/sahafa-compare.png` shows the same paragraph in the
 four faces.
+
+### Sizes, paper and justification
+
+- **Optical size.** The variable fonts of Suhar, Suhar Condensed, Suhar Naskh and Suhar Sahafa change with the
+  size: at 8 point the thin strokes are thicker, the letters looser, the dots larger and the vowel marks
+  further from the letter; at 72 point everything is finer and tighter. Browsers do this by themselves
+  (`font-optical-sizing: auto`). Where a variable font cannot be used, Suhar Sahafa Caption is the 8-point cut as
+  ordinary font files.
+- **Grade.** `SuharSahafa[GRAD,opsz,wght]` has a grade axis: −50 for paper that spreads ink, +50 for coated paper
+  and toner. A grade changes the stroke and nothing else, so the text does not reflow:
+  `font-variation-settings: "GRAD" -50`.
+- **Neighbour forms.** In the Naskh and Sahafa families a tooth before final ر ز is narrower and the ر starts at
+  once (بر، تبرير), and a tooth before final ن ي is raised (بين، نبي). They are on by default (`calt`).
+- **Justification.** `jalt` gives final and isolated ب ت ث ف ك a body that is 40 % longer; tatweel (ـ) joins
+  inside any word. The font offers these; the application decides where to use them.
+- **Print proof.** [`docs/Suhar-print-proof.pdf`](docs/Suhar-print-proof.pdf) sets every family from 6 to 48 point,
+  newspaper columns, the optical sizes, the grades, reversed text and the ink traps, with a list of what to
+  look for. Print it at 100 % on your own printer; that is the test I cannot run.
 
 ### Suhar Mono
 
@@ -172,7 +192,7 @@ python tools/make_docs.py                             # coverage tables, specime
 |---|---|
 | `src/retrofont/` | the generator: `engine.py` (skeleton language and pen), `latin*.py`, `arabic.py`, `greek_cyrillic.py`, `more_scripts.py`, `symbols.py`, `terminal.py`, `sahafa.py`, `kern.py`, `features.py`, `pixel.py`, `pixel_arabic.py`, `nerd.py`, `build.py` |
 | `dist/` | the built fonts: `ttf/`, `woff2/`, `variable/`, `pixel/` (OpenType/CFF files, the Nerd builds and the UFO masters are in the release archives) |
-| `tools/` | validation, documentation, proof renderer (HarfBuzz and FreeType) |
+| `tools/` | validation, documentation, proof renderer (HarfBuzz and FreeType), word spacing, print proof |
 | `docs/` | design notes, coverage, icons, licensing, limitations, glyph catalogue |
 | `reports/` | the validation report and rendered proofs |
 | `specimen/` | HTML specimen and the device test page |
@@ -181,7 +201,7 @@ python tools/make_docs.py                             # coverage tables, specime
 
 ## Checked, and not checked
 
-Each release runs 2,371 automatic checks on the built files: naming, metrics, hinting, shaping in every
+Each release runs 2,532 automatic checks on the built files: naming, metrics, hinting, shaping in every
 script, mark placement, kerning, the space between words in every style (`reports/word-spacing.md`), the Mono grid, the pixel fonts, the variable fonts, and loading in Retro Nim
 UI. The report is `reports/validation.md`.
 
