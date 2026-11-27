@@ -568,3 +568,38 @@ def xform(contours, fn):
 
 def shift(contours, dx, dy=0.0):
     return [[(p[0] + dx, p[1] + dy, p[2]) for p in c] for c in contours]
+
+
+def ink_traps(contours, depth, mouth, ylo, yhi, min_turn=55.0, max_turn=150.0):
+    """Cut a small notch into every sharp inner corner of the ink (a crotch between two strokes) whose y lies between
+    ylo and yhi.  On absorbent paper ink fills such corners; the notch leaves room for it.  Contours must be free of
+    overlaps.  Returns new contours."""
+    if not contours:
+        return contours
+    big = max(contours, key=lambda c: abs(_area([(p[0], p[1]) for p in c])))
+    sgn = 1.0 if _area([(p[0], p[1]) for p in big]) > 0 else -1.0
+    cuts = []
+    lo, hi = math.radians(min_turn), math.radians(max_turn)
+    for c in contours:
+        n = len(c)
+        for i, p in enumerate(c):
+            if not p[2] or not (ylo <= p[1] <= yhi):
+                continue
+            a, b = c[i - 1], c[(i + 1) % n]
+            d1, d2 = _unit(p[0] - a[0], p[1] - a[1]), _unit(b[0] - p[0], b[1] - p[1])
+            if d1 is None or d2 is None:
+                continue
+            cr = (d1[0] * d2[1] - d1[1] * d2[0]) * sgn
+            if cr >= 0:
+                continue
+            th = math.atan2(-cr, d1[0] * d2[0] + d1[1] * d2[1])
+            if not (lo <= th <= hi):
+                continue
+            e = _unit(d2[0] - d1[0], d2[1] - d1[1])
+            if e is None:
+                continue
+            A = (p[0] - d1[0] * mouth, p[1] - d1[1] * mouth)
+            B = (p[0] + d2[0] * mouth, p[1] + d2[1] * mouth)
+            C = (p[0] - e[0] * depth, p[1] - e[1] * depth)
+            cuts.append([(A[0], A[1], True), (C[0], C[1], True), (B[0], B[1], True)])
+    return difference(contours, cuts) if cuts else contours

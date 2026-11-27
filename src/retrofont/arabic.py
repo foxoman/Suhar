@@ -305,6 +305,10 @@ def ar_fn(st: Style, d):
     cs = E.shift(cs, dx)
     if extra:
         cs = cs + E.outline(extra, pen)
+    _tr = npar.get('traps')                   # ink traps: static fonts only (they need the overlaps removed)
+    if _tr and letter and not st.compat and not st.mono:
+        _k = st.ns['k'] * SC
+        cs = E.ink_traps(E.union(cs), _tr * _k, _tr * _k * 0.8, _k * 1.2, 440.0)
     g = GlyphOut(d.name, d.uni, cs, round(adv))
     g.ink = (bb[0] + dx, bb[1], bb[2] + dx, bb[3])
     for an, (ax, ay) in (inf.get('anchors') or {}).items():

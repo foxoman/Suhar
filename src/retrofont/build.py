@@ -32,7 +32,7 @@ def mkstyle(fam, wght, italic, opsz=0.0, compat=False):
         return st
     if fam in ('Sahafa', 'SahafaH'):
         from . import sahafa
-        return sahafa.style(wght, 'headline' if fam == 'SahafaH' else 'text')
+        return sahafa.style(wght, 'headline' if fam == 'SahafaH' else 'text', italic, compat)
     if fam in ('Naskh', 'NaskhD'):
         st = Style('Sans', wght, italic, opsz, compat).set_naskh()
         st.display = fam == 'NaskhD'
@@ -46,7 +46,7 @@ def static_styles():
         if fam == 'Sans':
             ws = ws + [BLACK]
         for wght, wn in ws:
-            for italic in ((False,) if fam in ('NaskhD', 'Sahafa', 'SahafaH') else (False, True)):
+            for italic in ((False,) if fam == 'NaskhD' else (False, True)):
                 yield fam, wght, wn, italic
 
 
@@ -114,6 +114,9 @@ def make(st: Style, family_key: str):
     upright = None
     if st.italic and not st.mono:      # kerning is measured on the upright shapes
         up = Style(st.family, st.wght, False, st.opsz, st.compat, width=st.width)
+        if getattr(st, 'sahafa', None):
+            from . import sahafa
+            up = sahafa.style(st.wght, st.sahafa, False, st.compat)
         if getattr(st, 'naskh', False):
             up.set_naskh()
             up.display = getattr(st, 'display', False)
@@ -268,7 +271,7 @@ def build_variable(fam, italic, out, save_sources=True):
         for oz, ozv in opszs:
             st = mkstyle(fam, wght, italic, oz, compat=True)
             up = None
-            if italic and fam in ('Sans', 'Cond', 'Naskh'):
+            if italic and fam in ('Sans', 'Cond', 'Naskh', 'Sahafa', 'SahafaH'):
                 up = build_glyphs(mkstyle(fam, wght, False, oz, compat=True))
             gl, kerning, groups = glyph_set(st, up)
             wn = 'Regular' if wght == 400 else 'Bold'
@@ -309,7 +312,7 @@ def build_variable(fam, italic, out, save_sources=True):
                     if n in s.font:
                         del s.font[n]
                 s.font.lib['public.glyphOrder'] = [n for n in s.font.lib['public.glyphOrder'] if n not in bad]
-                s.font.features.text = make_features({n: 1 for n in s.font.keys()}, display=fam == 'NaskhD', naskh=fam in ('Naskh', 'NaskhD'))
+                s.font.features.text = make_features({n: 1 for n in s.font.keys()}, display=fam == 'NaskhD', naskh=fam in ('Naskh', 'NaskhD', 'Sahafa', 'SahafaH'))
     set_overlap_flags(vf)
     d = os.path.join(out, 'variable')
     os.makedirs(d, exist_ok=True)
@@ -346,7 +349,7 @@ def main(argv=None):
             print('built', r['name'], r['glyphs'], 'glyphs', 'hinted' if r.get('hinted') else 'UNHINTED', r['time'], 's', flush=True)
             report['static'].append(r)
     if not a.no_vf and not a.only:
-        for fam in ('Sans', 'Mono', 'Cond', 'Naskh', 'NaskhD'):
+        for fam in ('Sans', 'Mono', 'Cond', 'Naskh', 'NaskhD', 'Sahafa', 'SahafaH'):
             for italic in ((False,) if fam == 'NaskhD' else (False, True)):
                 try:
                     r = build_variable(fam, italic, a.out)

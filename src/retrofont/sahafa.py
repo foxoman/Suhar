@@ -44,7 +44,7 @@ ARABIC = {
     'sad.fina': dict(spec=_sl(430, 865) + "; 440,k 340,k; 340,225 340,25 " + _bowl.format(x=340, m=165) + "; 957,k 855,k", aw=957, dx=650 - 655, dy=LT - 262),
     # ح: open head; when it joins forward the stroke falls back to the line in one curve
     'jeem.init': dict(spec="30,212 ~72,298 172,290 398,260!r; 393,260@1.22 ~310,150 170,k+18@1.15 ~95,k 0,k", dy=-30),
-    'jeem.medi': dict(spec="455,k 0,k; 30,212 ~72,298 172,290 398,260!r; 393,260@1.22 ~300,140 150,k+12@1.15 60,k", aw=455, dy=-30),
+    'jeem.medi': dict(spec="490,k 0,k; 472,k+8@1.1 ~474,262 336,322 ~196,380 30,304!r", aw=490, dx=10, dy=8),
     'jeem.isol': dict(spec=_jh + "; " + _jb, dy=-28),
     'jeem.fina': dict(spec=_jh + "; " + _jb + "; 522,k 30,k", aw=522, dy=-28),
     # ي (and the other toothed letters): the tooth leans and bends into the join
@@ -58,8 +58,8 @@ ARABIC = {
     'feh.isol': dict(spec=_loop(475, 275, 'k', LT) + "; 475,k 110,k ~-6,k -6,105 ~-6,190 30,246", dx=20, dy=LT - 262 - 46),
     'feh.fina': dict(spec=_loop(475, 275, 'k', LT) + "; 475,k 110,k ~-6,k -6,105 ~-6,190 30,246; 680,k 605,k", aw=680, dx=20, dy=LT - 262 - 46),
     # ه ة
-    'heh.isol': dict(spec="z 205,345 ~22,312 22,168 ~22,k 168,k ~318,k 318,182", dx=35, dy=45),
-    'heh.fina': dict(spec="z 138,318 ~16,302 16,162 ~16,k 132,k ~254,k 254,172; 342,k 238,k", aw=342, dx=18, dy=318 + 46 - (2 * 46 + 235)),
+    'heh.isol': dict(spec="z 232,352 ~22,300 22,166 ~22,k 170,k ~322,k 322,180 ~316,290 232,352", dx=38, dy=50),
+    'heh.fina': dict(spec="z 176,338 ~18,262 18,150 ~18,k 136,k ~262,k 262,160 ~256,262 176,338; 348,k 242,k", aw=348, dx=24, dy=318 + 46 - (2 * 46 + 235)),
     'heh.init': dict(spec="z 322,362 ~76,352 50,186 ~40,k 176,k ~322,k 322,176; w.72 86,282 ~226,266 306,100; 176,k 0,k", dy=-55),
     'heh.medi': dict(spec="342,k 0,k; z ~44,304 ~298,304 ~171,k-118; z ~40,-152 ~302,-152 ~171,k+92", aw=342, dy=-60),
     # م: an open loop; the tail falls straight
@@ -75,15 +75,24 @@ ARABIC = {
     'lam.isol': dict(spec=f"330,{AH} 330,12 " + _bowl.format(x=330, m=160), dy=0),
     'lam.fina': dict(spec=f"330,{AH} 330,12 " + _bowl.format(x=330, m=160) + "; 422,k 330,k", aw=422, dy=0),
     # ط: the loop of ص with a stem on its left end
-    'tah.init': dict(spec=_sl(55, 490) + f"; 122,k 122,{AH}; 150,k 0,k", dy=LT - 262, anch={'top': (122, AH + 6)}),
-    'tah.medi': dict(spec=_sl(55, 490) + f"; 122,k 122,{AH}; 150,k 0,k; 580,k 470,k", aw=580, dy=LT - 262, anch={'top': (122, AH + 6)}),
-    'tah.isol': dict(spec=_sl(35, 470) + f"; 102,k 102,{AH}", dy=LT - 262, anch={'top': (102, AH + 6)}),
-    'tah.fina': dict(spec=_sl(35, 470) + f"; 102,k 102,{AH}; 560,k 450,k", aw=560, dy=LT - 262, anch={'top': (102, AH + 6)}),
+    'tah.init': dict(spec=_sl(55, 490) + f"; 88,k 88,{AH}; 150,k 0,k", dy=LT - 262, anch={'top': (88, AH + 6)}),
+    'tah.medi': dict(spec=_sl(55, 490) + f"; 88,k 88,{AH}; 150,k 0,k; 580,k 470,k", aw=580, dy=LT - 262, anch={'top': (88, AH + 6)}),
+    'tah.isol': dict(spec=_sl(35, 470) + f"; 68,k 68,{AH}", dy=LT - 262, anch={'top': (68, AH + 6)}),
+    'tah.fina': dict(spec=_sl(35, 470) + f"; 68,k 68,{AH}; 560,k 450,k", aw=560, dy=LT - 262, anch={'top': (68, AH + 6)}),
     # ق و: the head as large as the other loops
     'qaf.isol': dict(spec=_loop(335, 262, 'k+26', LT) + f"; 466,188 466,-20 ~466,{DB} 230,{DB} ~-12,{DB} -12,15 ~-12,105 30,165", dx=5, dy=LT - 305),
     'qaf.fina': dict(spec=_loop(335, 262, 'k+26', LT) + f"; 466,188 466,-20 ~466,{DB} 230,{DB} ~-12,{DB} -12,15 ~-12,105 30,165; 592,k 452,k", aw=592, dx=5, dy=LT - 305),
     'waw.isol': dict(spec=_loop(160, 252, 'k+6', LT - 12) + f"; 286,176 286,20 ~286,{DB - 6} 86,{DB - 6} -22,{DB - 6}", dx=10, dy=LT - 12 - 290),
     'waw.fina': dict(spec=_loop(160, 252, 'k+6', LT - 12) + f"; 286,176 286,20 ~286,{DB - 6} 86,{DB - 6} -22,{DB - 6}; 376,k 256,k", aw=376, dx=10, dy=LT - 12 - 290),
+    # ر ز: a short tail that sweeps under the line; د ذ: an open angle; ن: a wide, shallow bowl
+    'reh.isol': dict(spec=f"196,262 ~214,120 196,30 ~168,{DB + 8} 20,{DB - 4} -44,{DB - 4}", dx=6, dy=0),
+    'reh.fina': dict(spec=f"296,k 262,k ~206,k 198,-20 ~176,{DB + 8} 20,{DB - 4} -44,{DB - 4}", aw=296, dx=6, dy=0),
+    'dal.isol': dict(spec="128,338 ~312,214 312,112 ~312,k 205,k 0,k", dx=4, dy=-10),
+    'dal.fina': dict(spec="128,338 ~312,214 312,112 ~312,k 205,k 0,k; 392,k 256,k", aw=392, dx=4, dy=-10),
+    'noon.isol': dict(spec=f"452,268 452,-24 ~452,{DB} 226,{DB} ~-12,{DB} -12,15 ~-12,105 30,165", dx=10, dy=0),
+    'noon.fina': dict(spec=f"580,k 522,k ~452,k 452,-24 ~452,{DB} 226,{DB} ~-12,{DB} -12,15 ~-12,105 30,165", aw=580, dx=10, dy=0),
+    # ع غ at the start of a word and alone: a wide, open head
+    'ain.init': dict(spec="318,262 ~306,338 198,338 ~52,338 52,200 ~52,k 180,k; 318,k!r 0,k", dx=10, dy=-12),
     # لا: the lam upright, the alef leaning across it in one curve
     'lamalef.isol': dict(spec=f"322,{AH} 322,150 ~322,k 236,k ~152,k 130,140 ~92,330 -34,{AH + 4}", dy=AH - 600),
     'lamalef.fina': dict(spec=f"322,{AH} 322,150 ~322,k 236,k ~152,k 130,140 ~92,330 -34,{AH + 4}; 412,k 312,k", aw=412, dy=AH - 600),
@@ -95,7 +104,7 @@ ARABIC = {
 # Latin: a sturdy serif.  b = half thickness of a horizontal; the top of the x-height is at 470.
 _T, _B = "470-b+o", "b-o"
 LATIN = {
-    'n': f"0,0 0,470-b; 0,340@.8 ~0,{_T} 182,{_T} ~334,{_T} 334,330 334,0; -48-a,b 48+a,b; 334-48-a,b 334+48+a,b; -50-a,470-b 0,470-b",
+    'n': f"0,0 0,470-b; 0,340@.8 ~0,{_T} 182,{_T} ~334,{_T} 334,330 334,0; -48-a,b 48+a,b; 334-48-a,b 334+48+a,b; -50-a,470-b 0,470-b; f -a+2,2*b -a-38,2*b -a+2,2*b+43; f a-2,2*b a+38,2*b a-2,2*b+43; f 334-a+2,2*b 334-a-38,2*b 334-a+2,2*b+43; f 334+a-2,2*b 334+a+38,2*b 334+a-2,2*b+43; f -a+2,470-2*b -a-40,470-2*b -a+2,470-2*b-45",
     'a': (f"336,0 336,300 ~336,{_T} 182,{_T} ~78,{_T} 40,372; oval 58,362 46,42; 336,272@.9 178,272 ~4,272 4,136 ~4,{_B} 160,{_B} "
           f"~336,{_B} 336,150@.72; 336,b 336+68+a,b"),
     'e': f"6,246 398,246 ~398,{_T} 204,{_T} ~4,{_T} 4,236 ~4,{_B} 212,{_B} ~338,{_B} 392,98",
@@ -108,45 +117,57 @@ LATIN = {
 
 # Serifs for the letters that keep the Suhar skeleton (coordinates of the skeleton, before the x-height is lowered).
 # A serif reaches a fixed distance beyond the edge of the stem (half width a), so it survives in the bold weights.
-def _h(x, l, r, y):
+def _h(x, l, r, y, br=True):
     a0 = f"{x}-{l - 38}-a" if l else f"{x}"
     a1 = f"{x}+{r - 38}+a" if r else f"{x}"
-    return f"{a0},{y} {a1},{y}"
+    s = f"{a0},{y} {a1},{y}"
+    if br:                                                        # a wedge between serif and stem
+        up = y == 'b'
+        e, d = (f"{y}+b", '+') if up else (f"{y}-b", '-')
+        if l:
+            s += f"; f {x}-a+2,{e} {x}-a-{round((l - 38) * 0.8)},{e} {x}-a+2,{e}{d}{round((l - 38) * 0.9)}"
+        if r:
+            s += f"; f {x}+a-2,{e} {x}+a+{round((r - 38) * 0.8)},{e} {x}+a-2,{e}{d}{round((r - 38) * 0.9)}"
+    return s
 
 
 _f = lambda x, l=84, r=84: _h(x, l, r, 'b')                       # foot
 _c = lambda x, l=84, r=84: _h(x, l, r, 'c')                       # top of a capital
 _x = lambda x, l=84, r=84: _h(x, l, r, 'X-b')                     # top at the x-height
 SERIF = {
-    'A': _f(0, 78, 78) + '; ' + _f(580, 78, 78),
+    'A': _h(0, 78, 78, 'b', False) + '; ' + _h(580, 78, 78, 'b', False),
     'B': _f(0, 84, 0) + '; ' + _c(0, 84, 0), 'D': _f(0, 84, 0) + '; ' + _c(0, 84, 0),
     'E': _f(0, 84, 0) + '; ' + _c(0, 84, 0) + "; 448,c 448,c-118; 458,b 458,b+128; 416,366+62 416,366-62",
     'F': _f(0, 84, 96) + '; ' + _c(0, 84, 0) + "; 438,c 438,c-118; 392,352+62 392,352-62",
     'H': _f(0) + '; ' + _f(472) + '; ' + _c(0) + '; ' + _c(472), 'I': _f(0, 92, 92) + '; ' + _c(0, 92, 92),
     'J': _c(330, 96, 80),
-    'K': _f(0) + '; ' + _c(0) + '; ' + _c(488, 70, 70) + '; ' + _f(506, 76, 70),
+    'K': _f(0) + '; ' + _c(0) + '; ' + _h(488, 70, 70, 'c', False) + '; ' + _h(506, 76, 70, 'b', False),
     'L': _f(0, 84, 0) + '; ' + _c(0) + "; 418,b 418,b+138",
     'M': _f(0) + '; ' + _f(628) + '; ' + _c(0, 84, 0) + '; ' + _c(628, 0, 84),
     'N': _f(0) + '; ' + _c(0, 84, 0) + '; ' + _c(474),
-    'P': _f(0, 84, 96) + '; ' + _c(0, 84, 0), 'R': _f(0) + '; ' + _c(0, 84, 0) + '; ' + _f(500, 50, 78),
+    'P': _f(0, 84, 96) + '; ' + _c(0, 84, 0), 'R': _f(0) + '; ' + _c(0, 84, 0) + '; ' + _h(500, 50, 78, 'b', False),
     'T': _f(268) + "; 0,c 0,c-124; 536,c 536,c-124",
-    'U': _c(0) + '; ' + _c(472), 'V': _c(0, 72, 72) + '; ' + _c(576, 72, 72),
-    'W': _c(0, 72, 72) + '; ' + _c(824, 72, 72) + '; ' + _c(412, 60, 60),
-    'X': _c(8, 70, 70) + '; ' + _c(526, 70, 70) + '; ' + _f(0, 70, 70) + '; ' + _f(534, 70, 70),
-    'Y': _c(0, 72, 72) + '; ' + _c(560, 72, 72) + '; ' + _f(280),
+    'U': _c(0) + '; ' + _c(472), 'V': _h(0, 72, 72, 'c', False) + '; ' + _h(576, 72, 72, 'c', False),
+    'W': _h(0, 72, 72, 'c', False) + '; ' + _h(824, 72, 72, 'c', False) + '; ' + _h(412, 60, 60, 'c', False),
+    'X': ' ; '.join(_h(x_, 70, 70, y_, False) for x_, y_ in ((8, 'c'), (526, 'c'), (0, 'b'), (534, 'b'))),
+    'Y': _h(0, 72, 72, 'c', False) + '; ' + _h(560, 72, 72, 'c', False) + '; ' + _f(280),
     'Z': "18,c 18,c-112; 510,b 510,b+112",
     'C': "530,548+40 530,548-78", 'G': "530,548+40 530,548-78; 480,342 640,342", 'S': "458,560+34 458,560-84; 22,138-34 22,138+90",
     'b': _c(0, 84, 0), 'd': _c(398, 84, 0) + '; ' + _f(398, 0, 88), 'h': _c(0, 84, 0) + '; ' + _f(0) + '; ' + _f(336),
-    'i': _x(0, 84, 0) + '; ' + _f(0), 'j': _x(88, 84, 0), 'k': _c(0, 84, 0) + '; ' + _f(0) + '; ' + _x(338, 66, 62) + '; ' + _f(352, 62, 66),
+    'i': _x(0, 84, 0) + '; ' + _f(0), 'j': _x(88, 84, 0), 'k': _c(0, 84, 0) + '; ' + _f(0) + '; ' + _h(338, 66, 62, 'X-b', False) + '; ' + _h(352, 62, 66, 'b', False),
     'm': _x(0, 84, 0) + '; ' + _f(0) + '; ' + _f(298) + '; ' + _f(596),
     'p': _x(0, 84, 0) + '; ' + _h(0, 84, 96, 'D+b'), 'q': _h(398, 84, 84, 'D+b'), 'r': _x(0, 84, 0) + '; ' + _f(0, 84, 104),
     'u': _x(0, 84, 0) + '; ' + _x(336, 84, 0) + '; ' + _f(336, 0, 88),
-    'v': _x(0, 66, 66) + '; ' + _x(430, 66, 66), 'x': _x(6, 66, 66) + '; ' + _x(414, 66, 66) + '; ' + _f(0, 66, 66) + '; ' + _f(420, 66, 66),
-    'y': _x(0, 66, 66) + '; ' + _x(432, 66, 66), 'z': "12,x 12,x-96; 394,b 394,b+96",
-    'f': _f(96, 84, 96), 'c': "340,410+30 340,410-70", 'one': _f(214),
+    'v': _h(0, 66, 66, 'X-b', False) + '; ' + _h(430, 66, 66, 'X-b', False), 'x': '; '.join(_h(x_, 66, 66, y_, False) for x_, y_ in ((6, 'X-b'), (414, 'X-b'), (0, 'b'), (420, 'b'))),
+    'y': _h(0, 66, 66, 'X-b', False) + '; ' + _h(432, 66, 66, 'X-b', False), 'z': "12,x 12,x-96; 394,b 394,b+96",
+    'f': _f(96, 84, 96), 'c': "340,410+30 340,410-70", 'one': _f(214), 'four': _f(296, 76, 76), 'seven': "0,c 0,c-112",
+    'two': "394,b 394,b+104", 'five': "366,c 366,c-96",
+    'uni0393': _f(0, 84, 96) + '; ' + _c(0, 84, 0) + "; 438,c 438,c-118", 'uni03A0': _f(0) + '; ' + _f(472) + '; ' + _c(0, 84, 0) + '; ' + _c(472, 0, 84),
+    'uni039B': _h(0, 78, 78, 'b', False) + '; ' + _h(560, 78, 78, 'b', False), 'uni03A6': _f(290) + '; ' + _c(290), 'uni03A8': _f(290) + '; ' + _c(290),
     'dotlessi': _x(0, 84, 0) + '; ' + _f(0),
 }
-LATIN['l'] = "0,0 0,C-b; -46-a,C-b 0,C-b; -46-a,b 46+a,b"
+LATIN['l'] = ("0,0 0,C-b; -46-a,C-b 0,C-b; -46-a,b 46+a,b; f -a+2,2*b -a-37,2*b -a+2,2*b+41; f a-2,2*b a+37,2*b a-2,2*b+41; "
+              "f -a+2,C-2*b -a-37,C-2*b -a+2,C-2*b-41")
 LATSB = {'l': (70, 70)}
 
 
@@ -175,10 +196,10 @@ def _armap(k):
 CUTS = ('text', 'headline')
 
 
-def style(wght=400, cut='text'):
+def style(wght=400, cut='text', italic=False, compat=False):
     """Style of Suhar Sahafa.  cut: 'text' (wider, calmer) or 'headline' (tighter, sharper, deeper bowls)."""
     head = cut == 'headline'
-    st = Style('Sans', wght, False).set_naskh()
+    st = Style('Sans', wght, italic, 0.0, compat).set_naskh()
     t = st.t
     ta_ = t if t <= 1 else 1 + (t - 1) * 0.55
     ra_ = (lerp(44, 74, ta_) + lerp(38, 61, ta_)) / 2 * (st.r / ((lerp(44, 74, t) + lerp(38, 61, t)) / 2)) * 1.05
@@ -190,9 +211,9 @@ def style(wght=400, cut='text'):
     st.ra = st.apen.extent()[1]
     st.ns['k'] = st.ra
     st.ns['q'] = st.ra * lerp(1.0, 0.86, t)
-    st.npar = dict(low=0.16, high=0.03, K=0.56, taper=0.62, top=0.8, foot=0.8, swing=7.0, ymap=_armap(st.ra))
+    st.npar = dict(low=0.16, high=0.03, K=0.56, taper=0.62, top=0.6, foot=0.8, swing=0.0, ymap=_armap(st.ra), traps=0.42)
     if head:
-        st.npar.update(low=0.20, taper=0.42, top=0.66, foot=0.66, deep=1.14)
+        st.npar.update(low=0.20, taper=0.42, top=0.5, foot=0.66, deep=1.14, traps=0.3)
         st.arx *= 0.96
         st.sbs *= 0.88
         st.xs *= 0.95
@@ -215,13 +236,13 @@ def style(wght=400, cut='text'):
     return st
 
 
-def build_test(path, wght=400, cut='text'):
+def build_test(path, wght=400, cut='text', italic=False):
     """compile a test font"""
     import ufo2ft
     from . import build as B
     for m in ('latin_ext', 'arabic', 'terminal', 'symbols', 'greek_cyrillic', 'more_scripts'):
         __import__('retrofont.' + m)
-    st = style(wght, cut)
+    st = style(wght, cut, italic)
     ufo, gl = B.make(st, 'Sahafa')
     f = ufo2ft.compileTTF(ufo, removeOverlaps=True)
     f.save(path)
@@ -231,4 +252,4 @@ def build_test(path, wght=400, cut='text'):
 if __name__ == '__main__':
     import sys
     build_test(sys.argv[1] if len(sys.argv) > 1 else 'SuharSahafa-Test.ttf', int(sys.argv[2]) if len(sys.argv) > 2 else 400,
-               sys.argv[3] if len(sys.argv) > 3 else 'text')
+               sys.argv[3] if len(sys.argv) > 3 else 'text', len(sys.argv) > 4)

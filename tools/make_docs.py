@@ -130,6 +130,9 @@ for sn, w, st in styles:
     if 'Light' not in sn and 'ExtraBold' not in sn:
         faces += (f"@font-face{{font-family:'Suhar Condensed';src:url('../dist/woff2/SuharCondensed-{sn}.woff2') format('woff2');"
                   f"font-weight:{w};font-style:{st};font-display:swap}}\n")
+for _fam, _stem in (('Suhar Sahafa', 'SuharSahafa'), ('Suhar Sahafa Headline', 'SuharSahafaHeadline')):
+    for _sn, _w, _it in (('Regular', 400, 'normal'), ('Bold', 700, 'normal'), ('Italic', 400, 'italic')):
+        faces += f"@font-face{{font-family:'{_fam}';src:url('../dist/woff2/{_stem}-{_sn}.woff2') format('woff2');font-weight:{_w};font-style:{_it}}}\n"
 faces += ("@font-face{font-family:'Suhar VF';src:url('../dist/variable/Suhar[opsz,wght].woff2') format('woff2');font-weight:400 700;font-style:normal}\n"
           "@font-face{font-family:'Suhar VF';src:url('../dist/variable/Suhar-Italic[opsz,wght].woff2') format('woff2');font-weight:400 700;font-style:italic}\n")
 EN = ("Suhar (صُحار) is one of the oldest ports of Oman. For centuries its harbour linked Arabia with India, East Africa and China, "
@@ -212,6 +215,11 @@ footer{{padding:40px 6vw;font-size:13px;border-top:1px solid var(--line)}}
 <p class="big">0O · <span style="font-feature-settings:'ss02'">0O ss02</span> · <span style="font-feature-settings:'zero'">0O zero</span></p></section>
 <section><h2>Suhar icons, ornaments and pictograms (U+E100–E148)</h2><div class="icons">{icons_html}</div></section>
 <section><h2>Symbols</h2><div class="glyphs">€ £ ¥ ₹ ₽ ₺ ₩ ₪ ₿ &#x20C4; &#x20C1; &#x20C3; ← ↑ → ↓ ↔ ⇒ ⇔ ∞ ≈ ≠ ≤ ≥ ± × ÷ √ ∑ ∏ ∫ ∂ ∆ Ω π µ ⌘ ⌥ ⇧ ⌫ ⏎ ■ □ ▲ ▼ ◆ ● ○ ★ ☆ ✓ ✗ ☑ ☒ ♠ ♥ ♦ ♣ ♪ ⚠ ⚡</div></section>
+<section><h2>Suhar Sahafa</h2><p class="ar" lang="ar" style="font-family:'Suhar Sahafa Headline';font-weight:700;font-size:44px">ميناء صحار يسجل رقما قياسيا</p>
+<p style="font-family:'Suhar Sahafa Headline';font-size:30px">Sohar Port sets a new record</p>
+<p class="ar" lang="ar" style="font-family:'Suhar Sahafa';font-size:17px">أعلنت وزارة الاقتصاد أن الناتج المحلي الإجمالي حقق نموا ملحوظا خلال الربع الثالث من العام، مدفوعا بارتفاع الصادرات غير النفطية وتوسع قطاعي الصناعة والخدمات اللوجستية. <i>وقال مسؤول في الوزارة</i> إن ميناء صحار (Sohar Port) استقبل 240 سفينة في شهر واحد.</p>
+<p style="font-family:'Suhar Sahafa';font-size:17px">The ministry said output grew strongly in the third quarter, helped by non-oil exports. <i>Sohar Port handled 240 ships in a single month</i>, an official said. <b>Bold for emphasis.</b></p>
+<p class="ar" lang="ar" style="font-family:'Suhar Sahafa';font-size:11px">8 pt: أعلنت وزارة الاقتصاد أن الناتج المحلي الإجمالي حقق نموا ملحوظا خلال الربع الثالث من العام، مدفوعا بارتفاع الصادرات غير النفطية.</p></section>
 <section><h2>Variable font (wght 400–700, opsz 8–72)</h2>
 <p><label>Weight <input id="w" type="range" min="400" max="700" value="400"></label><label>Optical size <input id="o" type="range" min="8" max="72" value="14"></label></p>
 <div class="vf" id="vf">Sindbad السندباد</div></section>

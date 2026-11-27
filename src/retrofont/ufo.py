@@ -7,7 +7,7 @@ from fontTools.pens.roundingPen import RoundingPen
 from . import engine as E
 from .model import (UPM, CAP, XH, DESC, ASCENT, DESCENT, ITALIC_DEG, Style)
 
-VERSION = (2, 1)
+VERSION = (2, 2)
 WIN_ASCENT, WIN_DESCENT = 1200, 440
 DESIGNER = 'Sultan Al Isaiee (Foxoman)'
 DESIGNER_URL = 'https://www.foxoman.net'

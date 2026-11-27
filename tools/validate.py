@@ -666,6 +666,38 @@ if SAH:
     check('sahafa', 'Sahafa draws its own sad, jeem, meem, lam-alef (differs from Suhar Naskh)',
           all(bounds(SAH['SuharSahafa', 'Regular'], n) != bounds(FN, n) for n in ('uni0635', 'uni062D', 'uni0645', 'uni06440627')))
 
+for ps, fam in (('SuharSahafa', 'Suhar Sahafa'), ('SuharSahafaHeadline', 'Suhar Sahafa Headline')):
+    for st in ('Italic', 'Medium Italic', 'SemiBold Italic', 'Bold Italic'):
+        p = os.path.join(DIST, 'ttf', f"{ps}-{st.replace(' ', '')}.ttf")
+        ok_ = os.path.exists(p)
+        if ok_:
+            fi_ = TTFont(p); n = fi_['name']
+            ok_ = (n.getDebugName(16) or n.getDebugName(1)) == fam and (n.getDebugName(17) or n.getDebugName(2)) == st and fi_['post'].italicAngle != 0 and 'fpgm' in fi_
+        check('sahafa', f'{fam} {st}: present, italic angle set, hinted', ok_)
+    for vf_ in (f'{ps}[wght].ttf', f'{ps}-Italic[wght].ttf'):
+        p = os.path.join(DIST, 'variable', vf_)
+        ok_ = os.path.exists(p)
+        if ok_:
+            fv_ = TTFont(p)
+            ok_ = 'fvar' in fv_ and [(a.axisTag, a.minValue, a.maxValue) for a in fv_['fvar'].axes] == [('wght', 400, 700)] and len(fv_.getGlyphOrder()) == len(SAH[ps, 'Regular'].getGlyphOrder())
+        check('sahafa', f'{vf_}: weight axis 400-700, no glyph dropped', ok_)
+if SAH:
+    sys.path.insert(0, os.path.join(ROOT, 'src'))
+    from retrofont import model as _M, sahafa as _S, engine as _E
+    for _m in ('latin', 'latin_ext', 'arabic', 'terminal', 'symbols', 'greek_cyrillic', 'more_scripts'):
+        __import__('retrofont.' + _m)
+    def _ar(tr):
+        st_ = _S.style(400); st_.npar['traps'] = tr
+        g_ = _M.build_glyphs(st_, only={'uni0633.medi', 'uni0635.medi'})
+        return [sum(abs(_E._area([(q[0], q[1]) for q in c])) * (1 if _E._area([(q[0], q[1]) for q in c]) * _E._area([(q[0], q[1]) for q in max(g_[n].contours, key=len)]) > 0 else -1) for c in g_[n].contours) for n in ('uni0633.medi', 'uni0635.medi')]
+    a0, a1 = _ar(0), _ar(0.42)
+    check('sahafa', 'ink traps: the generator cuts notches at the crotches of seen and sad (ink area 60 to 2500 square units smaller)', all(60 < x - y < 2500 for x, y in zip(a0, a1)), [round(x - y) for x, y in zip(a0, a1)])
+    ri_ = R('SuharSahafa-Italic')
+    check('sahafa', 'italic: Arabic and Latin shape, lam-alef forms', any('06440627' in x for x in names(ri_, 'الاقتصاد')) and len(names(ri_, 'news')) == 4)
+    for ft_, tx_, tst_ in (('dlig', 'لم', lambda g: len(g) == 1), ('ss06', 'في', lambda g: g[0].endswith('.ret')), ('ss07', 'نجم', lambda g: any('.st' in x or 'stack' in x or len(g) < 3 for x in g))):
+        g0_, g1_ = names(rs_, tx_), names(rs_, tx_, features={ft_: True})
+        check('sahafa', f'{ft_} changes {tx_} in Sahafa', g0_ != g1_, (g0_, g1_))
+
 # ---- word spacing in every proportional static font ----
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import wordspace as WS

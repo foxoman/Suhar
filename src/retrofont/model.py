@@ -213,7 +213,7 @@ def _shapes(d: GDef, st: Style, xs: float):
     if _lm and not own and not alias and _is_lower(d):
         for s in shapes:
             _ys = [n.y for n in s.nodes]
-            if s.kind == 'fill' and min(_ys) > 300 and max(_ys) - min(_ys) < 260:      # a dot stays where it is
+            if s.kind == 'fill' and len(s.nodes) == 4 and min(_ys) > 300 and max(_ys) - min(_ys) < 260:      # a dot stays where it is
                 continue
             else:
                 s.transform(lambda x, y: (x, _lm(y)))
