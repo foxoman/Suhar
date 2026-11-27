@@ -99,6 +99,15 @@ class Style:
         self.ra = self.apen.extent()[1]
         self.ns['k'] = self.ra
         self.ns['q'] = self.ra * lerp(1.02, 0.86, t)
+        if self.opsz:          # caption: less contrast, larger dots, marks further out; display: more contrast
+            o = self.opsz
+            c = (-0.07, 0.09, 0.14, 24.0) if o < 0 else (0.05, -0.07, -0.04, 0.0)
+            k = abs(o)
+            self.apen = E.Pen(ra_ * (lerp(1.36, 1.40, ta_) + c[0] * k), ra_ * (lerp(0.50, 0.56, ta_) + c[1] * k), 62.0)
+            self.ra = self.apen.extent()[1]
+            self.ns['k'] = self.ra
+            self.ns['q'] = self.ra * lerp(1.02, 0.86, t) * (1 + c[2] * k)
+            self.markgap = c[3] * k
         return self
 
     @property

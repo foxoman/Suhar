@@ -64,8 +64,11 @@ ARABIC = {
     'jeem.isol': dict(spec=_jh + "; " + _jb, dy=-28, bdy=28),
     'jeem.fina': dict(spec=_jh + "; " + _jb + "; 522,k 30,k", aw=522, dy=-28, bdy=28),
     # ي (and the other toothed letters): the tooth leans and bends into the join
-    'beh.init': dict(spec=f"168,{TH} ~168,128 152,88 ~132,k 72,k 0,k", dy=0),
-    'beh.medi': dict(spec=f"128,{TH} ~128,128 114,88 ~96,k 52,k 0,k; 252,k 100,k", aw=252, dy=0),
+    'beh.init': dict(spec=f"168,{TH} ~168,128 152,88 ~132,k 72,k 0,k", dy=-30),
+    'behr.init': dict(spec=f"140,{TH} ~140,128 126,88 ~108,k 60,k 0,k", dy=-30),
+    'behr.medi': dict(spec=f"108,{TH - 12} ~108,128 96,88 ~80,k 42,k 0,k; 215,k 85,k", aw=215, dy=-30),
+    'rehr.fina': dict(spec=f"258,k 236,k ~206,k 198,-20 ~176,{DB + 8} 20,{DB - 4} -44,{DB - 4}", aw=258, dx=6, dy=0),
+    'beh.medi': dict(spec=f"128,{TH} ~128,128 114,88 ~96,k 52,k 0,k; 252,k 100,k", aw=252, dy=-30),
     'yeh.fina': dict(spec="472,k 432,k ~378,k 378,0 ~378,-72 190,-72 ~-22,-72 -22,18 ~-22,98 24,150", aw=472, dy=-17, bdy=-14),
     'yeh.isol': dict(spec="500,212 ~500,298 420,298 ~336,298 336,214 ~336,132 396,82 ~442,46 442,4 ~442,-72 220,-72 ~-22,-72 -22,18 ~-22,98 24,150", dy=-17, bdy=-14),
     # ف: a round, open loop standing on the line
@@ -161,7 +164,7 @@ ARABIC = {
 # Latin: a sturdy serif.  b = half thickness of a horizontal; the top of the x-height is at 470.
 _T, _B = "470-b+o", "b-o"
 LATIN = {
-    'n': f"0,0 0,470-b; 0,340@.8 ~0,{_T} 182,{_T} ~334,{_T} 334,330 334,0; -48-a,b 48+a,b; 334-48-a,b 334+48+a,b; -50-a,470-b 0,470-b; f -a+2,2*b -a-38,2*b -a+2,2*b+43; f a-2,2*b a+38,2*b a-2,2*b+43; f 334-a+2,2*b 334-a-38,2*b 334-a+2,2*b+43; f 334+a-2,2*b 334+a+38,2*b 334+a-2,2*b+43; f -a+2,470-2*b -a-40,470-2*b -a+2,470-2*b-45",
+    'n': f"0,0 0,470-b; 0,340@.8 ~0,{_T} 182,{_T} ~334,{_T} 334,330 334,0; -48-a,b 48+a,b; 334-48-a,b 334+48+a,b; -50-a,470-b 0,470-b; f -a+2,2*b -a-46,2*b ~-a-9,2*b+12 -a+2,2*b+60; f a-2,2*b a+46,2*b ~a+9,2*b+12 a-2,2*b+60; f 334-a+2,2*b 334-a-46,2*b ~334-a-9,2*b+12 334-a+2,2*b+60; f 334+a-2,2*b 334+a+46,2*b ~334+a+9,2*b+12 334+a-2,2*b+60; f -a+2,470-2*b -a-48,470-2*b ~-a-10,470-2*b-13 -a+2,470-2*b-63",
     'a': (f"336,0 336,300 ~336,{_T} 182,{_T} ~78,{_T} 40,372; oval 58,362 46,42; 336,272@.9 178,272 ~4,272 4,136 ~4,{_B} 160,{_B} "
           f"~336,{_B} 336,150@.72; 336,b 336+68+a,b"),
     'e': f"6,246 398,246 ~398,{_T} 204,{_T} ~4,{_T} 4,236 ~4,{_B} 212,{_B} ~338,{_B} 392,98",
@@ -178,13 +181,14 @@ def _h(x, l, r, y, br=True):
     a0 = f"{x}-{l - 38}-a" if l else f"{x}"
     a1 = f"{x}+{r - 38}+a" if r else f"{x}"
     s = f"{a0},{y} {a1},{y}"
-    if br:                                                        # a wedge between serif and stem
+    if br:                                                        # a curved bracket between serif and stem
         up = y == 'b'
         e, d = (f"{y}+b", '+') if up else (f"{y}-b", '-')
-        if l:
-            s += f"; f {x}-a+2,{e} {x}-a-{round((l - 38) * 0.8)},{e} {x}-a+2,{e}{d}{round((l - 38) * 0.9)}"
-        if r:
-            s += f"; f {x}+a-2,{e} {x}+a+{round((r - 38) * 0.8)},{e} {x}+a-2,{e}{d}{round((r - 38) * 0.9)}"
+        for sg, n in (('-', l), ('+', r)):
+            if n:
+                w, h = round((n - 38) * 0.95), round((n - 38) * 1.3)
+                s += (f"; f {x}{sg}a{'+' if sg == '-' else '-'}2,{e} {x}{sg}a{sg}{w},{e} ~{x}{sg}a{sg}{round(w * 0.2)},{e}{d}{round(h * 0.2)} "
+                      f"{x}{sg}a{'+' if sg == '-' else '-'}2,{e}{d}{h}")
     return s
 
 
@@ -223,8 +227,8 @@ SERIF = {
     'uni039B': _h(0, 78, 78, 'b', True) + '; ' + _h(560, 78, 78, 'b', True), 'uni03A6': _f(290) + '; ' + _c(290), 'uni03A8': _f(290) + '; ' + _c(290),
     'dotlessi': _x(0, 84, 0) + '; ' + _f(0),
 }
-LATIN['l'] = ("0,0 0,C-b; -46-a,C-b 0,C-b; -46-a,b 46+a,b; f -a+2,2*b -a-37,2*b -a+2,2*b+41; f a-2,2*b a+37,2*b a-2,2*b+41; "
-              "f -a+2,C-2*b -a-37,C-2*b -a+2,C-2*b-41")
+LATIN['l'] = ("0,0 0,C-b; -46-a,C-b 0,C-b; -46-a,b 46+a,b; f -a+2,2*b -a-44,2*b ~-a-9,2*b+11 -a+2,2*b+57; f a-2,2*b a+44,2*b ~a+9,2*b+11 a-2,2*b+57; "
+              "f -a+2,C-2*b -a-44,C-2*b ~-a-9,C-2*b-11 -a+2,C-2*b-57")
 LATSB = {'l': (70, 70)}
 
 # Italic: no slabs at the feet; the last stem of a letter leaves the line in a curved stroke, a is the one-storey form.
@@ -235,8 +239,8 @@ SERIF_IT = {
     'k': _c(0, 84, 0), 'r': _x(0, 84, 0), 'f': '', 'v': '', 'x': '', 'y': '', 'z': '',
 }
 LATIN_IT = {
-    'n': f"0,0 0,470-b; 0,340@.8 ~0,{_T} 182,{_T} ~334,{_T} 334,330 334,88 ~334,b 392,b 400+a,b+24; -50-a,470-b 0,470-b; f -a+2,470-2*b -a-40,470-2*b -a+2,470-2*b-45",
-    'l': "0,88 0,C-b; -46-a,C-b 0,C-b; 0,92 ~0,b 58,b 66+a,b+24; f -a+2,C-2*b -a-37,C-2*b -a+2,C-2*b-41",
+    'n': f"0,0 0,470-b; 0,340@.8 ~0,{_T} 182,{_T} ~334,{_T} 334,330 334,88 ~334,b 392,b 400+a,b+24; -50-a,470-b 0,470-b; f -a+2,470-2*b -a-48,470-2*b ~-a-10,470-2*b-13 -a+2,470-2*b-63",
+    'l': "0,88 0,C-b; -46-a,C-b 0,C-b; 0,92 ~0,b 58,b 66+a,b+24; f -a+2,C-2*b -a-44,C-2*b ~-a-9,C-2*b-11 -a+2,C-2*b-57",
     'w': "0,470-b 102,74 ~118,b-4 134,74 218,352 ~232,404 246,352 330,74 ~346,b-4 362,74 464,470-b",
 }
 
@@ -281,21 +285,28 @@ def _ligatures():
 CUTS = ('text', 'headline')
 
 
-def style(wght=400, cut='text', italic=False, compat=False):
+def style(wght=400, cut='text', italic=False, compat=False, opsz=0.0, grade=0.0):
     """Style of Suhar Sahafa.  cut: 'text' (wider, calmer) or 'headline' (tighter, sharper, deeper bowls)."""
     head = cut == 'headline'
-    st = Style('Sans', wght, italic, 0.0, compat).set_naskh()
+    st = Style('Sans', wght, italic, opsz, compat).set_naskh()
+    st.markgap = 0.0
     t = st.t
     ta_ = t if t <= 1 else 1 + (t - 1) * 0.55
-    ra_ = (lerp(44, 74, ta_) + lerp(38, 61, ta_)) / 2 * (st.r / ((lerp(44, 74, t) + lerp(38, 61, t)) / 2)) * lerp(1.12, 1.05, min(max(t, 0.0), 1.0))
+    ra_ = (lerp(44, 74, ta_) + lerp(38, 61, ta_)) / 2 * (st.r / ((lerp(44, 74, t) + lerp(38, 61, t)) / 2)) * lerp(1.12, 1.05, min(max(t, 0.0), 1.0)) * (1 + 0.07 * grade)
     st.arx *= 0.93                                                 # a newspaper column needs an economical letter
     if head:
-        st.apen = E.Pen(ra_ * 1.30, ra_ * 0.62, 62.0)              # more contrast for large sizes
+        pa, pb = 1.30, 0.62                                        # more contrast for large sizes
     else:
-        st.apen = E.Pen(ra_ * 1.20, ra_ * 0.75, 62.0)              # moderate contrast, sturdy thins
+        pa, pb = 1.20, 0.75                                        # moderate contrast, sturdy thins
+    ok_ = abs(opsz)
+    if opsz < 0:                                                   # caption: thicker thin strokes
+        pa, pb = pa - 0.05 * ok_, pb + 0.08 * ok_
+    elif opsz > 0:                                                 # display: finer
+        pa, pb = pa + 0.06 * ok_, pb - 0.09 * ok_
+    st.apen = E.Pen(ra_ * pa, ra_ * pb, 62.0)
     st.ra = st.apen.extent()[1]
     st.ns['k'] = st.ra
-    st.ns['q'] = st.ra * lerp(1.0, 0.86, t)
+    st.ns['q'] = st.ra * lerp(1.0, 0.86, t) * (1 + (0.14 if opsz < 0 else -0.04) * ok_)
     st.npar = dict(low=0.16, high=0.03, K=0.56, taper=0.62, top=0.6, foot=0.8, swing=0.0, ymap=_armap(st.ra), traps=0.42)
     if head:
         st.npar.update(low=0.20, taper=0.42, top=0.5, foot=0.66, deep=1.14, traps=0.3)
@@ -303,6 +314,13 @@ def style(wght=400, cut='text', italic=False, compat=False):
         st.sbs *= 0.88
         st.xs *= 0.95
         st.spacef = 0.92
+    if opsz < 0:                                                   # caption: wider letters, deeper traps, marks further out
+        st.arx *= 1 + 0.03 * ok_
+        st.npar['traps'] *= 1 + 0.5 * ok_
+        st.markgap = 24.0 * ok_
+    elif opsz > 0:
+        st.npar['traps'] *= 1 - 0.6 * ok_
+        st.npar['taper'] *= 1 - 0.2 * ok_
     st.altspec = ARABIC
     st.altsub = _ligatures()
     # Latin: the stem as thick as the Arabic baseline stroke, horizontals thinner
@@ -322,6 +340,7 @@ def style(wght=400, cut='text', italic=False, compat=False):
     st.latmap = _latmap
     st.xh = LATIN_X
     st.sahafa = cut
+    st.grade = grade
     return st
 
 

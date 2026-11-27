@@ -42,6 +42,23 @@ def make_features(glyphs: dict, display: bool = False, naskh: bool = False) -> s
                 "@TeethTall = [" + ' '.join(A.TEETH['tall']) + "];",
                 "feature calt {", "    script arab;", "    lookupflag IgnoreMarks;",
                 "    sub [@TeethInit @TeethMedi] @TeethMedi' @TeethMedi by @TeethTall;", "} calt;", ""]
+    br = [(a, b) for a, b in A.BEHR.items() if have(a) and have(b)]
+    rr = [(a, b) for a, b in A.REHR.items() if have(a) and have(b)]
+    if (naskh or display) and br and rr:
+        tm = [(a, b) for a, b in zip(A.TEETH['medi'], A.TEETH['tall']) if have(a) and have(b)]
+        tb = [n for n in A.TALL_BEFORE if have(n)]
+        out += ["@BehN = [" + ' '.join(a for a, _ in br) + "];", "@BehR = [" + ' '.join(b for _, b in br) + "];",
+                "@RehN = [" + ' '.join(a for a, _ in rr) + "];", "@RehR = [" + ' '.join(b for _, b in rr) + "];",
+                "@TmN = [" + ' '.join(a for a, _ in tm) + "];", "@TmT = [" + ' '.join(b for _, b in tm) + "];", "@TallBefore = [" + ' '.join(tb) + "];",
+                "lookup beh_r {", "    sub @BehN by @BehR;", "} beh_r;", "lookup reh_r {", "    sub @RehN by @RehR;", "} reh_r;",
+                "lookup tooth_t {", "    sub @TmN by @TmT;", "} tooth_t;",
+                "feature calt {", "    script arab;",
+                "    lookup nb_ctx1 {", "        lookupflag IgnoreMarks;", "        sub @BehN' lookup beh_r @RehN;", "    } nb_ctx1;",
+                "    lookup nb_ctx2 {", "        lookupflag IgnoreMarks;", "        sub @BehR @RehN' lookup reh_r;", "    } nb_ctx2;",
+                "    lookup nb_ctx3 {", "        lookupflag IgnoreMarks;", "        sub @TmN' lookup tooth_t @TallBefore;", "    } nb_ctx3;", "} calt;", ""]
+    ja = [(a, b) for a, b in A.JALT.items() if have(a) and have(b)]
+    if ja and not have('LIG.h'):
+        out += ["feature jalt {", "    script arab;"] + [f"    sub {a} by {b};" for a, b in sorted(ja)] + ["} jalt;", ""]
     rt = [(a, b) for a, b in A.RET.items() if have(a) and have(b)]
     rp = [n for n in A.RET_PREV if have(n)]
     if (naskh or display) and rt and rp:

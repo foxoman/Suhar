@@ -199,7 +199,7 @@ def arabic_tails(glyphs):
         if 'init' not in forms:
             for f in ('isol', 'fina'):
                 n = forms.get(f)
-                for m in (n, A.SS01.get(n)):
+                for m in (n, A.SS01.get(n), A.REHR.get(n)):
                     if m and m in glyphs and glyphs[m].contours:
                         firsts.append(m)
         for f in ('isol', 'init'):
@@ -245,7 +245,7 @@ def arabic_word_space(glyphs):
     for cp, forms in A.FORMS.items():
         for f in ('isol', 'fina'):
             n = forms.get(f)
-            for m in (n, A.SS01.get(n), A.RET.get(n), A.STACK_JEEM.get(n)):
+            for m in (n, A.SS01.get(n), A.RET.get(n), A.STACK_JEEM.get(n), A.REHR.get(n), A.JALT.get(n)):
                 if m:
                     names.add(m)
     names.update(n for n in A.LIGA.values())

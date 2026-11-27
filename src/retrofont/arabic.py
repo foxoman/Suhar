@@ -155,6 +155,8 @@ def ar_fn(st: Style, d):
     l = inf.get('l', 45) * st.sbs + st.sba
     r = inf.get('r', 45) * st.sbs + st.sba
     f = 1.0 if mark else st.arx
+    if not st.mono:
+        f *= inf.get('stretch', 1.0)          # justification alternates: a longer body, the same pen
     f0 = f
 
     SC = 1.0 if (mark or inf.get('tab')) else (AR_SCALE_MONO if st.mono else AR_SCALE)
@@ -335,6 +337,9 @@ def ar_fn(st: Style, d):
             y0_ += slope * x0_
         x = x0_ * (1 if an.startswith('_') else f) * sc + (0 if mark else dx)
         y = y0_ * sc
+        _mg = getattr(st, 'markgap', 0.0)         # small optical sizes: marks stand further from the letter
+        if _mg and not mark and not inf.get('tab'):
+            y += _mg if an.startswith('top') else (-_mg if an.startswith('bot') else 0.0)
         g.anchors[an] = (x + (y - ky) * ta, y)
     if getattr(st, 'display', False) and letter and not st.mono and (jl or jr) and d.name != 'uni0640':
         if jl:
@@ -763,6 +768,36 @@ for _cp, (_if, _im, _code) in LETTERS.items():
         TEETH['init'].append(FORMS[_cp]['init'])
         TEETH['medi'].append(FORMS[_cp]['medi'])
         TEETH['tall'].append(_nm)
+
+# ---- neighbour forms (calt in the Naskh families): a tooth before final reh / zain is narrower and the reh starts
+#      at once, without a flat join; a tooth before final noon / yeh is raised (TEETH['tall']) ----
+R('behr.init', "150,335 150,130 ~150,k 75,k 0,k", top=(140, 335), bot=(120, 0), da=(142, 335), db=(120, 0))
+R('behr.medi', "110,330 110,130 ~110,k 40,k 0,k; 215,k 85,k", aw=215, top=(105, 330), bot=(105, 0), da=(105, 330), db=(105, 0))
+R('rehr.fina', "250,k 232,k ~190,k 190,-30 ~190,-150 10,-150 -40,-150", **{k_: v_ for k_, v_ in RASM['reh.fina'].items() if k_ not in ('spec', 'aw')}, aw=250)
+BEHR, REHR, TALL_BEFORE = {}, {}, []
+for _cp, (_if, _im, _code) in LETTERS.items():
+    if _im == 'beh':
+        for _f in ('init', 'medi'):
+            if _f in FORMS.get(_cp, {}):
+                _nm, _s, _inf = _letter(_cp, _f, 'behr', '.r')
+                AR(_nm, _s, **_inf)
+                BEHR[FORMS[_cp][_f]] = _nm
+    if _if == 'reh' and 'fina' in FORMS.get(_cp, {}):
+        _nm, _s, _inf = _letter(_cp, 'fina', 'rehr', '.r')
+        AR(_nm, _s, **_inf)
+        REHR[FORMS[_cp]['fina']] = _nm
+    if _if in ('noon', 'yeh') and 'fina' in FORMS.get(_cp, {}):
+        TALL_BEFORE.append(FORMS[_cp]['fina'])
+
+# ---- justification alternates (jalt): final and isolated letters with a long flat body, stretched by 40 % ----
+JALT = {}
+for _cp, (_if, _im, _code) in LETTERS.items():
+    if _if in ('beh', 'feh', 'kaf', 'keheh', 'gaf'):
+        for _f in ('isol', 'fina'):
+            _b = FORMS.get(_cp, {}).get(_f)
+            if _b and _b in INFO and 'adv' not in INFO[_b]:
+                AR(_b + '.jalt', INFO[_b]['spec'], **{**{k_: v_ for k_, v_ in INFO[_b].items() if k_ != 'spec'}, 'stretch': 1.4})
+                JALT[_b] = _b + '.jalt'
 
 # ---- khanjar tails (ss01): reh and waw end in an upturned hook ----------------------------------
 SS01 = {}

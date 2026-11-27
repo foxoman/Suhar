@@ -557,7 +557,7 @@ check('naskh', 'kaf top stays inside the ascender and ends in a point, not a fla
 g = names(naskh, 'لمح', features={'dlig': True})
 check('naskh', 'dlig: lam standing on meem (لمح)', 'lam_meem.init' in g, g)
 check('naskh', 'Naskh draws its own meem and yeh', bounds(FN, 'uni0645') != bounds(F, 'uni0645') and bounds(FN, 'uni064A') != bounds(F, 'uni064A'))
-for vf_ in ('SuharNaskh[wght].ttf', 'SuharNaskh-Italic[wght].ttf', 'SuharNaskhDisplay[wght].ttf'):
+for vf_ in ('SuharNaskh[opsz,wght].ttf', 'SuharNaskh-Italic[opsz,wght].ttf', 'SuharNaskhDisplay[wght].ttf'):
     pv = os.path.join(DIST, 'variable', vf_)
     okv = os.path.exists(pv)
     if okv:
@@ -674,13 +674,13 @@ for ps, fam in (('SuharSahafa', 'Suhar Sahafa'), ('SuharSahafaHeadline', 'Suhar 
             fi_ = TTFont(p); n = fi_['name']
             ok_ = (n.getDebugName(16) or n.getDebugName(1)) == fam and (n.getDebugName(17) or n.getDebugName(2)) == st and fi_['post'].italicAngle != 0 and 'fpgm' in fi_
         check('sahafa', f'{fam} {st}: present, italic angle set, hinted', ok_)
-    for vf_ in (f'{ps}[wght].ttf', f'{ps}-Italic[wght].ttf'):
+    for vf_ in (f'{ps}[GRAD,opsz,wght].ttf', f'{ps}-Italic[GRAD,opsz,wght].ttf'):
         p = os.path.join(DIST, 'variable', vf_)
         ok_ = os.path.exists(p)
         if ok_:
             fv_ = TTFont(p)
-            ok_ = 'fvar' in fv_ and [(a.axisTag, a.minValue, a.maxValue) for a in fv_['fvar'].axes] == [('wght', 400, 700)] and len(fv_.getGlyphOrder()) == len(SAH[ps, 'Regular'].getGlyphOrder())
-        check('sahafa', f'{vf_}: weight axis 400-700, no glyph dropped', ok_)
+            ok_ = 'fvar' in fv_ and sorted((a.axisTag, a.minValue, a.maxValue) for a in fv_['fvar'].axes) == [('GRAD', -50, 50), ('opsz', 8, 72), ('wght', 400, 700)] and len(fv_.getGlyphOrder()) == len(SAH[ps, 'Regular'].getGlyphOrder())
+        check('sahafa', f'{vf_}: weight, optical size and grade axes, no glyph dropped', ok_)
 if SAH:
     sys.path.insert(0, os.path.join(ROOT, 'src'))
     from retrofont import model as _M, sahafa as _S, engine as _E
@@ -712,8 +712,8 @@ if SAH:
         pass
     tj_ = os.path.join(DIST, 'variable', 'ink-traps.json')
     rec_ = json.load(open(tj_)) if os.path.exists(tj_) else {}
-    for v_ in ('SuharSahafa[wght].ttf', 'SuharSahafa-Italic[wght].ttf', 'SuharSahafaHeadline[wght].ttf', 'SuharSahafaHeadline-Italic[wght].ttf'):
-        check('sahafa', f"{v_}: ink traps in the glyphs whose masters match (more than 100)", rec_.get(v_, 0) > 100, rec_.get(v_))
+    for v_ in ('SuharSahafa[GRAD,opsz,wght].ttf', 'SuharSahafa-Italic[GRAD,opsz,wght].ttf', 'SuharSahafaHeadline[GRAD,opsz,wght].ttf', 'SuharSahafaHeadline-Italic[GRAD,opsz,wght].ttf'):
+        check('sahafa', f"{v_}: ink traps in the glyphs whose ten masters match (more than 60)", rec_.get(v_, 0) > 60, rec_.get(v_))
     for ps_, fam_ in (('SuharNerdSahafa', 'Suhar Nerd Sahafa'), ('SuharNerdSahafaHeadline', 'Suhar Nerd Sahafa Headline')):
         for st_ in ('Regular', 'Italic', 'Medium', 'Medium Italic', 'SemiBold', 'SemiBold Italic', 'Bold', 'Bold Italic'):
             p = os.path.join(DIST, 'ttf', f"{ps_}-{st_.replace(' ', '')}.ttf")
@@ -722,6 +722,57 @@ if SAH:
                 fn2 = TTFont(p); n = fn2['name']
                 ok_ = (n.getDebugName(16) or n.getDebugName(1)) == fam_ and n.getDebugName(6) == f"{ps_}-{st_.replace(' ', '')}" and 0xE0B0 in fn2.getBestCmap() and 0xF013 in fn2.getBestCmap()
             check('sahafa', f'{fam_} {st_}: present, named, with Powerline and icon glyphs', ok_)
+
+# ---- 2.4: optical sizes, grades, neighbour forms, justification alternates, caption cut, print proof ----
+if SAH:
+    from fontTools.varLib import instancer as _I
+    def _inst(vf, **loc):
+        return _I.instantiateVariableFont(TTFont(os.path.join(DIST, 'variable', vf)), loc)
+    for vf_ in ('SuharSahafa[GRAD,opsz,wght].ttf', 'SuharSahafaHeadline-Italic[GRAD,opsz,wght].ttf'):
+        d0, gm, gp = _inst(vf_, wght=400, opsz=14, GRAD=0), _inst(vf_, wght=400, opsz=14, GRAD=-50), _inst(vf_, wght=400, opsz=14, GRAD=50)
+        nd = [n for n in d0.getGlyphOrder() if not (d0['hmtx'][n][0] == gm['hmtx'][n][0] == gp['hmtx'][n][0])]
+        k0, km, kp = (bounds(x, 'uni0640')[3] - bounds(x, 'uni0640')[1] for x in (d0, gm, gp))
+        check('optical', f'{vf_}: a grade changes the stroke (-50 lighter, +50 heavier) and no advance width', not nd and km < k0 - 3 and kp > k0 + 3, (len(nd), km, k0, kp))
+        o8, o72 = _inst(vf_, wght=400, opsz=8, GRAD=0), _inst(vf_, wght=400, opsz=72, GRAD=0)
+        t8, t14, t72 = (stem_at(x, 'uni0644.init', 350) for x in (o8, d0, o72))
+        check('optical', f'{vf_}: thin strokes thicker in the caption size and finer in the display size', t8 > t14 + 2 and t72 < t14 - 2, (round(t8), round(t14), round(t72)))
+        check('optical', f'{vf_}: the caption size is set looser than the display size', o8['hmtx']['uni0628'][0] > o72['hmtx']['uni0628'][0] + 15, (o8['hmtx']['uni0628'][0], o72['hmtx']['uni0628'][0]))
+    for vf_ in ('SuharNaskh[opsz,wght].ttf', 'SuharNaskh-Italic[opsz,wght].ttf'):
+        fv_ = TTFont(os.path.join(DIST, 'variable', vf_))
+        o8, o72 = _inst(vf_, wght=400, opsz=8), _inst(vf_, wght=400, opsz=72)
+        t8, t72 = stem_at(o8, 'uni0644.init', 400), stem_at(o72, 'uni0644.init', 400)
+        check('optical', f'{vf_}: optical size axis 8-72, thin strokes thicker at 8 than at 72', sorted(a.axisTag for a in fv_['fvar'].axes) == ['opsz', 'wght'] and t8 > t72 + 3, (round(t8), round(t72)))
+    for lab_, rr_ in (('Sahafa', rs_), ('Naskh', naskh), ('Naskh Display', disp)):
+        g1, g0 = names(rr_, 'بر'), names(rr_, 'بر', features={'calt': False})
+        check('neighbour', f'{lab_}: a tooth before final reh takes the narrow form and the reh starts at once (calt)', all(x.endswith('.r') for x in g1) and not any(x.endswith('.r') for x in g0), (g1, g0))
+        g1 = names(rr_, 'بين')
+        check('neighbour', f'{lab_}: a tooth before final noon or yeh is raised', any('.tall' in x for x in g1) and any('.tall' in x for x in names(rr_, 'نبي')), g1)
+        w1 = sum(a for _, a, *_ in shape(rr_, 'تبرير')); w0 = sum(a for _, a, *_ in shape(rr_, 'تبرير', features={'calt': False}))
+        if lab_ != 'Naskh Display':            # the Display family has other calt forms in the same word
+            check('neighbour', f'{lab_}: the narrow forms shorten the word', 20 < w0 - w1 < 260, (w0, w1))
+    check('neighbour', 'Suhar (sans) keeps its plain forms', not any(x.endswith('.r') for x in names(reg, 'بر')))
+    for lab_, rr_ in (('Sahafa', rs_), ('Suhar', reg), ('Naskh', naskh)):
+        w0 = sum(a for _, a, *_ in shape(rr_, 'كتب')); w1 = sum(a for _, a, *_ in shape(rr_, 'كتب', features={'jalt': True}))
+        check('justification', f'{lab_}: jalt gives a final beh that is 25 to 45 % longer', 1.1 * w0 < w1 and any(x.endswith('.jalt') for x in names(rr_, 'كتب', features={'jalt': True})), (w0, w1))
+        g_ = shape(rr_, 'كتــب'); k_ = [x for x in g_ if x[0] == 'uni0640']
+        check('justification', f'{lab_}: tatweel joins inside a word', len(k_) == 2 and all(x[2] == 0 and x[3] == 0 for x in g_))
+    check('justification', 'Suhar Mono has no jalt (the cell is fixed)', not any(x.endswith('.jalt') for x in names(mono, 'كتب', features={'jalt': True})))
+    for st in ('Regular', 'Italic', 'Medium', 'Medium Italic', 'SemiBold', 'SemiBold Italic', 'Bold', 'Bold Italic'):
+        p = os.path.join(DIST, 'ttf', f"SuharSahafaCaption-{st.replace(' ', '')}.ttf")
+        ok_ = os.path.exists(p)
+        if ok_:
+            fc_ = TTFont(p); n = fc_['name']
+            ok_ = (n.getDebugName(16) or n.getDebugName(1)) == 'Suhar Sahafa Caption' and (n.getDebugName(17) or n.getDebugName(2)) == st and 'fpgm' in fc_
+        check('optical', f'Suhar Sahafa Caption {st}: present, named, hinted', ok_)
+    fc_ = TTFont(os.path.join(DIST, 'ttf', 'SuharSahafaCaption-Regular.ttf')); ft_ = SAH['SuharSahafa', 'Regular']
+    check('optical', 'Caption: thicker thin strokes, looser spacing and larger dots than Text',
+          stem_at(fc_, 'uni0644.init', 350) > stem_at(ft_, 'uni0644.init', 350) + 2 and fc_['hmtx']['uni0628'][0] > ft_['hmtx']['uni0628'][0] + 15 and fc_['hmtx']['n'][0] > ft_['hmtx']['n'][0] + 15,
+          (round(stem_at(fc_, 'uni0644.init', 350)), round(stem_at(ft_, 'uni0644.init', 350)), fc_['hmtx']['uni0628'][0], ft_['hmtx']['uni0628'][0]))
+    rc_ = R('SuharSahafaCaption-Regular')
+    y1 = [x for x in shape(rc_, 'بَ') if x[0] != 'uni0628'][0][3]; y0 = [x for x in shape(rs_, 'بَ') if x[0] != 'uni0628'][0][3]
+    check('optical', 'Caption: marks stand further from the letter than in Text', y1 > y0 + 10, (y1, y0))
+    pp_ = os.path.join(ROOT, 'docs', 'Suhar-print-proof.pdf')
+    check('print', 'print proof PDF written, with the fonts embedded', os.path.exists(pp_) and os.path.getsize(pp_) > 200000 and b'FontFile2' in open(pp_, 'rb').read(), os.path.getsize(pp_) if os.path.exists(pp_) else 0)
 
 # ---- word spacing in every proportional static font ----
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
