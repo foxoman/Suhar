@@ -859,6 +859,47 @@ if SAH:
     ca = contour_areas(fx_, 'uni0635.init')
     check('families', 'Sahafa ExtraBold: the loop of sad is still open', len(ca) >= 2 and max(ca[:-1]) > 7000, [round(c) for c in ca])
 
+# ---- 2.8: marks clear of their baseline, app fonts ----
+bad_marks = []
+for fn_ in sorted(os.listdir(os.path.join(DIST, 'ttf'))):
+    if not fn_.endswith('.ttf') or 'Nerd' in fn_:
+        continue
+    fm_ = TTFont(os.path.join(DIST, 'ttf', fn_))
+    gl_ = fm_['glyf']
+    for n_, above in (('uni064B', True), ('uni064C', True), ('uni064E', True), ('uni064F', True), ('uni0651', True), ('uni0652', True), ('uni0654', True),
+                      ('uni064D', False), ('uni0650', False), ('uni0655', False)):
+        if n_ in gl_ and gl_[n_].numberOfContours > 0 and ((above and gl_[n_].yMin < 0) or (not above and gl_[n_].yMax > 0)):
+            bad_marks.append((fn_, n_))
+    if fn_ in ('Suhar-Bold.ttf', 'SuharSahafa-Bold.ttf', 'SuharNaskh-Bold.ttf'):
+        check('marks', f'{fn_[:-4]}: kasratan keeps its two strokes apart', gl_['uni064D'].numberOfContours == 2, gl_['uni064D'].numberOfContours)
+check('marks', 'in every static font the Arabic vowel marks lie wholly above or wholly below their own origin (Retro Nim UI leaves out a mark that crosses it)', not bad_marks, bad_marks[:6])
+g_ = shape(R('Suhar-Bold'), 'صُ')
+_fb = TTFont(os.path.join(DIST, 'ttf', 'Suhar-Bold.ttf'))
+_dy = [x for x in g_ if x[0] == 'uni064F'][0][3] + _fb['glyf']['uni064F'].yMin
+check('marks', 'Bold: damma still sits at the same height over sad (its lowest point 440 to 520 above the baseline)', 440 <= _dy <= 520, _dy)
+APP = os.path.join(ROOT, 'nim', 'fonts', 'app')
+for ps_, src_, lim_ in (('SuharApp', 'Suhar', 300), ('SuharAppLite', 'Suhar', 100), ('SuharAppRead', 'SuharSahafa', 320)):
+    for st in ('Regular', 'Bold', 'Italic', 'BoldItalic'):
+        pa_ = os.path.join(APP, f'{ps_}-{st}.ttf')
+        ok_ = os.path.exists(pa_)
+        det_ = None
+        if ok_:
+            fa_ = TTFont(pa_)
+            fr_ = TTFont(os.path.join(DIST, 'ttf', f'{src_}-{st}.ttf'))
+            ca_, cr_ = fa_.getBestCmap(), fr_.getBestCmap()
+            same_ = all(fa_['hmtx'][ca_[c]][0] == fr_['hmtx'][cr_[c]][0] for c in ca_)
+            kb_ = os.path.getsize(pa_) / 1024
+            ok_ = same_ and kb_ < lim_ and 'fpgm' not in fa_ and 0xFE91 in ca_ and 0x0628 in ca_ and 0x41 in ca_ and 0xE120 in ca_
+            det_ = (round(kb_), same_, len(ca_))
+        check('app fonts', f'{ps_}-{st}: under {lim_} KB, unhinted, every advance equal to the release font, Arabic presentation forms and UI icons present', ok_, det_)
+for ps_, src_ in (('SuharApp', 'Suhar'), ('SuharAppLite', 'Suhar'), ('SuharAppRead', 'SuharSahafa')):
+    ra_, rr_ = Renderer(os.path.join(APP, f'{ps_}-Regular.ttf')), R(f'{src_}-Regular')
+    for tx_ in ('مرحباً بكم في صُحار', 'Total: 2.500 — 0123456789', 'الاستعمالات المعلم في كال'):
+        check('app fonts', f'{ps_}: shapes "{tx_}" exactly as the release font does', [x[1:] for x in shape(ra_, tx_)] == [x[1:] for x in shape(rr_, tx_)])
+check('app fonts', 'SuharApp keeps every language (Greek, Cyrillic, Persian, Urdu); SuharAppLite does not',
+      all(c in TTFont(os.path.join(APP, 'SuharApp-Regular.ttf')).getBestCmap() for c in (0x3A9, 0x416, 0x67E, 0x6D2)) and
+      0x416 not in TTFont(os.path.join(APP, 'SuharAppLite-Regular.ttf')).getBestCmap())
+
 # ---- word spacing in every proportional static font ----
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import wordspace as WS

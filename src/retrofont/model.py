@@ -339,6 +339,23 @@ def build_glyphs(st: Style, only=None) -> dict:
         else:
             g = make_skeleton_glyph(d, st)
         out[n] = g
+    # A combining mark is kept wholly above (or wholly below) its own origin, together with its anchors. The text looks
+    # the same, but some renderers (Retro Nim UI among them) leave out a mark whose outline crosses its baseline,
+    # which the heavier weights did with damma, fathatan and kasra.
+    for g in out.values():
+        if not g.contours or g.components or g.advance:
+            continue
+        up, down = '_top' in g.anchors, '_bottom' in g.anchors
+        if up == down:
+            continue
+        ys = [p[1] for c in g.contours for p in c]
+        sh = (8 - min(ys)) if (up and min(ys) < 8) else ((-8 - max(ys)) if (down and max(ys) > -8) else 0)
+        if sh:
+            sh = float(round(sh))
+            g.contours = [[(p[0], p[1] + sh) + tuple(p[2:]) for p in c] for c in g.contours]
+            g.anchors = {k: (x, y + sh) for k, (x, y) in g.anchors.items()}
+            if getattr(g, 'ink', None):
+                g.ink = (g.ink[0], g.ink[1] + sh, g.ink[2], g.ink[3] + sh)
     # pass 2: composites
     for n in names:
         d = REG[n]
