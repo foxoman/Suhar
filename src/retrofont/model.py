@@ -34,7 +34,7 @@ class Style:
     compat : keep stroke overlaps and exact point structure (variable masters)
     """
 
-    def __init__(self, family='Sans', wght=400, italic=False, opsz=0.0, compat=False, width=1.0):
+    def __init__(self, family='Sans', wght=400, italic=False, opsz=0.0, compat=False, width=1.0, grade=0.0):
         self.width = width
         self.cond = width < 0.99
         self.arx = 0.9 if self.cond else 1.0      # Arabic is condensed less than Latin
@@ -46,8 +46,9 @@ class Style:
         self.compat = compat
         t = (wght - 400) / 300.0
         self.t = t
-        a = lerp(44, 74, t)
-        hb = lerp(38, 61, t)
+        a = lerp(44, 74, t) * (1 + 0.07 * grade)          # grade: lighter or heavier strokes on the same widths
+        hb = lerp(38, 61, t) * (1 + 0.07 * grade)
+        self.grade = grade
         sbs, sba, xs = lerp(1.0, 0.86, t), 0.0, lerp(1.0, 0.94, t)
         if self.mono:
             a *= lerp(1.0, 0.92, t)
@@ -219,7 +220,7 @@ def _shapes(d: GDef, st: Style, xs: float):
             return REG[n].spec + '; ' + _ls[n]
         return REG[n].spec
     shapes = E.parse(spec, st.ns, look if (_la or _ls) else lookup)
-    if _lm and not own and not alias and _is_lower(d):
+    if _lm and not own and not alias and (_is_lower(d) or d.name.endswith('.onum')):
         for s in shapes:
             _ys = [n.y for n in s.nodes]
             if s.kind == 'fill' and len(s.nodes) == 4 and min(_ys) > 300 and max(_ys) - min(_ys) < 260:      # a dot stays where it is

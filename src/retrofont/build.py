@@ -19,7 +19,7 @@ from . import nerd
 
 WEIGHTS = [(400, 'Regular'), (500, 'Medium'), (600, 'SemiBold'), (700, 'Bold')]
 FAMILIES = {'Sans': 'Suhar', 'Mono': 'Suhar Mono', 'Cond': 'Suhar Condensed', 'Naskh': 'Suhar Naskh', 'NaskhD': 'Suhar Naskh Display',
-            'Sahafa': 'Suhar Sahafa', 'SahafaH': 'Suhar Sahafa Headline', 'SahafaC': 'Suhar Sahafa Caption'}
+            'Sahafa': 'Suhar Sahafa', 'SahafaH': 'Suhar Sahafa Headline', 'SahafaC': 'Suhar Sahafa Caption', 'NaskhC': 'Suhar Naskh Caption', 'Type': 'Suhar Typewriter'}
 EXTRA_WEIGHTS = [(300, 'Light'), (800, 'ExtraBold')]          # static only
 BLACK = (900, 'Black')                                        # Suhar only
 COND_WIDTH = 0.75
@@ -33,8 +33,11 @@ def mkstyle(fam, wght, italic, opsz=0.0, compat=False, grade=0.0):
     if fam in ('Sahafa', 'SahafaH', 'SahafaC'):
         from . import sahafa
         return sahafa.style(wght, 'headline' if fam == 'SahafaH' else 'text', italic, compat, -1.0 if fam == 'SahafaC' else opsz, grade)
-    if fam in ('Naskh', 'NaskhD'):
-        st = Style('Sans', wght, italic, opsz, compat).set_naskh()
+    if fam == 'Type':
+        from . import sahafa
+        return sahafa.style(wght, 'typewriter', italic, compat)
+    if fam in ('Naskh', 'NaskhD', 'NaskhC'):
+        st = Style('Sans', wght, italic, -1.0 if fam == 'NaskhC' else opsz, compat, grade=grade).set_naskh()
         st.display = fam == 'NaskhD'
         return st
     return Style(fam, wght, italic, opsz, compat)
@@ -42,7 +45,7 @@ def mkstyle(fam, wght, italic, opsz=0.0, compat=False, grade=0.0):
 
 def static_styles():
     for fam in FAMILIES:
-        ws = WEIGHTS if fam in ('Naskh', 'NaskhD', 'Sahafa', 'SahafaH', 'SahafaC') else [EXTRA_WEIGHTS[0]] + WEIGHTS + [EXTRA_WEIGHTS[1]]
+        ws = WEIGHTS if fam in ('Naskh', 'NaskhD', 'Sahafa', 'SahafaH', 'SahafaC', 'NaskhC') else [WEIGHTS[0], WEIGHTS[-1]] if fam == 'Type' else [EXTRA_WEIGHTS[0]] + WEIGHTS + [EXTRA_WEIGHTS[1]]
         if fam == 'Sans':
             ws = ws + [BLACK]
         for wght, wn in ws:
@@ -113,7 +116,7 @@ def make(st: Style, family_key: str):
     """-> ufo for one static style"""
     upright = None
     if st.italic and not st.mono:      # kerning is measured on the upright shapes
-        up = Style(st.family, st.wght, False, st.opsz, st.compat, width=st.width)
+        up = Style(st.family, st.wght, False, st.opsz, st.compat, width=st.width, grade=getattr(st, 'grade', 0.0))
         if getattr(st, 'sahafa', None):
             from . import sahafa
             up = sahafa.style(st.wght, st.sahafa, False, st.compat, st.opsz, getattr(st, 'grade', 0.0))
@@ -122,7 +125,7 @@ def make(st: Style, family_key: str):
             up.display = getattr(st, 'display', False)
         upright = build_glyphs(up)
     gl, kerning, groups = glyph_set(st, upright)
-    ufo = make_ufo(st, gl, FAMILIES[family_key], make_features(gl, display=getattr(st, 'display', False), naskh=getattr(st, 'naskh', False)), kerning, groups)
+    ufo = make_ufo(st, gl, FAMILIES[family_key], make_features(gl, display=getattr(st, 'display', False), naskh=getattr(st, 'naskh', False), sahafa=bool(getattr(st, 'sahafa', None))), kerning, groups)
     return ufo, gl
 
 
@@ -143,6 +146,9 @@ def autohint(src, dst):
     ttfautohint(in_file=src, out_file=dst, default_script='latn', fallback_script='none',
                 hinting_range_min=6, hinting_range_max=48, hinting_limit=160,
                 no_info=True, windows_compatibility=False, symbol=False, verbose=False)
+    f = TTFont(dst, recalcTimestamp=False)
+    f['head'].flags |= 1 << 3                # hinted: round the size to whole pixels
+    f.save(dst)
 
 
 CELL_RANGES = [(0x2500, 0x259F), (0x2800, 0x28FF), (0xE0A0, 0xE0BF), (0x1FB00, 0x1FBFF)]
@@ -250,7 +256,7 @@ def build_static(args):
 
 
 OPSZ_FAMS = ('Sans', 'Cond', 'Naskh', 'Sahafa', 'SahafaH')
-GRAD_FAMS = ('Sahafa', 'SahafaH')
+GRAD_FAMS = ('Sahafa', 'SahafaH', 'Naskh')
 
 
 def vf_masters(fam):
@@ -365,7 +371,7 @@ def build_variable(fam, italic, out, save_sources=True):
                 base[wght] = (gl, kerning, groups)
             wn = 'Regular' if wght == 400 else 'Bold'
             sname = (wn + (' ' + it if it else '')).replace('Regular Italic', 'Italic')
-            ufo = make_ufo(st, gl, family, make_features(gl, display=getattr(st, 'display', False), naskh=getattr(st, 'naskh', False)), kerning, groups, style_name=sname)
+            ufo = make_ufo(st, gl, family, make_features(gl, display=getattr(st, 'display', False), naskh=getattr(st, 'naskh', False), sahafa=bool(getattr(st, 'sahafa', None))), kerning, groups, style_name=sname)
             tag = f"{family.replace(' ', '')}-{wn}{it}" + (f"-opsz{ozv}" if fam in OPSZ_FAMS else '') + (f"-grade{grade}" if grade else '')
             s = SourceDescriptor()
             s.font = ufo
@@ -401,7 +407,7 @@ def build_variable(fam, italic, out, save_sources=True):
                     if n in s.font:
                         del s.font[n]
                 s.font.lib['public.glyphOrder'] = [n for n in s.font.lib['public.glyphOrder'] if n not in bad]
-                s.font.features.text = make_features({n: 1 for n in s.font.keys()}, display=fam == 'NaskhD', naskh=fam in ('Naskh', 'NaskhD', 'Sahafa', 'SahafaH'))
+                s.font.features.text = make_features({n: 1 for n in s.font.keys()}, display=fam == 'NaskhD', naskh=fam in ('Naskh', 'NaskhD', 'Sahafa', 'SahafaH'), sahafa=fam in ('Sahafa', 'SahafaH'))
     set_overlap_flags(vf)
     d = os.path.join(out, 'variable')
     os.makedirs(d, exist_ok=True)
@@ -434,7 +440,7 @@ def main(argv=None):
         tag = f"{fam}-{wn}{'Italic' if italic else ''}"
         if a.only and tag not in a.only.split(','):
             continue
-        jobs.append((fam, wght, italic, a.out, not a.no_nerd and fam not in ('Naskh', 'NaskhD', 'SahafaC')))
+        jobs.append((fam, wght, italic, a.out, not a.no_nerd and fam not in ('Naskh', 'NaskhD', 'SahafaC', 'NaskhC', 'Type')))
     report = {'static': [], 'variable': []}
     if not a.no_nerd:
         nerd.prepare()

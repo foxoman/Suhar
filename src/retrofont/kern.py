@@ -252,6 +252,7 @@ def arabic_word_space(glyphs):
     names.update(l for _, _, l in A.DLIG)
     b0 = (0 - Y0) // STEP
     out = {}
+    tight = int(round(48 * (glyphs['space'].advance / 278.0))) if 'space' in glyphs else 48
     for n in names:
         g = glyphs.get(n)
         if g is None or not g.contours:
@@ -263,11 +264,18 @@ def arabic_word_space(glyphs):
         if not len(body) or not len(allv):
             continue
         e = float(np.min(body) - np.min(allv))
-        if e > 45:
-            k = -int(round(min(0.6 * (e - 20), 110)))      # the tail may run under the space, but not across most of it
+        # every Arabic word ends a little closer to the space than a Latin word does (Arabic words are read as
+        # shapes, and a wide gap breaks the line); a tail may also run under the space, but not across most of it
+        k = -tight - (int(round(min(0.7 * (e - 20), 120))) if e > 45 else 0)
+        for sp in ('space', 'uni00A0'):
+            if sp in glyphs:
+                out[(n, sp)] = k
+    for cp, (isolfina, _im, _c) in A.LETTERS.items():           # a word that starts with alef stands a little closer too
+        n = A.FORMS.get(cp, {}).get('isol')
+        if isolfina == 'alef' and n in glyphs:
             for sp in ('space', 'uni00A0'):
                 if sp in glyphs:
-                    out[(n, sp)] = k
+                    out[(sp, n)] = -int(round(tight * 0.5))
     return out
 
 

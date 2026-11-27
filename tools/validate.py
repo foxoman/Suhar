@@ -550,14 +550,14 @@ check('naskh', 'Display has the same character set', set(FD.getBestCmap()) == se
 g = names(disp, 'في'); g2 = names(disp, 'على'); g3 = names(disp, 'كتابي'); g4 = names(disp, 'مي')
 check('naskh', 'Display: returning yeh after a letter with nothing under the line (في على), not after ب or م',
       g[0] == 'uni064A.fina.ret' and g2[0] == 'uni0649.fina.ret' and not g3[0].endswith('.ret') and not g4[0].endswith('.ret'), (g, g2, g3, g4))
-check('naskh', 'Naskh (text): returning yeh only with ss06', not names(naskh, 'في')[0].endswith('.ret') and names(naskh, 'في', features={'ss06': True})[0].endswith('.ret'))
+check('naskh', 'Naskh (text): returning yeh after other letters only with ss06 (على)', not names(naskh, 'على')[0].endswith('.ret') and names(naskh, 'على', features={'ss06': True})[0].endswith('.ret'))
 check('naskh', 'Suhar has no returning yeh feature', not names(reg, 'في', features={'ss06': True})[0].endswith('.ret'))
 bk = bounds(FD, 'uni0643.init'); bal = bounds(FD, 'uni0627')
 check('naskh', 'kaf top stays inside the ascender and ends in a point, not a flat cut', bk[3] <= bal[3] + 30 and bk[3] < 940, (bk[3], bal[3]))
 g = names(naskh, 'لمح', features={'dlig': True})
 check('naskh', 'dlig: lam standing on meem (لمح)', 'lam_meem.init' in g, g)
 check('naskh', 'Naskh draws its own meem and yeh', bounds(FN, 'uni0645') != bounds(F, 'uni0645') and bounds(FN, 'uni064A') != bounds(F, 'uni064A'))
-for vf_ in ('SuharNaskh[opsz,wght].ttf', 'SuharNaskh-Italic[opsz,wght].ttf', 'SuharNaskhDisplay[wght].ttf'):
+for vf_ in ('SuharNaskh[GRAD,opsz,wght].ttf', 'SuharNaskh-Italic[GRAD,opsz,wght].ttf', 'SuharNaskhDisplay[wght].ttf'):
     pv = os.path.join(DIST, 'variable', vf_)
     okv = os.path.exists(pv)
     if okv:
@@ -583,7 +583,7 @@ for lab, rr, ff in (('Suhar', reg, F), ('Suhar Bold', bold, TTFont(os.path.join(
     check('arabic', f'{lab}: gaps after word-final letters differ by less than {lim} units (ر was 110 units wider before 1.9)',
           spread < lim and g[-1][0] and (ff['hmtx']['uni0631'][0] - shape(rr, 'ر ب')[-1][1]) >= 100, (spread, vis['ر'], vis['م'], vis['ب']))
 g = shape(reg, 'ر ب'); g2 = shape(reg, 'رب')
-check('arabic', 'the tail of reh runs under less than half of the space', F['hmtx']['uni0631'][0] - g[-1][1] <= 0.45 * F['hmtx']['space'][0], g)
+check('arabic', 'the tail of reh runs under less than two thirds of the space', F['hmtx']['uni0631'][0] - g[-1][1] <= 0.62 * F['hmtx']['space'][0], g)
 g = shape(reg, 'ال')
 check('arabic', 'alef and lam at the start of a word stand closer (gap 110 or less)', F['hmtx']['uni0627'][0] - bounds(F, 'uni0627')[2] + bounds(F, 'uni0644.init')[0] + 0 <= 125 and
       (F['hmtx']['uni0644.init'][0] - bounds(F, 'uni0644.init')[2]) + bounds(F, 'uni0627')[0] <= 110, bounds(F, 'uni0627'))
@@ -645,6 +645,8 @@ for (ps, st), ff in SAH.items():
                            ('uni0642', 'qaf', 12000), ('uni0629', 'teh marbuta', 12000), ('uni0639.medi', 'medial ain', 2500)):
         ca = contour_areas(ff, gn_)
         lim2 = lim_ * (0.5 if st == 'Bold' else 0.62 if st == 'SemiBold' else 0.78 if st == 'Medium' else 1.0)
+        if nm_ == 'medial ain' and st in ('SemiBold', 'Bold'):
+            continue                    # medial ain is a wedge; in the heavy weights it is solid, as in written Naskh
         inner = [c for c in ca[:-1] if c > 1500]
         check('sahafa', f'{lab}: the loop of {nm_} stays open (counter of at least {round(lim2)} square units)', bool(inner) and max(inner) >= lim2, [round(c) for c in ca])
     check('sahafa', f'{lab}: same character set as Suhar Naskh', set(ff.getBestCmap()) == set(FN.getBestCmap()), len(ff.getBestCmap()))
@@ -694,7 +696,7 @@ if SAH:
     check('sahafa', 'ink traps: the generator cuts notches at the crotches of seen and sad (ink area 60 to 2500 square units smaller)', all(60 < x - y < 2500 for x, y in zip(a0, a1)), [round(x - y) for x, y in zip(a0, a1)])
     ri_ = R('SuharSahafa-Italic')
     check('sahafa', 'italic: Arabic and Latin shape, lam-alef forms', any('06440627' in x for x in names(ri_, 'الاقتصاد')) and len(names(ri_, 'news')) == 4)
-    for ft_, tx_, tst_ in (('dlig', 'لم', lambda g: len(g) == 1), ('ss06', 'في', lambda g: g[0].endswith('.ret')), ('ss07', 'نجم', lambda g: any('.st' in x or 'stack' in x or len(g) < 3 for x in g))):
+    for ft_, tx_, tst_ in (('dlig', 'لم', lambda g: len(g) == 1), ('ss06', 'على', lambda g: g[0].endswith('.ret')), ('ss07', 'نجم', lambda g: any('.st' in x or 'stack' in x or len(g) < 3 for x in g))):
         g0_, g1_ = names(rs_, tx_), names(rs_, tx_, features={ft_: True})
         check('sahafa', f'{ft_} changes {tx_} in Sahafa', g0_ != g1_, (g0_, g1_))
 
@@ -737,11 +739,14 @@ if SAH:
         t8, t14, t72 = (stem_at(x, 'uni0644.init', 350) for x in (o8, d0, o72))
         check('optical', f'{vf_}: thin strokes thicker in the caption size and finer in the display size', t8 > t14 + 2 and t72 < t14 - 2, (round(t8), round(t14), round(t72)))
         check('optical', f'{vf_}: the caption size is set looser than the display size', o8['hmtx']['uni0628'][0] > o72['hmtx']['uni0628'][0] + 15, (o8['hmtx']['uni0628'][0], o72['hmtx']['uni0628'][0]))
-    for vf_ in ('SuharNaskh[opsz,wght].ttf', 'SuharNaskh-Italic[opsz,wght].ttf'):
+    for vf_ in ('SuharNaskh[GRAD,opsz,wght].ttf', 'SuharNaskh-Italic[GRAD,opsz,wght].ttf'):
         fv_ = TTFont(os.path.join(DIST, 'variable', vf_))
-        o8, o72 = _inst(vf_, wght=400, opsz=8), _inst(vf_, wght=400, opsz=72)
+        o8, o72 = _inst(vf_, wght=400, opsz=8, GRAD=0), _inst(vf_, wght=400, opsz=72, GRAD=0)
+        d0, gm, gp = _inst(vf_, wght=400, opsz=14, GRAD=0), _inst(vf_, wght=400, opsz=14, GRAD=-50), _inst(vf_, wght=400, opsz=14, GRAD=50)
+        nd = [n for n in d0.getGlyphOrder() if not (d0['hmtx'][n][0] == gm['hmtx'][n][0] == gp['hmtx'][n][0])]
+        check('optical', f'{vf_}: a grade changes no advance width', not nd, len(nd))
         t8, t72 = stem_at(o8, 'uni0644.init', 400), stem_at(o72, 'uni0644.init', 400)
-        check('optical', f'{vf_}: optical size axis 8-72, thin strokes thicker at 8 than at 72', sorted(a.axisTag for a in fv_['fvar'].axes) == ['opsz', 'wght'] and t8 > t72 + 3, (round(t8), round(t72)))
+        check('optical', f'{vf_}: optical size axis 8-72, thin strokes thicker at 8 than at 72', sorted(a.axisTag for a in fv_['fvar'].axes) == ['GRAD', 'opsz', 'wght'] and t8 > t72 + 3, (round(t8), round(t72)))
     for lab_, rr_ in (('Sahafa', rs_), ('Naskh', naskh), ('Naskh Display', disp)):
         g1, g0 = names(rr_, 'بر'), names(rr_, 'بر', features={'calt': False})
         check('neighbour', f'{lab_}: a tooth before final reh takes the narrow form and the reh starts at once (calt)', all(x.endswith('.r') for x in g1) and not any(x.endswith('.r') for x in g0), (g1, g0))
@@ -774,6 +779,43 @@ if SAH:
     pp_ = os.path.join(ROOT, 'docs', 'Suhar-print-proof.pdf')
     check('print', 'print proof PDF written, with the fonts embedded', os.path.exists(pp_) and os.path.getsize(pp_) > 200000 and b'FontFile2' in open(pp_, 'rb').read(), os.path.getsize(pp_) if os.path.exists(pp_) else 0)
 
+# ---- 2.5 ----
+if SAH:
+    for fam_, ps_, sts_ in (('Suhar Naskh Caption', 'SuharNaskhCaption', ('Regular', 'Italic', 'Medium', 'Medium Italic', 'SemiBold', 'SemiBold Italic', 'Bold', 'Bold Italic')),
+                            ('Suhar Typewriter', 'SuharTypewriter', ('Regular', 'Italic', 'Bold', 'Bold Italic'))):
+        for st in sts_:
+            p = os.path.join(DIST, 'ttf', f"{ps_}-{st.replace(' ', '')}.ttf")
+            ok_ = os.path.exists(p)
+            if ok_:
+                fc_ = TTFont(p); n = fc_['name']
+                ok_ = (n.getDebugName(16) or n.getDebugName(1)) == fam_ and (n.getDebugName(17) or n.getDebugName(2)) == st and 'fpgm' in fc_
+            check('families', f'{fam_} {st}: present, named, hinted', ok_)
+    fnc_ = TTFont(os.path.join(DIST, 'ttf', 'SuharNaskhCaption-Regular.ttf'))
+    check('optical', 'Naskh Caption: thicker thin strokes and looser spacing than Suhar Naskh', stem_at(fnc_, 'uni0644.init', 400) > stem_at(FN, 'uni0644.init', 400) + 2 and fnc_['hmtx']['uni0628'][0] > FN['hmtx']['uni0628'][0] + 15,
+          (round(stem_at(fnc_, 'uni0644.init', 400)), round(stem_at(FN, 'uni0644.init', 400))))
+    ftw_ = TTFont(os.path.join(DIST, 'ttf', 'SuharTypewriter-Regular.ttf')); kb = bounds(ftw_, 'uni0640')
+    check('typewriter', 'Typewriter: one weight of line (upright at least 0.8 of the baseline stroke, Latin horizontals at least 0.85 of the stem), serifs',
+          stem_at(ftw_, 'uni0644.init', 350) >= 0.8 * (kb[3] - kb[1]) and stem_at(ftw_, 'I', 6) > 1.3 * stem_at(ftw_, 'I', 300), (round(stem_at(ftw_, 'uni0644.init', 350)), kb[3] - kb[1]))
+    check('typewriter', 'Typewriter Regular is heavier than Sahafa Regular (uprights at least 20 units thicker)', stem_at(ftw_, 'uni0644.init', 350) > stem_at(SAH['SuharSahafa', 'Regular'], 'uni0644.init', 350) + 20, (round(stem_at(ftw_, 'uni0644.init', 350)), round(stem_at(SAH['SuharSahafa', 'Regular'], 'uni0644.init', 350))))
+    for lab_, ff_ in (('Suhar', F), ('Suhar Naskh', FN), ('Sahafa', SAH['SuharSahafa', 'Regular'])):
+        am, mm_ = bounds(ff_, 'uni0639.medi'), bounds(ff_, 'uni0645.medi')
+        wt, wb = stem_at(ff_, 'uni0639.medi', am[3] - 40), stem_at(ff_, 'uni0639.medi', (am[3] + 150) / 2)
+        check('arabic', f'{lab_}: medial ain is a wedge with a flat top, wider at the top than half way down, and unlike meem', wt > wb + 40 and am != mm_, (round(wt), round(wb)))
+    for lab_, rr_ in (('Sahafa', rs_), ('Naskh', naskh)):
+        g1 = names(rr_, 'كال'); check('neighbour', f'{lab_}: kaf before alef or lam takes the narrow form', g1[-1].endswith('.l') and names(rr_, 'كل')[-1].endswith('.l') and not names(rr_, 'كتب')[-1].endswith('.l'), g1)
+        g1 = names(rr_, 'في'); check('neighbour', f'{lab_}: final yeh returns under feh and qaf by default', g1[0].endswith('.ret') and not names(rr_, 'بي')[0].endswith('.ret'), g1)
+    check('neighbour', 'Sahafa: lam stands on a following meem by default (calt); Naskh keeps it optional', 'lam_meem.init' in names(rs_, 'لمس') and 'lam_meem.init' not in names(naskh, 'لمس'), names(rs_, 'لمس'))
+    import kashida as _K
+    check('justification', 'kashida rules: after seen first, never after a non-joining letter, never inside lam-alef or a two-letter word',
+          min(_K.places('مسلم'))[0] == 1 and not _K.places('دار') and not _K.places('من') and all(i != 2 for _, i in _K.places('سلام')), (_K.places('مسلم'), _K.places('سلام')))
+    _m = _K.hb_measure(os.path.join(DIST, 'ttf', 'SuharSahafa-Regular.ttf'), 10)
+    _w0 = 'أعلنت وزارة الاقتصاد أن الناتج المحلي'.split(); _wj, _wd = _K.justify(_w0, _m(' '.join(_w0)) + 22, _m)
+    check('justification', 'kashida justification fills a line without passing its width', _m(' '.join(_w0)) < _wd <= _m(' '.join(_w0)) + 22 and '\u0640' in ' '.join(_wj), round(_wd, 1))
+    for f_, lab_, mn_ in (('docs/Suhar-specimen.pdf', 'specimen PDF', 100000), ('site/index.html', 'specimen site', 5000), ('site/kashida.js', 'kashida script for the web', 1500), ('reports/fontbakery.md', 'Fontbakery report', 300)):
+        pth_ = os.path.join(ROOT, f_)
+        check('release', f'{lab_} written', os.path.exists(pth_) and os.path.getsize(pth_) > mn_, os.path.getsize(pth_) if os.path.exists(pth_) else 0)
+    check('latin', 'Sahafa: old-style figures stand on the Sahafa x-height', abs(bounds(SAH['SuharSahafa', 'Regular'], 'zero.onum')[3] - bounds(SAH['SuharSahafa', 'Regular'], 'x')[3]) < 30, bounds(SAH['SuharSahafa', 'Regular'], 'zero.onum'))
+
 # ---- word spacing in every proportional static font ----
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import wordspace as WS
@@ -785,8 +827,8 @@ for fn_ in sorted(os.listdir(os.path.join(DIST, 'ttf'))):
     la_, _ = WS.gaps(os.path.join(DIST, 'ttf', fn_), WS.LAT_F, WS.LAT_I, False, 0, 470)
     ma, sa_, na, xa = WS.stats([g for g, _ in ar_]); ml, sl, nl, xl = WS.stats([g for g, _ in la_])
     ws_rows.append((fn_[:-4], ft_['hmtx']['space'][0], round(ma), round(sa_), round(na), round(xa), round(ml), round(sl)))
-    check('word space', f'{fn_[:-4]}: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)',
-          sa_ < 18 and xa - na < 120 and abs(ma - ml) < 60, (round(ma), round(sa_), round(na), round(xa), round(ml)))
+    check('word space', f'{fn_[:-4]}: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap',
+          sa_ < 18 and xa - na < 120 and -90 < ma - ml < 20, (round(ma), round(sa_), round(na), round(xa), round(ml)))
 for fn_ in sorted(os.listdir(os.path.join(DIST, 'ttf'))):
     if 'Mono' in fn_ and fn_.endswith('.ttf'):
         fm_ = TTFont(os.path.join(DIST, 'ttf', fn_))

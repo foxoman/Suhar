@@ -318,6 +318,10 @@ def ar_fn(st: Style, d):
     if _tr and letter and not st.compat and not st.mono:
         _k = st.ns['k'] * SC
         cs = E.ink_traps(E.union(cs), _tr * _k, _tr * _k * 0.8, _k * 1.2, 440.0)
+    _fl = npar.get('fillet')                  # filled corners (display and typewriter cuts)
+    if _fl and letter and not st.compat and not st.mono:
+        _k = st.ns['k'] * SC
+        cs = E.ink_traps(E.union(cs), 0.0, _fl * _k, _k * 1.2, 440.0, fillet=True)
     g = GlyphOut(d.name, d.uni, cs, round(adv))
     g.ink = (bb[0] + dx, bb[1], bb[2] + dx, bb[3])
     for an, (ax, ay) in (inf.get('anchors') or {}).items():
@@ -466,9 +470,9 @@ R('ain.isol', "360,285 ~360,350 250,350 ~130,350 130,230 ~130,105 260,105 400,10
   top=(250, '350+k'), bot=(240, '-185-k'), da=(250, '350+k'))
 R('ain.init', "290,285 ~290,350 190,350 ~60,350 60,210 ~60,k 170,k; 300,k!r 0,k", top=(180, '350+k'),
   bot=(150, 0), da=(180, '350+k'))
-R('ain.medi', "310,k 0,k; z ~15,295 ~295,295 ~155,k-85", aw=310, top=(155, '295+k'), bot=(155, 0),
+R('ain.medi', "310,k 0,k; z 22,292 ~155,270 288,292 158,k+4", aw=310, top=(155, '295+k'), bot=(155, 0),
   da=(155, '295+k'))
-R('ain.fina', "330,k 120,k; z ~25,285 ~265,285 ~145,k-75; 150,k+20 ~0,10 0,-70 ~0,-185 200,-185 300,-185 ~370,-185 400,-135",
+R('ain.fina', "330,k 120,k; z 30,284 ~145,264 260,284 147,k+4; 150,k+20 ~0,10 0,-70 ~0,-185 200,-185 300,-185 ~370,-185 400,-135",
   aw=330, top=(145, '285+k'), bot=(200, '-185-k'), da=(145, '285+k'))
 _kaf = f"500,600 500,130 ~500,k 400,k {BOAT}; {KMARK}"
 R('kaf.isol', _kaf, top=(500, 606), bot=(250, 0))
@@ -774,6 +778,9 @@ for _cp, (_if, _im, _code) in LETTERS.items():
 R('behr.init', "150,335 150,130 ~150,k 75,k 0,k", top=(140, 335), bot=(120, 0), da=(142, 335), db=(120, 0))
 R('behr.medi', "110,330 110,130 ~110,k 40,k 0,k; 215,k 85,k", aw=215, top=(105, 330), bot=(105, 0), da=(105, 330), db=(105, 0))
 R('rehr.fina', "250,k 232,k ~190,k 190,-30 ~190,-150 10,-150 -40,-150", **{k_: v_ for k_, v_ in RASM['reh.fina'].items() if k_ not in ('spec', 'aw')}, aw=250)
+R('kafl.init', "258,598 ~150,540 60,385!r; 60,385 ~254,300 254,150 ~254,k 172,k 0,k", top=(165, 606), bot=(130, 0))
+R('kafl.medi', "258,598 ~150,540 60,385!r; 60,385 ~254,300 254,150 ~254,k 172,k 0,k; 336,k 232,k", aw=336, top=(165, 606), bot=(130, 0))
+KAFL, KAFL_BEFORE = {}, []
 BEHR, REHR, TALL_BEFORE = {}, {}, []
 for _cp, (_if, _im, _code) in LETTERS.items():
     if _im == 'beh':
@@ -788,6 +795,14 @@ for _cp, (_if, _im, _code) in LETTERS.items():
         REHR[FORMS[_cp]['fina']] = _nm
     if _if in ('noon', 'yeh') and 'fina' in FORMS.get(_cp, {}):
         TALL_BEFORE.append(FORMS[_cp]['fina'])
+    if _im == 'kaf':
+        for _f in ('init', 'medi'):
+            if _f in FORMS.get(_cp, {}):
+                _nm, _s, _inf = _letter(_cp, _f, 'kafl', '.l')
+                AR(_nm, _s, **_inf)
+                KAFL[FORMS[_cp][_f]] = _nm
+    if _if == 'alef' and 'fina' in FORMS.get(_cp, {}):
+        KAFL_BEFORE.append(FORMS[_cp]['fina'])
 
 # ---- justification alternates (jalt): final and isolated letters with a long flat body, stretched by 40 % ----
 JALT = {}

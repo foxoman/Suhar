@@ -116,8 +116,8 @@ ARABIC = {
     'lamalef.isol': dict(spec=f"322,{AH} 322,150 ~322,k 236,k ~152,k 130,140 ~92,330 -34,{AH + 4}", dy=AH - 600),
     'lamalef.fina': dict(spec=f"322,{AH} 322,150 ~322,k 236,k ~152,k 130,140 ~92,330 -34,{AH + 4}; 412,k 312,k", aw=412, dy=AH - 600),
     # ع in the middle and at the end of a word: a larger head, so that the counter stays open in small sizes
-    'ain.medi': dict(spec="322,k 0,k; z ~6,322 ~316,322 ~161,k-98", aw=322, dx=6, dy=27),
-    'ain.fina': dict(spec="346,k 122,k; z ~10,316 ~292,316 ~151,k-90; 156,k+20 ~0,10 0,-70 ~0,-172 200,-172 300,-172 ~372,-172 404,-126", aw=346, dx=6, dy=31),
+    'ain.medi': dict(spec="322,k 0,k; z 14,312 ~161,288 308,312 163,k+4", aw=322, dx=6, dy=27),
+    'ain.fina': dict(spec="346,k 122,k; z 18,308 ~151,284 284,308 153,k+4; 156,k+20 ~0,10 0,-70 ~0,-172 200,-172 300,-172 ~372,-172 404,-126", aw=346, dx=6, dy=31),
     # ---- the rest of the alphabet, drawn in the Sahafa proportions ----
     'alefshort.isol': dict(spec="0,0 0,438", dy=-42),
     'alefshort.fina': dict(spec="150,k 70,k ~0,k 0,k+70 0,438", aw=150, dy=-42),
@@ -155,6 +155,8 @@ ARABIC = {
     'hamza.isol': dict(spec="w.9 200,282 ~200,330 120,330 ~35,330 35,248 ~35,168 125,168 215,168!r; w.9 210,168 20,88", dy=-18),
     'tatweel.medi': dict(spec="250,k 0,k", aw=250, dy=0),
     'behtall.medi': dict(spec="130,402 ~130,128 116,88 ~98,k 52,k 0,k; 250,k 100,k", aw=250, dy=-28),
+    'kafl.init': dict(spec=f"258,{AH - 4} ~151,{AH - 56} 62,362!r; 62,362 ~251,286 251,146 ~251,k 170,k 0,k", dy=AH - 600),
+    'kafl.medi': dict(spec=f"258,{AH - 4} ~151,{AH - 56} 62,362!r; 62,362 ~251,286 251,146 ~251,k 170,k 0,k; 336,k 232,k", aw=336, dy=AH - 600),
     # a tooth standing on ج ح خ, and the ج ح خ it stands on
     'behj.init': dict(spec="180,462 180,340 ~180,256 90,256 0,256", dy=-30, bdy=-12),
     'jeemj.fina': dict(spec="522,256 425,256; " + _jh + "; " + _jb, aw=522, dy=-28, bdy=28),
@@ -221,6 +223,7 @@ SERIF = {
     'u': _x(0, 84, 0) + '; ' + _x(336, 84, 0) + '; ' + _f(336, 0, 88),
     'v': _h(0, 66, 66, 'X-b', True) + '; ' + _h(430, 66, 66, 'X-b', True), 'x': '; '.join(_h(x_, 66, 66, y_, True) for x_, y_ in ((6, 'X-b'), (414, 'X-b'), (0, 'b'), (420, 'b'))),
     'y': _h(0, 66, 66, 'X-b', True) + '; ' + _h(432, 66, 66, 'X-b', True), 'z': "12,x 12,x-96; 394,b 394,b+96",
+    'thorn': _c(0, 84, 0) + '; ' + _h(0, 84, 96, 'D+b'), 'germandbls': _f(0, 84, 0),
     'f': _f(96, 84, 96), 'c': "340,410+30 340,410-70", 'one': _f(214), 'four': _f(296, 76, 76), 'seven': "0,c 0,c-112",
     'two': "394,b 394,b+104", 'five': "366,c 366,c-96", 'three': "26,572+34 26,572-84; 8,140-34 8,140+84", 'six': "358,578+36 358,578-76",
     'uni0393': _f(0, 84, 96) + '; ' + _c(0, 84, 0) + "; 438,c 438,c-118", 'uni03A0': _f(0) + '; ' + _f(472) + '; ' + _c(0, 84, 0) + '; ' + _c(472, 0, 84),
@@ -242,6 +245,7 @@ LATIN_IT = {
     'n': f"0,0 0,470-b; 0,340@.8 ~0,{_T} 182,{_T} ~334,{_T} 334,330 334,88 ~334,b 392,b 400+a,b+24; -50-a,470-b 0,470-b; f -a+2,470-2*b -a-48,470-2*b ~-a-10,470-2*b-13 -a+2,470-2*b-63",
     'l': "0,88 0,C-b; -46-a,C-b 0,C-b; 0,92 ~0,b 58,b 66+a,b+24; f -a+2,C-2*b -a-44,C-2*b ~-a-9,C-2*b-11 -a+2,C-2*b-57",
     'w': "0,470-b 102,74 ~118,b-4 134,74 218,352 ~232,404 246,352 330,74 ~346,b-4 362,74 464,470-b",
+    'f': "96,-120 96,566 ~96,c 226,c 248,c; 0,470-b 238,470-b; 96,-116 ~96,D+b 30,D+b -24,D+b",
 }
 
 
@@ -282,22 +286,25 @@ def _ligatures():
     ]
 
 
-CUTS = ('text', 'headline')
+CUTS = ('text', 'headline', 'typewriter')
 
 
 def style(wght=400, cut='text', italic=False, compat=False, opsz=0.0, grade=0.0):
     """Style of Suhar Sahafa.  cut: 'text' (wider, calmer) or 'headline' (tighter, sharper, deeper bowls)."""
     head = cut == 'headline'
-    st = Style('Sans', wght, italic, opsz, compat).set_naskh()
+    typ = cut == 'typewriter'
+    st = Style('Sans', wght, italic, opsz, compat, grade=grade).set_naskh()
     st.markgap = 0.0
     t = st.t
     ta_ = t if t <= 1 else 1 + (t - 1) * 0.55
-    ra_ = (lerp(44, 74, ta_) + lerp(38, 61, ta_)) / 2 * (st.r / ((lerp(44, 74, t) + lerp(38, 61, t)) / 2)) * lerp(1.12, 1.05, min(max(t, 0.0), 1.0)) * (1 + 0.07 * grade)
+    ra_ = (lerp(44, 74, ta_) + lerp(38, 61, ta_)) / 2 * (st.r / ((lerp(44, 74, t) + lerp(38, 61, t)) / 2)) * lerp(1.12, 1.05, min(max(t, 0.0), 1.0)) * (lerp(1.22, 1.0, min(max(t, 0.0), 1.0)) if typ else 1.0)
     st.arx *= 0.93                                                 # a newspaper column needs an economical letter
     if head:
         pa, pb = 1.30, 0.62                                        # more contrast for large sizes
     else:
         pa, pb = 1.20, 0.75                                        # moderate contrast, sturdy thins
+    if typ:
+        pa, pb = 1.0, 0.94                                         # a typewriter strikes one weight of line
     ok_ = abs(opsz)
     if opsz < 0:                                                   # caption: thicker thin strokes
         pa, pb = pa - 0.05 * ok_, pb + 0.08 * ok_
@@ -308,8 +315,11 @@ def style(wght=400, cut='text', italic=False, compat=False, opsz=0.0, grade=0.0)
     st.ns['k'] = st.ra
     st.ns['q'] = st.ra * lerp(1.0, 0.86, t) * (1 + (0.14 if opsz < 0 else -0.04) * ok_)
     st.npar = dict(low=0.16, high=0.03, K=0.56, taper=0.62, top=0.6, foot=0.8, swing=0.0, ymap=_armap(st.ra), traps=0.42)
+    if typ:
+        st.npar.update(taper=1.0, top=1.0, foot=1.0, traps=0.0, fillet=0.5)
+        st.sbs *= 1.1
     if head:
-        st.npar.update(low=0.20, taper=0.42, top=0.5, foot=0.66, deep=1.14, traps=0.3)
+        st.npar.update(low=0.20, taper=0.42, top=0.5, foot=0.66, deep=1.14, traps=0.0, fillet=0.34)
         st.arx *= 0.96
         st.sbs *= 0.88
         st.xs *= 0.95
@@ -320,11 +330,12 @@ def style(wght=400, cut='text', italic=False, compat=False, opsz=0.0, grade=0.0)
         st.markgap = 24.0 * ok_
     elif opsz > 0:
         st.npar['traps'] *= 1 - 0.6 * ok_
+        st.npar['fillet'] = max(st.npar.get('fillet', 0.0), 0.3 * ok_)
         st.npar['taper'] *= 1 - 0.2 * ok_
     st.altspec = ARABIC
     st.altsub = _ligatures()
     # Latin: the stem as thick as the Arabic baseline stroke, horizontals thinner
-    a, hb = st.ra, st.ra * (0.56 if head else 0.66)
+    a, hb = st.ra, st.ra * (0.56 if head else 0.92 if typ else 0.66)
     st.pen = E.Pen(a, hb)
     st.a, st.hb = a, hb
     st.dt = a * 1.16

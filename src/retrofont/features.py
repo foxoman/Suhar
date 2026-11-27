@@ -3,7 +3,7 @@ ufo2ft from the UFO kerning, anchors and glyph categories."""
 from . import arabic as A
 
 
-def make_features(glyphs: dict, display: bool = False, naskh: bool = False) -> str:
+def make_features(glyphs: dict, display: bool = False, naskh: bool = False, sahafa: bool = False) -> str:
     have = glyphs.__contains__
     out = ["languagesystem DFLT dflt;", "languagesystem latn dflt;", "languagesystem arab dflt;",
            "languagesystem arab URD;", "languagesystem arab FAR;", "languagesystem grek dflt;",
@@ -56,6 +56,20 @@ def make_features(glyphs: dict, display: bool = False, naskh: bool = False) -> s
                 "    lookup nb_ctx1 {", "        lookupflag IgnoreMarks;", "        sub @BehN' lookup beh_r @RehN;", "    } nb_ctx1;",
                 "    lookup nb_ctx2 {", "        lookupflag IgnoreMarks;", "        sub @BehR @RehN' lookup reh_r;", "    } nb_ctx2;",
                 "    lookup nb_ctx3 {", "        lookupflag IgnoreMarks;", "        sub @TmN' lookup tooth_t @TallBefore;", "    } nb_ctx3;", "} calt;", ""]
+        kl = [(a, b) for a, b in A.KAFL.items() if have(a) and have(b)]
+        kb = [n for n in A.KAFL_BEFORE + [A.FORMS[0x644]['medi'], A.FORMS[0x644]['fina']] + [n_ for (_a, f_), n_ in A.LIGA.items() if f_ == 'fina'] if have(n)]
+        if kl and kb:                                    # kaf before alef or lam: a narrower body, so the three stems stand evenly
+            out += ["@KafN = [" + ' '.join(a for a, _ in kl) + "];", "@KafL = [" + ' '.join(b for _, b in kl) + "];", "@KafBefore = [" + ' '.join(kb) + "];",
+                    "lookup kaf_l {", "    sub @KafN by @KafL;", "} kaf_l;",
+                    "feature calt {", "    script arab;", "    lookup nb_ctx4 {", "        lookupflag IgnoreMarks;", "        sub @KafN' lookup kaf_l @KafBefore;", "    } nb_ctx4;", "} calt;", ""]
+        fq = [A.FORMS[c][f] for c in (0x641, 0x642) for f in ('init', 'medi') if have(A.FORMS[c][f])]
+        ry = [(a, b) for a, b in A.RET.items() if have(a) and have(b)]
+        if fq and ry and not display:                    # final yeh returns under feh and qaf (في), as it does in every Naskh hand
+            out += ["feature calt {", "    script arab;", "    lookup nb_ctx5 {", "        lookupflag IgnoreMarks;"] + \
+                   [f"        sub [{' '.join(fq)}] {a}' by {b};" for a, b in ry] + ["    } nb_ctx5;", "} calt;", ""]
+        lm = [(a, b, l) for a, b, l in A.DLIG if l in ('lam_meem.init', 'lam_meem.medi') and have(a) and have(b) and have(l)]
+        if sahafa and lm:                                # lam stands on a following meem (لمس، المجلس)
+            out += ["feature calt {", "    script arab;", "    lookup nb_lig {", "        lookupflag IgnoreMarks;"] + [f"        sub {a} {b} by {l};" for a, b, l in lm] + ["    } nb_lig;", "} calt;", ""]
     ja = [(a, b) for a, b in A.JALT.items() if have(a) and have(b)]
     if ja and not have('LIG.h'):
         out += ["feature jalt {", "    script arab;"] + [f"    sub {a} by {b};" for a, b in sorted(ja)] + ["} jalt;", ""]

@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Suhar — a typeface family for Arabic and Latin</title>
+<style>
+@font-face{font-family:"Suhar";src:url("../dist/variable/Suhar[opsz,wght].woff2") format("woff2");font-weight:400 700}
+@font-face{font-family:"Suhar";src:url("../dist/variable/Suhar-Italic[opsz,wght].woff2") format("woff2");font-weight:400 700;font-style:italic}
+@font-face{font-family:"Suhar Naskh";src:url("../dist/variable/SuharNaskh[GRAD,opsz,wght].woff2") format("woff2");font-weight:400 700}
+@font-face{font-family:"Suhar Naskh Display";src:url("../dist/variable/SuharNaskhDisplay[wght].woff2") format("woff2");font-weight:400 700}
+@font-face{font-family:"Suhar Sahafa";src:url("../dist/variable/SuharSahafa[GRAD,opsz,wght].woff2") format("woff2");font-weight:400 700}
+@font-face{font-family:"Suhar Sahafa";src:url("../dist/variable/SuharSahafa-Italic[GRAD,opsz,wght].woff2") format("woff2");font-weight:400 700;font-style:italic}
+@font-face{font-family:"Suhar Sahafa Headline";src:url("../dist/variable/SuharSahafaHeadline[GRAD,opsz,wght].woff2") format("woff2");font-weight:400 700}
+@font-face{font-family:"Suhar Condensed";src:url("../dist/variable/SuharCondensed[opsz,wght].woff2") format("woff2");font-weight:400 700}
+@font-face{font-family:"Suhar Mono";src:url("../dist/variable/SuharMono[wght].woff2") format("woff2");font-weight:400 700}
+@font-face{font-family:"Suhar Typewriter";src:url("../dist/woff2/SuharTypewriter-Regular.woff2") format("woff2");font-weight:400}
+@font-face{font-family:"Suhar Typewriter";src:url("../dist/woff2/SuharTypewriter-Bold.woff2") format("woff2");font-weight:700}
+:root{--paper:#f6f1e7;--ink:#17191c;--mute:#6a6f76;--sea:#0b6e75;--line:#d8cfbd;--card:#fffdf8}
+@media (prefers-color-scheme:dark){:root{--paper:#14171a;--ink:#ece7dc;--mute:#9aa1a8;--sea:#5cc4cb;--line:#2c3237;--card:#1b1f23}}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.55 "Suhar",system-ui,sans-serif}
+main{max-width:1060px;margin:0 auto;padding:0 22px 80px}header{padding:56px 0 30px;border-bottom:1px solid var(--line)}
+.word{font:700 clamp(64px,15vw,168px)/.95 "Suhar";letter-spacing:-.01em;margin:0}.ar{direction:rtl;text-align:right}
+.sub{font:700 clamp(30px,6vw,64px)/1.25 "Suhar Naskh Display";color:var(--sea);margin:.1em 0 0}
+.lead{max-width:44em;color:var(--mute);margin:18px 0 0}h2{font:600 15px/1 "Suhar";letter-spacing:.08em;text-transform:uppercase;color:var(--sea);margin:54px 0 16px}
+.tester{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:18px}
+.controls{display:flex;flex-wrap:wrap;gap:14px 22px;align-items:center;font-size:13px;color:var(--mute);margin-bottom:12px}
+.controls label{display:flex;gap:8px;align-items:center}.controls output{font-family:"Suhar Mono";min-width:3.2em;color:var(--ink)}
+select,input[type=range]{accent-color:var(--sea)}select{font:inherit;padding:4px 6px;background:var(--paper);color:var(--ink);border:1px solid var(--line);border-radius:4px}
+#sample{outline:none;min-height:3em;overflow-wrap:anywhere}
+.fams{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}.fam{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:16px}
+.fam b{display:block;font:600 12px/1 "Suhar";letter-spacing:.06em;text-transform:uppercase;color:var(--mute);margin-bottom:10px}.fam p{margin:0;font-size:26px;line-height:1.35}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:26px}@media(max-width:720px){.cols{grid-template-columns:1fr}}
+.news{font:16px/1.6 "Suhar Sahafa";text-align:justify}.news h3{font:700 34px/1.25 "Suhar Sahafa Headline";margin:0 0 8px;text-align:start}
+.toggle{display:inline-flex;gap:8px;align-items:center;font-size:13px;color:var(--mute);margin:0 14px 10px 0}
+code,pre{font-family:"Suhar Mono";font-size:14px}pre{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:14px;overflow:auto}
+footer{margin-top:60px;padding-top:18px;border-top:1px solid var(--line);color:var(--mute);font-size:14px}a{color:var(--sea)}
+</style></head><body><main>
+<header><p class="word">Suhar</p><p class="sub ar" lang="ar">صُحار، مدينة السندباد</p>
+<p class="lead">A typeface family for Arabic and Latin, drawn so that both scripts have one weight and one height on the same line. Sans, Condensed, Mono, Naskh, a newspaper cut and a typewriter cut. Free under the SIL Open Font License.</p></header>
+
+<h2>Try it</h2>
+<div class="tester"><div class="controls">
+<label>Family <select id="fam"><option>Suhar Sahafa</option><option>Suhar Sahafa Headline</option><option>Suhar</option><option>Suhar Naskh</option><option>Suhar Naskh Display</option><option>Suhar Condensed</option><option>Suhar Mono</option><option>Suhar Typewriter</option></select></label>
+<label>Size <input id="size" type="range" min="9" max="140" value="44"><output id="osize"></output></label>
+<label>Weight <input id="wght" type="range" min="400" max="700" value="400"><output id="owght"></output></label>
+<label>Optical size <input id="opsz" type="range" min="8" max="72" value="14"><output id="oopsz"></output></label>
+<label>Grade <input id="grad" type="range" min="-50" max="50" value="0"><output id="ograd"></output></label>
+<label><input id="auto" type="checkbox" checked> optical size follows the size</label></div>
+<div id="sample" contenteditable="true" dir="auto" spellcheck="false">ميناء صحار يسجل رقما قياسيا — Sohar Port sets a new record</div></div>
+
+<h2>The families</h2>
+<div class="fams">
+<div class="fam"><b>Suhar</b><p style="font-family:'Suhar'">واجهات ونصوص · Interfaces and text</p></div>
+<div class="fam"><b>Suhar Condensed</b><p style="font-family:'Suhar Condensed'">ميناء صحار والمنطقة الحرة · 240 km</p></div>
+<div class="fam"><b>Suhar Naskh</b><p class="ar" lang="ar" style="font-family:'Suhar Naskh'">أصل الكتابة العربية في على إلى</p></div>
+<div class="fam"><b>Suhar Naskh Display</b><p class="ar" lang="ar" style="font-family:'Suhar Naskh Display';font-weight:700">نجم بحر تحت السماء</p></div>
+<div class="fam"><b>Suhar Sahafa</b><p style="font-family:'Suhar Sahafa'">صحيفة عُمان اليومية · Daily news</p></div>
+<div class="fam"><b>Suhar Sahafa Headline</b><p style="font-family:'Suhar Sahafa Headline';font-weight:700">رقم قياسي جديد · Record</p></div>
+<div class="fam"><b>Suhar Typewriter</b><p style="font-family:'Suhar Typewriter'">رسالة مطبوعة · A typed letter, 1975</p></div>
+<div class="fam"><b>Suhar Mono</b><p style="font-family:'Suhar Mono';font-size:20px">echo greet("صُحار") # != =></p></div>
+</div>
+
+<h2>A newspaper column</h2>
+<label class="toggle"><input id="kash" type="checkbox"> justify the Arabic with kashida</label>
+<label class="toggle"><input id="nb" type="checkbox" checked> neighbour forms</label>
+<label class="toggle">paper <select id="paper"><option value="-50">newsprint (grade −50)</option><option value="0" selected>plain (grade 0)</option><option value="50">coated (grade +50)</option></select></label>
+<div class="cols"><div class="news ar" lang="ar"><h3>ميناء صحار يسجل رقما قياسيا</h3><p id="arp">أعلنت وزارة الاقتصاد أن الناتج المحلي الإجمالي حقق نموا ملحوظا خلال الربع الثالث من العام، مدفوعا بارتفاع الصادرات غير النفطية وتوسع قطاعي الصناعة والخدمات اللوجستية. وقال مسؤول في الوزارة إن ميناء صحار استقبل 240 سفينة في شهر واحد، وإن الحكومة تمضي في تنفيذ خطتها لتنويع مصادر الدخل وتشجيع الاستثمار في الطاقة المتجددة.</p></div>
+<div class="news"><h3>Sohar Port sets a new record</h3><p>The ministry said output grew strongly in the third quarter, helped by non-oil exports and by industry and logistics. Sohar Port handled 240 ships in a single month, an official said, and the government is pressing on with its plan to diversify income and encourage investment in renewable energy.</p></div></div>
+
+<h2>Use it on a page</h2>
+<pre>@font-face { font-family: "Suhar Sahafa";
+  src: url("SuharSahafa[GRAD,opsz,wght].woff2") format("woff2");
+  font-weight: 400 700; }
+article    { font-family: "Suhar Sahafa", serif; }
+article h1 { font-family: "Suhar Sahafa Headline", serif; font-weight: 700; }
+.newsprint { font-variation-settings: "GRAD" -50; }</pre>
+
+<footer>Suhar is designed by Sultan Al Isaiee (<a href="https://www.foxoman.net">foxoman.net</a>, <a href="https://github.com/foxoman">@foxoman</a>). Fonts and generator under the SIL Open Font License 1.1.
+Files: <a href="../dist/">dist/</a> · <a href="../docs/Suhar-specimen.pdf">specimen (PDF)</a> · <a href="../docs/Suhar-print-proof.pdf">print proof (PDF)</a> · <a href="../docs/LIMITATIONS.md">known limitations</a>.</footer>
+</main>
+<script src="kashida.js"></script>
+<script>
+(function(){
+  var $=function(i){return document.getElementById(i)},s=$('sample');
+  function upd(){
+    var size=+$('size').value; if($('auto').checked) $('opsz').value=Math.max(8,Math.min(72,Math.round(size*0.75)));
+    s.style.fontFamily='"'+$('fam').value+'"';s.style.fontSize=size+'px';s.style.lineHeight=size>60?1.2:1.5;
+    s.style.fontWeight=$('wght').value;s.style.fontOpticalSizing='none';
+    s.style.fontVariationSettings='"opsz" '+$('opsz').value+', "GRAD" '+$('grad').value;
+    $('osize').textContent=size+'px';$('owght').textContent=$('wght').value;$('oopsz').textContent=$('opsz').value;$('ograd').textContent=$('grad').value;
+  }
+  ['fam','size','wght','opsz','grad','auto'].forEach(function(i){$(i).addEventListener('input',upd);});upd();
+  var arp=$('arp');
+  function col(){
+    document.querySelectorAll('.news').forEach(function(n){n.style.fontVariationSettings='"GRAD" '+$('paper').value;n.style.fontFeatureSettings=$('nb').checked?'normal':'"calt" 0';});
+    if($('kash').checked) document.fonts.ready.then(function(){SuharKashida.justifyElement(arp);}); else if(arp.dataset.plain) arp.textContent=arp.dataset.plain;
+  }
+  ['kash','nb','paper'].forEach(function(i){$(i).addEventListener('input',col);});window.addEventListener('resize',col);col();
+})();
+</script></body></html>

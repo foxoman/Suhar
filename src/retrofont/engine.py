@@ -570,7 +570,7 @@ def shift(contours, dx, dy=0.0):
     return [[(p[0] + dx, p[1] + dy, p[2]) for p in c] for c in contours]
 
 
-def ink_traps(contours, depth, mouth, ylo, yhi, min_turn=55.0, max_turn=150.0):
+def ink_traps(contours, depth, mouth, ylo, yhi, min_turn=55.0, max_turn=150.0, fillet=False):
     """Cut a small notch into every sharp inner corner of the ink (a crotch between two strokes) whose y lies between
     ylo and yhi.  On absorbent paper ink fills such corners; the notch leaves room for it.  Contours must be free of
     overlaps.  Returns new contours."""
@@ -601,5 +601,10 @@ def ink_traps(contours, depth, mouth, ylo, yhi, min_turn=55.0, max_turn=150.0):
             A = (p[0] - d1[0] * mouth, p[1] - d1[1] * mouth)
             B = (p[0] + d2[0] * mouth, p[1] + d2[1] * mouth)
             C = (p[0] - e[0] * depth, p[1] - e[1] * depth)
-            cuts.append([(A[0], A[1], True), (C[0], C[1], True), (B[0], B[1], True)])
-    return difference(contours, cuts) if cuts else contours
+            if fillet:                 # the opposite of a trap: the corner is filled, as ink does on a typewriter ribbon
+                cuts.append([(A[0], A[1], True), (p[0] - e[0] * 2, p[1] - e[1] * 2, True), (B[0], B[1], True)])
+            else:
+                cuts.append([(A[0], A[1], True), (C[0], C[1], True), (B[0], B[1], True)])
+    if not cuts:
+        return contours
+    return union(contours + cuts) if fillet else difference(contours, cuts)

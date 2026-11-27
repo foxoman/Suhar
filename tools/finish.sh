@@ -4,7 +4,9 @@ set -e
 cd "$(dirname "$0")/.."
 rm -rf dist
 (cd src && python3 -m retrofont.build --out ../dist)
+python3 tools/fontbakery_report.py > /dev/null
 python3 tools/print_proof.py
+python3 tools/make_specimen_pdf.py
 python3 tools/validate.py
 python3 tools/make_docs.py
 mkdir -p nim/fonts reports/samples

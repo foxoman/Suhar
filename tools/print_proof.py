@@ -8,7 +8,8 @@ OUT = sys.argv[1] if len(sys.argv) > 1 else os.path.join(ROOT, 'docs', 'Suhar-pr
 VER = '.'.join(str(x) for x in __import__('re').findall(r'VERSION = \((\d+), (\d+)\)', open(os.path.join(ROOT, 'src', 'retrofont', 'ufo.py')).read())[0])
 
 FAMS = [('Suhar', 'Suhar'), ('Suhar Condensed', 'SuharCondensed'), ('Suhar Naskh', 'SuharNaskh'), ('Suhar Naskh Display', 'SuharNaskhDisplay'),
-        ('Suhar Sahafa', 'SuharSahafa'), ('Suhar Sahafa Headline', 'SuharSahafaHeadline'), ('Suhar Sahafa Caption', 'SuharSahafaCaption'),
+        ('Suhar Naskh Caption', 'SuharNaskhCaption'), ('Suhar Sahafa', 'SuharSahafa'), ('Suhar Sahafa Headline', 'SuharSahafaHeadline'), ('Suhar Sahafa Caption', 'SuharSahafaCaption'),
+        ('Suhar Typewriter', 'SuharTypewriter'),
         ('Suhar Mono', 'SuharMono')]
 css = []
 for fam, ps in FAMS:
@@ -16,7 +17,7 @@ for fam, ps in FAMS:
         p = os.path.join(D, 'ttf', f'{ps}-{sn}.ttf')
         if os.path.exists(p):
             css.append(f"@font-face{{font-family:'{fam}';src:url('file://{p}');font-weight:{w};font-style:{it}}}")
-for name, f in (('Sahafa VF', 'SuharSahafa[GRAD,opsz,wght].ttf'), ('Naskh VF', 'SuharNaskh[opsz,wght].ttf'), ('Suhar VF', 'Suhar[opsz,wght].ttf')):
+for name, f in (('Sahafa VF', 'SuharSahafa[GRAD,opsz,wght].ttf'), ('Naskh VF', 'SuharNaskh[GRAD,opsz,wght].ttf'), ('Suhar VF', 'Suhar[opsz,wght].ttf')):
     css.append(f"@font-face{{font-family:'{name}';src:url('file://{os.path.join(D, 'variable', f)}');font-weight:400 700}}")
 
 AR = ("أعلنت وزارة الاقتصاد أن الناتج المحلي الإجمالي حقق نموا ملحوظا خلال الربع الثالث من العام، مدفوعا بارتفاع الصادرات غير النفطية "
