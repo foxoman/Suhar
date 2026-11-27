@@ -210,3 +210,17 @@ standard deviation of the gap is 8 to 14 units on a mean of about 350 to 375.
   glyphs do.
 - **Print proof**: `tools/print_proof.py` writes an HTML page that loads the built fonts and lets Chrome print it
   to PDF, so the PDF embeds the real fonts.
+
+## 2.5
+
+- **Medial ain** is a closed stroke through three corners (top left, top right, the foot on the baseline) with a
+  slightly hollow top, instead of a rounded blob. In the heavy weights the counter closes, as it does in
+  written Naskh.
+- **Word space**: `kern.arabic_word_space` gives every word-final Arabic letter a kern of −48 against the space
+  (scaled with the space in Condensed), adds up to −120 for a tail under the line, and −24 between the space and
+  an initial alef. The mean optical gap between two Arabic words is about 320 units; between two Latin words 345
+  to 370.
+- **Grade** is a parameter of `Style`, so every family can be graded; the Arabic pen follows it.
+- **Filled corners** use the ink-trap routine with the triangle added instead of removed.
+- **Suhar Typewriter** is `sahafa.style(cut='typewriter')`: pen ratio 1.06 : 1, Latin horizontals at 92 % of the
+  stem, no tapering, sidebearings 10 % wider, Regular 22 % heavier than Sahafa Regular.

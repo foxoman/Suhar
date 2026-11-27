@@ -45,9 +45,9 @@ I would rather list these here than have you find them in production.
   Amiri, Noto Naskh Arabic and Scheherazade New I measured larger loops at the same point size and a longer
   line (the table is in the README). Nobody has run a reading test, and it has not been printed on newsprint
   or on a press. Both need people and a press, not more work in the generator.
-- It is a constructed Naskh, like the rest of Suhar: one pen angle, and only a few changes of shape by
-  neighbour: the tall teeth, the narrow tooth before ر ز, the returning yeh and the letters standing on ج ح خ.
-  A written Naskh has dozens of such forms. A calligrapher would call it a Naskh in
+- It is a constructed Naskh, like the rest of Suhar: one pen angle, and seven changes of shape by neighbour
+  (tall teeth, the narrow tooth before ر ز, the raised tooth before ن ي, the narrow ك, the returning yeh, ل on م,
+  letters standing on ج ح خ). A written Naskh has dozens of such forms. A calligrapher would call it a Naskh in
   proportion and not in hand.
 - Every letter has a Sahafa drawing now, but I can only judge the Arabic ones. The Persian, Urdu, Kurdish,
   Pashto, Sindhi, Uyghur and Jawi forms are drawn and compile; no reader of those languages has seen them.
@@ -55,7 +55,7 @@ I would rather list these here than have you find them in production.
   for the baseline stroke, which I judged the most a text weight can carry at 8 point.
 - Ink traps are still cut by rule (every sharp inner corner between the baseline and the loop height). I have
   looked at them enlarged on the joins of ب س ص ط ح ف ك ع د ل م ن and removed the stubs I found, but they
-  are untested on a press. In the variable fonts only 78 to 100 glyphs have them; the others keep overlapping
+  are untested on a press. In the variable fonts only 73 to 86 glyphs have them; the others keep overlapping
   outlines, because their ten masters do not match point for point once the overlaps are removed.
 - The Arabic italic is the upright drawing slanted to the left; Arabic has no cursive italic to draw. In the
   Latin italic only a, n, l, w and the feet of d h i k m r u are redrawn; the other letters are slanted.
@@ -65,19 +65,34 @@ I would rather list these here than have you find them in production.
 - The x-height is 470, to match the Arabic loops; Suhar's is 520. Next to Suhar at the same size the Sahafa
   lower case is smaller. Capitals, figures, ascent, descent and line height are the same.
 - The khanjar tails (`ss01`) are the Suhar shapes in the Sahafa proportions, not redrawn.
-- The serif brackets are curved now; the Arabic joins are as before.
-- There is no Nerd build of Suhar Sahafa Caption.
+- Sahafa Headline and the display end of the optical size axis fill their inner corners; the text cuts keep the
+  ink traps. The curves of the Arabic joins themselves are unchanged.
+- The Latin italic has its own a, f, l, n, w and exit strokes on d h i k m r u. It is still not a fully drawn
+  cursive: b c e g o p q s t and the capitals are slanted roman forms.
+- Punctuation, æ, œ and ð have no serifs, as in most serif faces; þ and ß have them.
+- There is no Nerd build of Suhar Sahafa Caption, Suhar Naskh Caption or Suhar Typewriter.
+
+## Suhar Typewriter
+
+- It is the Sahafa skeleton struck with a pen of almost one thickness, with slab serifs and filled corners. It
+  is **not monospaced**: Arabic cannot be set well in one cell, and Suhar Mono exists for that.
+- The uneven ink of a real typewriter is not in the outlines. The preview images I made before had that
+  effect added to the picture; in print the ribbon look comes from the paper and the printer, not the font.
+- Two weights only, no variable font, and it has had no use yet.
 
 ## Sizes, paper and justification
 
-- Optical sizes and grades exist only in the variable fonts, apart from Suhar Sahafa Caption. Suhar Naskh has no
-  static caption cut and no grade axis; Suhar Naskh Display and Suhar Mono have neither axis.
+- Optical sizes and grades exist only in the variable fonts, apart from the two Caption families. Suhar Naskh
+  Display and Suhar Mono have neither axis; Suhar and Suhar Condensed have no grade axis.
 - A grade is ±7 % of stroke weight. Which grade suits which paper is a guess until someone prints the proof.
-- **Nobody has printed the print proof yet.** It is made and checked as a file (fonts embedded, 15 pages); the
+- **Nobody has printed the print proof yet.** It is made and checked as a file (fonts embedded, 17 pages); the
   answers on its last page are what the next release should be built on.
 - Small-screen hinting is still ttfautohint's, not tuned from screenshots, because I have no device-test
   results from Windows, Android or macOS. The larger dots and the wider mark distance apply at small optical
   sizes, that is in the variable fonts and in Sahafa Caption, not in the other static fonts.
+- The kashida rules in `tools/kashida.py` are the common ones (after س ص, before final ه ة د, before final ا ل ك,
+  and so on), one kashida per word. OpenType has no table an application would read them from, so they work
+  only where that script or its web version is used.
 - `jalt` and tatweel are what a font can offer for justification. Whether a justified column uses them depends
   on the application: Adobe InDesign (Middle East) does, most browsers and word processors only widen the
   word spaces. There is no rule in the font for where a kashida may go.
@@ -118,6 +133,10 @@ I would rather list these here than have you find them in production.
 - In Suhar Nerd Mono the icons are scaled to one cell and are small.
 
 ## Testing
+
+- Fontbakery (universal profile) still reports these failing checks, which I have not fixed: `case_mapping`, `family/win_ascent_and_descent`, `fontdata_namecheck`, `opentype/STAT/ital_axis`, `valid_glyphnames`. Details are in `reports/fontbakery.md`.
+- The specimen site is checked as a file only; I have not seen it served by GitHub Pages. The npm package is
+  built and packed, not published.
 
 - Tested: shaping with HarfBuzz, rendering with FreeType, structure with fontTools and the OpenType Sanitizer,
   PDF embedding, and loading in Retro Nim UI.

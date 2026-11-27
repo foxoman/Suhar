@@ -2,7 +2,7 @@
 
 Produced by `tools/validate.py` from the compiled files in `dist/`. Shaping uses HarfBuzz, rasterisation uses FreeType (with the fonts' own TrueType hinting), structure checks use fontTools and the OpenType Sanitizer.
 
-**2532 checks passed, 0 failed.**
+**2740 checks passed, 0 failed.**
 
 ## All checks
 
@@ -894,6 +894,150 @@ Produced by `tools/validate.py` from the compiled files in `dist/`. Shaping uses
 ### sanitizer
 
 - PASS — SuharNaskh-SemiBoldItalic.otf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharNaskhCaption-Bold.otf: GSUB
+- PASS — SuharNaskhCaption-Bold.otf: GPOS
+- PASS — SuharNaskhCaption-Bold.otf: GDEF
+
+### metrics
+
+- PASS — SuharNaskhCaption-Bold.otf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### no placeholders
+
+- PASS — SuharNaskhCaption-Bold.otf: no empty mapped glyphs
+
+### sanitizer
+
+- PASS — SuharNaskhCaption-Bold.otf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharNaskhCaption-BoldItalic.otf: GSUB
+- PASS — SuharNaskhCaption-BoldItalic.otf: GPOS
+- PASS — SuharNaskhCaption-BoldItalic.otf: GDEF
+
+### metrics
+
+- PASS — SuharNaskhCaption-BoldItalic.otf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### no placeholders
+
+- PASS — SuharNaskhCaption-BoldItalic.otf: no empty mapped glyphs
+
+### sanitizer
+
+- PASS — SuharNaskhCaption-BoldItalic.otf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharNaskhCaption-Italic.otf: GSUB
+- PASS — SuharNaskhCaption-Italic.otf: GPOS
+- PASS — SuharNaskhCaption-Italic.otf: GDEF
+
+### metrics
+
+- PASS — SuharNaskhCaption-Italic.otf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### no placeholders
+
+- PASS — SuharNaskhCaption-Italic.otf: no empty mapped glyphs
+
+### sanitizer
+
+- PASS — SuharNaskhCaption-Italic.otf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharNaskhCaption-Medium.otf: GSUB
+- PASS — SuharNaskhCaption-Medium.otf: GPOS
+- PASS — SuharNaskhCaption-Medium.otf: GDEF
+
+### metrics
+
+- PASS — SuharNaskhCaption-Medium.otf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### no placeholders
+
+- PASS — SuharNaskhCaption-Medium.otf: no empty mapped glyphs
+
+### sanitizer
+
+- PASS — SuharNaskhCaption-Medium.otf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharNaskhCaption-MediumItalic.otf: GSUB
+- PASS — SuharNaskhCaption-MediumItalic.otf: GPOS
+- PASS — SuharNaskhCaption-MediumItalic.otf: GDEF
+
+### metrics
+
+- PASS — SuharNaskhCaption-MediumItalic.otf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### no placeholders
+
+- PASS — SuharNaskhCaption-MediumItalic.otf: no empty mapped glyphs
+
+### sanitizer
+
+- PASS — SuharNaskhCaption-MediumItalic.otf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharNaskhCaption-Regular.otf: GSUB
+- PASS — SuharNaskhCaption-Regular.otf: GPOS
+- PASS — SuharNaskhCaption-Regular.otf: GDEF
+
+### metrics
+
+- PASS — SuharNaskhCaption-Regular.otf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### no placeholders
+
+- PASS — SuharNaskhCaption-Regular.otf: no empty mapped glyphs
+
+### sanitizer
+
+- PASS — SuharNaskhCaption-Regular.otf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharNaskhCaption-SemiBold.otf: GSUB
+- PASS — SuharNaskhCaption-SemiBold.otf: GPOS
+- PASS — SuharNaskhCaption-SemiBold.otf: GDEF
+
+### metrics
+
+- PASS — SuharNaskhCaption-SemiBold.otf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### no placeholders
+
+- PASS — SuharNaskhCaption-SemiBold.otf: no empty mapped glyphs
+
+### sanitizer
+
+- PASS — SuharNaskhCaption-SemiBold.otf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharNaskhCaption-SemiBoldItalic.otf: GSUB
+- PASS — SuharNaskhCaption-SemiBoldItalic.otf: GPOS
+- PASS — SuharNaskhCaption-SemiBoldItalic.otf: GDEF
+
+### metrics
+
+- PASS — SuharNaskhCaption-SemiBoldItalic.otf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### no placeholders
+
+- PASS — SuharNaskhCaption-SemiBoldItalic.otf: no empty mapped glyphs
+
+### sanitizer
+
+- PASS — SuharNaskhCaption-SemiBoldItalic.otf: OpenType Sanitizer
 
 ### tables
 
@@ -2217,6 +2361,78 @@ Produced by `tools/validate.py` from the compiled files in `dist/`. Shaping uses
 
 ### tables
 
+- PASS — SuharTypewriter-Bold.otf: GSUB
+- PASS — SuharTypewriter-Bold.otf: GPOS
+- PASS — SuharTypewriter-Bold.otf: GDEF
+
+### metrics
+
+- PASS — SuharTypewriter-Bold.otf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### no placeholders
+
+- PASS — SuharTypewriter-Bold.otf: no empty mapped glyphs
+
+### sanitizer
+
+- PASS — SuharTypewriter-Bold.otf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharTypewriter-BoldItalic.otf: GSUB
+- PASS — SuharTypewriter-BoldItalic.otf: GPOS
+- PASS — SuharTypewriter-BoldItalic.otf: GDEF
+
+### metrics
+
+- PASS — SuharTypewriter-BoldItalic.otf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### no placeholders
+
+- PASS — SuharTypewriter-BoldItalic.otf: no empty mapped glyphs
+
+### sanitizer
+
+- PASS — SuharTypewriter-BoldItalic.otf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharTypewriter-Italic.otf: GSUB
+- PASS — SuharTypewriter-Italic.otf: GPOS
+- PASS — SuharTypewriter-Italic.otf: GDEF
+
+### metrics
+
+- PASS — SuharTypewriter-Italic.otf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### no placeholders
+
+- PASS — SuharTypewriter-Italic.otf: no empty mapped glyphs
+
+### sanitizer
+
+- PASS — SuharTypewriter-Italic.otf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharTypewriter-Regular.otf: GSUB
+- PASS — SuharTypewriter-Regular.otf: GPOS
+- PASS — SuharTypewriter-Regular.otf: GDEF
+
+### metrics
+
+- PASS — SuharTypewriter-Regular.otf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### no placeholders
+
+- PASS — SuharTypewriter-Regular.otf: no empty mapped glyphs
+
+### sanitizer
+
+- PASS — SuharTypewriter-Regular.otf: OpenType Sanitizer
+
+### tables
+
 - PASS — Suhar-Black.ttf: GSUB
 - PASS — Suhar-Black.ttf: GPOS
 - PASS — Suhar-Black.ttf: GDEF
@@ -3286,6 +3502,182 @@ Produced by `tools/validate.py` from the compiled files in `dist/`. Shaping uses
 ### sanitizer
 
 - PASS — SuharNaskh-SemiBoldItalic.ttf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharNaskhCaption-Bold.ttf: GSUB
+- PASS — SuharNaskhCaption-Bold.ttf: GPOS
+- PASS — SuharNaskhCaption-Bold.ttf: GDEF
+
+### hinting
+
+- PASS — SuharNaskhCaption-Bold.ttf: TrueType instructions (fpgm/prep/cvt)
+
+### metrics
+
+- PASS — SuharNaskhCaption-Bold.ttf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### no placeholders
+
+- PASS — SuharNaskhCaption-Bold.ttf: no empty mapped glyphs
+
+### sanitizer
+
+- PASS — SuharNaskhCaption-Bold.ttf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharNaskhCaption-BoldItalic.ttf: GSUB
+- PASS — SuharNaskhCaption-BoldItalic.ttf: GPOS
+- PASS — SuharNaskhCaption-BoldItalic.ttf: GDEF
+
+### hinting
+
+- PASS — SuharNaskhCaption-BoldItalic.ttf: TrueType instructions (fpgm/prep/cvt)
+
+### metrics
+
+- PASS — SuharNaskhCaption-BoldItalic.ttf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### no placeholders
+
+- PASS — SuharNaskhCaption-BoldItalic.ttf: no empty mapped glyphs
+
+### sanitizer
+
+- PASS — SuharNaskhCaption-BoldItalic.ttf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharNaskhCaption-Italic.ttf: GSUB
+- PASS — SuharNaskhCaption-Italic.ttf: GPOS
+- PASS — SuharNaskhCaption-Italic.ttf: GDEF
+
+### hinting
+
+- PASS — SuharNaskhCaption-Italic.ttf: TrueType instructions (fpgm/prep/cvt)
+
+### metrics
+
+- PASS — SuharNaskhCaption-Italic.ttf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### no placeholders
+
+- PASS — SuharNaskhCaption-Italic.ttf: no empty mapped glyphs
+
+### sanitizer
+
+- PASS — SuharNaskhCaption-Italic.ttf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharNaskhCaption-Medium.ttf: GSUB
+- PASS — SuharNaskhCaption-Medium.ttf: GPOS
+- PASS — SuharNaskhCaption-Medium.ttf: GDEF
+
+### hinting
+
+- PASS — SuharNaskhCaption-Medium.ttf: TrueType instructions (fpgm/prep/cvt)
+
+### metrics
+
+- PASS — SuharNaskhCaption-Medium.ttf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### no placeholders
+
+- PASS — SuharNaskhCaption-Medium.ttf: no empty mapped glyphs
+
+### sanitizer
+
+- PASS — SuharNaskhCaption-Medium.ttf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharNaskhCaption-MediumItalic.ttf: GSUB
+- PASS — SuharNaskhCaption-MediumItalic.ttf: GPOS
+- PASS — SuharNaskhCaption-MediumItalic.ttf: GDEF
+
+### hinting
+
+- PASS — SuharNaskhCaption-MediumItalic.ttf: TrueType instructions (fpgm/prep/cvt)
+
+### metrics
+
+- PASS — SuharNaskhCaption-MediumItalic.ttf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### no placeholders
+
+- PASS — SuharNaskhCaption-MediumItalic.ttf: no empty mapped glyphs
+
+### sanitizer
+
+- PASS — SuharNaskhCaption-MediumItalic.ttf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharNaskhCaption-Regular.ttf: GSUB
+- PASS — SuharNaskhCaption-Regular.ttf: GPOS
+- PASS — SuharNaskhCaption-Regular.ttf: GDEF
+
+### hinting
+
+- PASS — SuharNaskhCaption-Regular.ttf: TrueType instructions (fpgm/prep/cvt)
+
+### metrics
+
+- PASS — SuharNaskhCaption-Regular.ttf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### no placeholders
+
+- PASS — SuharNaskhCaption-Regular.ttf: no empty mapped glyphs
+
+### sanitizer
+
+- PASS — SuharNaskhCaption-Regular.ttf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharNaskhCaption-SemiBold.ttf: GSUB
+- PASS — SuharNaskhCaption-SemiBold.ttf: GPOS
+- PASS — SuharNaskhCaption-SemiBold.ttf: GDEF
+
+### hinting
+
+- PASS — SuharNaskhCaption-SemiBold.ttf: TrueType instructions (fpgm/prep/cvt)
+
+### metrics
+
+- PASS — SuharNaskhCaption-SemiBold.ttf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### no placeholders
+
+- PASS — SuharNaskhCaption-SemiBold.ttf: no empty mapped glyphs
+
+### sanitizer
+
+- PASS — SuharNaskhCaption-SemiBold.ttf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharNaskhCaption-SemiBoldItalic.ttf: GSUB
+- PASS — SuharNaskhCaption-SemiBoldItalic.ttf: GPOS
+- PASS — SuharNaskhCaption-SemiBoldItalic.ttf: GDEF
+
+### hinting
+
+- PASS — SuharNaskhCaption-SemiBoldItalic.ttf: TrueType instructions (fpgm/prep/cvt)
+
+### metrics
+
+- PASS — SuharNaskhCaption-SemiBoldItalic.ttf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### no placeholders
+
+- PASS — SuharNaskhCaption-SemiBoldItalic.ttf: no empty mapped glyphs
+
+### sanitizer
+
+- PASS — SuharNaskhCaption-SemiBoldItalic.ttf: OpenType Sanitizer
 
 ### tables
 
@@ -4937,6 +5329,94 @@ Produced by `tools/validate.py` from the compiled files in `dist/`. Shaping uses
 
 ### tables
 
+- PASS — SuharTypewriter-Bold.ttf: GSUB
+- PASS — SuharTypewriter-Bold.ttf: GPOS
+- PASS — SuharTypewriter-Bold.ttf: GDEF
+
+### hinting
+
+- PASS — SuharTypewriter-Bold.ttf: TrueType instructions (fpgm/prep/cvt)
+
+### metrics
+
+- PASS — SuharTypewriter-Bold.ttf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### no placeholders
+
+- PASS — SuharTypewriter-Bold.ttf: no empty mapped glyphs
+
+### sanitizer
+
+- PASS — SuharTypewriter-Bold.ttf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharTypewriter-BoldItalic.ttf: GSUB
+- PASS — SuharTypewriter-BoldItalic.ttf: GPOS
+- PASS — SuharTypewriter-BoldItalic.ttf: GDEF
+
+### hinting
+
+- PASS — SuharTypewriter-BoldItalic.ttf: TrueType instructions (fpgm/prep/cvt)
+
+### metrics
+
+- PASS — SuharTypewriter-BoldItalic.ttf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### no placeholders
+
+- PASS — SuharTypewriter-BoldItalic.ttf: no empty mapped glyphs
+
+### sanitizer
+
+- PASS — SuharTypewriter-BoldItalic.ttf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharTypewriter-Italic.ttf: GSUB
+- PASS — SuharTypewriter-Italic.ttf: GPOS
+- PASS — SuharTypewriter-Italic.ttf: GDEF
+
+### hinting
+
+- PASS — SuharTypewriter-Italic.ttf: TrueType instructions (fpgm/prep/cvt)
+
+### metrics
+
+- PASS — SuharTypewriter-Italic.ttf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### no placeholders
+
+- PASS — SuharTypewriter-Italic.ttf: no empty mapped glyphs
+
+### sanitizer
+
+- PASS — SuharTypewriter-Italic.ttf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharTypewriter-Regular.ttf: GSUB
+- PASS — SuharTypewriter-Regular.ttf: GPOS
+- PASS — SuharTypewriter-Regular.ttf: GDEF
+
+### hinting
+
+- PASS — SuharTypewriter-Regular.ttf: TrueType instructions (fpgm/prep/cvt)
+
+### metrics
+
+- PASS — SuharTypewriter-Regular.ttf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### no placeholders
+
+- PASS — SuharTypewriter-Regular.ttf: no empty mapped glyphs
+
+### sanitizer
+
+- PASS — SuharTypewriter-Regular.ttf: OpenType Sanitizer
+
+### tables
+
 - PASS — Suhar-Italic[opsz,wght].ttf: GSUB
 - PASS — Suhar-Italic[opsz,wght].ttf: GPOS
 - PASS — Suhar-Italic[opsz,wght].ttf: GDEF
@@ -5017,17 +5497,17 @@ Produced by `tools/validate.py` from the compiled files in `dist/`. Shaping uses
 
 ### tables
 
-- PASS — SuharNaskh-Italic[opsz,wght].ttf: GSUB
-- PASS — SuharNaskh-Italic[opsz,wght].ttf: GPOS
-- PASS — SuharNaskh-Italic[opsz,wght].ttf: GDEF
+- PASS — SuharNaskh-Italic[GRAD,opsz,wght].ttf: GSUB
+- PASS — SuharNaskh-Italic[GRAD,opsz,wght].ttf: GPOS
+- PASS — SuharNaskh-Italic[GRAD,opsz,wght].ttf: GDEF
 
 ### metrics
 
-- PASS — SuharNaskh-Italic[opsz,wght].ttf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+- PASS — SuharNaskh-Italic[GRAD,opsz,wght].ttf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
 
 ### sanitizer
 
-- PASS — SuharNaskh-Italic[opsz,wght].ttf: OpenType Sanitizer
+- PASS — SuharNaskh-Italic[GRAD,opsz,wght].ttf: OpenType Sanitizer
 
 ### tables
 
@@ -5045,17 +5525,17 @@ Produced by `tools/validate.py` from the compiled files in `dist/`. Shaping uses
 
 ### tables
 
-- PASS — SuharNaskh[opsz,wght].ttf: GSUB
-- PASS — SuharNaskh[opsz,wght].ttf: GPOS
-- PASS — SuharNaskh[opsz,wght].ttf: GDEF
+- PASS — SuharNaskh[GRAD,opsz,wght].ttf: GSUB
+- PASS — SuharNaskh[GRAD,opsz,wght].ttf: GPOS
+- PASS — SuharNaskh[GRAD,opsz,wght].ttf: GDEF
 
 ### metrics
 
-- PASS — SuharNaskh[opsz,wght].ttf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+- PASS — SuharNaskh[GRAD,opsz,wght].ttf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
 
 ### sanitizer
 
-- PASS — SuharNaskh[opsz,wght].ttf: OpenType Sanitizer
+- PASS — SuharNaskh[GRAD,opsz,wght].ttf: OpenType Sanitizer
 
 ### tables
 
@@ -5175,6 +5655,14 @@ Produced by `tools/validate.py` from the compiled files in `dist/`. Shaping uses
 - PASS — SuharNaskh-Regular.woff2: decodes, same glyph count as TTF
 - PASS — SuharNaskh-SemiBold.woff2: decodes, same glyph count as TTF
 - PASS — SuharNaskh-SemiBoldItalic.woff2: decodes, same glyph count as TTF
+- PASS — SuharNaskhCaption-Bold.woff2: decodes, same glyph count as TTF
+- PASS — SuharNaskhCaption-BoldItalic.woff2: decodes, same glyph count as TTF
+- PASS — SuharNaskhCaption-Italic.woff2: decodes, same glyph count as TTF
+- PASS — SuharNaskhCaption-Medium.woff2: decodes, same glyph count as TTF
+- PASS — SuharNaskhCaption-MediumItalic.woff2: decodes, same glyph count as TTF
+- PASS — SuharNaskhCaption-Regular.woff2: decodes, same glyph count as TTF
+- PASS — SuharNaskhCaption-SemiBold.woff2: decodes, same glyph count as TTF
+- PASS — SuharNaskhCaption-SemiBoldItalic.woff2: decodes, same glyph count as TTF
 - PASS — SuharNaskhDisplay-Bold.woff2: decodes, same glyph count as TTF
 - PASS — SuharNaskhDisplay-Medium.woff2: decodes, same glyph count as TTF
 - PASS — SuharNaskhDisplay-Regular.woff2: decodes, same glyph count as TTF
@@ -5257,6 +5745,10 @@ Produced by `tools/validate.py` from the compiled files in `dist/`. Shaping uses
 - PASS — SuharSahafaHeadline-Regular.woff2: decodes, same glyph count as TTF
 - PASS — SuharSahafaHeadline-SemiBold.woff2: decodes, same glyph count as TTF
 - PASS — SuharSahafaHeadline-SemiBoldItalic.woff2: decodes, same glyph count as TTF
+- PASS — SuharTypewriter-Bold.woff2: decodes, same glyph count as TTF
+- PASS — SuharTypewriter-BoldItalic.woff2: decodes, same glyph count as TTF
+- PASS — SuharTypewriter-Italic.woff2: decodes, same glyph count as TTF
+- PASS — SuharTypewriter-Regular.woff2: decodes, same glyph count as TTF
 
 ### family
 
@@ -5423,9 +5915,9 @@ Produced by `tools/validate.py` from the compiled files in `dist/`. Shaping uses
 - PASS — SuharCondensed[opsz,wght].ttf: has every glyph of the static font
 - PASS — SuharMono-Italic[wght].ttf: has every glyph of the static font
 - PASS — SuharMono[wght].ttf: has every glyph of the static font
-- PASS — SuharNaskh-Italic[opsz,wght].ttf: has every glyph of the static font
+- PASS — SuharNaskh-Italic[GRAD,opsz,wght].ttf: has every glyph of the static font
 - PASS — SuharNaskhDisplay[wght].ttf: has every glyph of the static font
-- PASS — SuharNaskh[opsz,wght].ttf: has every glyph of the static font
+- PASS — SuharNaskh[GRAD,opsz,wght].ttf: has every glyph of the static font
 - PASS — SuharSahafa-Italic[GRAD,opsz,wght].ttf: has every glyph of the static font
 - PASS — SuharSahafaHeadline-Italic[GRAD,opsz,wght].ttf: has every glyph of the static font
 - PASS — SuharSahafaHeadline[GRAD,opsz,wght].ttf: has every glyph of the static font
@@ -5479,14 +5971,14 @@ Produced by `tools/validate.py` from the compiled files in `dist/`. Shaping uses
 - PASS — SuharMono-Italic[wght].ttf: wght 700 renders heavier than 400
 - PASS — SuharMono[wght].ttf: axes {'wght': (400.0, 400.0, 700.0)}
 - PASS — SuharMono[wght].ttf: wght 700 renders heavier than 400
-- PASS — SuharNaskh-Italic[opsz,wght].ttf: axes {'wght': (400.0, 400.0, 700.0), 'opsz': (8.0, 14.0, 72.0)}
-- PASS — SuharNaskh-Italic[opsz,wght].ttf: wght 700 renders heavier than 400
-- PASS — SuharNaskh-Italic[opsz,wght].ttf: opsz 8 is spaced wider than opsz 72
+- PASS — SuharNaskh-Italic[GRAD,opsz,wght].ttf: axes {'wght': (400.0, 400.0, 700.0), 'opsz': (8.0, 14.0, 72.0), 'GRAD': (-50.0, 0.0, 50.0)}
+- PASS — SuharNaskh-Italic[GRAD,opsz,wght].ttf: wght 700 renders heavier than 400
+- PASS — SuharNaskh-Italic[GRAD,opsz,wght].ttf: opsz 8 is spaced wider than opsz 72
 - PASS — SuharNaskhDisplay[wght].ttf: axes {'wght': (400.0, 400.0, 700.0)}
 - PASS — SuharNaskhDisplay[wght].ttf: wght 700 renders heavier than 400
-- PASS — SuharNaskh[opsz,wght].ttf: axes {'wght': (400.0, 400.0, 700.0), 'opsz': (8.0, 14.0, 72.0)}
-- PASS — SuharNaskh[opsz,wght].ttf: wght 700 renders heavier than 400
-- PASS — SuharNaskh[opsz,wght].ttf: opsz 8 is spaced wider than opsz 72
+- PASS — SuharNaskh[GRAD,opsz,wght].ttf: axes {'wght': (400.0, 400.0, 700.0), 'opsz': (8.0, 14.0, 72.0), 'GRAD': (-50.0, 0.0, 50.0)}
+- PASS — SuharNaskh[GRAD,opsz,wght].ttf: wght 700 renders heavier than 400
+- PASS — SuharNaskh[GRAD,opsz,wght].ttf: opsz 8 is spaced wider than opsz 72
 - PASS — SuharSahafa-Italic[GRAD,opsz,wght].ttf: axes {'wght': (400.0, 400.0, 700.0), 'opsz': (8.0, 14.0, 72.0), 'GRAD': (-50.0, 0.0, 50.0)}
 - PASS — SuharSahafa-Italic[GRAD,opsz,wght].ttf: wght 700 renders heavier than 400
 - PASS — SuharSahafa-Italic[GRAD,opsz,wght].ttf: opsz 8 is spaced wider than opsz 72
@@ -5720,7 +6212,7 @@ Produced by `tools/validate.py` from the compiled files in `dist/`. Shaping uses
 - PASS — Naskh draws its own jeem, heh, lam-alef (differs from Suhar)
 - PASS — Display has the same character set
 - PASS — Display: returning yeh after a letter with nothing under the line (في على), not after ب or م
-- PASS — Naskh (text): returning yeh only with ss06
+- PASS — Naskh (text): returning yeh after other letters only with ss06 (على)
 - PASS — Suhar has no returning yeh feature
 - PASS — kaf top stays inside the ascender and ends in a point, not a flat cut
 - PASS — dlig: lam standing on meem (لمح)
@@ -5728,8 +6220,8 @@ Produced by `tools/validate.py` from the compiled files in `dist/`. Shaping uses
 
 ### variable
 
-- PASS — SuharNaskh[opsz,wght].ttf: built with a weight axis and (nearly) the full character set
-- PASS — SuharNaskh-Italic[opsz,wght].ttf: built with a weight axis and (nearly) the full character set
+- PASS — SuharNaskh[GRAD,opsz,wght].ttf: built with a weight axis and (nearly) the full character set
+- PASS — SuharNaskh-Italic[GRAD,opsz,wght].ttf: built with a weight axis and (nearly) the full character set
 - PASS — SuharNaskhDisplay[wght].ttf: built with a weight axis and (nearly) the full character set
 
 ### currency
@@ -5742,7 +6234,7 @@ Produced by `tools/validate.py` from the compiled files in `dist/`. Shaping uses
 - PASS — Suhar Bold: gaps after word-final letters differ by less than 140 units (ر was 110 units wider before 1.9)
 - PASS — Suhar Naskh: gaps after word-final letters differ by less than 200 units (ر was 110 units wider before 1.9)
 - PASS — Naskh Display: gaps after word-final letters differ by less than 200 units (ر was 110 units wider before 1.9)
-- PASS — the tail of reh runs under less than half of the space
+- PASS — the tail of reh runs under less than two thirds of the space
 - PASS — alef and lam at the start of a word stand closer (gap 110 or less)
 
 ### naskh
@@ -5828,7 +6320,6 @@ Produced by `tools/validate.py` from the compiled files in `dist/`. Shaping uses
 - PASS — Sahafa SemiBold: the loop of heh stays open (counter of at least 7440 square units)
 - PASS — Sahafa SemiBold: the loop of qaf stays open (counter of at least 7440 square units)
 - PASS — Sahafa SemiBold: the loop of teh marbuta stays open (counter of at least 7440 square units)
-- PASS — Sahafa SemiBold: the loop of medial ain stays open (counter of at least 1550 square units)
 - PASS — Sahafa SemiBold: same character set as Suhar Naskh
 - PASS — Sahafa SemiBold: serifs on the Latin (n is wider at the foot than at mid-height)
 - PASS — Sahafa SemiBold: i keeps a separate dot
@@ -5844,7 +6335,6 @@ Produced by `tools/validate.py` from the compiled files in `dist/`. Shaping uses
 - PASS — Sahafa Bold: the loop of heh stays open (counter of at least 6000 square units)
 - PASS — Sahafa Bold: the loop of qaf stays open (counter of at least 6000 square units)
 - PASS — Sahafa Bold: the loop of teh marbuta stays open (counter of at least 6000 square units)
-- PASS — Sahafa Bold: the loop of medial ain stays open (counter of at least 1250 square units)
 - PASS — Sahafa Bold: same character set as Suhar Naskh
 - PASS — Sahafa Bold: serifs on the Latin (n is wider at the foot than at mid-height)
 - PASS — Sahafa Bold: i keeps a separate dot
@@ -5892,7 +6382,6 @@ Produced by `tools/validate.py` from the compiled files in `dist/`. Shaping uses
 - PASS — SahafaHeadline SemiBold: the loop of heh stays open (counter of at least 7440 square units)
 - PASS — SahafaHeadline SemiBold: the loop of qaf stays open (counter of at least 7440 square units)
 - PASS — SahafaHeadline SemiBold: the loop of teh marbuta stays open (counter of at least 7440 square units)
-- PASS — SahafaHeadline SemiBold: the loop of medial ain stays open (counter of at least 1550 square units)
 - PASS — SahafaHeadline SemiBold: same character set as Suhar Naskh
 - PASS — SahafaHeadline SemiBold: serifs on the Latin (n is wider at the foot than at mid-height)
 - PASS — SahafaHeadline SemiBold: i keeps a separate dot
@@ -5908,7 +6397,6 @@ Produced by `tools/validate.py` from the compiled files in `dist/`. Shaping uses
 - PASS — SahafaHeadline Bold: the loop of heh stays open (counter of at least 6000 square units)
 - PASS — SahafaHeadline Bold: the loop of qaf stays open (counter of at least 6000 square units)
 - PASS — SahafaHeadline Bold: the loop of teh marbuta stays open (counter of at least 6000 square units)
-- PASS — SahafaHeadline Bold: the loop of medial ain stays open (counter of at least 1250 square units)
 - PASS — SahafaHeadline Bold: same character set as Suhar Naskh
 - PASS — SahafaHeadline Bold: serifs on the Latin (n is wider at the foot than at mid-height)
 - PASS — SahafaHeadline Bold: i keeps a separate dot
@@ -5934,7 +6422,7 @@ Produced by `tools/validate.py` from the compiled files in `dist/`. Shaping uses
 - PASS — ink traps: the generator cuts notches at the crotches of seen and sad (ink area 60 to 2500 square units smaller)
 - PASS — italic: Arabic and Latin shape, lam-alef forms
 - PASS — dlig changes لم in Sahafa
-- PASS — ss06 changes في in Sahafa
+- PASS — ss06 changes على in Sahafa
 - PASS — ss07 changes نجم in Sahafa
 - PASS — every letter skeleton has a drawing of its own in Sahafa
 - PASS — the 14 ligatures and alternates of Suhar Naskh are redrawn (lam-meem, lam on jeem, feh-yeh, returning yeh)
@@ -5969,8 +6457,10 @@ Produced by `tools/validate.py` from the compiled files in `dist/`. Shaping uses
 - PASS — SuharSahafaHeadline-Italic[GRAD,opsz,wght].ttf: a grade changes the stroke (-50 lighter, +50 heavier) and no advance width
 - PASS — SuharSahafaHeadline-Italic[GRAD,opsz,wght].ttf: thin strokes thicker in the caption size and finer in the display size
 - PASS — SuharSahafaHeadline-Italic[GRAD,opsz,wght].ttf: the caption size is set looser than the display size
-- PASS — SuharNaskh[opsz,wght].ttf: optical size axis 8-72, thin strokes thicker at 8 than at 72
-- PASS — SuharNaskh-Italic[opsz,wght].ttf: optical size axis 8-72, thin strokes thicker at 8 than at 72
+- PASS — SuharNaskh[GRAD,opsz,wght].ttf: a grade changes no advance width
+- PASS — SuharNaskh[GRAD,opsz,wght].ttf: optical size axis 8-72, thin strokes thicker at 8 than at 72
+- PASS — SuharNaskh-Italic[GRAD,opsz,wght].ttf: a grade changes no advance width
+- PASS — SuharNaskh-Italic[GRAD,opsz,wght].ttf: optical size axis 8-72, thin strokes thicker at 8 than at 72
 
 ### neighbour
 
@@ -6011,70 +6501,136 @@ Produced by `tools/validate.py` from the compiled files in `dist/`. Shaping uses
 
 - PASS — print proof PDF written, with the fonts embedded
 
+### families
+
+- PASS — Suhar Naskh Caption Regular: present, named, hinted
+- PASS — Suhar Naskh Caption Italic: present, named, hinted
+- PASS — Suhar Naskh Caption Medium: present, named, hinted
+- PASS — Suhar Naskh Caption Medium Italic: present, named, hinted
+- PASS — Suhar Naskh Caption SemiBold: present, named, hinted
+- PASS — Suhar Naskh Caption SemiBold Italic: present, named, hinted
+- PASS — Suhar Naskh Caption Bold: present, named, hinted
+- PASS — Suhar Naskh Caption Bold Italic: present, named, hinted
+- PASS — Suhar Typewriter Regular: present, named, hinted
+- PASS — Suhar Typewriter Italic: present, named, hinted
+- PASS — Suhar Typewriter Bold: present, named, hinted
+- PASS — Suhar Typewriter Bold Italic: present, named, hinted
+
+### optical
+
+- PASS — Naskh Caption: thicker thin strokes and looser spacing than Suhar Naskh
+
+### typewriter
+
+- PASS — Typewriter: one weight of line (upright at least 0.8 of the baseline stroke, Latin horizontals at least 0.85 of the stem), serifs
+- PASS — Typewriter Regular is heavier than Sahafa Regular (uprights at least 20 units thicker)
+
+### arabic
+
+- PASS — Suhar: medial ain is a wedge with a flat top, wider at the top than half way down, and unlike meem
+- PASS — Suhar Naskh: medial ain is a wedge with a flat top, wider at the top than half way down, and unlike meem
+- PASS — Sahafa: medial ain is a wedge with a flat top, wider at the top than half way down, and unlike meem
+
+### neighbour
+
+- PASS — Sahafa: kaf before alef or lam takes the narrow form
+- PASS — Sahafa: final yeh returns under feh and qaf by default
+- PASS — Naskh: kaf before alef or lam takes the narrow form
+- PASS — Naskh: final yeh returns under feh and qaf by default
+- PASS — Sahafa: lam stands on a following meem by default (calt); Naskh keeps it optional
+
+### justification
+
+- PASS — kashida rules: after seen first, never after a non-joining letter, never inside lam-alef or a two-letter word
+- PASS — kashida justification fills a line without passing its width
+
+### release
+
+- PASS — specimen PDF written
+- PASS — specimen site written
+- PASS — kashida script for the web written
+- PASS — Fontbakery report written
+
+### latin
+
+- PASS — Sahafa: old-style figures stand on the Sahafa x-height
+
 ### word space
 
-- PASS — Suhar-Black: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
-- PASS — Suhar-BlackItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
-- PASS — Suhar-Bold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
-- PASS — Suhar-BoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
-- PASS — Suhar-ExtraBold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
-- PASS — Suhar-ExtraBoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
-- PASS — Suhar-Italic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
-- PASS — Suhar-Light: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
-- PASS — Suhar-LightItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
-- PASS — Suhar-Medium: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
-- PASS — Suhar-MediumItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
-- PASS — Suhar-Regular: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
-- PASS — Suhar-SemiBold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
-- PASS — Suhar-SemiBoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
-- PASS — SuharCondensed-Bold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
-- PASS — SuharCondensed-BoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
-- PASS — SuharCondensed-ExtraBold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
-- PASS — SuharCondensed-ExtraBoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
-- PASS — SuharCondensed-Italic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
-- PASS — SuharCondensed-Light: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
-- PASS — SuharCondensed-LightItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
-- PASS — SuharCondensed-Medium: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
-- PASS — SuharCondensed-MediumItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
-- PASS — SuharCondensed-Regular: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
-- PASS — SuharCondensed-SemiBold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
-- PASS — SuharCondensed-SemiBoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
-- PASS — SuharNaskh-Bold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
-- PASS — SuharNaskh-BoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
-- PASS — SuharNaskh-Italic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
-- PASS — SuharNaskh-Medium: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
-- PASS — SuharNaskh-MediumItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
-- PASS — SuharNaskh-Regular: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
-- PASS — SuharNaskh-SemiBold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
-- PASS — SuharNaskh-SemiBoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
-- PASS — SuharNaskhDisplay-Bold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
-- PASS — SuharNaskhDisplay-Medium: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
-- PASS — SuharNaskhDisplay-Regular: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
-- PASS — SuharNaskhDisplay-SemiBold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
-- PASS — SuharSahafa-Bold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
-- PASS — SuharSahafa-BoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
-- PASS — SuharSahafa-Italic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
-- PASS — SuharSahafa-Medium: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
-- PASS — SuharSahafa-MediumItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
-- PASS — SuharSahafa-Regular: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
-- PASS — SuharSahafa-SemiBold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
-- PASS — SuharSahafa-SemiBoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
-- PASS — SuharSahafaCaption-Bold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
-- PASS — SuharSahafaCaption-BoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
-- PASS — SuharSahafaCaption-Italic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
-- PASS — SuharSahafaCaption-Medium: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
-- PASS — SuharSahafaCaption-MediumItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
-- PASS — SuharSahafaCaption-Regular: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
-- PASS — SuharSahafaCaption-SemiBold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
-- PASS — SuharSahafaCaption-SemiBoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
-- PASS — SuharSahafaHeadline-Bold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
-- PASS — SuharSahafaHeadline-BoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
-- PASS — SuharSahafaHeadline-Italic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
-- PASS — SuharSahafaHeadline-Medium: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
-- PASS — SuharSahafaHeadline-MediumItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
-- PASS — SuharSahafaHeadline-Regular: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
-- PASS — SuharSahafaHeadline-SemiBold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
-- PASS — SuharSahafaHeadline-SemiBoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)
+- PASS — Suhar-Black: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap
+- PASS — Suhar-BlackItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap
+- PASS — Suhar-Bold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap
+- PASS — Suhar-BoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap
+- PASS — Suhar-ExtraBold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap
+- PASS — Suhar-ExtraBoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap
+- PASS — Suhar-Italic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap
+- PASS — Suhar-Light: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap
+- PASS — Suhar-LightItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap
+- PASS — Suhar-Medium: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap
+- PASS — Suhar-MediumItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap
+- PASS — Suhar-Regular: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap
+- PASS — Suhar-SemiBold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap
+- PASS — Suhar-SemiBoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap
+- PASS — SuharCondensed-Bold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap
+- PASS — SuharCondensed-BoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap
+- PASS — SuharCondensed-ExtraBold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap
+- PASS — SuharCondensed-ExtraBoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap
+- PASS — SuharCondensed-Italic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap
+- PASS — SuharCondensed-Light: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap
+- PASS — SuharCondensed-LightItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap
+- PASS — SuharCondensed-Medium: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap
+- PASS — SuharCondensed-MediumItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap
+- PASS — SuharCondensed-Regular: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap
+- PASS — SuharCondensed-SemiBold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap
+- PASS — SuharCondensed-SemiBoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap
+- PASS — SuharNaskh-Bold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap
+- PASS — SuharNaskh-BoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap
+- PASS — SuharNaskh-Italic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap
+- PASS — SuharNaskh-Medium: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap
+- PASS — SuharNaskh-MediumItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap
+- PASS — SuharNaskh-Regular: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap
+- PASS — SuharNaskh-SemiBold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap
+- PASS — SuharNaskh-SemiBoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap
+- PASS — SuharNaskhCaption-Bold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap
+- PASS — SuharNaskhCaption-BoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap
+- PASS — SuharNaskhCaption-Italic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap
+- PASS — SuharNaskhCaption-Medium: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap
+- PASS — SuharNaskhCaption-MediumItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap
+- PASS — SuharNaskhCaption-Regular: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap
+- PASS — SuharNaskhCaption-SemiBold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap
+- PASS — SuharNaskhCaption-SemiBoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap
+- PASS — SuharNaskhDisplay-Bold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap
+- PASS — SuharNaskhDisplay-Medium: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap
+- PASS — SuharNaskhDisplay-Regular: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap
+- PASS — SuharNaskhDisplay-SemiBold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap
+- PASS — SuharSahafa-Bold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap
+- PASS — SuharSahafa-BoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap
+- PASS — SuharSahafa-Italic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap
+- PASS — SuharSahafa-Medium: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap
+- PASS — SuharSahafa-MediumItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap
+- PASS — SuharSahafa-Regular: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap
+- PASS — SuharSahafa-SemiBold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap
+- PASS — SuharSahafa-SemiBoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap
+- PASS — SuharSahafaCaption-Bold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap
+- PASS — SuharSahafaCaption-BoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap
+- PASS — SuharSahafaCaption-Italic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap
+- PASS — SuharSahafaCaption-Medium: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap
+- PASS — SuharSahafaCaption-MediumItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap
+- PASS — SuharSahafaCaption-Regular: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap
+- PASS — SuharSahafaCaption-SemiBold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap
+- PASS — SuharSahafaCaption-SemiBoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap
+- PASS — SuharSahafaHeadline-Bold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap
+- PASS — SuharSahafaHeadline-BoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap
+- PASS — SuharSahafaHeadline-Italic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap
+- PASS — SuharSahafaHeadline-Medium: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap
+- PASS — SuharSahafaHeadline-MediumItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap
+- PASS — SuharSahafaHeadline-Regular: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap
+- PASS — SuharSahafaHeadline-SemiBold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap
+- PASS — SuharSahafaHeadline-SemiBoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap
+- PASS — SuharTypewriter-Bold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap
+- PASS — SuharTypewriter-BoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap
+- PASS — SuharTypewriter-Italic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap
+- PASS — SuharTypewriter-Regular: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap
 - PASS — SuharMono-Bold: the space is one cell
 - PASS — SuharMono-BoldItalic: the space is one cell
 - PASS — SuharMono-ExtraBold: the space is one cell
@@ -6104,275 +6660,299 @@ Produced by `tools/validate.py` from the compiled files in `dist/`. Shaping uses
 
 | file | glyphs | code points | KB |
 |---|---:|---:|---:|
-| otf/Suhar-Black.otf | 2994 | 2469 | 564 |
-| otf/Suhar-BlackItalic.otf | 2994 | 2469 | 546 |
-| otf/Suhar-Bold.otf | 2994 | 2469 | 563 |
-| otf/Suhar-BoldItalic.otf | 2994 | 2469 | 547 |
-| otf/Suhar-ExtraBold.otf | 2994 | 2469 | 565 |
-| otf/Suhar-ExtraBoldItalic.otf | 2994 | 2469 | 547 |
-| otf/Suhar-Italic.otf | 2994 | 2469 | 538 |
-| otf/Suhar-Light.otf | 2994 | 2469 | 536 |
-| otf/Suhar-LightItalic.otf | 2994 | 2469 | 541 |
-| otf/Suhar-Medium.otf | 2994 | 2469 | 549 |
-| otf/Suhar-MediumItalic.otf | 2994 | 2469 | 534 |
-| otf/Suhar-Regular.otf | 2994 | 2469 | 536 |
-| otf/Suhar-SemiBold.otf | 2994 | 2469 | 564 |
-| otf/Suhar-SemiBoldItalic.otf | 2994 | 2469 | 546 |
-| otf/SuharCondensed-Bold.otf | 2994 | 2469 | 540 |
-| otf/SuharCondensed-BoldItalic.otf | 2994 | 2469 | 527 |
-| otf/SuharCondensed-ExtraBold.otf | 2994 | 2469 | 545 |
-| otf/SuharCondensed-ExtraBoldItalic.otf | 2994 | 2469 | 528 |
-| otf/SuharCondensed-Italic.otf | 2994 | 2469 | 513 |
-| otf/SuharCondensed-Light.otf | 2994 | 2469 | 520 |
-| otf/SuharCondensed-LightItalic.otf | 2994 | 2469 | 518 |
-| otf/SuharCondensed-Medium.otf | 2994 | 2469 | 523 |
-| otf/SuharCondensed-MediumItalic.otf | 2994 | 2469 | 518 |
-| otf/SuharCondensed-Regular.otf | 2994 | 2469 | 518 |
-| otf/SuharCondensed-SemiBold.otf | 2994 | 2469 | 536 |
-| otf/SuharCondensed-SemiBoldItalic.otf | 2994 | 2469 | 522 |
-| otf/SuharMono-Bold.otf | 3010 | 2469 | 435 |
-| otf/SuharMono-BoldItalic.otf | 3010 | 2469 | 429 |
-| otf/SuharMono-ExtraBold.otf | 3010 | 2469 | 436 |
-| otf/SuharMono-ExtraBoldItalic.otf | 3010 | 2469 | 432 |
-| otf/SuharMono-Italic.otf | 3010 | 2469 | 422 |
-| otf/SuharMono-Light.otf | 3010 | 2469 | 423 |
-| otf/SuharMono-LightItalic.otf | 3010 | 2469 | 424 |
-| otf/SuharMono-Medium.otf | 3010 | 2469 | 421 |
-| otf/SuharMono-MediumItalic.otf | 3010 | 2469 | 421 |
-| otf/SuharMono-Regular.otf | 3010 | 2469 | 422 |
-| otf/SuharMono-SemiBold.otf | 3010 | 2469 | 431 |
-| otf/SuharMono-SemiBoldItalic.otf | 3010 | 2469 | 427 |
-| otf/SuharNaskh-Bold.otf | 2994 | 2469 | 559 |
-| otf/SuharNaskh-BoldItalic.otf | 2994 | 2469 | 547 |
-| otf/SuharNaskh-Italic.otf | 2994 | 2469 | 536 |
-| otf/SuharNaskh-Medium.otf | 2994 | 2469 | 548 |
-| otf/SuharNaskh-MediumItalic.otf | 2994 | 2469 | 539 |
-| otf/SuharNaskh-Regular.otf | 2994 | 2469 | 537 |
-| otf/SuharNaskh-SemiBold.otf | 2994 | 2469 | 558 |
-| otf/SuharNaskh-SemiBoldItalic.otf | 2994 | 2469 | 547 |
-| otf/SuharNaskhDisplay-Bold.otf | 2994 | 2469 | 566 |
-| otf/SuharNaskhDisplay-Medium.otf | 2994 | 2469 | 553 |
-| otf/SuharNaskhDisplay-Regular.otf | 2994 | 2469 | 541 |
-| otf/SuharNaskhDisplay-SemiBold.otf | 2994 | 2469 | 563 |
-| otf/SuharNerd-Black.otf | 13589 | 13064 | 3291 |
-| otf/SuharNerd-BlackItalic.otf | 13589 | 13064 | 3273 |
-| otf/SuharNerd-Bold.otf | 13589 | 13064 | 3290 |
-| otf/SuharNerd-BoldItalic.otf | 13589 | 13064 | 3275 |
-| otf/SuharNerd-ExtraBold.otf | 13589 | 13064 | 3293 |
-| otf/SuharNerd-ExtraBoldItalic.otf | 13589 | 13064 | 3275 |
-| otf/SuharNerd-Italic.otf | 13589 | 13064 | 3266 |
-| otf/SuharNerd-Light.otf | 13589 | 13064 | 3264 |
-| otf/SuharNerd-LightItalic.otf | 13589 | 13064 | 3269 |
-| otf/SuharNerd-Medium.otf | 13589 | 13064 | 3277 |
-| otf/SuharNerd-MediumItalic.otf | 13589 | 13064 | 3262 |
-| otf/SuharNerd-Regular.otf | 13589 | 13064 | 3264 |
-| otf/SuharNerd-SemiBold.otf | 13589 | 13064 | 3291 |
-| otf/SuharNerd-SemiBoldItalic.otf | 13589 | 13064 | 3274 |
-| otf/SuharNerdCondensed-Bold.otf | 13589 | 13064 | 3268 |
-| otf/SuharNerdCondensed-BoldItalic.otf | 13589 | 13064 | 3254 |
-| otf/SuharNerdCondensed-ExtraBold.otf | 13589 | 13064 | 3273 |
-| otf/SuharNerdCondensed-ExtraBoldItalic.otf | 13589 | 13064 | 3255 |
-| otf/SuharNerdCondensed-Italic.otf | 13589 | 13064 | 3240 |
-| otf/SuharNerdCondensed-Light.otf | 13589 | 13064 | 3248 |
-| otf/SuharNerdCondensed-LightItalic.otf | 13589 | 13064 | 3246 |
-| otf/SuharNerdCondensed-Medium.otf | 13589 | 13064 | 3250 |
-| otf/SuharNerdCondensed-MediumItalic.otf | 13589 | 13064 | 3245 |
-| otf/SuharNerdCondensed-Regular.otf | 13589 | 13064 | 3245 |
-| otf/SuharNerdCondensed-SemiBold.otf | 13589 | 13064 | 3263 |
-| otf/SuharNerdCondensed-SemiBoldItalic.otf | 13589 | 13064 | 3250 |
-| otf/SuharNerdMono-Bold.otf | 13605 | 13064 | 3188 |
-| otf/SuharNerdMono-BoldItalic.otf | 13605 | 13064 | 3182 |
-| otf/SuharNerdMono-ExtraBold.otf | 13605 | 13064 | 3188 |
-| otf/SuharNerdMono-ExtraBoldItalic.otf | 13605 | 13064 | 3184 |
-| otf/SuharNerdMono-Italic.otf | 13605 | 13064 | 3175 |
-| otf/SuharNerdMono-Light.otf | 13605 | 13064 | 3176 |
-| otf/SuharNerdMono-LightItalic.otf | 13605 | 13064 | 3176 |
-| otf/SuharNerdMono-Medium.otf | 13605 | 13064 | 3174 |
-| otf/SuharNerdMono-MediumItalic.otf | 13605 | 13064 | 3174 |
-| otf/SuharNerdMono-Regular.otf | 13605 | 13064 | 3175 |
-| otf/SuharNerdMono-SemiBold.otf | 13605 | 13064 | 3183 |
-| otf/SuharNerdMono-SemiBoldItalic.otf | 13605 | 13064 | 3180 |
-| otf/SuharNerdSahafa-Bold.otf | 13589 | 13064 | 3340 |
-| otf/SuharNerdSahafa-BoldItalic.otf | 13589 | 13064 | 3331 |
-| otf/SuharNerdSahafa-Italic.otf | 13589 | 13064 | 3317 |
-| otf/SuharNerdSahafa-Medium.otf | 13589 | 13064 | 3322 |
-| otf/SuharNerdSahafa-MediumItalic.otf | 13589 | 13064 | 3321 |
-| otf/SuharNerdSahafa-Regular.otf | 13589 | 13064 | 3311 |
-| otf/SuharNerdSahafa-SemiBold.otf | 13589 | 13064 | 3336 |
-| otf/SuharNerdSahafa-SemiBoldItalic.otf | 13589 | 13064 | 3333 |
-| otf/SuharNerdSahafaHeadline-Bold.otf | 13589 | 13064 | 3328 |
-| otf/SuharNerdSahafaHeadline-BoldItalic.otf | 13589 | 13064 | 3324 |
-| otf/SuharNerdSahafaHeadline-Italic.otf | 13589 | 13064 | 3322 |
-| otf/SuharNerdSahafaHeadline-Medium.otf | 13589 | 13064 | 3323 |
-| otf/SuharNerdSahafaHeadline-MediumItalic.otf | 13589 | 13064 | 3326 |
-| otf/SuharNerdSahafaHeadline-Regular.otf | 13589 | 13064 | 3315 |
-| otf/SuharNerdSahafaHeadline-SemiBold.otf | 13589 | 13064 | 3327 |
-| otf/SuharNerdSahafaHeadline-SemiBoldItalic.otf | 13589 | 13064 | 3324 |
-| otf/SuharSahafa-Bold.otf | 2994 | 2469 | 612 |
-| otf/SuharSahafa-BoldItalic.otf | 2994 | 2469 | 603 |
-| otf/SuharSahafa-Italic.otf | 2994 | 2469 | 589 |
-| otf/SuharSahafa-Medium.otf | 2994 | 2469 | 594 |
-| otf/SuharSahafa-MediumItalic.otf | 2994 | 2469 | 593 |
-| otf/SuharSahafa-Regular.otf | 2994 | 2469 | 583 |
-| otf/SuharSahafa-SemiBold.otf | 2994 | 2469 | 609 |
-| otf/SuharSahafa-SemiBoldItalic.otf | 2994 | 2469 | 606 |
-| otf/SuharSahafaCaption-Bold.otf | 2994 | 2469 | 648 |
-| otf/SuharSahafaCaption-BoldItalic.otf | 2994 | 2469 | 632 |
-| otf/SuharSahafaCaption-Italic.otf | 2994 | 2469 | 605 |
-| otf/SuharSahafaCaption-Medium.otf | 2994 | 2469 | 619 |
-| otf/SuharSahafaCaption-MediumItalic.otf | 2994 | 2469 | 614 |
-| otf/SuharSahafaCaption-Regular.otf | 2994 | 2469 | 606 |
-| otf/SuharSahafaCaption-SemiBold.otf | 2994 | 2469 | 638 |
-| otf/SuharSahafaCaption-SemiBoldItalic.otf | 2994 | 2469 | 627 |
-| otf/SuharSahafaHeadline-Bold.otf | 2994 | 2469 | 600 |
-| otf/SuharSahafaHeadline-BoldItalic.otf | 2994 | 2469 | 596 |
-| otf/SuharSahafaHeadline-Italic.otf | 2994 | 2469 | 595 |
-| otf/SuharSahafaHeadline-Medium.otf | 2994 | 2469 | 595 |
-| otf/SuharSahafaHeadline-MediumItalic.otf | 2994 | 2469 | 598 |
-| otf/SuharSahafaHeadline-Regular.otf | 2994 | 2469 | 587 |
-| otf/SuharSahafaHeadline-SemiBold.otf | 2994 | 2469 | 600 |
-| otf/SuharSahafaHeadline-SemiBoldItalic.otf | 2994 | 2469 | 597 |
-| ttf/Suhar-Black.ttf | 2994 | 2469 | 529 |
-| ttf/Suhar-BlackItalic.ttf | 2994 | 2469 | 523 |
-| ttf/Suhar-Bold.ttf | 2994 | 2469 | 528 |
-| ttf/Suhar-BoldItalic.ttf | 2994 | 2469 | 532 |
-| ttf/Suhar-ExtraBold.ttf | 2994 | 2469 | 530 |
-| ttf/Suhar-ExtraBoldItalic.ttf | 2994 | 2469 | 519 |
-| ttf/Suhar-Italic.ttf | 2994 | 2469 | 511 |
-| ttf/Suhar-Light.ttf | 2994 | 2469 | 506 |
-| ttf/Suhar-LightItalic.ttf | 2994 | 2469 | 514 |
-| ttf/Suhar-Medium.ttf | 2994 | 2469 | 515 |
-| ttf/Suhar-MediumItalic.ttf | 2994 | 2469 | 508 |
-| ttf/Suhar-Regular.ttf | 2994 | 2469 | 506 |
-| ttf/Suhar-SemiBold.ttf | 2994 | 2469 | 531 |
-| ttf/Suhar-SemiBoldItalic.ttf | 2994 | 2469 | 514 |
-| ttf/SuharCondensed-Bold.ttf | 2994 | 2469 | 507 |
-| ttf/SuharCondensed-BoldItalic.ttf | 2994 | 2469 | 508 |
-| ttf/SuharCondensed-ExtraBold.ttf | 2994 | 2469 | 508 |
-| ttf/SuharCondensed-ExtraBoldItalic.ttf | 2994 | 2469 | 502 |
-| ttf/SuharCondensed-Italic.ttf | 2994 | 2469 | 489 |
-| ttf/SuharCondensed-Light.ttf | 2994 | 2469 | 491 |
-| ttf/SuharCondensed-LightItalic.ttf | 2994 | 2469 | 495 |
-| ttf/SuharCondensed-Medium.ttf | 2994 | 2469 | 496 |
-| ttf/SuharCondensed-MediumItalic.ttf | 2994 | 2469 | 496 |
-| ttf/SuharCondensed-Regular.ttf | 2994 | 2469 | 489 |
-| ttf/SuharCondensed-SemiBold.ttf | 2994 | 2469 | 502 |
-| ttf/SuharCondensed-SemiBoldItalic.ttf | 2994 | 2469 | 499 |
-| ttf/SuharMono-Bold.ttf | 3010 | 2469 | 396 |
-| ttf/SuharMono-BoldItalic.ttf | 3010 | 2469 | 403 |
-| ttf/SuharMono-ExtraBold.ttf | 3010 | 2469 | 397 |
-| ttf/SuharMono-ExtraBoldItalic.ttf | 3010 | 2469 | 402 |
-| ttf/SuharMono-Italic.ttf | 3010 | 2469 | 389 |
-| ttf/SuharMono-Light.ttf | 3010 | 2469 | 392 |
-| ttf/SuharMono-LightItalic.ttf | 3010 | 2469 | 396 |
-| ttf/SuharMono-Medium.ttf | 3010 | 2469 | 389 |
-| ttf/SuharMono-MediumItalic.ttf | 3010 | 2469 | 395 |
-| ttf/SuharMono-Regular.ttf | 3010 | 2469 | 385 |
-| ttf/SuharMono-SemiBold.ttf | 3010 | 2469 | 393 |
-| ttf/SuharMono-SemiBoldItalic.ttf | 3010 | 2469 | 396 |
-| ttf/SuharNaskh-Bold.ttf | 2994 | 2469 | 532 |
-| ttf/SuharNaskh-BoldItalic.ttf | 2994 | 2469 | 523 |
-| ttf/SuharNaskh-Italic.ttf | 2994 | 2469 | 523 |
-| ttf/SuharNaskh-Medium.ttf | 2994 | 2469 | 526 |
-| ttf/SuharNaskh-MediumItalic.ttf | 2994 | 2469 | 520 |
-| ttf/SuharNaskh-Regular.ttf | 2994 | 2469 | 522 |
-| ttf/SuharNaskh-SemiBold.ttf | 2994 | 2469 | 536 |
-| ttf/SuharNaskh-SemiBoldItalic.ttf | 2994 | 2469 | 529 |
-| ttf/SuharNaskhDisplay-Bold.ttf | 2994 | 2469 | 585 |
-| ttf/SuharNaskhDisplay-Medium.ttf | 2994 | 2469 | 579 |
-| ttf/SuharNaskhDisplay-Regular.ttf | 2994 | 2469 | 576 |
-| ttf/SuharNaskhDisplay-SemiBold.ttf | 2994 | 2469 | 561 |
-| ttf/SuharNerd-Black.ttf | 13589 | 13064 | 2782 |
-| ttf/SuharNerd-BlackItalic.ttf | 13589 | 13064 | 2776 |
-| ttf/SuharNerd-Bold.ttf | 13589 | 13064 | 2781 |
-| ttf/SuharNerd-BoldItalic.ttf | 13589 | 13064 | 2785 |
-| ttf/SuharNerd-ExtraBold.ttf | 13589 | 13064 | 2783 |
-| ttf/SuharNerd-ExtraBoldItalic.ttf | 13589 | 13064 | 2772 |
-| ttf/SuharNerd-Italic.ttf | 13589 | 13064 | 2764 |
-| ttf/SuharNerd-Light.ttf | 13589 | 13064 | 2759 |
-| ttf/SuharNerd-LightItalic.ttf | 13589 | 13064 | 2767 |
-| ttf/SuharNerd-Medium.ttf | 13589 | 13064 | 2769 |
-| ttf/SuharNerd-MediumItalic.ttf | 13589 | 13064 | 2762 |
-| ttf/SuharNerd-Regular.ttf | 13589 | 13064 | 2759 |
-| ttf/SuharNerd-SemiBold.ttf | 13589 | 13064 | 2784 |
-| ttf/SuharNerd-SemiBoldItalic.ttf | 13589 | 13064 | 2767 |
-| ttf/SuharNerdCondensed-Bold.ttf | 13589 | 13064 | 2760 |
-| ttf/SuharNerdCondensed-BoldItalic.ttf | 13589 | 13064 | 2761 |
-| ttf/SuharNerdCondensed-ExtraBold.ttf | 13589 | 13064 | 2761 |
-| ttf/SuharNerdCondensed-ExtraBoldItalic.ttf | 13589 | 13064 | 2755 |
-| ttf/SuharNerdCondensed-Italic.ttf | 13589 | 13064 | 2742 |
-| ttf/SuharNerdCondensed-Light.ttf | 13589 | 13064 | 2744 |
-| ttf/SuharNerdCondensed-LightItalic.ttf | 13589 | 13064 | 2748 |
-| ttf/SuharNerdCondensed-Medium.ttf | 13589 | 13064 | 2749 |
-| ttf/SuharNerdCondensed-MediumItalic.ttf | 13589 | 13064 | 2749 |
-| ttf/SuharNerdCondensed-Regular.ttf | 13589 | 13064 | 2742 |
-| ttf/SuharNerdCondensed-SemiBold.ttf | 13589 | 13064 | 2755 |
-| ttf/SuharNerdCondensed-SemiBoldItalic.ttf | 13589 | 13064 | 2752 |
-| ttf/SuharNerdMono-Bold.ttf | 13605 | 13064 | 2693 |
-| ttf/SuharNerdMono-BoldItalic.ttf | 13605 | 13064 | 2700 |
-| ttf/SuharNerdMono-ExtraBold.ttf | 13605 | 13064 | 2694 |
-| ttf/SuharNerdMono-ExtraBoldItalic.ttf | 13605 | 13064 | 2699 |
-| ttf/SuharNerdMono-Italic.ttf | 13605 | 13064 | 2686 |
-| ttf/SuharNerdMono-Light.ttf | 13605 | 13064 | 2689 |
-| ttf/SuharNerdMono-LightItalic.ttf | 13605 | 13064 | 2693 |
-| ttf/SuharNerdMono-Medium.ttf | 13605 | 13064 | 2685 |
-| ttf/SuharNerdMono-MediumItalic.ttf | 13605 | 13064 | 2691 |
-| ttf/SuharNerdMono-Regular.ttf | 13605 | 13064 | 2682 |
-| ttf/SuharNerdMono-SemiBold.ttf | 13605 | 13064 | 2690 |
-| ttf/SuharNerdMono-SemiBoldItalic.ttf | 13605 | 13064 | 2693 |
-| ttf/SuharNerdSahafa-Bold.ttf | 13589 | 13064 | 2809 |
-| ttf/SuharNerdSahafa-BoldItalic.ttf | 13589 | 13064 | 2796 |
-| ttf/SuharNerdSahafa-Italic.ttf | 13589 | 13064 | 2787 |
-| ttf/SuharNerdSahafa-Medium.ttf | 13589 | 13064 | 2789 |
-| ttf/SuharNerdSahafa-MediumItalic.ttf | 13589 | 13064 | 2785 |
-| ttf/SuharNerdSahafa-Regular.ttf | 13589 | 13064 | 2786 |
-| ttf/SuharNerdSahafa-SemiBold.ttf | 13589 | 13064 | 2803 |
-| ttf/SuharNerdSahafa-SemiBoldItalic.ttf | 13589 | 13064 | 2795 |
-| ttf/SuharNerdSahafaHeadline-Bold.ttf | 13589 | 13064 | 2796 |
-| ttf/SuharNerdSahafaHeadline-BoldItalic.ttf | 13589 | 13064 | 2796 |
-| ttf/SuharNerdSahafaHeadline-Italic.ttf | 13589 | 13064 | 2794 |
-| ttf/SuharNerdSahafaHeadline-Medium.ttf | 13589 | 13064 | 2795 |
-| ttf/SuharNerdSahafaHeadline-MediumItalic.ttf | 13589 | 13064 | 2799 |
-| ttf/SuharNerdSahafaHeadline-Regular.ttf | 13589 | 13064 | 2784 |
-| ttf/SuharNerdSahafaHeadline-SemiBold.ttf | 13589 | 13064 | 2796 |
-| ttf/SuharNerdSahafaHeadline-SemiBoldItalic.ttf | 13589 | 13064 | 2793 |
-| ttf/SuharSahafa-Bold.ttf | 2994 | 2469 | 556 |
-| ttf/SuharSahafa-BoldItalic.ttf | 2994 | 2469 | 542 |
-| ttf/SuharSahafa-Italic.ttf | 2994 | 2469 | 534 |
-| ttf/SuharSahafa-Medium.ttf | 2994 | 2469 | 536 |
-| ttf/SuharSahafa-MediumItalic.ttf | 2994 | 2469 | 532 |
-| ttf/SuharSahafa-Regular.ttf | 2994 | 2469 | 533 |
-| ttf/SuharSahafa-SemiBold.ttf | 2994 | 2469 | 550 |
-| ttf/SuharSahafa-SemiBoldItalic.ttf | 2994 | 2469 | 542 |
-| ttf/SuharSahafaCaption-Bold.ttf | 2994 | 2469 | 583 |
-| ttf/SuharSahafaCaption-BoldItalic.ttf | 2994 | 2469 | 575 |
-| ttf/SuharSahafaCaption-Italic.ttf | 2994 | 2469 | 543 |
-| ttf/SuharSahafaCaption-Medium.ttf | 2994 | 2469 | 559 |
-| ttf/SuharSahafaCaption-MediumItalic.ttf | 2994 | 2469 | 549 |
-| ttf/SuharSahafaCaption-Regular.ttf | 2994 | 2469 | 549 |
-| ttf/SuharSahafaCaption-SemiBold.ttf | 2994 | 2469 | 574 |
-| ttf/SuharSahafaCaption-SemiBoldItalic.ttf | 2994 | 2469 | 563 |
-| ttf/SuharSahafaHeadline-Bold.ttf | 2994 | 2469 | 543 |
-| ttf/SuharSahafaHeadline-BoldItalic.ttf | 2994 | 2469 | 543 |
-| ttf/SuharSahafaHeadline-Italic.ttf | 2994 | 2469 | 541 |
-| ttf/SuharSahafaHeadline-Medium.ttf | 2994 | 2469 | 542 |
-| ttf/SuharSahafaHeadline-MediumItalic.ttf | 2994 | 2469 | 546 |
-| ttf/SuharSahafaHeadline-Regular.ttf | 2994 | 2469 | 531 |
-| ttf/SuharSahafaHeadline-SemiBold.ttf | 2994 | 2469 | 543 |
-| ttf/SuharSahafaHeadline-SemiBoldItalic.ttf | 2994 | 2469 | 540 |
-| variable/Suhar-Italic[opsz,wght].ttf | 2994 | 2469 | 1247 |
-| variable/SuharCondensed-Italic[opsz,wght].ttf | 2994 | 2469 | 1210 |
-| variable/SuharCondensed[opsz,wght].ttf | 2994 | 2469 | 1186 |
-| variable/SuharMono-Italic[wght].ttf | 3010 | 2469 | 446 |
-| variable/SuharMono[wght].ttf | 3010 | 2469 | 435 |
-| variable/SuharNaskh-Italic[opsz,wght].ttf | 2994 | 2469 | 1272 |
-| variable/SuharNaskhDisplay[wght].ttf | 2994 | 2469 | 680 |
-| variable/SuharNaskh[opsz,wght].ttf | 2994 | 2469 | 1259 |
-| variable/SuharSahafa-Italic[GRAD,opsz,wght].ttf | 2994 | 2469 | 1751 |
-| variable/SuharSahafaHeadline-Italic[GRAD,opsz,wght].ttf | 2994 | 2469 | 1747 |
-| variable/SuharSahafaHeadline[GRAD,opsz,wght].ttf | 2994 | 2469 | 1709 |
-| variable/SuharSahafa[GRAD,opsz,wght].ttf | 2994 | 2469 | 1722 |
-| variable/Suhar[opsz,wght].ttf | 2994 | 2469 | 1214 |
+| otf/Suhar-Black.otf | 3002 | 2469 | 566 |
+| otf/Suhar-BlackItalic.otf | 3002 | 2469 | 547 |
+| otf/Suhar-Bold.otf | 3002 | 2469 | 565 |
+| otf/Suhar-BoldItalic.otf | 3002 | 2469 | 550 |
+| otf/Suhar-ExtraBold.otf | 3002 | 2469 | 568 |
+| otf/Suhar-ExtraBoldItalic.otf | 3002 | 2469 | 549 |
+| otf/Suhar-Italic.otf | 3002 | 2469 | 538 |
+| otf/Suhar-Light.otf | 3002 | 2469 | 538 |
+| otf/Suhar-LightItalic.otf | 3002 | 2469 | 544 |
+| otf/Suhar-Medium.otf | 3002 | 2469 | 551 |
+| otf/Suhar-MediumItalic.otf | 3002 | 2469 | 534 |
+| otf/Suhar-Regular.otf | 3002 | 2469 | 538 |
+| otf/Suhar-SemiBold.otf | 3002 | 2469 | 567 |
+| otf/Suhar-SemiBoldItalic.otf | 3002 | 2469 | 548 |
+| otf/SuharCondensed-Bold.otf | 3002 | 2469 | 543 |
+| otf/SuharCondensed-BoldItalic.otf | 3002 | 2469 | 529 |
+| otf/SuharCondensed-ExtraBold.otf | 3002 | 2469 | 547 |
+| otf/SuharCondensed-ExtraBoldItalic.otf | 3002 | 2469 | 530 |
+| otf/SuharCondensed-Italic.otf | 3002 | 2469 | 514 |
+| otf/SuharCondensed-Light.otf | 3002 | 2469 | 522 |
+| otf/SuharCondensed-LightItalic.otf | 3002 | 2469 | 521 |
+| otf/SuharCondensed-Medium.otf | 3002 | 2469 | 525 |
+| otf/SuharCondensed-MediumItalic.otf | 3002 | 2469 | 520 |
+| otf/SuharCondensed-Regular.otf | 3002 | 2469 | 520 |
+| otf/SuharCondensed-SemiBold.otf | 3002 | 2469 | 538 |
+| otf/SuharCondensed-SemiBoldItalic.otf | 3002 | 2469 | 524 |
+| otf/SuharMono-Bold.otf | 3018 | 2469 | 436 |
+| otf/SuharMono-BoldItalic.otf | 3018 | 2469 | 430 |
+| otf/SuharMono-ExtraBold.otf | 3018 | 2469 | 437 |
+| otf/SuharMono-ExtraBoldItalic.otf | 3018 | 2469 | 433 |
+| otf/SuharMono-Italic.otf | 3018 | 2469 | 423 |
+| otf/SuharMono-Light.otf | 3018 | 2469 | 424 |
+| otf/SuharMono-LightItalic.otf | 3018 | 2469 | 425 |
+| otf/SuharMono-Medium.otf | 3018 | 2469 | 422 |
+| otf/SuharMono-MediumItalic.otf | 3018 | 2469 | 422 |
+| otf/SuharMono-Regular.otf | 3018 | 2469 | 423 |
+| otf/SuharMono-SemiBold.otf | 3018 | 2469 | 432 |
+| otf/SuharMono-SemiBoldItalic.otf | 3018 | 2469 | 428 |
+| otf/SuharNaskh-Bold.otf | 3002 | 2469 | 562 |
+| otf/SuharNaskh-BoldItalic.otf | 3002 | 2469 | 548 |
+| otf/SuharNaskh-Italic.otf | 3002 | 2469 | 537 |
+| otf/SuharNaskh-Medium.otf | 3002 | 2469 | 550 |
+| otf/SuharNaskh-MediumItalic.otf | 3002 | 2469 | 539 |
+| otf/SuharNaskh-Regular.otf | 3002 | 2469 | 539 |
+| otf/SuharNaskh-SemiBold.otf | 3002 | 2469 | 560 |
+| otf/SuharNaskh-SemiBoldItalic.otf | 3002 | 2469 | 547 |
+| otf/SuharNaskhCaption-Bold.otf | 3002 | 2469 | 591 |
+| otf/SuharNaskhCaption-BoldItalic.otf | 3002 | 2469 | 580 |
+| otf/SuharNaskhCaption-Italic.otf | 3002 | 2469 | 549 |
+| otf/SuharNaskhCaption-Medium.otf | 3002 | 2469 | 577 |
+| otf/SuharNaskhCaption-MediumItalic.otf | 3002 | 2469 | 568 |
+| otf/SuharNaskhCaption-Regular.otf | 3002 | 2469 | 556 |
+| otf/SuharNaskhCaption-SemiBold.otf | 3002 | 2469 | 588 |
+| otf/SuharNaskhCaption-SemiBoldItalic.otf | 3002 | 2469 | 570 |
+| otf/SuharNaskhDisplay-Bold.otf | 3002 | 2469 | 568 |
+| otf/SuharNaskhDisplay-Medium.otf | 3002 | 2469 | 556 |
+| otf/SuharNaskhDisplay-Regular.otf | 3002 | 2469 | 544 |
+| otf/SuharNaskhDisplay-SemiBold.otf | 3002 | 2469 | 566 |
+| otf/SuharNerd-Black.otf | 13597 | 13064 | 3293 |
+| otf/SuharNerd-BlackItalic.otf | 13597 | 13064 | 3275 |
+| otf/SuharNerd-Bold.otf | 13597 | 13064 | 3292 |
+| otf/SuharNerd-BoldItalic.otf | 13597 | 13064 | 3277 |
+| otf/SuharNerd-ExtraBold.otf | 13597 | 13064 | 3295 |
+| otf/SuharNerd-ExtraBoldItalic.otf | 13597 | 13064 | 3277 |
+| otf/SuharNerd-Italic.otf | 13597 | 13064 | 3266 |
+| otf/SuharNerd-Light.otf | 13597 | 13064 | 3266 |
+| otf/SuharNerd-LightItalic.otf | 13597 | 13064 | 3271 |
+| otf/SuharNerd-Medium.otf | 13597 | 13064 | 3279 |
+| otf/SuharNerd-MediumItalic.otf | 13597 | 13064 | 3261 |
+| otf/SuharNerd-Regular.otf | 13597 | 13064 | 3265 |
+| otf/SuharNerd-SemiBold.otf | 13597 | 13064 | 3294 |
+| otf/SuharNerd-SemiBoldItalic.otf | 13597 | 13064 | 3275 |
+| otf/SuharNerdCondensed-Bold.otf | 13597 | 13064 | 3270 |
+| otf/SuharNerdCondensed-BoldItalic.otf | 13597 | 13064 | 3256 |
+| otf/SuharNerdCondensed-ExtraBold.otf | 13597 | 13064 | 3275 |
+| otf/SuharNerdCondensed-ExtraBoldItalic.otf | 13597 | 13064 | 3257 |
+| otf/SuharNerdCondensed-Italic.otf | 13597 | 13064 | 3241 |
+| otf/SuharNerdCondensed-Light.otf | 13597 | 13064 | 3249 |
+| otf/SuharNerdCondensed-LightItalic.otf | 13597 | 13064 | 3248 |
+| otf/SuharNerdCondensed-Medium.otf | 13597 | 13064 | 3253 |
+| otf/SuharNerdCondensed-MediumItalic.otf | 13597 | 13064 | 3247 |
+| otf/SuharNerdCondensed-Regular.otf | 13597 | 13064 | 3247 |
+| otf/SuharNerdCondensed-SemiBold.otf | 13597 | 13064 | 3265 |
+| otf/SuharNerdCondensed-SemiBoldItalic.otf | 13597 | 13064 | 3252 |
+| otf/SuharNerdMono-Bold.otf | 13613 | 13064 | 3189 |
+| otf/SuharNerdMono-BoldItalic.otf | 13613 | 13064 | 3183 |
+| otf/SuharNerdMono-ExtraBold.otf | 13613 | 13064 | 3190 |
+| otf/SuharNerdMono-ExtraBoldItalic.otf | 13613 | 13064 | 3186 |
+| otf/SuharNerdMono-Italic.otf | 13613 | 13064 | 3175 |
+| otf/SuharNerdMono-Light.otf | 13613 | 13064 | 3177 |
+| otf/SuharNerdMono-LightItalic.otf | 13613 | 13064 | 3178 |
+| otf/SuharNerdMono-Medium.otf | 13613 | 13064 | 3175 |
+| otf/SuharNerdMono-MediumItalic.otf | 13613 | 13064 | 3175 |
+| otf/SuharNerdMono-Regular.otf | 13613 | 13064 | 3176 |
+| otf/SuharNerdMono-SemiBold.otf | 13613 | 13064 | 3185 |
+| otf/SuharNerdMono-SemiBoldItalic.otf | 13613 | 13064 | 3181 |
+| otf/SuharNerdSahafa-Bold.otf | 13597 | 13064 | 3341 |
+| otf/SuharNerdSahafa-BoldItalic.otf | 13597 | 13064 | 3333 |
+| otf/SuharNerdSahafa-Italic.otf | 13597 | 13064 | 3317 |
+| otf/SuharNerdSahafa-Medium.otf | 13597 | 13064 | 3323 |
+| otf/SuharNerdSahafa-MediumItalic.otf | 13597 | 13064 | 3322 |
+| otf/SuharNerdSahafa-Regular.otf | 13597 | 13064 | 3312 |
+| otf/SuharNerdSahafa-SemiBold.otf | 13597 | 13064 | 3338 |
+| otf/SuharNerdSahafa-SemiBoldItalic.otf | 13597 | 13064 | 3333 |
+| otf/SuharNerdSahafaHeadline-Bold.otf | 13597 | 13064 | 3364 |
+| otf/SuharNerdSahafaHeadline-BoldItalic.otf | 13597 | 13064 | 3358 |
+| otf/SuharNerdSahafaHeadline-Italic.otf | 13597 | 13064 | 3348 |
+| otf/SuharNerdSahafaHeadline-Medium.otf | 13597 | 13064 | 3352 |
+| otf/SuharNerdSahafaHeadline-MediumItalic.otf | 13597 | 13064 | 3360 |
+| otf/SuharNerdSahafaHeadline-Regular.otf | 13597 | 13064 | 3338 |
+| otf/SuharNerdSahafaHeadline-SemiBold.otf | 13597 | 13064 | 3364 |
+| otf/SuharNerdSahafaHeadline-SemiBoldItalic.otf | 13597 | 13064 | 3360 |
+| otf/SuharSahafa-Bold.otf | 3002 | 2469 | 614 |
+| otf/SuharSahafa-BoldItalic.otf | 3002 | 2469 | 606 |
+| otf/SuharSahafa-Italic.otf | 3002 | 2469 | 590 |
+| otf/SuharSahafa-Medium.otf | 3002 | 2469 | 596 |
+| otf/SuharSahafa-MediumItalic.otf | 3002 | 2469 | 594 |
+| otf/SuharSahafa-Regular.otf | 3002 | 2469 | 585 |
+| otf/SuharSahafa-SemiBold.otf | 3002 | 2469 | 611 |
+| otf/SuharSahafa-SemiBoldItalic.otf | 3002 | 2469 | 605 |
+| otf/SuharSahafaCaption-Bold.otf | 3002 | 2469 | 649 |
+| otf/SuharSahafaCaption-BoldItalic.otf | 3002 | 2469 | 633 |
+| otf/SuharSahafaCaption-Italic.otf | 3002 | 2469 | 607 |
+| otf/SuharSahafaCaption-Medium.otf | 3002 | 2469 | 621 |
+| otf/SuharSahafaCaption-MediumItalic.otf | 3002 | 2469 | 615 |
+| otf/SuharSahafaCaption-Regular.otf | 3002 | 2469 | 607 |
+| otf/SuharSahafaCaption-SemiBold.otf | 3002 | 2469 | 640 |
+| otf/SuharSahafaCaption-SemiBoldItalic.otf | 3002 | 2469 | 628 |
+| otf/SuharSahafaHeadline-Bold.otf | 3002 | 2469 | 637 |
+| otf/SuharSahafaHeadline-BoldItalic.otf | 3002 | 2469 | 630 |
+| otf/SuharSahafaHeadline-Italic.otf | 3002 | 2469 | 620 |
+| otf/SuharSahafaHeadline-Medium.otf | 3002 | 2469 | 625 |
+| otf/SuharSahafaHeadline-MediumItalic.otf | 3002 | 2469 | 633 |
+| otf/SuharSahafaHeadline-Regular.otf | 3002 | 2469 | 610 |
+| otf/SuharSahafaHeadline-SemiBold.otf | 3002 | 2469 | 636 |
+| otf/SuharSahafaHeadline-SemiBoldItalic.otf | 3002 | 2469 | 632 |
+| otf/SuharTypewriter-Bold.otf | 3002 | 2469 | 653 |
+| otf/SuharTypewriter-BoldItalic.otf | 3002 | 2469 | 640 |
+| otf/SuharTypewriter-Italic.otf | 3002 | 2469 | 629 |
+| otf/SuharTypewriter-Regular.otf | 3002 | 2469 | 625 |
+| ttf/Suhar-Black.ttf | 3002 | 2469 | 532 |
+| ttf/Suhar-BlackItalic.ttf | 3002 | 2469 | 525 |
+| ttf/Suhar-Bold.ttf | 3002 | 2469 | 530 |
+| ttf/Suhar-BoldItalic.ttf | 3002 | 2469 | 533 |
+| ttf/Suhar-ExtraBold.ttf | 3002 | 2469 | 532 |
+| ttf/Suhar-ExtraBoldItalic.ttf | 3002 | 2469 | 521 |
+| ttf/Suhar-Italic.ttf | 3002 | 2469 | 511 |
+| ttf/Suhar-Light.ttf | 3002 | 2469 | 508 |
+| ttf/Suhar-LightItalic.ttf | 3002 | 2469 | 516 |
+| ttf/Suhar-Medium.ttf | 3002 | 2469 | 518 |
+| ttf/Suhar-MediumItalic.ttf | 3002 | 2469 | 509 |
+| ttf/Suhar-Regular.ttf | 3002 | 2469 | 507 |
+| ttf/Suhar-SemiBold.ttf | 3002 | 2469 | 533 |
+| ttf/Suhar-SemiBoldItalic.ttf | 3002 | 2469 | 516 |
+| ttf/SuharCondensed-Bold.ttf | 3002 | 2469 | 509 |
+| ttf/SuharCondensed-BoldItalic.ttf | 3002 | 2469 | 510 |
+| ttf/SuharCondensed-ExtraBold.ttf | 3002 | 2469 | 510 |
+| ttf/SuharCondensed-ExtraBoldItalic.ttf | 3002 | 2469 | 504 |
+| ttf/SuharCondensed-Italic.ttf | 3002 | 2469 | 490 |
+| ttf/SuharCondensed-Light.ttf | 3002 | 2469 | 492 |
+| ttf/SuharCondensed-LightItalic.ttf | 3002 | 2469 | 497 |
+| ttf/SuharCondensed-Medium.ttf | 3002 | 2469 | 499 |
+| ttf/SuharCondensed-MediumItalic.ttf | 3002 | 2469 | 499 |
+| ttf/SuharCondensed-Regular.ttf | 3002 | 2469 | 492 |
+| ttf/SuharCondensed-SemiBold.ttf | 3002 | 2469 | 504 |
+| ttf/SuharCondensed-SemiBoldItalic.ttf | 3002 | 2469 | 501 |
+| ttf/SuharMono-Bold.ttf | 3018 | 2469 | 398 |
+| ttf/SuharMono-BoldItalic.ttf | 3018 | 2469 | 404 |
+| ttf/SuharMono-ExtraBold.ttf | 3018 | 2469 | 399 |
+| ttf/SuharMono-ExtraBoldItalic.ttf | 3018 | 2469 | 405 |
+| ttf/SuharMono-Italic.ttf | 3018 | 2469 | 391 |
+| ttf/SuharMono-Light.ttf | 3018 | 2469 | 393 |
+| ttf/SuharMono-LightItalic.ttf | 3018 | 2469 | 398 |
+| ttf/SuharMono-Medium.ttf | 3018 | 2469 | 390 |
+| ttf/SuharMono-MediumItalic.ttf | 3018 | 2469 | 396 |
+| ttf/SuharMono-Regular.ttf | 3018 | 2469 | 387 |
+| ttf/SuharMono-SemiBold.ttf | 3018 | 2469 | 395 |
+| ttf/SuharMono-SemiBoldItalic.ttf | 3018 | 2469 | 397 |
+| ttf/SuharNaskh-Bold.ttf | 3002 | 2469 | 535 |
+| ttf/SuharNaskh-BoldItalic.ttf | 3002 | 2469 | 525 |
+| ttf/SuharNaskh-Italic.ttf | 3002 | 2469 | 525 |
+| ttf/SuharNaskh-Medium.ttf | 3002 | 2469 | 529 |
+| ttf/SuharNaskh-MediumItalic.ttf | 3002 | 2469 | 521 |
+| ttf/SuharNaskh-Regular.ttf | 3002 | 2469 | 525 |
+| ttf/SuharNaskh-SemiBold.ttf | 3002 | 2469 | 538 |
+| ttf/SuharNaskh-SemiBoldItalic.ttf | 3002 | 2469 | 530 |
+| ttf/SuharNaskhCaption-Bold.ttf | 3002 | 2469 | 564 |
+| ttf/SuharNaskhCaption-BoldItalic.ttf | 3002 | 2469 | 554 |
+| ttf/SuharNaskhCaption-Italic.ttf | 3002 | 2469 | 535 |
+| ttf/SuharNaskhCaption-Medium.ttf | 3002 | 2469 | 555 |
+| ttf/SuharNaskhCaption-MediumItalic.ttf | 3002 | 2469 | 547 |
+| ttf/SuharNaskhCaption-Regular.ttf | 3002 | 2469 | 539 |
+| ttf/SuharNaskhCaption-SemiBold.ttf | 3002 | 2469 | 559 |
+| ttf/SuharNaskhCaption-SemiBoldItalic.ttf | 3002 | 2469 | 545 |
+| ttf/SuharNaskhDisplay-Bold.ttf | 3002 | 2469 | 588 |
+| ttf/SuharNaskhDisplay-Medium.ttf | 3002 | 2469 | 583 |
+| ttf/SuharNaskhDisplay-Regular.ttf | 3002 | 2469 | 580 |
+| ttf/SuharNaskhDisplay-SemiBold.ttf | 3002 | 2469 | 563 |
+| ttf/SuharNerd-Black.ttf | 13597 | 13064 | 2785 |
+| ttf/SuharNerd-BlackItalic.ttf | 13597 | 13064 | 2778 |
+| ttf/SuharNerd-Bold.ttf | 13597 | 13064 | 2783 |
+| ttf/SuharNerd-BoldItalic.ttf | 13597 | 13064 | 2787 |
+| ttf/SuharNerd-ExtraBold.ttf | 13597 | 13064 | 2785 |
+| ttf/SuharNerd-ExtraBoldItalic.ttf | 13597 | 13064 | 2774 |
+| ttf/SuharNerd-Italic.ttf | 13597 | 13064 | 2764 |
+| ttf/SuharNerd-Light.ttf | 13597 | 13064 | 2761 |
+| ttf/SuharNerd-LightItalic.ttf | 13597 | 13064 | 2769 |
+| ttf/SuharNerd-Medium.ttf | 13597 | 13064 | 2771 |
+| ttf/SuharNerd-MediumItalic.ttf | 13597 | 13064 | 2762 |
+| ttf/SuharNerd-Regular.ttf | 13597 | 13064 | 2760 |
+| ttf/SuharNerd-SemiBold.ttf | 13597 | 13064 | 2786 |
+| ttf/SuharNerd-SemiBoldItalic.ttf | 13597 | 13064 | 2769 |
+| ttf/SuharNerdCondensed-Bold.ttf | 13597 | 13064 | 2762 |
+| ttf/SuharNerdCondensed-BoldItalic.ttf | 13597 | 13064 | 2763 |
+| ttf/SuharNerdCondensed-ExtraBold.ttf | 13597 | 13064 | 2763 |
+| ttf/SuharNerdCondensed-ExtraBoldItalic.ttf | 13597 | 13064 | 2757 |
+| ttf/SuharNerdCondensed-Italic.ttf | 13597 | 13064 | 2743 |
+| ttf/SuharNerdCondensed-Light.ttf | 13597 | 13064 | 2745 |
+| ttf/SuharNerdCondensed-LightItalic.ttf | 13597 | 13064 | 2750 |
+| ttf/SuharNerdCondensed-Medium.ttf | 13597 | 13064 | 2752 |
+| ttf/SuharNerdCondensed-MediumItalic.ttf | 13597 | 13064 | 2752 |
+| ttf/SuharNerdCondensed-Regular.ttf | 13597 | 13064 | 2745 |
+| ttf/SuharNerdCondensed-SemiBold.ttf | 13597 | 13064 | 2757 |
+| ttf/SuharNerdCondensed-SemiBoldItalic.ttf | 13597 | 13064 | 2754 |
+| ttf/SuharNerdMono-Bold.ttf | 13613 | 13064 | 2694 |
+| ttf/SuharNerdMono-BoldItalic.ttf | 13613 | 13064 | 2701 |
+| ttf/SuharNerdMono-ExtraBold.ttf | 13613 | 13064 | 2696 |
+| ttf/SuharNerdMono-ExtraBoldItalic.ttf | 13613 | 13064 | 2702 |
+| ttf/SuharNerdMono-Italic.ttf | 13613 | 13064 | 2688 |
+| ttf/SuharNerdMono-Light.ttf | 13613 | 13064 | 2690 |
+| ttf/SuharNerdMono-LightItalic.ttf | 13613 | 13064 | 2695 |
+| ttf/SuharNerdMono-Medium.ttf | 13613 | 13064 | 2687 |
+| ttf/SuharNerdMono-MediumItalic.ttf | 13613 | 13064 | 2693 |
+| ttf/SuharNerdMono-Regular.ttf | 13613 | 13064 | 2684 |
+| ttf/SuharNerdMono-SemiBold.ttf | 13613 | 13064 | 2692 |
+| ttf/SuharNerdMono-SemiBoldItalic.ttf | 13613 | 13064 | 2694 |
+| ttf/SuharNerdSahafa-Bold.ttf | 13597 | 13064 | 2811 |
+| ttf/SuharNerdSahafa-BoldItalic.ttf | 13597 | 13064 | 2798 |
+| ttf/SuharNerdSahafa-Italic.ttf | 13597 | 13064 | 2788 |
+| ttf/SuharNerdSahafa-Medium.ttf | 13597 | 13064 | 2791 |
+| ttf/SuharNerdSahafa-MediumItalic.ttf | 13597 | 13064 | 2786 |
+| ttf/SuharNerdSahafa-Regular.ttf | 13597 | 13064 | 2788 |
+| ttf/SuharNerdSahafa-SemiBold.ttf | 13597 | 13064 | 2806 |
+| ttf/SuharNerdSahafa-SemiBoldItalic.ttf | 13597 | 13064 | 2796 |
+| ttf/SuharNerdSahafaHeadline-Bold.ttf | 13597 | 13064 | 2829 |
+| ttf/SuharNerdSahafaHeadline-BoldItalic.ttf | 13597 | 13064 | 2827 |
+| ttf/SuharNerdSahafaHeadline-Italic.ttf | 13597 | 13064 | 2822 |
+| ttf/SuharNerdSahafaHeadline-Medium.ttf | 13597 | 13064 | 2824 |
+| ttf/SuharNerdSahafaHeadline-MediumItalic.ttf | 13597 | 13064 | 2830 |
+| ttf/SuharNerdSahafaHeadline-Regular.ttf | 13597 | 13064 | 2810 |
+| ttf/SuharNerdSahafaHeadline-SemiBold.ttf | 13597 | 13064 | 2828 |
+| ttf/SuharNerdSahafaHeadline-SemiBoldItalic.ttf | 13597 | 13064 | 2826 |
+| ttf/SuharSahafa-Bold.ttf | 3002 | 2469 | 558 |
+| ttf/SuharSahafa-BoldItalic.ttf | 3002 | 2469 | 545 |
+| ttf/SuharSahafa-Italic.ttf | 3002 | 2469 | 535 |
+| ttf/SuharSahafa-Medium.ttf | 3002 | 2469 | 538 |
+| ttf/SuharSahafa-MediumItalic.ttf | 3002 | 2469 | 533 |
+| ttf/SuharSahafa-Regular.ttf | 3002 | 2469 | 535 |
+| ttf/SuharSahafa-SemiBold.ttf | 3002 | 2469 | 553 |
+| ttf/SuharSahafa-SemiBoldItalic.ttf | 3002 | 2469 | 543 |
+| ttf/SuharSahafaCaption-Bold.ttf | 3002 | 2469 | 586 |
+| ttf/SuharSahafaCaption-BoldItalic.ttf | 3002 | 2469 | 575 |
+| ttf/SuharSahafaCaption-Italic.ttf | 3002 | 2469 | 546 |
+| ttf/SuharSahafaCaption-Medium.ttf | 3002 | 2469 | 562 |
+| ttf/SuharSahafaCaption-MediumItalic.ttf | 3002 | 2469 | 551 |
+| ttf/SuharSahafaCaption-Regular.ttf | 3002 | 2469 | 551 |
+| ttf/SuharSahafaCaption-SemiBold.ttf | 3002 | 2469 | 577 |
+| ttf/SuharSahafaCaption-SemiBoldItalic.ttf | 3002 | 2469 | 564 |
+| ttf/SuharSahafaHeadline-Bold.ttf | 3002 | 2469 | 576 |
+| ttf/SuharSahafaHeadline-BoldItalic.ttf | 3002 | 2469 | 574 |
+| ttf/SuharSahafaHeadline-Italic.ttf | 3002 | 2469 | 569 |
+| ttf/SuharSahafaHeadline-Medium.ttf | 3002 | 2469 | 571 |
+| ttf/SuharSahafaHeadline-MediumItalic.ttf | 3002 | 2469 | 576 |
+| ttf/SuharSahafaHeadline-Regular.ttf | 3002 | 2469 | 557 |
+| ttf/SuharSahafaHeadline-SemiBold.ttf | 3002 | 2469 | 575 |
+| ttf/SuharSahafaHeadline-SemiBoldItalic.ttf | 3002 | 2469 | 573 |
+| ttf/SuharTypewriter-Bold.ttf | 3002 | 2469 | 601 |
+| ttf/SuharTypewriter-BoldItalic.ttf | 3002 | 2469 | 576 |
+| ttf/SuharTypewriter-Italic.ttf | 3002 | 2469 | 564 |
+| ttf/SuharTypewriter-Regular.ttf | 3002 | 2469 | 577 |
+| variable/Suhar-Italic[opsz,wght].ttf | 3002 | 2469 | 1252 |
+| variable/SuharCondensed-Italic[opsz,wght].ttf | 3002 | 2469 | 1215 |
+| variable/SuharCondensed[opsz,wght].ttf | 3002 | 2469 | 1191 |
+| variable/SuharMono-Italic[wght].ttf | 3018 | 2469 | 449 |
+| variable/SuharMono[wght].ttf | 3018 | 2469 | 437 |
+| variable/SuharNaskh-Italic[GRAD,opsz,wght].ttf | 3002 | 2469 | 1692 |
+| variable/SuharNaskhDisplay[wght].ttf | 3002 | 2469 | 683 |
+| variable/SuharNaskh[GRAD,opsz,wght].ttf | 3002 | 2469 | 1665 |
+| variable/SuharSahafa-Italic[GRAD,opsz,wght].ttf | 3002 | 2469 | 1750 |
+| variable/SuharSahafaHeadline-Italic[GRAD,opsz,wght].ttf | 3002 | 2469 | 1754 |
+| variable/SuharSahafaHeadline[GRAD,opsz,wght].ttf | 3002 | 2469 | 1716 |
+| variable/SuharSahafa[GRAD,opsz,wght].ttf | 3002 | 2469 | 1719 |
+| variable/Suhar[opsz,wght].ttf | 3002 | 2469 | 1219 |
 
 ## Proof images (reports/img)
 

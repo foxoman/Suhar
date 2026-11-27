@@ -1,5 +1,29 @@
 # Changelog
 
+## 2.5 (November 2026)
+
+**Fixed**
+- Medial and final ع غ are a wedge with a flat top in every family. Before, the round head read as a م turned
+  upside down (الاستعمالات).
+- The space between Arabic words is about 13 % smaller: every Arabic word ends 48 units closer to the space,
+  a tail runs a little further under it, and a word starting with ا stands closer.
+
+**New families**
+- Suhar Typewriter: Regular and Bold with italics.
+- Suhar Naskh Caption: the 8-point cut of Suhar Naskh as static fonts.
+
+**Arabic**
+- More neighbour forms: narrow ك before ا ل; final ي returns under ف ق by default; in Sahafa ل stands on م.
+- Sahafa Headline and the display sizes have filled corners instead of ink traps.
+- Grade axis in the Suhar Naskh variable fonts (now `SuharNaskh[GRAD,opsz,wght]`).
+- `tools/kashida.py` and `site/kashida.js`: the kashida rules and a line justifier.
+
+**Latin (Sahafa)**
+- Serifs on þ ß; old-style figures on the Sahafa x-height; an italic f with a descender.
+
+**Release**
+- `site/` specimen page, `docs/Suhar-specimen.pdf`, `tools/make_npm.py`, `reports/fontbakery.md`.
+
 ## 2.4 (November 2026)
 
 **Sizes and paper**

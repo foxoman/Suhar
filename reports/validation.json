@@ -1,5 +1,5 @@
 {
- "passed": 2532,
+ "passed": 2740,
  "failed": 0,
  "results": [
   [
@@ -1799,6 +1799,294 @@
   [
    "sanitizer",
    "SuharNaskh-SemiBoldItalic.otf: OpenType Sanitizer",
+   true,
+   "b''"
+  ],
+  [
+   "tables",
+   "SuharNaskhCaption-Bold.otf: GSUB",
+   true,
+   ""
+  ],
+  [
+   "tables",
+   "SuharNaskhCaption-Bold.otf: GPOS",
+   true,
+   ""
+  ],
+  [
+   "tables",
+   "SuharNaskhCaption-Bold.otf: GDEF",
+   true,
+   ""
+  ],
+  [
+   "metrics",
+   "SuharNaskhCaption-Bold.otf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))",
+   true,
+   "(940, -360, 940, -360, 1200, 440)"
+  ],
+  [
+   "no placeholders",
+   "SuharNaskhCaption-Bold.otf: no empty mapped glyphs",
+   true,
+   "[]"
+  ],
+  [
+   "sanitizer",
+   "SuharNaskhCaption-Bold.otf: OpenType Sanitizer",
+   true,
+   "b''"
+  ],
+  [
+   "tables",
+   "SuharNaskhCaption-BoldItalic.otf: GSUB",
+   true,
+   ""
+  ],
+  [
+   "tables",
+   "SuharNaskhCaption-BoldItalic.otf: GPOS",
+   true,
+   ""
+  ],
+  [
+   "tables",
+   "SuharNaskhCaption-BoldItalic.otf: GDEF",
+   true,
+   ""
+  ],
+  [
+   "metrics",
+   "SuharNaskhCaption-BoldItalic.otf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))",
+   true,
+   "(940, -360, 940, -360, 1200, 440)"
+  ],
+  [
+   "no placeholders",
+   "SuharNaskhCaption-BoldItalic.otf: no empty mapped glyphs",
+   true,
+   "[]"
+  ],
+  [
+   "sanitizer",
+   "SuharNaskhCaption-BoldItalic.otf: OpenType Sanitizer",
+   true,
+   "b''"
+  ],
+  [
+   "tables",
+   "SuharNaskhCaption-Italic.otf: GSUB",
+   true,
+   ""
+  ],
+  [
+   "tables",
+   "SuharNaskhCaption-Italic.otf: GPOS",
+   true,
+   ""
+  ],
+  [
+   "tables",
+   "SuharNaskhCaption-Italic.otf: GDEF",
+   true,
+   ""
+  ],
+  [
+   "metrics",
+   "SuharNaskhCaption-Italic.otf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))",
+   true,
+   "(940, -360, 940, -360, 1200, 440)"
+  ],
+  [
+   "no placeholders",
+   "SuharNaskhCaption-Italic.otf: no empty mapped glyphs",
+   true,
+   "[]"
+  ],
+  [
+   "sanitizer",
+   "SuharNaskhCaption-Italic.otf: OpenType Sanitizer",
+   true,
+   "b''"
+  ],
+  [
+   "tables",
+   "SuharNaskhCaption-Medium.otf: GSUB",
+   true,
+   ""
+  ],
+  [
+   "tables",
+   "SuharNaskhCaption-Medium.otf: GPOS",
+   true,
+   ""
+  ],
+  [
+   "tables",
+   "SuharNaskhCaption-Medium.otf: GDEF",
+   true,
+   ""
+  ],
+  [
+   "metrics",
+   "SuharNaskhCaption-Medium.otf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))",
+   true,
+   "(940, -360, 940, -360, 1200, 440)"
+  ],
+  [
+   "no placeholders",
+   "SuharNaskhCaption-Medium.otf: no empty mapped glyphs",
+   true,
+   "[]"
+  ],
+  [
+   "sanitizer",
+   "SuharNaskhCaption-Medium.otf: OpenType Sanitizer",
+   true,
+   "b''"
+  ],
+  [
+   "tables",
+   "SuharNaskhCaption-MediumItalic.otf: GSUB",
+   true,
+   ""
+  ],
+  [
+   "tables",
+   "SuharNaskhCaption-MediumItalic.otf: GPOS",
+   true,
+   ""
+  ],
+  [
+   "tables",
+   "SuharNaskhCaption-MediumItalic.otf: GDEF",
+   true,
+   ""
+  ],
+  [
+   "metrics",
+   "SuharNaskhCaption-MediumItalic.otf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))",
+   true,
+   "(940, -360, 940, -360, 1200, 440)"
+  ],
+  [
+   "no placeholders",
+   "SuharNaskhCaption-MediumItalic.otf: no empty mapped glyphs",
+   true,
+   "[]"
+  ],
+  [
+   "sanitizer",
+   "SuharNaskhCaption-MediumItalic.otf: OpenType Sanitizer",
+   true,
+   "b''"
+  ],
+  [
+   "tables",
+   "SuharNaskhCaption-Regular.otf: GSUB",
+   true,
+   ""
+  ],
+  [
+   "tables",
+   "SuharNaskhCaption-Regular.otf: GPOS",
+   true,
+   ""
+  ],
+  [
+   "tables",
+   "SuharNaskhCaption-Regular.otf: GDEF",
+   true,
+   ""
+  ],
+  [
+   "metrics",
+   "SuharNaskhCaption-Regular.otf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))",
+   true,
+   "(940, -360, 940, -360, 1200, 440)"
+  ],
+  [
+   "no placeholders",
+   "SuharNaskhCaption-Regular.otf: no empty mapped glyphs",
+   true,
+   "[]"
+  ],
+  [
+   "sanitizer",
+   "SuharNaskhCaption-Regular.otf: OpenType Sanitizer",
+   true,
+   "b''"
+  ],
+  [
+   "tables",
+   "SuharNaskhCaption-SemiBold.otf: GSUB",
+   true,
+   ""
+  ],
+  [
+   "tables",
+   "SuharNaskhCaption-SemiBold.otf: GPOS",
+   true,
+   ""
+  ],
+  [
+   "tables",
+   "SuharNaskhCaption-SemiBold.otf: GDEF",
+   true,
+   ""
+  ],
+  [
+   "metrics",
+   "SuharNaskhCaption-SemiBold.otf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))",
+   true,
+   "(940, -360, 940, -360, 1200, 440)"
+  ],
+  [
+   "no placeholders",
+   "SuharNaskhCaption-SemiBold.otf: no empty mapped glyphs",
+   true,
+   "[]"
+  ],
+  [
+   "sanitizer",
+   "SuharNaskhCaption-SemiBold.otf: OpenType Sanitizer",
+   true,
+   "b''"
+  ],
+  [
+   "tables",
+   "SuharNaskhCaption-SemiBoldItalic.otf: GSUB",
+   true,
+   ""
+  ],
+  [
+   "tables",
+   "SuharNaskhCaption-SemiBoldItalic.otf: GPOS",
+   true,
+   ""
+  ],
+  [
+   "tables",
+   "SuharNaskhCaption-SemiBoldItalic.otf: GDEF",
+   true,
+   ""
+  ],
+  [
+   "metrics",
+   "SuharNaskhCaption-SemiBoldItalic.otf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))",
+   true,
+   "(940, -360, 940, -360, 1200, 440)"
+  ],
+  [
+   "no placeholders",
+   "SuharNaskhCaption-SemiBoldItalic.otf: no empty mapped glyphs",
+   true,
+   "[]"
+  ],
+  [
+   "sanitizer",
+   "SuharNaskhCaption-SemiBoldItalic.otf: OpenType Sanitizer",
    true,
    "b''"
   ],
@@ -4576,6 +4864,150 @@
   ],
   [
    "tables",
+   "SuharTypewriter-Bold.otf: GSUB",
+   true,
+   ""
+  ],
+  [
+   "tables",
+   "SuharTypewriter-Bold.otf: GPOS",
+   true,
+   ""
+  ],
+  [
+   "tables",
+   "SuharTypewriter-Bold.otf: GDEF",
+   true,
+   ""
+  ],
+  [
+   "metrics",
+   "SuharTypewriter-Bold.otf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))",
+   true,
+   "(940, -360, 940, -360, 1200, 440)"
+  ],
+  [
+   "no placeholders",
+   "SuharTypewriter-Bold.otf: no empty mapped glyphs",
+   true,
+   "[]"
+  ],
+  [
+   "sanitizer",
+   "SuharTypewriter-Bold.otf: OpenType Sanitizer",
+   true,
+   "b''"
+  ],
+  [
+   "tables",
+   "SuharTypewriter-BoldItalic.otf: GSUB",
+   true,
+   ""
+  ],
+  [
+   "tables",
+   "SuharTypewriter-BoldItalic.otf: GPOS",
+   true,
+   ""
+  ],
+  [
+   "tables",
+   "SuharTypewriter-BoldItalic.otf: GDEF",
+   true,
+   ""
+  ],
+  [
+   "metrics",
+   "SuharTypewriter-BoldItalic.otf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))",
+   true,
+   "(940, -360, 940, -360, 1200, 440)"
+  ],
+  [
+   "no placeholders",
+   "SuharTypewriter-BoldItalic.otf: no empty mapped glyphs",
+   true,
+   "[]"
+  ],
+  [
+   "sanitizer",
+   "SuharTypewriter-BoldItalic.otf: OpenType Sanitizer",
+   true,
+   "b''"
+  ],
+  [
+   "tables",
+   "SuharTypewriter-Italic.otf: GSUB",
+   true,
+   ""
+  ],
+  [
+   "tables",
+   "SuharTypewriter-Italic.otf: GPOS",
+   true,
+   ""
+  ],
+  [
+   "tables",
+   "SuharTypewriter-Italic.otf: GDEF",
+   true,
+   ""
+  ],
+  [
+   "metrics",
+   "SuharTypewriter-Italic.otf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))",
+   true,
+   "(940, -360, 940, -360, 1200, 440)"
+  ],
+  [
+   "no placeholders",
+   "SuharTypewriter-Italic.otf: no empty mapped glyphs",
+   true,
+   "[]"
+  ],
+  [
+   "sanitizer",
+   "SuharTypewriter-Italic.otf: OpenType Sanitizer",
+   true,
+   "b''"
+  ],
+  [
+   "tables",
+   "SuharTypewriter-Regular.otf: GSUB",
+   true,
+   ""
+  ],
+  [
+   "tables",
+   "SuharTypewriter-Regular.otf: GPOS",
+   true,
+   ""
+  ],
+  [
+   "tables",
+   "SuharTypewriter-Regular.otf: GDEF",
+   true,
+   ""
+  ],
+  [
+   "metrics",
+   "SuharTypewriter-Regular.otf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))",
+   true,
+   "(940, -360, 940, -360, 1200, 440)"
+  ],
+  [
+   "no placeholders",
+   "SuharTypewriter-Regular.otf: no empty mapped glyphs",
+   true,
+   "[]"
+  ],
+  [
+   "sanitizer",
+   "SuharTypewriter-Regular.otf: OpenType Sanitizer",
+   true,
+   "b''"
+  ],
+  [
+   "tables",
    "Suhar-Black.ttf: GSUB",
    true,
    ""
@@ -6647,6 +7079,342 @@
   [
    "sanitizer",
    "SuharNaskh-SemiBoldItalic.ttf: OpenType Sanitizer",
+   true,
+   "b''"
+  ],
+  [
+   "tables",
+   "SuharNaskhCaption-Bold.ttf: GSUB",
+   true,
+   ""
+  ],
+  [
+   "tables",
+   "SuharNaskhCaption-Bold.ttf: GPOS",
+   true,
+   ""
+  ],
+  [
+   "tables",
+   "SuharNaskhCaption-Bold.ttf: GDEF",
+   true,
+   ""
+  ],
+  [
+   "hinting",
+   "SuharNaskhCaption-Bold.ttf: TrueType instructions (fpgm/prep/cvt)",
+   true,
+   ""
+  ],
+  [
+   "metrics",
+   "SuharNaskhCaption-Bold.ttf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))",
+   true,
+   "(940, -360, 940, -360, 1200, 440)"
+  ],
+  [
+   "no placeholders",
+   "SuharNaskhCaption-Bold.ttf: no empty mapped glyphs",
+   true,
+   "[]"
+  ],
+  [
+   "sanitizer",
+   "SuharNaskhCaption-Bold.ttf: OpenType Sanitizer",
+   true,
+   "b''"
+  ],
+  [
+   "tables",
+   "SuharNaskhCaption-BoldItalic.ttf: GSUB",
+   true,
+   ""
+  ],
+  [
+   "tables",
+   "SuharNaskhCaption-BoldItalic.ttf: GPOS",
+   true,
+   ""
+  ],
+  [
+   "tables",
+   "SuharNaskhCaption-BoldItalic.ttf: GDEF",
+   true,
+   ""
+  ],
+  [
+   "hinting",
+   "SuharNaskhCaption-BoldItalic.ttf: TrueType instructions (fpgm/prep/cvt)",
+   true,
+   ""
+  ],
+  [
+   "metrics",
+   "SuharNaskhCaption-BoldItalic.ttf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))",
+   true,
+   "(940, -360, 940, -360, 1200, 440)"
+  ],
+  [
+   "no placeholders",
+   "SuharNaskhCaption-BoldItalic.ttf: no empty mapped glyphs",
+   true,
+   "[]"
+  ],
+  [
+   "sanitizer",
+   "SuharNaskhCaption-BoldItalic.ttf: OpenType Sanitizer",
+   true,
+   "b''"
+  ],
+  [
+   "tables",
+   "SuharNaskhCaption-Italic.ttf: GSUB",
+   true,
+   ""
+  ],
+  [
+   "tables",
+   "SuharNaskhCaption-Italic.ttf: GPOS",
+   true,
+   ""
+  ],
+  [
+   "tables",
+   "SuharNaskhCaption-Italic.ttf: GDEF",
+   true,
+   ""
+  ],
+  [
+   "hinting",
+   "SuharNaskhCaption-Italic.ttf: TrueType instructions (fpgm/prep/cvt)",
+   true,
+   ""
+  ],
+  [
+   "metrics",
+   "SuharNaskhCaption-Italic.ttf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))",
+   true,
+   "(940, -360, 940, -360, 1200, 440)"
+  ],
+  [
+   "no placeholders",
+   "SuharNaskhCaption-Italic.ttf: no empty mapped glyphs",
+   true,
+   "[]"
+  ],
+  [
+   "sanitizer",
+   "SuharNaskhCaption-Italic.ttf: OpenType Sanitizer",
+   true,
+   "b''"
+  ],
+  [
+   "tables",
+   "SuharNaskhCaption-Medium.ttf: GSUB",
+   true,
+   ""
+  ],
+  [
+   "tables",
+   "SuharNaskhCaption-Medium.ttf: GPOS",
+   true,
+   ""
+  ],
+  [
+   "tables",
+   "SuharNaskhCaption-Medium.ttf: GDEF",
+   true,
+   ""
+  ],
+  [
+   "hinting",
+   "SuharNaskhCaption-Medium.ttf: TrueType instructions (fpgm/prep/cvt)",
+   true,
+   ""
+  ],
+  [
+   "metrics",
+   "SuharNaskhCaption-Medium.ttf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))",
+   true,
+   "(940, -360, 940, -360, 1200, 440)"
+  ],
+  [
+   "no placeholders",
+   "SuharNaskhCaption-Medium.ttf: no empty mapped glyphs",
+   true,
+   "[]"
+  ],
+  [
+   "sanitizer",
+   "SuharNaskhCaption-Medium.ttf: OpenType Sanitizer",
+   true,
+   "b''"
+  ],
+  [
+   "tables",
+   "SuharNaskhCaption-MediumItalic.ttf: GSUB",
+   true,
+   ""
+  ],
+  [
+   "tables",
+   "SuharNaskhCaption-MediumItalic.ttf: GPOS",
+   true,
+   ""
+  ],
+  [
+   "tables",
+   "SuharNaskhCaption-MediumItalic.ttf: GDEF",
+   true,
+   ""
+  ],
+  [
+   "hinting",
+   "SuharNaskhCaption-MediumItalic.ttf: TrueType instructions (fpgm/prep/cvt)",
+   true,
+   ""
+  ],
+  [
+   "metrics",
+   "SuharNaskhCaption-MediumItalic.ttf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))",
+   true,
+   "(940, -360, 940, -360, 1200, 440)"
+  ],
+  [
+   "no placeholders",
+   "SuharNaskhCaption-MediumItalic.ttf: no empty mapped glyphs",
+   true,
+   "[]"
+  ],
+  [
+   "sanitizer",
+   "SuharNaskhCaption-MediumItalic.ttf: OpenType Sanitizer",
+   true,
+   "b''"
+  ],
+  [
+   "tables",
+   "SuharNaskhCaption-Regular.ttf: GSUB",
+   true,
+   ""
+  ],
+  [
+   "tables",
+   "SuharNaskhCaption-Regular.ttf: GPOS",
+   true,
+   ""
+  ],
+  [
+   "tables",
+   "SuharNaskhCaption-Regular.ttf: GDEF",
+   true,
+   ""
+  ],
+  [
+   "hinting",
+   "SuharNaskhCaption-Regular.ttf: TrueType instructions (fpgm/prep/cvt)",
+   true,
+   ""
+  ],
+  [
+   "metrics",
+   "SuharNaskhCaption-Regular.ttf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))",
+   true,
+   "(940, -360, 940, -360, 1200, 440)"
+  ],
+  [
+   "no placeholders",
+   "SuharNaskhCaption-Regular.ttf: no empty mapped glyphs",
+   true,
+   "[]"
+  ],
+  [
+   "sanitizer",
+   "SuharNaskhCaption-Regular.ttf: OpenType Sanitizer",
+   true,
+   "b''"
+  ],
+  [
+   "tables",
+   "SuharNaskhCaption-SemiBold.ttf: GSUB",
+   true,
+   ""
+  ],
+  [
+   "tables",
+   "SuharNaskhCaption-SemiBold.ttf: GPOS",
+   true,
+   ""
+  ],
+  [
+   "tables",
+   "SuharNaskhCaption-SemiBold.ttf: GDEF",
+   true,
+   ""
+  ],
+  [
+   "hinting",
+   "SuharNaskhCaption-SemiBold.ttf: TrueType instructions (fpgm/prep/cvt)",
+   true,
+   ""
+  ],
+  [
+   "metrics",
+   "SuharNaskhCaption-SemiBold.ttf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))",
+   true,
+   "(940, -360, 940, -360, 1200, 440)"
+  ],
+  [
+   "no placeholders",
+   "SuharNaskhCaption-SemiBold.ttf: no empty mapped glyphs",
+   true,
+   "[]"
+  ],
+  [
+   "sanitizer",
+   "SuharNaskhCaption-SemiBold.ttf: OpenType Sanitizer",
+   true,
+   "b''"
+  ],
+  [
+   "tables",
+   "SuharNaskhCaption-SemiBoldItalic.ttf: GSUB",
+   true,
+   ""
+  ],
+  [
+   "tables",
+   "SuharNaskhCaption-SemiBoldItalic.ttf: GPOS",
+   true,
+   ""
+  ],
+  [
+   "tables",
+   "SuharNaskhCaption-SemiBoldItalic.ttf: GDEF",
+   true,
+   ""
+  ],
+  [
+   "hinting",
+   "SuharNaskhCaption-SemiBoldItalic.ttf: TrueType instructions (fpgm/prep/cvt)",
+   true,
+   ""
+  ],
+  [
+   "metrics",
+   "SuharNaskhCaption-SemiBoldItalic.ttf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))",
+   true,
+   "(940, -360, 940, -360, 1200, 440)"
+  ],
+  [
+   "no placeholders",
+   "SuharNaskhCaption-SemiBoldItalic.ttf: no empty mapped glyphs",
+   true,
+   "[]"
+  ],
+  [
+   "sanitizer",
+   "SuharNaskhCaption-SemiBoldItalic.ttf: OpenType Sanitizer",
    true,
    "b''"
   ],
@@ -9916,6 +10684,174 @@
   ],
   [
    "tables",
+   "SuharTypewriter-Bold.ttf: GSUB",
+   true,
+   ""
+  ],
+  [
+   "tables",
+   "SuharTypewriter-Bold.ttf: GPOS",
+   true,
+   ""
+  ],
+  [
+   "tables",
+   "SuharTypewriter-Bold.ttf: GDEF",
+   true,
+   ""
+  ],
+  [
+   "hinting",
+   "SuharTypewriter-Bold.ttf: TrueType instructions (fpgm/prep/cvt)",
+   true,
+   ""
+  ],
+  [
+   "metrics",
+   "SuharTypewriter-Bold.ttf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))",
+   true,
+   "(940, -360, 940, -360, 1200, 440)"
+  ],
+  [
+   "no placeholders",
+   "SuharTypewriter-Bold.ttf: no empty mapped glyphs",
+   true,
+   "[]"
+  ],
+  [
+   "sanitizer",
+   "SuharTypewriter-Bold.ttf: OpenType Sanitizer",
+   true,
+   "b''"
+  ],
+  [
+   "tables",
+   "SuharTypewriter-BoldItalic.ttf: GSUB",
+   true,
+   ""
+  ],
+  [
+   "tables",
+   "SuharTypewriter-BoldItalic.ttf: GPOS",
+   true,
+   ""
+  ],
+  [
+   "tables",
+   "SuharTypewriter-BoldItalic.ttf: GDEF",
+   true,
+   ""
+  ],
+  [
+   "hinting",
+   "SuharTypewriter-BoldItalic.ttf: TrueType instructions (fpgm/prep/cvt)",
+   true,
+   ""
+  ],
+  [
+   "metrics",
+   "SuharTypewriter-BoldItalic.ttf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))",
+   true,
+   "(940, -360, 940, -360, 1200, 440)"
+  ],
+  [
+   "no placeholders",
+   "SuharTypewriter-BoldItalic.ttf: no empty mapped glyphs",
+   true,
+   "[]"
+  ],
+  [
+   "sanitizer",
+   "SuharTypewriter-BoldItalic.ttf: OpenType Sanitizer",
+   true,
+   "b''"
+  ],
+  [
+   "tables",
+   "SuharTypewriter-Italic.ttf: GSUB",
+   true,
+   ""
+  ],
+  [
+   "tables",
+   "SuharTypewriter-Italic.ttf: GPOS",
+   true,
+   ""
+  ],
+  [
+   "tables",
+   "SuharTypewriter-Italic.ttf: GDEF",
+   true,
+   ""
+  ],
+  [
+   "hinting",
+   "SuharTypewriter-Italic.ttf: TrueType instructions (fpgm/prep/cvt)",
+   true,
+   ""
+  ],
+  [
+   "metrics",
+   "SuharTypewriter-Italic.ttf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))",
+   true,
+   "(940, -360, 940, -360, 1200, 440)"
+  ],
+  [
+   "no placeholders",
+   "SuharTypewriter-Italic.ttf: no empty mapped glyphs",
+   true,
+   "[]"
+  ],
+  [
+   "sanitizer",
+   "SuharTypewriter-Italic.ttf: OpenType Sanitizer",
+   true,
+   "b''"
+  ],
+  [
+   "tables",
+   "SuharTypewriter-Regular.ttf: GSUB",
+   true,
+   ""
+  ],
+  [
+   "tables",
+   "SuharTypewriter-Regular.ttf: GPOS",
+   true,
+   ""
+  ],
+  [
+   "tables",
+   "SuharTypewriter-Regular.ttf: GDEF",
+   true,
+   ""
+  ],
+  [
+   "hinting",
+   "SuharTypewriter-Regular.ttf: TrueType instructions (fpgm/prep/cvt)",
+   true,
+   ""
+  ],
+  [
+   "metrics",
+   "SuharTypewriter-Regular.ttf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))",
+   true,
+   "(940, -360, 940, -360, 1200, 440)"
+  ],
+  [
+   "no placeholders",
+   "SuharTypewriter-Regular.ttf: no empty mapped glyphs",
+   true,
+   "[]"
+  ],
+  [
+   "sanitizer",
+   "SuharTypewriter-Regular.ttf: OpenType Sanitizer",
+   true,
+   "b''"
+  ],
+  [
+   "tables",
    "Suhar-Italic[opsz,wght].ttf: GSUB",
    true,
    ""
@@ -10090,31 +11026,31 @@
   ],
   [
    "tables",
-   "SuharNaskh-Italic[opsz,wght].ttf: GSUB",
+   "SuharNaskh-Italic[GRAD,opsz,wght].ttf: GSUB",
    true,
    ""
   ],
   [
    "tables",
-   "SuharNaskh-Italic[opsz,wght].ttf: GPOS",
+   "SuharNaskh-Italic[GRAD,opsz,wght].ttf: GPOS",
    true,
    ""
   ],
   [
    "tables",
-   "SuharNaskh-Italic[opsz,wght].ttf: GDEF",
+   "SuharNaskh-Italic[GRAD,opsz,wght].ttf: GDEF",
    true,
    ""
   ],
   [
    "metrics",
-   "SuharNaskh-Italic[opsz,wght].ttf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))",
+   "SuharNaskh-Italic[GRAD,opsz,wght].ttf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))",
    true,
    "(940, -360, 940, -360, 1200, 440)"
   ],
   [
    "sanitizer",
-   "SuharNaskh-Italic[opsz,wght].ttf: OpenType Sanitizer",
+   "SuharNaskh-Italic[GRAD,opsz,wght].ttf: OpenType Sanitizer",
    true,
    "b''"
   ],
@@ -10150,31 +11086,31 @@
   ],
   [
    "tables",
-   "SuharNaskh[opsz,wght].ttf: GSUB",
+   "SuharNaskh[GRAD,opsz,wght].ttf: GSUB",
    true,
    ""
   ],
   [
    "tables",
-   "SuharNaskh[opsz,wght].ttf: GPOS",
+   "SuharNaskh[GRAD,opsz,wght].ttf: GPOS",
    true,
    ""
   ],
   [
    "tables",
-   "SuharNaskh[opsz,wght].ttf: GDEF",
+   "SuharNaskh[GRAD,opsz,wght].ttf: GDEF",
    true,
    ""
   ],
   [
    "metrics",
-   "SuharNaskh[opsz,wght].ttf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))",
+   "SuharNaskh[GRAD,opsz,wght].ttf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))",
    true,
    "(940, -360, 940, -360, 1200, 440)"
   ],
   [
    "sanitizer",
-   "SuharNaskh[opsz,wght].ttf: OpenType Sanitizer",
+   "SuharNaskh[GRAD,opsz,wght].ttf: OpenType Sanitizer",
    true,
    "b''"
   ],
@@ -10601,6 +11537,54 @@
   [
    "woff2",
    "SuharNaskh-SemiBoldItalic.woff2: decodes, same glyph count as TTF",
+   true,
+   ""
+  ],
+  [
+   "woff2",
+   "SuharNaskhCaption-Bold.woff2: decodes, same glyph count as TTF",
+   true,
+   ""
+  ],
+  [
+   "woff2",
+   "SuharNaskhCaption-BoldItalic.woff2: decodes, same glyph count as TTF",
+   true,
+   ""
+  ],
+  [
+   "woff2",
+   "SuharNaskhCaption-Italic.woff2: decodes, same glyph count as TTF",
+   true,
+   ""
+  ],
+  [
+   "woff2",
+   "SuharNaskhCaption-Medium.woff2: decodes, same glyph count as TTF",
+   true,
+   ""
+  ],
+  [
+   "woff2",
+   "SuharNaskhCaption-MediumItalic.woff2: decodes, same glyph count as TTF",
+   true,
+   ""
+  ],
+  [
+   "woff2",
+   "SuharNaskhCaption-Regular.woff2: decodes, same glyph count as TTF",
+   true,
+   ""
+  ],
+  [
+   "woff2",
+   "SuharNaskhCaption-SemiBold.woff2: decodes, same glyph count as TTF",
+   true,
+   ""
+  ],
+  [
+   "woff2",
+   "SuharNaskhCaption-SemiBoldItalic.woff2: decodes, same glyph count as TTF",
    true,
    ""
   ],
@@ -11093,6 +12077,30 @@
   [
    "woff2",
    "SuharSahafaHeadline-SemiBoldItalic.woff2: decodes, same glyph count as TTF",
+   true,
+   ""
+  ],
+  [
+   "woff2",
+   "SuharTypewriter-Bold.woff2: decodes, same glyph count as TTF",
+   true,
+   ""
+  ],
+  [
+   "woff2",
+   "SuharTypewriter-BoldItalic.woff2: decodes, same glyph count as TTF",
+   true,
+   ""
+  ],
+  [
+   "woff2",
+   "SuharTypewriter-Italic.woff2: decodes, same glyph count as TTF",
+   true,
+   ""
+  ],
+  [
+   "woff2",
+   "SuharTypewriter-Regular.woff2: decodes, same glyph count as TTF",
    true,
    ""
   ],
@@ -11896,7 +12904,7 @@
   ],
   [
    "variable",
-   "SuharNaskh-Italic[opsz,wght].ttf: has every glyph of the static font",
+   "SuharNaskh-Italic[GRAD,opsz,wght].ttf: has every glyph of the static font",
    true,
    "[]"
   ],
@@ -11908,7 +12916,7 @@
   ],
   [
    "variable",
-   "SuharNaskh[opsz,wght].ttf: has every glyph of the static font",
+   "SuharNaskh[GRAD,opsz,wght].ttf: has every glyph of the static font",
    true,
    "[]"
   ],
@@ -12160,19 +13168,19 @@
   ],
   [
    "variable",
-   "SuharNaskh-Italic[opsz,wght].ttf: axes {'wght': (400.0, 400.0, 700.0), 'opsz': (8.0, 14.0, 72.0)}",
+   "SuharNaskh-Italic[GRAD,opsz,wght].ttf: axes {'wght': (400.0, 400.0, 700.0), 'opsz': (8.0, 14.0, 72.0), 'GRAD': (-50.0, 0.0, 50.0)}",
    true,
    ""
   ],
   [
    "variable",
-   "SuharNaskh-Italic[opsz,wght].ttf: wght 700 renders heavier than 400",
+   "SuharNaskh-Italic[GRAD,opsz,wght].ttf: wght 700 renders heavier than 400",
    true,
    "(1525837, 2360072)"
   ],
   [
    "variable",
-   "SuharNaskh-Italic[opsz,wght].ttf: opsz 8 is spaced wider than opsz 72",
+   "SuharNaskh-Italic[GRAD,opsz,wght].ttf: opsz 8 is spaced wider than opsz 72",
    true,
    "(4586, 4090)"
   ],
@@ -12190,19 +13198,19 @@
   ],
   [
    "variable",
-   "SuharNaskh[opsz,wght].ttf: axes {'wght': (400.0, 400.0, 700.0), 'opsz': (8.0, 14.0, 72.0)}",
+   "SuharNaskh[GRAD,opsz,wght].ttf: axes {'wght': (400.0, 400.0, 700.0), 'opsz': (8.0, 14.0, 72.0), 'GRAD': (-50.0, 0.0, 50.0)}",
    true,
    ""
   ],
   [
    "variable",
-   "SuharNaskh[opsz,wght].ttf: wght 700 renders heavier than 400",
+   "SuharNaskh[GRAD,opsz,wght].ttf: wght 700 renders heavier than 400",
    true,
    "(1513905, 2320139)"
   ],
   [
    "variable",
-   "SuharNaskh[opsz,wght].ttf: opsz 8 is spaced wider than opsz 72",
+   "SuharNaskh[GRAD,opsz,wght].ttf: opsz 8 is spaced wider than opsz 72",
    true,
    "(4525, 4031)"
   ],
@@ -12216,7 +13224,7 @@
    "variable",
    "SuharSahafa-Italic[GRAD,opsz,wght].ttf: wght 700 renders heavier than 400",
    true,
-   "(1651363, 2383783)"
+   "(1655769, 2383783)"
   ],
   [
    "variable",
@@ -12558,7 +13566,7 @@
    "pixel",
    "SuharMonoPixel12-Bold.ttf: every outline point and advance sits on the 12px grid",
    true,
-   "2984"
+   "2992"
   ],
   [
    "pixel",
@@ -12582,7 +13590,7 @@
    "pixel",
    "SuharMonoPixel12-Regular.ttf: every outline point and advance sits on the 12px grid",
    true,
-   "2984"
+   "2992"
   ],
   [
    "pixel",
@@ -12606,7 +13614,7 @@
    "pixel",
    "SuharMonoPixel14-Bold.ttf: every outline point and advance sits on the 14px grid",
    true,
-   "2984"
+   "2992"
   ],
   [
    "pixel",
@@ -12630,7 +13638,7 @@
    "pixel",
    "SuharMonoPixel14-Regular.ttf: every outline point and advance sits on the 14px grid",
    true,
-   "2984"
+   "2992"
   ],
   [
    "pixel",
@@ -12654,7 +13662,7 @@
    "pixel",
    "SuharPixel10-Bold.ttf: every outline point and advance sits on the 10px grid",
    true,
-   "2975"
+   "2983"
   ],
   [
    "pixel",
@@ -12678,7 +13686,7 @@
    "pixel",
    "SuharPixel10-Regular.ttf: every outline point and advance sits on the 10px grid",
    true,
-   "2973"
+   "2981"
   ],
   [
    "pixel",
@@ -12702,7 +13710,7 @@
    "pixel",
    "SuharPixel11-Bold.ttf: every outline point and advance sits on the 11px grid",
    true,
-   "2973"
+   "2981"
   ],
   [
    "pixel",
@@ -12726,7 +13734,7 @@
    "pixel",
    "SuharPixel11-Regular.ttf: every outline point and advance sits on the 11px grid",
    true,
-   "2973"
+   "2981"
   ],
   [
    "pixel",
@@ -12750,7 +13758,7 @@
    "pixel",
    "SuharPixel12-Bold.ttf: every outline point and advance sits on the 12px grid",
    true,
-   "2975"
+   "2983"
   ],
   [
    "pixel",
@@ -12774,7 +13782,7 @@
    "pixel",
    "SuharPixel12-Regular.ttf: every outline point and advance sits on the 12px grid",
    true,
-   "2975"
+   "2983"
   ],
   [
    "pixel",
@@ -12798,7 +13806,7 @@
    "pixel",
    "SuharPixel13-Bold.ttf: every outline point and advance sits on the 13px grid",
    true,
-   "2975"
+   "2983"
   ],
   [
    "pixel",
@@ -12822,7 +13830,7 @@
    "pixel",
    "SuharPixel13-Regular.ttf: every outline point and advance sits on the 13px grid",
    true,
-   "2975"
+   "2983"
   ],
   [
    "pixel",
@@ -12846,7 +13854,7 @@
    "pixel",
    "SuharPixel8-Bold.ttf: every outline point and advance sits on the 8px grid",
    true,
-   "2975"
+   "2983"
   ],
   [
    "pixel",
@@ -12870,7 +13878,7 @@
    "pixel",
    "SuharPixel8-Regular.ttf: every outline point and advance sits on the 8px grid",
    true,
-   "2975"
+   "2983"
   ],
   [
    "pixel",
@@ -12894,7 +13902,7 @@
    "pixel",
    "SuharPixel9-Bold.ttf: every outline point and advance sits on the 9px grid",
    true,
-   "2975"
+   "2983"
   ],
   [
    "pixel",
@@ -12918,7 +13926,7 @@
    "pixel",
    "SuharPixel9-Regular.ttf: every outline point and advance sits on the 9px grid",
    true,
-   "2973"
+   "2981"
   ],
   [
    "pixel",
@@ -13188,7 +14196,7 @@
    "naskh",
    "Display: letters that do not join stay on the baseline",
    true,
-   "[('uni062F', 519, 0, 0), ('uni0631', 213, -240, 0), ('uni0648', 516, -20, 0), ('space', 278, 0, 0), ('uni0631', 343, -110, 0), ('uni0627', 204, 0, 0), ('uni062F', 519, 0, 0)]"
+   "[('uni062F', 519, 0, 0), ('uni0631', 213, -240, 0), ('uni0648', 516, -20, 0), ('space', 278, 0, 0), ('uni0631', 285, -168, 0), ('uni0627', 204, 0, 0), ('uni062F', 519, 0, 0)]"
   ],
   [
    "naskh",
@@ -13210,7 +14218,7 @@
   ],
   [
    "naskh",
-   "Naskh (text): returning yeh only with ss06",
+   "Naskh (text): returning yeh after other letters only with ss06 (على)",
    true,
    ""
   ],
@@ -13240,13 +14248,13 @@
   ],
   [
    "variable",
-   "SuharNaskh[opsz,wght].ttf: built with a weight axis and (nearly) the full character set",
+   "SuharNaskh[GRAD,opsz,wght].ttf: built with a weight axis and (nearly) the full character set",
    true,
    ""
   ],
   [
    "variable",
-   "SuharNaskh-Italic[opsz,wght].ttf: built with a weight axis and (nearly) the full character set",
+   "SuharNaskh-Italic[GRAD,opsz,wght].ttf: built with a weight axis and (nearly) the full character set",
    true,
    ""
   ],
@@ -13266,31 +14274,31 @@
    "arabic",
    "Suhar: gaps after word-final letters differ by less than 140 units (ر was 110 units wider before 1.9)",
    true,
-   "(120, 164, 55, 45)"
+   "(110, 106, 7, -3)"
   ],
   [
    "arabic",
    "Suhar Bold: gaps after word-final letters differ by less than 140 units (ر was 110 units wider before 1.9)",
    true,
-   "(119, 141, 46, 38)"
+   "(109, 83, -2, -10)"
   ],
   [
    "arabic",
    "Suhar Naskh: gaps after word-final letters differ by less than 200 units (ر was 110 units wider before 1.9)",
    true,
-   "(184, 229, 108, 45)"
+   "(174, 171, 54, -3)"
   ],
   [
    "arabic",
    "Naskh Display: gaps after word-final letters differ by less than 200 units (ر was 110 units wider before 1.9)",
    true,
-   "(184, 229, 108, 45)"
+   "(174, 171, 54, -3)"
   ],
   [
    "arabic",
-   "the tail of reh runs under less than half of the space",
+   "the tail of reh runs under less than two thirds of the space",
    true,
-   "[('uni0628', 882, 0, 0), ('space', 278, 0, 0), ('uni0631', 284, -110, 0)]"
+   "[('uni0628', 882, 0, 0), ('space', 278, 0, 0), ('uni0631', 226, -168, 0)]"
   ],
   [
    "arabic",
@@ -13488,7 +14496,7 @@
    "sahafa",
    "Sahafa Regular: the loop of medial ain stays open (counter of at least 2500 square units)",
    true,
-   "[28111, 129232]"
+   "[17078, 147748]"
   ],
   [
    "sahafa",
@@ -13584,7 +14592,7 @@
    "sahafa",
    "Sahafa Medium: the loop of medial ain stays open (counter of at least 1950 square units)",
    true,
-   "[22142, 137614]"
+   "[12189, 162732]"
   ],
   [
    "sahafa",
@@ -13678,12 +14686,6 @@
   ],
   [
    "sahafa",
-   "Sahafa SemiBold: the loop of medial ain stays open (counter of at least 1550 square units)",
-   true,
-   "[17179, 144611]"
-  ],
-  [
-   "sahafa",
    "Sahafa SemiBold: same character set as Suhar Naskh",
    true,
    "2469"
@@ -13774,12 +14776,6 @@
   ],
   [
    "sahafa",
-   "Sahafa Bold: the loop of medial ain stays open (counter of at least 1250 square units)",
-   true,
-   "[14237, 151540]"
-  ],
-  [
-   "sahafa",
    "Sahafa Bold: same character set as Suhar Naskh",
    true,
    "2469"
@@ -13830,49 +14826,49 @@
    "sahafa",
    "SahafaHeadline Regular: the loop of sad stays open (counter of at least 30000 square units)",
    true,
-   "[80269, 239702]"
+   "[17, 80269, 240162]"
   ],
   [
    "sahafa",
    "SahafaHeadline Regular: the loop of feh stays open (counter of at least 12000 square units)",
    true,
-   "[8618, 47512, 148138]"
+   "[24, 8618, 47512, 148564]"
   ],
   [
    "sahafa",
    "SahafaHeadline Regular: the loop of waw stays open (counter of at least 12000 square units)",
    true,
-   "[38327, 161276]"
+   "[15, 38327, 161508]"
   ],
   [
    "sahafa",
    "SahafaHeadline Regular: the loop of meem stays open (counter of at least 7000 square units)",
    true,
-   "[35004, 126285]"
+   "[32, 34, 34471, 126823]"
   ],
   [
    "sahafa",
    "SahafaHeadline Regular: the loop of heh stays open (counter of at least 12000 square units)",
    true,
-   "[54398, 147123]"
+   "[47, 53848, 147123]"
   ],
   [
    "sahafa",
    "SahafaHeadline Regular: the loop of qaf stays open (counter of at least 12000 square units)",
    true,
-   "[8618, 8618, 38502, 211084]"
+   "[16, 8618, 8618, 38502, 211340]"
   ],
   [
    "sahafa",
    "SahafaHeadline Regular: the loop of teh marbuta stays open (counter of at least 12000 square units)",
    true,
-   "[8618, 8688, 54398, 147123]"
+   "[47, 8618, 8688, 53848, 147123]"
   ],
   [
    "sahafa",
    "SahafaHeadline Regular: the loop of medial ain stays open (counter of at least 2500 square units)",
    true,
-   "[26925, 124804]"
+   "[17, 23, 28, 219, 230, 15261, 145021]"
   ],
   [
    "sahafa",
@@ -13926,49 +14922,49 @@
    "sahafa",
    "SahafaHeadline Medium: the loop of sad stays open (counter of at least 23400 square units)",
    true,
-   "[66118, 251224]"
+   "[48, 55, 66118, 252562]"
   ],
   [
    "sahafa",
    "SahafaHeadline Medium: the loop of feh stays open (counter of at least 9360 square units)",
    true,
-   "[11139, 38369, 154923]"
+   "[33, 11139, 38369, 155589]"
   ],
   [
    "sahafa",
    "SahafaHeadline Medium: the loop of waw stays open (counter of at least 9360 square units)",
    true,
-   "[30403, 176992]"
+   "[11, 30403, 177398]"
   ],
   [
    "sahafa",
    "SahafaHeadline Medium: the loop of meem stays open (counter of at least 5460 square units)",
    true,
-   "[29543, 137473]"
+   "[45, 64, 28808, 138226]"
   ],
   [
    "sahafa",
    "SahafaHeadline Medium: the loop of heh stays open (counter of at least 9360 square units)",
    true,
-   "[44784, 153644]"
+   "[83, 44049, 153644]"
   ],
   [
    "sahafa",
    "SahafaHeadline Medium: the loop of qaf stays open (counter of at least 9360 square units)",
    true,
-   "[11139, 11139, 30175, 234211]"
+   "[18, 11139, 11139, 30175, 234637]"
   ],
   [
    "sahafa",
    "SahafaHeadline Medium: the loop of teh marbuta stays open (counter of at least 9360 square units)",
    true,
-   "[11139, 11139, 44784, 153644]"
+   "[83, 11139, 11139, 44049, 153644]"
   ],
   [
    "sahafa",
    "SahafaHeadline Medium: the loop of medial ain stays open (counter of at least 1950 square units)",
    true,
-   "[20728, 132808]"
+   "[30, 32, 32, 290, 305, 10181, 160244]"
   ],
   [
    "sahafa",
@@ -14022,49 +15018,43 @@
    "sahafa",
    "SahafaHeadline SemiBold: the loop of sad stays open (counter of at least 18600 square units)",
    true,
-   "[53329, 261761]"
+   "[10, 16, 32, 53329, 264185]"
   ],
   [
    "sahafa",
    "SahafaHeadline SemiBold: the loop of feh stays open (counter of at least 7440 square units)",
    true,
-   "[13408, 30383, 160423]"
+   "[33, 13408, 30383, 161356]"
   ],
   [
    "sahafa",
    "SahafaHeadline SemiBold: the loop of waw stays open (counter of at least 7440 square units)",
    true,
-   "[23077, 190474]"
+   "[4, 23077, 191016]"
   ],
   [
    "sahafa",
    "SahafaHeadline SemiBold: the loop of meem stays open (counter of at least 4340 square units)",
    true,
-   "[24661, 147936]"
+   "[55, 112, 23772, 148967]"
   ],
   [
    "sahafa",
    "SahafaHeadline SemiBold: the loop of heh stays open (counter of at least 7440 square units)",
    true,
-   "[36375, 159869]"
+   "[106, 35378, 159869]"
   ],
   [
    "sahafa",
    "SahafaHeadline SemiBold: the loop of qaf stays open (counter of at least 7440 square units)",
    true,
-   "[13408, 13408, 22799, 260494]"
+   "[5, 13408, 13408, 22799, 261008]"
   ],
   [
    "sahafa",
    "SahafaHeadline SemiBold: the loop of teh marbuta stays open (counter of at least 7440 square units)",
    true,
-   "[13321, 13408, 36375, 159869]"
-  ],
-  [
-   "sahafa",
-   "SahafaHeadline SemiBold: the loop of medial ain stays open (counter of at least 1550 square units)",
-   true,
-   "[15679, 139958]"
+   "[106, 13321, 13408, 35378, 159869]"
   ],
   [
    "sahafa",
@@ -14118,49 +15108,43 @@
    "sahafa",
    "SahafaHeadline Bold: the loop of sad stays open (counter of at least 15000 square units)",
    true,
-   "[42368, 272245]"
+   "[0, 6, 6, 9, 66, 152, 154, 41805, 274840]"
   ],
   [
    "sahafa",
    "SahafaHeadline Bold: the loop of feh stays open (counter of at least 6000 square units)",
    true,
-   "[15262, 23359, 166604]"
+   "[24, 15262, 23359, 167803]"
   ],
   [
    "sahafa",
    "SahafaHeadline Bold: the loop of waw stays open (counter of at least 6000 square units)",
    true,
-   "[16829, 203388]"
+   "[12, 16829, 204058]"
   ],
   [
    "sahafa",
    "SahafaHeadline Bold: the loop of meem stays open (counter of at least 3500 square units)",
    true,
-   "[20790, 158354]"
+   "[44, 163, 19547, 159652]"
   ],
   [
    "sahafa",
    "SahafaHeadline Bold: the loop of heh stays open (counter of at least 6000 square units)",
    true,
-   "[29078, 166269]"
+   "[127, 27807, 166269]"
   ],
   [
    "sahafa",
    "SahafaHeadline Bold: the loop of qaf stays open (counter of at least 6000 square units)",
    true,
-   "[15180, 15180, 16351, 282490]"
+   "[14, 15180, 15180, 16351, 283155]"
   ],
   [
    "sahafa",
    "SahafaHeadline Bold: the loop of teh marbuta stays open (counter of at least 6000 square units)",
    true,
-   "[15262, 15262, 29078, 166269]"
-  ],
-  [
-   "sahafa",
-   "SahafaHeadline Bold: the loop of medial ain stays open (counter of at least 1250 square units)",
-   true,
-   "[12620, 145827]"
+   "[127, 15262, 15262, 27807, 166269]"
   ],
   [
    "sahafa",
@@ -14190,7 +15174,7 @@
    "sahafa",
    "Headline sets tighter than Text (3 to 12 % narrower)",
    true,
-   "(9999, 9445)"
+   "(9543, 9014)"
   ],
   [
    "sahafa",
@@ -14314,9 +15298,9 @@
   ],
   [
    "sahafa",
-   "ss06 changes في in Sahafa",
+   "ss06 changes على in Sahafa",
    true,
-   "(['uni064A.fina', 'uni0641.init'], ['uni064A.fina.ret', 'uni0641.init'])"
+   "(['uni0649.fina', 'uni0644.medi', 'uni0639.init'], ['uni0649.fina.ret', 'uni0644.medi', 'uni0639.init'])"
   ],
   [
    "sahafa",
@@ -14352,25 +15336,25 @@
    "sahafa",
    "SuharSahafa[GRAD,opsz,wght].ttf: ink traps in the glyphs whose ten masters match (more than 60)",
    true,
-   "100"
+   "86"
   ],
   [
    "sahafa",
    "SuharSahafa-Italic[GRAD,opsz,wght].ttf: ink traps in the glyphs whose ten masters match (more than 60)",
    true,
-   "86"
+   "82"
   ],
   [
    "sahafa",
    "SuharSahafaHeadline[GRAD,opsz,wght].ttf: ink traps in the glyphs whose ten masters match (more than 60)",
    true,
-   "79"
+   "78"
   ],
   [
    "sahafa",
    "SuharSahafaHeadline-Italic[GRAD,opsz,wght].ttf: ink traps in the glyphs whose ten masters match (more than 60)",
    true,
-   "78"
+   "73"
   ],
   [
    "sahafa",
@@ -14506,13 +15490,25 @@
   ],
   [
    "optical",
-   "SuharNaskh[opsz,wght].ttf: optical size axis 8-72, thin strokes thicker at 8 than at 72",
+   "SuharNaskh[GRAD,opsz,wght].ttf: a grade changes no advance width",
+   true,
+   "0"
+  ],
+  [
+   "optical",
+   "SuharNaskh[GRAD,opsz,wght].ttf: optical size axis 8-72, thin strokes thicker at 8 than at 72",
    true,
    "(58, 47)"
   ],
   [
    "optical",
-   "SuharNaskh-Italic[opsz,wght].ttf: optical size axis 8-72, thin strokes thicker at 8 than at 72",
+   "SuharNaskh-Italic[GRAD,opsz,wght].ttf: a grade changes no advance width",
+   true,
+   "0"
+  ],
+  [
+   "optical",
+   "SuharNaskh-Italic[GRAD,opsz,wght].ttf: optical size axis 8-72, thin strokes thicker at 8 than at 72",
    true,
    "(66, 58)"
   ],
@@ -14676,379 +15672,631 @@
    "print",
    "print proof PDF written, with the fonts embedded",
    true,
-   "708932"
+   "775465"
+  ],
+  [
+   "families",
+   "Suhar Naskh Caption Regular: present, named, hinted",
+   true,
+   ""
+  ],
+  [
+   "families",
+   "Suhar Naskh Caption Italic: present, named, hinted",
+   true,
+   ""
+  ],
+  [
+   "families",
+   "Suhar Naskh Caption Medium: present, named, hinted",
+   true,
+   ""
+  ],
+  [
+   "families",
+   "Suhar Naskh Caption Medium Italic: present, named, hinted",
+   true,
+   ""
+  ],
+  [
+   "families",
+   "Suhar Naskh Caption SemiBold: present, named, hinted",
+   true,
+   ""
+  ],
+  [
+   "families",
+   "Suhar Naskh Caption SemiBold Italic: present, named, hinted",
+   true,
+   ""
+  ],
+  [
+   "families",
+   "Suhar Naskh Caption Bold: present, named, hinted",
+   true,
+   ""
+  ],
+  [
+   "families",
+   "Suhar Naskh Caption Bold Italic: present, named, hinted",
+   true,
+   ""
+  ],
+  [
+   "families",
+   "Suhar Typewriter Regular: present, named, hinted",
+   true,
+   ""
+  ],
+  [
+   "families",
+   "Suhar Typewriter Italic: present, named, hinted",
+   true,
+   ""
+  ],
+  [
+   "families",
+   "Suhar Typewriter Bold: present, named, hinted",
+   true,
+   ""
+  ],
+  [
+   "families",
+   "Suhar Typewriter Bold Italic: present, named, hinted",
+   true,
+   ""
+  ],
+  [
+   "optical",
+   "Naskh Caption: thicker thin strokes and looser spacing than Suhar Naskh",
+   true,
+   "(58, 50)"
+  ],
+  [
+   "typewriter",
+   "Typewriter: one weight of line (upright at least 0.8 of the baseline stroke, Latin horizontals at least 0.85 of the stem), serifs",
+   true,
+   "(107, 111)"
+  ],
+  [
+   "typewriter",
+   "Typewriter Regular is heavier than Sahafa Regular (uprights at least 20 units thicker)",
+   true,
+   "(107, 68)"
+  ],
+  [
+   "arabic",
+   "Suhar: medial ain is a wedge with a flat top, wider at the top than half way down, and unlike meem",
+   true,
+   "(451, 342)"
+  ],
+  [
+   "arabic",
+   "Suhar Naskh: medial ain is a wedge with a flat top, wider at the top than half way down, and unlike meem",
+   true,
+   "(456, 337)"
+  ],
+  [
+   "arabic",
+   "Sahafa: medial ain is a wedge with a flat top, wider at the top than half way down, and unlike meem",
+   true,
+   "(482, 354)"
+  ],
+  [
+   "neighbour",
+   "Sahafa: kaf before alef or lam takes the narrow form",
+   true,
+   "['uni0644', 'uni0627.fina', 'uni0643.init.l']"
+  ],
+  [
+   "neighbour",
+   "Sahafa: final yeh returns under feh and qaf by default",
+   true,
+   "['uni064A.fina.ret', 'uni0641.init']"
+  ],
+  [
+   "neighbour",
+   "Naskh: kaf before alef or lam takes the narrow form",
+   true,
+   "['uni0644', 'uni0627.fina', 'uni0643.init.l']"
+  ],
+  [
+   "neighbour",
+   "Naskh: final yeh returns under feh and qaf by default",
+   true,
+   "['uni064A.fina.ret', 'uni0641.init']"
+  ],
+  [
+   "neighbour",
+   "Sahafa: lam stands on a following meem by default (calt); Naskh keeps it optional",
+   true,
+   "['uni0633.fina', 'lam_meem.init']"
+  ],
+  [
+   "justification",
+   "kashida rules: after seen first, never after a non-joining letter, never inside lam-alef or a two-letter word",
+   true,
+   "([(5, 1), (1, 2), (5, 3)], [(1, 1)])"
+  ],
+  [
+   "justification",
+   "kashida justification fills a line without passing its width",
+   true,
+   "146.4"
+  ],
+  [
+   "release",
+   "specimen PDF written",
+   true,
+   "236854"
+  ],
+  [
+   "release",
+   "specimen site written",
+   true,
+   "10433"
+  ],
+  [
+   "release",
+   "kashida script for the web written",
+   true,
+   "2707"
+  ],
+  [
+   "release",
+   "Fontbakery report written",
+   true,
+   "1129"
+  ],
+  [
+   "latin",
+   "Sahafa: old-style figures stand on the Sahafa x-height",
+   true,
+   "(40, -18, 493, 488)"
   ],
   [
    "word space",
-   "Suhar-Black: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)",
+   "Suhar-Black: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(348, 10, 318, 378, 348)"
+   "(296, 12, 246, 324, 348)"
   ],
   [
    "word space",
-   "Suhar-BlackItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)",
+   "Suhar-BlackItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(341, 12, 309, 383, 341)"
+   "(288, 13, 249, 325, 341)"
   ],
   [
    "word space",
-   "Suhar-Bold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)",
+   "Suhar-Bold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(356, 10, 321, 385, 357)"
+   "(304, 12, 250, 332, 357)"
   ],
   [
    "word space",
-   "Suhar-BoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)",
+   "Suhar-BoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(350, 11, 320, 389, 352)"
+   "(297, 12, 261, 329, 352)"
   ],
   [
    "word space",
-   "Suhar-ExtraBold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)",
+   "Suhar-ExtraBold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(352, 10, 320, 381, 352)"
+   "(300, 12, 248, 328, 352)"
   ],
   [
    "word space",
-   "Suhar-ExtraBoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)",
+   "Suhar-ExtraBoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(346, 12, 314, 385, 348)"
+   "(292, 13, 255, 325, 348)"
   ],
   [
    "word space",
-   "Suhar-Italic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)",
+   "Suhar-Italic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(367, 9, 344, 398, 366)"
+   "(315, 9, 286, 338, 366)"
   ],
   [
    "word space",
-   "Suhar-Light: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)",
+   "Suhar-Light: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(374, 9, 347, 406, 373)"
+   "(323, 9, 282, 343, 373)"
   ],
   [
    "word space",
-   "Suhar-LightItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)",
+   "Suhar-LightItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(371, 9, 352, 405, 371)"
+   "(320, 9, 284, 340, 371)"
   ],
   [
    "word space",
-   "Suhar-Medium: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)",
+   "Suhar-Medium: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(366, 9, 332, 393, 365)"
+   "(315, 10, 264, 338, 365)"
   ],
   [
    "word space",
-   "Suhar-MediumItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)",
+   "Suhar-MediumItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(362, 9, 336, 395, 362)"
+   "(308, 10, 279, 334, 362)"
   ],
   [
    "word space",
-   "Suhar-Regular: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)",
+   "Suhar-Regular: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(370, 9, 339, 398, 369)"
+   "(319, 9, 272, 340, 369)"
   ],
   [
    "word space",
-   "Suhar-SemiBold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)",
+   "Suhar-SemiBold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(361, 10, 325, 389, 361)"
+   "(309, 11, 257, 334, 361)"
   ],
   [
    "word space",
-   "Suhar-SemiBoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)",
+   "Suhar-SemiBoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(356, 10, 328, 392, 356)"
+   "(303, 11, 270, 331, 356)"
   ],
   [
    "word space",
-   "SuharCondensed-Bold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)",
+   "SuharCondensed-Bold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(306, 10, 277, 332, 306)"
+   "(261, 12, 212, 284, 306)"
   ],
   [
    "word space",
-   "SuharCondensed-BoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)",
+   "SuharCondensed-BoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(301, 10, 271, 334, 302)"
+   "(255, 12, 219, 285, 302)"
   ],
   [
    "word space",
-   "SuharCondensed-ExtraBold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)",
+   "SuharCondensed-ExtraBold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(303, 10, 274, 330, 303)"
+   "(258, 12, 211, 282, 303)"
   ],
   [
    "word space",
-   "SuharCondensed-ExtraBoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)",
+   "SuharCondensed-ExtraBoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(297, 11, 266, 336, 299)"
+   "(251, 12, 218, 287, 299)"
   ],
   [
    "word space",
-   "SuharCondensed-Italic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)",
+   "SuharCondensed-Italic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(315, 9, 292, 345, 314)"
+   "(270, 9, 235, 291, 314)"
   ],
   [
    "word space",
-   "SuharCondensed-Light: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)",
+   "SuharCondensed-Light: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(321, 9, 288, 349, 320)"
+   "(277, 10, 231, 294, 320)"
   ],
   [
    "word space",
-   "SuharCondensed-LightItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)",
+   "SuharCondensed-LightItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(319, 8, 299, 349, 318)"
+   "(275, 8, 243, 293, 318)"
   ],
   [
    "word space",
-   "SuharCondensed-Medium: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)",
+   "SuharCondensed-Medium: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(314, 10, 279, 339, 313)"
+   "(270, 11, 216, 290, 313)"
   ],
   [
    "word space",
-   "SuharCondensed-MediumItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)",
+   "SuharCondensed-MediumItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(310, 9, 286, 340, 309)"
+   "(264, 10, 227, 288, 309)"
   ],
   [
    "word space",
-   "SuharCondensed-Regular: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)",
+   "SuharCondensed-Regular: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(318, 10, 282, 345, 316)"
+   "(274, 10, 224, 292, 316)"
   ],
   [
    "word space",
-   "SuharCondensed-SemiBold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)",
+   "SuharCondensed-SemiBold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(310, 9, 280, 335, 310)"
+   "(266, 12, 214, 286, 310)"
   ],
   [
    "word space",
-   "SuharCondensed-SemiBoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)",
+   "SuharCondensed-SemiBoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(306, 10, 279, 337, 305)"
+   "(259, 11, 219, 284, 305)"
   ],
   [
    "word space",
-   "SuharNaskh-Bold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)",
+   "SuharNaskh-Bold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(362, 10, 332, 402, 357)"
+   "(310, 9, 277, 330, 357)"
   ],
   [
    "word space",
-   "SuharNaskh-BoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)",
+   "SuharNaskh-BoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(347, 14, 310, 411, 352)"
+   "(293, 15, 249, 346, 352)"
   ],
   [
    "word space",
-   "SuharNaskh-Italic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)",
+   "SuharNaskh-Italic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(367, 14, 350, 436, 366)"
+   "(316, 12, 302, 376, 366)"
   ],
   [
    "word space",
-   "SuharNaskh-Medium: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)",
+   "SuharNaskh-Medium: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(370, 11, 333, 415, 365)"
+   "(318, 10, 277, 341, 365)"
   ],
   [
    "word space",
-   "SuharNaskh-MediumItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)",
+   "SuharNaskh-MediumItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(360, 13, 342, 427, 362)"
+   "(308, 12, 284, 365, 362)"
   ],
   [
    "word space",
-   "SuharNaskh-Regular: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)",
+   "SuharNaskh-Regular: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(374, 12, 336, 420, 369)"
+   "(323, 10, 280, 348, 369)"
   ],
   [
    "word space",
-   "SuharNaskh-SemiBold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)",
+   "SuharNaskh-SemiBold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(366, 11, 333, 409, 361)"
+   "(314, 9, 278, 336, 361)"
   ],
   [
    "word space",
-   "SuharNaskh-SemiBoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)",
+   "SuharNaskh-SemiBoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(354, 13, 335, 420, 356)"
+   "(301, 14, 259, 356, 356)"
   ],
   [
    "word space",
-   "SuharNaskhDisplay-Bold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)",
+   "SuharNaskhCaption-Bold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(362, 10, 332, 402, 357)"
+   "(354, 10, 326, 377, 405)"
   ],
   [
    "word space",
-   "SuharNaskhDisplay-Medium: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)",
+   "SuharNaskhCaption-BoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(370, 11, 333, 415, 365)"
+   "(338, 14, 297, 390, 400)"
   ],
   [
    "word space",
-   "SuharNaskhDisplay-Regular: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)",
+   "SuharNaskhCaption-Italic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(375, 11, 336, 420, 369)"
+   "(361, 11, 344, 419, 414)"
   ],
   [
    "word space",
-   "SuharNaskhDisplay-SemiBold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)",
+   "SuharNaskhCaption-Medium: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(366, 11, 333, 409, 361)"
+   "(362, 10, 323, 384, 413)"
   ],
   [
    "word space",
-   "SuharSahafa-Bold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)",
+   "SuharNaskhCaption-MediumItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(358, 8, 336, 393, 335)"
+   "(353, 12, 319, 409, 409)"
   ],
   [
    "word space",
-   "SuharSahafa-BoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)",
+   "SuharNaskhCaption-Regular: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(350, 10, 336, 392, 328)"
+   "(367, 10, 326, 389, 417)"
   ],
   [
    "word space",
-   "SuharSahafa-Italic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)",
+   "SuharNaskhCaption-SemiBold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(366, 10, 351, 412, 342)"
+   "(358, 9, 325, 378, 409)"
   ],
   [
    "word space",
-   "SuharSahafa-Medium: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)",
+   "SuharNaskhCaption-SemiBoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(366, 9, 339, 405, 341)"
+   "(345, 14, 305, 400, 405)"
   ],
   [
    "word space",
-   "SuharSahafa-MediumItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)",
+   "SuharNaskhDisplay-Bold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(361, 10, 348, 406, 337)"
+   "(310, 9, 277, 330, 357)"
   ],
   [
    "word space",
-   "SuharSahafa-Regular: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)",
+   "SuharNaskhDisplay-Medium: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(370, 9, 339, 410, 345)"
+   "(318, 10, 277, 341, 365)"
   ],
   [
    "word space",
-   "SuharSahafa-SemiBold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)",
+   "SuharNaskhDisplay-Regular: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(361, 8, 338, 397, 338)"
+   "(323, 10, 280, 348, 369)"
   ],
   [
    "word space",
-   "SuharSahafa-SemiBoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)",
+   "SuharNaskhDisplay-SemiBold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(355, 10, 343, 398, 332)"
+   "(314, 9, 278, 336, 361)"
   ],
   [
    "word space",
-   "SuharSahafaCaption-Bold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)",
+   "SuharSahafa-Bold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(406, 7, 381, 438, 383)"
+   "(306, 9, 277, 331, 335)"
   ],
   [
    "word space",
-   "SuharSahafaCaption-BoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)",
+   "SuharSahafa-BoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(399, 11, 369, 441, 375)"
+   "(295, 11, 255, 324, 329)"
   ],
   [
    "word space",
-   "SuharSahafaCaption-Italic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)",
+   "SuharSahafa-Italic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(415, 10, 403, 458, 390)"
+   "(312, 10, 282, 344, 343)"
   ],
   [
    "word space",
-   "SuharSahafaCaption-Medium: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)",
+   "SuharSahafa-Medium: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(414, 9, 387, 452, 389)"
+   "(315, 9, 284, 343, 341)"
   ],
   [
    "word space",
-   "SuharSahafaCaption-MediumItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)",
+   "SuharSahafa-MediumItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(410, 10, 398, 454, 385)"
+   "(306, 11, 269, 337, 338)"
   ],
   [
    "word space",
-   "SuharSahafaCaption-Regular: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)",
+   "SuharSahafa-Regular: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(418, 9, 389, 457, 392)"
+   "(319, 9, 283, 348, 345)"
   ],
   [
    "word space",
-   "SuharSahafaCaption-SemiBold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)",
+   "SuharSahafa-SemiBold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(410, 8, 386, 446, 386)"
+   "(310, 9, 281, 336, 338)"
   ],
   [
    "word space",
-   "SuharSahafaCaption-SemiBoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)",
+   "SuharSahafa-SemiBoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(404, 10, 380, 447, 380)"
+   "(301, 10, 264, 330, 333)"
   ],
   [
    "word space",
-   "SuharSahafaHeadline-Bold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)",
+   "SuharSahafaCaption-Bold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(328, 7, 310, 364, 306)"
+   "(351, 9, 314, 374, 383)"
   ],
   [
    "word space",
-   "SuharSahafaHeadline-BoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)",
+   "SuharSahafaCaption-BoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(317, 12, 301, 365, 300)"
+   "(341, 11, 303, 369, 376)"
   ],
   [
    "word space",
-   "SuharSahafaHeadline-Italic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)",
+   "SuharSahafaCaption-Italic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(332, 12, 319, 382, 312)"
+   "(358, 10, 325, 390, 390)"
   ],
   [
    "word space",
-   "SuharSahafaHeadline-Medium: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)",
+   "SuharSahafaCaption-Medium: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(335, 8, 314, 377, 312)"
+   "(359, 9, 326, 386, 389)"
   ],
   [
    "word space",
-   "SuharSahafaHeadline-MediumItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)",
+   "SuharSahafaCaption-MediumItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(327, 11, 312, 375, 308)"
+   "(352, 10, 317, 382, 385)"
   ],
   [
    "word space",
-   "SuharSahafaHeadline-Regular: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)",
+   "SuharSahafaCaption-Regular: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(338, 7, 315, 366, 315)"
+   "(363, 9, 329, 393, 392)"
   ],
   [
    "word space",
-   "SuharSahafaHeadline-SemiBold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)",
+   "SuharSahafaCaption-SemiBold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(331, 8, 313, 370, 309)"
+   "(355, 9, 321, 380, 386)"
   ],
   [
    "word space",
-   "SuharSahafaHeadline-SemiBoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and close to the Latin gap (within 60)",
+   "SuharSahafaCaption-SemiBoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
    true,
-   "(322, 11, 306, 370, 304)"
+   "(347, 10, 312, 376, 381)"
+  ],
+  [
+   "word space",
+   "SuharSahafaHeadline-Bold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
+   true,
+   "(278, 11, 232, 306, 306)"
+  ],
+  [
+   "word space",
+   "SuharSahafaHeadline-BoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
+   true,
+   "(263, 13, 201, 295, 301)"
+  ],
+  [
+   "word space",
+   "SuharSahafaHeadline-Italic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
+   true,
+   "(281, 10, 247, 318, 313)"
+  ],
+  [
+   "word space",
+   "SuharSahafaHeadline-Medium: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
+   true,
+   "(286, 10, 246, 319, 312)"
+  ],
+  [
+   "word space",
+   "SuharSahafaHeadline-MediumItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
+   true,
+   "(274, 12, 219, 311, 309)"
+  ],
+  [
+   "word space",
+   "SuharSahafaHeadline-Regular: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
+   true,
+   "(290, 7, 264, 305, 315)"
+  ],
+  [
+   "word space",
+   "SuharSahafaHeadline-SemiBold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
+   true,
+   "(282, 10, 238, 312, 309)"
+  ],
+  [
+   "word space",
+   "SuharSahafaHeadline-SemiBoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
+   true,
+   "(269, 13, 208, 302, 304)"
+  ],
+  [
+   "word space",
+   "SuharTypewriter-Bold: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
+   true,
+   "(309, 14, 244, 335, 341)"
+  ],
+  [
+   "word space",
+   "SuharTypewriter-BoldItalic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
+   true,
+   "(304, 16, 240, 351, 331)"
+  ],
+  [
+   "word space",
+   "SuharTypewriter-Italic: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
+   true,
+   "(320, 15, 266, 368, 345)"
+  ],
+  [
+   "word space",
+   "SuharTypewriter-Regular: optical gap between two Arabic words is even (standard deviation under 18 units, range under 120) and up to 90 units tighter than the Latin gap",
+   true,
+   "(323, 14, 262, 350, 352)"
   ],
   [
    "word space",
@@ -15198,1745 +16446,1901 @@
  "files": [
   {
    "file": "otf/Suhar-Black.otf",
-   "glyphs": 2994,
+   "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 564
+   "size_kb": 566
   },
   {
    "file": "otf/Suhar-BlackItalic.otf",
-   "glyphs": 2994,
-   "codepoints": 2469,
-   "size_kb": 546
-  },
-  {
-   "file": "otf/Suhar-Bold.otf",
-   "glyphs": 2994,
-   "codepoints": 2469,
-   "size_kb": 563
-  },
-  {
-   "file": "otf/Suhar-BoldItalic.otf",
-   "glyphs": 2994,
+   "glyphs": 3002,
    "codepoints": 2469,
    "size_kb": 547
   },
   {
-   "file": "otf/Suhar-ExtraBold.otf",
-   "glyphs": 2994,
+   "file": "otf/Suhar-Bold.otf",
+   "glyphs": 3002,
    "codepoints": 2469,
    "size_kb": 565
   },
   {
-   "file": "otf/Suhar-ExtraBoldItalic.otf",
-   "glyphs": 2994,
+   "file": "otf/Suhar-BoldItalic.otf",
+   "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 547
+   "size_kb": 550
+  },
+  {
+   "file": "otf/Suhar-ExtraBold.otf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 568
+  },
+  {
+   "file": "otf/Suhar-ExtraBoldItalic.otf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 549
   },
   {
    "file": "otf/Suhar-Italic.otf",
-   "glyphs": 2994,
+   "glyphs": 3002,
    "codepoints": 2469,
    "size_kb": 538
   },
   {
    "file": "otf/Suhar-Light.otf",
-   "glyphs": 2994,
+   "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 536
+   "size_kb": 538
   },
   {
    "file": "otf/Suhar-LightItalic.otf",
-   "glyphs": 2994,
+   "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 541
+   "size_kb": 544
   },
   {
    "file": "otf/Suhar-Medium.otf",
-   "glyphs": 2994,
+   "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 549
+   "size_kb": 551
   },
   {
    "file": "otf/Suhar-MediumItalic.otf",
-   "glyphs": 2994,
+   "glyphs": 3002,
    "codepoints": 2469,
    "size_kb": 534
   },
   {
    "file": "otf/Suhar-Regular.otf",
-   "glyphs": 2994,
+   "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 536
+   "size_kb": 538
   },
   {
    "file": "otf/Suhar-SemiBold.otf",
-   "glyphs": 2994,
+   "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 564
+   "size_kb": 567
   },
   {
    "file": "otf/Suhar-SemiBoldItalic.otf",
-   "glyphs": 2994,
-   "codepoints": 2469,
-   "size_kb": 546
-  },
-  {
-   "file": "otf/SuharCondensed-Bold.otf",
-   "glyphs": 2994,
-   "codepoints": 2469,
-   "size_kb": 540
-  },
-  {
-   "file": "otf/SuharCondensed-BoldItalic.otf",
-   "glyphs": 2994,
-   "codepoints": 2469,
-   "size_kb": 527
-  },
-  {
-   "file": "otf/SuharCondensed-ExtraBold.otf",
-   "glyphs": 2994,
-   "codepoints": 2469,
-   "size_kb": 545
-  },
-  {
-   "file": "otf/SuharCondensed-ExtraBoldItalic.otf",
-   "glyphs": 2994,
-   "codepoints": 2469,
-   "size_kb": 528
-  },
-  {
-   "file": "otf/SuharCondensed-Italic.otf",
-   "glyphs": 2994,
-   "codepoints": 2469,
-   "size_kb": 513
-  },
-  {
-   "file": "otf/SuharCondensed-Light.otf",
-   "glyphs": 2994,
-   "codepoints": 2469,
-   "size_kb": 520
-  },
-  {
-   "file": "otf/SuharCondensed-LightItalic.otf",
-   "glyphs": 2994,
-   "codepoints": 2469,
-   "size_kb": 518
-  },
-  {
-   "file": "otf/SuharCondensed-Medium.otf",
-   "glyphs": 2994,
-   "codepoints": 2469,
-   "size_kb": 523
-  },
-  {
-   "file": "otf/SuharCondensed-MediumItalic.otf",
-   "glyphs": 2994,
-   "codepoints": 2469,
-   "size_kb": 518
-  },
-  {
-   "file": "otf/SuharCondensed-Regular.otf",
-   "glyphs": 2994,
-   "codepoints": 2469,
-   "size_kb": 518
-  },
-  {
-   "file": "otf/SuharCondensed-SemiBold.otf",
-   "glyphs": 2994,
-   "codepoints": 2469,
-   "size_kb": 536
-  },
-  {
-   "file": "otf/SuharCondensed-SemiBoldItalic.otf",
-   "glyphs": 2994,
-   "codepoints": 2469,
-   "size_kb": 522
-  },
-  {
-   "file": "otf/SuharMono-Bold.otf",
-   "glyphs": 3010,
-   "codepoints": 2469,
-   "size_kb": 435
-  },
-  {
-   "file": "otf/SuharMono-BoldItalic.otf",
-   "glyphs": 3010,
-   "codepoints": 2469,
-   "size_kb": 429
-  },
-  {
-   "file": "otf/SuharMono-ExtraBold.otf",
-   "glyphs": 3010,
-   "codepoints": 2469,
-   "size_kb": 436
-  },
-  {
-   "file": "otf/SuharMono-ExtraBoldItalic.otf",
-   "glyphs": 3010,
-   "codepoints": 2469,
-   "size_kb": 432
-  },
-  {
-   "file": "otf/SuharMono-Italic.otf",
-   "glyphs": 3010,
-   "codepoints": 2469,
-   "size_kb": 422
-  },
-  {
-   "file": "otf/SuharMono-Light.otf",
-   "glyphs": 3010,
-   "codepoints": 2469,
-   "size_kb": 423
-  },
-  {
-   "file": "otf/SuharMono-LightItalic.otf",
-   "glyphs": 3010,
-   "codepoints": 2469,
-   "size_kb": 424
-  },
-  {
-   "file": "otf/SuharMono-Medium.otf",
-   "glyphs": 3010,
-   "codepoints": 2469,
-   "size_kb": 421
-  },
-  {
-   "file": "otf/SuharMono-MediumItalic.otf",
-   "glyphs": 3010,
-   "codepoints": 2469,
-   "size_kb": 421
-  },
-  {
-   "file": "otf/SuharMono-Regular.otf",
-   "glyphs": 3010,
-   "codepoints": 2469,
-   "size_kb": 422
-  },
-  {
-   "file": "otf/SuharMono-SemiBold.otf",
-   "glyphs": 3010,
-   "codepoints": 2469,
-   "size_kb": 431
-  },
-  {
-   "file": "otf/SuharMono-SemiBoldItalic.otf",
-   "glyphs": 3010,
-   "codepoints": 2469,
-   "size_kb": 427
-  },
-  {
-   "file": "otf/SuharNaskh-Bold.otf",
-   "glyphs": 2994,
-   "codepoints": 2469,
-   "size_kb": 559
-  },
-  {
-   "file": "otf/SuharNaskh-BoldItalic.otf",
-   "glyphs": 2994,
-   "codepoints": 2469,
-   "size_kb": 547
-  },
-  {
-   "file": "otf/SuharNaskh-Italic.otf",
-   "glyphs": 2994,
-   "codepoints": 2469,
-   "size_kb": 536
-  },
-  {
-   "file": "otf/SuharNaskh-Medium.otf",
-   "glyphs": 2994,
+   "glyphs": 3002,
    "codepoints": 2469,
    "size_kb": 548
   },
   {
+   "file": "otf/SuharCondensed-Bold.otf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 543
+  },
+  {
+   "file": "otf/SuharCondensed-BoldItalic.otf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 529
+  },
+  {
+   "file": "otf/SuharCondensed-ExtraBold.otf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 547
+  },
+  {
+   "file": "otf/SuharCondensed-ExtraBoldItalic.otf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 530
+  },
+  {
+   "file": "otf/SuharCondensed-Italic.otf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 514
+  },
+  {
+   "file": "otf/SuharCondensed-Light.otf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 522
+  },
+  {
+   "file": "otf/SuharCondensed-LightItalic.otf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 521
+  },
+  {
+   "file": "otf/SuharCondensed-Medium.otf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 525
+  },
+  {
+   "file": "otf/SuharCondensed-MediumItalic.otf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 520
+  },
+  {
+   "file": "otf/SuharCondensed-Regular.otf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 520
+  },
+  {
+   "file": "otf/SuharCondensed-SemiBold.otf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 538
+  },
+  {
+   "file": "otf/SuharCondensed-SemiBoldItalic.otf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 524
+  },
+  {
+   "file": "otf/SuharMono-Bold.otf",
+   "glyphs": 3018,
+   "codepoints": 2469,
+   "size_kb": 436
+  },
+  {
+   "file": "otf/SuharMono-BoldItalic.otf",
+   "glyphs": 3018,
+   "codepoints": 2469,
+   "size_kb": 430
+  },
+  {
+   "file": "otf/SuharMono-ExtraBold.otf",
+   "glyphs": 3018,
+   "codepoints": 2469,
+   "size_kb": 437
+  },
+  {
+   "file": "otf/SuharMono-ExtraBoldItalic.otf",
+   "glyphs": 3018,
+   "codepoints": 2469,
+   "size_kb": 433
+  },
+  {
+   "file": "otf/SuharMono-Italic.otf",
+   "glyphs": 3018,
+   "codepoints": 2469,
+   "size_kb": 423
+  },
+  {
+   "file": "otf/SuharMono-Light.otf",
+   "glyphs": 3018,
+   "codepoints": 2469,
+   "size_kb": 424
+  },
+  {
+   "file": "otf/SuharMono-LightItalic.otf",
+   "glyphs": 3018,
+   "codepoints": 2469,
+   "size_kb": 425
+  },
+  {
+   "file": "otf/SuharMono-Medium.otf",
+   "glyphs": 3018,
+   "codepoints": 2469,
+   "size_kb": 422
+  },
+  {
+   "file": "otf/SuharMono-MediumItalic.otf",
+   "glyphs": 3018,
+   "codepoints": 2469,
+   "size_kb": 422
+  },
+  {
+   "file": "otf/SuharMono-Regular.otf",
+   "glyphs": 3018,
+   "codepoints": 2469,
+   "size_kb": 423
+  },
+  {
+   "file": "otf/SuharMono-SemiBold.otf",
+   "glyphs": 3018,
+   "codepoints": 2469,
+   "size_kb": 432
+  },
+  {
+   "file": "otf/SuharMono-SemiBoldItalic.otf",
+   "glyphs": 3018,
+   "codepoints": 2469,
+   "size_kb": 428
+  },
+  {
+   "file": "otf/SuharNaskh-Bold.otf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 562
+  },
+  {
+   "file": "otf/SuharNaskh-BoldItalic.otf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 548
+  },
+  {
+   "file": "otf/SuharNaskh-Italic.otf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 537
+  },
+  {
+   "file": "otf/SuharNaskh-Medium.otf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 550
+  },
+  {
    "file": "otf/SuharNaskh-MediumItalic.otf",
-   "glyphs": 2994,
+   "glyphs": 3002,
    "codepoints": 2469,
    "size_kb": 539
   },
   {
    "file": "otf/SuharNaskh-Regular.otf",
-   "glyphs": 2994,
+   "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 537
+   "size_kb": 539
   },
   {
    "file": "otf/SuharNaskh-SemiBold.otf",
-   "glyphs": 2994,
+   "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 558
+   "size_kb": 560
   },
   {
    "file": "otf/SuharNaskh-SemiBoldItalic.otf",
-   "glyphs": 2994,
+   "glyphs": 3002,
    "codepoints": 2469,
    "size_kb": 547
   },
   {
+   "file": "otf/SuharNaskhCaption-Bold.otf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 591
+  },
+  {
+   "file": "otf/SuharNaskhCaption-BoldItalic.otf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 580
+  },
+  {
+   "file": "otf/SuharNaskhCaption-Italic.otf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 549
+  },
+  {
+   "file": "otf/SuharNaskhCaption-Medium.otf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 577
+  },
+  {
+   "file": "otf/SuharNaskhCaption-MediumItalic.otf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 568
+  },
+  {
+   "file": "otf/SuharNaskhCaption-Regular.otf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 556
+  },
+  {
+   "file": "otf/SuharNaskhCaption-SemiBold.otf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 588
+  },
+  {
+   "file": "otf/SuharNaskhCaption-SemiBoldItalic.otf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 570
+  },
+  {
    "file": "otf/SuharNaskhDisplay-Bold.otf",
-   "glyphs": 2994,
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 568
+  },
+  {
+   "file": "otf/SuharNaskhDisplay-Medium.otf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 556
+  },
+  {
+   "file": "otf/SuharNaskhDisplay-Regular.otf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 544
+  },
+  {
+   "file": "otf/SuharNaskhDisplay-SemiBold.otf",
+   "glyphs": 3002,
    "codepoints": 2469,
    "size_kb": 566
   },
   {
-   "file": "otf/SuharNaskhDisplay-Medium.otf",
-   "glyphs": 2994,
-   "codepoints": 2469,
-   "size_kb": 553
-  },
-  {
-   "file": "otf/SuharNaskhDisplay-Regular.otf",
-   "glyphs": 2994,
-   "codepoints": 2469,
-   "size_kb": 541
-  },
-  {
-   "file": "otf/SuharNaskhDisplay-SemiBold.otf",
-   "glyphs": 2994,
-   "codepoints": 2469,
-   "size_kb": 563
-  },
-  {
    "file": "otf/SuharNerd-Black.otf",
-   "glyphs": 13589,
-   "codepoints": 13064,
-   "size_kb": 3291
-  },
-  {
-   "file": "otf/SuharNerd-BlackItalic.otf",
-   "glyphs": 13589,
-   "codepoints": 13064,
-   "size_kb": 3273
-  },
-  {
-   "file": "otf/SuharNerd-Bold.otf",
-   "glyphs": 13589,
-   "codepoints": 13064,
-   "size_kb": 3290
-  },
-  {
-   "file": "otf/SuharNerd-BoldItalic.otf",
-   "glyphs": 13589,
-   "codepoints": 13064,
-   "size_kb": 3275
-  },
-  {
-   "file": "otf/SuharNerd-ExtraBold.otf",
-   "glyphs": 13589,
+   "glyphs": 13597,
    "codepoints": 13064,
    "size_kb": 3293
   },
   {
-   "file": "otf/SuharNerd-ExtraBoldItalic.otf",
-   "glyphs": 13589,
+   "file": "otf/SuharNerd-BlackItalic.otf",
+   "glyphs": 13597,
    "codepoints": 13064,
    "size_kb": 3275
   },
   {
+   "file": "otf/SuharNerd-Bold.otf",
+   "glyphs": 13597,
+   "codepoints": 13064,
+   "size_kb": 3292
+  },
+  {
+   "file": "otf/SuharNerd-BoldItalic.otf",
+   "glyphs": 13597,
+   "codepoints": 13064,
+   "size_kb": 3277
+  },
+  {
+   "file": "otf/SuharNerd-ExtraBold.otf",
+   "glyphs": 13597,
+   "codepoints": 13064,
+   "size_kb": 3295
+  },
+  {
+   "file": "otf/SuharNerd-ExtraBoldItalic.otf",
+   "glyphs": 13597,
+   "codepoints": 13064,
+   "size_kb": 3277
+  },
+  {
    "file": "otf/SuharNerd-Italic.otf",
-   "glyphs": 13589,
+   "glyphs": 13597,
    "codepoints": 13064,
    "size_kb": 3266
   },
   {
    "file": "otf/SuharNerd-Light.otf",
-   "glyphs": 13589,
+   "glyphs": 13597,
    "codepoints": 13064,
-   "size_kb": 3264
+   "size_kb": 3266
   },
   {
    "file": "otf/SuharNerd-LightItalic.otf",
-   "glyphs": 13589,
+   "glyphs": 13597,
    "codepoints": 13064,
-   "size_kb": 3269
+   "size_kb": 3271
   },
   {
    "file": "otf/SuharNerd-Medium.otf",
-   "glyphs": 13589,
+   "glyphs": 13597,
    "codepoints": 13064,
-   "size_kb": 3277
+   "size_kb": 3279
   },
   {
    "file": "otf/SuharNerd-MediumItalic.otf",
-   "glyphs": 13589,
+   "glyphs": 13597,
    "codepoints": 13064,
-   "size_kb": 3262
+   "size_kb": 3261
   },
   {
    "file": "otf/SuharNerd-Regular.otf",
-   "glyphs": 13589,
+   "glyphs": 13597,
    "codepoints": 13064,
-   "size_kb": 3264
+   "size_kb": 3265
   },
   {
    "file": "otf/SuharNerd-SemiBold.otf",
-   "glyphs": 13589,
+   "glyphs": 13597,
    "codepoints": 13064,
-   "size_kb": 3291
+   "size_kb": 3294
   },
   {
    "file": "otf/SuharNerd-SemiBoldItalic.otf",
-   "glyphs": 13589,
+   "glyphs": 13597,
    "codepoints": 13064,
-   "size_kb": 3274
+   "size_kb": 3275
   },
   {
    "file": "otf/SuharNerdCondensed-Bold.otf",
-   "glyphs": 13589,
+   "glyphs": 13597,
    "codepoints": 13064,
-   "size_kb": 3268
+   "size_kb": 3270
   },
   {
    "file": "otf/SuharNerdCondensed-BoldItalic.otf",
-   "glyphs": 13589,
+   "glyphs": 13597,
    "codepoints": 13064,
-   "size_kb": 3254
+   "size_kb": 3256
   },
   {
    "file": "otf/SuharNerdCondensed-ExtraBold.otf",
-   "glyphs": 13589,
+   "glyphs": 13597,
    "codepoints": 13064,
-   "size_kb": 3273
+   "size_kb": 3275
   },
   {
    "file": "otf/SuharNerdCondensed-ExtraBoldItalic.otf",
-   "glyphs": 13589,
+   "glyphs": 13597,
    "codepoints": 13064,
-   "size_kb": 3255
+   "size_kb": 3257
   },
   {
    "file": "otf/SuharNerdCondensed-Italic.otf",
-   "glyphs": 13589,
+   "glyphs": 13597,
    "codepoints": 13064,
-   "size_kb": 3240
+   "size_kb": 3241
   },
   {
    "file": "otf/SuharNerdCondensed-Light.otf",
-   "glyphs": 13589,
+   "glyphs": 13597,
+   "codepoints": 13064,
+   "size_kb": 3249
+  },
+  {
+   "file": "otf/SuharNerdCondensed-LightItalic.otf",
+   "glyphs": 13597,
    "codepoints": 13064,
    "size_kb": 3248
   },
   {
-   "file": "otf/SuharNerdCondensed-LightItalic.otf",
-   "glyphs": 13589,
-   "codepoints": 13064,
-   "size_kb": 3246
-  },
-  {
    "file": "otf/SuharNerdCondensed-Medium.otf",
-   "glyphs": 13589,
+   "glyphs": 13597,
    "codepoints": 13064,
-   "size_kb": 3250
+   "size_kb": 3253
   },
   {
    "file": "otf/SuharNerdCondensed-MediumItalic.otf",
-   "glyphs": 13589,
+   "glyphs": 13597,
    "codepoints": 13064,
-   "size_kb": 3245
+   "size_kb": 3247
   },
   {
    "file": "otf/SuharNerdCondensed-Regular.otf",
-   "glyphs": 13589,
+   "glyphs": 13597,
    "codepoints": 13064,
-   "size_kb": 3245
+   "size_kb": 3247
   },
   {
    "file": "otf/SuharNerdCondensed-SemiBold.otf",
-   "glyphs": 13589,
+   "glyphs": 13597,
    "codepoints": 13064,
-   "size_kb": 3263
+   "size_kb": 3265
   },
   {
    "file": "otf/SuharNerdCondensed-SemiBoldItalic.otf",
-   "glyphs": 13589,
+   "glyphs": 13597,
    "codepoints": 13064,
-   "size_kb": 3250
+   "size_kb": 3252
   },
   {
    "file": "otf/SuharNerdMono-Bold.otf",
-   "glyphs": 13605,
+   "glyphs": 13613,
    "codepoints": 13064,
-   "size_kb": 3188
+   "size_kb": 3189
   },
   {
    "file": "otf/SuharNerdMono-BoldItalic.otf",
-   "glyphs": 13605,
+   "glyphs": 13613,
    "codepoints": 13064,
-   "size_kb": 3182
+   "size_kb": 3183
   },
   {
    "file": "otf/SuharNerdMono-ExtraBold.otf",
-   "glyphs": 13605,
+   "glyphs": 13613,
    "codepoints": 13064,
-   "size_kb": 3188
+   "size_kb": 3190
   },
   {
    "file": "otf/SuharNerdMono-ExtraBoldItalic.otf",
-   "glyphs": 13605,
+   "glyphs": 13613,
    "codepoints": 13064,
-   "size_kb": 3184
+   "size_kb": 3186
   },
   {
    "file": "otf/SuharNerdMono-Italic.otf",
-   "glyphs": 13605,
+   "glyphs": 13613,
    "codepoints": 13064,
    "size_kb": 3175
   },
   {
    "file": "otf/SuharNerdMono-Light.otf",
-   "glyphs": 13605,
+   "glyphs": 13613,
    "codepoints": 13064,
-   "size_kb": 3176
+   "size_kb": 3177
   },
   {
    "file": "otf/SuharNerdMono-LightItalic.otf",
-   "glyphs": 13605,
+   "glyphs": 13613,
    "codepoints": 13064,
-   "size_kb": 3176
+   "size_kb": 3178
   },
   {
    "file": "otf/SuharNerdMono-Medium.otf",
-   "glyphs": 13605,
-   "codepoints": 13064,
-   "size_kb": 3174
-  },
-  {
-   "file": "otf/SuharNerdMono-MediumItalic.otf",
-   "glyphs": 13605,
-   "codepoints": 13064,
-   "size_kb": 3174
-  },
-  {
-   "file": "otf/SuharNerdMono-Regular.otf",
-   "glyphs": 13605,
+   "glyphs": 13613,
    "codepoints": 13064,
    "size_kb": 3175
   },
   {
-   "file": "otf/SuharNerdMono-SemiBold.otf",
-   "glyphs": 13605,
+   "file": "otf/SuharNerdMono-MediumItalic.otf",
+   "glyphs": 13613,
    "codepoints": 13064,
-   "size_kb": 3183
+   "size_kb": 3175
+  },
+  {
+   "file": "otf/SuharNerdMono-Regular.otf",
+   "glyphs": 13613,
+   "codepoints": 13064,
+   "size_kb": 3176
+  },
+  {
+   "file": "otf/SuharNerdMono-SemiBold.otf",
+   "glyphs": 13613,
+   "codepoints": 13064,
+   "size_kb": 3185
   },
   {
    "file": "otf/SuharNerdMono-SemiBoldItalic.otf",
-   "glyphs": 13605,
+   "glyphs": 13613,
    "codepoints": 13064,
-   "size_kb": 3180
+   "size_kb": 3181
   },
   {
    "file": "otf/SuharNerdSahafa-Bold.otf",
-   "glyphs": 13589,
+   "glyphs": 13597,
    "codepoints": 13064,
-   "size_kb": 3340
+   "size_kb": 3341
   },
   {
    "file": "otf/SuharNerdSahafa-BoldItalic.otf",
-   "glyphs": 13589,
+   "glyphs": 13597,
    "codepoints": 13064,
-   "size_kb": 3331
+   "size_kb": 3333
   },
   {
    "file": "otf/SuharNerdSahafa-Italic.otf",
-   "glyphs": 13589,
+   "glyphs": 13597,
    "codepoints": 13064,
    "size_kb": 3317
   },
   {
    "file": "otf/SuharNerdSahafa-Medium.otf",
-   "glyphs": 13589,
+   "glyphs": 13597,
+   "codepoints": 13064,
+   "size_kb": 3323
+  },
+  {
+   "file": "otf/SuharNerdSahafa-MediumItalic.otf",
+   "glyphs": 13597,
    "codepoints": 13064,
    "size_kb": 3322
   },
   {
-   "file": "otf/SuharNerdSahafa-MediumItalic.otf",
-   "glyphs": 13589,
-   "codepoints": 13064,
-   "size_kb": 3321
-  },
-  {
    "file": "otf/SuharNerdSahafa-Regular.otf",
-   "glyphs": 13589,
+   "glyphs": 13597,
    "codepoints": 13064,
-   "size_kb": 3311
+   "size_kb": 3312
   },
   {
    "file": "otf/SuharNerdSahafa-SemiBold.otf",
-   "glyphs": 13589,
+   "glyphs": 13597,
    "codepoints": 13064,
-   "size_kb": 3336
+   "size_kb": 3338
   },
   {
    "file": "otf/SuharNerdSahafa-SemiBoldItalic.otf",
-   "glyphs": 13589,
+   "glyphs": 13597,
    "codepoints": 13064,
    "size_kb": 3333
   },
   {
    "file": "otf/SuharNerdSahafaHeadline-Bold.otf",
-   "glyphs": 13589,
+   "glyphs": 13597,
    "codepoints": 13064,
-   "size_kb": 3328
+   "size_kb": 3364
   },
   {
    "file": "otf/SuharNerdSahafaHeadline-BoldItalic.otf",
-   "glyphs": 13589,
+   "glyphs": 13597,
    "codepoints": 13064,
-   "size_kb": 3324
+   "size_kb": 3358
   },
   {
    "file": "otf/SuharNerdSahafaHeadline-Italic.otf",
-   "glyphs": 13589,
+   "glyphs": 13597,
    "codepoints": 13064,
-   "size_kb": 3322
+   "size_kb": 3348
   },
   {
    "file": "otf/SuharNerdSahafaHeadline-Medium.otf",
-   "glyphs": 13589,
+   "glyphs": 13597,
    "codepoints": 13064,
-   "size_kb": 3323
+   "size_kb": 3352
   },
   {
    "file": "otf/SuharNerdSahafaHeadline-MediumItalic.otf",
-   "glyphs": 13589,
+   "glyphs": 13597,
    "codepoints": 13064,
-   "size_kb": 3326
+   "size_kb": 3360
   },
   {
    "file": "otf/SuharNerdSahafaHeadline-Regular.otf",
-   "glyphs": 13589,
+   "glyphs": 13597,
    "codepoints": 13064,
-   "size_kb": 3315
+   "size_kb": 3338
   },
   {
    "file": "otf/SuharNerdSahafaHeadline-SemiBold.otf",
-   "glyphs": 13589,
+   "glyphs": 13597,
    "codepoints": 13064,
-   "size_kb": 3327
+   "size_kb": 3364
   },
   {
    "file": "otf/SuharNerdSahafaHeadline-SemiBoldItalic.otf",
-   "glyphs": 13589,
+   "glyphs": 13597,
    "codepoints": 13064,
-   "size_kb": 3324
+   "size_kb": 3360
   },
   {
    "file": "otf/SuharSahafa-Bold.otf",
-   "glyphs": 2994,
-   "codepoints": 2469,
-   "size_kb": 612
-  },
-  {
-   "file": "otf/SuharSahafa-BoldItalic.otf",
-   "glyphs": 2994,
-   "codepoints": 2469,
-   "size_kb": 603
-  },
-  {
-   "file": "otf/SuharSahafa-Italic.otf",
-   "glyphs": 2994,
-   "codepoints": 2469,
-   "size_kb": 589
-  },
-  {
-   "file": "otf/SuharSahafa-Medium.otf",
-   "glyphs": 2994,
-   "codepoints": 2469,
-   "size_kb": 594
-  },
-  {
-   "file": "otf/SuharSahafa-MediumItalic.otf",
-   "glyphs": 2994,
-   "codepoints": 2469,
-   "size_kb": 593
-  },
-  {
-   "file": "otf/SuharSahafa-Regular.otf",
-   "glyphs": 2994,
-   "codepoints": 2469,
-   "size_kb": 583
-  },
-  {
-   "file": "otf/SuharSahafa-SemiBold.otf",
-   "glyphs": 2994,
-   "codepoints": 2469,
-   "size_kb": 609
-  },
-  {
-   "file": "otf/SuharSahafa-SemiBoldItalic.otf",
-   "glyphs": 2994,
-   "codepoints": 2469,
-   "size_kb": 606
-  },
-  {
-   "file": "otf/SuharSahafaCaption-Bold.otf",
-   "glyphs": 2994,
-   "codepoints": 2469,
-   "size_kb": 648
-  },
-  {
-   "file": "otf/SuharSahafaCaption-BoldItalic.otf",
-   "glyphs": 2994,
-   "codepoints": 2469,
-   "size_kb": 632
-  },
-  {
-   "file": "otf/SuharSahafaCaption-Italic.otf",
-   "glyphs": 2994,
-   "codepoints": 2469,
-   "size_kb": 605
-  },
-  {
-   "file": "otf/SuharSahafaCaption-Medium.otf",
-   "glyphs": 2994,
-   "codepoints": 2469,
-   "size_kb": 619
-  },
-  {
-   "file": "otf/SuharSahafaCaption-MediumItalic.otf",
-   "glyphs": 2994,
+   "glyphs": 3002,
    "codepoints": 2469,
    "size_kb": 614
   },
   {
-   "file": "otf/SuharSahafaCaption-Regular.otf",
-   "glyphs": 2994,
+   "file": "otf/SuharSahafa-BoldItalic.otf",
+   "glyphs": 3002,
    "codepoints": 2469,
    "size_kb": 606
   },
   {
-   "file": "otf/SuharSahafaCaption-SemiBold.otf",
-   "glyphs": 2994,
+   "file": "otf/SuharSahafa-Italic.otf",
+   "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 638
+   "size_kb": 590
   },
   {
-   "file": "otf/SuharSahafaCaption-SemiBoldItalic.otf",
-   "glyphs": 2994,
-   "codepoints": 2469,
-   "size_kb": 627
-  },
-  {
-   "file": "otf/SuharSahafaHeadline-Bold.otf",
-   "glyphs": 2994,
-   "codepoints": 2469,
-   "size_kb": 600
-  },
-  {
-   "file": "otf/SuharSahafaHeadline-BoldItalic.otf",
-   "glyphs": 2994,
+   "file": "otf/SuharSahafa-Medium.otf",
+   "glyphs": 3002,
    "codepoints": 2469,
    "size_kb": 596
   },
   {
-   "file": "otf/SuharSahafaHeadline-Italic.otf",
-   "glyphs": 2994,
+   "file": "otf/SuharSahafa-MediumItalic.otf",
+   "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 595
+   "size_kb": 594
+  },
+  {
+   "file": "otf/SuharSahafa-Regular.otf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 585
+  },
+  {
+   "file": "otf/SuharSahafa-SemiBold.otf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 611
+  },
+  {
+   "file": "otf/SuharSahafa-SemiBoldItalic.otf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 605
+  },
+  {
+   "file": "otf/SuharSahafaCaption-Bold.otf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 649
+  },
+  {
+   "file": "otf/SuharSahafaCaption-BoldItalic.otf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 633
+  },
+  {
+   "file": "otf/SuharSahafaCaption-Italic.otf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 607
+  },
+  {
+   "file": "otf/SuharSahafaCaption-Medium.otf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 621
+  },
+  {
+   "file": "otf/SuharSahafaCaption-MediumItalic.otf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 615
+  },
+  {
+   "file": "otf/SuharSahafaCaption-Regular.otf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 607
+  },
+  {
+   "file": "otf/SuharSahafaCaption-SemiBold.otf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 640
+  },
+  {
+   "file": "otf/SuharSahafaCaption-SemiBoldItalic.otf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 628
+  },
+  {
+   "file": "otf/SuharSahafaHeadline-Bold.otf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 637
+  },
+  {
+   "file": "otf/SuharSahafaHeadline-BoldItalic.otf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 630
+  },
+  {
+   "file": "otf/SuharSahafaHeadline-Italic.otf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 620
   },
   {
    "file": "otf/SuharSahafaHeadline-Medium.otf",
-   "glyphs": 2994,
+   "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 595
+   "size_kb": 625
   },
   {
    "file": "otf/SuharSahafaHeadline-MediumItalic.otf",
-   "glyphs": 2994,
+   "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 598
+   "size_kb": 633
   },
   {
    "file": "otf/SuharSahafaHeadline-Regular.otf",
-   "glyphs": 2994,
+   "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 587
+   "size_kb": 610
   },
   {
    "file": "otf/SuharSahafaHeadline-SemiBold.otf",
-   "glyphs": 2994,
+   "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 600
+   "size_kb": 636
   },
   {
    "file": "otf/SuharSahafaHeadline-SemiBoldItalic.otf",
-   "glyphs": 2994,
+   "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 597
+   "size_kb": 632
+  },
+  {
+   "file": "otf/SuharTypewriter-Bold.otf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 653
+  },
+  {
+   "file": "otf/SuharTypewriter-BoldItalic.otf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 640
+  },
+  {
+   "file": "otf/SuharTypewriter-Italic.otf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 629
+  },
+  {
+   "file": "otf/SuharTypewriter-Regular.otf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 625
   },
   {
    "file": "ttf/Suhar-Black.ttf",
-   "glyphs": 2994,
-   "codepoints": 2469,
-   "size_kb": 529,
-   "hinted": true
-  },
-  {
-   "file": "ttf/Suhar-BlackItalic.ttf",
-   "glyphs": 2994,
-   "codepoints": 2469,
-   "size_kb": 523,
-   "hinted": true
-  },
-  {
-   "file": "ttf/Suhar-Bold.ttf",
-   "glyphs": 2994,
-   "codepoints": 2469,
-   "size_kb": 528,
-   "hinted": true
-  },
-  {
-   "file": "ttf/Suhar-BoldItalic.ttf",
-   "glyphs": 2994,
+   "glyphs": 3002,
    "codepoints": 2469,
    "size_kb": 532,
    "hinted": true
   },
   {
-   "file": "ttf/Suhar-ExtraBold.ttf",
-   "glyphs": 2994,
+   "file": "ttf/Suhar-BlackItalic.ttf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 525,
+   "hinted": true
+  },
+  {
+   "file": "ttf/Suhar-Bold.ttf",
+   "glyphs": 3002,
    "codepoints": 2469,
    "size_kb": 530,
    "hinted": true
   },
   {
-   "file": "ttf/Suhar-ExtraBoldItalic.ttf",
-   "glyphs": 2994,
+   "file": "ttf/Suhar-BoldItalic.ttf",
+   "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 519,
+   "size_kb": 533,
+   "hinted": true
+  },
+  {
+   "file": "ttf/Suhar-ExtraBold.ttf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 532,
+   "hinted": true
+  },
+  {
+   "file": "ttf/Suhar-ExtraBoldItalic.ttf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 521,
    "hinted": true
   },
   {
    "file": "ttf/Suhar-Italic.ttf",
-   "glyphs": 2994,
+   "glyphs": 3002,
    "codepoints": 2469,
    "size_kb": 511,
    "hinted": true
   },
   {
    "file": "ttf/Suhar-Light.ttf",
-   "glyphs": 2994,
-   "codepoints": 2469,
-   "size_kb": 506,
-   "hinted": true
-  },
-  {
-   "file": "ttf/Suhar-LightItalic.ttf",
-   "glyphs": 2994,
-   "codepoints": 2469,
-   "size_kb": 514,
-   "hinted": true
-  },
-  {
-   "file": "ttf/Suhar-Medium.ttf",
-   "glyphs": 2994,
-   "codepoints": 2469,
-   "size_kb": 515,
-   "hinted": true
-  },
-  {
-   "file": "ttf/Suhar-MediumItalic.ttf",
-   "glyphs": 2994,
+   "glyphs": 3002,
    "codepoints": 2469,
    "size_kb": 508,
    "hinted": true
   },
   {
+   "file": "ttf/Suhar-LightItalic.ttf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 516,
+   "hinted": true
+  },
+  {
+   "file": "ttf/Suhar-Medium.ttf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 518,
+   "hinted": true
+  },
+  {
+   "file": "ttf/Suhar-MediumItalic.ttf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 509,
+   "hinted": true
+  },
+  {
    "file": "ttf/Suhar-Regular.ttf",
-   "glyphs": 2994,
-   "codepoints": 2469,
-   "size_kb": 506,
-   "hinted": true
-  },
-  {
-   "file": "ttf/Suhar-SemiBold.ttf",
-   "glyphs": 2994,
-   "codepoints": 2469,
-   "size_kb": 531,
-   "hinted": true
-  },
-  {
-   "file": "ttf/Suhar-SemiBoldItalic.ttf",
-   "glyphs": 2994,
-   "codepoints": 2469,
-   "size_kb": 514,
-   "hinted": true
-  },
-  {
-   "file": "ttf/SuharCondensed-Bold.ttf",
-   "glyphs": 2994,
+   "glyphs": 3002,
    "codepoints": 2469,
    "size_kb": 507,
    "hinted": true
   },
   {
-   "file": "ttf/SuharCondensed-BoldItalic.ttf",
-   "glyphs": 2994,
+   "file": "ttf/Suhar-SemiBold.ttf",
+   "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 508,
+   "size_kb": 533,
+   "hinted": true
+  },
+  {
+   "file": "ttf/Suhar-SemiBoldItalic.ttf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 516,
+   "hinted": true
+  },
+  {
+   "file": "ttf/SuharCondensed-Bold.ttf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 509,
+   "hinted": true
+  },
+  {
+   "file": "ttf/SuharCondensed-BoldItalic.ttf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 510,
    "hinted": true
   },
   {
    "file": "ttf/SuharCondensed-ExtraBold.ttf",
-   "glyphs": 2994,
+   "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 508,
+   "size_kb": 510,
    "hinted": true
   },
   {
    "file": "ttf/SuharCondensed-ExtraBoldItalic.ttf",
-   "glyphs": 2994,
+   "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 502,
+   "size_kb": 504,
    "hinted": true
   },
   {
    "file": "ttf/SuharCondensed-Italic.ttf",
-   "glyphs": 2994,
+   "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 489,
+   "size_kb": 490,
    "hinted": true
   },
   {
    "file": "ttf/SuharCondensed-Light.ttf",
-   "glyphs": 2994,
+   "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 491,
+   "size_kb": 492,
    "hinted": true
   },
   {
    "file": "ttf/SuharCondensed-LightItalic.ttf",
-   "glyphs": 2994,
+   "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 495,
+   "size_kb": 497,
    "hinted": true
   },
   {
    "file": "ttf/SuharCondensed-Medium.ttf",
-   "glyphs": 2994,
-   "codepoints": 2469,
-   "size_kb": 496,
-   "hinted": true
-  },
-  {
-   "file": "ttf/SuharCondensed-MediumItalic.ttf",
-   "glyphs": 2994,
-   "codepoints": 2469,
-   "size_kb": 496,
-   "hinted": true
-  },
-  {
-   "file": "ttf/SuharCondensed-Regular.ttf",
-   "glyphs": 2994,
-   "codepoints": 2469,
-   "size_kb": 489,
-   "hinted": true
-  },
-  {
-   "file": "ttf/SuharCondensed-SemiBold.ttf",
-   "glyphs": 2994,
-   "codepoints": 2469,
-   "size_kb": 502,
-   "hinted": true
-  },
-  {
-   "file": "ttf/SuharCondensed-SemiBoldItalic.ttf",
-   "glyphs": 2994,
+   "glyphs": 3002,
    "codepoints": 2469,
    "size_kb": 499,
    "hinted": true
   },
   {
-   "file": "ttf/SuharMono-Bold.ttf",
-   "glyphs": 3010,
+   "file": "ttf/SuharCondensed-MediumItalic.ttf",
+   "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 396,
+   "size_kb": 499,
+   "hinted": true
+  },
+  {
+   "file": "ttf/SuharCondensed-Regular.ttf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 492,
+   "hinted": true
+  },
+  {
+   "file": "ttf/SuharCondensed-SemiBold.ttf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 504,
+   "hinted": true
+  },
+  {
+   "file": "ttf/SuharCondensed-SemiBoldItalic.ttf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 501,
+   "hinted": true
+  },
+  {
+   "file": "ttf/SuharMono-Bold.ttf",
+   "glyphs": 3018,
+   "codepoints": 2469,
+   "size_kb": 398,
    "hinted": true
   },
   {
    "file": "ttf/SuharMono-BoldItalic.ttf",
-   "glyphs": 3010,
+   "glyphs": 3018,
    "codepoints": 2469,
-   "size_kb": 403,
+   "size_kb": 404,
    "hinted": true
   },
   {
    "file": "ttf/SuharMono-ExtraBold.ttf",
-   "glyphs": 3010,
+   "glyphs": 3018,
    "codepoints": 2469,
-   "size_kb": 397,
+   "size_kb": 399,
    "hinted": true
   },
   {
    "file": "ttf/SuharMono-ExtraBoldItalic.ttf",
-   "glyphs": 3010,
+   "glyphs": 3018,
    "codepoints": 2469,
-   "size_kb": 402,
+   "size_kb": 405,
    "hinted": true
   },
   {
    "file": "ttf/SuharMono-Italic.ttf",
-   "glyphs": 3010,
+   "glyphs": 3018,
    "codepoints": 2469,
-   "size_kb": 389,
+   "size_kb": 391,
    "hinted": true
   },
   {
    "file": "ttf/SuharMono-Light.ttf",
-   "glyphs": 3010,
-   "codepoints": 2469,
-   "size_kb": 392,
-   "hinted": true
-  },
-  {
-   "file": "ttf/SuharMono-LightItalic.ttf",
-   "glyphs": 3010,
-   "codepoints": 2469,
-   "size_kb": 396,
-   "hinted": true
-  },
-  {
-   "file": "ttf/SuharMono-Medium.ttf",
-   "glyphs": 3010,
-   "codepoints": 2469,
-   "size_kb": 389,
-   "hinted": true
-  },
-  {
-   "file": "ttf/SuharMono-MediumItalic.ttf",
-   "glyphs": 3010,
-   "codepoints": 2469,
-   "size_kb": 395,
-   "hinted": true
-  },
-  {
-   "file": "ttf/SuharMono-Regular.ttf",
-   "glyphs": 3010,
-   "codepoints": 2469,
-   "size_kb": 385,
-   "hinted": true
-  },
-  {
-   "file": "ttf/SuharMono-SemiBold.ttf",
-   "glyphs": 3010,
+   "glyphs": 3018,
    "codepoints": 2469,
    "size_kb": 393,
    "hinted": true
   },
   {
-   "file": "ttf/SuharMono-SemiBoldItalic.ttf",
-   "glyphs": 3010,
+   "file": "ttf/SuharMono-LightItalic.ttf",
+   "glyphs": 3018,
+   "codepoints": 2469,
+   "size_kb": 398,
+   "hinted": true
+  },
+  {
+   "file": "ttf/SuharMono-Medium.ttf",
+   "glyphs": 3018,
+   "codepoints": 2469,
+   "size_kb": 390,
+   "hinted": true
+  },
+  {
+   "file": "ttf/SuharMono-MediumItalic.ttf",
+   "glyphs": 3018,
    "codepoints": 2469,
    "size_kb": 396,
    "hinted": true
   },
   {
-   "file": "ttf/SuharNaskh-Bold.ttf",
-   "glyphs": 2994,
+   "file": "ttf/SuharMono-Regular.ttf",
+   "glyphs": 3018,
    "codepoints": 2469,
-   "size_kb": 532,
+   "size_kb": 387,
+   "hinted": true
+  },
+  {
+   "file": "ttf/SuharMono-SemiBold.ttf",
+   "glyphs": 3018,
+   "codepoints": 2469,
+   "size_kb": 395,
+   "hinted": true
+  },
+  {
+   "file": "ttf/SuharMono-SemiBoldItalic.ttf",
+   "glyphs": 3018,
+   "codepoints": 2469,
+   "size_kb": 397,
+   "hinted": true
+  },
+  {
+   "file": "ttf/SuharNaskh-Bold.ttf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 535,
    "hinted": true
   },
   {
    "file": "ttf/SuharNaskh-BoldItalic.ttf",
-   "glyphs": 2994,
+   "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 523,
+   "size_kb": 525,
    "hinted": true
   },
   {
    "file": "ttf/SuharNaskh-Italic.ttf",
-   "glyphs": 2994,
+   "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 523,
+   "size_kb": 525,
    "hinted": true
   },
   {
    "file": "ttf/SuharNaskh-Medium.ttf",
-   "glyphs": 2994,
-   "codepoints": 2469,
-   "size_kb": 526,
-   "hinted": true
-  },
-  {
-   "file": "ttf/SuharNaskh-MediumItalic.ttf",
-   "glyphs": 2994,
-   "codepoints": 2469,
-   "size_kb": 520,
-   "hinted": true
-  },
-  {
-   "file": "ttf/SuharNaskh-Regular.ttf",
-   "glyphs": 2994,
-   "codepoints": 2469,
-   "size_kb": 522,
-   "hinted": true
-  },
-  {
-   "file": "ttf/SuharNaskh-SemiBold.ttf",
-   "glyphs": 2994,
-   "codepoints": 2469,
-   "size_kb": 536,
-   "hinted": true
-  },
-  {
-   "file": "ttf/SuharNaskh-SemiBoldItalic.ttf",
-   "glyphs": 2994,
+   "glyphs": 3002,
    "codepoints": 2469,
    "size_kb": 529,
    "hinted": true
   },
   {
-   "file": "ttf/SuharNaskhDisplay-Bold.ttf",
-   "glyphs": 2994,
+   "file": "ttf/SuharNaskh-MediumItalic.ttf",
+   "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 585,
+   "size_kb": 521,
+   "hinted": true
+  },
+  {
+   "file": "ttf/SuharNaskh-Regular.ttf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 525,
+   "hinted": true
+  },
+  {
+   "file": "ttf/SuharNaskh-SemiBold.ttf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 538,
+   "hinted": true
+  },
+  {
+   "file": "ttf/SuharNaskh-SemiBoldItalic.ttf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 530,
+   "hinted": true
+  },
+  {
+   "file": "ttf/SuharNaskhCaption-Bold.ttf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 564,
+   "hinted": true
+  },
+  {
+   "file": "ttf/SuharNaskhCaption-BoldItalic.ttf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 554,
+   "hinted": true
+  },
+  {
+   "file": "ttf/SuharNaskhCaption-Italic.ttf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 535,
+   "hinted": true
+  },
+  {
+   "file": "ttf/SuharNaskhCaption-Medium.ttf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 555,
+   "hinted": true
+  },
+  {
+   "file": "ttf/SuharNaskhCaption-MediumItalic.ttf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 547,
+   "hinted": true
+  },
+  {
+   "file": "ttf/SuharNaskhCaption-Regular.ttf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 539,
+   "hinted": true
+  },
+  {
+   "file": "ttf/SuharNaskhCaption-SemiBold.ttf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 559,
+   "hinted": true
+  },
+  {
+   "file": "ttf/SuharNaskhCaption-SemiBoldItalic.ttf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 545,
+   "hinted": true
+  },
+  {
+   "file": "ttf/SuharNaskhDisplay-Bold.ttf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 588,
    "hinted": true
   },
   {
    "file": "ttf/SuharNaskhDisplay-Medium.ttf",
-   "glyphs": 2994,
+   "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 579,
+   "size_kb": 583,
    "hinted": true
   },
   {
    "file": "ttf/SuharNaskhDisplay-Regular.ttf",
-   "glyphs": 2994,
+   "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 576,
+   "size_kb": 580,
    "hinted": true
   },
   {
    "file": "ttf/SuharNaskhDisplay-SemiBold.ttf",
-   "glyphs": 2994,
+   "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 561,
+   "size_kb": 563,
    "hinted": true
   },
   {
    "file": "ttf/SuharNerd-Black.ttf",
-   "glyphs": 13589,
-   "codepoints": 13064,
-   "size_kb": 2782,
-   "hinted": true
-  },
-  {
-   "file": "ttf/SuharNerd-BlackItalic.ttf",
-   "glyphs": 13589,
-   "codepoints": 13064,
-   "size_kb": 2776,
-   "hinted": true
-  },
-  {
-   "file": "ttf/SuharNerd-Bold.ttf",
-   "glyphs": 13589,
-   "codepoints": 13064,
-   "size_kb": 2781,
-   "hinted": true
-  },
-  {
-   "file": "ttf/SuharNerd-BoldItalic.ttf",
-   "glyphs": 13589,
+   "glyphs": 13597,
    "codepoints": 13064,
    "size_kb": 2785,
    "hinted": true
   },
   {
-   "file": "ttf/SuharNerd-ExtraBold.ttf",
-   "glyphs": 13589,
+   "file": "ttf/SuharNerd-BlackItalic.ttf",
+   "glyphs": 13597,
+   "codepoints": 13064,
+   "size_kb": 2778,
+   "hinted": true
+  },
+  {
+   "file": "ttf/SuharNerd-Bold.ttf",
+   "glyphs": 13597,
    "codepoints": 13064,
    "size_kb": 2783,
    "hinted": true
   },
   {
-   "file": "ttf/SuharNerd-ExtraBoldItalic.ttf",
-   "glyphs": 13589,
+   "file": "ttf/SuharNerd-BoldItalic.ttf",
+   "glyphs": 13597,
    "codepoints": 13064,
-   "size_kb": 2772,
+   "size_kb": 2787,
+   "hinted": true
+  },
+  {
+   "file": "ttf/SuharNerd-ExtraBold.ttf",
+   "glyphs": 13597,
+   "codepoints": 13064,
+   "size_kb": 2785,
+   "hinted": true
+  },
+  {
+   "file": "ttf/SuharNerd-ExtraBoldItalic.ttf",
+   "glyphs": 13597,
+   "codepoints": 13064,
+   "size_kb": 2774,
    "hinted": true
   },
   {
    "file": "ttf/SuharNerd-Italic.ttf",
-   "glyphs": 13589,
+   "glyphs": 13597,
    "codepoints": 13064,
    "size_kb": 2764,
    "hinted": true
   },
   {
    "file": "ttf/SuharNerd-Light.ttf",
-   "glyphs": 13589,
+   "glyphs": 13597,
    "codepoints": 13064,
-   "size_kb": 2759,
+   "size_kb": 2761,
    "hinted": true
   },
   {
    "file": "ttf/SuharNerd-LightItalic.ttf",
-   "glyphs": 13589,
-   "codepoints": 13064,
-   "size_kb": 2767,
-   "hinted": true
-  },
-  {
-   "file": "ttf/SuharNerd-Medium.ttf",
-   "glyphs": 13589,
+   "glyphs": 13597,
    "codepoints": 13064,
    "size_kb": 2769,
    "hinted": true
   },
   {
+   "file": "ttf/SuharNerd-Medium.ttf",
+   "glyphs": 13597,
+   "codepoints": 13064,
+   "size_kb": 2771,
+   "hinted": true
+  },
+  {
    "file": "ttf/SuharNerd-MediumItalic.ttf",
-   "glyphs": 13589,
+   "glyphs": 13597,
    "codepoints": 13064,
    "size_kb": 2762,
    "hinted": true
   },
   {
    "file": "ttf/SuharNerd-Regular.ttf",
-   "glyphs": 13589,
-   "codepoints": 13064,
-   "size_kb": 2759,
-   "hinted": true
-  },
-  {
-   "file": "ttf/SuharNerd-SemiBold.ttf",
-   "glyphs": 13589,
-   "codepoints": 13064,
-   "size_kb": 2784,
-   "hinted": true
-  },
-  {
-   "file": "ttf/SuharNerd-SemiBoldItalic.ttf",
-   "glyphs": 13589,
-   "codepoints": 13064,
-   "size_kb": 2767,
-   "hinted": true
-  },
-  {
-   "file": "ttf/SuharNerdCondensed-Bold.ttf",
-   "glyphs": 13589,
+   "glyphs": 13597,
    "codepoints": 13064,
    "size_kb": 2760,
    "hinted": true
   },
   {
-   "file": "ttf/SuharNerdCondensed-BoldItalic.ttf",
-   "glyphs": 13589,
-   "codepoints": 13064,
-   "size_kb": 2761,
-   "hinted": true
-  },
-  {
-   "file": "ttf/SuharNerdCondensed-ExtraBold.ttf",
-   "glyphs": 13589,
-   "codepoints": 13064,
-   "size_kb": 2761,
-   "hinted": true
-  },
-  {
-   "file": "ttf/SuharNerdCondensed-ExtraBoldItalic.ttf",
-   "glyphs": 13589,
-   "codepoints": 13064,
-   "size_kb": 2755,
-   "hinted": true
-  },
-  {
-   "file": "ttf/SuharNerdCondensed-Italic.ttf",
-   "glyphs": 13589,
-   "codepoints": 13064,
-   "size_kb": 2742,
-   "hinted": true
-  },
-  {
-   "file": "ttf/SuharNerdCondensed-Light.ttf",
-   "glyphs": 13589,
-   "codepoints": 13064,
-   "size_kb": 2744,
-   "hinted": true
-  },
-  {
-   "file": "ttf/SuharNerdCondensed-LightItalic.ttf",
-   "glyphs": 13589,
-   "codepoints": 13064,
-   "size_kb": 2748,
-   "hinted": true
-  },
-  {
-   "file": "ttf/SuharNerdCondensed-Medium.ttf",
-   "glyphs": 13589,
-   "codepoints": 13064,
-   "size_kb": 2749,
-   "hinted": true
-  },
-  {
-   "file": "ttf/SuharNerdCondensed-MediumItalic.ttf",
-   "glyphs": 13589,
-   "codepoints": 13064,
-   "size_kb": 2749,
-   "hinted": true
-  },
-  {
-   "file": "ttf/SuharNerdCondensed-Regular.ttf",
-   "glyphs": 13589,
-   "codepoints": 13064,
-   "size_kb": 2742,
-   "hinted": true
-  },
-  {
-   "file": "ttf/SuharNerdCondensed-SemiBold.ttf",
-   "glyphs": 13589,
-   "codepoints": 13064,
-   "size_kb": 2755,
-   "hinted": true
-  },
-  {
-   "file": "ttf/SuharNerdCondensed-SemiBoldItalic.ttf",
-   "glyphs": 13589,
-   "codepoints": 13064,
-   "size_kb": 2752,
-   "hinted": true
-  },
-  {
-   "file": "ttf/SuharNerdMono-Bold.ttf",
-   "glyphs": 13605,
-   "codepoints": 13064,
-   "size_kb": 2693,
-   "hinted": true
-  },
-  {
-   "file": "ttf/SuharNerdMono-BoldItalic.ttf",
-   "glyphs": 13605,
-   "codepoints": 13064,
-   "size_kb": 2700,
-   "hinted": true
-  },
-  {
-   "file": "ttf/SuharNerdMono-ExtraBold.ttf",
-   "glyphs": 13605,
-   "codepoints": 13064,
-   "size_kb": 2694,
-   "hinted": true
-  },
-  {
-   "file": "ttf/SuharNerdMono-ExtraBoldItalic.ttf",
-   "glyphs": 13605,
-   "codepoints": 13064,
-   "size_kb": 2699,
-   "hinted": true
-  },
-  {
-   "file": "ttf/SuharNerdMono-Italic.ttf",
-   "glyphs": 13605,
-   "codepoints": 13064,
-   "size_kb": 2686,
-   "hinted": true
-  },
-  {
-   "file": "ttf/SuharNerdMono-Light.ttf",
-   "glyphs": 13605,
-   "codepoints": 13064,
-   "size_kb": 2689,
-   "hinted": true
-  },
-  {
-   "file": "ttf/SuharNerdMono-LightItalic.ttf",
-   "glyphs": 13605,
-   "codepoints": 13064,
-   "size_kb": 2693,
-   "hinted": true
-  },
-  {
-   "file": "ttf/SuharNerdMono-Medium.ttf",
-   "glyphs": 13605,
-   "codepoints": 13064,
-   "size_kb": 2685,
-   "hinted": true
-  },
-  {
-   "file": "ttf/SuharNerdMono-MediumItalic.ttf",
-   "glyphs": 13605,
-   "codepoints": 13064,
-   "size_kb": 2691,
-   "hinted": true
-  },
-  {
-   "file": "ttf/SuharNerdMono-Regular.ttf",
-   "glyphs": 13605,
-   "codepoints": 13064,
-   "size_kb": 2682,
-   "hinted": true
-  },
-  {
-   "file": "ttf/SuharNerdMono-SemiBold.ttf",
-   "glyphs": 13605,
-   "codepoints": 13064,
-   "size_kb": 2690,
-   "hinted": true
-  },
-  {
-   "file": "ttf/SuharNerdMono-SemiBoldItalic.ttf",
-   "glyphs": 13605,
-   "codepoints": 13064,
-   "size_kb": 2693,
-   "hinted": true
-  },
-  {
-   "file": "ttf/SuharNerdSahafa-Bold.ttf",
-   "glyphs": 13589,
-   "codepoints": 13064,
-   "size_kb": 2809,
-   "hinted": true
-  },
-  {
-   "file": "ttf/SuharNerdSahafa-BoldItalic.ttf",
-   "glyphs": 13589,
-   "codepoints": 13064,
-   "size_kb": 2796,
-   "hinted": true
-  },
-  {
-   "file": "ttf/SuharNerdSahafa-Italic.ttf",
-   "glyphs": 13589,
-   "codepoints": 13064,
-   "size_kb": 2787,
-   "hinted": true
-  },
-  {
-   "file": "ttf/SuharNerdSahafa-Medium.ttf",
-   "glyphs": 13589,
-   "codepoints": 13064,
-   "size_kb": 2789,
-   "hinted": true
-  },
-  {
-   "file": "ttf/SuharNerdSahafa-MediumItalic.ttf",
-   "glyphs": 13589,
-   "codepoints": 13064,
-   "size_kb": 2785,
-   "hinted": true
-  },
-  {
-   "file": "ttf/SuharNerdSahafa-Regular.ttf",
-   "glyphs": 13589,
+   "file": "ttf/SuharNerd-SemiBold.ttf",
+   "glyphs": 13597,
    "codepoints": 13064,
    "size_kb": 2786,
    "hinted": true
   },
   {
-   "file": "ttf/SuharNerdSahafa-SemiBold.ttf",
-   "glyphs": 13589,
+   "file": "ttf/SuharNerd-SemiBoldItalic.ttf",
+   "glyphs": 13597,
    "codepoints": 13064,
-   "size_kb": 2803,
+   "size_kb": 2769,
+   "hinted": true
+  },
+  {
+   "file": "ttf/SuharNerdCondensed-Bold.ttf",
+   "glyphs": 13597,
+   "codepoints": 13064,
+   "size_kb": 2762,
+   "hinted": true
+  },
+  {
+   "file": "ttf/SuharNerdCondensed-BoldItalic.ttf",
+   "glyphs": 13597,
+   "codepoints": 13064,
+   "size_kb": 2763,
+   "hinted": true
+  },
+  {
+   "file": "ttf/SuharNerdCondensed-ExtraBold.ttf",
+   "glyphs": 13597,
+   "codepoints": 13064,
+   "size_kb": 2763,
+   "hinted": true
+  },
+  {
+   "file": "ttf/SuharNerdCondensed-ExtraBoldItalic.ttf",
+   "glyphs": 13597,
+   "codepoints": 13064,
+   "size_kb": 2757,
+   "hinted": true
+  },
+  {
+   "file": "ttf/SuharNerdCondensed-Italic.ttf",
+   "glyphs": 13597,
+   "codepoints": 13064,
+   "size_kb": 2743,
+   "hinted": true
+  },
+  {
+   "file": "ttf/SuharNerdCondensed-Light.ttf",
+   "glyphs": 13597,
+   "codepoints": 13064,
+   "size_kb": 2745,
+   "hinted": true
+  },
+  {
+   "file": "ttf/SuharNerdCondensed-LightItalic.ttf",
+   "glyphs": 13597,
+   "codepoints": 13064,
+   "size_kb": 2750,
+   "hinted": true
+  },
+  {
+   "file": "ttf/SuharNerdCondensed-Medium.ttf",
+   "glyphs": 13597,
+   "codepoints": 13064,
+   "size_kb": 2752,
+   "hinted": true
+  },
+  {
+   "file": "ttf/SuharNerdCondensed-MediumItalic.ttf",
+   "glyphs": 13597,
+   "codepoints": 13064,
+   "size_kb": 2752,
+   "hinted": true
+  },
+  {
+   "file": "ttf/SuharNerdCondensed-Regular.ttf",
+   "glyphs": 13597,
+   "codepoints": 13064,
+   "size_kb": 2745,
+   "hinted": true
+  },
+  {
+   "file": "ttf/SuharNerdCondensed-SemiBold.ttf",
+   "glyphs": 13597,
+   "codepoints": 13064,
+   "size_kb": 2757,
+   "hinted": true
+  },
+  {
+   "file": "ttf/SuharNerdCondensed-SemiBoldItalic.ttf",
+   "glyphs": 13597,
+   "codepoints": 13064,
+   "size_kb": 2754,
+   "hinted": true
+  },
+  {
+   "file": "ttf/SuharNerdMono-Bold.ttf",
+   "glyphs": 13613,
+   "codepoints": 13064,
+   "size_kb": 2694,
+   "hinted": true
+  },
+  {
+   "file": "ttf/SuharNerdMono-BoldItalic.ttf",
+   "glyphs": 13613,
+   "codepoints": 13064,
+   "size_kb": 2701,
+   "hinted": true
+  },
+  {
+   "file": "ttf/SuharNerdMono-ExtraBold.ttf",
+   "glyphs": 13613,
+   "codepoints": 13064,
+   "size_kb": 2696,
+   "hinted": true
+  },
+  {
+   "file": "ttf/SuharNerdMono-ExtraBoldItalic.ttf",
+   "glyphs": 13613,
+   "codepoints": 13064,
+   "size_kb": 2702,
+   "hinted": true
+  },
+  {
+   "file": "ttf/SuharNerdMono-Italic.ttf",
+   "glyphs": 13613,
+   "codepoints": 13064,
+   "size_kb": 2688,
+   "hinted": true
+  },
+  {
+   "file": "ttf/SuharNerdMono-Light.ttf",
+   "glyphs": 13613,
+   "codepoints": 13064,
+   "size_kb": 2690,
+   "hinted": true
+  },
+  {
+   "file": "ttf/SuharNerdMono-LightItalic.ttf",
+   "glyphs": 13613,
+   "codepoints": 13064,
+   "size_kb": 2695,
+   "hinted": true
+  },
+  {
+   "file": "ttf/SuharNerdMono-Medium.ttf",
+   "glyphs": 13613,
+   "codepoints": 13064,
+   "size_kb": 2687,
+   "hinted": true
+  },
+  {
+   "file": "ttf/SuharNerdMono-MediumItalic.ttf",
+   "glyphs": 13613,
+   "codepoints": 13064,
+   "size_kb": 2693,
+   "hinted": true
+  },
+  {
+   "file": "ttf/SuharNerdMono-Regular.ttf",
+   "glyphs": 13613,
+   "codepoints": 13064,
+   "size_kb": 2684,
+   "hinted": true
+  },
+  {
+   "file": "ttf/SuharNerdMono-SemiBold.ttf",
+   "glyphs": 13613,
+   "codepoints": 13064,
+   "size_kb": 2692,
+   "hinted": true
+  },
+  {
+   "file": "ttf/SuharNerdMono-SemiBoldItalic.ttf",
+   "glyphs": 13613,
+   "codepoints": 13064,
+   "size_kb": 2694,
+   "hinted": true
+  },
+  {
+   "file": "ttf/SuharNerdSahafa-Bold.ttf",
+   "glyphs": 13597,
+   "codepoints": 13064,
+   "size_kb": 2811,
+   "hinted": true
+  },
+  {
+   "file": "ttf/SuharNerdSahafa-BoldItalic.ttf",
+   "glyphs": 13597,
+   "codepoints": 13064,
+   "size_kb": 2798,
+   "hinted": true
+  },
+  {
+   "file": "ttf/SuharNerdSahafa-Italic.ttf",
+   "glyphs": 13597,
+   "codepoints": 13064,
+   "size_kb": 2788,
+   "hinted": true
+  },
+  {
+   "file": "ttf/SuharNerdSahafa-Medium.ttf",
+   "glyphs": 13597,
+   "codepoints": 13064,
+   "size_kb": 2791,
+   "hinted": true
+  },
+  {
+   "file": "ttf/SuharNerdSahafa-MediumItalic.ttf",
+   "glyphs": 13597,
+   "codepoints": 13064,
+   "size_kb": 2786,
+   "hinted": true
+  },
+  {
+   "file": "ttf/SuharNerdSahafa-Regular.ttf",
+   "glyphs": 13597,
+   "codepoints": 13064,
+   "size_kb": 2788,
+   "hinted": true
+  },
+  {
+   "file": "ttf/SuharNerdSahafa-SemiBold.ttf",
+   "glyphs": 13597,
+   "codepoints": 13064,
+   "size_kb": 2806,
    "hinted": true
   },
   {
    "file": "ttf/SuharNerdSahafa-SemiBoldItalic.ttf",
-   "glyphs": 13589,
+   "glyphs": 13597,
    "codepoints": 13064,
-   "size_kb": 2795,
+   "size_kb": 2796,
    "hinted": true
   },
   {
    "file": "ttf/SuharNerdSahafaHeadline-Bold.ttf",
-   "glyphs": 13589,
+   "glyphs": 13597,
    "codepoints": 13064,
-   "size_kb": 2796,
+   "size_kb": 2829,
    "hinted": true
   },
   {
    "file": "ttf/SuharNerdSahafaHeadline-BoldItalic.ttf",
-   "glyphs": 13589,
+   "glyphs": 13597,
    "codepoints": 13064,
-   "size_kb": 2796,
+   "size_kb": 2827,
    "hinted": true
   },
   {
    "file": "ttf/SuharNerdSahafaHeadline-Italic.ttf",
-   "glyphs": 13589,
+   "glyphs": 13597,
    "codepoints": 13064,
-   "size_kb": 2794,
+   "size_kb": 2822,
    "hinted": true
   },
   {
    "file": "ttf/SuharNerdSahafaHeadline-Medium.ttf",
-   "glyphs": 13589,
+   "glyphs": 13597,
    "codepoints": 13064,
-   "size_kb": 2795,
+   "size_kb": 2824,
    "hinted": true
   },
   {
    "file": "ttf/SuharNerdSahafaHeadline-MediumItalic.ttf",
-   "glyphs": 13589,
+   "glyphs": 13597,
    "codepoints": 13064,
-   "size_kb": 2799,
+   "size_kb": 2830,
    "hinted": true
   },
   {
    "file": "ttf/SuharNerdSahafaHeadline-Regular.ttf",
-   "glyphs": 13589,
+   "glyphs": 13597,
    "codepoints": 13064,
-   "size_kb": 2784,
+   "size_kb": 2810,
    "hinted": true
   },
   {
    "file": "ttf/SuharNerdSahafaHeadline-SemiBold.ttf",
-   "glyphs": 13589,
+   "glyphs": 13597,
    "codepoints": 13064,
-   "size_kb": 2796,
+   "size_kb": 2828,
    "hinted": true
   },
   {
    "file": "ttf/SuharNerdSahafaHeadline-SemiBoldItalic.ttf",
-   "glyphs": 13589,
+   "glyphs": 13597,
    "codepoints": 13064,
-   "size_kb": 2793,
+   "size_kb": 2826,
    "hinted": true
   },
   {
    "file": "ttf/SuharSahafa-Bold.ttf",
-   "glyphs": 2994,
+   "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 556,
+   "size_kb": 558,
    "hinted": true
   },
   {
    "file": "ttf/SuharSahafa-BoldItalic.ttf",
-   "glyphs": 2994,
+   "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 542,
+   "size_kb": 545,
    "hinted": true
   },
   {
    "file": "ttf/SuharSahafa-Italic.ttf",
-   "glyphs": 2994,
+   "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 534,
+   "size_kb": 535,
    "hinted": true
   },
   {
    "file": "ttf/SuharSahafa-Medium.ttf",
-   "glyphs": 2994,
+   "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 536,
+   "size_kb": 538,
    "hinted": true
   },
   {
    "file": "ttf/SuharSahafa-MediumItalic.ttf",
-   "glyphs": 2994,
-   "codepoints": 2469,
-   "size_kb": 532,
-   "hinted": true
-  },
-  {
-   "file": "ttf/SuharSahafa-Regular.ttf",
-   "glyphs": 2994,
+   "glyphs": 3002,
    "codepoints": 2469,
    "size_kb": 533,
    "hinted": true
   },
   {
-   "file": "ttf/SuharSahafa-SemiBold.ttf",
-   "glyphs": 2994,
+   "file": "ttf/SuharSahafa-Regular.ttf",
+   "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 550,
+   "size_kb": 535,
+   "hinted": true
+  },
+  {
+   "file": "ttf/SuharSahafa-SemiBold.ttf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 553,
    "hinted": true
   },
   {
    "file": "ttf/SuharSahafa-SemiBoldItalic.ttf",
-   "glyphs": 2994,
+   "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 542,
+   "size_kb": 543,
    "hinted": true
   },
   {
    "file": "ttf/SuharSahafaCaption-Bold.ttf",
-   "glyphs": 2994,
+   "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 583,
+   "size_kb": 586,
    "hinted": true
   },
   {
    "file": "ttf/SuharSahafaCaption-BoldItalic.ttf",
-   "glyphs": 2994,
+   "glyphs": 3002,
    "codepoints": 2469,
    "size_kb": 575,
    "hinted": true
   },
   {
    "file": "ttf/SuharSahafaCaption-Italic.ttf",
-   "glyphs": 2994,
-   "codepoints": 2469,
-   "size_kb": 543,
-   "hinted": true
-  },
-  {
-   "file": "ttf/SuharSahafaCaption-Medium.ttf",
-   "glyphs": 2994,
-   "codepoints": 2469,
-   "size_kb": 559,
-   "hinted": true
-  },
-  {
-   "file": "ttf/SuharSahafaCaption-MediumItalic.ttf",
-   "glyphs": 2994,
-   "codepoints": 2469,
-   "size_kb": 549,
-   "hinted": true
-  },
-  {
-   "file": "ttf/SuharSahafaCaption-Regular.ttf",
-   "glyphs": 2994,
-   "codepoints": 2469,
-   "size_kb": 549,
-   "hinted": true
-  },
-  {
-   "file": "ttf/SuharSahafaCaption-SemiBold.ttf",
-   "glyphs": 2994,
-   "codepoints": 2469,
-   "size_kb": 574,
-   "hinted": true
-  },
-  {
-   "file": "ttf/SuharSahafaCaption-SemiBoldItalic.ttf",
-   "glyphs": 2994,
-   "codepoints": 2469,
-   "size_kb": 563,
-   "hinted": true
-  },
-  {
-   "file": "ttf/SuharSahafaHeadline-Bold.ttf",
-   "glyphs": 2994,
-   "codepoints": 2469,
-   "size_kb": 543,
-   "hinted": true
-  },
-  {
-   "file": "ttf/SuharSahafaHeadline-BoldItalic.ttf",
-   "glyphs": 2994,
-   "codepoints": 2469,
-   "size_kb": 543,
-   "hinted": true
-  },
-  {
-   "file": "ttf/SuharSahafaHeadline-Italic.ttf",
-   "glyphs": 2994,
-   "codepoints": 2469,
-   "size_kb": 541,
-   "hinted": true
-  },
-  {
-   "file": "ttf/SuharSahafaHeadline-Medium.ttf",
-   "glyphs": 2994,
-   "codepoints": 2469,
-   "size_kb": 542,
-   "hinted": true
-  },
-  {
-   "file": "ttf/SuharSahafaHeadline-MediumItalic.ttf",
-   "glyphs": 2994,
+   "glyphs": 3002,
    "codepoints": 2469,
    "size_kb": 546,
    "hinted": true
   },
   {
-   "file": "ttf/SuharSahafaHeadline-Regular.ttf",
-   "glyphs": 2994,
+   "file": "ttf/SuharSahafaCaption-Medium.ttf",
+   "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 531,
+   "size_kb": 562,
+   "hinted": true
+  },
+  {
+   "file": "ttf/SuharSahafaCaption-MediumItalic.ttf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 551,
+   "hinted": true
+  },
+  {
+   "file": "ttf/SuharSahafaCaption-Regular.ttf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 551,
+   "hinted": true
+  },
+  {
+   "file": "ttf/SuharSahafaCaption-SemiBold.ttf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 577,
+   "hinted": true
+  },
+  {
+   "file": "ttf/SuharSahafaCaption-SemiBoldItalic.ttf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 564,
+   "hinted": true
+  },
+  {
+   "file": "ttf/SuharSahafaHeadline-Bold.ttf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 576,
+   "hinted": true
+  },
+  {
+   "file": "ttf/SuharSahafaHeadline-BoldItalic.ttf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 574,
+   "hinted": true
+  },
+  {
+   "file": "ttf/SuharSahafaHeadline-Italic.ttf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 569,
+   "hinted": true
+  },
+  {
+   "file": "ttf/SuharSahafaHeadline-Medium.ttf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 571,
+   "hinted": true
+  },
+  {
+   "file": "ttf/SuharSahafaHeadline-MediumItalic.ttf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 576,
+   "hinted": true
+  },
+  {
+   "file": "ttf/SuharSahafaHeadline-Regular.ttf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 557,
    "hinted": true
   },
   {
    "file": "ttf/SuharSahafaHeadline-SemiBold.ttf",
-   "glyphs": 2994,
+   "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 543,
+   "size_kb": 575,
    "hinted": true
   },
   {
    "file": "ttf/SuharSahafaHeadline-SemiBoldItalic.ttf",
-   "glyphs": 2994,
+   "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 540,
+   "size_kb": 573,
+   "hinted": true
+  },
+  {
+   "file": "ttf/SuharTypewriter-Bold.ttf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 601,
+   "hinted": true
+  },
+  {
+   "file": "ttf/SuharTypewriter-BoldItalic.ttf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 576,
+   "hinted": true
+  },
+  {
+   "file": "ttf/SuharTypewriter-Italic.ttf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 564,
+   "hinted": true
+  },
+  {
+   "file": "ttf/SuharTypewriter-Regular.ttf",
+   "glyphs": 3002,
+   "codepoints": 2469,
+   "size_kb": 577,
    "hinted": true
   },
   {
    "file": "variable/Suhar-Italic[opsz,wght].ttf",
-   "glyphs": 2994,
+   "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 1247
+   "size_kb": 1252
   },
   {
    "file": "variable/SuharCondensed-Italic[opsz,wght].ttf",
-   "glyphs": 2994,
+   "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 1210
+   "size_kb": 1215
   },
   {
    "file": "variable/SuharCondensed[opsz,wght].ttf",
-   "glyphs": 2994,
+   "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 1186
+   "size_kb": 1191
   },
   {
    "file": "variable/SuharMono-Italic[wght].ttf",
-   "glyphs": 3010,
+   "glyphs": 3018,
    "codepoints": 2469,
-   "size_kb": 446
+   "size_kb": 449
   },
   {
    "file": "variable/SuharMono[wght].ttf",
-   "glyphs": 3010,
+   "glyphs": 3018,
    "codepoints": 2469,
-   "size_kb": 435
+   "size_kb": 437
   },
   {
-   "file": "variable/SuharNaskh-Italic[opsz,wght].ttf",
-   "glyphs": 2994,
+   "file": "variable/SuharNaskh-Italic[GRAD,opsz,wght].ttf",
+   "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 1272
+   "size_kb": 1692
   },
   {
    "file": "variable/SuharNaskhDisplay[wght].ttf",
-   "glyphs": 2994,
+   "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 680
+   "size_kb": 683
   },
   {
-   "file": "variable/SuharNaskh[opsz,wght].ttf",
-   "glyphs": 2994,
+   "file": "variable/SuharNaskh[GRAD,opsz,wght].ttf",
+   "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 1259
+   "size_kb": 1665
   },
   {
    "file": "variable/SuharSahafa-Italic[GRAD,opsz,wght].ttf",
-   "glyphs": 2994,
+   "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 1751
+   "size_kb": 1750
   },
   {
    "file": "variable/SuharSahafaHeadline-Italic[GRAD,opsz,wght].ttf",
-   "glyphs": 2994,
+   "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 1747
+   "size_kb": 1754
   },
   {
    "file": "variable/SuharSahafaHeadline[GRAD,opsz,wght].ttf",
-   "glyphs": 2994,
+   "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 1709
+   "size_kb": 1716
   },
   {
    "file": "variable/SuharSahafa[GRAD,opsz,wght].ttf",
-   "glyphs": 2994,
+   "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 1722
+   "size_kb": 1719
   },
   {
    "file": "variable/Suhar[opsz,wght].ttf",
-   "glyphs": 2994,
+   "glyphs": 3002,
    "codepoints": 2469,
-   "size_kb": 1214
+   "size_kb": 1219
   }
  ],
  "coverage": {
