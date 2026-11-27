@@ -1,4 +1,4 @@
-version       = "2.3.0"
+version       = "2.4.0"
 author        = "Sultan Al Isaiee (@foxoman)"
 description   = "The Suhar typeface (Latin + Arabic, Sans and Mono) for Retro Nim UI"
 license       = "OFL-1.1"
