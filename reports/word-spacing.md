@@ -42,21 +42,21 @@ Measured by `tools/wordspace.py` on the compiled fonts: every word-final Arabic 
 | SuharNaskhDisplay-Medium | 278 | 370 | 11 | 333 | 415 | 365 | 36 |
 | SuharNaskhDisplay-Regular | 278 | 375 | 12 | 336 | 421 | 369 | 38 |
 | SuharNaskhDisplay-SemiBold | 278 | 366 | 11 | 333 | 410 | 361 | 34 |
-| SuharSahafa-Bold | 278 | 357 | 8 | 336 | 393 | 335 | 24 |
-| SuharSahafa-BoldItalic | 278 | 350 | 10 | 336 | 392 | 322 | 26 |
-| SuharSahafa-Italic | 278 | 366 | 10 | 350 | 411 | 337 | 29 |
-| SuharSahafa-Medium | 278 | 366 | 8 | 338 | 404 | 342 | 27 |
-| SuharSahafa-MediumItalic | 278 | 361 | 10 | 350 | 405 | 332 | 28 |
-| SuharSahafa-Regular | 278 | 370 | 9 | 340 | 411 | 345 | 28 |
-| SuharSahafa-SemiBold | 278 | 362 | 8 | 338 | 397 | 338 | 26 |
-| SuharSahafa-SemiBoldItalic | 278 | 355 | 10 | 344 | 399 | 327 | 27 |
-| SuharSahafaHeadline-Bold | 256 | 327 | 7 | 310 | 364 | 306 | 21 |
-| SuharSahafaHeadline-BoldItalic | 256 | 316 | 12 | 301 | 365 | 295 | 23 |
-| SuharSahafaHeadline-Italic | 256 | 332 | 12 | 319 | 382 | 307 | 25 |
-| SuharSahafaHeadline-Medium | 256 | 335 | 8 | 313 | 375 | 312 | 24 |
-| SuharSahafaHeadline-MediumItalic | 256 | 327 | 11 | 313 | 375 | 303 | 25 |
-| SuharSahafaHeadline-Regular | 256 | 338 | 7 | 313 | 366 | 315 | 25 |
-| SuharSahafaHeadline-SemiBold | 256 | 331 | 8 | 312 | 370 | 309 | 23 |
-| SuharSahafaHeadline-SemiBoldItalic | 256 | 322 | 11 | 308 | 371 | 299 | 24 |
+| SuharSahafa-Bold | 278 | 358 | 8 | 336 | 393 | 335 | 24 |
+| SuharSahafa-BoldItalic | 278 | 350 | 10 | 336 | 392 | 328 | 26 |
+| SuharSahafa-Italic | 278 | 366 | 10 | 351 | 412 | 342 | 30 |
+| SuharSahafa-Medium | 278 | 366 | 9 | 339 | 405 | 341 | 27 |
+| SuharSahafa-MediumItalic | 278 | 361 | 10 | 348 | 406 | 337 | 29 |
+| SuharSahafa-Regular | 278 | 370 | 9 | 339 | 410 | 345 | 28 |
+| SuharSahafa-SemiBold | 278 | 361 | 8 | 338 | 397 | 338 | 26 |
+| SuharSahafa-SemiBoldItalic | 278 | 355 | 10 | 343 | 398 | 332 | 28 |
+| SuharSahafaHeadline-Bold | 256 | 328 | 7 | 310 | 364 | 306 | 21 |
+| SuharSahafaHeadline-BoldItalic | 256 | 317 | 12 | 301 | 365 | 300 | 23 |
+| SuharSahafaHeadline-Italic | 256 | 332 | 12 | 319 | 382 | 312 | 27 |
+| SuharSahafaHeadline-Medium | 256 | 335 | 8 | 314 | 377 | 312 | 24 |
+| SuharSahafaHeadline-MediumItalic | 256 | 327 | 11 | 312 | 375 | 308 | 25 |
+| SuharSahafaHeadline-Regular | 256 | 338 | 7 | 315 | 366 | 315 | 25 |
+| SuharSahafaHeadline-SemiBold | 256 | 331 | 8 | 313 | 370 | 309 | 23 |
+| SuharSahafaHeadline-SemiBoldItalic | 256 | 322 | 11 | 306 | 370 | 304 | 24 |
 
 The Mono families have a fixed cell: the space is one cell in every style.

@@ -182,3 +182,13 @@ standard deviation of the gap is 8 to 14 units on a mean of about 350 to 375.
   triangle along the bisector of the corner.
 - Wedge brackets are filled triangles between the stem and the serif; their size follows the serif length.
 - Italics use the slants of Suhar (Latin 11 degrees to the right, Arabic 9 degrees to the left).
+
+### Sahafa completed (2.3)
+
+- `ARABIC` has a body for every key of `RASM` (88). The ligatures and alternates have no skeleton key, so
+  `_ligatures()` replaces their Suhar Naskh skeleton text by the Sahafa one.
+- A body moves the marks above with `dy` and the marks below with `bdy`, so a lower alef does not pull the
+  kasra down with it.
+- Italic: `LATIN_IT` and `SERIF_IT` replace the foot serif of the last stem by an exit stroke.
+- Variable fonts: the trapped outline of a glyph is used when both masters have the same contours, the same
+  points and no point further than 150 units from its partner; 120 to 148 glyphs qualify.

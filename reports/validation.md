@@ -2,7 +2,7 @@
 
 Produced by `tools/validate.py` from the compiled files in `dist/`. Shaping uses HarfBuzz, rasterisation uses FreeType (with the fonts' own TrueType hinting), structure checks use fontTools and the OpenType Sanitizer.
 
-**2155 checks passed, 0 failed.**
+**2371 checks passed, 0 failed.**
 
 ## All checks
 
@@ -1558,6 +1558,230 @@ Produced by `tools/validate.py` from the compiled files in `dist/`. Shaping uses
 ### sanitizer
 
 - PASS — SuharNerdMono-SemiBoldItalic.otf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharNerdSahafa-Bold.otf: GSUB
+- PASS — SuharNerdSahafa-Bold.otf: GPOS
+- PASS — SuharNerdSahafa-Bold.otf: GDEF
+
+### metrics
+
+- PASS — SuharNerdSahafa-Bold.otf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### sanitizer
+
+- PASS — SuharNerdSahafa-Bold.otf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharNerdSahafa-BoldItalic.otf: GSUB
+- PASS — SuharNerdSahafa-BoldItalic.otf: GPOS
+- PASS — SuharNerdSahafa-BoldItalic.otf: GDEF
+
+### metrics
+
+- PASS — SuharNerdSahafa-BoldItalic.otf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### sanitizer
+
+- PASS — SuharNerdSahafa-BoldItalic.otf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharNerdSahafa-Italic.otf: GSUB
+- PASS — SuharNerdSahafa-Italic.otf: GPOS
+- PASS — SuharNerdSahafa-Italic.otf: GDEF
+
+### metrics
+
+- PASS — SuharNerdSahafa-Italic.otf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### sanitizer
+
+- PASS — SuharNerdSahafa-Italic.otf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharNerdSahafa-Medium.otf: GSUB
+- PASS — SuharNerdSahafa-Medium.otf: GPOS
+- PASS — SuharNerdSahafa-Medium.otf: GDEF
+
+### metrics
+
+- PASS — SuharNerdSahafa-Medium.otf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### sanitizer
+
+- PASS — SuharNerdSahafa-Medium.otf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharNerdSahafa-MediumItalic.otf: GSUB
+- PASS — SuharNerdSahafa-MediumItalic.otf: GPOS
+- PASS — SuharNerdSahafa-MediumItalic.otf: GDEF
+
+### metrics
+
+- PASS — SuharNerdSahafa-MediumItalic.otf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### sanitizer
+
+- PASS — SuharNerdSahafa-MediumItalic.otf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharNerdSahafa-Regular.otf: GSUB
+- PASS — SuharNerdSahafa-Regular.otf: GPOS
+- PASS — SuharNerdSahafa-Regular.otf: GDEF
+
+### metrics
+
+- PASS — SuharNerdSahafa-Regular.otf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### sanitizer
+
+- PASS — SuharNerdSahafa-Regular.otf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharNerdSahafa-SemiBold.otf: GSUB
+- PASS — SuharNerdSahafa-SemiBold.otf: GPOS
+- PASS — SuharNerdSahafa-SemiBold.otf: GDEF
+
+### metrics
+
+- PASS — SuharNerdSahafa-SemiBold.otf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### sanitizer
+
+- PASS — SuharNerdSahafa-SemiBold.otf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharNerdSahafa-SemiBoldItalic.otf: GSUB
+- PASS — SuharNerdSahafa-SemiBoldItalic.otf: GPOS
+- PASS — SuharNerdSahafa-SemiBoldItalic.otf: GDEF
+
+### metrics
+
+- PASS — SuharNerdSahafa-SemiBoldItalic.otf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### sanitizer
+
+- PASS — SuharNerdSahafa-SemiBoldItalic.otf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharNerdSahafaHeadline-Bold.otf: GSUB
+- PASS — SuharNerdSahafaHeadline-Bold.otf: GPOS
+- PASS — SuharNerdSahafaHeadline-Bold.otf: GDEF
+
+### metrics
+
+- PASS — SuharNerdSahafaHeadline-Bold.otf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### sanitizer
+
+- PASS — SuharNerdSahafaHeadline-Bold.otf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharNerdSahafaHeadline-BoldItalic.otf: GSUB
+- PASS — SuharNerdSahafaHeadline-BoldItalic.otf: GPOS
+- PASS — SuharNerdSahafaHeadline-BoldItalic.otf: GDEF
+
+### metrics
+
+- PASS — SuharNerdSahafaHeadline-BoldItalic.otf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### sanitizer
+
+- PASS — SuharNerdSahafaHeadline-BoldItalic.otf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharNerdSahafaHeadline-Italic.otf: GSUB
+- PASS — SuharNerdSahafaHeadline-Italic.otf: GPOS
+- PASS — SuharNerdSahafaHeadline-Italic.otf: GDEF
+
+### metrics
+
+- PASS — SuharNerdSahafaHeadline-Italic.otf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### sanitizer
+
+- PASS — SuharNerdSahafaHeadline-Italic.otf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharNerdSahafaHeadline-Medium.otf: GSUB
+- PASS — SuharNerdSahafaHeadline-Medium.otf: GPOS
+- PASS — SuharNerdSahafaHeadline-Medium.otf: GDEF
+
+### metrics
+
+- PASS — SuharNerdSahafaHeadline-Medium.otf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### sanitizer
+
+- PASS — SuharNerdSahafaHeadline-Medium.otf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharNerdSahafaHeadline-MediumItalic.otf: GSUB
+- PASS — SuharNerdSahafaHeadline-MediumItalic.otf: GPOS
+- PASS — SuharNerdSahafaHeadline-MediumItalic.otf: GDEF
+
+### metrics
+
+- PASS — SuharNerdSahafaHeadline-MediumItalic.otf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### sanitizer
+
+- PASS — SuharNerdSahafaHeadline-MediumItalic.otf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharNerdSahafaHeadline-Regular.otf: GSUB
+- PASS — SuharNerdSahafaHeadline-Regular.otf: GPOS
+- PASS — SuharNerdSahafaHeadline-Regular.otf: GDEF
+
+### metrics
+
+- PASS — SuharNerdSahafaHeadline-Regular.otf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### sanitizer
+
+- PASS — SuharNerdSahafaHeadline-Regular.otf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharNerdSahafaHeadline-SemiBold.otf: GSUB
+- PASS — SuharNerdSahafaHeadline-SemiBold.otf: GPOS
+- PASS — SuharNerdSahafaHeadline-SemiBold.otf: GDEF
+
+### metrics
+
+- PASS — SuharNerdSahafaHeadline-SemiBold.otf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### sanitizer
+
+- PASS — SuharNerdSahafaHeadline-SemiBold.otf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharNerdSahafaHeadline-SemiBoldItalic.otf: GSUB
+- PASS — SuharNerdSahafaHeadline-SemiBoldItalic.otf: GPOS
+- PASS — SuharNerdSahafaHeadline-SemiBoldItalic.otf: GDEF
+
+### metrics
+
+- PASS — SuharNerdSahafaHeadline-SemiBoldItalic.otf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### sanitizer
+
+- PASS — SuharNerdSahafaHeadline-SemiBoldItalic.otf: OpenType Sanitizer
 
 ### tables
 
@@ -3753,6 +3977,294 @@ Produced by `tools/validate.py` from the compiled files in `dist/`. Shaping uses
 
 ### tables
 
+- PASS — SuharNerdSahafa-Bold.ttf: GSUB
+- PASS — SuharNerdSahafa-Bold.ttf: GPOS
+- PASS — SuharNerdSahafa-Bold.ttf: GDEF
+
+### hinting
+
+- PASS — SuharNerdSahafa-Bold.ttf: TrueType instructions (fpgm/prep/cvt)
+
+### metrics
+
+- PASS — SuharNerdSahafa-Bold.ttf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### sanitizer
+
+- PASS — SuharNerdSahafa-Bold.ttf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharNerdSahafa-BoldItalic.ttf: GSUB
+- PASS — SuharNerdSahafa-BoldItalic.ttf: GPOS
+- PASS — SuharNerdSahafa-BoldItalic.ttf: GDEF
+
+### hinting
+
+- PASS — SuharNerdSahafa-BoldItalic.ttf: TrueType instructions (fpgm/prep/cvt)
+
+### metrics
+
+- PASS — SuharNerdSahafa-BoldItalic.ttf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### sanitizer
+
+- PASS — SuharNerdSahafa-BoldItalic.ttf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharNerdSahafa-Italic.ttf: GSUB
+- PASS — SuharNerdSahafa-Italic.ttf: GPOS
+- PASS — SuharNerdSahafa-Italic.ttf: GDEF
+
+### hinting
+
+- PASS — SuharNerdSahafa-Italic.ttf: TrueType instructions (fpgm/prep/cvt)
+
+### metrics
+
+- PASS — SuharNerdSahafa-Italic.ttf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### sanitizer
+
+- PASS — SuharNerdSahafa-Italic.ttf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharNerdSahafa-Medium.ttf: GSUB
+- PASS — SuharNerdSahafa-Medium.ttf: GPOS
+- PASS — SuharNerdSahafa-Medium.ttf: GDEF
+
+### hinting
+
+- PASS — SuharNerdSahafa-Medium.ttf: TrueType instructions (fpgm/prep/cvt)
+
+### metrics
+
+- PASS — SuharNerdSahafa-Medium.ttf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### sanitizer
+
+- PASS — SuharNerdSahafa-Medium.ttf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharNerdSahafa-MediumItalic.ttf: GSUB
+- PASS — SuharNerdSahafa-MediumItalic.ttf: GPOS
+- PASS — SuharNerdSahafa-MediumItalic.ttf: GDEF
+
+### hinting
+
+- PASS — SuharNerdSahafa-MediumItalic.ttf: TrueType instructions (fpgm/prep/cvt)
+
+### metrics
+
+- PASS — SuharNerdSahafa-MediumItalic.ttf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### sanitizer
+
+- PASS — SuharNerdSahafa-MediumItalic.ttf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharNerdSahafa-Regular.ttf: GSUB
+- PASS — SuharNerdSahafa-Regular.ttf: GPOS
+- PASS — SuharNerdSahafa-Regular.ttf: GDEF
+
+### hinting
+
+- PASS — SuharNerdSahafa-Regular.ttf: TrueType instructions (fpgm/prep/cvt)
+
+### metrics
+
+- PASS — SuharNerdSahafa-Regular.ttf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### sanitizer
+
+- PASS — SuharNerdSahafa-Regular.ttf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharNerdSahafa-SemiBold.ttf: GSUB
+- PASS — SuharNerdSahafa-SemiBold.ttf: GPOS
+- PASS — SuharNerdSahafa-SemiBold.ttf: GDEF
+
+### hinting
+
+- PASS — SuharNerdSahafa-SemiBold.ttf: TrueType instructions (fpgm/prep/cvt)
+
+### metrics
+
+- PASS — SuharNerdSahafa-SemiBold.ttf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### sanitizer
+
+- PASS — SuharNerdSahafa-SemiBold.ttf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharNerdSahafa-SemiBoldItalic.ttf: GSUB
+- PASS — SuharNerdSahafa-SemiBoldItalic.ttf: GPOS
+- PASS — SuharNerdSahafa-SemiBoldItalic.ttf: GDEF
+
+### hinting
+
+- PASS — SuharNerdSahafa-SemiBoldItalic.ttf: TrueType instructions (fpgm/prep/cvt)
+
+### metrics
+
+- PASS — SuharNerdSahafa-SemiBoldItalic.ttf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### sanitizer
+
+- PASS — SuharNerdSahafa-SemiBoldItalic.ttf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharNerdSahafaHeadline-Bold.ttf: GSUB
+- PASS — SuharNerdSahafaHeadline-Bold.ttf: GPOS
+- PASS — SuharNerdSahafaHeadline-Bold.ttf: GDEF
+
+### hinting
+
+- PASS — SuharNerdSahafaHeadline-Bold.ttf: TrueType instructions (fpgm/prep/cvt)
+
+### metrics
+
+- PASS — SuharNerdSahafaHeadline-Bold.ttf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### sanitizer
+
+- PASS — SuharNerdSahafaHeadline-Bold.ttf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharNerdSahafaHeadline-BoldItalic.ttf: GSUB
+- PASS — SuharNerdSahafaHeadline-BoldItalic.ttf: GPOS
+- PASS — SuharNerdSahafaHeadline-BoldItalic.ttf: GDEF
+
+### hinting
+
+- PASS — SuharNerdSahafaHeadline-BoldItalic.ttf: TrueType instructions (fpgm/prep/cvt)
+
+### metrics
+
+- PASS — SuharNerdSahafaHeadline-BoldItalic.ttf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### sanitizer
+
+- PASS — SuharNerdSahafaHeadline-BoldItalic.ttf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharNerdSahafaHeadline-Italic.ttf: GSUB
+- PASS — SuharNerdSahafaHeadline-Italic.ttf: GPOS
+- PASS — SuharNerdSahafaHeadline-Italic.ttf: GDEF
+
+### hinting
+
+- PASS — SuharNerdSahafaHeadline-Italic.ttf: TrueType instructions (fpgm/prep/cvt)
+
+### metrics
+
+- PASS — SuharNerdSahafaHeadline-Italic.ttf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### sanitizer
+
+- PASS — SuharNerdSahafaHeadline-Italic.ttf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharNerdSahafaHeadline-Medium.ttf: GSUB
+- PASS — SuharNerdSahafaHeadline-Medium.ttf: GPOS
+- PASS — SuharNerdSahafaHeadline-Medium.ttf: GDEF
+
+### hinting
+
+- PASS — SuharNerdSahafaHeadline-Medium.ttf: TrueType instructions (fpgm/prep/cvt)
+
+### metrics
+
+- PASS — SuharNerdSahafaHeadline-Medium.ttf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### sanitizer
+
+- PASS — SuharNerdSahafaHeadline-Medium.ttf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharNerdSahafaHeadline-MediumItalic.ttf: GSUB
+- PASS — SuharNerdSahafaHeadline-MediumItalic.ttf: GPOS
+- PASS — SuharNerdSahafaHeadline-MediumItalic.ttf: GDEF
+
+### hinting
+
+- PASS — SuharNerdSahafaHeadline-MediumItalic.ttf: TrueType instructions (fpgm/prep/cvt)
+
+### metrics
+
+- PASS — SuharNerdSahafaHeadline-MediumItalic.ttf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### sanitizer
+
+- PASS — SuharNerdSahafaHeadline-MediumItalic.ttf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharNerdSahafaHeadline-Regular.ttf: GSUB
+- PASS — SuharNerdSahafaHeadline-Regular.ttf: GPOS
+- PASS — SuharNerdSahafaHeadline-Regular.ttf: GDEF
+
+### hinting
+
+- PASS — SuharNerdSahafaHeadline-Regular.ttf: TrueType instructions (fpgm/prep/cvt)
+
+### metrics
+
+- PASS — SuharNerdSahafaHeadline-Regular.ttf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### sanitizer
+
+- PASS — SuharNerdSahafaHeadline-Regular.ttf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharNerdSahafaHeadline-SemiBold.ttf: GSUB
+- PASS — SuharNerdSahafaHeadline-SemiBold.ttf: GPOS
+- PASS — SuharNerdSahafaHeadline-SemiBold.ttf: GDEF
+
+### hinting
+
+- PASS — SuharNerdSahafaHeadline-SemiBold.ttf: TrueType instructions (fpgm/prep/cvt)
+
+### metrics
+
+- PASS — SuharNerdSahafaHeadline-SemiBold.ttf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### sanitizer
+
+- PASS — SuharNerdSahafaHeadline-SemiBold.ttf: OpenType Sanitizer
+
+### tables
+
+- PASS — SuharNerdSahafaHeadline-SemiBoldItalic.ttf: GSUB
+- PASS — SuharNerdSahafaHeadline-SemiBoldItalic.ttf: GPOS
+- PASS — SuharNerdSahafaHeadline-SemiBoldItalic.ttf: GDEF
+
+### hinting
+
+- PASS — SuharNerdSahafaHeadline-SemiBoldItalic.ttf: TrueType instructions (fpgm/prep/cvt)
+
+### metrics
+
+- PASS — SuharNerdSahafaHeadline-SemiBoldItalic.ttf: vertical metrics (typo = hhea = 940/-360, USE_TYPO_METRICS, win (1200, 440))
+
+### sanitizer
+
+- PASS — SuharNerdSahafaHeadline-SemiBoldItalic.ttf: OpenType Sanitizer
+
+### tables
+
 - PASS — SuharSahafa-Bold.ttf: GSUB
 - PASS — SuharSahafa-Bold.ttf: GPOS
 - PASS — SuharSahafa-Bold.ttf: GDEF
@@ -4385,6 +4897,22 @@ Produced by `tools/validate.py` from the compiled files in `dist/`. Shaping uses
 - PASS — SuharNerdMono-Regular.woff2: decodes, same glyph count as TTF
 - PASS — SuharNerdMono-SemiBold.woff2: decodes, same glyph count as TTF
 - PASS — SuharNerdMono-SemiBoldItalic.woff2: decodes, same glyph count as TTF
+- PASS — SuharNerdSahafa-Bold.woff2: decodes, same glyph count as TTF
+- PASS — SuharNerdSahafa-BoldItalic.woff2: decodes, same glyph count as TTF
+- PASS — SuharNerdSahafa-Italic.woff2: decodes, same glyph count as TTF
+- PASS — SuharNerdSahafa-Medium.woff2: decodes, same glyph count as TTF
+- PASS — SuharNerdSahafa-MediumItalic.woff2: decodes, same glyph count as TTF
+- PASS — SuharNerdSahafa-Regular.woff2: decodes, same glyph count as TTF
+- PASS — SuharNerdSahafa-SemiBold.woff2: decodes, same glyph count as TTF
+- PASS — SuharNerdSahafa-SemiBoldItalic.woff2: decodes, same glyph count as TTF
+- PASS — SuharNerdSahafaHeadline-Bold.woff2: decodes, same glyph count as TTF
+- PASS — SuharNerdSahafaHeadline-BoldItalic.woff2: decodes, same glyph count as TTF
+- PASS — SuharNerdSahafaHeadline-Italic.woff2: decodes, same glyph count as TTF
+- PASS — SuharNerdSahafaHeadline-Medium.woff2: decodes, same glyph count as TTF
+- PASS — SuharNerdSahafaHeadline-MediumItalic.woff2: decodes, same glyph count as TTF
+- PASS — SuharNerdSahafaHeadline-Regular.woff2: decodes, same glyph count as TTF
+- PASS — SuharNerdSahafaHeadline-SemiBold.woff2: decodes, same glyph count as TTF
+- PASS — SuharNerdSahafaHeadline-SemiBoldItalic.woff2: decodes, same glyph count as TTF
 - PASS — SuharSahafa-Bold.woff2: decodes, same glyph count as TTF
 - PASS — SuharSahafa-BoldItalic.woff2: decodes, same glyph count as TTF
 - PASS — SuharSahafa-Italic.woff2: decodes, same glyph count as TTF
@@ -5074,6 +5602,30 @@ Produced by `tools/validate.py` from the compiled files in `dist/`. Shaping uses
 - PASS — dlig changes لم in Sahafa
 - PASS — ss06 changes في in Sahafa
 - PASS — ss07 changes نجم in Sahafa
+- PASS — every letter skeleton has a drawing of its own in Sahafa
+- PASS — the 14 ligatures and alternates of Suhar Naskh are redrawn (lam-meem, lam on jeem, feh-yeh, returning yeh)
+- PASS — Regular baseline stroke between 98 and 110 units
+- PASS — italic: no slab at the first foot of n, and a different a
+- PASS — SuharSahafa[wght].ttf: ink traps in the glyphs whose masters match (more than 100)
+- PASS — SuharSahafa-Italic[wght].ttf: ink traps in the glyphs whose masters match (more than 100)
+- PASS — SuharSahafaHeadline[wght].ttf: ink traps in the glyphs whose masters match (more than 100)
+- PASS — SuharSahafaHeadline-Italic[wght].ttf: ink traps in the glyphs whose masters match (more than 100)
+- PASS — Suhar Nerd Sahafa Regular: present, named, with Powerline and icon glyphs
+- PASS — Suhar Nerd Sahafa Italic: present, named, with Powerline and icon glyphs
+- PASS — Suhar Nerd Sahafa Medium: present, named, with Powerline and icon glyphs
+- PASS — Suhar Nerd Sahafa Medium Italic: present, named, with Powerline and icon glyphs
+- PASS — Suhar Nerd Sahafa SemiBold: present, named, with Powerline and icon glyphs
+- PASS — Suhar Nerd Sahafa SemiBold Italic: present, named, with Powerline and icon glyphs
+- PASS — Suhar Nerd Sahafa Bold: present, named, with Powerline and icon glyphs
+- PASS — Suhar Nerd Sahafa Bold Italic: present, named, with Powerline and icon glyphs
+- PASS — Suhar Nerd Sahafa Headline Regular: present, named, with Powerline and icon glyphs
+- PASS — Suhar Nerd Sahafa Headline Italic: present, named, with Powerline and icon glyphs
+- PASS — Suhar Nerd Sahafa Headline Medium: present, named, with Powerline and icon glyphs
+- PASS — Suhar Nerd Sahafa Headline Medium Italic: present, named, with Powerline and icon glyphs
+- PASS — Suhar Nerd Sahafa Headline SemiBold: present, named, with Powerline and icon glyphs
+- PASS — Suhar Nerd Sahafa Headline SemiBold Italic: present, named, with Powerline and icon glyphs
+- PASS — Suhar Nerd Sahafa Headline Bold: present, named, with Powerline and icon glyphs
+- PASS — Suhar Nerd Sahafa Headline Bold Italic: present, named, with Powerline and icon glyphs
 
 ### word space
 
@@ -5248,22 +5800,38 @@ Produced by `tools/validate.py` from the compiled files in `dist/`. Shaping uses
 | otf/SuharNerdMono-Regular.otf | 13500 | 13064 | 3157 |
 | otf/SuharNerdMono-SemiBold.otf | 13500 | 13064 | 3166 |
 | otf/SuharNerdMono-SemiBoldItalic.otf | 13500 | 13064 | 3162 |
-| otf/SuharSahafa-Bold.otf | 2889 | 2469 | 575 |
-| otf/SuharSahafa-BoldItalic.otf | 2889 | 2469 | 574 |
-| otf/SuharSahafa-Italic.otf | 2889 | 2469 | 553 |
-| otf/SuharSahafa-Medium.otf | 2889 | 2469 | 561 |
-| otf/SuharSahafa-MediumItalic.otf | 2889 | 2469 | 559 |
-| otf/SuharSahafa-Regular.otf | 2889 | 2469 | 550 |
-| otf/SuharSahafa-SemiBold.otf | 2889 | 2469 | 566 |
-| otf/SuharSahafa-SemiBoldItalic.otf | 2889 | 2469 | 565 |
-| otf/SuharSahafaHeadline-Bold.otf | 2889 | 2469 | 570 |
-| otf/SuharSahafaHeadline-BoldItalic.otf | 2889 | 2469 | 568 |
-| otf/SuharSahafaHeadline-Italic.otf | 2889 | 2469 | 555 |
-| otf/SuharSahafaHeadline-Medium.otf | 2889 | 2469 | 557 |
-| otf/SuharSahafaHeadline-MediumItalic.otf | 2889 | 2469 | 558 |
-| otf/SuharSahafaHeadline-Regular.otf | 2889 | 2469 | 548 |
-| otf/SuharSahafaHeadline-SemiBold.otf | 2889 | 2469 | 566 |
-| otf/SuharSahafaHeadline-SemiBoldItalic.otf | 2889 | 2469 | 562 |
+| otf/SuharNerdSahafa-Bold.otf | 13484 | 13064 | 3307 |
+| otf/SuharNerdSahafa-BoldItalic.otf | 13484 | 13064 | 3299 |
+| otf/SuharNerdSahafa-Italic.otf | 13484 | 13064 | 3278 |
+| otf/SuharNerdSahafa-Medium.otf | 13484 | 13064 | 3293 |
+| otf/SuharNerdSahafa-MediumItalic.otf | 13484 | 13064 | 3285 |
+| otf/SuharNerdSahafa-Regular.otf | 13484 | 13064 | 3282 |
+| otf/SuharNerdSahafa-SemiBold.otf | 13484 | 13064 | 3302 |
+| otf/SuharNerdSahafa-SemiBoldItalic.otf | 13484 | 13064 | 3291 |
+| otf/SuharNerdSahafaHeadline-Bold.otf | 13484 | 13064 | 3302 |
+| otf/SuharNerdSahafaHeadline-BoldItalic.otf | 13484 | 13064 | 3295 |
+| otf/SuharNerdSahafaHeadline-Italic.otf | 13484 | 13064 | 3288 |
+| otf/SuharNerdSahafaHeadline-Medium.otf | 13484 | 13064 | 3292 |
+| otf/SuharNerdSahafaHeadline-MediumItalic.otf | 13484 | 13064 | 3289 |
+| otf/SuharNerdSahafaHeadline-Regular.otf | 13484 | 13064 | 3287 |
+| otf/SuharNerdSahafaHeadline-SemiBold.otf | 13484 | 13064 | 3300 |
+| otf/SuharNerdSahafaHeadline-SemiBoldItalic.otf | 13484 | 13064 | 3291 |
+| otf/SuharSahafa-Bold.otf | 2889 | 2469 | 580 |
+| otf/SuharSahafa-BoldItalic.otf | 2889 | 2469 | 571 |
+| otf/SuharSahafa-Italic.otf | 2889 | 2469 | 551 |
+| otf/SuharSahafa-Medium.otf | 2889 | 2469 | 565 |
+| otf/SuharSahafa-MediumItalic.otf | 2889 | 2469 | 557 |
+| otf/SuharSahafa-Regular.otf | 2889 | 2469 | 555 |
+| otf/SuharSahafa-SemiBold.otf | 2889 | 2469 | 574 |
+| otf/SuharSahafa-SemiBoldItalic.otf | 2889 | 2469 | 564 |
+| otf/SuharSahafaHeadline-Bold.otf | 2889 | 2469 | 574 |
+| otf/SuharSahafaHeadline-BoldItalic.otf | 2889 | 2469 | 567 |
+| otf/SuharSahafaHeadline-Italic.otf | 2889 | 2469 | 561 |
+| otf/SuharSahafaHeadline-Medium.otf | 2889 | 2469 | 565 |
+| otf/SuharSahafaHeadline-MediumItalic.otf | 2889 | 2469 | 562 |
+| otf/SuharSahafaHeadline-Regular.otf | 2889 | 2469 | 560 |
+| otf/SuharSahafaHeadline-SemiBold.otf | 2889 | 2469 | 572 |
+| otf/SuharSahafaHeadline-SemiBoldItalic.otf | 2889 | 2469 | 564 |
 | ttf/Suhar-Black.ttf | 2889 | 2469 | 502 |
 | ttf/Suhar-BlackItalic.ttf | 2889 | 2469 | 498 |
 | ttf/Suhar-Bold.ttf | 2889 | 2469 | 500 |
@@ -5352,21 +5920,37 @@ Produced by `tools/validate.py` from the compiled files in `dist/`. Shaping uses
 | ttf/SuharNerdMono-Regular.ttf | 13500 | 13064 | 2662 |
 | ttf/SuharNerdMono-SemiBold.ttf | 13500 | 13064 | 2669 |
 | ttf/SuharNerdMono-SemiBoldItalic.ttf | 13500 | 13064 | 2671 |
-| ttf/SuharSahafa-Bold.ttf | 2889 | 2469 | 524 |
-| ttf/SuharSahafa-BoldItalic.ttf | 2889 | 2469 | 515 |
-| ttf/SuharSahafa-Italic.ttf | 2889 | 2469 | 509 |
+| ttf/SuharNerdSahafa-Bold.ttf | 13484 | 13064 | 2778 |
+| ttf/SuharNerdSahafa-BoldItalic.ttf | 13484 | 13064 | 2766 |
+| ttf/SuharNerdSahafa-Italic.ttf | 13484 | 13064 | 2761 |
+| ttf/SuharNerdSahafa-Medium.ttf | 13484 | 13064 | 2765 |
+| ttf/SuharNerdSahafa-MediumItalic.ttf | 13484 | 13064 | 2759 |
+| ttf/SuharNerdSahafa-Regular.ttf | 13484 | 13064 | 2762 |
+| ttf/SuharNerdSahafa-SemiBold.ttf | 13484 | 13064 | 2773 |
+| ttf/SuharNerdSahafa-SemiBoldItalic.ttf | 13484 | 13064 | 2762 |
+| ttf/SuharNerdSahafaHeadline-Bold.ttf | 13484 | 13064 | 2772 |
+| ttf/SuharNerdSahafaHeadline-BoldItalic.ttf | 13484 | 13064 | 2771 |
+| ttf/SuharNerdSahafaHeadline-Italic.ttf | 13484 | 13064 | 2768 |
+| ttf/SuharNerdSahafaHeadline-Medium.ttf | 13484 | 13064 | 2771 |
+| ttf/SuharNerdSahafaHeadline-MediumItalic.ttf | 13484 | 13064 | 2772 |
+| ttf/SuharNerdSahafaHeadline-Regular.ttf | 13484 | 13064 | 2762 |
+| ttf/SuharNerdSahafaHeadline-SemiBold.ttf | 13484 | 13064 | 2772 |
+| ttf/SuharNerdSahafaHeadline-SemiBoldItalic.ttf | 13484 | 13064 | 2768 |
+| ttf/SuharSahafa-Bold.ttf | 2889 | 2469 | 525 |
+| ttf/SuharSahafa-BoldItalic.ttf | 2889 | 2469 | 513 |
+| ttf/SuharSahafa-Italic.ttf | 2889 | 2469 | 508 |
 | ttf/SuharSahafa-Medium.ttf | 2889 | 2469 | 512 |
-| ttf/SuharSahafa-MediumItalic.ttf | 2889 | 2469 | 508 |
-| ttf/SuharSahafa-Regular.ttf | 2889 | 2469 | 507 |
-| ttf/SuharSahafa-SemiBold.ttf | 2889 | 2469 | 524 |
-| ttf/SuharSahafa-SemiBoldItalic.ttf | 2889 | 2469 | 512 |
-| ttf/SuharSahafaHeadline-Bold.ttf | 2889 | 2469 | 515 |
+| ttf/SuharSahafa-MediumItalic.ttf | 2889 | 2469 | 506 |
+| ttf/SuharSahafa-Regular.ttf | 2889 | 2469 | 509 |
+| ttf/SuharSahafa-SemiBold.ttf | 2889 | 2469 | 520 |
+| ttf/SuharSahafa-SemiBoldItalic.ttf | 2889 | 2469 | 509 |
+| ttf/SuharSahafaHeadline-Bold.ttf | 2889 | 2469 | 519 |
 | ttf/SuharSahafaHeadline-BoldItalic.ttf | 2889 | 2469 | 518 |
-| ttf/SuharSahafaHeadline-Italic.ttf | 2889 | 2469 | 516 |
-| ttf/SuharSahafaHeadline-Medium.ttf | 2889 | 2469 | 510 |
-| ttf/SuharSahafaHeadline-MediumItalic.ttf | 2889 | 2469 | 516 |
-| ttf/SuharSahafaHeadline-Regular.ttf | 2889 | 2469 | 505 |
-| ttf/SuharSahafaHeadline-SemiBold.ttf | 2889 | 2469 | 514 |
+| ttf/SuharSahafaHeadline-Italic.ttf | 2889 | 2469 | 515 |
+| ttf/SuharSahafaHeadline-Medium.ttf | 2889 | 2469 | 518 |
+| ttf/SuharSahafaHeadline-MediumItalic.ttf | 2889 | 2469 | 519 |
+| ttf/SuharSahafaHeadline-Regular.ttf | 2889 | 2469 | 509 |
+| ttf/SuharSahafaHeadline-SemiBold.ttf | 2889 | 2469 | 519 |
 | ttf/SuharSahafaHeadline-SemiBoldItalic.ttf | 2889 | 2469 | 515 |
 | variable/Suhar-Italic[opsz,wght].ttf | 2889 | 2469 | 1176 |
 | variable/SuharCondensed-Italic[opsz,wght].ttf | 2889 | 2469 | 1142 |
@@ -5376,10 +5960,10 @@ Produced by `tools/validate.py` from the compiled files in `dist/`. Shaping uses
 | variable/SuharNaskh-Italic[wght].ttf | 2889 | 2469 | 642 |
 | variable/SuharNaskhDisplay[wght].ttf | 2889 | 2469 | 643 |
 | variable/SuharNaskh[wght].ttf | 2889 | 2469 | 638 |
-| variable/SuharSahafa-Italic[wght].ttf | 2889 | 2469 | 639 |
-| variable/SuharSahafaHeadline-Italic[wght].ttf | 2889 | 2469 | 642 |
-| variable/SuharSahafaHeadline[wght].ttf | 2889 | 2469 | 626 |
-| variable/SuharSahafa[wght].ttf | 2889 | 2469 | 632 |
+| variable/SuharSahafa-Italic[wght].ttf | 2889 | 2469 | 642 |
+| variable/SuharSahafaHeadline-Italic[wght].ttf | 2889 | 2469 | 644 |
+| variable/SuharSahafaHeadline[wght].ttf | 2889 | 2469 | 637 |
+| variable/SuharSahafa[wght].ttf | 2889 | 2469 | 643 |
 | variable/Suhar[opsz,wght].ttf | 2889 | 2469 | 1144 |
 
 ## Proof images (reports/img)

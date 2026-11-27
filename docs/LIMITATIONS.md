@@ -41,30 +41,29 @@ I would rather list these here than have you find them in production.
 
 - Sahafa is the newest family and has had the least use.
 - I wanted it to read better in newspapers than Yakout, Mohammed and Traditional Arabic. **I cannot show
-  that.** I do not have those fonts, so there is no comparison with them at all. Against Amiri, Noto Naskh
-  Arabic and Scheherazade New I measured larger loops at the same point size and a longer line (the table is
-  in the README). Nobody has run a reading test, and it has not been printed on newsprint or on a press.
-- It is a constructed Naskh, like the rest of Suhar: one pen angle, no change of shape by neighbour except
-  the features inherited from Suhar Naskh. A calligrapher would call it a Naskh in proportion and not in hand.
-- The first sketch is heavier than Sahafa Regular: its strokes are close to Sahafa Bold. I kept Regular at a
-  text weight, because a paragraph at the sketch's weight would fill in at 8 point.
-- Ink traps are cut by rule: every sharp inner corner between the baseline and the loop height gets a notch
-  of about 0.4 of the stroke's half thickness (0.3 in Headline). They are not placed by eye, they are untested
-  on a press, and the variable fonts do not have them, because their outlines keep the overlaps.
-- Drawn for Sahafa: ص ض ط ظ, ج ح خ, ف ق و, م, ه ة, ي, ا ل, لا, ر ز, د ذ, ن, the teeth of ب ت ث ن ي, medial and
-  final ع غ and ع غ at the start of a word. Still the Suhar Naskh skeleton in the Sahafa proportions: the bowls
-  of ب ت ث, س ش, isolated ع غ, ك, and the Persian, Urdu, Kurdish, Pashto, Sindhi, Uyghur and Jawi letters. I
-  have proofed the Arabic alphabet and news text, not those other languages.
-- Ligatures: lam-alef is drawn. The optional ligatures (`dlig`), the returning yeh (`ss06`) and letters
-  standing on ج ح خ (`ss07`) work and are checked for shaping, but their shapes come from Suhar Naskh; in
-  Headline Bold the loop of the lam-meem ligature is nearly closed.
-- The italics are slanted forms, not a drawn cursive; the Arabic leans to the left, as in Suhar.
-- Latin: the serifs have straight wedge brackets, not curved ones. Diagonal letters (A K V W X Y k v w x y)
-  have serifs without brackets. The figures 0 3 6 8 9, punctuation and ß æ œ ð þ have the Sahafa pen but no
-  serifs; Cyrillic and Greek letters have serifs only where they share a Latin shape, plus Γ Π Λ Φ Ψ.
+  that.** Those are commercial fonts that I do not have, so there is no comparison with them at all. Against
+  Amiri, Noto Naskh Arabic and Scheherazade New I measured larger loops at the same point size and a longer
+  line (the table is in the README). Nobody has run a reading test, and it has not been printed on newsprint
+  or on a press. Both need people and a press, not more work in the generator.
+- It is a constructed Naskh, like the rest of Suhar: one pen angle, and no change of shape by neighbour except
+  the tall teeth, the returning yeh and the letters standing on ج ح خ. A calligrapher would call it a Naskh in
+  proportion and not in hand.
+- Every letter has a Sahafa drawing now, but I can only judge the Arabic ones. The Persian, Urdu, Kurdish,
+  Pashto, Sindhi, Uyghur and Jawi forms are drawn and compile; no reader of those languages has seen them.
+- Regular is lighter than the first sketch, whose strokes are close to Sahafa Bold. Regular is at 103 units
+  for the baseline stroke, which I judged the most a text weight can carry at 8 point.
+- Ink traps are still cut by rule (every sharp inner corner between the baseline and the loop height). I have
+  looked at them enlarged on the joins of ب س ص ط ح ف ك ع د ل م ن and removed the stubs I found, but they
+  are untested on a press. In the variable fonts only 120 to 148 glyphs have them; the others keep overlapping
+  outlines, because their two masters do not match point for point once the overlaps are removed.
+- The Arabic italic is the upright drawing slanted to the left; Arabic has no cursive italic to draw. In the
+  Latin italic only a, n, l, w and the feet of d h i k m r u are redrawn; the other letters are slanted.
+- Latin serifs have straight wedge brackets, not curved ones. 0 and 8 have no serifs, as in any serif face;
+  punctuation and ß æ œ ð þ have the Sahafa pen without serifs; Cyrillic and Greek letters have serifs where
+  they share a Latin shape, plus Γ Π Λ Φ Ψ.
 - The x-height is 470, to match the Arabic loops; Suhar's is 520. Next to Suhar at the same size the Sahafa
   lower case is smaller. Capitals, figures, ascent, descent and line height are the same.
-- There is no Nerd build of Sahafa. A newspaper face has no use for terminal icons, so I left it out.
+- The khanjar tails (`ss01`) are the Suhar shapes in the Sahafa proportions, not redrawn.
 
 ## Pixel fonts
 

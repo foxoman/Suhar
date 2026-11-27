@@ -1,5 +1,19 @@
 # Changelog
 
+## 2.3 (November 2026)
+
+**Suhar Sahafa, completed**
+- Every letter skeleton now has a drawing of its own in Sahafa: ب ت ث, س ش, ع غ, ك and the Persian, Urdu,
+  Kurdish, Pashto, Sindhi, Uyghur and Jawi forms were added.
+- The ligatures and alternates are redrawn: lam-meem (four forms), lam on ج ح خ, feh-yeh, the returning yeh,
+  and the letters that stand on ج ح خ.
+- Regular is 7 % heavier (baseline stroke 103 units); Bold is unchanged.
+- Drawn italic for the Latin: a one-storey a, n and l of their own, exit strokes instead of foot serifs.
+- Wedge brackets on the diagonal letters; terminals on the figures 3, 6 and 9.
+- Ink traps in the variable fonts, in the 120 to 148 glyphs whose two masters match point for point.
+- Nerd builds: Suhar Nerd Sahafa and Suhar Nerd Sahafa Headline.
+- Fixed: marks under ا ل ك ط ص ف sat too low or too high in 2.2; small stubs under the joins of د ك ب س.
+
 ## 2.2 (November 2026)
 
 **Suhar Sahafa, reworked after the first sketch**
